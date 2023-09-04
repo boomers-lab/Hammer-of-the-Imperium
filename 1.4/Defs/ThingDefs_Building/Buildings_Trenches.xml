@@ -1,0 +1,684 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef Name="TrenchesBase" Abstract="True">
+		<category>Building</category>
+		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+		<selectable>true</selectable>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<repairEffect>Repair</repairEffect>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <designationCategory>GrimworldCategory</designationCategory>
+    <researchPrerequisites>
+      <li>GW_AM_BasicDefence</li>
+    </researchPrerequisites>
+  </ThingDef>
+  
+    <!-- Trench A -->
+	
+  <ThingDef ParentName="TrenchesBase">
+		<defName>TrenchesAtlasB</defName>
+		<label>Trench B - South/West</label>
+		<thingClass>Building</thingClass>
+		<category>Building</category>
+		<description>Trenches that provides optimal protection.</description>
+		<graphicData>
+			<texPath>Things/Buildings/Defenses/TrenchAlternative/TrenchB_Atlas</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<linkType>Basic</linkType>
+			<linkFlags>
+				<li>Custom2</li>
+			</linkFlags>
+		</graphicData>
+
+		<uiIconPath>Things/Buildings/Defenses/TrenchAlternative/TrenchB_UI</uiIconPath>		  
+		
+		<constructEffect>ConstructWood</constructEffect>
+		<repairEffect>ConstructWood</repairEffect>
+		<altitudeLayer>Building</altitudeLayer>
+
+		<building>
+			<isInert>true</isInert>
+			<blueprintGraphicData>
+			  <texPath>Things/Buildings/Defenses/TrenchAlternative/Blueprints/TrenchB_Blueprint_Atlas</texPath>
+		    </blueprintGraphicData>
+		</building>
+
+		<statBases>
+			<Beauty>-10</Beauty>	
+			<MaxHitPoints>900</MaxHitPoints>
+			<WorkToBuild>500</WorkToBuild>
+			<Flammability>0.5</Flammability>
+		</statBases>
+		
+		<costList>
+			<WoodLog>10</WoodLog>
+			<Steel>4</Steel>
+		</costList>
+
+		<damageMultipliers>
+			<li>
+				<damageDef>Bomb</damageDef>
+				<multiplier>10</multiplier>
+			</li>
+		</damageMultipliers>
+
+		<passability>PassThroughOnly</passability>
+		<pathCost>80</pathCost>
+		<pathCostIgnoreRepeat>false</pathCostIgnoreRepeat>
+		
+		<castEdgeShadows>false</castEdgeShadows>
+		<fillPercent>0.8</fillPercent>
+		<coversFloor>false</coversFloor>
+		<placingDraggableDimensions>1</placingDraggableDimensions>
+		<tickerType>Never</tickerType>
+		<rotatable>false</rotatable>
+		<selectable>true</selectable>
+		<neverMultiSelect>false</neverMultiSelect>
+		<holdsRoof>false</holdsRoof>
+
+		<staticSunShadowHeight>0</staticSunShadowHeight>
+		<blockLight>false</blockLight>
+
+	</ThingDef>
+	
+	<ThingDef ParentName="TrenchesBase">
+		<defName>TrenchesAtlasA</defName>
+		<label>Trench A - North/East</label>
+		<thingClass>Building</thingClass>
+		<category>Building</category>
+		<description>Trenches for extra cover.</description>
+		<designationCategory>GrimworldCategory</designationCategory>
+
+		<graphicData>
+			<texPath>Things/Buildings/Defenses/TrenchAlternative/TrenchA_Atlas</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<linkType>Basic</linkType>
+			<linkFlags>
+				<li>Custom2</li>
+			</linkFlags>
+		</graphicData>
+
+		<uiIconPath>Things/Buildings/Defenses/TrenchAlternative/TrenchA_UI</uiIconPath>
+		
+		<constructEffect>ConstructWood</constructEffect>
+		<repairEffect>ConstructWood</repairEffect>
+		<altitudeLayer>Building</altitudeLayer>
+
+		<building>
+			<isInert>true</isInert>
+			<blueprintGraphicData>
+			  <texPath>Things/Buildings/Defenses/TrenchAlternative/Blueprints/TrenchA_Blueprint_Atlas</texPath>
+      </blueprintGraphicData>
+		</building>
+
+		<statBases>
+			<Beauty>-10</Beauty>	
+			<MaxHitPoints>900</MaxHitPoints>
+			<WorkToBuild>500</WorkToBuild>
+			<Flammability>0.5</Flammability>
+		</statBases>
+		
+    <costList>
+			<WoodLog>10</WoodLog>
+			<Steel>4</Steel>
+    </costList>	
+
+		<damageMultipliers>
+			<li>
+				<damageDef>Bomb</damageDef>
+				<multiplier>10</multiplier>
+			</li>
+		</damageMultipliers>
+
+		<passability>PassThroughOnly</passability>
+		<pathCost>80</pathCost>
+		<pathCostIgnoreRepeat>false</pathCostIgnoreRepeat>
+		
+		<castEdgeShadows>false</castEdgeShadows>
+		<fillPercent>0.8</fillPercent>
+		<coversFloor>false</coversFloor>
+		<placingDraggableDimensions>1</placingDraggableDimensions>
+		<tickerType>Never</tickerType>
+		<rotatable>false</rotatable>
+		<selectable>true</selectable>
+		<neverMultiSelect>false</neverMultiSelect>
+		<holdsRoof>false</holdsRoof>
+
+		<staticSunShadowHeight>0</staticSunShadowHeight>
+		<blockLight>false</blockLight>
+
+	</ThingDef>
+	
+	<!-- Floors -->
+	
+	<TerrainDef Name="FloorGrimworldCategory" ParentName="FloorBase" Abstract="True">
+      <layerable>true</layerable>
+      <affordances>
+        <li>Light</li>
+        <li>Medium</li>
+        <li>Heavy</li>
+      </affordances>
+      <designationCategory>GrimworldCategory</designationCategory>
+	  <constructEffect>ConstructDirt</constructEffect>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+  </TerrainDef>
+	
+	<TerrainDef ParentName="FloorGrimworldCategory">
+      <defName>TrenchfloorHorizontalFlooring</defName>
+      <label>Trench Tile Horizontal flooring</label>
+      <renderPrecedence>240</renderPrecedence>
+      <description>Trench ground, horizontal pattern.</description>
+      <texturePath>Things/Buildings/Defenses/TrenchAlternative/TrenchFloor/TrenchFloor_Horizontal</texturePath>
+      <statBases>
+        <Beauty>-2</Beauty>
+        <WorkToBuild>200</WorkToBuild>
+      </statBases>
+	  <costList>
+		  <WoodLog>4</WoodLog>
+	  </costList>
+      <constructEffect>ConstructWood</constructEffect>
+	
+	  <researchPrerequisites>
+        <li>GW_AM_BasicDefence</li>
+      </researchPrerequisites>
+	  <fertility>0</fertility>
+		<edgeType>Hard</edgeType>
+  </TerrainDef>
+	
+	<TerrainDef ParentName="FloorGrimworldCategory">
+      <defName>TrenchfloorVerticalFlooring</defName>
+      <label>Trench Tile Vertical flooring</label>
+      <renderPrecedence>240</renderPrecedence>
+      <description>Trench ground, horizontal pattern.</description>
+      <texturePath>Things/Buildings/Defenses/TrenchAlternative/TrenchFloor/TrenchFloor_Vertical</texturePath>
+      <statBases>
+        <Beauty>-2</Beauty>
+        <WorkToBuild>200</WorkToBuild>
+      </statBases>
+	  <costList>
+		  <WoodLog>4</WoodLog>
+	  </costList>
+      <constructEffect>ConstructWood</constructEffect>
+	
+	  <researchPrerequisites>
+        <li>GW_AM_BasicDefence</li>
+      </researchPrerequisites>
+	  <fertility>0</fertility>
+		<edgeType>Hard</edgeType>
+  </TerrainDef>
+	
+	<!-- Barricades -->
+	
+	<ThingDef ParentName="BuildingBase">
+      <defName>TrenchBarricade</defName>
+      <label>Trench barricade</label>
+      <description>A trench which was usually placed near a trench, provides extra cover.</description>
+      <thingClass>Building</thingClass>
+      <category>Building</category>
+      <graphicData>
+        <texPath>Things/Buildings/Defenses/TrenchAlternative/Barricades/Trench_Barricade_Atlas</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+        <linkType>Basic</linkType>
+        <linkFlags>
+          <li>Barricades</li>
+        </linkFlags>
+        <color>(139,122,87)</color>
+      </graphicData>
+      <uiIconPath>Things/Buildings/Defenses/TrenchAlternative/Barricades/Trench_Barricade_UI</uiIconPath>
+      <uiIconScale>1.2</uiIconScale>
+      <altitudeLayer>Building</altitudeLayer>
+      <pathCost>42</pathCost>
+      <pathCostIgnoreRepeat>true</pathCostIgnoreRepeat>
+      <passability>PassThroughOnly</passability>
+      <castEdgeShadows>true</castEdgeShadows>
+      <fillPercent>0.55</fillPercent>
+      <canOverlapZones>false</canOverlapZones>
+      <uiOrder>10</uiOrder>
+      <statBases>
+        <MaxHitPoints>300</MaxHitPoints>
+        <Beauty>-3</Beauty>
+        <WorkToBuild>320</WorkToBuild>
+        <Flammability>1</Flammability>
+      </statBases>
+	    <researchPrerequisites>
+        <li>GW_AM_BasicDefence</li>
+      </researchPrerequisites>
+      <building>
+        <ai_chillDestination>false</ai_chillDestination>
+        <isInert>true</isInert>
+        <isFence>true</isFence>
+        <isPlaceOverableWall>true</isPlaceOverableWall>
+        <blueprintGraphicData>
+          <texPath>Things/Buildings/Defenses/TrenchAlternative/Barricades/Trench_Barricade_Blueprint_Atlas</texPath>
+        </blueprintGraphicData>
+        <paintable>true</paintable>
+      </building>
+      <placingDraggableDimensions>1</placingDraggableDimensions>
+      <stuffCategories>
+        <li>Metallic</li>
+        <li>Stony</li>
+      </stuffCategories>
+      <costStuffCount>5</costStuffCount>
+      <filthLeaving>Filth_RubbleBuilding</filthLeaving>
+      <rotatable>false</rotatable>
+      <selectable>true</selectable>
+      <neverMultiSelect>true</neverMultiSelect>
+      <useStuffTerrainAffordance>true</useStuffTerrainAffordance>
+      <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+      <designationCategory>GrimworldCategory</designationCategory>
+      <staticSunShadowHeight>0.20</staticSunShadowHeight>
+      <designationHotKey>Misc1</designationHotKey>
+    </ThingDef>
+	
+	<!-- Barbed Wire -->
+	
+    <ThingDef ParentName="BuildingBase">
+        <defName>DefensiveBarbedWire</defName>
+        <label>Barbed wire</label>
+        <description>A row of barbed wire which can be placed to slow down targets and damage them if they dare to cross.</description>
+        <thingClass>Building_TrapDamager</thingClass>
+        <category>Building</category>
+        <graphicData>
+          <texPath>Things/Buildings/Defenses/TrenchAlternative/BarbWire/Trench_BarbWire_Atlas</texPath>
+          <graphicClass>Graphic_Single</graphicClass>
+			    <shaderType>CutoutComplex</shaderType>
+          <linkType>Basic</linkType>
+          <linkFlags>
+              <li>Custom6</li>
+          </linkFlags>
+        </graphicData>
+        <stuffCategories>
+          <li>Metallic</li>
+          <li>Stony</li>
+        </stuffCategories>
+        <costStuffCount>5</costStuffCount>
+        <statBases>
+          <TrapMeleeDamage>5</TrapMeleeDamage>
+          <TrapSpringChance>0.8</TrapSpringChance>
+          <MaxHitPoints>100</MaxHitPoints>
+          <Beauty>-10</Beauty>
+          <WorkToBuild>50</WorkToBuild>
+          <Flammability>0.2</Flammability>
+        </statBases>
+        <designationCategory>GrimworldCategory</designationCategory>
+        <uiIconPath>Things/Buildings/Defenses/TrenchAlternative/BarbWire/Trench_BarbedWire_UI</uiIconPath>
+        <drawerType>MapMeshAndRealTime</drawerType>
+        <altitudeLayer>Building</altitudeLayer>
+        <passability>PassThroughOnly</passability>
+        <pathCost>100</pathCost>
+        <fillPercent>0.15</fillPercent>
+        <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+        <selectable>true</selectable>
+        <neverMultiSelect>false</neverMultiSelect>
+        <rotatable>false</rotatable>
+        <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+        <coversFloor>false</coversFloor>
+        <blockWind>false</blockWind>
+        <holdsRoof>false</holdsRoof>
+        <canOverlapZones>false</canOverlapZones>
+        <castEdgeShadows>false</castEdgeShadows>
+        <tickerType>Normal</tickerType>
+        <building>
+            <allowAutoroof>false</allowAutoroof>
+            <isTrap>true</isTrap>
+            <isFence>true</isFence>
+            <isInert>true</isInert>
+            <trapDestroyOnSpring>false</trapDestroyOnSpring>
+            <trapDamageCategory>Sharp</trapDamageCategory>
+            <ai_chillDestination>false</ai_chillDestination>
+            <blueprintGraphicData>
+              <texPath>Things/Buildings/Defenses/TrenchAlternative/BarbWire/Trench_BarbWire_Blueprint_Atlas</texPath>
+              <linkType>Basic</linkType>
+              <linkFlags>
+                <li>Custom6</li>
+              </linkFlags>
+            </blueprintGraphicData>
+        </building>
+        <researchPrerequisites>
+          <li>GW_AM_BasicDefence</li>
+        </researchPrerequisites>
+        <placingDraggableDimensions>1</placingDraggableDimensions>
+        <repairEffect>Repair</repairEffect>
+        <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+        <filthLeaving>Filth_RubbleBuilding</filthLeaving>
+    </ThingDef>
+	
+	<!-- Bunker Wall -->
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>BunkerWall</defName>
+		<label>Bunker wall</label>
+		<description>An impassable, defensive bunker wall that can provide extra protection for combatants in the frontline. Capable of holding up a roof.</description>
+		<thingClass>Building</thingClass>
+		<category>Building</category>
+		<graphicData>
+			<texPath>Things/Buildings/Defenses/Bunkers/BunkerWall_Atlas</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<linkType>CornerFiller</linkType>
+			<linkFlags>
+				<li>Wall</li>
+				<li>Rock</li>
+			</linkFlags>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+				<edgeTop>Damage/Edge</edgeTop>
+				<edgeBot>Damage/Edge</edgeBot>
+				<edgeLeft>Damage/Edge</edgeLeft>
+				<edgeRight>Damage/Edge</edgeRight>
+			</damageData>
+		</graphicData>
+		<uiIconPath>Things/Buildings/Defenses/Bunkers/BunkerWall_UI</uiIconPath>
+		<statBases>
+			<MaxHitPoints>500</MaxHitPoints>
+			<WorkToBuild>1500</WorkToBuild>
+			<Flammability>0.1</Flammability>
+		</statBases>
+		<stuffCategories>
+            <li>Metallic</li>
+            <li>Stony</li>
+        </stuffCategories>
+		<costStuffCount>5</costStuffCount>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>Impassable</passability>
+		<blockWind>true</blockWind>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>1</fillPercent>
+		<coversFloor>true</coversFloor>
+		<placingDraggableDimensions>1</placingDraggableDimensions>
+		<tickerType>Never</tickerType>
+		<rotatable>false</rotatable>
+		<selectable>true</selectable>
+		<neverMultiSelect>true</neverMultiSelect>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<holdsRoof>true</holdsRoof>
+		<designationCategory>GrimworldCategory</designationCategory>
+		<staticSunShadowHeight>1.0</staticSunShadowHeight>
+		<blockLight>true</blockLight>
+		<canOverlapZones>false</canOverlapZones>
+		<fertility>0</fertility>
+		<building>
+			<isInert>true</isInert>
+			<ai_chillDestination>false</ai_chillDestination>
+			<blueprintGraphicData>
+				<texPath>Things/Buildings/Defenses/Bunkers/BunkerWall_Blueprint_Atlas</texPath>
+			</blueprintGraphicData>
+		</building>
+		<comps>
+        </comps>
+		<damageMultipliers>
+          <li>
+            <damageDef>Bomb</damageDef>
+            <multiplier>2</multiplier>
+          </li>
+          <li>
+            <damageDef>Thump</damageDef>
+            <multiplier>2</multiplier>
+          </li>
+        </damageMultipliers>
+		<researchPrerequisites>
+			<li>GW_AM_BasicDefence</li>
+		</researchPrerequisites>
+	</ThingDef>
+	
+	<!-- Bunker Embrasure Wall -->
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>BunkerEmbrasureWall</defName>
+		<label>Bunker embrasure wall</label>
+		<description>An impassable, defensive bunker embrasure wall that can provide extra protection and allows a combatant to shoot through it. Capable of holding up a roof.</description>
+		<thingClass>Building</thingClass>
+		<category>Building</category>
+		<graphicData>
+			<texPath>Things/Buildings/Defenses/Bunkers/BunkerWall_Embrasure_Atlas</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<linkType>CornerFiller</linkType>
+			<linkFlags>
+				<li>Wall</li>
+				<li>Rock</li>
+			</linkFlags>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+				<edgeTop>Damage/Edge</edgeTop>
+				<edgeBot>Damage/Edge</edgeBot>
+				<edgeLeft>Damage/Edge</edgeLeft>
+				<edgeRight>Damage/Edge</edgeRight>
+			</damageData>
+		</graphicData>
+		<uiIconPath>Things/Buildings/Defenses/Bunkers/BunkerWallEmbrasure_UI</uiIconPath>
+		<statBases>
+			<MaxHitPoints>500</MaxHitPoints>
+			<WorkToBuild>1500</WorkToBuild>
+			<Flammability>0.1</Flammability>
+		</statBases>
+		<stuffCategories>
+            <li>Metallic</li>
+            <li>Stony</li>
+        </stuffCategories>
+		<costStuffCount>5</costStuffCount>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>Impassable</passability>
+		<castEdgeShadows>true</castEdgeShadows>
+		<coversFloor>true</coversFloor>
+		<fillPercent>0.7</fillPercent>
+		<placingDraggableDimensions>1</placingDraggableDimensions>
+		<tickerType>Never</tickerType>
+		<rotatable>false</rotatable>
+		<selectable>true</selectable>
+		<neverMultiSelect>true</neverMultiSelect>
+		<useStuffTerrainAffordance>true</useStuffTerrainAffordance>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<holdsRoof>true</holdsRoof>
+		<designationCategory>GrimworldCategory</designationCategory>
+		<staticSunShadowHeight>1.0</staticSunShadowHeight>
+		<blockLight>false</blockLight>
+		<canOverlapZones>false</canOverlapZones>
+		<fertility>0</fertility>
+		<building>
+			<isInert>true</isInert>
+			<ai_chillDestination>false</ai_chillDestination>
+			<blueprintGraphicData>
+				<texPath>Things/Buildings/Defenses/Bunkers/BunkerWall_Blueprint_Atlas</texPath>
+			</blueprintGraphicData>
+		</building>
+		<comps>
+        </comps>
+		<damageMultipliers>
+          <li>
+            <damageDef>Bomb</damageDef>
+            <multiplier>2</multiplier>
+          </li>
+          <li>
+            <damageDef>Thump</damageDef>
+            <multiplier>2</multiplier>
+          </li>
+        </damageMultipliers>
+		<researchPrerequisites>
+			<li>GW_AM_BasicDefence</li>
+		</researchPrerequisites>
+	</ThingDef>
+	
+	<!-- Bunker Door -->
+	
+	<ThingDef ParentName="BuildingBase" Name="BunkerDoorBase" Abstract="True">
+      <thingClass>Building_Door</thingClass>
+      <category>Building</category>
+      <altitudeLayer>DoorMoveable</altitudeLayer>
+      <fillPercent>1</fillPercent>
+      <useHitPoints>true</useHitPoints>
+      <stuffCategories>
+        <li>Metallic</li>
+      </stuffCategories>
+      <statBases>
+        <MaxHitPoints>200</MaxHitPoints>
+        <Flammability>0.1</Flammability>
+      </statBases>
+      <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+      <selectable>true</selectable>
+      <tickerType>Normal</tickerType>
+      <rotatable>false</rotatable>
+      <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+      <useStuffTerrainAffordance>true</useStuffTerrainAffordance>
+      <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+      <designationCategory>Structure</designationCategory>
+      <uiOrder>2010</uiOrder>
+      <holdsRoof>true</holdsRoof>
+      <staticSunShadowHeight>1.0</staticSunShadowHeight>
+      <blockLight>true</blockLight>
+      <drawerType>RealtimeOnly</drawerType>
+      <building>
+        <isInert>true</isInert>
+        <canPlaceOverWall>true</canPlaceOverWall>
+        <soundDoorOpenPowered>Door_OpenPowered</soundDoorOpenPowered>
+        <soundDoorClosePowered>Door_ClosePowered</soundDoorClosePowered>
+        <soundDoorOpenManual>Door_OpenManual</soundDoorOpenManual>
+        <soundDoorCloseManual>Door_CloseManual</soundDoorCloseManual>
+        <blueprintClass>Blueprint_Door</blueprintClass>
+        <blueprintGraphicData>
+          <texPath>Things/Building/Door/Door_Blueprint</texPath>
+        </blueprintGraphicData>
+        <ai_chillDestination>false</ai_chillDestination>
+      <paintable>true</paintable>
+      </building>
+      <comps>
+        <li Class="CompProperties_Forbiddable">
+          <allowNonPlayer>true</allowNonPlayer>
+        </li>
+      </comps>
+      <placeWorkers>
+        <li>PlaceWorker_DoorLearnOpeningSpeed</li>
+      </placeWorkers>
+    </ThingDef>
+	
+	<ThingDef ParentName="BunkerDoorBase">
+      <defName>BunkerDoor</defName>
+      <label>Bunker door</label>
+      <description>A sturdy metallic bunker door.</description>
+      <statBases>
+        <WorkToBuild>850</WorkToBuild>
+      </statBases>
+      <graphicData>
+        <texPath>Things/Buildings/Defenses/Bunkers/BunkerDoor_Mover</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+        <damageData>
+          <enabled>false</enabled>
+        </damageData>
+      </graphicData>
+      <uiIconPath>Things/Buildings/Defenses/Bunkers/BunkerDoor_UI</uiIconPath>
+      <costStuffCount>25</costStuffCount>
+      <designationHotKey>Misc1</designationHotKey>
+    </ThingDef>
+	
+	<!-- Tank Traps -->
+	
+    <ThingDef parent="BuildingBase">
+        <defName>DefensiveTankTrapA</defName>
+        <label>Tank trap A</label>
+        <description>A metallic structure that was used to block tanks.</description>
+        <thingClass>Building</thingClass>
+        <category>Building</category>
+        <graphicData>
+            <drawSize>(1.1,1.1)</drawSize>
+            <texPath>Things/Buildings/Defenses/TrenchAlternative/TankTraps/Trench_TankTrap_Metalic</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shadowData>
+                <volume>(0.3, 0.5, 0.3)</volume>
+                <offset>(0,0,-0.23)</offset>
+            </shadowData>
+            <damageData>
+                <rect>(0.2,0.2,0.6,0.6)</rect>
+            </damageData>
+        </graphicData>
+        <designationCategory>GrimworldCategory</designationCategory>
+        <altitudeLayer>Building</altitudeLayer>
+        <passability>PassThroughOnly</passability>
+        <fillPercent>0.4</fillPercent>
+        <pathCost>75</pathCost>
+        <selectable>true</selectable>
+        <neverMultiSelect>true</neverMultiSelect>
+        <coversFloor>false</coversFloor>
+        <holdsRoof>false</holdsRoof>
+        <castEdgeShadows>true</castEdgeShadows>
+        <statBases>
+            <MaxHitPoints>500</MaxHitPoints>
+            <WorkToBuild>1000</WorkToBuild>
+            <Mass>10</Mass>
+            <Flammability>0</Flammability>
+            <Beauty>-12</Beauty>
+        </statBases>
+        <stuffCategories>
+            <li>Metallic</li>
+        </stuffCategories>
+        <researchPrerequisites>
+            <li>GW_AM_BasicDefence</li>
+        </researchPrerequisites>
+        <costStuffCount>20</costStuffCount>
+        <canOverlapZones>false</canOverlapZones>
+        <rotatable>false</rotatable>
+        <placingDraggableDimensions>1</placingDraggableDimensions>
+        <building>
+            <isInert>true</isInert>
+            <ai_chillDestination>false</ai_chillDestination>
+        </building>
+    </ThingDef>
+	
+	<ThingDef parent="BuildingBase">
+        <defName>DefensiveTankTrapB</defName>
+        <label>Tank trap B</label>
+        <description>A stony structure that was used to block tanks.</description>
+        <thingClass>Building</thingClass>
+        <category>Building</category>
+        <graphicData>
+            <drawSize>(1.1,1.1)</drawSize>
+            <texPath>Things/Buildings/Defenses/TrenchAlternative/TankTraps/Trench_TankTrap_Stony</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shadowData>
+                <volume>(0.3, 0.5, 0.3)</volume>
+                <offset>(0,0,-0.23)</offset>
+            </shadowData>
+            <damageData>
+                <rect>(0.2,0.2,0.6,0.6)</rect>
+            </damageData>
+        </graphicData>
+        <designationCategory>GrimworldCategory</designationCategory>
+        <altitudeLayer>Building</altitudeLayer>
+        <passability>PassThroughOnly</passability>
+        <fillPercent>0.4</fillPercent>
+        <pathCost>75</pathCost>
+        <selectable>true</selectable>
+        <neverMultiSelect>true</neverMultiSelect>
+        <coversFloor>false</coversFloor>
+        <holdsRoof>false</holdsRoof>
+        <castEdgeShadows>true</castEdgeShadows>
+        <statBases>
+            <MaxHitPoints>500</MaxHitPoints>
+            <WorkToBuild>1000</WorkToBuild>
+            <Mass>10</Mass>
+            <Flammability>0</Flammability>
+            <Beauty>-12</Beauty>
+        </statBases>
+        <stuffCategories>
+            <li>Stony</li>
+        </stuffCategories>
+        <researchPrerequisites>
+            <li>GW_AM_BasicDefence</li>
+        </researchPrerequisites>
+        <costStuffCount>20</costStuffCount>
+        <canOverlapZones>false</canOverlapZones>
+        <rotatable>false</rotatable>
+        <placingDraggableDimensions>1</placingDraggableDimensions>
+        <building>
+            <isInert>true</isInert>
+            <ai_chillDestination>false</ai_chillDestination>
+        </building>
+    </ThingDef>
+</Defs>

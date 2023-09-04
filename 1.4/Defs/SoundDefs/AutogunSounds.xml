@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<SoundDef>
+		<defName>GW_AM_Gun_Agripinaamkii</defName>
+		<context>MapOnly</context>
+		<eventNames />  
+		<maxSimultaneous>10</maxSimultaneous>  
+        <subSounds>
+          <li>
+            <grains>
+              <li Class="AudioGrain_Folder">
+                <clipPath>AutogunC</clipPath>
+              </li>
+            </grains>      
+            <volumeRange>40~40</volumeRange>      
+          </li>
+        </subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>GW_AM_Gun_OrlockAutogun</defName>
+		<context>MapOnly</context>
+		<eventNames />  
+		<maxSimultaneous>10</maxSimultaneous>  
+        <subSounds>
+          <li>
+            <grains>
+              <li Class="AudioGrain_Folder">
+                <clipPath>AutogunC</clipPath>
+              </li>
+            </grains>      
+            <volumeRange>30~30</volumeRange>      
+          </li>
+        </subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>GW_AM_Gun_Zarona</defName>
+		<context>MapOnly</context>
+		<eventNames />  
+		<maxSimultaneous>10</maxSimultaneous>  
+        <subSounds>
+          <li>
+            <grains>
+              <li Class="AudioGrain_Folder">
+                <clipPath>AutogunA</clipPath>
+              </li>
+            </grains>      
+            <volumeRange>35~35</volumeRange>      
+          </li>
+        </subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>GW_AM_Gun_Hiveworldautopistol</defName>
+		<context>MapOnly</context>
+		<eventNames />  
+		<maxSimultaneous>10</maxSimultaneous>  
+        <subSounds>
+          <li>
+            <grains>
+              <li Class="AudioGrain_Folder">
+                <clipPath>AutogunB</clipPath>
+              </li>
+            </grains>      
+            <volumeRange>35~35</volumeRange>      
+          </li>
+        </subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>GW_AM_Gun_MilitarumShotgun</defName>
+		<context>MapOnly</context>
+		<eventNames />  
+		<maxSimultaneous>10</maxSimultaneous>  
+        <subSounds>
+          <li>
+            <grains>
+              <li Class="AudioGrain_Folder">
+                <clipPath>ImperialShotgun</clipPath>
+              </li>
+            </grains>      
+            <volumeRange>40~40</volumeRange>      
+          </li>
+        </subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>GW_AM_Gun_MilitarumShotgunSawn</defName>
+		<context>MapOnly</context>
+		<eventNames />  
+		<maxSimultaneous>10</maxSimultaneous>  
+        <subSounds>
+          <li>
+            <grains>
+              <li Class="AudioGrain_Folder">
+                <clipPath>ImperialShotgun</clipPath>
+              </li>
+            </grains>      
+            <volumeRange>50~50</volumeRange>      
+          </li>
+        </subSounds>
+	</SoundDef>
+</Defs>

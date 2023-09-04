@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef ParentName="BenchBase">
+        <defName>HP_AM_MilitarumFabricationBench</defName>
+        <label>Militarum Workbench</label>
+        <description>A workbench equipped with tools required for producing complex Astartes weapons like Lasguns, along with various armors.</description>
+        <thingClass>Building_WorkTable</thingClass>
+        <altitudeLayer>Building</altitudeLayer>
+        <passability>PassThroughOnly</passability>
+        <pathCost>50</pathCost>
+        <statBases>
+            <MaxHitPoints>750</MaxHitPoints>
+            <WorkToBuild>5000</WorkToBuild>
+            <Flammability>1.0</Flammability>
+        </statBases>
+        <minifiedDef />
+        <thingCategories Inherit="false" />
+        <size>(5,2)</size>
+        <costList>
+            <Steel>400</Steel>
+            <ComponentIndustrial>8</ComponentIndustrial>
+        </costList>
+        <comps>
+            <li Class="CompProperties_AffectedByFacilities">
+                <linkableFacilities>
+                    <li>ToolCabinet</li>
+                </linkableFacilities>
+            </li>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerTrader</compClass>
+                <basePowerConsumption>250</basePowerConsumption>
+                <shortCircuitInRain>true</shortCircuitInRain>
+            </li>
+            <li Class="CompProperties_Flickable"/>
+            <li Class="CompProperties_Breakdownable"/>
+        </comps>
+        <recipes>
+            <li>Make_ComponentIndustrial</li>
+            <li>Make_ComponentSpacer</li>
+        </recipes>
+        <graphicData>
+            <texPath>Things/Building/Production/AS_Bench/AstraMilitarumFabBench</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>(7,4)</drawSize>
+            <damageData>
+                <cornerTL>Damage/Corner</cornerTL>
+                <cornerTR>Damage/Corner</cornerTR>
+                <cornerBL>Damage/Corner</cornerBL>
+                <cornerBR>Damage/Corner</cornerBR>
+            </damageData>
+        </graphicData>
+        <castEdgeShadows>true</castEdgeShadows>
+        <staticSunShadowHeight>0.20</staticSunShadowHeight>
+        <inspectorTabs>
+            <li>ITab_Bills</li>
+        </inspectorTabs>
+        <building>
+            <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+        </building>
+        <fillPercent>0.5</fillPercent>
+        <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+        <hasInteractionCell>true</hasInteractionCell>
+        <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+        <designationCategory>GrimworldCategory</designationCategory>
+        <uiOrder>0</uiOrder>
+        <surfaceType>Item</surfaceType>
+        <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+        <placeWorkers>
+            <li>PlaceWorker_ShowFacilitiesConnections</li>
+            <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+        </placeWorkers>
+        <researchPrerequisites>
+            <li>ODZ_40K_MilitarumFabricationBench</li>
+        </researchPrerequisites>
+    </ThingDef>
+</Defs>

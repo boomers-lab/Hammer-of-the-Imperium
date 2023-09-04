@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef Abstract="true" ParentName="BaseGunWithQuality" Name="HP_AM_SanctifiedLasgunBase">
+        <techLevel>Spacer</techLevel>
+	    <smeltable>False</smeltable>
+        <graphicData>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Interact_ChargeRifle</soundInteract>
+	    <relicChance>3</relicChance>
+        <statBases>
+	        <MarketValue>1200</MarketValue>
+        </statBases>
+        <thingSetMakerTags>
+            <li>RewardStandardQualitySuper</li>
+        </thingSetMakerTags>
+        <tradeTags>
+            <li>ExoticMisc</li>
+            <li>Artifact</li>
+            <li>HPRanged</li>
+        </tradeTags>
+    </ThingDef>
+
+            <!-- Sanctified Kantrael MG -->
+
+    <ThingDef ParentName="HP_AM_SanctifiedLasgunBase">
+        <defName>GW_AM_Gun_Kantraelsanctified</defName>
+        <label>Sanctified Kantrael MG</label>
+        <description>A staple of the Cadian Shock Troopers and by extension the militarum at large. This particular weapon has been sanctified, wrapped in holy scripture and affixed with a purity seal. It seems it must have once belonged to someone of great importance and as such, is much revered by the Ministorum.</description>
+        <graphicData>
+            <texPath>Weapons/Sanctified Kantrael MG</texPath>
+        </graphicData>
+        <statBases>
+            <Mass>3.8</Mass>
+            <AccuracyTouch>0.65</AccuracyTouch>
+            <AccuracyShort>0.80</AccuracyShort>
+            <AccuracyMedium>0.90</AccuracyMedium>
+            <AccuracyLong>0.85</AccuracyLong>
+            <RangedWeapon_Cooldown>1.50</RangedWeapon_Cooldown>
+        </statBases>
+        <weaponClasses>
+            <li>LongShots</li>
+        </weaponClasses>
+        <weaponTags>
+            <li>SpacerGun</li>
+        </weaponTags>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>VWEL_Bullet_Lasbolt</defaultProjectile>
+                <warmupTime>0.90</warmupTime>
+                <range>40.0</range>
+                <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+                <burstShotCount>3</burstShotCount>
+                <soundCast>VWE_LaserShot_Rifle</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>12</muzzleFlashScale>
+            </li>
+        </verbs>
+        <tools>
+            <li>
+                <label>stock</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+            <li>
+                <label>barrel</label>
+                <capacities>
+                    <li>Blunt</li>
+                    <li>Poke</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+        </tools>
+    </ThingDef>
+  
+            <!-- Sanctified MK4 Lascarbine -->
+
+    <ThingDef ParentName="HP_AM_SanctifiedLasgunBase">
+        <defName>GW_AM_Gun_Lascarbinefoursanctified</defName>
+        <label>Sanctified MK4 lascarbine</label>
+        <description>The Mk4 lascarbine is the standard variant for the Catachan Jungle Fighters. This particular weapon has been sanctified, wrapped in holy scripture and affixed with a purity seal. It seems it must have once belonged to someone of great importance and as such, is much revered by the Ministorum.</description>
+        <graphicData>
+            <texPath>Weapons/Sanctified MK4 Lascarbine</texPath>
+        </graphicData>
+        <statBases>
+            <Mass>3.4</Mass>
+            <AccuracyTouch>0.60</AccuracyTouch>
+            <AccuracyShort>0.85</AccuracyShort>
+            <AccuracyMedium>0.70</AccuracyMedium>
+            <AccuracyLong>0.65</AccuracyLong>
+            <RangedWeapon_Cooldown>1.15</RangedWeapon_Cooldown>
+        </statBases>
+        <weaponClasses>
+            <li>LongShots</li>
+        </weaponClasses>
+        <weaponTags>
+            <li>SpacerGun</li>
+        </weaponTags>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>VWEL_Bullet_Lasbolt</defaultProjectile>
+                <warmupTime>0.80</warmupTime>
+                <range>30.0</range>
+                <ticksBetweenBurstShots>12</ticksBetweenBurstShots>
+                <burstShotCount>2</burstShotCount>
+                <soundCast>VWE_LaserShot_Rifle</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>12</muzzleFlashScale>
+            </li>
+        </verbs>
+        <tools>
+            <li>
+                <label>stock</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+            <li>
+                <label>barrel</label>
+                <capacities>
+                    <li>Blunt</li>
+                    <li>Poke</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+        </tools>
+    </ThingDef>
+  
+            <!-- Sanctified Voss MKI -->
+
+    <ThingDef ParentName="HP_AM_SanctifiedLasgunBase">
+        <defName>GW_AM_Gun_VossPatternsanctified</defName>
+        <label>Sanctified Voss MKI</label>
+        <description>The Voss pattern is the standard variant for the Armageddon Steel Legion. This particular weapon has been sanctified, wrapped in holy scripture and affixed with a purity seal. It seems it must have once belonged to someone of great importance and as such, is much revered by the Ministorum.</description>
+        <graphicData>
+            <texPath>Weapons/Sanctified Voss MKI</texPath>
+        </graphicData>
+        <statBases>
+            <Mass>3.2</Mass>
+            <AccuracyTouch>0.55</AccuracyTouch>
+            <AccuracyShort>0.85</AccuracyShort>
+            <AccuracyMedium>0.70</AccuracyMedium>
+            <AccuracyLong>0.65</AccuracyLong>
+            <RangedWeapon_Cooldown>1.40</RangedWeapon_Cooldown>
+        </statBases>
+        <weaponClasses>
+            <li>LongShots</li>
+        </weaponClasses>
+        <weaponTags>
+            <li>SpacerGun</li>
+        </weaponTags>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>VWEL_Bullet_Lasbolt</defaultProjectile>
+                <warmupTime>1.40</warmupTime>
+                <range>30.0</range>
+                <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+                <burstShotCount>5</burstShotCount>
+                <soundCast>GW_AM_Gun_VossPattern</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>12</muzzleFlashScale>
+            </li>
+        </verbs>
+        <tools>
+            <li>
+                <label>stock</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+            <li>
+                <label>barrel</label>
+                <capacities>
+                    <li>Blunt</li>
+                    <li>Poke</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+        </tools>
+    </ThingDef>
+</Defs>

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef Abstract="true" ParentName="ApparelMakeableBase" Name="GW_AM_OnSkinBase">
+        <graphicData>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+        </graphicData>
+        <stuffCategories>
+            <li>Fabric</li>
+        </stuffCategories>
+        <thingCategories>
+            <li>Apparel</li>
+        </thingCategories>
+        <tradeTags>
+            <li>HPOnSkin</li>
+        </tradeTags>
+        <statBases>
+            <Mass>0.3</Mass>
+            <EquipDelay>1.5</EquipDelay>
+        </statBases>
+        <apparel>
+            <useWornGraphicMask>true</useWornGraphicMask>		
+            <countsAsClothingForNudity>false</countsAsClothingForNudity>
+            <bodyPartGroups>
+                <li>Torso</li>
+                <li>Legs</li>
+                <li>Shoulders</li>
+                <li>Arms</li>
+            </bodyPartGroups>
+            <layers>
+                <li>OnSkin</li>
+            </layers>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+        </apparel>
+    </ThingDef>
+
+            <!-- Tempestus Scions Fatigues -->
+
+    <ThingDef ParentName="GW_AM_OnSkinBase">
+        <defName>ODZ_40k_IM_TempestusScion_Fatigues</defName>
+        <description>Hardened combat jump suit worn by the Tempestus Scions.</description>
+        <label>Tempestus Scion fatigues</label>
+        <recipeMaker>
+            <researchPrerequisite>ODZ_40K_IM_TempestusScion</researchPrerequisite>
+        </recipeMaker>
+        <graphicData>
+            <texPath>Things/TempestusScions/Display/TempestusScionFatigues</texPath>
+        </graphicData>
+        <costStuffCount>85</costStuffCount>
+        <statBases>
+            <MaxHitPoints>150</MaxHitPoints>
+            <WorkToMake>4500</WorkToMake>
+            <StuffEffectMultiplierArmor>0.5</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.48</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.15</StuffEffectMultiplierInsulation_Heat>
+        </statBases>
+        <apparel>
+            <wornGraphicPath>Things/TempestusScions/Onskin/TempestusScionFatigues</wornGraphicPath>
+            <tags>
+                <li>40kTempestusScion</li>
+                <li>40kTempestusScionUniform</li>
+            </tags>
+        </apparel>
+    </ThingDef> 
+
+            <!-- Krieger Uniform -->
+
+    <ThingDef ParentName="GW_AM_OnSkinBase">
+        <defName>ODZ_40k_IG_DKOK_KriegUniform</defName>
+        <description>Mass produced uniform widely regarded as a symbol of death.</description>
+        <label>Death Korps uniform</label>
+        <recipeMaker>
+            <researchPrerequisite>ODZ_40K_IG_DKOK</researchPrerequisite>
+        </recipeMaker>
+        <graphicData>
+            <texPath>Things/DeathKorps/Display/DeathKorpsUniform</texPath>
+        </graphicData>
+        <costStuffCount>90</costStuffCount>
+        <statBases>
+            <MaxHitPoints>180</MaxHitPoints>
+            <WorkToMake>6000</WorkToMake>
+            <StuffEffectMultiplierArmor>0.4</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>1.50</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.25</StuffEffectMultiplierInsulation_Heat>
+        </statBases>
+        <apparel>
+            <wornGraphicPath>Things/DeathKorps/Onskin/DeathKorpsUniform</wornGraphicPath>
+            <tags>
+                <li>40kDeathKorps</li>
+                <li>40kDeathKorpsUniform</li>
+            </tags>
+        </apparel>
+    </ThingDef>
+
+            <!-- Krieger Uniform -->
+
+    <ThingDef ParentName="GW_AM_OnSkinBase">
+        <defName>GW_AM_SL_Uniform</defName>
+        <description>A uniform commonly worn by members of the Armageddon Steel Legion.</description>
+        <label>Steel Legion uniform</label>
+        <recipeMaker>
+            <researchPrerequisite>GW_AM_SteelLegion</researchPrerequisite>
+        </recipeMaker>
+        <graphicData>
+            <texPath>Things/SteelLegion/SkinOutfit/SteelLegion</texPath>
+        </graphicData>
+        <costStuffCount>90</costStuffCount>
+        <statBases>
+            <MaxHitPoints>180</MaxHitPoints>
+            <WorkToMake>6000</WorkToMake>
+            <StuffEffectMultiplierArmor>0.4</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>1.50</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.25</StuffEffectMultiplierInsulation_Heat>
+        </statBases>
+        <apparel>
+            <wornGraphicPath>Things/SteelLegion/SkinOutfit/SteelLegion</wornGraphicPath>
+            <tags>
+                <li>40kSteelLegion</li>
+                <li>40kSteelLegionUniform</li>
+            </tags>
+        </apparel>
+    </ThingDef>
+
+            <!-- Cadian Fatigues -->
+
+    <ThingDef ParentName="GW_AM_OnSkinBase">
+        <defName>ODZ_40k_IG_Cadian_Fatigues</defName>
+        <description>Mass produced combat fatigues issued to the Cadian regimentum.</description>
+        <label>Cadian fatigues</label>
+        <recipeMaker>
+            <researchPrerequisite>ODZ_40K_IG_Cadian</researchPrerequisite>
+        </recipeMaker>
+        <graphicData>
+            <texPath>Things/Cadian/Display/CadianFatigues</texPath>
+        </graphicData>
+        <costStuffCount>80</costStuffCount>
+        <statBases>
+            <MaxHitPoints>120</MaxHitPoints>
+            <WorkToMake>4000</WorkToMake>
+            <StuffEffectMultiplierArmor>0.4</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.50</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.25</StuffEffectMultiplierInsulation_Heat>
+        </statBases>
+        <apparel>
+            <wornGraphicPath>Things/Cadian/Onskin/CadianFatigues</wornGraphicPath>
+            <tags>
+                <li>40kCadianGuard</li>
+                <li>40kCadianUniform</li>
+            </tags>
+        </apparel>
+    </ThingDef>
+
+            <!-- Catachan -->
+
+    <ThingDef ParentName="GW_AM_OnSkinBase">
+        <defName>GW_AM_CatachanFatigues</defName>
+        <description>Catachan fatigues that allows for easy movement and protects the wearer from jungle heats.</description>
+        <label>Catachan fatigues</label>
+        <recipeMaker>
+            <researchPrerequisite>GW_AM_Catachan</researchPrerequisite>
+        </recipeMaker>
+        <graphicData>
+            <texPath>Things/Catachan/Display/CatachanSkin</texPath>
+        </graphicData>
+        <costStuffCount>70</costStuffCount>
+        <statBases>
+            <MaxHitPoints>180</MaxHitPoints>
+            <WorkToMake>6000</WorkToMake>
+            <StuffEffectMultiplierArmor>0.3</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.25</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>1.50</StuffEffectMultiplierInsulation_Heat>
+        </statBases>
+        <equippedStatOffsets>
+            <MoveSpeed>0.1</MoveSpeed>
+        </equippedStatOffsets>
+        <apparel>
+            <wornGraphicPath>Things/Catachan/CatachanSkin/CatachanSkin</wornGraphicPath>
+            <tags>
+                <li>40kCatachan</li>
+                <li>40kCatachanFatigues</li>
+            </tags>
+        </apparel>
+    </ThingDef>
+</Defs>

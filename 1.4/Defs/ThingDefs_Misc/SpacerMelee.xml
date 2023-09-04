@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef Abstract="true" Name="GW_AM_PowerSwordBase" ParentName="BaseMeleeWeapon_Sharp_Quality">
+        <possessionCount>1</possessionCount>
+        <description>Power swords are one of the preeminent types of power weapons. When its power cell is activated, the blade becomes sheathed in a lethal haze of a disruptive energy field. This field allows the blade to easily rip through armor and flesh alike.</description>
+        <graphicData>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+        </graphicData>
+        <uiIconScale>1.2</uiIconScale>
+        <techLevel>Spacer</techLevel>
+        <thingSetMakerTags>
+			<li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+        <costStuffCount>50</costStuffCount>
+        <weaponTags>
+            <li>SpacerMeleeDecent</li>
+        </weaponTags>
+        <statBases>
+            <WorkToMake>32000</WorkToMake>
+            <Mass>3</Mass>
+        </statBases>
+        <tradeTags>
+            <li>HPMelee</li>
+        </tradeTags>
+        <relicChance>2</relicChance>
+        <equippedAngleOffset>-65</equippedAngleOffset>
+        <tools>
+            <li>
+                <label>handle</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>14</power>
+                <cooldownTime>1.6</cooldownTime>
+            </li>
+            <li>
+                <label>point</label>
+                <capacities>
+                    <li>Stab</li>
+                </capacities>
+                <power>30</power>
+                <cooldownTime>2</cooldownTime>
+				<armorPenetration>1.0</armorPenetration>
+            </li>
+            <li>
+                <label>edge</label>
+                <capacities>
+                    <li>Cut</li>
+                </capacities>
+                <power>30</power>
+                <cooldownTime>2</cooldownTime>
+				<armorPenetration>1.0</armorPenetration>
+            </li>
+        </tools>
+        <recipeMaker>
+            <researchPrerequisite>ODZ_40K_AstraMilitatum_SpacerMelee</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>10</Crafting>
+            </skillRequirements>
+            <recipeUsers Inherit="false">
+                <li>HP_AM_MilitarumFabricationBench</li>
+            </recipeUsers>
+            <displayPriority>400</displayPriority>
+        </recipeMaker>
+	    <costList>
+            <Plasteel>60</Plasteel>
+	        <Steel>60</Steel>
+            <ComponentSpacer>2</ComponentSpacer>
+        </costList>
+    </ThingDef>
+  
+  <!-- ====================== Power Sword ===================== -->
+  
+    <ThingDef ParentName="GW_AM_PowerSwordBase">
+        <defName>GW_AM_MeleeWeapon_PowerSword</defName>
+        <label>Power sword</label>
+        <graphicData>
+            <texPath>Weapons/Power Sword</texPath>
+        </graphicData>
+    </ThingDef>
+	
+	 <!-- ====================== Power Sword Crossguard ===================== -->
+  
+    <ThingDef ParentName="GW_AM_PowerSwordBase">
+        <defName>GW_AM_MeleeWeapon_PowerSwordtwo</defName>
+        <label>Crossguard power sword</label>
+        <graphicData>
+            <texPath>Weapons/Power Sword 2</texPath>
+        </graphicData>
+    </ThingDef>
+
+<!-- ====================== Power Fist ===================== -->
+  
+    <ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
+        <defName>GW_AM_MeleeWeapon_PowerFist</defName>
+        <label>Power fist</label>
+        <description>A power fist is large and slow in combat, and so the bearer must be willing to risk the blows of his enemy before he can strike back. However, a power fFist vastly augments a user's strength, much as power armour does due to the power provided its mechanical servos.</description>
+        <possessionCount>1</possessionCount>
+        <graphicData>
+            <texPath>Weapons/Power Fist</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <uiIconScale>1.2</uiIconScale>
+        <techLevel>Spacer</techLevel>
+        <costStuffCount>50</costStuffCount>
+        <statBases>
+            <WorkToMake>36000</WorkToMake>
+            <Mass>4</Mass>
+        </statBases>
+        <equippedAngleOffset>-65</equippedAngleOffset>
+        <recipeMaker>
+            <researchPrerequisite>ODZ_40K_AstraMilitatum_SpacerMelee</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>10</Crafting>
+            </skillRequirements>
+            <recipeUsers Inherit="false">
+                <li>HP_AM_MilitarumFabricationBench</li>
+            </recipeUsers>
+            <displayPriority>400</displayPriority>
+        </recipeMaker>
+        <costList>
+            <Plasteel>80</Plasteel>
+            <Steel>60</Steel>
+            <ComponentSpacer>1</ComponentSpacer>
+        </costList>
+        <weaponTags>
+            <li>SpacerMeleeDecent</li>
+        </weaponTags>
+        <weaponClasses>
+            <li>Melee</li>
+        </weaponClasses>
+        <tools>
+            <li>
+                <label>Fist</label>
+                <labelUsedInLogging>false</labelUsedInLogging>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>42</power>
+                <cooldownTime>3</cooldownTime>
+            </li>
+        </tools>
+    </ThingDef>
+</Defs>

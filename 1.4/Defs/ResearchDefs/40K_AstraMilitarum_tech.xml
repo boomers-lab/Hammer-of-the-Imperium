@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ResearchProjectDef>
+        <defName>ODZ_40K_MilitarumFabricationBench</defName>
+        <label>Militarum Fabrication Bench</label>
+        <description>Militarum workstation which allows you to craft various Imperial Guard armors and weapons from Warhammer 40.000 universe.</description>
+        <tab>ODZ_40K_ImperiumOfMan</tab>
+        <prerequisites>
+            <li>Electricity</li>
+        </prerequisites>
+		<techLevel>Industrial</techLevel>
+		<baseCost>1800</baseCost>
+		<researchViewX>0.00</researchViewX>
+		<researchViewY>2.00</researchViewY>
+	</ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>ODZ_40K_AstraMilitatum_IndustrialMelee</defName>
+        <label>Astra Militarum industrial melee</label>
+        <description>Astra Militarum industrial melee weapons.</description>
+        <baseCost>1500</baseCost>
+        <techLevel>Industrial</techLevel>
+        <tab>ODZ_40K_ImperiumOfMan</tab>
+        <researchViewX>0</researchViewX>
+        <researchViewY>1</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>ODZ_40K_AstraMilitatum_SpacerMelee</defName>
+        <label>Astra Militarum spacer melee</label>
+        <description>Astra Militarum high tech melee weapons.</description>
+        <prerequisites>
+            <li>ODZ_40K_AstraMilitatum_IndustrialMelee</li>
+            <li>ODZ_40K_MilitarumFabricationBench</li>
+        </prerequisites>
+        <baseCost>3000</baseCost>
+        <techLevel>Spacer</techLevel>
+        <tab>ODZ_40K_ImperiumOfMan</tab>
+        <researchViewX>1</researchViewX>
+        <researchViewY>1</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>ODZ_40K_Autoguns</defName>
+        <label>Autoguns</label>
+        <description>Unlocks various Autoguns, from machine guns to pistols.</description>
+        <baseCost>1800</baseCost>
+        <techLevel>Industrial</techLevel>
+        <tab>ODZ_40K_ImperiumOfMan</tab>
+        <researchViewX>0</researchViewX>
+        <researchViewY>0</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>ODZ_40K_Lasguns</defName>
+        <label>Lasguns</label>
+        <description>Unlocks various Lasguns, from machine guns to pistols.</description>
+        <prerequisites>
+            <li>ODZ_40K_MilitarumFabricationBench</li>
+        </prerequisites>
+        <baseCost>1800</baseCost>
+        <techLevel>Spacer</techLevel>
+        <tab>ODZ_40K_ImperiumOfMan</tab>
+        <researchViewX>1</researchViewX>
+        <researchViewY>0</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>ODZ_40K_Plasma</defName>
+        <label>Plasma/Melta weapons</label>
+        <description>Unlocks the Astra Militarum plasma rifle and meltagun.</description>
+        <prerequisites>
+            <li>ODZ_40K_Lasguns</li>
+        </prerequisites>
+        <baseCost>5000</baseCost>
+        <techLevel>Spacer</techLevel>
+        <tab>ODZ_40K_ImperiumOfMan</tab>
+        <researchViewX>2</researchViewX>
+        <researchViewY>0</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>ODZ_40K_IG_Cadian</defName>
+        <label>Cadian</label>
+        <description>Equipment belonging to the Astra Militarum Regimentum of Cadia.</description>
+        <prerequisites>
+            <li>ODZ_40K_MilitarumFabricationBench</li>
+        </prerequisites>
+        <baseCost>1250</baseCost>
+        <techLevel>Industrial</techLevel>
+        <tab>ODZ_40K_ImperiumOfMan</tab>
+        <researchViewX>1</researchViewX>
+        <researchViewY>2</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>ODZ_40K_IM_TempestusScion</defName>
+        <label>Tempestus Scions</label>
+        <description>Equipment belonging to the Tempestus Scions.</description>
+        <prerequisites>
+            <li>ODZ_40K_MilitarumFabricationBench</li>
+        </prerequisites>
+        <baseCost>1350</baseCost>
+        <techLevel>Spacer</techLevel>
+        <tab>ODZ_40K_ImperiumOfMan</tab>
+        <researchViewX>1</researchViewX>
+        <researchViewY>3</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>ODZ_40K_IG_DKOK</defName>
+        <label>Death Korps of Krieg</label>
+        <description>Equipment belonging to the Astra Militarum Regiment of Krieg.</description>
+        <prerequisites>
+            <li>ODZ_40K_MilitarumFabricationBench</li>
+        </prerequisites>
+        <baseCost>1250</baseCost>
+        <techLevel>Industrial</techLevel>
+        <tab>ODZ_40K_ImperiumOfMan</tab>
+        <researchViewX>1</researchViewX>
+        <researchViewY>4</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>GW_AM_Catachan</defName>
+        <label>Catachan</label>
+        <description>Equipment belonging to the Catachan.</description>
+        <prerequisites>
+            <li>ODZ_40K_MilitarumFabricationBench</li>
+        </prerequisites>
+        <baseCost>1250</baseCost>
+        <techLevel>Industrial</techLevel>
+        <tab>ODZ_40K_ImperiumOfMan</tab>
+        <researchViewX>2</researchViewX>
+        <researchViewY>4</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>GW_AM_SteelLegion</defName>
+        <label>Steel Legion</label>
+        <description>Equipment belonging to the Armageddon Steel Legion.</description>
+        <prerequisites>
+            <li>ODZ_40K_MilitarumFabricationBench</li>
+        </prerequisites>
+        <baseCost>1250</baseCost>
+        <techLevel>Industrial</techLevel>
+        <tab>ODZ_40K_ImperiumOfMan</tab>
+        <researchViewX>3</researchViewX>
+        <researchViewY>4</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>GW_AM_BasicDefence</defName>
+        <label>Basic defence structures</label>
+        <description>Allows for the construction of defensive trenches.</description>
+        <baseCost>1000</baseCost>
+        <techLevel>Industrial</techLevel>
+        <tab>ODZ_40K_ImperiumOfMan</tab>
+        <researchViewX>0</researchViewX>
+        <researchViewY>5</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>GW_AM_AdvancedDefence</defName>
+        <label>Advanced defence structures</label>
+        <description>Allows for the construction of the lascannon and heavy bolter bunkers.</description>
+        <prerequisites>
+            <li>GW_AM_BasicDefence</li>
+            <li>ODZ_40K_MilitarumFabricationBench</li>
+        </prerequisites>
+        <baseCost>2000</baseCost>
+        <techLevel>Spacer</techLevel>
+        <tab>ODZ_40K_ImperiumOfMan</tab>
+        <researchViewX>1</researchViewX>
+        <researchViewY>5</researchViewY>
+    </ResearchProjectDef>
+</Defs>

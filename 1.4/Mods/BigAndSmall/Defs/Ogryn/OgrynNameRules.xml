@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <RulePackDef>
+        <defName>GW_Namer_OgrynFemale</defName>
+        <rulePack>
+            <rulesStrings>
+                <li>r_name->[OgrynFirst_Female]</li>
+                <li>r_name->[OgrynFirst_Female] [OgrynLast]</li>
+            </rulesStrings>
+            <rulesFiles>
+                <li>OgrynFirst_Female->Names/Grimworld_OgrynFirst_Female</li>
+                <li>OgrynLast->Names/Grimworld_OgrynLast</li>
+            </rulesFiles>
+        </rulePack>
+    </RulePackDef>
+
+    <RulePackDef>
+        <defName>GW_Namer_Ogryn</defName>
+        <rulePack>
+            <rulesStrings>
+                <li>r_name->[OgrynFirst_Male]</li>
+                <li>r_name->[OgrynFirst_Male] [OgrynLast]</li>
+            </rulesStrings>
+            <rulesFiles>
+                <li>OgrynFirst_Male->Names/Grimworld_OgrynFirst_Male</li>
+                <li>OgrynLast->Names/Grimworld_OgrynLast</li>
+            </rulesFiles>
+        </rulePack>
+    </RulePackDef>
+</Defs>

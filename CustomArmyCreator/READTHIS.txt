@@ -1,0 +1,9 @@
+Ok so uhhhhh not sure were to start! I create all my assets in Raster, sorry Vector gang. If you are inexperianced and want a quick-color in method, use the blanks, sorry
+no kasrkin png, long story short; I changed method of the mod and it was originally going to be a group project and we planned an attachment system but I left that behind, so
+you will have to use the CSP files to create a kasrkin with pouches yourself, Im too busy to spend more time on a mod thats technically finished.
+
+
+TO COLOR IN PNGS aka the BLANKS FOLDER
+No joke this shit works like a coloring book, you cannot color over black lines with this method, use literally any art program you have at your disposal and create a NEW LAYER,
+set it to MULTIPLY, color away. Like I mentioned, its a coloring book method, aslong as the PNG is white before hand, multiply will just color it in, shading included. Add
+your imperial symbols on afterwards and you should be good to roll. Enjoy! 
