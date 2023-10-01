@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
     <ThingDef Abstract="true" ParentName="HatMakeableBase" Name="GW_AM_HatBase">
+        <techLevel>Industrial</techLevel>
         <graphicData>
             <graphicClass>Graphic_Single</graphicClass>
             <shaderType>CutoutComplex</shaderType>
@@ -17,10 +18,15 @@
         </recipeMaker>
         <tradeTags>
             <li>HPHat</li>
+            <li>GW_AM_Hat</li>
         </tradeTags>
         <apparel>
+            <developmentalStageFilter>Child, Adult</developmentalStageFilter>
             <useWornGraphicMask>true</useWornGraphicMask>	
             <countsAsClothingForNudity>false</countsAsClothingForNudity>
+            <layers>
+                <li>Overhead</li>
+            </layers>
             <defaultOutfitTags>
                 <li>Soldier</li>
             </defaultOutfitTags>
@@ -41,9 +47,6 @@
             <EquipDelay>0.8</EquipDelay>
         </statBases>
         <apparel>
-            <layers>
-                <li>Overhead</li>
-            </layers>
             <bodyPartGroups>
                 <li>UpperHead</li>
             </bodyPartGroups>
@@ -178,6 +181,214 @@
         </apparel>
     </ThingDef>   
 
+        <!-- Mordian Hat -->
+
+    <ThingDef ParentName="GW_AM_Hat_CapBase">
+        <defName>GW_AM_MordianHat</defName>
+        <label>mordian hat</label>
+        <description>A Mordian hat.</description>
+        <graphicData>
+            <texPath>Things/Mordian/Headgear/MordianHat_south</texPath>
+        </graphicData>
+        <costStuffCount>10</costStuffCount>
+        <statBases>
+            <WorkToMake>1000</WorkToMake>
+            <StuffEffectMultiplierInsulation_Cold>0.1</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.25</StuffEffectMultiplierInsulation_Heat>
+        </statBases>
+        <recipeMaker>
+            <researchPrerequisite>GW_AM_Mordian</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>5</Crafting>
+            </skillRequirements>	  
+        </recipeMaker>
+        <apparel>
+            <wornGraphicPath>Things/Mordian/Headgear/MordianHat</wornGraphicPath>
+            <tags>
+                <li>40kMordian</li>
+                <li>40kMordianHat</li>
+            </tags>
+        </apparel>
+    </ThingDef> 
+
+            <!-- Eyes -->
+    <ThingDef Abstract="true" ParentName="GW_AM_HatBase" Name="GW_AM_Hat_EyesBase">
+        <generateCommonality>0.25</generateCommonality>
+        <statBases>
+			<MaxHitPoints>75</MaxHitPoints>
+			<WorkToMake>1000</WorkToMake>
+			<Mass>0.1</Mass>
+			<Insulation_Cold>1</Insulation_Cold>
+			<Insulation_Heat>0</Insulation_Heat>
+			<EquipDelay>1</EquipDelay>
+		</statBases>
+        <equippedStatOffsets>
+            <ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>  
+        </equippedStatOffsets>
+        <apparel>
+            <layers Inherit="False">
+                <li>EyeCover</li>
+            </layers>
+            <bodyPartGroups>
+				<li>Eyes</li>
+			</bodyPartGroups>
+            <canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
+        </apparel>
+    </ThingDef>
+
+    <ThingDef ParentName="GW_AM_Hat_EyesBase">
+		<defName>GW_AM_TDR_Goggles</defName>
+		<label>Desert Goggles</label>
+		<description>ToDo.</description>
+		<graphicData>
+			<texPath>Things/Tallarn/Headgear/TDRGoggles_south</texPath>
+		</graphicData>
+		<costList>
+			<Steel>10</Steel>
+		</costList>
+        <statBases>
+			<ArmorRating_Sharp>0.5</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.5</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.35</ArmorRating_Heat>
+		</statBases>
+		<recipeMaker>
+			<researchPrerequisite>GW_AM_TallarnDesertRaiders</researchPrerequisite>
+		</recipeMaker>
+		<apparel>
+			<wornGraphicPath>Things/Tallarn/Headgear/TDRGoggles</wornGraphicPath>
+			<hatRenderedFrontOfFace>true</hatRenderedFrontOfFace>
+			<tags>
+				<li>40kTallarnDesertRaiders</li>
+                <li>40kTallarnDesertRaidersGoggles</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+
+            <!-- Full Head -->
+
+    <ThingDef Abstract="true" ParentName="GW_AM_HatBase" Name="GW_AM_Hat_FullWrapBase">
+        <costStuffCount>30</costStuffCount>
+        <stuffCategories>
+			<li>Fabric</li>
+		</stuffCategories>
+        <statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<WorkToMake>2200</WorkToMake>
+			<Mass>0.2</Mass>
+			<StuffEffectMultiplierInsulation_Cold>0.25</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.2</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>2</EquipDelay>
+		</statBases>
+        <apparel>
+            <countsAsClothingForNudity>true</countsAsClothingForNudity>
+            <bodyPartGroups>
+				<li>FullHead</li>
+				<li>Neck</li>
+            </bodyPartGroups>
+            <canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
+            <canBeGeneratedToSatisfyToxicEnvironmentResistance>false</canBeGeneratedToSatisfyToxicEnvironmentResistance>
+        </apparel>
+        <colorGenerator Class="ColorGenerator_StandardApparel" />
+    </ThingDef>
+
+    <ThingDef ParentName="GW_AM_Hat_FullWrapBase">
+		<defName>GW_AM_TDR_GogglesHeadwrap</defName>
+		<label>Goggled Headwrap</label>
+		<description>ToDo.</description>
+		<graphicData>
+			<texPath>Things/Tallarn/Headgear/TDRGogglesHeadwrap_south</texPath>
+		</graphicData>
+		<costStuffCount>30</costStuffCount>
+		<costList>
+			<Steel>10</Steel>
+		</costList>
+        <statBases>
+			<StuffEffectMultiplierArmor>0.5</StuffEffectMultiplierArmor>
+		</statBases>
+		<recipeMaker>
+			<researchPrerequisite>GW_AM_TallarnDesertRaiders</researchPrerequisite>
+		</recipeMaker>
+		<apparel>
+			<wornGraphicPath>Things/Tallarn/Headgear/TDRGogglesHeadwrap</wornGraphicPath>
+			<tags>
+				<li>40kTallarnDesertRaiders</li>
+                <li>40kTallarnDesertRaidersHeadwrap</li>
+			</tags>
+			<forceEyesVisibleForRotations>
+				<li>1</li>
+				<li>2</li>
+				<li>3</li>
+			</forceEyesVisibleForRotations>
+		</apparel>
+
+		<colorGenerator Class="ColorGenerator_StandardApparel" />
+	</ThingDef>
+
+	<ThingDef ParentName="GW_AM_Hat_FullWrapBase">
+		<defName>GW_AM_TDR_OfficerHeadwrap</defName>
+		<label>Officer Headwrap</label>
+		<description>ToDo.</description>
+		<graphicData>
+			<texPath>Things/Tallarn/Headgear/TDROfficerHeadwrap_south</texPath>
+		</graphicData>
+		<costList>
+			<Steel>10</Steel>
+		</costList>
+        <statBases>
+			<StuffEffectMultiplierArmor>0.5</StuffEffectMultiplierArmor>
+		</statBases>
+        <equippedStatOffsets>
+            <SocialImpact>0.5</SocialImpact>
+        </equippedStatOffsets>	
+		<recipeMaker>
+			<researchPrerequisite>GW_AM_TallarnDesertRaiders</researchPrerequisite>
+		</recipeMaker>
+		<apparel>
+			<wornGraphicPath>Things/Tallarn/Headgear/TDROfficerHeadwrap</wornGraphicPath>
+			<tags>
+				<li>40kTallarnDesertRaiders</li>
+                <li>40kTallarnDesertRaidersOfficerHeadwrap</li>
+			</tags>
+			<forceEyesVisibleForRotations>
+				<li>1</li>
+				<li>2</li>
+				<li>3</li>
+			</forceEyesVisibleForRotations>
+		</apparel>
+	</ThingDef>
+
+	<ThingDef ParentName="GW_AM_Hat_FullWrapBase">
+		<defName>GW_AM_TDR_Headwrap</defName>
+		<label>Headwrap</label>
+		<description>ToDo.</description>
+		<graphicData>
+			<texPath>Things/Tallarn/Headgear/TDRHeadwrap_south</texPath>
+		</graphicData>
+		<statBases>
+			<WorkToMake>1800</WorkToMake>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Mass>0.1</Mass>
+			<StuffEffectMultiplierArmor>0.25</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.2</StuffEffectMultiplierInsulation_Cold>
+			<EquipDelay>1.5</EquipDelay>
+		</statBases>
+        <recipeMaker>
+			<researchPrerequisite>GW_AM_TallarnDesertRaiders</researchPrerequisite>
+		</recipeMaker>
+		<apparel>
+			<wornGraphicPath>Things/Tallarn/Headgear/TDRHeadwrap</wornGraphicPath>
+			<tags>
+				<li>40kTallarnDesertRaiders</li>
+                <li>40kTallarnDesertRaidersHeadwrap</li>
+			</tags>
+			<forceEyesVisibleForRotations>
+				<li>1</li>
+				<li>2</li>
+				<li>3</li>
+			</forceEyesVisibleForRotations>
+		</apparel>
+	</ThingDef>
+
             <!-- Gas Masks -->
 
     <ThingDef Abstract="true" ParentName="GW_AM_HatBase" Name="GW_AM_Hat_GasMaskBase">
@@ -196,8 +407,9 @@
             <ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>  
         </equippedStatOffsets>
         <apparel>
-            <layers>
-                <li>Overhead</li>
+            <countsAsClothingForNudity>true</countsAsClothingForNudity>
+            <layers Inherit="False">
+                <li>EyeCover</li>
             </layers>
             <bodyPartGroups>
 				<li>Eyes</li>
@@ -271,7 +483,7 @@
             <wornGraphicPath>Things/DeathKorps/Headgear/KriegGrenadierGasmask</wornGraphicPath>
             <tags>
                 <li>40kDeathKorps</li>
-                <li>40kDeathKorpsMask</li>		
+                <li>40kDeathKorpsGrenadierMask</li>		
             </tags>	  
         </apparel>
     </ThingDef>
@@ -338,7 +550,52 @@
             <wornGraphicPath>Things/TempestusScions/Headgear/OmniMask</wornGraphicPath>
             <tags>
                 <li>40kTempestusScion</li>
+                <li>40kTempestusScionMask</li>
             </tags>	  
         </apparel>
     </ThingDef>
+    
+        <!-- Vostoyan Firstborn Headgear -->
+
+    <ThingDef ParentName="GW_AM_HatBase">
+        <defName>GW_AM_VostoyanFirstbornHeadgear</defName>
+        <label>vostoyan firstborn headgear</label>
+        <description>A vostoyan firstborn helmet.</description>
+        <costStuffCount>20</costStuffCount>
+        <costList>
+            <ComponentIndustrial>2</ComponentIndustrial>
+        </costList>
+        <graphicData>
+            <texPath>Things/VostoyanFirstborn/Headgear/VostoyanFirstbornHeadgear_south</texPath>
+        </graphicData>
+        <statBases>
+            <Mass>0.15</Mass>
+            <WorkToMake>1000</WorkToMake>
+            <StuffEffectMultiplierArmor>0.3</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.5</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.2</StuffEffectMultiplierInsulation_Heat>
+            <EquipDelay>1.2</EquipDelay>
+        </statBases>
+        <recipeMaker>
+            <researchPrerequisite>GW_AM_VostoyanFirstborn</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>5</Crafting>
+            </skillRequirements>	  
+        </recipeMaker>
+        <equippedStatOffsets>
+            <ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>  
+        </equippedStatOffsets>
+        <apparel>
+            <countsAsClothingForNudity>true</countsAsClothingForNudity>
+            <wornGraphicPath>Things/VostoyanFirstborn/Headgear/VostoyanFirstbornHeadgear</wornGraphicPath>
+            <bodyPartGroups Inherit="False">
+				<li>FullHead</li>
+            </bodyPartGroups>
+            <tags>
+                <li>40kVostoyanFirstborn</li>
+                <li>40kVostoyanFirstbornHeadgear</li>
+            </tags>
+            <immuneToToxGasExposure>true</immuneToToxGasExposure>	
+        </apparel>
+    </ThingDef> 
 </Defs>

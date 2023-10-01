@@ -10,6 +10,7 @@
         <uiIconScale>1</uiIconScale>
         <tradeTags>
             <li>HPHelmet</li>
+            <li>GW_AM_Helmet</li>
         </tradeTags>
         <recipeMaker>
             <recipeUsers Inherit="false">

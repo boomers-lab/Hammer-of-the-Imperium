@@ -9,7 +9,8 @@
             <li>Apparel</li>
         </thingCategories>
         <tradeTags>
-            <li>HPOnSkin</li>
+            <li>HPOuter</li>
+            <li>GW_AM_Outer</li>
         </tradeTags>
         <statBases>
             <Mass>0.3</Mass>

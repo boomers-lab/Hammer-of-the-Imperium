@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--===== missile Projectile =====-->
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>GW_AM_Missile</defName>
+		<label>missile</label>
+		<graphicData>
+			<texPath>Things/Projectile/Rocket_Big</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<thingClass>Projectile_Explosive</thingClass>
+		<projectile>
+			<damageDef>Bomb</damageDef>
+			<explosionRadius>6.8</explosionRadius>
+			<speed>65</speed>
+		</projectile>
+	</ThingDef>
+	
+	<!--===== Bolt Pistol Projectile ===== -->
+	
+	<ThingDef ParentName="BaseBullet">
+        <defName>GW_AM_Bullet_BoltPistol</defName>
+        <label>bolt pistol round</label>
+        <graphicData>
+            <texPath>Things/Projectile/Bullet_Small</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>24</damageAmountBase>
+			<stoppingPower>0.7</stoppingPower>
+			<armorPenetrationBase>0.35</armorPenetrationBase>
+            <speed>50</speed>
+        </projectile>
+    </ThingDef>
+	
+	<!--===== Base Launcher =====-->
+	
+	<ThingDef Abstract="true" ParentName="BaseHumanMakeableGun" Name="GW_AM_LauncherBase">
+		<graphicData>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <recipeMaker>
+            <researchPrerequisite>ODZ_40K_Plasma</researchPrerequisite>
+            <displayPriority>420</displayPriority>
+        </recipeMaker>
+        <thingSetMakerTags>
+            <li>RewardStandardQualitySuper</li>
+        </thingSetMakerTags>
+        <tradeTags>
+            <li>SpacerGun</li>
+			<li>GW_AM_SpacerRanged</li>
+        </tradeTags>
+        <weaponTags>
+			<li>HPRanged</li>
+            <li>GW_AM_SpacerRanged</li>
+        </weaponTags>
+	</ThingDef>
+	
+	<!--===== Missile Launcher =====-->
+	
+	<ThingDef ParentName="GW_AM_LauncherBase">
+		<defName>GW_AM_Gun_MissileLauncher</defName>
+		<label>Missile Launcher</label>
+		<description>Big boom</description>
+		<graphicData>
+			<texPath>Weapons/MissileLauncher</texPath>
+		</graphicData>
+		<soundInteract>Interact_ChargeRifle</soundInteract>
+		<recipeMaker>
+			<recipeUsers Inherit="False">
+				<li>HP_AM_MilitarumFabricationBench</li>
+			</recipeUsers>
+			<skillRequirements>
+				<Crafting>10</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<Plasteel>75</Plasteel>
+			<Steel>250</Steel>
+			<ComponentIndustrial>15</ComponentIndustrial>
+		</costList>
+		<weaponClasses>
+			<li>RangedHeavy</li>
+		</weaponClasses>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>GW_AM_Missile</defaultProjectile>
+				<warmupTime>5</warmupTime>
+				<range>36</range>
+				<forcedMissRadius>1.4</forcedMissRadius>
+				<burstShotCount>1</burstShotCount>
+				<soundCast>InfernoCannon_Fire</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<muzzleFlashScale>14</muzzleFlashScale>
+			</li>
+		</verbs>
+		<statBases>
+			<WorkToMake>37000</WorkToMake>
+            <Mass>7.5</Mass>
+            <AccuracyTouch>0.55</AccuracyTouch>
+            <AccuracyShort>0.64</AccuracyShort>
+            <AccuracyMedium>0.76</AccuracyMedium>
+            <AccuracyLong>0.85</AccuracyLong>
+            <RangedWeapon_Cooldown>4.2</RangedWeapon_Cooldown>
+		</statBases>
+		<tools>
+            <li>
+                <label>barrel</label>
+                <capacities>
+					<li>Blunt</li>
+                </capacities>
+				<power>12</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+        </tools>
+	</ThingDef>
+	
+	<!--===== Bolt pistol base =====-->
+	
+	<ThingDef Abstract="true" ParentName="BaseHumanMakeableGun" Name="GW_AM_BolterBase">
+        <graphicData>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <recipeMaker>
+            <researchPrerequisite>ODZ_40K_Plasma</researchPrerequisite>
+            <displayPriority>420</displayPriority>
+        </recipeMaker>
+        <thingSetMakerTags>
+            <li>RewardStandardQualitySuper</li>
+        </thingSetMakerTags>
+        <tradeTags>
+            <li>GW_AM_SpacerRanged</li>
+        </tradeTags>
+        <weaponTags>
+            <li>HPRanged</li>
+        </weaponTags>
+    </ThingDef>
+	
+	<!--===== Bolt Pistol =====-->
+	
+	<ThingDef ParentName="GW_AM_AutogunBase">
+        <defName>GW_AM_Gun_BoltPistol</defName>
+        <label>Bolt Pistol</label>
+        <description>The Commissar's Special</description>
+        <possessionCount>1</possessionCount>
+        <graphicData>
+            <drawSize>1.1</drawSize>
+            <texPath>Weapons/bolt_pistol</texPath>
+        </graphicData>
+        <soundInteract>Interact_Autopistol</soundInteract>
+        <weaponClasses>
+            <li>RangedHeavy</li>
+        </weaponClasses>
+        <weaponTags>
+			<li>HPRanged</li>
+            <li>ShortShots</li>
+        </weaponTags>
+        <statBases>
+            <WorkToMake>14000</WorkToMake>
+            <Mass>2.8</Mass>
+            <AccuracyTouch>0.65</AccuracyTouch>
+            <AccuracyShort>0.70</AccuracyShort>
+            <AccuracyMedium>0.80</AccuracyMedium>
+            <AccuracyLong>0.75</AccuracyLong>
+            <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+        </statBases>
+        <costList>
+            <Steel>150</Steel>
+            <ComponentIndustrial>9</ComponentIndustrial>
+			<HP_Ceramite>5</HP_Ceramite>
+        </costList>
+        <recipeMaker>
+			<recipeUsers Inherit="False">
+				<li>HP_AM_MilitarumFabricationBench</li>
+			</recipeUsers>
+            <skillRequirements>
+                <Crafting>8</Crafting>
+            </skillRequirements>
+            <displayPriority>430</displayPriority>
+        </recipeMaker>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>GW_AM_Bullet_BoltPistol</defaultProjectile>
+                <warmupTime>0.9</warmupTime>
+                <range>28</range>
+				<burstShotCount>1</burstShotCount>
+                <soundCast>GW_AM_Bolt_Pistol_Sound</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+        <tools>
+            <li>
+                <label>grip</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>10</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+            <li>
+                <label>barrel</label>
+                <capacities>
+                    <li>Blunt</li>
+                    <li>Poke</li>
+                </capacities>
+                <power>10</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+        </tools>
+    </ThingDef>
+</Defs>

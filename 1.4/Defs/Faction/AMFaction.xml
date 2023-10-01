@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <RulePackDef>
+        <defName>GW_Namer_AstraMilitarum</defName>
+        <rulePack>
+            <rulesStrings>
+                <li>r_name->The Astra Militarum</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+
+    <ThingSetMakerDef ParentName="GW_ImperialLootBase">
+        <defName>GW_AM_RaidLootMaker</defName>
+        <root Class="ThingSetMaker_MarketValue">
+            <fixedParams>
+                <filter>
+                    <thingDefs>
+                        <li>FieldMedkit</li>
+                    </thingDefs>
+                </filter>
+            </fixedParams>
+        </root>
+    </ThingSetMakerDef>
+
+    <FactionDef ParentName="GW_ImperialFactionBase">
+        <defName>GW_AM_AstraMilitarum</defName>
+        <label>Astra Militarum</label>
+        <description>The Astra Militarum, also known as the Imperial Guard, are a massive fighting force in the Imperium of Man with a strong focus on defending humanity from the countless threats that endanger them. When a planet's defenses fail, they can often be found on the front lines, overwhelming enemies with their massive army.</description>
+        <configurationListOrderPriority>998</configurationListOrderPriority>
+        <leaderTitle>lord general</leaderTitle>
+        <techLevel>Spacer</techLevel>
+        <pawnSingular>imperial</pawnSingular>
+        <pawnsPlural>imperials</pawnsPlural>
+        <factionIconPath>UI/Icons/AstraMilitarum</factionIconPath>
+        <factionNameMaker>GW_Namer_AstraMilitarum</factionNameMaker>
+        <settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+        <baseTraderKinds>
+            <li>GW_AM_Trader</li>
+        </baseTraderKinds>
+        <caravanTraderKinds>
+            <li>GW_AM_Trader_Caravan</li>
+        </caravanTraderKinds>
+        <raidLootMaker>GW_AM_RaidLootMaker</raidLootMaker>
+        <settlementTexturePath>UI/Icons/AstraMilitarum</settlementTexturePath>
+        <xenotypeSet>
+            <xenotypeChances>
+                <Baseliner MayRequire="Ludeon.RimWorld.Biotech">0.86</Baseliner>
+                <GW_Ratling MayRequire="RedMattis.BetterPrerequisites">0.07</GW_Ratling>
+                <GW_Ogryn MayRequire="RedMattis.BetterPrerequisites">0.07</GW_Ogryn>
+            </xenotypeChances>
+        </xenotypeSet>
+        <maxPawnCostPerTotalPointsCurve>
+            <points>
+                <li>(0,35)</li>
+                <li>(70, 50)</li>
+                <li>(700, 100)</li>
+                <li>(1300, 150)</li>
+                <li>(100000, 10000)</li>
+            </points>
+        </maxPawnCostPerTotalPointsCurve>
+        <pawnGroupMakers>
+                <!-- Each regiment gets their own raid group. This is to prevent raids from looking strange due to a wide variety of regiments appearing together. -->
+            <!--Cadian-->
+            <li>
+                <kindDef>Combat</kindDef>
+                <commonality>1</commonality>
+                <options>
+                    <GW_AM_Cadian_RangedTier1>5</GW_AM_Cadian_RangedTier1>
+                    <GW_AM_Cadian_MeleeTier1>3</GW_AM_Cadian_MeleeTier1>
+                    <GW_AM_Cadian_RangedTier2>7</GW_AM_Cadian_RangedTier2>
+                    <GW_AM_Cadian_MeleeTier2>5</GW_AM_Cadian_MeleeTier2>
+                    <GW_AM_Cadian_RangedTier3>10</GW_AM_Cadian_RangedTier3>
+                    <GW_AM_Cadian_MeleeTier3>7</GW_AM_Cadian_MeleeTier3>
+                    <GW_AM_Cadian_Lieutenant>3</GW_AM_Cadian_Lieutenant>
+                    <GW_AM_LordGeneral>1</GW_AM_LordGeneral>
+                </options>
+            </li>
+
+            <!--Catachan-->
+            <li>
+                <kindDef>Combat</kindDef>
+                <commonality>1</commonality>
+                <options>
+                    <GW_AM_Catachan_RangedTier1>5</GW_AM_Catachan_RangedTier1>
+                    <GW_AM_Catachan_MeleeTier1>3</GW_AM_Catachan_MeleeTier1>
+                    <GW_AM_Catachan_RangedTier2>7</GW_AM_Catachan_RangedTier2>
+                    <GW_AM_Catachan_MeleeTier2>5</GW_AM_Catachan_MeleeTier2>
+                    <GW_AM_Catachan_RangedTier3>10</GW_AM_Catachan_RangedTier3>
+                    <GW_AM_Catachan_MeleeTier3>10</GW_AM_Catachan_MeleeTier3>
+                    <GW_AM_LordGeneral>1</GW_AM_LordGeneral>
+                </options>
+            </li>
+
+            <!--Death Korps-->
+            <li>
+                <kindDef>Combat</kindDef>
+                <commonality>1</commonality>
+                <options>
+                    <GW_AM_DeathKorps_RangedTier1>5</GW_AM_DeathKorps_RangedTier1>
+                    <GW_AM_DeathKorps_MeleeTier1>3</GW_AM_DeathKorps_MeleeTier1>
+                    <GW_AM_DeathKorps_RangedTier2>7</GW_AM_DeathKorps_RangedTier2>
+                    <GW_AM_DeathKorps_MeleeTier2>5</GW_AM_DeathKorps_MeleeTier2>
+                    <GW_AM_DeathKorps_RangedTier3>10</GW_AM_DeathKorps_RangedTier3>
+                    <GW_AM_DeathKorps_MeleeTier3>7</GW_AM_DeathKorps_MeleeTier3>
+                    <GW_AM_DeathKorps_Grenadier>3</GW_AM_DeathKorps_Grenadier>
+                    <GW_AM_LordGeneral>1</GW_AM_LordGeneral>
+                </options>
+            </li>
+
+            <!--Steel Legion-->
+            <li>
+                <kindDef>Combat</kindDef>
+                <commonality>1</commonality>
+                <options>
+                    <GW_AM_SteelLegion_RangedTier1>5</GW_AM_SteelLegion_RangedTier1>
+                    <GW_AM_SteelLegion_MeleeTier1>3</GW_AM_SteelLegion_MeleeTier1>
+                    <GW_AM_SteelLegion_RangedTier2>7</GW_AM_SteelLegion_RangedTier2>
+                    <GW_AM_SteelLegion_MeleeTier2>5</GW_AM_SteelLegion_MeleeTier2>
+                    <GW_AM_SteelLegion_RangedTier3>13</GW_AM_SteelLegion_RangedTier3>
+                    <GW_AM_SteelLegion_MeleeTier3>7</GW_AM_SteelLegion_MeleeTier3>
+                    <GW_AM_LordGeneral>1</GW_AM_LordGeneral>
+                </options>
+            </li>
+
+            <!--Tallarn Desert Raiders-->
+            <li>
+                <kindDef>Combat</kindDef>
+                <commonality>1</commonality>
+                <options>
+                    <GW_AM_TallarnDesertRaiders_RangedTier1>5</GW_AM_TallarnDesertRaiders_RangedTier1>
+                    <GW_AM_TallarnDesertRaiders_MeleeTier1>3</GW_AM_TallarnDesertRaiders_MeleeTier1>
+                    <GW_AM_TallarnDesertRaiders_RangedTier2>7</GW_AM_TallarnDesertRaiders_RangedTier2>
+                    <GW_AM_TallarnDesertRaiders_MeleeTier2>5</GW_AM_TallarnDesertRaiders_MeleeTier2>
+                    <GW_AM_TallarnDesertRaiders_RangedTier3>10</GW_AM_TallarnDesertRaiders_RangedTier3>
+                    <GW_AM_TallarnDesertRaiders_MeleeTier3>7</GW_AM_TallarnDesertRaiders_MeleeTier3>
+                    <GW_AM_TallarnDesertRaiders_Officer>3</GW_AM_TallarnDesertRaiders_Officer>
+                    <GW_AM_LordGeneral>1</GW_AM_LordGeneral>
+                </options>
+            </li>
+
+            <!--Tempestus Scions-->
+            <li>
+                <kindDef>Combat</kindDef>
+                <commonality>1</commonality>
+                <options>
+                    <GW_AM_TempestusScion_RangedTier1>5</GW_AM_TempestusScion_RangedTier1>
+                    <GW_AM_TempestusScion_MeleeTier1>3</GW_AM_TempestusScion_MeleeTier1>
+                    <GW_AM_TempestusScion_RangedTier2>7</GW_AM_TempestusScion_RangedTier2>
+                    <GW_AM_TempestusScion_MeleeTier2>5</GW_AM_TempestusScion_MeleeTier2>
+                    <GW_AM_TempestusScion_RangedTier3>10</GW_AM_TempestusScion_RangedTier3>
+                    <GW_AM_TempestusScion_MeleeTier3>7</GW_AM_TempestusScion_MeleeTier3>
+                    <GW_AM_TempestusScion_Officer>3</GW_AM_TempestusScion_Officer>
+                    <GW_AM_LordGeneral>1</GW_AM_LordGeneral>
+                </options>
+            </li>
+
+            <!--Mordian-->
+            <li>
+                <kindDef>Combat</kindDef>
+                <commonality>1</commonality>
+                <options>
+                    <GW_AM_Mordian_RangedTier1>5</GW_AM_Mordian_RangedTier1>
+                    <GW_AM_Mordian_MeleeTier1>3</GW_AM_Mordian_MeleeTier1>
+                    <GW_AM_Mordian_RangedTier2>7</GW_AM_Mordian_RangedTier2>
+                    <GW_AM_Mordian_MeleeTier2>5</GW_AM_Mordian_MeleeTier2>
+                    <GW_AM_Mordian_RangedTier3>13</GW_AM_Mordian_RangedTier3>
+                    <GW_AM_Mordian_MeleeTier3>7</GW_AM_Mordian_MeleeTier3>
+                    <GW_AM_LordGeneral>1</GW_AM_LordGeneral>
+                </options>
+            </li>
+
+            <!--VostoyanFirstborn-->
+            <li>
+                <kindDef>Combat</kindDef>
+                <commonality>1</commonality>
+                <options>
+                    <GW_AM_VostoyanFirstborn_RangedTier1>5</GW_AM_VostoyanFirstborn_RangedTier1>
+                    <GW_AM_VostoyanFirstborn_MeleeTier1>3</GW_AM_VostoyanFirstborn_MeleeTier1>
+                    <GW_AM_VostoyanFirstborn_RangedTier2>7</GW_AM_VostoyanFirstborn_RangedTier2>
+                    <GW_AM_VostoyanFirstborn_MeleeTier2>5</GW_AM_VostoyanFirstborn_MeleeTier2>
+                    <GW_AM_VostoyanFirstborn_RangedTier3>13</GW_AM_VostoyanFirstborn_RangedTier3>
+                    <GW_AM_VostoyanFirstborn_MeleeTier3>7</GW_AM_VostoyanFirstborn_MeleeTier3>
+                    <GW_AM_LordGeneral>1</GW_AM_LordGeneral>
+                </options>
+            </li>
+
+            <!--The misfits-->
+            <li MayRequire="RedMattis.BetterPrerequisites">
+                <kindDef>Combat</kindDef>
+                <commonality>1</commonality>
+                <options>
+                    <GW_OgrynEnforcer MayRequire="RedMattis.BetterPrerequisites">2</GW_OgrynEnforcer>
+                    <GW_OgrynGunner MayRequire="RedMattis.BetterPrerequisites">2</GW_OgrynGunner>
+                    <GW_RatlingSniper MayRequire="RedMattis.BetterPrerequisites">4</GW_RatlingSniper>
+                </options>
+            </li>
+        
+                <!-- Traders and Base Defense will pull from any of the tier 3 pawns -->
+            <li>
+                <kindDef>Trader</kindDef>
+                <traders>
+                    <GW_AM_TempestusScion_RangedTier3>1</GW_AM_TempestusScion_RangedTier3>
+                </traders>
+                <carriers>
+                    <Muffalo>6</Muffalo>
+                    <Dromedary>5</Dromedary>
+                    <Alpaca>2</Alpaca>
+                    <Elephant>1</Elephant>
+                </carriers>
+                <guards>
+                    <GW_AM_Cadian_RangedTier3>3</GW_AM_Cadian_RangedTier3>
+                    <GW_AM_Catachan_MeleeTier3>3</GW_AM_Catachan_MeleeTier3>
+                    <GW_AM_DeathKorps_MeleeTier3>3</GW_AM_DeathKorps_MeleeTier3>
+                    <GW_AM_SteelLegion_RangedTier3>3</GW_AM_SteelLegion_RangedTier3>
+                    <GW_AM_TallarnDesertRaiders_RangedTier3>3</GW_AM_TallarnDesertRaiders_RangedTier3>
+                    <GW_AM_TempestusScion_RangedTier3>3</GW_AM_TempestusScion_RangedTier3>
+                    <GW_AM_Mordian_RangedTier3>13</GW_AM_Mordian_RangedTier3>
+                    <GW_OgrynEnforcer MayRequire="RedMattis.BetterPrerequisites">2</GW_OgrynEnforcer>
+                    <GW_OgrynGunner MayRequire="RedMattis.BetterPrerequisites">2</GW_OgrynGunner>
+                    <GW_RatlingSniper MayRequire="RedMattis.BetterPrerequisites">4</GW_RatlingSniper>
+                </guards>
+            </li>
+            <li>
+                <kindDef>Settlement</kindDef>
+                <options>
+                    <GW_AM_Cadian_RangedTier3>3</GW_AM_Cadian_RangedTier3>
+                    <GW_AM_Catachan_MeleeTier3>3</GW_AM_Catachan_MeleeTier3>
+                    <GW_AM_DeathKorps_MeleeTier3>3</GW_AM_DeathKorps_MeleeTier3>
+                    <GW_AM_SteelLegion_RangedTier3>3</GW_AM_SteelLegion_RangedTier3>
+                    <GW_AM_TallarnDesertRaiders_RangedTier3>3</GW_AM_TallarnDesertRaiders_RangedTier3>
+                    <GW_AM_TempestusScion_RangedTier3>3</GW_AM_TempestusScion_RangedTier3>
+                    <GW_AM_Mordian_RangedTier3>13</GW_AM_Mordian_RangedTier3>
+                    <GW_OgrynEnforcer MayRequire="RedMattis.BetterPrerequisites">2</GW_OgrynEnforcer>
+                    <GW_OgrynGunner MayRequire="RedMattis.BetterPrerequisites">2</GW_OgrynGunner>
+                    <GW_RatlingSniper MayRequire="RedMattis.BetterPrerequisites">4</GW_RatlingSniper>
+                </options>
+            </li>
+        </pawnGroupMakers>
+        <allowedArrivalTemperatureRange>-10~45</allowedArrivalTemperatureRange>
+    </FactionDef>
+</Defs>

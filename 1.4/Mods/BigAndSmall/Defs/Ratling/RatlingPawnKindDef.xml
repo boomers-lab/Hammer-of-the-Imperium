@@ -11,6 +11,7 @@
 	            <GW_Ratling>999</GW_Ratling>
 	        </xenotypeChances>
 	    </xenotypeSet>
+        <useFactionXenotypes>false</useFactionXenotypes>
         <initialResistanceRange>13~21</initialResistanceRange>
     </PawnKindDef>
 
@@ -30,12 +31,13 @@
     <PawnKindDef ParentName="GW_RatlingBase">
         <defName>GW_RatlingSniper</defName>
         <label>ratling sniper</label>
-        <combatPower>200</combatPower>
+        <combatPower>150</combatPower>
         <apparelTags>
             <li>IndustrialAdvanced</li>
         </apparelTags>
         <weaponTags>
             <li>SniperRifle</li>
+            <li>GW_AM_LongLas</li>
         </weaponTags>
         <weaponMoney>600~2000</weaponMoney>
         <skills>

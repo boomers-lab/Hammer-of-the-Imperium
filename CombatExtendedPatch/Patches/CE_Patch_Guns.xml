@@ -27,7 +27,9 @@
 		defName="Gun_Hiveworldautopistol" or
 		defName="Gun_Heavystubber" or
 		defName="Gun_MilitarumShotgun" or
-		defName="Gun_MilitarumShotgunSawn"
+		defName="Gun_MilitarumShotgunSawn" or
+		defName="GW_AM_Gun_BoltPistol" or
+		defName="GW_AM_Gun_Rippergun"
 		]/tools
 		</xpath>
 		<value>
@@ -52,6 +54,30 @@
 					<chanceFactor>1.5</chanceFactor>
 					<armorPenetrationBlunt>2.755</armorPenetrationBlunt>
 					<linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
+				</li>
+			</tools>
+		</value>
+	</Operation>
+	
+	<!--===== Melee stats for weapons without stocks =====-->
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>
+		Defs/ThingDef[
+		defName="GW_AM_Gun_MissileLauncher"
+		]/tools
+		</xpath>
+		<value>
+			<tools>
+				<li Class="CombatExtended.ToolCE">
+					<label>barrel</label>
+					<capacities>
+						<li>Blunt</li>
+					</capacities>
+					<power>6</power>
+					<cooldownTime>3.4</cooldownTime>
+					<armorPenetrationBlunt>1.74</armorPenetrationBlunt>
+					<linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
 				</li>
 			</tools>
 		</value>
@@ -104,6 +130,7 @@
 			<li>CE_AI_Rifle</li>
 		</weaponTags>
 	</Operation>
+	
 					<!-- ============ Melta Gun ============ -->
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/ThingDef[defName="HP_AM_Gun_MeltaGun"]/weaponTags</xpath>
@@ -149,6 +176,7 @@
 			<li>CE_AI_BROOM</li>
 		</weaponTags>
 	</Operation>
+	
 					<!-- ============ Sanctified Kantrael ============ -->
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/ThingDef[defName="GW_AM_Gun_Kantraelsanctified"]/weaponTags</xpath>
@@ -173,7 +201,7 @@
 			<defaultProjectile>Bullet_Lasbolt</defaultProjectile>
 			<warmupTime>1.1</warmupTime>
 			<range>60</range>
-			<burstShotCount>1</burstShotCount>
+			<burstShotCount>6</burstShotCount>
 			<soundCast>VWE_LaserShot_Rifle</soundCast>
 			<soundCastTail>GunTail_Heavy</soundCastTail>
 			<muzzleFlashScale>12</muzzleFlashScale>
@@ -194,6 +222,7 @@
 			<li>CE_AI_SR</li>
 		</weaponTags>
 	</Operation>
+	
 					<!-- ============ Sanctified Lascarbine IV ============ -->
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/ThingDef[defName="GW_AM_Gun_Lascarbinefoursanctified"]/weaponTags</xpath>
@@ -218,7 +247,7 @@
 			<defaultProjectile>Bullet_Lasbolt</defaultProjectile>
 			<warmupTime>1.1</warmupTime>
 			<range>55</range>
-			<burstShotCount>1</burstShotCount>
+			<burstShotCount>4</burstShotCount>
 			<soundCast>VWE_LaserShot_Rifle</soundCast>
 			<soundCastTail>GunTail_Heavy</soundCastTail>
 			<muzzleFlashScale>12</muzzleFlashScale>
@@ -226,7 +255,7 @@
 			<ticksBetweenBurstShots>2</ticksBetweenBurstShots>
 		</Properties>
 		<AmmoUser>
-			<magazineSize>45</magazineSize>
+			<magazineSize>40</magazineSize>
 			<reloadTime>3.0</reloadTime>
 			<ammoSet>AmmoSet_Lasbolt</ammoSet>
 		</AmmoUser>
@@ -239,6 +268,7 @@
 			<li>CE_AI_SR</li>
 		</weaponTags>
 	</Operation>
+	
 					<!-- ============ Sanctified Voss ============ -->
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/ThingDef[defName="GW_AM_Gun_VossPatternsanctified"]/weaponTags</xpath>
@@ -284,6 +314,7 @@
 			<li>CE_AI_SR</li>
 		</weaponTags>
 	</Operation>
+	
 					<!-- ============ Kantreal Pattern ============ -->
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/ThingDef[defName="GW_AM_Gun_Kantrael"]/weaponTags</xpath>
@@ -309,7 +340,7 @@
 			<defaultProjectile>Bullet_Lasbolt</defaultProjectile>
 			<warmupTime>1.1</warmupTime>
 			<range>55</range>
-			<burstShotCount>1</burstShotCount>
+			<burstShotCount>6</burstShotCount>
 			<soundCast>GW_AM_Gun_Kantrael</soundCast>
 			<soundCastTail>GunTail_Heavy</soundCastTail>
 			<muzzleFlashScale>12</muzzleFlashScale>
@@ -330,6 +361,7 @@
 			<li>CE_AI_SR</li>
 		</weaponTags>
 	</Operation>
+	
 					<!-- ============ Kantreal-t Pattern ============ -->
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/ThingDef[defName="GW_AM_Gun_Kantraelt"]/weaponTags</xpath>
@@ -355,7 +387,7 @@
 			<defaultProjectile>Bullet_Lasbolt</defaultProjectile>
 			<warmupTime>1.3</warmupTime>
 			<range>45</range>
-			<burstShotCount>1</burstShotCount>
+			<burstShotCount>6</burstShotCount>
 			<soundCast>GW_AM_Gun_Kantrael</soundCast>
 			<soundCastTail>GunTail_Heavy</soundCastTail>
 			<muzzleFlashScale>12</muzzleFlashScale>
@@ -376,6 +408,7 @@
 			<li>CE_AI_Rifle</li>
 		</weaponTags>
 	</Operation>
+	
 					<!-- ============ Lascarbine IV ============ -->
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/ThingDef[defName="GW_AM_Gun_Lascarbinefour"]/weaponTags</xpath>
@@ -401,7 +434,7 @@
 			<defaultProjectile>Bullet_Lasbolt</defaultProjectile>
 			<warmupTime>1.1</warmupTime>
 			<range>50</range>
-			<burstShotCount>1</burstShotCount>
+			<burstShotCount>4</burstShotCount>
 			<soundCast>GW_AM_Gun_Lascarbinefour</soundCast>
 			<soundCastTail>GunTail_Heavy</soundCastTail>
 			<muzzleFlashScale>12</muzzleFlashScale>
@@ -409,18 +442,20 @@
 			<ticksBetweenBurstShots>3</ticksBetweenBurstShots>
 		</Properties>
 		<AmmoUser>
-			<magazineSize>10</magazineSize>
+			<magazineSize>12</magazineSize>
 			<reloadTime>3.5</reloadTime>
 			<ammoSet>AmmoSet_Lasbolt</ammoSet>
 		</AmmoUser>
 		<FireModes>
 			<aiAimMode>AimedShot</aiAimMode>
+			<aimedBurstShotCount>2</aimedBurstShotCount>
 		</FireModes>
 		<weaponTags>
 			<li>AdvancedGun</li>
 			<li>CE_AI_SR</li>
 		</weaponTags>
 	</Operation>
+	
 					<!-- ============ Voss Pattern ============ -->
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/ThingDef[defName="GW_AM_Gun_VossPattern"]/weaponTags</xpath>
@@ -467,6 +502,7 @@
 			<li>CE_AI_SR</li>
 		</weaponTags>
 	</Operation>
+	
 					<!-- ============ Accatran V ============ -->
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/ThingDef[defName="GW_AM_Gun_Accatranfive"]/weaponTags</xpath>
@@ -516,6 +552,7 @@
 			<li>ShortShots</li>
 		</weaponTags>
 	</Operation>
+	
 					<!-- ============ Lucius ============ -->
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/ThingDef[defName="GW_AM_Gun_Lucius"]/weaponTags</xpath>
@@ -561,6 +598,7 @@
 			<li>CE_AI_SR</li>
 		</weaponTags>
 	</Operation>
+	
 					<!-- ============ Kantrael Defender ============ -->
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/ThingDef[defName="GW_AM_Gun_Kantraeldefender"]/weaponTags</xpath>
@@ -586,18 +624,19 @@
 			<defaultProjectile>Bullet_Lasboltsmall</defaultProjectile>
 			<warmupTime>0.6</warmupTime>
 			<range>12</range>
-			<burstShotCount>1</burstShotCount>
+			<burstShotCount>6</burstShotCount>
 			<soundCast>GW_AM_Gun_Kantraeldefender</soundCast>
 			<soundCastTail>GunTail_Heavy</soundCastTail>
 			<muzzleFlashScale>9</muzzleFlashScale>
 			<recoilAmount>2.7</recoilAmount>
 		</Properties>
 		<AmmoUser>
-			<magazineSize>35</magazineSize>
+			<magazineSize>36</magazineSize>
 			<reloadTime>3.5</reloadTime>
 			<ammoSet>AmmoSet_Lasboltsmall</ammoSet>
 		</AmmoUser>
 		<FireModes>
+			<aimedBurstShotCount>3</aimedBurstShotCount>
 			<aiAimMode>Snapshot</aiAimMode>
 		</FireModes>
 		<weaponTags>
@@ -607,6 +646,7 @@
 			<li>Autopistol</li>
 		</weaponTags>
 	</Operation>
+	
 					<!-- ============ Kantreal-t Defender ============ -->
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/ThingDef[defName="GW_AM_Gun_Kantraeldefendert"]/weaponTags</xpath>
@@ -632,18 +672,19 @@
 			<defaultProjectile>Bullet_Lasboltsmall</defaultProjectile>
 			<warmupTime>0.6</warmupTime>
 			<range>12</range>
-			<burstShotCount>1</burstShotCount>
+			<burstShotCount>3</burstShotCount>
 			<soundCast>GW_AM_Gun_Kantraeldefender</soundCast>
 			<soundCastTail>GunTail_Heavy</soundCastTail>
 			<muzzleFlashScale>9</muzzleFlashScale>
 			<recoilAmount>2.7</recoilAmount>
 		</Properties>
 		<AmmoUser>
-			<magazineSize>35</magazineSize>
+			<magazineSize>36</magazineSize>
 			<reloadTime>3.5</reloadTime>
 			<ammoSet>AmmoSet_Lasboltsmall</ammoSet>
 		</AmmoUser>
 		<FireModes>
+			<aimedBurstShotCount>6</aimedBurstShotCount>
 			<aiAimMode>Snapshot</aiAimMode>
 		</FireModes>
 		<weaponTags>
@@ -653,6 +694,7 @@
 			<li>Autopistol</li>
 		</weaponTags>
 	</Operation>
+	
 					<!-- ============ Ryza Hellgun ============ -->
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/ThingDef[defName="GW_AM_Gun_Hellgun"]/weaponTags</xpath>
@@ -701,6 +743,7 @@
 			<li>CE_AI_LMG</li>
 		</weaponTags>
 	</Operation>
+	
 					<!-- ============ Locke Pattern ============ -->
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/ThingDef[defName="GW_AM_Gun_Locke"]/weaponTags</xpath>
@@ -726,7 +769,7 @@
 			<defaultProjectile>Bullet_Lasbolt</defaultProjectile>
 			<warmupTime>1.1</warmupTime>
 			<range>50</range>
-			<burstShotCount>1</burstShotCount>
+			<burstShotCount>4</burstShotCount>
 			<soundCast>GW_AM_Gun_Locke</soundCast>
 			<soundCastTail>GunTail_Heavy</soundCastTail>
 			<muzzleFlashScale>12</muzzleFlashScale>
@@ -747,6 +790,7 @@
 			<li>CE_AI_SR</li>
 		</weaponTags>
 	</Operation>
+	
 					<!-- ============ Longlas ============ -->
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/ThingDef[defName="GW_AM_Gun_Longlas"]/weaponTags</xpath>
@@ -792,6 +836,7 @@
 			<li>CE_AI_SR</li>
 		</weaponTags>
 	</Operation>
+	
 					<!-- ============ Agripinaa MkII ============ -->
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/ThingDef[defName="Gun_Agripinaamkii"]/weaponTags</xpath>
@@ -839,7 +884,9 @@
 			<li>AssaultRifle</li>
 		</weaponTags>
 	</Operation>
+	
 					<!-- ============ Tanker Agripinaa ============ -->
+					
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/ThingDef[defName="Gun_Agripinaamkiitanker"]/weaponTags</xpath>
 		<nomatch Class="PatchOperationAdd">
@@ -887,7 +934,9 @@
 			<li>ShortShots</li>
 		</weaponTags>
 	</Operation>
+	
 					<!-- ============ Orlock Autogun ============ -->
+					
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/ThingDef[defName="Gun_OrlockAutogun"]/weaponTags</xpath>
 		<nomatch Class="PatchOperationAdd">
@@ -934,7 +983,9 @@
 			<li>CE_SMG</li>
 		</weaponTags>
 	</Operation>
+	
 					<!-- ============ Zarona Revolver ============ -->
+					
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/ThingDef[defName="Gun_Zarona"]/weaponTags</xpath>
 		<nomatch Class="PatchOperationAdd">
@@ -956,7 +1007,7 @@
 		<Properties>
 			<verbClass>CombatExtended.Verb_ShootCE</verbClass>
 			<hasStandardCommand>true</hasStandardCommand>
-			<defaultProjectile>Bullet_Zaronaround</defaultProjectile>
+			<defaultProjectile>Bullet_454Casull_FMJ</defaultProjectile>
 			<warmupTime>0.6</warmupTime>
 			<range>12</range>
 			<burstShotCount>1</burstShotCount>
@@ -968,7 +1019,7 @@
 		<AmmoUser>
 			<magazineSize>5</magazineSize>
 			<reloadTime>0.6</reloadTime>
-			<ammoSet>AmmoSet_Zaronaround</ammoSet>
+			<ammoSet>AmmoSet_454Casull</ammoSet>
 			<reloadOneAtATime>true</reloadOneAtATime>
 		</AmmoUser>
 		<FireModes>
@@ -980,6 +1031,7 @@
 			<li>Revolver</li>
 		</weaponTags>
 	</Operation>
+	
 					<!-- ============ Hive World Autopistol ============ -->
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/ThingDef[defName="Gun_Hiveworldautopistol"]/weaponTags</xpath>
@@ -1027,7 +1079,9 @@
 			<li>ShortShots</li>
 		</weaponTags>
 	</Operation>
+	
 					<!-- ============ Heavy Stubber ============ -->
+					
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/ThingDef[defName="Gun_Heavystubber"]/weaponTags</xpath>
 		<nomatch Class="PatchOperationAdd">
@@ -1049,7 +1103,7 @@
 		<Properties>
 			<verbClass>CombatExtended.Verb_ShootCE</verbClass>
 			<hasStandardCommand>true</hasStandardCommand>
-			<defaultProjectile>Bullet_Stubround</defaultProjectile>
+			<defaultProjectile>Bullet_AutoGun</defaultProjectile>
 			<warmupTime>1.3</warmupTime>
 			<range>62</range>
 			<burstShotCount>12</burstShotCount>
@@ -1062,7 +1116,7 @@
 		<AmmoUser>
 			<magazineSize>120</magazineSize>
 			<reloadTime>7.9</reloadTime>
-			<ammoSet>AmmoSet_Stubround</ammoSet>
+			<ammoSet>AmmoSet_AutoGun</ammoSet>
 		</AmmoUser>
 		<FireModes>
 			<aimedBurstShotCount>6</aimedBurstShotCount>
@@ -1074,6 +1128,7 @@
 			<li>CE_AI_LMG</li>
 		</weaponTags>
 	</Operation>
+	
 					<!-- ============ Militarum Shotgun ============ -->
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/ThingDef[defName="Gun_MilitarumShotgun"]/weaponTags</xpath>
@@ -1096,7 +1151,7 @@
 		<Properties>
 			<verbClass>CombatExtended.Verb_ShootCE</verbClass>
 			<hasStandardCommand>true</hasStandardCommand>
-			<defaultProjectile>Bullet_Shotgungrim</defaultProjectile>
+			<defaultProjectile>Bullet_10Gauge_Buck</defaultProjectile>
 			<warmupTime>0.6</warmupTime>
 			<range>16</range>
 			<burstShotCount>1</burstShotCount>
@@ -1108,7 +1163,7 @@
 		<AmmoUser>
 			<magazineSize>8</magazineSize>
 			<reloadTime>0.6</reloadTime>
-			<ammoSet>AmmoSet_Shotgungrim</ammoSet>
+			<ammoSet>AmmoSet_10Gauge</ammoSet>
 			<reloadOneAtATime>true</reloadOneAtATime>
 		</AmmoUser>
 		<FireModes>
@@ -1119,6 +1174,7 @@
 			<li>ShortShots</li>
 		</weaponTags>
 	</Operation>
+	
 					<!-- ============ Militarum Sawn-off Shotgun ============ -->
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/ThingDef[defName="Gun_MilitarumShotgunSawn"]/weaponTags</xpath>
@@ -1141,7 +1197,7 @@
 		<Properties>
 			<verbClass>CombatExtended.Verb_ShootCE</verbClass>
 			<hasStandardCommand>true</hasStandardCommand>
-			<defaultProjectile>Bullet_Shotgungrim</defaultProjectile>
+			<defaultProjectile>Bullet_10Gauge_Buck</defaultProjectile>
 			<warmupTime>0.6</warmupTime>
 			<range>12</range>
 			<burstShotCount>1</burstShotCount>
@@ -1153,7 +1209,7 @@
 		<AmmoUser>
 			<magazineSize>5</magazineSize>
 			<reloadTime>0.6</reloadTime>
-			<ammoSet>AmmoSet_Shotgungrim</ammoSet>
+			<ammoSet>AmmoSet_10Gauge</ammoSet>
 			<reloadOneAtATime>true</reloadOneAtATime>
 		</AmmoUser>
 		<FireModes>
@@ -1163,5 +1219,141 @@
 			<li>CE_AI_BROOM</li>
 			<li>ShortShots</li>
 		</weaponTags>
+	</Operation>
+	
+	<!--===== Bolt Pistol =====-->
+	
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="GW_AM_Gun_BoltPistol"]/weaponTags</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="GW_AM_Gun_BoltPistol"]</xpath>
+			<value><weaponTags /></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
+		<defName>GW_AM_Gun_BoltPistol</defName>
+		<statBases>
+			<Mass>3.5</Mass>
+			<RangedWeapon_Cooldown>1.2</RangedWeapon_Cooldown>
+			<SightsEfficiency>1</SightsEfficiency>
+			<ShotSpread>0.14</ShotSpread>
+			<SwayFactor>1.2</SwayFactor>
+			<Bulk>4</Bulk>
+			<WorkToMake>14000</WorkToMake>
+		</statBases>
+		<Properties>
+			<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+			<hasStandardCommand>true</hasStandardCommand>
+			<defaultProjectile>Bullet_Bolter</defaultProjectile>
+			<warmupTime>0.6</warmupTime>
+			<range>24</range>
+			<burstShotCount>4</burstShotCount>
+			<soundCast>GW_AM_Bolt_Pistol_Sound</soundCast>
+			<soundCastTail>GunTail_Heavy</soundCastTail>
+			<muzzleFlashScale>9</muzzleFlashScale>
+			<recoilAmount>2.7</recoilAmount>
+		</Properties>
+		<AmmoUser>
+			<magazineSize>8</magazineSize>
+			<reloadTime>3.2</reloadTime>
+			<ammoSet>AmmoSet_Bolter</ammoSet>
+		</AmmoUser>
+		<FireModes>
+			<aimedBurstShotCount>2</aimedBurstShotCount>
+			<aiAimMode>Snapshot</aiAimMode>
+		</FireModes>
+		<weaponTags>
+			<li>CE_AI_Pistol</li>
+			<li>ShortShots</li>
+		</weaponTags>
+	</Operation>
+	
+	<!--===== Ripper Gun =====-->
+	
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="GW_AM_Gun_Rippergun"]/weaponTags</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="GW_AM_Gun_Rippergun"]</xpath>
+			<value><weaponTags /></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
+		<defName>GW_AM_Gun_Rippergun</defName>
+		<statBases>
+			<Mass>12.6</Mass>
+			<RangedWeapon_Cooldown>1.6</RangedWeapon_Cooldown>
+			<SightsEfficiency>1</SightsEfficiency>
+			<ShotSpread>0.32</ShotSpread>
+			<SwayFactor>1.49</SwayFactor>
+			<Bulk>8.6</Bulk>
+			<WorkToMake>14000</WorkToMake>
+		</statBases>
+		<Properties>
+			<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+			<hasStandardCommand>true</hasStandardCommand>
+			<defaultProjectile>Bullet_23x75mmR_Buck</defaultProjectile>
+			<warmupTime>0.6</warmupTime>
+			<range>24</range>
+			<burstShotCount>4</burstShotCount>
+			<soundCast>GW_AM_Gun_MilitarumShotgun</soundCast>
+			<soundCastTail>GunTail_Heavy</soundCastTail>
+			<muzzleFlashScale>9</muzzleFlashScale>
+			<recoilAmount>2.8</recoilAmount>
+		</Properties>
+		<AmmoUser>
+			<magazineSize>32</magazineSize>
+			<reloadTime>3.6</reloadTime>
+			<ammoSet>AmmoSet_23x75mmR</ammoSet>
+		</AmmoUser>
+		<FireModes>
+			<aimedBurstShotCount>2</aimedBurstShotCount>
+			<aiAimMode>Snapshot</aiAimMode>
+		</FireModes>
+		<weaponTags>
+			<li>CE_AI_AssaultWeapon</li>
+		</weaponTags>
+	</Operation>
+	
+	<!--===== Missile Launcher =====-->
+	
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="GW_AM_Gun_MissileLauncher"]/weaponTags</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="GW_AM_Gun_MissileLauncher"]</xpath>
+			<value><weaponTags /></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
+		<defName>GW_AM_Gun_MissileLauncher</defName>
+		<statBases>
+			<Mass>3.5</Mass>
+			<RangedWeapon_Cooldown>1.2</RangedWeapon_Cooldown>
+			<SightsEfficiency>1</SightsEfficiency>
+			<ShotSpread>0.14</ShotSpread>
+			<SwayFactor>1.2</SwayFactor>
+			<Bulk>11.8</Bulk>
+			<WorkToMake>34000</WorkToMake>
+		</statBases>
+		<Properties>
+			<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+			<hasStandardCommand>true</hasStandardCommand>
+			<defaultProjectile>Bullet_84x246mmR_HEAT</defaultProjectile>
+			<warmupTime>4.2</warmupTime>
+			<range>46</range>
+			<burstShotCount>1</burstShotCount>
+			<soundCast>InfernoCannon_Fire</soundCast>
+			<soundCastTail>GunTail_Heavy</soundCastTail>
+			<muzzleFlashScale>15</muzzleFlashScale>
+		</Properties>
+		<AmmoUser>
+			<magazineSize>1</magazineSize>
+			<reloadTime>7.8</reloadTime>
+			<ammoSet>AmmoSet_84x246mmR</ammoSet>
+		</AmmoUser>
+		<FireModes>
+			<aiUseBurstMode>FALSE</aiUseBurstMode>
+			<aiAimMode>AimedShot</aiAimMode>
+			<noSnapshot>true</noSnapshot>
+		</FireModes>
 	</Operation>
 </Patch>

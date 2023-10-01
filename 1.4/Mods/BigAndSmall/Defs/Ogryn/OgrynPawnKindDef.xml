@@ -11,6 +11,7 @@
 	            <GW_Ogryn>999</GW_Ogryn>
 	        </xenotypeChances>
 	    </xenotypeSet>
+        <useFactionXenotypes>false</useFactionXenotypes>
         <initialResistanceRange>13~21</initialResistanceRange>
     </PawnKindDef>
 
@@ -37,7 +38,7 @@
         <weaponTags>
             <li>GW_PowerMaul</li>
         </weaponTags>
-        <weaponMoney>1200~2000</weaponMoney>
+        <weaponMoney>2000~3000</weaponMoney>
         <skills>
             <li>
                 <skill>Melee</skill>

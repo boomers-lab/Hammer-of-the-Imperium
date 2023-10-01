@@ -632,4 +632,76 @@
             </li>
         </tools>
     </ThingDef>
+	
+	<!--===== Ripper gun =====-->
+	
+	<ThingDef ParentName="GW_AM_AutogunBase">
+        <defName>GW_AM_Gun_Rippergun</defName>
+        <label>Ripper Gun</label>
+        <description>Makes funny noise</description>
+        <possessionCount>1</possessionCount>
+        <graphicData>
+            <drawSize>1.2</drawSize>
+            <texPath>Weapons/Rippergun</texPath>
+        </graphicData>
+        <soundInteract>Interact_Shotgun</soundInteract>
+        <weaponClasses>
+            <li>ShortShots</li>
+        </weaponClasses>
+        <weaponTags>
+            <li>ShortShots</li>
+            <li>GW_Rippergun</li>
+        </weaponTags>
+        <statBases>
+            <WorkToMake>13000</WorkToMake>
+            <Mass>3</Mass>
+            <AccuracyTouch>0.95</AccuracyTouch>
+            <AccuracyShort>0.75</AccuracyShort>
+            <AccuracyMedium>0.40</AccuracyMedium>
+            <AccuracyLong>0.20</AccuracyLong>
+            <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+        </statBases>
+        <costList>
+            <Steel>50</Steel>
+            <ComponentIndustrial>5</ComponentIndustrial>
+        </costList>
+        <recipeMaker>
+            <skillRequirements>
+                <Crafting>5</Crafting>
+            </skillRequirements>
+            <displayPriority>430</displayPriority>
+        </recipeMaker>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>GW_AM_Bullet_Shotgungrim</defaultProjectile>
+                <warmupTime>0.9</warmupTime>
+                <range>16</range>
+				<burstShotCount>4</burstShotCount>
+                <soundCast>GW_AM_Gun_MilitarumShotgun</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+        <tools>
+            <li>
+                <label>stock</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+            <li>
+                <label>barrel</label>
+                <capacities>
+                    <li>Blunt</li>
+                    <li>Poke</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+        </tools>
+    </ThingDef>
 </Defs>

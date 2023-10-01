@@ -380,7 +380,7 @@
         <label>Lascanon shot</label>
         <description>An heavily charged beam of focused light fired from a lascannon.</description>
         <textures>
-            <li>Things/Projectiles/Las Bolt</li>
+            <li>Things/Projectiles/Las_Bolt</li>
         </textures>
         <seam>0</seam>
         <causefireChance>0.08</causefireChance>

@@ -56,9 +56,11 @@
     </costList>
     <weaponTags>
       <li>SpacerGun</li>
+      <li>GW_AM_SpacerRanged</li>
     </weaponTags>
     <tradeTags>
       <li>HPRanged</li>
+      <li>GW_AM_SpacerRanged</li>
     </tradeTags>
     <weaponClasses>
      <li>RangedHeavy</li>
@@ -152,9 +154,11 @@
     </costList>
     <weaponTags>
       <li>SpacerGun</li>
+      <li>GW_AM_SpacerRanged</li>
     </weaponTags>
     <tradeTags>
       <li>HPRanged</li>
+      <li>GW_AM_SpacerRanged</li>
     </tradeTags>
     <weaponClasses>
      <li>RangedHeavy</li>

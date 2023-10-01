@@ -30,6 +30,7 @@
         </thingCategories>
         <tradeTags>
             <li>HPUtility</li>
+            <li>GW_AM_Utility</li>
         </tradeTags>
         <statBases>
             <MaxHitPoints>150</MaxHitPoints>
@@ -104,6 +105,7 @@
         </thingCategories>
         <tradeTags>
             <li>HPUtility</li>
+            <li>GW_AM_Utility</li>
         </tradeTags>
         <statBases>
             <MaxHitPoints>150</MaxHitPoints>

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
     <ThingDef Abstract="true" ParentName="ApparelMakeableBase" Name="GW_AM_OnSkinBase">
+    	<techLevel>Industrial</techLevel>
         <graphicData>
             <graphicClass>Graphic_Single</graphicClass>
             <shaderType>CutoutComplex</shaderType>
@@ -13,6 +14,7 @@
         </thingCategories>
         <tradeTags>
             <li>HPOnSkin</li>
+            <li>GW_AM_OnSkin</li>
         </tradeTags>
         <statBases>
             <Mass>0.3</Mass>
@@ -94,7 +96,7 @@
         </apparel>
     </ThingDef>
 
-            <!-- Krieger Uniform -->
+            <!-- Steel Legion Uniform -->
 
     <ThingDef ParentName="GW_AM_OnSkinBase">
         <defName>GW_AM_SL_Uniform</defName>
@@ -119,6 +121,35 @@
             <tags>
                 <li>40kSteelLegion</li>
                 <li>40kSteelLegionUniform</li>
+            </tags>
+        </apparel>
+    </ThingDef>
+
+            <!-- Mordian Uniform -->
+
+    <ThingDef ParentName="GW_AM_OnSkinBase">
+        <defName>GW_AM_Mordian_Uniform</defName>
+        <description>A uniform commonly worn by members of the Mordian.</description>
+        <label>Mordian uniform</label>
+        <recipeMaker>
+            <researchPrerequisite>GW_AM_Mordian</researchPrerequisite>
+        </recipeMaker>
+        <graphicData>
+            <texPath>Things/Mordian/OnSkin/MordianIronGuard</texPath>
+        </graphicData>
+        <costStuffCount>90</costStuffCount>
+        <statBases>
+            <MaxHitPoints>180</MaxHitPoints>
+            <WorkToMake>6000</WorkToMake>
+            <StuffEffectMultiplierArmor>0.4</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>1.50</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.25</StuffEffectMultiplierInsulation_Heat>
+        </statBases>
+        <apparel>
+            <wornGraphicPath>Things/Mordian/OnSkin/Mordian</wornGraphicPath>
+            <tags>
+                <li>40kMordian</li>
+                <li>40kMordianUniform</li>
             </tags>
         </apparel>
     </ThingDef>
@@ -180,6 +211,66 @@
             <tags>
                 <li>40kCatachan</li>
                 <li>40kCatachanFatigues</li>
+            </tags>
+        </apparel>
+    </ThingDef>
+
+            <!-- Tallarn Desert Raiders -->
+    <ThingDef ParentName="GW_AM_OnSkinBase">
+		<defName>GW_AM_TDR_DesertFatigues</defName>
+		<label>Desert Fatigues</label>
+		<description>ToDo.</description>
+		<graphicData>
+			<texPath>Things/Tallarn/OnSkin/DesertFatigues_Male_south</texPath>
+		</graphicData>
+		<recipeMaker>
+			<researchPrerequisite>GW_AM_TallarnDesertRaiders</researchPrerequisite>
+		</recipeMaker>
+		<costStuffCount>80</costStuffCount>
+		<stuffCategories>
+			<li>Leathery</li>
+		</stuffCategories>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<WorkToMake>7000</WorkToMake>
+			<StuffEffectMultiplierArmor>0.25</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.6</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.5</StuffEffectMultiplierInsulation_Heat>
+		</statBases>
+		<apparel>
+			<wornGraphicPath>Things/Tallarn/OnSkin/DesertFatigues</wornGraphicPath>
+			<tags>
+				<li>40kTallarnDesertRaiders</li>
+                <li>40kTallarnDesertRaidersFatigues</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+
+    <!-- Vostoyan Firstborn Uniform -->
+
+    <ThingDef ParentName="GW_AM_OnSkinBase">
+        <defName>GW_AM_VostoyanFirstborn_Uniform</defName>
+        <description>A uniform commonly worn by members of the Vostoyan Firstborn.</description>
+        <label>vostoyan firstborn uniform</label>
+        <recipeMaker>
+            <researchPrerequisite>GW_AM_VostoyanFirstborn</researchPrerequisite>
+        </recipeMaker>
+        <graphicData>
+            <texPath>Things/VostoyanFirstborn/OnSkin/VostoyanFirstborn</texPath>
+        </graphicData>
+        <costStuffCount>90</costStuffCount>
+        <statBases>
+            <MaxHitPoints>180</MaxHitPoints>
+            <WorkToMake>6000</WorkToMake>
+            <StuffEffectMultiplierArmor>0.4</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.50</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.25</StuffEffectMultiplierInsulation_Heat>
+        </statBases>
+        <apparel>
+            <wornGraphicPath>Things/VostoyanFirstborn/OnSkin/VostoyanFirstborn</wornGraphicPath>
+            <tags>
+                <li>40kVostoyanFirstborn</li>
+                <li>40kVostoyanFirstbornUniform</li>
             </tags>
         </apparel>
     </ThingDef>

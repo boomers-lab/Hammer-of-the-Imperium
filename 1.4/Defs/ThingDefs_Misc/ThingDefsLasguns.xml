@@ -5,7 +5,7 @@
         <label>Lasbolt</label>
         <description>A beam of focused light that burns the target.</description>
         <textures>
-            <li>Projectiles/Las Bolt</li>
+            <li>Projectiles/Las_Bolt</li>
         </textures>
         <seam>0</seam>
         <projectile>
@@ -21,7 +21,7 @@
         <label>Lasbolt charged</label>
         <description>An heavily charged beam of focused light, emitting more heat usual.</description>
         <textures>
-            <li>Projectiles/Las Bolt</li>
+            <li>Projectiles/Las_Bolt</li>
         </textures>
         <seam>0</seam>
         <causefireChance>0.08</causefireChance>
@@ -38,7 +38,7 @@
         <label>Pistol lasbolt</label>
         <description>A reduced beam of focused light.</description>
         <textures>
-            <li>Projectiles/Las Bolt</li>
+            <li>Projectiles/Las_Bolt</li>
         </textures>
         <seam>0</seam>
         <projectile>
@@ -57,8 +57,12 @@
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <soundInteract>Interact_ChargeRifle</soundInteract>
+        <weaponTags>
+            <li>GW_AM_Lasgun</li>
+        </weaponTags>
         <tradeTags>
             <li>HPRanged</li>
+            <li>GW_AM_Lasguns</li>
         </tradeTags>
         <thingSetMakerTags>
           <li>RewardStandardQualitySuper</li>
@@ -763,6 +767,7 @@
         </weaponClasses>
         <weaponTags>
             <li>SpacerGun</li>
+            <li>GW_AM_LongLas</li>
         </weaponTags>
         <verbs>
             <li>

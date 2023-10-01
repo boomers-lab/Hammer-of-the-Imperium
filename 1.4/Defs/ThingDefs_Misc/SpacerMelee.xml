@@ -15,14 +15,16 @@
         <costStuffCount>50</costStuffCount>
         <weaponTags>
             <li>SpacerMeleeDecent</li>
+            <li>GW_AM_SpacerMelee</li>
         </weaponTags>
+        <tradeTags>
+            <li>HPMelee</li>
+            <li>GW_AM_SpacerMelee</li>
+        </tradeTags>
         <statBases>
             <WorkToMake>32000</WorkToMake>
             <Mass>3</Mass>
         </statBases>
-        <tradeTags>
-            <li>HPMelee</li>
-        </tradeTags>
         <relicChance>2</relicChance>
         <equippedAngleOffset>-65</equippedAngleOffset>
         <tools>
@@ -90,7 +92,7 @@
         </graphicData>
     </ThingDef>
 
-<!-- ====================== Power Fist ===================== -->
+	<!-- ====================== Power Fist ===================== -->
   
     <ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
         <defName>GW_AM_MeleeWeapon_PowerFist</defName>
@@ -126,7 +128,12 @@
         </costList>
         <weaponTags>
             <li>SpacerMeleeDecent</li>
+            <li>GW_AM_SpacerMelee</li>
         </weaponTags>
+        <tradeTags>
+            <li>HPMelee</li>
+            <li>GW_AM_SpacerMelee</li>
+        </tradeTags>
         <weaponClasses>
             <li>Melee</li>
         </weaponClasses>
@@ -139,6 +146,82 @@
                 </capacities>
                 <power>42</power>
                 <cooldownTime>3</cooldownTime>
+            </li>
+        </tools>
+    </ThingDef>
+	
+	<!--===== Power Maul =====-->
+	
+	<ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
+        <defName>GW_AM_MeleeWeapon_PowerMaul</defName>
+        <label>Power maul</label>
+        <description>Ogyrn's Club</description>
+        <possessionCount>1</possessionCount>
+        <graphicData>
+            <texPath>Weapons/Power_Maul</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.2</drawSize>
+        </graphicData>
+        <uiIconScale>1.2</uiIconScale>
+        <techLevel>Spacer</techLevel>
+        <costStuffCount>50</costStuffCount>
+        <statBases>
+            <WorkToMake>42000</WorkToMake>
+            <Mass>4.8</Mass>
+        </statBases>
+        <equippedAngleOffset>-65</equippedAngleOffset>
+        <recipeMaker>
+            <researchPrerequisite>ODZ_40K_AstraMilitatum_SpacerMelee</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>10</Crafting>
+            </skillRequirements>
+            <recipeUsers Inherit="false">
+                <li>HP_AM_MilitarumFabricationBench</li>
+            </recipeUsers>
+            <displayPriority>400</displayPriority>
+        </recipeMaker>
+        <costList>
+            <Plasteel>85</Plasteel>
+            <Steel>75</Steel>
+            <ComponentSpacer>2</ComponentSpacer>
+        </costList>
+        <weaponTags>
+            <li>SpacerMeleeDecent</li>
+            <li>GW_AM_SpacerMelee</li>
+            <li>GW_PowerMaul</li>
+        </weaponTags>
+        <tradeTags>
+            <li>HPMelee</li>
+            <li>GW_AM_SpacerMelee</li>
+        </tradeTags>
+        <weaponClasses>
+            <li>Melee</li>
+        </weaponClasses>
+        <tools>
+			<li>
+                <label>handle</label>
+                <capacities>
+                    <li>Poke</li>
+                </capacities>
+                <power>16</power>
+                <cooldownTime>1.75</cooldownTime>
+				<armorPenetration>0.24</armorPenetration>
+            </li>
+            <li>
+                <label>head</label>
+				<labelUsedInLogging>false</labelUsedInLogging>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>36</power>
+                <cooldownTime>3.25</cooldownTime>
+				<extraMeleeDamages>
+					<li>
+						<def>Bomb</def>
+						<amount>5</amount>
+					</li>
+				</extraMeleeDamages>
+				<armorPenetration>0.48</armorPenetration>
             </li>
         </tools>
     </ThingDef>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
     <ThingDef Abstract="true" Name="GW_AM_ArmorBase" ParentName="ArmorMachineableBase">
-        <techLevel>Spacer</techLevel>
+        <techLevel>Industrial</techLevel>
 		<recipeMaker>
 			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
 			<recipeUsers Inherit="false">
@@ -17,6 +17,7 @@
 		</thingCategories>
         <tradeTags>
             <li>HPArmor</li>
+            <li>GW_AM_Armor</li>
         </tradeTags>
         <equippedStatOffsets>
 	        <MedicalTendSpeed>0.5</MedicalTendSpeed>	  
@@ -300,4 +301,48 @@
             </li>
 	    </modExtensions>
     </ThingDef>  
+
+            <!-- Tallarn Desert Raiders -->
+	<ThingDef ParentName="GW_AM_ArmorBase">
+		<defName>GW_AM_TDR_DesertGear</defName>
+		<label>Desert Gear</label>
+		<description>ToDo.</description>
+		<recipeMaker>
+			<researchPrerequisite>GW_AM_TallarnDesertRaiders</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Tallarn/Middle/DesertGear_Male_south</texPath>
+		</graphicData>
+		<statBases>
+			<WorkToMake>9000</WorkToMake>
+			<MaxHitPoints>175</MaxHitPoints>
+			<Mass>5</Mass>
+			<ArmorRating_Sharp>1.00</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.36</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.27</ArmorRating_Heat>
+			<Insulation_Cold>1</Insulation_Cold>
+			<EquipDelay>5</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<RangedCooldownFactor MayRequire="Ludeon.Rimworld.Biotech">-0.2</RangedCooldownFactor>
+		</equippedStatOffsets>
+		<costList>
+			<Cloth>50</Cloth>
+			<Steel>60</Steel>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<apparel>
+            <bodyPartGroups>
+                <li>Neck</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Tallarn/Middle/DesertGear</wornGraphicPath>
+			<tags>
+                <li>40kTallarnDesertRaiders</li>
+                <li>40kTallarnDesertRaidersArmor</li>
+            </tags>
+		</apparel>
+	</ThingDef>
 </Defs>

@@ -150,6 +150,48 @@
     </ResearchProjectDef>
 
     <ResearchProjectDef>
+        <defName>GW_AM_TallarnDesertRaiders</defName>
+        <label>Tallarn Desert Raiders</label>
+        <description>Equipment belonging to the Tallarn Desert Raiders.</description>
+        <prerequisites>
+            <li>ODZ_40K_MilitarumFabricationBench</li>
+        </prerequisites>
+        <baseCost>1250</baseCost>
+        <techLevel>Industrial</techLevel>
+        <tab>ODZ_40K_ImperiumOfMan</tab>
+        <researchViewX>4</researchViewX>
+        <researchViewY>4</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>GW_AM_Mordian</defName>
+        <label>Mordian</label>
+        <description>Equipment belonging to the Mordian.</description>
+        <prerequisites>
+            <li>ODZ_40K_MilitarumFabricationBench</li>
+        </prerequisites>
+        <baseCost>1250</baseCost>
+        <techLevel>Industrial</techLevel>
+        <tab>ODZ_40K_ImperiumOfMan</tab>
+        <researchViewX>5</researchViewX>
+        <researchViewY>4</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>GW_AM_VostoyanFirstborn</defName>
+        <label>vostoyan firstborn</label>
+        <description>Equipment belonging to the Vastoyan Firstborn.</description>
+        <prerequisites>
+            <li>ODZ_40K_MilitarumFabricationBench</li>
+        </prerequisites>
+        <baseCost>1250</baseCost>
+        <techLevel>Industrial</techLevel>
+        <tab>ODZ_40K_ImperiumOfMan</tab>
+        <researchViewX>6</researchViewX>
+        <researchViewY>4</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
         <defName>GW_AM_BasicDefence</defName>
         <label>Basic defence structures</label>
         <description>Allows for the construction of defensive trenches.</description>
