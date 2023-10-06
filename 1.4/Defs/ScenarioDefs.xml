@@ -84,7 +84,7 @@
 
                 <li Class="ScenPart_StartingThing_Defined" MayRequire="ceteam.combatextended">
                     <def>StartingThing_Defined</def>
-                    <thingDef>Ammo_Shotgungrim</thingDef>
+                    <thingDef>Ammo_10Gauge_Slug</thingDef>
                     <count>40</count>
                 </li>
 
