@@ -5,7 +5,7 @@
 	<!--===== Launcher frag Projectile =====-->
 
 	<ThingDef ParentName="BaseBullet">
-		<defName>GW_SM_LauncherFrag_Bullet</defName>
+		<defName>GW_AM_LauncherFrag_Bullet</defName>
 		<label>frag launcher shell</label>
 		<graphicData>
 			<texPath>Things/Projectile/LauncherShot</texPath>
@@ -29,7 +29,7 @@
 	<!--===== Launcher EMP Projectile =====-->
 	
 	<ThingDef ParentName="BaseBullet">
-		<defName>GW_SM_LauncherEMP_Bullet</defName>
+		<defName>GW_AM_LauncherEMP_Bullet</defName>
 		<label>EMP launcher shell</label>
 		<graphicData>
 			<texPath>Things/Projectile/LauncherShot</texPath>
@@ -52,7 +52,7 @@
 	<!--===== Launcher Smoke Projectile =====-->
 
 	<ThingDef ParentName="BaseBullet">
-		<defName>GW_SM_LauncherSmoke_Bullet</defName>
+		<defName>GW_AM_LauncherSmoke_Bullet</defName>
 		<label>smoke launcher shell</label>
 		<graphicData>
 			<texPath>Things/Projectile/LauncherShot</texPath>
@@ -76,7 +76,7 @@
 	<!--===== Launcher Stun Projectile =====-->
 	
 	<ThingDef ParentName="BaseBullet">
-		<defName>GW_SM_LauncherStun_Bullet</defName>
+		<defName>GW_AM_LauncherStun_Bullet</defName>
 		<label>stun launcher shell</label>
 		<graphicData>
 			<texPath>Things/Projectile/LauncherShot</texPath>
@@ -99,7 +99,7 @@
 	<!--===== Launcher Tox Projectile =====-->
 	
 	<ThingDef ParentName="BaseBullet" MayRequire="Ludeon.RimWorld.Biotech">
-		<defName>GW_SM_LauncherTox_Bullet</defName>
+		<defName>GW_AM_LauncherTox_Bullet</defName>
 		<label>stun launcher shell</label>
 		<graphicData>
 			<texPath>Things/Projectile/LauncherShot</texPath>
@@ -122,7 +122,7 @@
 	
 	<!--===== Launcher Base =====-->
 
-	<ThingDef Abstract="true" ParentName="BaseHumanMakeableGun" Name="GW_SM_LauncherBase">
+	<ThingDef Abstract="true" ParentName="BaseHumanMakeableGun" Name="GW_AM_GrenadeLauncherBase">
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
@@ -170,8 +170,8 @@
 	
 	<!--===== Frag Launcher =====-->
 
-	<ThingDef ParentName="GW_SM_LauncherBase">
-		<defName>GW_SM_Gun_FragLauncher</defName>
+	<ThingDef ParentName="GW_AM_GrenadeLauncherBase">
+		<defName>GW_AM_Gun_FragLauncher</defName>
 		<label>Voss Pattern Launcher (Frag)</label>
 		<description>Can't we throw this further?</description>
 		<graphicData>
@@ -199,7 +199,7 @@
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>GW_SM_LauncherFrag_Bullet</defaultProjectile>
+				<defaultProjectile>GW_AM_LauncherFrag_Bullet</defaultProjectile>
 				<forcedMissRadius>2.4</forcedMissRadius>
 				<warmupTime>3</warmupTime>
 				<range>26</range>
@@ -213,8 +213,8 @@
 
 	<!--===== EMP Launcher =====-->
 
-	<ThingDef ParentName="GW_SM_LauncherBase">
-		<defName>GW_SM_Gun_EMPLauncher</defName>
+	<ThingDef ParentName="GW_AM_GrenadeLauncherBase">
+		<defName>GW_AM_Gun_EMPLauncher</defName>
 		<label>Voss Pattern Launcher (EMP)</label>
 		<description>It feels tingly.</description>
 		<graphicData>
@@ -242,7 +242,7 @@
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>GW_SM_LauncherEMP_Bullet</defaultProjectile>
+				<defaultProjectile>GW_AM_LauncherEMP_Bullet</defaultProjectile>
 				<forcedMissRadius>3.2</forcedMissRadius>
 				<warmupTime>3</warmupTime>
 				<range>32</range>
@@ -256,8 +256,8 @@
 
 	<!--===== Smoke Launcher =====-->
 
-	<ThingDef ParentName="GW_SM_LauncherBase">
-		<defName>GW_SM_Gun_SmokeLauncher</defName>
+	<ThingDef ParentName="GW_AM_GrenadeLauncherBase">
+		<defName>GW_AM_Gun_SmokeLauncher</defName>
 		<label>Voss Pattern Launcher (Smoke)</label>
 		<description>Hey who turn out the lights</description>
 		<graphicData>
@@ -285,7 +285,7 @@
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>GW_SM_LauncherSmoke_Bullet</defaultProjectile>
+				<defaultProjectile>GW_AM_LauncherSmoke_Bullet</defaultProjectile>
 				<forcedMissRadius>1.2</forcedMissRadius>
 				<warmupTime>3</warmupTime>
 				<range>36</range>
@@ -299,8 +299,8 @@
 
 	<!--===== Stun Launcher =====-->
 
-	<ThingDef ParentName="GW_SM_LauncherBase">
-		<defName>GW_SM_Gun_StunLauncher</defName>
+	<ThingDef ParentName="GW_AM_GrenadeLauncherBase">
+		<defName>GW_AM_Gun_StunLauncher</defName>
 		<label>Voss Pattern Launcher (Stun)</label>
 		<description>Just wait right there</description>
 		<graphicData>
@@ -328,7 +328,7 @@
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>GW_SM_LauncherStun_Bullet</defaultProjectile>
+				<defaultProjectile>GW_AM_LauncherStun_Bullet</defaultProjectile>
 				<forcedMissRadius>2.4</forcedMissRadius>
 				<warmupTime>3</warmupTime>
 				<range>32</range>
@@ -342,8 +342,8 @@
 	
 	<!--===== Tox Launcher =====-->
 
-	<ThingDef ParentName="GW_SM_LauncherBase" MayRequire="Ludeon.RimWorld.Biotech">
-		<defName>GW_SM_Gun_ToxLauncher</defName>
+	<ThingDef ParentName="GW_AM_GrenadeLauncherBase" MayRequire="Ludeon.RimWorld.Biotech">
+		<defName>GW_AM_Gun_ToxLauncher</defName>
 		<label>Voss Pattern Launcher (Tox)</label>
 		<description>Just some casual chemical warfare</description>
 		<graphicData>
@@ -371,7 +371,7 @@
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>GW_SM_LauncherTox_Bullet</defaultProjectile>
+				<defaultProjectile>GW_AM_LauncherTox_Bullet</defaultProjectile>
 				<forcedMissRadius>2.4</forcedMissRadius>
 				<warmupTime>3</warmupTime>
 				<range>36</range>

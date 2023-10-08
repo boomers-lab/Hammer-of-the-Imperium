@@ -29,7 +29,8 @@
 		defName="Gun_MilitarumShotgun" or
 		defName="Gun_MilitarumShotgunSawn" or
 		defName="GW_AM_Gun_BoltPistol" or
-		defName="GW_AM_Gun_Rippergun"
+		defName="GW_AM_Gun_Rippergun" or
+		defName="GW_AM_Gun_FragLauncher"
 		]/tools
 		</xpath>
 		<value>
