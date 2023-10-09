@@ -128,7 +128,7 @@
 		</graphicData>
 		<soundInteract>Interact_Rifle</soundInteract>
 		<recipeMaker>
-			<researchPrerequisite>Odz_Astartes_PlasmaGuns</researchPrerequisite>
+			<researchPrerequisite>ODZ_40K_Plasma</researchPrerequisite>
 			<displayPriority>420</displayPriority>
 			<recipeUsers Inherit="False">
 				<li>HP_ImperialFabricationBench</li>
@@ -175,7 +175,7 @@
 		<label>Voss Pattern Launcher (Frag)</label>
 		<description>Can't we throw this further?</description>
 		<graphicData>
-			<texPath>Things/Weapons/Launcher/GrenadeLauncher</texPath>
+			<texPath>Weapons/Launcher/GrenadeLauncher</texPath>
 			<drawSize>1.2</drawSize>
 		</graphicData>
 		<statBases>
@@ -218,7 +218,7 @@
 		<label>Voss Pattern Launcher (EMP)</label>
 		<description>It feels tingly.</description>
 		<graphicData>
-			<texPath>Things/Weapons/Launcher/GrenadeLauncherEMP</texPath>
+			<texPath>Weapons/Launcher/GrenadeLauncherEMP</texPath>
 			<drawSize>1.2</drawSize>
 		</graphicData>
 		<statBases>
@@ -261,7 +261,7 @@
 		<label>Voss Pattern Launcher (Smoke)</label>
 		<description>Hey who turn out the lights</description>
 		<graphicData>
-			<texPath>Things/Weapons/Launcher/GrenadeLauncherSmoke</texPath>
+			<texPath>Weapons/Launcher/GrenadeLauncherSmoke</texPath>
 			<drawSize>1.2</drawSize>
 		</graphicData>
 		<statBases>
@@ -304,7 +304,7 @@
 		<label>Voss Pattern Launcher (Stun)</label>
 		<description>Just wait right there</description>
 		<graphicData>
-			<texPath>Things/Weapons/Launcher/GrenadeLauncherStun</texPath>
+			<texPath>Weapons/Launcher/GrenadeLauncherStun</texPath>
 			<drawSize>1.2</drawSize>
 		</graphicData>
 		<statBases>
@@ -347,7 +347,7 @@
 		<label>Voss Pattern Launcher (Tox)</label>
 		<description>Just some casual chemical warfare</description>
 		<graphicData>
-			<texPath>Things/Weapons/Launcher/GrenadeLauncherToxic</texPath>
+			<texPath>Weapons/Launcher/GrenadeLauncherToxic</texPath>
 			<drawSize>1.2</drawSize>
 		</graphicData>
 		<statBases>
