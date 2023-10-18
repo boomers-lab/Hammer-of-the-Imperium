@@ -42,7 +42,7 @@
 		<projectile>
 			<damageDef>EMP</damageDef>
 			<!-- Default Explosion Damage -->
-			<explosionRadius>1.6</explosionRadius>
+			<explosionRadius>2.6</explosionRadius>
 			<speed>55</speed>
 			<arcHeightFactor>0.2</arcHeightFactor>
 			<shadowSize>0.6</shadowSize>
@@ -181,7 +181,7 @@
 		<statBases>
 			<WorkToMake>42000</WorkToMake>
 			<Mass>10</Mass>
-			<RangedWeapon_Cooldown>6</RangedWeapon_Cooldown>
+			<RangedWeapon_Cooldown>3.2</RangedWeapon_Cooldown>
 		</statBases>
 		<equippedStatOffsets>
 			<MoveSpeed>-0.10</MoveSpeed>
@@ -207,6 +207,9 @@
 				<soundCast>HP_Plasma_Gun_Sound</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>10</muzzleFlashScale>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
 			</li>
 		</verbs>
 	</ThingDef>
@@ -224,7 +227,7 @@
 		<statBases>
 			<WorkToMake>42000</WorkToMake>
 			<Mass>10</Mass>
-			<RangedWeapon_Cooldown>6</RangedWeapon_Cooldown>
+			<RangedWeapon_Cooldown>3.2</RangedWeapon_Cooldown>
 		</statBases>
 		<equippedStatOffsets>
 			<MoveSpeed>-0.10</MoveSpeed>
@@ -250,6 +253,9 @@
 				<soundCast>HP_Plasma_Gun_Sound</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>10</muzzleFlashScale>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
 			</li>
 		</verbs>
 	</ThingDef>
@@ -267,7 +273,7 @@
 		<statBases>
 			<WorkToMake>42000</WorkToMake>
 			<Mass>10</Mass>
-			<RangedWeapon_Cooldown>6</RangedWeapon_Cooldown>
+			<RangedWeapon_Cooldown>3.2</RangedWeapon_Cooldown>
 		</statBases>
 		<equippedStatOffsets>
 			<MoveSpeed>-0.10</MoveSpeed>
@@ -293,6 +299,9 @@
 				<soundCast>HP_Plasma_Gun_Sound</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>10</muzzleFlashScale>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
 			</li>
 		</verbs>
 	</ThingDef>
@@ -310,7 +319,7 @@
 		<statBases>
 			<WorkToMake>42000</WorkToMake>
 			<Mass>10</Mass>
-			<RangedWeapon_Cooldown>6</RangedWeapon_Cooldown>
+			<RangedWeapon_Cooldown>3.2</RangedWeapon_Cooldown>
 		</statBases>
 		<equippedStatOffsets>
 			<MoveSpeed>-0.10</MoveSpeed>
@@ -336,6 +345,9 @@
 				<soundCast>HP_Plasma_Gun_Sound</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>10</muzzleFlashScale>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
 			</li>
 		</verbs>
 	</ThingDef>
@@ -353,7 +365,7 @@
 		<statBases>
 			<WorkToMake>42000</WorkToMake>
 			<Mass>10</Mass>
-			<RangedWeapon_Cooldown>6</RangedWeapon_Cooldown>
+			<RangedWeapon_Cooldown>3.2</RangedWeapon_Cooldown>
 		</statBases>
 		<equippedStatOffsets>
 			<MoveSpeed>-0.10</MoveSpeed>
@@ -379,6 +391,9 @@
 				<soundCast>HP_Plasma_Gun_Sound</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>10</muzzleFlashScale>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
 			</li>
 		</verbs>
 	</ThingDef>
