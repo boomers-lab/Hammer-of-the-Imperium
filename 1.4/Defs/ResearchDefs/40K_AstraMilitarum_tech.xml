@@ -122,6 +122,20 @@
     </ResearchProjectDef>
 
     <ResearchProjectDef>
+        <defName>GW_AM_Valhallan</defName>
+        <label>valhallan</label>
+        <description>Equipment belonging to the Astra Militarum Regiment of Valhallans.</description>
+        <prerequisites>
+            <li>ODZ_40K_MilitarumFabricationBench</li>
+        </prerequisites>
+        <baseCost>1250</baseCost>
+        <techLevel>Industrial</techLevel>
+        <tab>ODZ_40K_ImperiumOfMan</tab>
+        <researchViewX>1</researchViewX>
+        <researchViewY>5</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
         <defName>GW_AM_Catachan</defName>
         <label>Catachan</label>
         <description>Equipment belonging to the Catachan.</description>

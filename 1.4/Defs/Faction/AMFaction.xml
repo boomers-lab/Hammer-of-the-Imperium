@@ -183,6 +183,22 @@
                     <GW_AM_LordGeneral>1</GW_AM_LordGeneral>
                 </options>
             </li>
+                       
+            <!--Valhallan-->
+            <li>
+                <kindDef>Combat</kindDef>
+                <commonality>1</commonality>
+                <options>
+                    <GW_AM_Valhallan_RangedTier1>5</GW_AM_Valhallan_RangedTier1>
+                    <GW_AM_Valhallan_MeleeTier1>3</GW_AM_Valhallan_MeleeTier1>
+                    <GW_AM_Valhallan_RangedTier2>7</GW_AM_Valhallan_RangedTier2>
+                    <GW_AM_Valhallan_MeleeTier2>5</GW_AM_Valhallan_MeleeTier2>
+                    <GW_AM_Valhallan_RangedTier3>10</GW_AM_Valhallan_RangedTier3>
+                    <GW_AM_Valhallan_MeleeTier3>7</GW_AM_Valhallan_MeleeTier3>
+                    <GW_AM_Valhallan_Lieutenant>3</GW_AM_Valhallan_Lieutenant>
+                    <GW_AM_LordGeneral>1</GW_AM_LordGeneral>
+                </options>
+            </li>
 
             <!--The misfits-->
             <li MayRequire="RedMattis.BetterPrerequisites">
@@ -215,6 +231,7 @@
                     <GW_AM_TallarnDesertRaiders_RangedTier3>3</GW_AM_TallarnDesertRaiders_RangedTier3>
                     <GW_AM_TempestusScion_RangedTier3>3</GW_AM_TempestusScion_RangedTier3>
                     <GW_AM_Mordian_RangedTier3>13</GW_AM_Mordian_RangedTier3>
+                    <GW_AM_Valhallan_Lieutenant>3</GW_AM_Valhallan_Lieutenant>
                     <GW_OgrynEnforcer MayRequire="RedMattis.BetterPrerequisites">2</GW_OgrynEnforcer>
                     <GW_OgrynGunner MayRequire="RedMattis.BetterPrerequisites">2</GW_OgrynGunner>
                     <GW_RatlingSniper MayRequire="RedMattis.BetterPrerequisites">4</GW_RatlingSniper>
@@ -230,6 +247,7 @@
                     <GW_AM_TallarnDesertRaiders_RangedTier3>3</GW_AM_TallarnDesertRaiders_RangedTier3>
                     <GW_AM_TempestusScion_RangedTier3>3</GW_AM_TempestusScion_RangedTier3>
                     <GW_AM_Mordian_RangedTier3>13</GW_AM_Mordian_RangedTier3>
+                    <GW_AM_Valhallan_Lieutenant>3</GW_AM_Valhallan_Lieutenant>
                     <GW_OgrynEnforcer MayRequire="RedMattis.BetterPrerequisites">2</GW_OgrynEnforcer>
                     <GW_OgrynGunner MayRequire="RedMattis.BetterPrerequisites">2</GW_OgrynGunner>
                     <GW_RatlingSniper MayRequire="RedMattis.BetterPrerequisites">4</GW_RatlingSniper>

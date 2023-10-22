@@ -22,7 +22,7 @@
         </statBases>
         <apparel>
             <useWornGraphicMask>true</useWornGraphicMask>		
-            <countsAsClothingForNudity>false</countsAsClothingForNudity>
+            <countsAsClothingForNudity>true</countsAsClothingForNudity>
             <bodyPartGroups>
                 <li>Torso</li>
                 <li>Legs</li>
@@ -135,7 +135,7 @@
             <researchPrerequisite>GW_AM_Mordian</researchPrerequisite>
         </recipeMaker>
         <graphicData>
-            <texPath>Things/Mordian/OnSkin/MordianIronGuard</texPath>
+            <texPath>Things/Mordian/OnSkin/Mordian_Male_south</texPath>
         </graphicData>
         <costStuffCount>90</costStuffCount>
         <statBases>
@@ -271,6 +271,65 @@
             <tags>
                 <li>40kVostoyanFirstborn</li>
                 <li>40kVostoyanFirstbornUniform</li>
+            </tags>
+        </apparel>
+    </ThingDef>
+
+            <!-- Valhallan Greatcoat -->
+
+    <ThingDef ParentName="GW_AM_OnSkinBase">
+        <defName>GW_AM_Valhallan_GreatCoat</defName>
+        <description>Mass produced greatcoats issued to the Valhallan regimentum.</description>
+        <label>valhallan greatcoat</label>
+        <recipeMaker>
+            <researchPrerequisite>GW_AM_Valhallan</researchPrerequisite>
+        </recipeMaker>
+        <graphicData>
+            <texPath>Things/Valhallan/OnSkin/greatcoat_Male_south</texPath>
+        </graphicData>
+        <costStuffCount>80</costStuffCount>
+        <statBases>
+            <MaxHitPoints>120</MaxHitPoints>
+            <WorkToMake>4000</WorkToMake>
+            <StuffEffectMultiplierArmor>0.4</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.70</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.05</StuffEffectMultiplierInsulation_Heat>
+        </statBases>
+        <apparel>
+            <wornGraphicPath>Things/Valhallan/OnSkin/greatcoat</wornGraphicPath>
+            <tags>
+                <li>40kValhallanGuard</li>
+                <li>40kValhallanGreatcoat</li>
+            </tags>
+        </apparel>
+    </ThingDef>
+
+    <ThingDef ParentName="GW_AM_OnSkinBase">
+        <defName>GW_AM_Valhallan_OfficerGreatCoat</defName>
+        <description>Greatcoats issued to the Valhallan regimentum officers.</description>
+        <label>valhallan officer greatcoat</label>
+        <recipeMaker>
+            <researchPrerequisite>GW_AM_Valhallan</researchPrerequisite>
+        </recipeMaker>
+        <graphicData>
+            <texPath>Things/Valhallan/OnSkin/officergreatcoat_Male_south</texPath>
+        </graphicData>
+        <costStuffCount>100</costStuffCount>
+        <equippedStatOffsets>
+            <SocialImpact>0.25</SocialImpact>
+        </equippedStatOffsets>	
+        <statBases>
+            <MaxHitPoints>150</MaxHitPoints>
+            <WorkToMake>5000</WorkToMake>
+            <StuffEffectMultiplierArmor>0.4</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.70</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.05</StuffEffectMultiplierInsulation_Heat>
+        </statBases>
+        <apparel>
+            <wornGraphicPath>Things/Valhallan/OnSkin/officergreatcoat</wornGraphicPath>
+            <tags>
+                <li>40kValhallanGuard</li>
+                <li>40kValhallanGreatcoat</li>
             </tags>
         </apparel>
     </ThingDef>

@@ -441,7 +441,7 @@
         </apparelTags>
         <apparelRequired>
             <li>ODZ_40k_IG_DKOK_Gasmask</li>
-            <li MayRequire="cet">ODZ_40k_IG_DKOK_Helmet</li>
+            <li>ODZ_40k_IG_DKOK_Helmet</li>
             <li>ODZ_40k_IG_DKOK_KriegUniform</li>
         </apparelRequired>
     </PawnKindDef>
@@ -929,6 +929,101 @@
             <li>GW_AM_VostoyanFirstbornHeadgear</li>
             <li>GW_AM_VostoyanFirstborn_Uniform</li>
         </apparelRequired>
+    </PawnKindDef>
+
+            <!--Valhallan-->
+    <PawnKindDef ParentName="GW_AM_RangedTier1">
+        <defName>GW_AM_Valhallan_RangedTier1</defName>
+        <label>valhallan conscript</label>
+        <apparelTags Inherit="False">
+            <li>40kValhallan</li>
+        </apparelTags>
+        <apparelRequired>
+            <li>GW_AM_Valhallan_Armor</li>
+            <li>GW_AM_Valhallan_Ushanka</li>
+            <li>GW_AM_Valhallan_GreatCoat</li>
+        </apparelRequired>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="GW_AM_MeleeTier1">
+        <defName>GW_AM_Valhallan_MeleeTier1</defName>
+        <label>valhallan conscript</label>
+        <apparelTags Inherit="False">
+            <li>40kValhallan</li>
+        </apparelTags>
+        <apparelRequired>
+            <li>GW_AM_Valhallan_Armor</li>
+            <li>GW_AM_Valhallan_Ushanka</li>
+            <li>GW_AM_Valhallan_GreatCoat</li>
+        </apparelRequired>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="GW_AM_RangedTier2">
+        <defName>GW_AM_Valhallan_RangedTier2</defName>
+        <label>valhallan trooper</label>
+        <apparelTags Inherit="False">
+            <li>40kValhallan</li>
+        </apparelTags>
+        <apparelRequired>
+            <li>GW_AM_Valhallan_Armor</li>
+            <li>GW_AM_Valhallan_Ushanka</li>
+            <li>GW_AM_Valhallan_GreatCoat</li>
+        </apparelRequired>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="GW_AM_MeleeTier2">
+        <defName>GW_AM_Valhallan_MeleeTier2</defName>
+        <label>valhallan trooper</label>
+        <apparelTags Inherit="False">
+            <li>40kValhallan</li>
+        </apparelTags>
+        <apparelRequired>
+            <li>GW_AM_Valhallan_Armor</li>
+            <li>GW_AM_Valhallan_Ushanka</li>
+            <li>GW_AM_Valhallan_GreatCoat</li>
+        </apparelRequired>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="GW_AM_RangedTier3">
+        <defName>GW_AM_Valhallan_RangedTier3</defName>
+        <label>valhallan sergeant</label>
+        <apparelTags Inherit="False">
+            <li>40kValhallan</li>
+        </apparelTags>
+        <apparelRequired>
+            <li>GW_AM_Valhallan_Armor</li>
+            <li>GW_AM_Valhallan_GarrisonCap</li>
+            <li>GW_AM_Valhallan_GreatCoat</li>
+        </apparelRequired>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="GW_AM_MeleeTier3">
+        <defName>GW_AM_Valhallan_MeleeTier3</defName>
+        <label>valhallan sergeant</label>
+        <apparelTags Inherit="False">
+            <li>40kValhallan</li>
+        </apparelTags>
+        <apparelRequired>
+            <li>GW_AM_Valhallan_Armor</li>
+            <li>GW_AM_Valhallan_GarrisonCap</li>
+            <li>GW_AM_Valhallan_GreatCoat</li>
+        </apparelRequired>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="GW_AM_RangedTier3">
+        <defName>GW_AM_Valhallan_Lieutenant</defName>
+        <label>valhallan lieutenant</label>
+        <combatPower>160</combatPower>
+        <apparelMoney>4500~5000</apparelMoney>
+        <apparelTags Inherit="False">
+            <li>40kValhallan</li>
+        </apparelTags>
+        <apparelRequired>
+            <li>GW_AM_Valhallan_Armor</li>
+            <li>GW_AM_Valhallan_OfficerUshanka</li>
+            <li>GW_AM_Valhallan_OfficerGreatCoat</li>
+        </apparelRequired>
+        <techHediffsChance>0.3</techHediffsChance>
     </PawnKindDef>
 
         <!--Leader-->

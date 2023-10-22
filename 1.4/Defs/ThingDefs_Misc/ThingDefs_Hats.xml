@@ -211,6 +211,99 @@
         </apparel>
     </ThingDef> 
 
+
+	    <!-- Valhallan Cap -->
+
+    <ThingDef ParentName="GW_AM_Hat_CapBase">
+        <defName>GW_AM_Valhallan_GarrisonCap</defName>
+        <label>valhallan garrison cap</label>
+        <description>A Vallhalan garrison cap.</description>
+        <graphicData>
+            <texPath>Things/Valhallan/Headgear/garrisoncap_south</texPath>
+        </graphicData>
+        <costList>
+            <Leather_Plain>5</Leather_Plain>
+        </costList>	
+        <statBases>
+            <WorkToMake>1200</WorkToMake>
+            <StuffEffectMultiplierInsulation_Cold>0.25</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.05</StuffEffectMultiplierInsulation_Heat>
+        </statBases>
+        <recipeMaker>
+            <researchPrerequisite>GW_AM_Valhallan</researchPrerequisite>
+        </recipeMaker>
+        <apparel>
+            <wornGraphicPath>Things/Valhallan/Headgear/garrisoncap</wornGraphicPath>
+            <tags>
+                <li>40kValhallan</li>
+                <li>40kValhallanHats</li>
+            </tags>
+            <defaultOutfitTags>
+                <li>Worker</li>
+            </defaultOutfitTags>
+        </apparel>
+    </ThingDef>  
+
+    <ThingDef ParentName="GW_AM_Hat_CapBase">
+        <defName>GW_AM_Valhallan_Ushanka</defName>
+        <label>valhallan ushanka</label>
+        <description>A Vallhalan ushanka.</description>
+        <graphicData>
+            <texPath>Things/Valhallan/Headgear/ushanka_south</texPath>
+        </graphicData>
+        <statBases>
+            <WorkToMake>1200</WorkToMake>
+            <StuffEffectMultiplierInsulation_Cold>0.20</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.05</StuffEffectMultiplierInsulation_Heat>
+        </statBases>
+        <recipeMaker>
+            <researchPrerequisite>GW_AM_Valhallan</researchPrerequisite>
+        </recipeMaker>
+        <apparel>
+            <wornGraphicPath>Things/Valhallan/Headgear/ushanka</wornGraphicPath>
+            <tags>
+                <li>40kValhallan</li>
+                <li>40kValhallanHats</li>
+            </tags>
+            <defaultOutfitTags>
+                <li>Worker</li>
+            </defaultOutfitTags>
+        </apparel>
+    </ThingDef>  
+
+    <ThingDef ParentName="GW_AM_Hat_CapBase">
+        <defName>GW_AM_Valhallan_OfficerUshanka</defName>
+        <label>valhallan garrison cap</label>
+        <description>An officers ushanka worn by Valhallan Regimentum Officers to signify authority over their troops.</description>
+        <graphicData>
+            <texPath>Things/Valhallan/Headgear/officerushanka_south</texPath>
+        </graphicData>
+        <statBases>
+            <WorkToMake>1600</WorkToMake>
+            <StuffEffectMultiplierInsulation_Cold>0.20</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.05</StuffEffectMultiplierInsulation_Heat>
+        </statBases>
+        <equippedStatOffsets>
+            <SocialImpact>0.25</SocialImpact>
+        </equippedStatOffsets>	
+        <recipeMaker>
+            <researchPrerequisite>GW_AM_Valhallan</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>5</Crafting>
+            </skillRequirements>	  
+        </recipeMaker>
+        <apparel>
+            <wornGraphicPath>Things/Valhallan/Headgear/officerushanka</wornGraphicPath>
+            <tags>
+                <li>40kValhallan</li>
+                <li>40kValhallanOfficerHats</li>
+            </tags>
+            <defaultOutfitTags>
+                <li>Worker</li>
+            </defaultOutfitTags>
+        </apparel>
+    </ThingDef>  
+
             <!-- Eyes -->
     <ThingDef Abstract="true" ParentName="GW_AM_HatBase" Name="GW_AM_Hat_EyesBase">
         <generateCommonality>0.25</generateCommonality>
@@ -598,4 +691,5 @@
             <immuneToToxGasExposure>true</immuneToToxGasExposure>	
         </apparel>
     </ThingDef> 
+
 </Defs>
