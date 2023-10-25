@@ -26,7 +26,7 @@
 		<designationCategory>GrimworldCategory</designationCategory>
 
 		<graphicData>
-			<texPath>Things/Buildings/Defenses/TrenchAlternative/GW_Trench_Atlas</texPath>
+			<texPath>Things/Building/TrenchAlternative/GW_Trench_Atlas</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<linkType>Basic</linkType>
 			<linkFlags>
@@ -34,7 +34,7 @@
 			</linkFlags>
 		</graphicData>
 
-		<uiIconPath>Things/Buildings/Defenses/TrenchAlternative/GW_Trench_UI</uiIconPath>
+		<uiIconPath>Things/Building/TrenchAlternative/GW_Trench_UI</uiIconPath>
 
     <comps>
 			<li Class="VFESecurity.CompProperties_TerrainSetter" MayRequire="VanillaExpanded.VFESecurity">
@@ -49,7 +49,7 @@
 		<building>
 			<isInert>true</isInert>
 			<blueprintGraphicData>
-			  <texPath>Things/Buildings/Defenses/TrenchAlternative/Blueprints/TrenchA_Blueprint_Atlas</texPath>
+			  <texPath>Things/Building/TrenchAlternative/Blueprints/TrenchA_Blueprint_Atlas</texPath>
       </blueprintGraphicData>
 		</building>
 
@@ -100,7 +100,7 @@
       <thingClass>Building</thingClass>
       <category>Building</category>
       <graphicData>
-        <texPath>Things/Buildings/Defenses/TrenchAlternative/Barricades/Trench_Barricade_Atlas</texPath>
+        <texPath>Things/Building/TrenchAlternative/Barricades/Trench_Barricade_Atlas</texPath>
         <graphicClass>Graphic_Single</graphicClass>
         <linkType>Basic</linkType>
         <linkFlags>
@@ -108,7 +108,7 @@
         </linkFlags>
         <color>(139,122,87)</color>
       </graphicData>
-      <uiIconPath>Things/Buildings/Defenses/TrenchAlternative/Barricades/Trench_Barricade_UI</uiIconPath>
+      <uiIconPath>Things/Building/TrenchAlternative/Barricades/Trench_Barricade_UI</uiIconPath>
       <uiIconScale>1.2</uiIconScale>
       <altitudeLayer>Building</altitudeLayer>
       <pathCost>42</pathCost>
@@ -133,7 +133,7 @@
         <isFence>true</isFence>
         <isPlaceOverableWall>true</isPlaceOverableWall>
         <blueprintGraphicData>
-          <texPath>Things/Buildings/Defenses/TrenchAlternative/Barricades/Trench_Barricade_Blueprint_Atlas</texPath>
+          <texPath>Things/Building/TrenchAlternative/Barricades/Trench_Barricade_Blueprint_Atlas</texPath>
         </blueprintGraphicData>
         <paintable>true</paintable>
       </building>
@@ -163,7 +163,7 @@
         <thingClass>Building_TrapDamager</thingClass>
         <category>Building</category>
         <graphicData>
-          <texPath>Things/Buildings/Defenses/TrenchAlternative/BarbWire/Trench_BarbWire_Atlas</texPath>
+          <texPath>Things/Building/TrenchAlternative/BarbWire/Trench_BarbWire_Atlas</texPath>
           <graphicClass>Graphic_Single</graphicClass>
 			    <shaderType>CutoutComplex</shaderType>
           <linkType>Basic</linkType>
@@ -184,7 +184,7 @@
           <Flammability>0.2</Flammability>
         </statBases>
         <designationCategory>GrimworldCategory</designationCategory>
-        <uiIconPath>Things/Buildings/Defenses/TrenchAlternative/BarbWire/Trench_BarbedWire_UI</uiIconPath>
+        <uiIconPath>Things/Building/TrenchAlternative/BarbWire/Trench_BarbedWire_UI</uiIconPath>
         <drawerType>MapMeshAndRealTime</drawerType>
         <altitudeLayer>Building</altitudeLayer>
         <passability>PassThroughOnly</passability>
@@ -210,7 +210,7 @@
             <trapDamageCategory>Sharp</trapDamageCategory>
             <ai_chillDestination>false</ai_chillDestination>
             <blueprintGraphicData>
-              <texPath>Things/Buildings/Defenses/TrenchAlternative/BarbWire/Trench_BarbWire_Blueprint_Atlas</texPath>
+              <texPath>Things/Building/TrenchAlternative/BarbWire/Trench_BarbWire_Blueprint_Atlas</texPath>
               <linkType>Basic</linkType>
               <linkFlags>
                 <li>Custom6</li>
@@ -226,238 +226,6 @@
         <filthLeaving>Filth_RubbleBuilding</filthLeaving>
     </ThingDef>
 	
-	<!-- Bunker Wall -->
-	
-	<ThingDef ParentName="BuildingBase">
-		<defName>BunkerWall</defName>
-		<label>Bunker wall</label>
-		<description>An impassable, defensive bunker wall that can provide extra protection for combatants in the frontline. Capable of holding up a roof.</description>
-		<thingClass>Building</thingClass>
-		<category>Building</category>
-		<graphicData>
-			<texPath>Things/Buildings/Defenses/Bunkers/BunkerWall_Atlas</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<linkType>CornerFiller</linkType>
-			<linkFlags>
-				<li>Wall</li>
-				<li>Rock</li>
-			</linkFlags>
-			<damageData>
-				<cornerTL>Damage/Corner</cornerTL>
-				<cornerTR>Damage/Corner</cornerTR>
-				<cornerBL>Damage/Corner</cornerBL>
-				<cornerBR>Damage/Corner</cornerBR>
-				<edgeTop>Damage/Edge</edgeTop>
-				<edgeBot>Damage/Edge</edgeBot>
-				<edgeLeft>Damage/Edge</edgeLeft>
-				<edgeRight>Damage/Edge</edgeRight>
-			</damageData>
-		</graphicData>
-		<uiIconPath>Things/Buildings/Defenses/Bunkers/BunkerWall_UI</uiIconPath>
-		<statBases>
-			<MaxHitPoints>900</MaxHitPoints>
-			<WorkToBuild>1200</WorkToBuild>
-			<Flammability>0.1</Flammability>
-		</statBases>
-		<stuffCategories>
-            <li>Metallic</li>
-        </stuffCategories>
-		<costStuffCount>15</costStuffCount>
-		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
-		<altitudeLayer>Building</altitudeLayer>
-		<passability>Impassable</passability>
-		<blockWind>true</blockWind>
-		<castEdgeShadows>true</castEdgeShadows>
-		<fillPercent>1</fillPercent>
-		<coversFloor>true</coversFloor>
-		<placingDraggableDimensions>1</placingDraggableDimensions>
-		<tickerType>Never</tickerType>
-		<rotatable>false</rotatable>
-		<selectable>true</selectable>
-		<neverMultiSelect>true</neverMultiSelect>
-		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
-		<holdsRoof>true</holdsRoof>
-		<designationCategory>GrimworldCategory</designationCategory>
-		<staticSunShadowHeight>1.0</staticSunShadowHeight>
-		<blockLight>true</blockLight>
-		<canOverlapZones>false</canOverlapZones>
-		<fertility>0</fertility>
-		<building>
-			<isInert>true</isInert>
-			<ai_chillDestination>false</ai_chillDestination>
-			<blueprintGraphicData>
-				<texPath>Things/Buildings/Defenses/Bunkers/BunkerWall_Blueprint_Atlas</texPath>
-			</blueprintGraphicData>
-		</building>
-		<comps>
-        </comps>
-		<damageMultipliers>
-          <li>
-            <damageDef>Bomb</damageDef>
-            <multiplier>0.02</multiplier>
-          </li>
-          <li>
-            <damageDef>Thump</damageDef>
-            <multiplier>0.02</multiplier>
-          </li>
-        </damageMultipliers>
-		<researchPrerequisites>
-			<li>GW_AM_BasicDefence</li>
-		</researchPrerequisites>
-	</ThingDef>
-	
-	<!-- Bunker Embrasure Wall -->
-	
-	<ThingDef ParentName="BuildingBase">
-		<defName>BunkerEmbrasureWall</defName>
-		<label>Bunker embrasure wall</label>
-		<description>An impassable, defensive bunker embrasure wall that can provide extra protection and allows a combatant to shoot through it. Capable of holding up a roof.</description>
-		<thingClass>Building</thingClass>
-		<category>Building</category>
-		<graphicData>
-			<texPath>Things/Buildings/Defenses/Bunkers/BunkerWall_Embrasure_Atlas</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<linkType>CornerFiller</linkType>
-			<linkFlags>
-				<li>Wall</li>
-				<li>Rock</li>
-			</linkFlags>
-			<damageData>
-				<cornerTL>Damage/Corner</cornerTL>
-				<cornerTR>Damage/Corner</cornerTR>
-				<cornerBL>Damage/Corner</cornerBL>
-				<cornerBR>Damage/Corner</cornerBR>
-				<edgeTop>Damage/Edge</edgeTop>
-				<edgeBot>Damage/Edge</edgeBot>
-				<edgeLeft>Damage/Edge</edgeLeft>
-				<edgeRight>Damage/Edge</edgeRight>
-			</damageData>
-		</graphicData>
-		<uiIconPath>Things/Buildings/Defenses/Bunkers/BunkerWallEmbrasure_UI</uiIconPath>
-		<statBases>
-			<MaxHitPoints>960</MaxHitPoints>
-			<WorkToBuild>1300</WorkToBuild>
-			<Flammability>0.1</Flammability>
-		</statBases>
-		<stuffCategories>
-            <li>Metallic</li>
-        </stuffCategories>
-		<costStuffCount>15</costStuffCount>
-		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
-		<altitudeLayer>Building</altitudeLayer>
-		<passability>Impassable</passability>
-		<castEdgeShadows>true</castEdgeShadows>
-		<coversFloor>true</coversFloor>
-		<fillPercent>0.7</fillPercent>
-		<placingDraggableDimensions>1</placingDraggableDimensions>
-		<tickerType>Never</tickerType>
-		<rotatable>false</rotatable>
-		<selectable>true</selectable>
-		<neverMultiSelect>true</neverMultiSelect>
-		<useStuffTerrainAffordance>true</useStuffTerrainAffordance>
-		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
-		<holdsRoof>true</holdsRoof>
-		<designationCategory>GrimworldCategory</designationCategory>
-		<staticSunShadowHeight>1.0</staticSunShadowHeight>
-		<blockLight>false</blockLight>
-		<canOverlapZones>false</canOverlapZones>
-		<fertility>0</fertility>
-		<building>
-			<isInert>true</isInert>
-			<ai_chillDestination>false</ai_chillDestination>
-			<blueprintGraphicData>
-				<texPath>Things/Buildings/Defenses/Bunkers/BunkerWall_Blueprint_Atlas</texPath>
-			</blueprintGraphicData>
-		</building>
-		<comps>
-        </comps>
-		<damageMultipliers>
-          <li>
-            <damageDef>Bomb</damageDef>
-            <multiplier>0.02</multiplier>
-          </li>
-          <li>
-            <damageDef>Thump</damageDef>
-            <multiplier>0.02</multiplier>
-          </li>
-        </damageMultipliers>
-		<researchPrerequisites>
-			<li>GW_AM_BasicDefence</li>
-		</researchPrerequisites>
-	</ThingDef>
-	
-	<!-- Bunker Door -->
-	
-	<ThingDef ParentName="BuildingBase" Name="BunkerDoorBase" Abstract="True">
-      <thingClass>Building_Door</thingClass>
-      <category>Building</category>
-      <altitudeLayer>DoorMoveable</altitudeLayer>
-      <fillPercent>1</fillPercent>
-      <useHitPoints>true</useHitPoints>
-      <stuffCategories>
-        <li>Metallic</li>
-      </stuffCategories>
-      <statBases>
-        <MaxHitPoints>510</MaxHitPoints>
-        <Flammability>0.1</Flammability>
-		<DoorOpenSpeed>0.50</DoorOpenSpeed>
-      </statBases>
-      <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
-      <selectable>true</selectable>
-      <tickerType>Normal</tickerType>
-      <rotatable>false</rotatable>
-      <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
-      <useStuffTerrainAffordance>true</useStuffTerrainAffordance>
-      <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
-      <designationCategory>Structure</designationCategory>
-      <uiOrder>2010</uiOrder>
-      <holdsRoof>true</holdsRoof>
-      <staticSunShadowHeight>1.0</staticSunShadowHeight>
-      <blockLight>true</blockLight>
-      <drawerType>RealtimeOnly</drawerType>
-      <building>
-        <isInert>true</isInert>
-        <canPlaceOverWall>true</canPlaceOverWall>
-        <soundDoorOpenPowered>Door_OpenPowered</soundDoorOpenPowered>
-        <soundDoorClosePowered>Door_ClosePowered</soundDoorClosePowered>
-        <soundDoorOpenManual>Door_OpenManual</soundDoorOpenManual>
-        <soundDoorCloseManual>Door_CloseManual</soundDoorCloseManual>
-        <blueprintClass>Blueprint_Door</blueprintClass>
-        <blueprintGraphicData>
-          <texPath>Things/Building/Door/Door_Blueprint</texPath>
-        </blueprintGraphicData>
-        <ai_chillDestination>false</ai_chillDestination>
-      <paintable>true</paintable>
-      </building>
-      <comps>
-        <li Class="CompProperties_Forbiddable">
-          <allowNonPlayer>true</allowNonPlayer>
-        </li>
-      </comps>
-      <placeWorkers>
-        <li>PlaceWorker_DoorLearnOpeningSpeed</li>
-      </placeWorkers>
-    </ThingDef>
-	
-	<ThingDef ParentName="BunkerDoorBase">
-      <defName>BunkerDoor</defName>
-      <label>Bunker door</label>
-      <description>A sturdy metallic bunker door.</description>
-      <statBases>
-        <WorkToBuild>850</WorkToBuild>
-      </statBases>
-      <graphicData>
-        <texPath>Things/Buildings/Defenses/Bunkers/BunkerDoor_Mover</texPath>
-        <graphicClass>Graphic_Single</graphicClass>
-        <damageData>
-          <enabled>false</enabled>
-        </damageData>
-      </graphicData>
-      <uiIconPath>Things/Buildings/Defenses/Bunkers/BunkerDoor_UI</uiIconPath>
-      <costStuffCount>25</costStuffCount>
-      <designationHotKey>Misc1</designationHotKey>
-    </ThingDef>
-	
 	<!-- Tank Traps -->
 	
     <ThingDef parent="BuildingBase">
@@ -468,7 +236,7 @@
         <category>Building</category>
         <graphicData>
             <drawSize>(1.1,1.1)</drawSize>
-            <texPath>Things/Buildings/Defenses/TrenchAlternative/TankTraps/Trench_TankTrap_Metalic</texPath>
+            <texPath>Things/Building/TrenchAlternative/TankTraps/Trench_TankTrap_Metalic</texPath>
             <graphicClass>Graphic_Single</graphicClass>
             <shadowData>
                 <volume>(0.3, 0.5, 0.3)</volume>
@@ -519,7 +287,7 @@
         <category>Building</category>
         <graphicData>
             <drawSize>(1.1,1.1)</drawSize>
-            <texPath>Things/Buildings/Defenses/TrenchAlternative/TankTraps/Trench_TankTrap_Stony</texPath>
+            <texPath>Things/Building/TrenchAlternative/TankTraps/Trench_TankTrap_Stony</texPath>
             <graphicClass>Graphic_Single</graphicClass>
             <shadowData>
                 <volume>(0.3, 0.5, 0.3)</volume>
