@@ -1,6 +1,36 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+	<!--===== Flamer Projectile =====-->
+
+	<VFECore.ExpandableProjectileDef ParentName="BaseBullet">
+		<defName>GW_AM_Bullet_Flamer</defName>
+		<label>flamer shot</label>
+		<thingClass>VFECore.FlamethrowProjectile</thingClass>
+		<graphicData>
+			<texPath>Things/Projectiles/AMFlamer_Flame</texPath>
+			<texPathFadeOut>Things/Projectiles/AMFlamer_End</texPathFadeOut>
+			<shaderType>MoteGlow</shaderType>
+		</graphicData>
+		<projectile>
+			<damageDef>Flame</damageDef>
+			<speed>45</speed>
+			<damageAmountBase>3</damageAmountBase>
+		</projectile>
+
+		<drawOffscreen>true</drawOffscreen>
+		<lifeTimeDuration>55</lifeTimeDuration>
+		<widthScaleFactor>0.65</widthScaleFactor>
+		<heightScaleFactor>1</heightScaleFactor>
+		<startingPositionOffset>(0, 0, -1)</startingPositionOffset>
+		<totalSizeScale>1.15</totalSizeScale>
+		<tickFrameRate>2</tickFrameRate>
+		<finalTickFrameRate>5</finalTickFrameRate>
+		<tickDamageRate>20</tickDamageRate>
+		<dealsDamageOnce>true</dealsDamageOnce>
+		<minDistanceToAffect>2</minDistanceToAffect>
+	</VFECore.ExpandableProjectileDef>
+
 	<!--===== missile Projectile =====-->
 	
 	<ThingDef ParentName="BaseBullet">
@@ -19,7 +49,7 @@
 		</projectile>
 	</ThingDef>
 	
-	<!--===== Bolt Pistol Projectile ===== -->
+	<!--===== Bolt Pistol Projectile =====-->
 	
 	<ThingDef ParentName="BaseBullet">
         <defName>GW_AM_Bullet_BoltPistol</defName>
@@ -30,9 +60,27 @@
         </graphicData>
         <projectile>
             <damageDef>Bullet</damageDef>
-            <damageAmountBase>24</damageAmountBase>
+            <damageAmountBase>18</damageAmountBase>
 			<stoppingPower>0.7</stoppingPower>
 			<armorPenetrationBase>0.35</armorPenetrationBase>
+            <speed>50</speed>
+        </projectile>
+    </ThingDef>
+	
+	<!--===== Bolter Projectile =====-->
+	
+	<ThingDef ParentName="BaseBullet">
+        <defName>GW_AM_Bullet_Bolter</defName>
+        <label>bolter round</label>
+        <graphicData>
+            <texPath>Things/Projectile/Bullet_Large</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>30</damageAmountBase>
+			<stoppingPower>0.8</stoppingPower>
+			<armorPenetrationBase>0.55</armorPenetrationBase>
             <speed>50</speed>
         </projectile>
     </ThingDef>
@@ -147,7 +195,7 @@
 	
 	<!--===== Bolt Pistol =====-->
 	
-	<ThingDef ParentName="GW_AM_AutogunBase">
+	<ThingDef ParentName="GW_AM_BolterBase">
         <defName>GW_AM_Gun_BoltPistol</defName>
         <label>Bolt Pistol</label>
         <description>The Commissar's Special</description>
@@ -193,7 +241,7 @@
                 <hasStandardCommand>true</hasStandardCommand>
                 <defaultProjectile>GW_AM_Bullet_BoltPistol</defaultProjectile>
                 <warmupTime>0.9</warmupTime>
-                <range>28</range>
+                <range>24</range>
 				<burstShotCount>1</burstShotCount>
                 <soundCast>GW_AM_Bolt_Pistol_Sound</soundCast>
                 <soundCastTail>GunTail_Heavy</soundCastTail>
@@ -220,4 +268,148 @@
             </li>
         </tools>
     </ThingDef>
+	
+	<!--===== Locke Bolter =====-->
+	
+	<ThingDef ParentName="GW_AM_BolterBase">
+        <defName>GW_AM_Gun_Bolter</defName>
+        <label>Locke Bolter</label>
+        <description>Straight from the under-hive</description>
+        <possessionCount>1</possessionCount>
+        <graphicData>
+            <drawSize>1.1</drawSize>
+            <texPath>Weapons/Locke_Bolt</texPath>
+        </graphicData>
+        <soundInteract>Interact_Rifle</soundInteract>
+        <weaponClasses>
+            <li>RangedHeavy</li>
+        </weaponClasses>
+        <weaponTags>
+			<li>HPRanged</li>
+            <li>ShortShots</li>
+        </weaponTags>
+        <statBases>
+            <WorkToMake>18000</WorkToMake>
+            <Mass>7</Mass>
+            <AccuracyTouch>0.55</AccuracyTouch>
+            <AccuracyShort>0.68</AccuracyShort>
+            <AccuracyMedium>0.84</AccuracyMedium>
+            <AccuracyLong>0.72</AccuracyLong>
+            <RangedWeapon_Cooldown>2.1</RangedWeapon_Cooldown>
+        </statBases>
+        <costList>
+            <Steel>225</Steel>
+            <ComponentIndustrial>16</ComponentIndustrial>
+			<HP_Ceramite>15</HP_Ceramite>
+        </costList>
+        <recipeMaker>
+			<recipeUsers Inherit="False">
+				<li>HP_AM_MilitarumFabricationBench</li>
+			</recipeUsers>
+            <skillRequirements>
+                <Crafting>10</Crafting>
+            </skillRequirements>
+            <displayPriority>430</displayPriority>
+        </recipeMaker>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>GW_AM_Bullet_Bolter</defaultProjectile>
+                <warmupTime>0.9</warmupTime>
+                <range>32</range>
+				<burstShotCount>3</burstShotCount>
+                <soundCast>GW_AM_Bolt_Pistol_Sound</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+        <tools>
+            <li>
+                <label>grip</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>10</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+            <li>
+                <label>barrel</label>
+                <capacities>
+                    <li>Blunt</li>
+                    <li>Poke</li>
+                </capacities>
+                <power>10</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+        </tools>
+    </ThingDef>
+	
+	<!--===== Flamer Base =====-->
+	
+	<ThingDef Abstract="True" ParentName="BaseGunWithQuality" Name="GW_AM_FlamerBase">
+		<smeltable>false</smeltable>
+		<techLevel>Spacer</techLevel>
+		<generateCommonality>0.5</generateCommonality>
+		<tradeability>None</tradeability>
+		<relicChance>0</relicChance>
+	</ThingDef>
+	
+	<!--===== Flamer =====-->
+	
+	<ThingDef ParentName="GW_AM_FlamerBase">
+		<defName>GW_AM_Gun_Flamer</defName>
+		<label>Acctran Flamer</label>
+		<description>I bet it burns</description>
+		<graphicData>
+			<texPath>Things/Weapons/Flamer</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.2</drawSize>
+		</graphicData>
+		<tools>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>11.7</power>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+		</tools>
+		<recipeMaker>
+			<recipeUsers Inherit="False">
+				<li>HP_ImperialFabricationBench</li>
+			</recipeUsers>		
+			<researchPrerequisite>ODZ_40K_Plasma</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>10</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<Plasteel>90</Plasteel>
+			<Steel>135</Steel>
+			<ComponentIndustrial>15</ComponentIndustrial>
+			<HP_Ceramite>30</HP_Ceramite>
+		</costList>
+		<statBases>
+			<Mass>14</Mass>
+			<RangedWeapon_Cooldown>3.8</RangedWeapon_Cooldown>
+			<WorkToMake>38000</WorkToMake>
+		</statBases>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>GW_AM_Bullet_Flamer</defaultProjectile>
+				<ai_AvoidFriendlyFireRadius>3</ai_AvoidFriendlyFireRadius>
+				<warmupTime>1.25</warmupTime>
+				<range>14</range>
+				<burstShotCount>1</burstShotCount>
+				<soundCast>GW_AM_Flamer_Sound</soundCast>
+				<soundCastTail>GunTail_Light</soundCastTail>
+				<muzzleFlashScale>14</muzzleFlashScale>
+			</li>
+		</verbs>
+	</ThingDef>
+	
 </Defs>
