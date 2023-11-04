@@ -3,30 +3,29 @@
 		<!--Melee Attacks for Guns-->
 	<Operation Class="PatchOperationReplace">
 		<xpath>
-		Defs/ThingDef[
-		defName="HP_AM_Gun_PlasmaGun" or 
-		defName="HP_AM_Gun_MeltaGun" or 
-		defName="GW_AM_Gun_Kantraelsanctified" or
-		defName="GW_AM_Gun_Lascarbinefoursanctified" or
-		defName="GW_AM_Gun_VossPatternsanctified" or
-		defName="GW_AM_Gun_Kantrael" or
-		defName="GW_AM_Gun_Kantraelt" or 
-		defName="GW_AM_Gun_Lascarbinefour" or
-		defName="GW_AM_Gun_VossPattern" or 
-		defName="GW_AM_Gun_Accatranfive" or
-		defName="GW_AM_Gun_Lucius" or
-		defName="GW_AM_Gun_Hellgun" or
-		defName="GW_AM_Gun_Locke" or
-		defName="GW_AM_Gun_Longlas" or
-		defName="Gun_Agripinaamkii" or
-		defName="Gun_Agripinaamkiitanker" or
-		defName="Gun_OrlockAutogun" or
-		defName="Gun_Heavystubber" or
-		defName="Gun_MilitarumShotgun" or
-		defName="Gun_MilitarumShotgunSawn" or
-		defName="GW_AM_Gun_Rippergun" or
-		defName="GW_AM_Gun_FragLauncher"
-		]/tools
+			Defs/ThingDef[
+			defName="HP_AM_Gun_PlasmaGun" or 
+			defName="HP_AM_Gun_MeltaGun" or 
+			defName="GW_AM_Gun_Kantraelsanctified" or
+			defName="GW_AM_Gun_Lascarbinefoursanctified" or
+			defName="GW_AM_Gun_VossPatternsanctified" or
+			defName="GW_AM_Gun_Kantrael" or
+			defName="GW_AM_Gun_Kantraelt" or 
+			defName="GW_AM_Gun_Lascarbinefour" or
+			defName="GW_AM_Gun_VossPattern" or 
+			defName="GW_AM_Gun_Accatranfive" or
+			defName="GW_AM_Gun_Lucius" or
+			defName="GW_AM_Gun_Hellgun" or
+			defName="GW_AM_Gun_Locke" or
+			defName="GW_AM_Gun_Longlas" or
+			defName="Gun_Agripinaamkii" or
+			defName="Gun_Agripinaamkiitanker" or
+			defName="Gun_OrlockAutogun" or
+			defName="Gun_Heavystubber" or
+			defName="Gun_MilitarumShotgun" or
+			defName="Gun_MilitarumShotgunSawn" or
+			defName="GW_AM_Gun_Rippergun"
+			]/tools
 		</xpath>
 		<value>
 			<tools>
@@ -78,7 +77,6 @@
 			</tools>
 		</value>
 	</Operation>
-
 		<!--Guns-->
 	
 					<!-- ============ Plasma Gun ============ -->

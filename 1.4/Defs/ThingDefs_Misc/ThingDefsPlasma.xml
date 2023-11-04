@@ -252,7 +252,7 @@
 		<description>Smol 4th state of matter.</description>
 		<techLevel>Spacer</techLevel>
 		<graphicData>
-			<texPath>Things/Weapons/AM_PlasmaPistol</texPath>
+			<texPath>Weapons/AM_PlasmaPistol</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<soundInteract>Interact_ChargeRifle</soundInteract>
@@ -267,9 +267,9 @@
 		</statBases>
 		<recipeMaker>
 			<recipeUsers Inherit="False">
-				<li>HP_ImperialFabricationBench</li>
+				<li>HP_AM_MilitarumFabricationBench</li>
 			</recipeUsers>		
-			<researchPrerequisite>Odz_Astartes_PlasmaGuns</researchPrerequisite>
+			<researchPrerequisite>ODZ_40K_Plasma</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>15</Crafting>
 			</skillRequirements>
@@ -298,7 +298,7 @@
 				<range>22</range>
 				<ticksBetweenBurstShots>7</ticksBetweenBurstShots>
 				<burstShotCount>1</burstShotCount>
-				<soundCast>HP_Plasma_Gun_Sound</soundCast>
+				<soundCast>HP_AM_Plasma_Gun_Sound</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>12</muzzleFlashScale>	
 			</li>
@@ -333,7 +333,7 @@
 		<techLevel>Spacer</techLevel>
 		<graphicData>
 			<drawSize>1.2</drawSize>
-			<texPath>Things/Weapons/AM_MeltaPistol</texPath>
+			<texPath>Weapons/AM_MeltaPistol</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<soundInteract>Interact_ChargeRifle</soundInteract>
@@ -348,9 +348,9 @@
 		</statBases>
 		<recipeMaker>
 			<recipeUsers Inherit="False">
-				<li>HP_ImperialFabricationBench</li>
+				<li>HP_AM_MilitarumFabricationBench</li>
 			</recipeUsers>		
-			<researchPrerequisite>Odz_Astartes_PlasmaGuns</researchPrerequisite>
+			<researchPrerequisite>ODZ_40K_Plasma</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>15</Crafting>
 			</skillRequirements>
@@ -380,7 +380,7 @@
 				<range>10</range>
 				<ticksBetweenBurstShots>5</ticksBetweenBurstShots>
 				<burstShotCount>1</burstShotCount>
-				<soundCast>HP_Melta_Gun_Sound</soundCast>
+				<soundCast>HP_AM_Melta_Gun_Sound</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>12</muzzleFlashScale>	
 			</li>

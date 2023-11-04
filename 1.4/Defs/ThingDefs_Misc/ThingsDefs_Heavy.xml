@@ -8,8 +8,8 @@
 		<label>flamer shot</label>
 		<thingClass>VFECore.FlamethrowProjectile</thingClass>
 		<graphicData>
-			<texPath>Things/Projectiles/AMFlamer_Flame</texPath>
-			<texPathFadeOut>Things/Projectiles/AMFlamer_End</texPathFadeOut>
+			<texPath>Projectiles/AMFlamer_Flame</texPath>
+			<texPathFadeOut>Projectiles/AMFlamer_End</texPathFadeOut>
 			<shaderType>MoteGlow</shaderType>
 		</graphicData>
 		<projectile>
@@ -55,8 +55,9 @@
         <defName>GW_AM_Bullet_BoltPistol</defName>
         <label>bolt pistol round</label>
         <graphicData>
-            <texPath>Things/Projectile/Bullet_Small</texPath>
+            <texPath>Projectiles/AM_BoltPistol_Proj</texPath>
             <graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.8</drawSize>
         </graphicData>
         <projectile>
             <damageDef>Bullet</damageDef>
@@ -73,7 +74,7 @@
         <defName>GW_AM_Bullet_Bolter</defName>
         <label>bolter round</label>
         <graphicData>
-            <texPath>Things/Projectile/Bullet_Large</texPath>
+            <texPath>Projectiles/AM_BoltPistol_Proj</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <projectile>
@@ -362,7 +363,7 @@
 		<label>Acctran Flamer</label>
 		<description>I bet it burns</description>
 		<graphicData>
-			<texPath>Things/Weapons/Flamer</texPath>
+			<texPath>Weapons/Accatran_Flamer</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>1.2</drawSize>
 		</graphicData>
@@ -378,7 +379,7 @@
 		</tools>
 		<recipeMaker>
 			<recipeUsers Inherit="False">
-				<li>HP_ImperialFabricationBench</li>
+				<li>HP_AM_MilitarumFabricationBench</li>
 			</recipeUsers>		
 			<researchPrerequisite>ODZ_40K_Plasma</researchPrerequisite>
 			<skillRequirements>
