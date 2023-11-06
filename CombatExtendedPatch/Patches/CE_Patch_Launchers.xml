@@ -20,11 +20,12 @@
 	</Operation>
 	
 	<!--===== Melee Attacks =====-->
-	
-	<Operation Class="PatchOperationReplace">
+	<!-- This causes and error of patch failure somehow? but when the frag launcher is in the main CE guns patch it works fine, leaving this here to come back at a later time to see if I can get this to work to keep the code organized-->
+	<!--<Operation Class="PatchOperationReplace">
 		<xpath>
 			Defs/ThingDef[
-			defName="GW_AM_Gun_FragLauncher"]/tools
+			defName="GW_AM_Gun_FragLauncher"
+			]/tools
 		</xpath>
 		<value>
 			<tools>
@@ -51,7 +52,7 @@
 				</li>
 			</tools>
 		</value>
-	</Operation>
+	</Operation>-->
 	
 	<!--===== Grenade Launcher =====-->
 	
@@ -86,7 +87,7 @@
 			<warmupTime>3.4</warmupTime>
 			<range>56</range>
 			<burstShotCount>0</burstShotCount>
-			<soundCast>HP_Incinerator_Gun_Sound</soundCast>
+			<soundCast>HP_AM_Plasma_Gun_Sound</soundCast>
 			<soundCastTail>GunTail_Heavy</soundCastTail>
 			<muzzleFlashScale>12</muzzleFlashScale>
 			<recoilAmount>4.6</recoilAmount>

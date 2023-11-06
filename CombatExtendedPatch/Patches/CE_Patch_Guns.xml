@@ -24,7 +24,10 @@
 			defName="Gun_Heavystubber" or
 			defName="Gun_MilitarumShotgun" or
 			defName="Gun_MilitarumShotgunSawn" or
-			defName="GW_AM_Gun_Rippergun"
+			defName="GW_AM_Gun_Rippergun" or
+			defName="GW_AM_Gun_Bolter" or 
+			defName="GW_AM_Gun_Flamer" or
+			defName="GW_AM_Gun_FragLauncher"
 			]/tools
 		</xpath>
 		<value>
@@ -1110,5 +1113,99 @@
 			<aiAimMode>AimedShot</aiAimMode>
 			<noSnapshot>true</noSnapshot>
 		</FireModes>
+	</Operation>
+	
+	<!--===== Bolter =====-->
+	
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="GW_AM_Gun_Bolter"]/weaponTags</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="GW_AM_Gun_Bolter"]</xpath>
+			<value><weaponTags /></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
+		<defName>GW_AM_Gun_Bolter</defName>
+		<statBases>
+			<Mass>8.6</Mass>
+			<RangedWeapon_Cooldown>1.2</RangedWeapon_Cooldown>
+			<SightsEfficiency>1</SightsEfficiency>
+			<ShotSpread>0.14</ShotSpread>
+			<SwayFactor>2.3</SwayFactor>
+			<Bulk>7.6</Bulk>
+			<WorkToMake>34000</WorkToMake>
+		</statBases>
+		<Properties>
+			<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+			<hasStandardCommand>true</hasStandardCommand>
+			<defaultProjectile>Bullet_Bolter</defaultProjectile>
+			<warmupTime>1.4</warmupTime>
+			<range>42</range>
+			<burstShotCount>6</burstShotCount>
+			<soundCast>GW_AM_Bolt_Pistol_Sound</soundCast>
+			<soundCastTail>GunTail_Heavy</soundCastTail>
+			<muzzleFlashScale>15</muzzleFlashScale>
+		</Properties>
+		<AmmoUser>
+			<magazineSize>12</magazineSize>
+			<reloadTime>7.8</reloadTime>
+			<ammoSet>AmmoSet_Bolter</ammoSet>
+		</AmmoUser>
+		<FireModes>
+			<aimedBurstShotCount>2</aimedBurstShotCount>
+			<aiUseBurstMode>FALSE</aiUseBurstMode>
+			<aiAimMode>AimedShot</aiAimMode>
+			<noSnapshot>true</noSnapshot>
+		</FireModes>
+	</Operation>
+	
+	<!--===== Flamer =====-->
+	
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="GW_AM_Gun_Flamer"]/weaponTags</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="GW_AM_Gun_Flamer"]</xpath>
+			<value><weaponTags /></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
+		<defName>GW_AM_Gun_Flamer</defName>
+		<statBases>
+			<Mass>26.2</Mass>
+			<RangedWeapon_Cooldown>0.98</RangedWeapon_Cooldown>
+			<SightsEfficiency>1.5</SightsEfficiency>
+			<ShotSpread>4.0</ShotSpread>
+			<SwayFactor>1</SwayFactor>
+			<Bulk>16.4</Bulk>
+			<WorkToMake>36000</WorkToMake>
+		</statBases>
+		<Properties>
+			<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+			<hasStandardCommand>true</hasStandardCommand>
+			<defaultProjectile>Bullet_Flamethrower_Prometheum</defaultProjectile>
+			<warmupTime>1.3</warmupTime>
+			<range>18</range>
+			<minRange>2</minRange>
+			<burstShotCount>6</burstShotCount>
+			<soundCast>GW_AM_Flamer_Sound</soundCast>
+			<soundCastTail>GunTail_Heavy</soundCastTail>
+			<muzzleFlashScale>12</muzzleFlashScale>
+			<recoilAmount>0.4</recoilAmount>
+			<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+			<ai_AvoidFriendlyFireRadius>3</ai_AvoidFriendlyFireRadius>
+		</Properties>
+		<AmmoUser>
+			<magazineSize>40</magazineSize>
+			<reloadTime>2.6</reloadTime>
+			<ammoSet>AmmoSet_Flamethrower</ammoSet>
+		</AmmoUser>
+		<FireModes>
+			<aiUseBurstMode>False</aiUseBurstMode>
+			<aiAimMode>SuppressFire</aiAimMode>
+			<noSingleShot>true</noSingleShot>
+		</FireModes>
+		<weaponTags>
+			<li>NoSwitch</li>
+		</weaponTags>
 	</Operation>
 </Patch>
