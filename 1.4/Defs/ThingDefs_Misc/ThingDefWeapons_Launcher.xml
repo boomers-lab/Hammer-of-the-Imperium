@@ -131,7 +131,7 @@
 			<researchPrerequisite>ODZ_40K_Plasma</researchPrerequisite>
 			<displayPriority>420</displayPriority>
 			<recipeUsers Inherit="False">
-				<li>HP_ImperialFabricationBench</li>
+				<li>HP_AM_MilitarumFabricationBench</li>
 			</recipeUsers>
 			<skillRequirements>
 				<Crafting>12</Crafting>
@@ -204,7 +204,7 @@
 				<warmupTime>3</warmupTime>
 				<range>26</range>
 				<burstShotCount>1</burstShotCount>
-				<soundCast>HP_Plasma_Gun_Sound</soundCast>
+				<soundCast>HP_AM_Plasma_Gun_Sound</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>10</muzzleFlashScale>
 				<targetParams>
@@ -250,7 +250,7 @@
 				<warmupTime>3</warmupTime>
 				<range>32</range>
 				<burstShotCount>1</burstShotCount>
-				<soundCast>HP_Plasma_Gun_Sound</soundCast>
+				<soundCast>HP_AM_Plasma_Gun_Sound</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>10</muzzleFlashScale>
 				<targetParams>
@@ -296,7 +296,7 @@
 				<warmupTime>3</warmupTime>
 				<range>36</range>
 				<burstShotCount>1</burstShotCount>
-				<soundCast>HP_Plasma_Gun_Sound</soundCast>
+				<soundCast>HP_AM_Plasma_Gun_Sound</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>10</muzzleFlashScale>
 				<targetParams>
@@ -342,7 +342,7 @@
 				<warmupTime>3</warmupTime>
 				<range>32</range>
 				<burstShotCount>1</burstShotCount>
-				<soundCast>HP_Plasma_Gun_Sound</soundCast>
+				<soundCast>HP_AM_Plasma_Gun_Sound</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>10</muzzleFlashScale>
 				<targetParams>
@@ -388,7 +388,7 @@
 				<warmupTime>3</warmupTime>
 				<range>36</range>
 				<burstShotCount>1</burstShotCount>
-				<soundCast>HP_Plasma_Gun_Sound</soundCast>
+				<soundCast>HP_AM_Plasma_Gun_Sound</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>10</muzzleFlashScale>
 				<targetParams>
