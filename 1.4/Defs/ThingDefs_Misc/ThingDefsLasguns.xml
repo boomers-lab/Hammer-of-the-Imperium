@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-    <ThingDef ParentName="VWEL_Bullet_LaserGeneric" Class="VanillaWeaponsExpandedLaser.LaserBeamDef">
+    <ThingDef ParentName="GW_LaserBullet" Class="VanillaWeaponsExpandedLaser.LaserBeamDef">
         <defName>VWEL_Bullet_Lasbolt</defName>
         <label>Lasbolt</label>
         <description>A beam of focused light that burns the target.</description>
@@ -16,7 +16,7 @@
         </projectile>
     </ThingDef>
 
-    <ThingDef ParentName="VWEL_Bullet_LaserGeneric" Class="VanillaWeaponsExpandedLaser.LaserBeamDef">
+    <ThingDef ParentName="GW_LaserBullet" Class="VanillaWeaponsExpandedLaser.LaserBeamDef">
         <defName>VWEL_Bullet_Lasbolttwo</defName>
         <label>Lasbolt charged</label>
         <description>An heavily charged beam of focused light, emitting more heat usual.</description>
@@ -33,7 +33,7 @@
         </projectile>
     </ThingDef>
 
-    <ThingDef ParentName="VWEL_Bullet_LaserGeneric" Class="VanillaWeaponsExpandedLaser.LaserBeamDef">
+    <ThingDef ParentName="GW_LaserBullet" Class="VanillaWeaponsExpandedLaser.LaserBeamDef">
         <defName>VWEL_Bullet_Lasboltsmall</defName>
         <label>Pistol lasbolt</label>
         <description>A reduced beam of focused light.</description>

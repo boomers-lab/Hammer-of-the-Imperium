@@ -375,7 +375,7 @@
         </verbs>
     </ThingDef>
 
-    <ThingDef ParentName="VWEL_Bullet_LaserGeneric" Class="VanillaWeaponsExpandedLaser.LaserBeamDef">
+    <ThingDef ParentName="GW_LaserBullet" Class="VanillaWeaponsExpandedLaser.LaserBeamDef">
         <defName>GW_BuildingBullet_LascanonShot</defName>
         <label>Lascanon shot</label>
         <description>An heavily charged beam of focused light fired from a lascannon.</description>
