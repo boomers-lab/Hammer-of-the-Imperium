@@ -13,16 +13,11 @@
       <displayName>Grimworld 40,000 - Core Imperialis</displayName>
       <steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=3018671708</steamWorkshopUrl>
     </li>
-	<li>
-	  <packageId>VanillaExpanded.VWEL</packageId>
-	  <displayName>Vanilla Weapons Expanded - Laser</displayName>
-	  <steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=1989352844</steamWorkshopUrl>
-	</li>
+
   </modDependencies>
 
   <loadAfter>
     <li>Ludeon.RimWorld</li>
-	<li>VanillaExpanded.VWEL</li>
 	<li>vanillaexpanded.achievements</li>
     <li>ceteam.combatextended</li>
   </loadAfter>
