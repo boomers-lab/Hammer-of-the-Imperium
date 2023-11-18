@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+        <!-- Combat Webbing -->
+
+    <ThingDef ParentName="ApparelMakeableBase">
+        <defName>ODZ_40k_IG_DKOK_CombatWebbing</defName>
+        <label>Death Korps webbing</label>
+        <description>Combat webbing befitting a Krieger.</description>
+        <recipeMaker>
+            <researchPrerequisite>GW_AM_DeathKorpsOfKrieg</researchPrerequisite>
+            <recipeUsers Inherit="false">
+                <li>HP_AM_MilitarumFabricationBench</li>
+            </recipeUsers>
+        </recipeMaker>
+        <graphicData>
+            <texPath>Things/DeathKorps/Display/DKOKCombatWebbing</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>1.7</drawSize>
+        </graphicData>
+        <costStuffCount>30</costStuffCount>
+        <stuffCategories>
+            <li>Leathery</li>
+        </stuffCategories>
+        <costList>
+            <Steel>15</Steel>
+        </costList>
+        <thingCategories>
+            <li>ApparelUtility</li>
+        </thingCategories>
+        <tradeTags>
+            <li>HPUtility</li>
+            <li>GW_AM_Utility</li>
+        </tradeTags>
+        <statBases>
+            <MaxHitPoints>150</MaxHitPoints>
+            <WorkToMake>1000</WorkToMake>
+            <Mass>1</Mass> 
+            <Flammability>0.25</Flammability>
+            <StuffEffectMultiplierArmor>0.20</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.05</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.05</StuffEffectMultiplierInsulation_Heat>
+            <EquipDelay>1.5</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <AimingDelayFactor>-0.05</AimingDelayFactor>
+            <CarryingCapacity>30</CarryingCapacity>
+            <MedicalTendSpeed>0.05</MedicalTendSpeed>
+            <MoveSpeed>-0.02</MoveSpeed>
+        </equippedStatOffsets>
+        <apparel>
+            <useWornGraphicMask>true</useWornGraphicMask>
+            <bodyPartGroups>
+                <li>Waist</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Things/DeathKorps/Belt/DKOKCombatWebbing</wornGraphicPath>
+            <wornGraphicData />
+            <layers>
+                <li>Belt</li>
+            </layers>
+            <tags>
+                <li>40kDeathKorps</li>
+                <li>40kDeathKorpsWebbing</li>
+            </tags>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+            <canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
+        </apparel>
+        <colorGenerator Class="ColorGenerator_Options">
+            <options>
+                <li>
+                    <weight>10</weight>
+                    <min>(97, 113, 51)</min>
+                    <max>(85, 100, 45)</max>
+                </li>
+            </options>
+        </colorGenerator>
+    </ThingDef>  
+
+ <!--__________ Officer Gorget ____________-->  
+
+    <ThingDef ParentName="ArmorMachineableBase">
+        <defName>ODZ_40k_IG_Cadian_OfficerGorget</defName>
+        <label>Officer gorget</label>
+        <description>A gorget worn by Cadian officers.</description>
+        <recipeMaker>
+            <researchPrerequisite>GW_AM_Catachan</researchPrerequisite>
+            <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>	
+            <recipeUsers Inherit="false">
+                <li>HP_AM_MilitarumFabricationBench</li>
+            </recipeUsers>  
+        </recipeMaker>
+        <graphicData>
+            <texPath>Things/Cadian/Display/OfficerGorget</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>1.7</drawSize>
+        </graphicData>
+        <costList>
+            <Steel>10</Steel>
+        </costList>
+        <thingCategories>
+            <li>ApparelUtility</li>
+        </thingCategories>
+        <tradeTags>
+            <li>HPUtility</li>
+            <li>GW_AM_Utility</li>
+        </tradeTags>
+        <statBases>
+            <MaxHitPoints>150</MaxHitPoints>
+            <WorkToMake>800</WorkToMake>
+            <Mass>1</Mass> 
+            <Flammability>0.25</Flammability>
+            <StuffEffectMultiplierArmor>0.20</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.05</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.05</StuffEffectMultiplierInsulation_Heat>
+            <EquipDelay>0.8</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <SocialImpact>0.5</SocialImpact>
+        </equippedStatOffsets>	
+        <apparel>
+            <useWornGraphicMask>true</useWornGraphicMask>
+            <bodyPartGroups>
+                <li>Waist</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Things/Cadian/Attachments/OfficerGorget</wornGraphicPath>
+            <wornGraphicData />
+            <layers>
+                <li>Belt</li>
+            </layers>
+            <tags>
+                <li>40kCadianGuard</li>
+                <li>40kCadianOfficer</li>
+            </tags>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+            <canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
+        </apparel>
+        <colorGenerator Class="ColorGenerator_Options">
+            <options>
+                <li>
+                    <weight>10</weight>
+                    <min>(97, 113, 51)</min>
+                    <max>(85, 100, 45)</max>
+                </li>
+            </options>
+        </colorGenerator>
+    </ThingDef>  
+</Defs>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+            <!-- Ratling Shirt -->
+
+    <ThingDef ParentName="GW_AM_OnSkinBase">
+        <defName>GW_AM_RatlingShirt</defName>
+        <description>Mass produced shirts designed for ratlings.</description>
+        <label>ratling shirt</label>
+        <recipeMaker>
+            <researchPrerequisite>GW_AM_RatlingIntegration</researchPrerequisite>
+        </recipeMaker>
+        <graphicData>
+            <texPath>Things/Ratling/Shirt/shirt_south</texPath>
+        </graphicData>
+        <costStuffCount>90</costStuffCount>
+        <statBases>
+            <MaxHitPoints>180</MaxHitPoints>
+            <WorkToMake>6000</WorkToMake>
+            <StuffEffectMultiplierArmor>0.4</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>1.50</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.25</StuffEffectMultiplierInsulation_Heat>
+        </statBases>
+        <apparel>
+            <wornGraphicPath>Things/Ratling/Shirt/shirt</wornGraphicPath>
+            <tags>
+                <li>40kRatlings</li>
+                <li>40kRatlingShirts</li>
+            </tags>
+        </apparel>
+        <modExtensions>
+            <li Class="VFECore.ApparelDrawPosExtension">
+                <isUnifiedApparel>true</isUnifiedApparel>
+				<hideHead>false</hideHead>
+            </li>
+		</modExtensions>
+    </ThingDef>
+
+        <!-- Ratling Fieldcap -->
+
+    <ThingDef ParentName="GW_AM_Hat_CapBase">
+        <defName>GW_AM_RatlingFieldcap</defName>
+        <label>ratling fieldcap</label>
+        <description>Mass produced field cap issued to ratlings.</description>
+        <graphicData>
+            <texPath>Things/Ratling/Fieldcap/fieldcap_south</texPath>
+        </graphicData>
+        <recipeMaker>
+            <researchPrerequisite>GW_AM_RatlingIntegration</researchPrerequisite>
+        </recipeMaker>
+        <costStuffCount>30</costStuffCount>
+        <statBases>
+            <WorkToMake>1300</WorkToMake>
+            <StuffEffectMultiplierArmor>0.3</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.15</StuffEffectMultiplierInsulation_Heat>
+        </statBases>
+        <apparel>
+            <wornGraphicPath>Things/Ratling/Fieldcap/fieldcap</wornGraphicPath>
+            <tags>
+                <li>40KRatlings</li>
+                <li>40KRatlingHats</li>
+            </tags>
+            <defaultOutfitTags>
+                <li>Worker</li>
+            </defaultOutfitTags>
+        </apparel>
+    </ThingDef>
+
+        <!--Ratling Cloak-->
+
+    <ThingDef ParentName="GW_AM_OuterBase">
+        <defName>GW_AM_RatlingCloak</defName>
+        <label>ratling cloak</label>
+        <description>Some Ratling outerwear designed provide a small amount of protection against attacks and some protection against heat and cold.</description>
+        <recipeMaker>
+            <researchPrerequisite>GW_AM_RatlingIntegration</researchPrerequisite>
+        </recipeMaker>
+        <graphicData>
+            <texPath>Things/Ratling/Cloak/cloak_south</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <costStuffCount>70</costStuffCount>
+        <stuffCategories>
+            <li>Fabric</li>
+            <li>Leathery</li>
+        </stuffCategories>
+        <thingCategories>
+            <li>ApparelMisc</li>
+        </thingCategories>
+        <statBases>
+            <MaxHitPoints>200</MaxHitPoints>
+            <WorkToMake>10000</WorkToMake>
+            <Mass>1.5</Mass>
+            <StuffEffectMultiplierArmor>0.3</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.50</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.50</StuffEffectMultiplierInsulation_Heat>
+            <EquipDelay>3</EquipDelay>
+        </statBases>
+        <apparel>
+            <wornGraphicPath>Things/Ratling/Cloak/cloak</wornGraphicPath>
+            <tags>
+                <li>40kRatling</li>
+                <li>40kRatlingCloak</li>
+            </tags>
+        </apparel>
+        <modExtensions>
+            <li Class="VFECore.ApparelDrawPosExtension">
+                <isUnifiedApparel>true</isUnifiedApparel>
+				<hideHead>false</hideHead>
+            </li>
+		</modExtensions>
+    </ThingDef>
+</Defs>

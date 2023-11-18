@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+	<!--===== Launcher frag Projectile =====-->
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>GW_AM_LauncherFrag_Bullet</defName>
+		<label>frag launcher shell</label>
+		<graphicData>
+			<texPath>Things/Projectile/LauncherShot</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<color>(160,160,160)</color>
+			<drawSize>1.2</drawSize>
+		</graphicData>
+		<thingClass>Projectile_Explosive</thingClass>
+		<projectile>
+			<damageDef>Bomb</damageDef>
+			<damageAmountBase>52</damageAmountBase>
+			<explosionRadius>1.4</explosionRadius>
+			<stoppingPower>2</stoppingPower>
+			<speed>55</speed>
+			<arcHeightFactor>0.2</arcHeightFactor>
+			<shadowSize>0.6</shadowSize>
+		</projectile>
+	</ThingDef>
+
+	<!--===== Launcher EMP Projectile =====-->
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>GW_AM_LauncherEMP_Bullet</defName>
+		<label>EMP launcher shell</label>
+		<graphicData>
+			<texPath>Things/Projectile/LauncherShot</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<color>(102,255,255)</color>
+			<drawSize>1.2</drawSize>
+		</graphicData>
+		<thingClass>Projectile_Explosive</thingClass>
+		<projectile>
+			<damageDef>EMP</damageDef>
+			<!-- Default Explosion Damage -->
+			<explosionRadius>2.6</explosionRadius>
+			<speed>55</speed>
+			<arcHeightFactor>0.2</arcHeightFactor>
+			<shadowSize>0.6</shadowSize>
+		</projectile>
+	</ThingDef>
+	
+	<!--===== Launcher Smoke Projectile =====-->
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>GW_AM_LauncherSmoke_Bullet</defName>
+		<label>smoke launcher shell</label>
+		<graphicData>
+			<texPath>Things/Projectile/LauncherShot</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<color>(96,96,96)</color>
+			<drawSize>1.2</drawSize>
+		</graphicData>
+		<thingClass>Projectile_Explosive</thingClass>
+		<projectile>
+			<damageDef>Smoke</damageDef>
+			<!-- Default Explosion Damage -->
+			<explosionRadius>3.6</explosionRadius>
+			<postExplosionGasType>BlindSmoke</postExplosionGasType>
+			<speed>55</speed>
+			<arcHeightFactor>0.2</arcHeightFactor>
+			<shadowSize>0.6</shadowSize>
+		</projectile>
+	</ThingDef>
+
+	<!--===== Launcher Stun Projectile =====-->
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>GW_AM_LauncherStun_Bullet</defName>
+		<label>stun launcher shell</label>
+		<graphicData>
+			<texPath>Things/Projectile/LauncherShot</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<color>(224,224,224)</color>
+			<drawSize>1.2</drawSize>
+		</graphicData>
+		<thingClass>Projectile_Explosive</thingClass>
+		<projectile>
+			<damageDef>Stun</damageDef>
+			<damageAmountBase>8</damageAmountBase>
+			<explosionRadius>2.4</explosionRadius>
+			<speed>55</speed>
+			<arcHeightFactor>0.2</arcHeightFactor>
+			<shadowSize>0.6</shadowSize>
+		</projectile>
+	</ThingDef>
+	
+	<!--===== Launcher Tox Projectile =====-->
+	
+	<ThingDef ParentName="BaseBullet" MayRequire="Ludeon.RimWorld.Biotech">
+		<defName>GW_AM_LauncherTox_Bullet</defName>
+		<label>stun launcher shell</label>
+		<graphicData>
+			<texPath>Things/Projectile/LauncherShot</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<color>(140,135,156)</color>
+			<drawSize>1.2</drawSize>
+		</graphicData>
+		<thingClass>Projectile_Explosive</thingClass>
+		<projectile>
+			<damageDef>ToxGas</damageDef>
+			<damageAmountBase>6</damageAmountBase>
+			<explosionRadius>2.7</explosionRadius>
+			<postExplosionGasType>ToxGas</postExplosionGasType>
+			<speed>55</speed>
+			<arcHeightFactor>0.2</arcHeightFactor>
+			<shadowSize>0.6</shadowSize>
+		</projectile>
+	</ThingDef>
+	
+	<!--===== Launcher Base =====-->
+
+	<ThingDef Abstract="true" ParentName="BaseHumanMakeableGun" Name="GW_AM_GrenadeLauncherBase">
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<recipeMaker>
+			<researchPrerequisite>GW_PlasmaWeapons</researchPrerequisite>
+			<displayPriority>420</displayPriority>
+			<recipeUsers Inherit="False">
+				<li>HP_AM_MilitarumFabricationBench</li>
+			</recipeUsers>
+			<skillRequirements>
+				<Crafting>12</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<thingSetMakerTags>
+			<li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+		<tradeTags>
+			<li>HPRanged</li>
+		</tradeTags>
+		<weaponTags>
+			<li>IndustrialGunAdvanced</li>
+			<li>GW_SM_Ranged</li>
+		</weaponTags>
+		<tools>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>14</power>
+				<cooldownTime>2.5</cooldownTime>
+			</li>
+			<li>
+				<label>grip</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2.2</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+	
+	<!--===== Frag Launcher =====-->
+
+	<ThingDef ParentName="GW_AM_GrenadeLauncherBase">
+		<defName>GW_AM_Gun_FragLauncher</defName>
+		<label>Voss Pattern Launcher (Frag)</label>
+		<description>Can't we throw this further?</description>
+		<graphicData>
+			<texPath>Weapons/Launcher/GrenadeLauncher</texPath>
+			<drawSize>1.2</drawSize>
+		</graphicData>
+		<statBases>
+			<WorkToMake>42000</WorkToMake>
+			<Mass>10</Mass>
+			<RangedWeapon_Cooldown>3.2</RangedWeapon_Cooldown>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.10</MoveSpeed>
+		</equippedStatOffsets>
+		<costList>
+			<Steel>240</Steel>
+			<Plasteel>85</Plasteel>
+			<ComponentIndustrial>22</ComponentIndustrial>
+			<HP_Ceramite>8</HP_Ceramite>
+		</costList>
+		<weaponClasses>
+			<li>RangedHeavy</li>
+		</weaponClasses>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>GW_AM_LauncherFrag_Bullet</defaultProjectile>
+				<forcedMissRadius>2.4</forcedMissRadius>
+				<warmupTime>3</warmupTime>
+				<range>26</range>
+				<burstShotCount>1</burstShotCount>
+				<soundCast>HP_AM_Plasma_Gun_Sound</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>10</muzzleFlashScale>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+			</li>
+		</verbs>
+	</ThingDef>
+
+	<!--===== EMP Launcher =====-->
+
+	<ThingDef ParentName="GW_AM_GrenadeLauncherBase">
+		<defName>GW_AM_Gun_EMPLauncher</defName>
+		<label>Voss Pattern Launcher (EMP)</label>
+		<description>It feels tingly.</description>
+		<graphicData>
+			<texPath>Weapons/Launcher/GrenadeLauncherEMP</texPath>
+			<drawSize>1.2</drawSize>
+		</graphicData>
+		<statBases>
+			<WorkToMake>42000</WorkToMake>
+			<Mass>10</Mass>
+			<RangedWeapon_Cooldown>3.2</RangedWeapon_Cooldown>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.10</MoveSpeed>
+		</equippedStatOffsets>
+		<costList>
+			<Steel>240</Steel>
+			<Plasteel>70</Plasteel>
+			<ComponentIndustrial>36</ComponentIndustrial>
+			<HP_Ceramite>8</HP_Ceramite>
+		</costList>
+		<weaponClasses>
+			<li>RangedHeavy</li>
+		</weaponClasses>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>GW_AM_LauncherEMP_Bullet</defaultProjectile>
+				<forcedMissRadius>3.2</forcedMissRadius>
+				<warmupTime>3</warmupTime>
+				<range>32</range>
+				<burstShotCount>1</burstShotCount>
+				<soundCast>HP_AM_Plasma_Gun_Sound</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>10</muzzleFlashScale>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+			</li>
+		</verbs>
+	</ThingDef>
+
+	<!--===== Smoke Launcher =====-->
+
+	<ThingDef ParentName="GW_AM_GrenadeLauncherBase">
+		<defName>GW_AM_Gun_SmokeLauncher</defName>
+		<label>Voss Pattern Launcher (Smoke)</label>
+		<description>Hey who turn out the lights</description>
+		<graphicData>
+			<texPath>Weapons/Launcher/GrenadeLauncherSmoke</texPath>
+			<drawSize>1.2</drawSize>
+		</graphicData>
+		<statBases>
+			<WorkToMake>42000</WorkToMake>
+			<Mass>10</Mass>
+			<RangedWeapon_Cooldown>3.2</RangedWeapon_Cooldown>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.10</MoveSpeed>
+		</equippedStatOffsets>
+		<costList>
+			<Steel>240</Steel>
+			<Plasteel>85</Plasteel>
+			<ComponentIndustrial>22</ComponentIndustrial>
+			<HP_Ceramite>8</HP_Ceramite>
+		</costList>
+		<weaponClasses>
+			<li>RangedHeavy</li>
+		</weaponClasses>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>GW_AM_LauncherSmoke_Bullet</defaultProjectile>
+				<forcedMissRadius>1.2</forcedMissRadius>
+				<warmupTime>3</warmupTime>
+				<range>36</range>
+				<burstShotCount>1</burstShotCount>
+				<soundCast>HP_AM_Plasma_Gun_Sound</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>10</muzzleFlashScale>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+			</li>
+		</verbs>
+	</ThingDef>
+
+	<!--===== Stun Launcher =====-->
+
+	<ThingDef ParentName="GW_AM_GrenadeLauncherBase">
+		<defName>GW_AM_Gun_StunLauncher</defName>
+		<label>Voss Pattern Launcher (Stun)</label>
+		<description>Just wait right there</description>
+		<graphicData>
+			<texPath>Weapons/Launcher/GrenadeLauncherStun</texPath>
+			<drawSize>1.2</drawSize>
+		</graphicData>
+		<statBases>
+			<WorkToMake>42000</WorkToMake>
+			<Mass>10</Mass>
+			<RangedWeapon_Cooldown>3.2</RangedWeapon_Cooldown>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.10</MoveSpeed>
+		</equippedStatOffsets>
+		<costList>
+			<Steel>250</Steel>
+			<Plasteel>80</Plasteel>
+			<ComponentIndustrial>28</ComponentIndustrial>
+			<HP_Ceramite>8</HP_Ceramite>
+		</costList>
+		<weaponClasses>
+			<li>RangedHeavy</li>
+		</weaponClasses>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>GW_AM_LauncherStun_Bullet</defaultProjectile>
+				<forcedMissRadius>2.4</forcedMissRadius>
+				<warmupTime>3</warmupTime>
+				<range>32</range>
+				<burstShotCount>1</burstShotCount>
+				<soundCast>HP_AM_Plasma_Gun_Sound</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>10</muzzleFlashScale>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+			</li>
+		</verbs>
+	</ThingDef>
+	
+	<!--===== Tox Launcher =====-->
+
+	<ThingDef ParentName="GW_AM_GrenadeLauncherBase" MayRequire="Ludeon.RimWorld.Biotech">
+		<defName>GW_AM_Gun_ToxLauncher</defName>
+		<label>Voss Pattern Launcher (Tox)</label>
+		<description>Just some casual chemical warfare</description>
+		<graphicData>
+			<texPath>Weapons/Launcher/GrenadeLauncherToxic</texPath>
+			<drawSize>1.2</drawSize>
+		</graphicData>
+		<statBases>
+			<WorkToMake>42000</WorkToMake>
+			<Mass>10</Mass>
+			<RangedWeapon_Cooldown>3.2</RangedWeapon_Cooldown>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.10</MoveSpeed>
+		</equippedStatOffsets>
+		<costList>
+			<Steel>250</Steel>
+			<Plasteel>95</Plasteel>
+			<ComponentIndustrial>26</ComponentIndustrial>
+			<HP_Ceramite>8</HP_Ceramite>
+		</costList>
+		<weaponClasses>
+			<li>RangedHeavy</li>
+		</weaponClasses>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>GW_AM_LauncherTox_Bullet</defaultProjectile>
+				<forcedMissRadius>2.4</forcedMissRadius>
+				<warmupTime>3</warmupTime>
+				<range>36</range>
+				<burstShotCount>1</burstShotCount>
+				<soundCast>HP_AM_Plasma_Gun_Sound</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>10</muzzleFlashScale>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+			</li>
+		</verbs>
+	</ThingDef>
+
+</Defs>

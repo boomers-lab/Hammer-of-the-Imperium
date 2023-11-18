@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <ThingDef Abstract="true" Name="GW_AM_ArmorBase" ParentName="ArmorMachineableBase">
+        <techLevel>Industrial</techLevel>
+		<recipeMaker>
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+			<recipeUsers Inherit="false">
+				<li>HP_AM_MilitarumFabricationBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<thingCategories>
+			<li>ApparelArmor</li>
+		</thingCategories>
+        <tradeTags>
+            <li>HPArmor</li>
+            <li>GW_AM_Armor</li>
+        </tradeTags>
+        <equippedStatOffsets>
+	        <MedicalTendSpeed>0.5</MedicalTendSpeed>	  
+        </equippedStatOffsets>
+        <statBases>
+            <Flammability>0.6</Flammability>
+        </statBases>
+		<apparel>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<bodyPartGroups>
+                <li>Torso</li>
+                <li>Shoulders</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Middle</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+    </ThingDef>
+
+            <!-- Tempestus Scions Carapace Armor  -->
+
+    <ThingDef ParentName="GW_AM_ArmorBase">
+        <defName>ODZ_40k_IM_TempestusScion_CarapaceArmor</defName>
+        <label>Tempestus Scion carapace</label>
+        <description>Sturdy carapace armor worn by the Tempestus Scions.</description>
+        <recipeMaker>
+            <researchPrerequisite>GW_AM_TempestusScions</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>9</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+        <graphicData>
+            <texPath>Things/TempestusScions/Display/CarapaceArmor</texPath>
+        </graphicData>
+        <statBases>
+            <WorkToMake>25000</WorkToMake>
+            <MaxHitPoints>250</MaxHitPoints>
+            <Mass>7</Mass>
+            <ArmorRating_Sharp>0.90</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.39</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.64</ArmorRating_Heat>
+            <Insulation_Cold>30.0</Insulation_Cold>
+			<Insulation_Heat>8.0</Insulation_Heat>
+            <EquipDelay>6</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <MoveSpeed>-0.4</MoveSpeed>
+            <AimingDelayFactor>-0.05</AimingDelayFactor>
+        </equippedStatOffsets>
+        <costStuffCount>90</costStuffCount>		
+        <costList>
+			<Steel>70</Steel>
+            <DevilstrandCloth>10</DevilstrandCloth>
+        </costList>	
+        <apparel>
+			<bodyPartGroups>
+				<li>Arms</li>
+				<li>Legs</li>
+				<li MayRequire="ceteam.combatextended">Hands</li>
+				<li MayRequire="ceteam.combatextended">Feet</li>
+			</bodyPartGroups>
+            <wornGraphicPath>Things/TempestusScions/Middle/CarapaceArmor</wornGraphicPath>
+            <tags>
+                <li>40kTempestusScion</li>
+                <li>40kTempestusScionArmor</li>
+            </tags>
+        </apparel>
+	    <modExtensions>
+            <li Class="CombatExtended.PartialArmorExt" MayRequire="ceteam.combatextended">
+                <stats>		  				  
+                    <li>
+                        <ArmorRating_Sharp>0.7</ArmorRating_Sharp>
+                        <parts>
+                            <li>Hand</li>
+                        </parts>
+                    </li>
+                    <li>
+                        <ArmorRating_Blunt>0.7</ArmorRating_Blunt>
+                        <parts>
+                            <li>Hand</li>
+                        </parts>
+                    </li>
+                </stats>
+            </li>
+	    </modExtensions>
+    </ThingDef>  
+  
+            <!-- Krieger Flak Armor  -->
+
+    <ThingDef ParentName="GW_AM_ArmorBase">
+        <defName>ODZ_40k_IG_DKOK_GrenadierArmor</defName>
+        <label>Death Korps grenadier armor</label>
+        <description>Armor worn by the elite Death Korps grenadiers.</description>
+        <techLevel>Industrial</techLevel>
+        <recipeMaker>
+            <researchPrerequisite>GW_AM_DeathKorpsOfKrieg</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>8</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+        <graphicData>
+            <texPath>Things/DeathKorps/Display/GrenadierArmor</texPath>
+        </graphicData>
+        <statBases>
+            <WorkToMake>9000</WorkToMake>
+            <MaxHitPoints>200</MaxHitPoints>
+            <Mass>5</Mass>
+            <ArmorRating_Sharp>1.0</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.38</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.60</ArmorRating_Heat>
+            <Insulation_Cold>1</Insulation_Cold>
+            <EquipDelay>3</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <MoveSpeed>-0.2</MoveSpeed>
+            <AimingDelayFactor>-0.02</AimingDelayFactor>
+        </equippedStatOffsets>
+		<costList>
+            <Steel>100</Steel>
+        </costList>		
+        <apparel>
+            <wornGraphicPath>Things/DeathKorps/Middle/GrenadierArmor</wornGraphicPath>
+            <tags>
+                <li>40kDeathKorps</li>
+                <li>40kDeathKorpsArmor</li>
+            </tags>
+        </apparel>
+    </ThingDef>
+
+  
+            <!-- Catachan Armor  -->
+
+    <ThingDef ParentName="GW_AM_ArmorBase">
+        <defName>GW_AM_CatachanArmor</defName>
+        <label>Catachan armor</label>
+        <description>Armor worn by the Catachan. It's designed for ease of movement and protection from heat.</description>
+        <techLevel>Industrial</techLevel>
+        <recipeMaker>
+            <researchPrerequisite>GW_AM_Catachan</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>8</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+        <graphicData>
+            <texPath>Things/Catachan/Display/CatachanMiddle</texPath>
+        </graphicData>
+        <statBases>
+            <WorkToMake>9000</WorkToMake>
+            <MaxHitPoints>200</MaxHitPoints>
+            <Mass>4.5</Mass>
+            <ArmorRating_Sharp>0.8</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.3</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.60</ArmorRating_Heat>
+			<Insulation_Heat>1</Insulation_Heat>
+            <EquipDelay>3</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <MoveSpeed>0.1</MoveSpeed>
+            <AimingDelayFactor>-0.02</AimingDelayFactor>
+        </equippedStatOffsets>
+		<costList>
+            <Steel>90</Steel>
+        </costList>		
+        <apparel>
+            <wornGraphicPath>Things/Catachan/CatachanMid/CatachanMiddle</wornGraphicPath>
+            <tags>
+                <li>40kCatachan</li>
+                <li>40kCatachanArmor</li>
+            </tags>
+        </apparel>
+    </ThingDef>
+
+            <!-- Cadian Flak Armor  -->
+
+    <ThingDef ParentName="GW_AM_ArmorBase">
+        <defName>ODZ_40k_IG_Cadian_FlakArmor</defName>
+        <label>Cadian flak armor</label>
+        <description>Mass produced flak armor issued to the Cadian regimentum.</description>
+        <recipeMaker>
+            <researchPrerequisite>GW_AM_Catachan</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>8</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+        <graphicData>
+            <texPath>Things/Cadian/Display/FlakArmor</texPath>
+        </graphicData>
+        <statBases>
+            <WorkToMake>9000</WorkToMake>
+            <MaxHitPoints>250</MaxHitPoints>
+            <Mass>5</Mass>
+            <ArmorRating_Sharp>1.0</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.36</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.60</ArmorRating_Heat>
+            <Insulation_Cold>1</Insulation_Cold>
+            <EquipDelay>3</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <MoveSpeed>-0.2</MoveSpeed>
+            <AimingDelayFactor>-0.02</AimingDelayFactor>
+        </equippedStatOffsets>
+        <costList>
+            <Steel>100</Steel>
+        </costList>	
+        <apparel>
+            <wornGraphicPath>Things/Cadian/Middle/FlakArmor</wornGraphicPath>
+            <tags>
+                <li>40kCadianGuard</li>
+                <li>40kCadianArmor</li>
+            </tags>
+        </apparel>
+    </ThingDef>
+  
+            <!-- Kasrkin Flak Armor  -->
+
+    <ThingDef ParentName="GW_AM_ArmorBase">
+        <defName>ODZ_40k_IG_CadianKasrkin_FlakArmor</defName>
+        <label>Kasrkin flak armor</label>
+        <description>Elite heavy armor used by Kasrkin forces.</description>
+        <recipeMaker>
+            <researchPrerequisite>GW_AM_Catachan</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>9</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+        <graphicData>
+            <texPath>Things/Cadian/Display/KasrkinFlakArmor</texPath>
+        </graphicData>
+        <statBases>
+            <WorkToMake>12000</WorkToMake>
+            <MaxHitPoints>280</MaxHitPoints>
+            <Mass>6</Mass>
+            <ArmorRating_Sharp>0.88</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.38</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.62</ArmorRating_Heat>
+            <Insulation_Cold>28.0</Insulation_Cold>
+			<Insulation_Heat>7</Insulation_Heat>
+            <EquipDelay>6</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <MoveSpeed>-0.3</MoveSpeed>
+            <AimingDelayFactor>-0.03</AimingDelayFactor>
+        </equippedStatOffsets>
+		<costList>
+			<Steel>70</Steel>
+            <DevilstrandCloth>10</DevilstrandCloth>
+        </costList>
+        <apparel>
+            <bodyPartGroups>
+                <li>Legs</li>
+                <li>Arms</li>
+				<li MayRequire="ceteam.combatextended">Hands</li>
+				<li MayRequire="ceteam.combatextended">Feet</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Things/Cadian/Middle/KasrkinFlakArmor</wornGraphicPath>
+            <tags>
+                <li>40kCadianGuard</li>
+                <li>40kKasrkinArmor</li>
+            </tags>
+        </apparel>
+	    <modExtensions>
+            <li Class="CombatExtended.PartialArmorExt" MayRequire="ceteam.combatextended">
+                <stats>		  				  
+                    <li>
+                        <ArmorRating_Sharp>0.7</ArmorRating_Sharp>
+                        <parts>
+                            <li>Hand</li>
+                        </parts>
+                    </li>
+                    <li>
+                        <ArmorRating_Blunt>0.7</ArmorRating_Blunt>
+                        <parts>
+                            <li>Hand</li>
+                        </parts>
+                    </li>
+                </stats>
+            </li>
+	    </modExtensions>
+    </ThingDef>  
+
+            <!-- Tallarn Desert Raiders -->
+	<ThingDef ParentName="GW_AM_ArmorBase">
+		<defName>GW_AM_TDR_DesertGear</defName>
+		<label>Desert Gear</label>
+		<description>ToDo.</description>
+		<recipeMaker>
+			<researchPrerequisite>GW_AM_TallarnDesertRaiders</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Tallarn/Middle/DesertGear_Male_south</texPath>
+		</graphicData>
+		<statBases>
+			<WorkToMake>9000</WorkToMake>
+			<MaxHitPoints>175</MaxHitPoints>
+			<Mass>5</Mass>
+			<ArmorRating_Sharp>1.00</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.36</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.27</ArmorRating_Heat>
+			<Insulation_Cold>1</Insulation_Cold>
+			<EquipDelay>5</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<RangedCooldownFactor MayRequire="Ludeon.Rimworld.Biotech">-0.2</RangedCooldownFactor>
+		</equippedStatOffsets>
+		<costList>
+			<Cloth>50</Cloth>
+			<Steel>60</Steel>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<apparel>
+            <bodyPartGroups>
+                <li>Neck</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Tallarn/Middle/DesertGear</wornGraphicPath>
+			<tags>
+                <li>40kTallarnDesertRaiders</li>
+                <li>40kTallarnDesertRaidersArmor</li>
+            </tags>
+		</apparel>
+	</ThingDef>
+
+            <!-- Valhallan Flak Armor  -->
+
+    <ThingDef ParentName="GW_AM_ArmorBase">
+        <defName>GW_AM_Valhallan_Armor</defName>
+        <label>valhallan flak armor</label>
+        <description>Mass produced flak armor issued to the Valhallan regimentum.</description>
+        <recipeMaker>
+            <researchPrerequisite>GW_AM_Valhallan</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>8</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+        <graphicData>
+            <texPath>Things/Valhallan/Middle/armor_Male_south</texPath>
+        </graphicData>
+        <statBases>
+            <WorkToMake>9000</WorkToMake>
+            <MaxHitPoints>250</MaxHitPoints>
+            <Mass>5</Mass>
+            <ArmorRating_Sharp>1.0</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.36</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.60</ArmorRating_Heat>
+            <Insulation_Cold>1</Insulation_Cold>
+            <EquipDelay>3</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <MoveSpeed>-0.2</MoveSpeed>
+            <AimingDelayFactor>-0.02</AimingDelayFactor>
+        </equippedStatOffsets>
+        <costList>
+            <Steel>100</Steel>
+        </costList>	
+        <apparel>
+            <wornGraphicPath>Things/Valhallan/Middle/armor</wornGraphicPath>
+            <tags>
+                <li>40kValhallanGuard</li>
+                <li>40kValhallanArmor</li>
+            </tags>
+        </apparel>
+    </ThingDef>
+</Defs>

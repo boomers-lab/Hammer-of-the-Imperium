@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+            <!--More Biotech Style Genes Patch(es)-->
+    <Operation Class="PatchOperationConditional"> <!--Using conditional instead of find mod because there are two different mods that add the same genes-->
+        <xpath>Defs/GeneTemplateDef[defName="AptitudeAbysmal"]</xpath>
+        <match Class="patchOperationSequence">
+            <operations>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/XenotypeDef[defName="GW_Ratling"]/genes/li[text()="AptitudeRemarkable_Shooting"]</xpath>
+                    <value><li>AptitudePhenomenal_Shooting</li></value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/XenotypeDef[defName="GW_Ratling"]/genes/li[text()="AptitudeTerrible_Melee"]</xpath>
+                    <value><li>AptitudeAbysmal_Melee</li></value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+</Patch>
