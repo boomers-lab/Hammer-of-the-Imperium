@@ -32,6 +32,11 @@
                 <isUnifiedApparel>true</isUnifiedApparel>
 				<hideHead>false</hideHead>
             </li>
+            <li Class="GW_Frame.EquipRestrictExtension">
+				<requireOneOfXenotypeToEquip>
+                    <li>GW_Ratling</li>
+                </requireOneOfXenotypeToEquip>
+			</li>
 		</modExtensions>
     </ThingDef>
 
@@ -64,6 +69,13 @@
                 <li>Worker</li>
             </defaultOutfitTags>
         </apparel>
+        <modExtensions>
+            <li Class="GW_Frame.EquipRestrictExtension">
+				<requireOneOfXenotypeToEquip>
+                    <li>GW_Ratling</li>
+                </requireOneOfXenotypeToEquip>
+			</li>
+		</modExtensions>
     </ThingDef>
 
         <!--Ratling Cloak-->
@@ -108,6 +120,11 @@
                 <isUnifiedApparel>true</isUnifiedApparel>
 				<hideHead>false</hideHead>
             </li>
+            <li Class="GW_Frame.EquipRestrictExtension">
+				<requireOneOfXenotypeToEquip>
+                    <li>GW_Ratling</li>
+                </requireOneOfXenotypeToEquip>
+			</li>
 		</modExtensions>
     </ThingDef>
 </Defs>

@@ -2,7 +2,7 @@
 <Defs>
     <GeneDef ParentName="GW_Races">
         <defName>GW_Ogryn</defName>
-        <label>Ogryn</label>
+        <label>ogryn</label>
         <description>The Ogryns are a huge and physically powerful Abhuman subspecies of Humanity, often employed by the Imperium of Man as shock troopers in the Astra Militarum's Militarum Auxilla.</description>
         <iconPath>UI/Icons/Xenotypes/Ogryn</iconPath>
         <bodyType>Fat</bodyType>
@@ -63,7 +63,7 @@
 
     <XenotypeDef>
         <defName>GW_Ogryn</defName>
-        <label>Ogryn</label>
+        <label>ogryn</label>
         <description>The Ogryns are a huge and physically powerful Abhuman subspecies of Humanity, often employed by the Imperium of Man as shock troopers in the Astra Militarum's Militarum Auxilla.</description>
         <descriptionShort>The Ogryns are a huge and physically powerful Abhuman subspecies of Humanity.</descriptionShort>
         <iconPath>UI/Icons/Xenotypes/Ogryn</iconPath>

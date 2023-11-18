@@ -33,6 +33,13 @@
                 <li>40kOgrynMask</li>		
             </tags>	  
         </apparel>
+        <modExtensions>
+			<li Class="GW_Frame.EquipRestrictExtension">
+				<requireOneOfXenotypeToEquip>
+                    <li>GW_Ogryn</li>
+                </requireOneOfXenotypeToEquip>
+			</li>
+		</modExtensions>
     </ThingDef>
                 <!-- Ogryn Armor  -->
 
@@ -76,6 +83,11 @@
                 <isUnifiedApparel>true</isUnifiedApparel>
 				<hideHead>false</hideHead>
             </li>
+            <li Class="GW_Frame.EquipRestrictExtension">
+				<requireOneOfXenotypeToEquip>
+                    <li>GW_Ogryn</li>
+                </requireOneOfXenotypeToEquip>
+			</li>
 		</modExtensions>
     </ThingDef>  
 
