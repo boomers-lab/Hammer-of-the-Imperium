@@ -180,7 +180,7 @@
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <recipeMaker>
-            <researchPrerequisite>GW_PlasmaWeapons</researchPrerequisite>
+            <researchPrerequisite>GW_Bolters</researchPrerequisite>
             <displayPriority>420</displayPriority>
         </recipeMaker>
         <thingSetMakerTags>
@@ -381,7 +381,7 @@
 			<recipeUsers Inherit="False">
 				<li>HP_AM_MilitarumFabricationBench</li>
 			</recipeUsers>		
-			<researchPrerequisite>GW_PlasmaWeapons</researchPrerequisite>
+			<researchPrerequisite>GW_Flamers</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>10</Crafting>
 			</skillRequirements>

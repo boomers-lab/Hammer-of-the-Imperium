@@ -32,7 +32,7 @@
 		<defName>GW_AM_MilitariumArmor</defName>
 		<label>militarium armor</label>
         <description>The first step to learning how to create both the equipment utilized by many regiments along with the equipment used by many of the Imperium's abhuman soldiers</description>
-        <baseCost>2000</baseCost>
+        <baseCost>1000</baseCost>
 		<prerequisites>
 			<li>GW_AM_HammerOfTheImperium</li>
 		</prerequisites>
@@ -143,7 +143,7 @@
 		<prerequisites>
 			<li>GW_AM_MilitariumArmor</li>
 		</prerequisites>
-        <baseCost>2000</baseCost>
+        <baseCost>1000</baseCost>
 		<researchViewX>4.00</researchViewX>
 		<researchViewY>5.70</researchViewY>
 	</ResearchProjectDef>
