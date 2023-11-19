@@ -93,7 +93,7 @@
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <recipeMaker>
-            <researchPrerequisite>ODZ_40K_Plasma</researchPrerequisite>
+            <researchPrerequisite>GW_PlasmaWeapons</researchPrerequisite>
             <displayPriority>420</displayPriority>
         </recipeMaker>
         <thingSetMakerTags>
@@ -180,7 +180,7 @@
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <recipeMaker>
-            <researchPrerequisite>ODZ_40K_Plasma</researchPrerequisite>
+            <researchPrerequisite>GW_PlasmaWeapons</researchPrerequisite>
             <displayPriority>420</displayPriority>
         </recipeMaker>
         <thingSetMakerTags>
@@ -381,7 +381,7 @@
 			<recipeUsers Inherit="False">
 				<li>HP_AM_MilitarumFabricationBench</li>
 			</recipeUsers>		
-			<researchPrerequisite>ODZ_40K_Plasma</researchPrerequisite>
+			<researchPrerequisite>GW_PlasmaWeapons</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>10</Crafting>
 			</skillRequirements>

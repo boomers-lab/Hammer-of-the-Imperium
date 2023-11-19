@@ -59,7 +59,7 @@
             <EquipDelay>1.5</EquipDelay>
         </statBases>
         <recipeMaker>
-            <researchPrerequisite>ODZ_40K_IG_Cadian</researchPrerequisite>
+            <researchPrerequisite>GW_AM_Catachan</researchPrerequisite>
         </recipeMaker>
         <apparel>
             <wornGraphicPath>Things/Cadian/Headgear/CadianHelmet</wornGraphicPath>
@@ -100,7 +100,7 @@
             <ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>  
         </equippedStatOffsets>	
         <recipeMaker>
-            <researchPrerequisite>ODZ_40K_IG_Cadian</researchPrerequisite>
+            <researchPrerequisite>GW_AM_Catachan</researchPrerequisite>
         </recipeMaker>
         <apparel>
             <immuneToToxGasExposure>true</immuneToToxGasExposure>
@@ -136,7 +136,7 @@
             <EquipDelay>1.2</EquipDelay>
         </statBases>
         <recipeMaker>
-            <researchPrerequisite>ODZ_40K_IG_DKOK</researchPrerequisite>
+            <researchPrerequisite>GW_AM_DeathKorpsOfKrieg</researchPrerequisite>
         </recipeMaker>
         <apparel>
             <wornGraphicPath>Things/DeathKorps/Headgear/KriegHelmet</wornGraphicPath>
@@ -171,7 +171,7 @@
             <EquipDelay>1.3</EquipDelay>
         </statBases>
         <recipeMaker>
-            <researchPrerequisite>ODZ_40K_IG_DKOK</researchPrerequisite>
+            <researchPrerequisite>GW_AM_DeathKorpsOfKrieg</researchPrerequisite>
         </recipeMaker>
         <apparel>
             <wornGraphicPath>Things/DeathKorps/Headgear/KriegGrenadierHelmet</wornGraphicPath>
@@ -208,7 +208,7 @@
             <EquipDelay>2</EquipDelay>
         </statBases>
         <recipeMaker>
-            <researchPrerequisite>ODZ_40K_IM_TempestusScion</researchPrerequisite>
+            <researchPrerequisite>GW_AM_TempestusScions</researchPrerequisite>
         </recipeMaker>
         <apparel>
             <wornGraphicPath>Things/TempestusScions/Headgear/TempestusScionHelmet</wornGraphicPath>

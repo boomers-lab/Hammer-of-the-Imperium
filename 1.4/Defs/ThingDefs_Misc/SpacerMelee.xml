@@ -56,7 +56,7 @@
             </li>
         </tools>
         <recipeMaker>
-            <researchPrerequisite>ODZ_40K_AstraMilitatum_SpacerMelee</researchPrerequisite>
+            <researchPrerequisite>GW_PowerMeleeWeapons</researchPrerequisite>
             <skillRequirements>
                 <Crafting>10</Crafting>
             </skillRequirements>
@@ -112,7 +112,7 @@
         </statBases>
         <equippedAngleOffset>-65</equippedAngleOffset>
         <recipeMaker>
-            <researchPrerequisite>ODZ_40K_AstraMilitatum_SpacerMelee</researchPrerequisite>
+            <researchPrerequisite>GW_PowerMeleeWeapons</researchPrerequisite>
             <skillRequirements>
                 <Crafting>10</Crafting>
             </skillRequirements>
@@ -171,7 +171,7 @@
         </statBases>
         <equippedAngleOffset>-65</equippedAngleOffset>
         <recipeMaker>
-            <researchPrerequisite>ODZ_40K_AstraMilitatum_SpacerMelee</researchPrerequisite>
+            <researchPrerequisite>GW_AM_OgrynIntegration</researchPrerequisite>
             <skillRequirements>
                 <Crafting>10</Crafting>
             </skillRequirements>

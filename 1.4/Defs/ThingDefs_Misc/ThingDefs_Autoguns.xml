@@ -66,7 +66,7 @@
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <recipeMaker>
-            <researchPrerequisite>ODZ_40K_Autoguns</researchPrerequisite>
+            <researchPrerequisite>GW_Autoguns</researchPrerequisite>
             <displayPriority>420</displayPriority>
         </recipeMaker>
         <thingSetMakerTags>
@@ -666,6 +666,7 @@
             <ComponentIndustrial>5</ComponentIndustrial>
         </costList>
         <recipeMaker>
+            <researchPrerequisite>GW_AM_OgrynIntegration</researchPrerequisite>
             <skillRequirements>
                 <Crafting>5</Crafting>
             </skillRequirements>

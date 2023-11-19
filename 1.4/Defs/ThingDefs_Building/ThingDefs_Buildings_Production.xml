@@ -72,7 +72,7 @@
             <li>PlaceWorker_PreventInteractionSpotOverlap</li>
         </placeWorkers>
         <researchPrerequisites>
-            <li>ODZ_40K_MilitarumFabricationBench</li>
+            <li>GW_AM_HammerOfTheImperium</li>
         </researchPrerequisites>
     </ThingDef>
 </Defs>

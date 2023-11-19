@@ -2,8 +2,12 @@
 <Defs>
     <PawnKindDef Abstract="true" Name="GW_RatlingBase" ParentName="BasePlayerPawnKind">
 	    <apparelTags>
-            <li>IndustrialBasic</li>
+            <li>40kRatling</li>
         </apparelTags>
+        <apparelRequired>
+            <li>GW_AM_RatlingShirt</li>
+            <li>GW_AM_RatlingFieldcap</li>
+        </apparelRequired>
         <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
         <apparelMoney>350~600</apparelMoney>
 	    <xenotypeSet Inherit="False">
@@ -32,6 +36,9 @@
         <defName>GW_RatlingSniper</defName>
         <label>ratling sniper</label>
         <combatPower>150</combatPower>
+        <apparelRequired>
+            <li>GW_AM_RatlingCloak</li>
+        </apparelRequired>
         <apparelTags>
             <li>IndustrialAdvanced</li>
         </apparelTags>

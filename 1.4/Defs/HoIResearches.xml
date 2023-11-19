@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ResearchProjectDef Abstract="True" Name="GW_AM_HoITechBase"  ParentName="GW_ImperiumTechBase">
+		<techLevel>Industrial</techLevel>
+    </ResearchProjectDef>
+
+	<ResearchProjectDef ParentName="GW_AM_HoITechBase">
+		<defName>GW_AM_HammerOfTheImperium</defName>
+		<label>hammer of the imperium</label>
+        <description>Militarum workstation which allows you to craft various Imperial Guard armors and weapons from Warhammer 40.000 universe.</description>
+        <baseCost>1000</baseCost>
+		<prerequisites>
+			<li>AdvancedFabrication</li>
+		</prerequisites>
+		<researchViewX>2.00</researchViewX>
+		<researchViewY>3.00</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef ParentName="GW_AM_HoITechBase">
+		<defName>GW_AM_ImperiumDefense</defName>
+		<label>imperium defense</label>
+        <description>Allows for the construction of various defensive structures, from trenches to turrets.</description>
+        <baseCost>2000</baseCost>
+		<prerequisites>
+			<li>GW_AM_HammerOfTheImperium</li>
+		</prerequisites>
+		<researchViewX>3.00</researchViewX>
+		<researchViewY>2.00</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef ParentName="GW_AM_HoITechBase">
+		<defName>GW_AM_MilitariumArmor</defName>
+		<label>militarium armor</label>
+        <description>The first step to learning how to create both the equipment utilized by many regiments along with the equipment used by many of the Imperium's abhuman soldiers</description>
+        <baseCost>2000</baseCost>
+		<prerequisites>
+			<li>GW_AM_HammerOfTheImperium</li>
+		</prerequisites>
+		<researchViewX>3.00</researchViewX>
+		<researchViewY>3.50</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef ParentName="GW_AM_HoITechBase">
+		<defName>GW_AM_RegimentsOfRenown</defName>
+		<label>regiments of renown</label>
+        <description>The second step to leaning how to create the equipment utilized by many of the Imperium's most notable regiments.</description>
+        <baseCost>2000</baseCost>
+		<prerequisites>
+			<li>GW_AM_MilitariumArmor</li>
+		</prerequisites>
+		<researchViewX>4.00</researchViewX>
+		<researchViewY>2.00</researchViewY>
+	</ResearchProjectDef>
+
+		<!--Regiments-->
+    <ResearchProjectDef Abstract="True" Name="GW_AM_RegimentResearchBase" ParentName="GW_AM_HoITechBase">
+        <prerequisites>
+			<li>GW_AM_RegimentsOfRenown</li>
+		</prerequisites>
+        <baseCost>1500</baseCost>
+        <researchViewX>5.00</researchViewX>
+    </ResearchProjectDef>
+
+	<ResearchProjectDef ParentName="GW_AM_RegimentResearchBase">
+		<defName>GW_AM_Catachan</defName>
+		<label>catachan jungle fighters</label>
+        <description>Equipment belonging to the Catachan.</description>
+		<researchViewY>0.00</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef ParentName="GW_AM_RegimentResearchBase">
+		<defName>GW_AM_DeathKorpsOfKrieg</defName>
+		<label>death korps of krieg</label>
+        <description>Equipment belonging to the Astra Militarum Regiment of Krieg.</description>
+		<researchViewY>0.70</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef ParentName="GW_AM_RegimentResearchBase">
+		<defName>GW_AM_Mordian</defName>
+		<label>mordian iron guard</label>
+        <description>Equipment belonging to the Mordian.</description>
+		<researchViewY>1.25</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef ParentName="GW_AM_RegimentResearchBase">
+		<defName>GW_AM_TallarnDesertRaiders</defName>
+		<label>tallarn desert warriors</label>
+        <description>Equipment belonging to the Tallarn Desert Raiders.</description>
+		<researchViewY>1.80</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef ParentName="GW_AM_RegimentResearchBase">
+		<defName>GW_AM_TempestusScions</defName>
+		<label>tempestus scions</label>
+        <description>Equipment belonging to the Tempestus Scions.</description>
+		<researchViewY>2.45</researchViewY>
+        <modExtensions>
+            <li Class="GW_Frame.DefModExtension_ExtraPrerequisiteActions">
+                <StudyLocation>GW_Cogitator</StudyLocation>
+                <ItemStudyRequirements>
+                    <li Class="GW_Frame.StudyRequirement">
+                        <StudyObject>GW_STC_Fragment</StudyObject>
+                        <NumberRequired>1</NumberRequired>
+                    </li>    
+                </ItemStudyRequirements>
+            </li>
+        </modExtensions>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef ParentName="GW_AM_RegimentResearchBase">
+		<defName>GW_AM_Valhallan</defName>
+		<label>valhallan ice warriors</label>
+        <description>Equipment belonging to the Astra Militarum Regiment of Valhallans.</description>
+		<researchViewY>3.00</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef ParentName="GW_AM_RegimentResearchBase">
+		<defName>GW_AM_VostoyanFirstborn</defName>
+		<label>vostoyan firstborn</label>
+        <description>Equipment belonging to the Vastoyan Firstborn.</description>
+		<researchViewY>3.60</researchViewY>
+	</ResearchProjectDef>
+
+    <ResearchProjectDef ParentName="GW_AM_RegimentResearchBase">
+		<defName>GW_AM_CadianShockTroops</defName>
+		<label>cadian shock troops</label>
+        <description>Equipment belonging to the Astra Militarum Regimentum of Cadia.</description>
+		<researchViewY>4.20</researchViewY>
+	</ResearchProjectDef>
+
+    <ResearchProjectDef ParentName="GW_AM_RegimentResearchBase">
+		<defName>GW_AM_SteelLegion</defName>
+		<label>steel legion</label>
+        <description>Equipment belonging to the Astra Militarum Regimentum the Steel Legion.</description>
+		<researchViewY>4.80</researchViewY>
+	</ResearchProjectDef>
+
+			<!--Abhumans-->
+	<ResearchProjectDef ParentName="GW_AM_HoITechBase">
+		<defName>GW_AM_AbhumanIntegration</defName>
+		<label>abhuman integration</label>
+        <description>The second step to learning how to create the equipments frequently used by the abhuman soldiers of the Imperium.</description>
+		<prerequisites>
+			<li>GW_AM_MilitariumArmor</li>
+		</prerequisites>
+        <baseCost>2000</baseCost>
+		<researchViewX>4.00</researchViewX>
+		<researchViewY>5.70</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef ParentName="GW_AM_HoITechBase">
+		<defName>GW_AM_OgrynIntegration</defName>
+		<label>ogryn integration</label>
+        <description>Allows for the creation of equipment usually wielded by Ogryn, massive abhumans usually employed as shock troopers by the Imperium of Man.</description>
+		<prerequisites>
+			<li>GW_AM_AbhumanIntegration</li>
+		</prerequisites>
+        <baseCost>1500</baseCost>
+		<researchViewX>5.00</researchViewX>
+		<researchViewY>5.40</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef ParentName="GW_AM_HoITechBase">
+		<defName>GW_AM_RatlingIntegration</defName>
+		<label>ratling integration</label>
+        <description>Allows for the creation of equipment usually wielded by Ratlings, small abhumans usually employed as snipers by the Imperium of Man.</description>
+		<prerequisites>
+			<li>GW_AM_AbhumanIntegration</li>
+		</prerequisites>
+        <baseCost>1500</baseCost>
+		<researchViewX>5.00</researchViewX>
+		<researchViewY>6.00</researchViewY>
+	</ResearchProjectDef>
+</Defs>

@@ -2,7 +2,7 @@
 <Defs>
     <GeneDef ParentName="GW_Races">
         <defName>GW_Ratling</defName>
-        <label>Ratling</label>
+        <label>ratling</label>
         <description>Ratlings are a smaller Abhuman species that are known for being small, quick on their feet, and excellent marksmen.</description>
         <iconPath>UI/Icons/Xenotypes/Ratling</iconPath>
         <biostatCpx>0</biostatCpx>
@@ -73,7 +73,7 @@
 
     <XenotypeDef>
         <defName>GW_Ratling</defName>
-        <label>Ratling</label>
+        <label>ratling</label>
         <description>Ratlings are a smaller Abhuman species that are known for being small, quick on their feet, and excellent marksmen.\n\nTheir small stature makes it difficult for them to fight close up, but their excellent marksmanship makes them a valuable asset in the Astra Militarium ranks.</description>
         <descriptionShort>Ratlings are a smaller Abhuman species that are known for being small, quick on their feet, and excellent marksmen.</descriptionShort>
         <iconPath>UI/Icons/Xenotypes/Ratling</iconPath>

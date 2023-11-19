@@ -128,7 +128,7 @@
 		</graphicData>
 		<soundInteract>Interact_Rifle</soundInteract>
 		<recipeMaker>
-			<researchPrerequisite>ODZ_40K_Plasma</researchPrerequisite>
+			<researchPrerequisite>GW_PlasmaWeapons</researchPrerequisite>
 			<displayPriority>420</displayPriority>
 			<recipeUsers Inherit="False">
 				<li>HP_AM_MilitarumFabricationBench</li>

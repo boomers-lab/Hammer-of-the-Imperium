@@ -70,7 +70,7 @@
             <StuffEffectMultiplierInsulation_Heat>0.15</StuffEffectMultiplierInsulation_Heat>
         </statBases>
         <recipeMaker>
-            <researchPrerequisite>ODZ_40K_IG_Cadian</researchPrerequisite>
+            <researchPrerequisite>GW_AM_Catachan</researchPrerequisite>
         </recipeMaker>
         <apparel>
             <wornGraphicPath>Things/Cadian/Headgear/FieldCap</wornGraphicPath>
@@ -103,7 +103,7 @@
             <SocialImpact>0.5</SocialImpact>
         </equippedStatOffsets>	
         <recipeMaker>
-            <researchPrerequisite>ODZ_40K_IG_Cadian</researchPrerequisite>
+            <researchPrerequisite>GW_AM_Catachan</researchPrerequisite>
             <skillRequirements>
                 <Crafting>5</Crafting>
             </skillRequirements>	  
@@ -136,7 +136,7 @@
             <SocialImpact>0.5</SocialImpact>
         </equippedStatOffsets>	
         <recipeMaker>
-            <researchPrerequisite>ODZ_40K_IM_TempestusScion</researchPrerequisite>
+            <researchPrerequisite>GW_AM_TempestusScions</researchPrerequisite>
             <skillRequirements>
                 <Crafting>5</Crafting>
             </skillRequirements>	  
@@ -534,7 +534,7 @@
             <WorkToMake>1500</WorkToMake>
         </statBases>
         <recipeMaker>
-            <researchPrerequisite>ODZ_40K_IG_DKOK</researchPrerequisite>
+            <researchPrerequisite>GW_AM_DeathKorpsOfKrieg</researchPrerequisite>
         </recipeMaker>
         <apparel>
             <wornGraphicPath>Things/DeathKorps/Headgear/KriegGasmask</wornGraphicPath>
@@ -562,7 +562,7 @@
             <Steel>8</Steel>			
         </costList>		
         <recipeMaker>
-            <researchPrerequisite>ODZ_40K_IG_DKOK</researchPrerequisite>
+            <researchPrerequisite>GW_AM_DeathKorpsOfKrieg</researchPrerequisite>
             <recipeUsers>
                 <li>HP_AM_MilitarumFabricationBench</li>
             </recipeUsers>  
@@ -637,7 +637,7 @@
             <PainShockThreshold>0.05</PainShockThreshold>
         </equippedStatOffsets>
         <recipeMaker>
-            <researchPrerequisite>ODZ_40K_IM_TempestusScion</researchPrerequisite>
+            <researchPrerequisite>GW_AM_TempestusScions</researchPrerequisite>
         </recipeMaker>
         <apparel>
             <wornGraphicPath>Things/TempestusScions/Headgear/OmniMask</wornGraphicPath>

@@ -45,7 +45,7 @@
         <description>Hardened combat jump suit worn by the Tempestus Scions.</description>
         <label>Tempestus Scion fatigues</label>
         <recipeMaker>
-            <researchPrerequisite>ODZ_40K_IM_TempestusScion</researchPrerequisite>
+            <researchPrerequisite>GW_AM_TempestusScions</researchPrerequisite>
         </recipeMaker>
         <graphicData>
             <texPath>Things/TempestusScions/Display/TempestusScionFatigues</texPath>
@@ -74,7 +74,7 @@
         <description>Mass produced uniform widely regarded as a symbol of death.</description>
         <label>Death Korps uniform</label>
         <recipeMaker>
-            <researchPrerequisite>ODZ_40K_IG_DKOK</researchPrerequisite>
+            <researchPrerequisite>GW_AM_DeathKorpsOfKrieg</researchPrerequisite>
         </recipeMaker>
         <graphicData>
             <texPath>Things/DeathKorps/Display/DeathKorpsUniform</texPath>
@@ -161,7 +161,7 @@
         <description>Mass produced combat fatigues issued to the Cadian regimentum.</description>
         <label>Cadian fatigues</label>
         <recipeMaker>
-            <researchPrerequisite>ODZ_40K_IG_Cadian</researchPrerequisite>
+            <researchPrerequisite>GW_AM_Catachan</researchPrerequisite>
         </recipeMaker>
         <graphicData>
             <texPath>Things/Cadian/Display/CadianFatigues</texPath>

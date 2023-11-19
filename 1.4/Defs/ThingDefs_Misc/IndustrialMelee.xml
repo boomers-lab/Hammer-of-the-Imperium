@@ -20,7 +20,7 @@
         <relicChance>2</relicChance>
         <equippedAngleOffset>-65</equippedAngleOffset>
         <recipeMaker>
-            <researchPrerequisite>ODZ_40K_AstraMilitatum_IndustrialMelee</researchPrerequisite>
+            <researchPrerequisite>GW_Chainswords</researchPrerequisite>
             <recipeUsers>
                 <li>TableMachining</li>
             </recipeUsers>
@@ -128,7 +128,7 @@
         </statBases>
         <equippedAngleOffset>-65</equippedAngleOffset>
         <recipeMaker>
-            <researchPrerequisite>ODZ_40K_AstraMilitatum_IndustrialMelee</researchPrerequisite>
+            <researchPrerequisite>GW_AM_RegimentsOfRenown</researchPrerequisite>
             <skillRequirements>
                 <Crafting>4</Crafting>
             </skillRequirements>

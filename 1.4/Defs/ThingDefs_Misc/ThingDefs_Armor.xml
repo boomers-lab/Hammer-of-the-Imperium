@@ -48,7 +48,7 @@
         <label>Tempestus Scion carapace</label>
         <description>Sturdy carapace armor worn by the Tempestus Scions.</description>
         <recipeMaker>
-            <researchPrerequisite>ODZ_40K_IM_TempestusScion</researchPrerequisite>
+            <researchPrerequisite>GW_AM_TempestusScions</researchPrerequisite>
             <skillRequirements>
                 <Crafting>9</Crafting>
             </skillRequirements>
@@ -117,7 +117,7 @@
         <description>Armor worn by the elite Death Korps grenadiers.</description>
         <techLevel>Industrial</techLevel>
         <recipeMaker>
-            <researchPrerequisite>ODZ_40K_IG_DKOK</researchPrerequisite>
+            <researchPrerequisite>GW_AM_DeathKorpsOfKrieg</researchPrerequisite>
             <skillRequirements>
                 <Crafting>8</Crafting>
             </skillRequirements>
@@ -201,7 +201,7 @@
         <label>Cadian flak armor</label>
         <description>Mass produced flak armor issued to the Cadian regimentum.</description>
         <recipeMaker>
-            <researchPrerequisite>ODZ_40K_IG_Cadian</researchPrerequisite>
+            <researchPrerequisite>GW_AM_Catachan</researchPrerequisite>
             <skillRequirements>
                 <Crafting>8</Crafting>
             </skillRequirements>
@@ -242,7 +242,7 @@
         <label>Kasrkin flak armor</label>
         <description>Elite heavy armor used by Kasrkin forces.</description>
         <recipeMaker>
-            <researchPrerequisite>ODZ_40K_IG_Cadian</researchPrerequisite>
+            <researchPrerequisite>GW_AM_Catachan</researchPrerequisite>
             <skillRequirements>
                 <Crafting>9</Crafting>
             </skillRequirements>

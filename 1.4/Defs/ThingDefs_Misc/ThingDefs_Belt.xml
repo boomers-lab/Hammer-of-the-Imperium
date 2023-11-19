@@ -7,7 +7,7 @@
         <label>Death Korps webbing</label>
         <description>Combat webbing befitting a Krieger.</description>
         <recipeMaker>
-            <researchPrerequisite>ODZ_40K_IG_DKOK</researchPrerequisite>
+            <researchPrerequisite>GW_AM_DeathKorpsOfKrieg</researchPrerequisite>
             <recipeUsers Inherit="false">
                 <li>HP_AM_MilitarumFabricationBench</li>
             </recipeUsers>
@@ -85,7 +85,7 @@
         <label>Officer gorget</label>
         <description>A gorget worn by Cadian officers.</description>
         <recipeMaker>
-            <researchPrerequisite>ODZ_40K_IG_Cadian</researchPrerequisite>
+            <researchPrerequisite>GW_AM_Catachan</researchPrerequisite>
             <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>	
             <recipeUsers Inherit="false">
                 <li>HP_AM_MilitarumFabricationBench</li>

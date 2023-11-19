@@ -86,7 +86,7 @@
 	  <recipeUsers Inherit="False">
 		<li>HP_AM_MilitarumFabricationBench</li>
 	  </recipeUsers>		
-      <researchPrerequisite>ODZ_40K_Plasma</researchPrerequisite>
+      <researchPrerequisite>GW_PlasmaWeapons</researchPrerequisite>
       <skillRequirements>
         <Crafting>15</Crafting>
       </skillRequirements>
@@ -184,7 +184,7 @@
 	  <recipeUsers Inherit="False">
 		<li>HP_AM_MilitarumFabricationBench</li>
 	  </recipeUsers>		
-      <researchPrerequisite>ODZ_40K_Plasma</researchPrerequisite>
+      <researchPrerequisite>GW_MeltaWeapons</researchPrerequisite>
       <skillRequirements>
         <Crafting>15</Crafting>
       </skillRequirements>
@@ -269,7 +269,7 @@
 			<recipeUsers Inherit="False">
 				<li>HP_AM_MilitarumFabricationBench</li>
 			</recipeUsers>		
-			<researchPrerequisite>ODZ_40K_Plasma</researchPrerequisite>
+			<researchPrerequisite>GW_PlasmaWeapons</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>15</Crafting>
 			</skillRequirements>
@@ -350,7 +350,7 @@
 			<recipeUsers Inherit="False">
 				<li>HP_AM_MilitarumFabricationBench</li>
 			</recipeUsers>		
-			<researchPrerequisite>ODZ_40K_Plasma</researchPrerequisite>
+			<researchPrerequisite>GW_PlasmaWeapons</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>15</Crafting>
 			</skillRequirements>

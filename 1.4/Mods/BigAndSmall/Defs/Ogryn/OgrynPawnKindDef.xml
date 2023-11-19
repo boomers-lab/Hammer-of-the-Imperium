@@ -2,8 +2,11 @@
 <Defs>
     <PawnKindDef Abstract="true" Name="GW_OgrynBase" ParentName="BasePlayerPawnKind">
 	    <apparelTags>
-            <li>IndustrialBasic</li>
+            <li>40kOgryn</li>
         </apparelTags>
+        <apparelRequired>
+            <li>GW_AM_OgrynArmor</li>
+        </apparelRequired>
         <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
         <apparelMoney>350~600</apparelMoney>
 	    <xenotypeSet Inherit="False">
@@ -32,9 +35,9 @@
         <defName>GW_OgrynEnforcer</defName>
         <label>Ogryn Enforcer</label>
         <combatPower>300</combatPower>
-        <apparelTags>
-            <li>IndustrialAdvanced</li>
-        </apparelTags>
+        <apparelRequired>
+            <li>GW_AM_OgrynMask</li>
+        </apparelRequired>
         <weaponTags>
             <li>GW_PowerMaul</li>
         </weaponTags>
@@ -51,9 +54,9 @@
         <defName>GW_OgrynGunner</defName>
         <label>Ogryn Gunner</label>
         <combatPower>300</combatPower>
-        <apparelTags>
-            <li>IndustrialAdvanced</li>
-        </apparelTags>
+        <apparelRequired>
+            <li>GW_AM_OgrynMask</li>
+        </apparelRequired>
         <weaponTags>
             <li>GW_Rippergun</li>
         </weaponTags>

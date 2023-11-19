@@ -68,7 +68,7 @@
           <li>RewardStandardQualitySuper</li>
         </thingSetMakerTags>
         <recipeMaker>
-            <researchPrerequisite>ODZ_40K_Lasguns</researchPrerequisite>
+            <researchPrerequisite>GW_Lasguns</researchPrerequisite>
             <skillRequirements>
                 <Crafting>8</Crafting>
             </skillRequirements>
@@ -757,6 +757,9 @@
             <AccuracyLong>0.92</AccuracyLong>
             <RangedWeapon_Cooldown>2.40</RangedWeapon_Cooldown>
         </statBases>
+        <recipeMaker>
+            <researchPrerequisite>GW_AM_RatlingIntegration</researchPrerequisite>
+        </recipeMaker>
         <costList>
             <Steel>140</Steel>
             <ComponentIndustrial>18</ComponentIndustrial>
