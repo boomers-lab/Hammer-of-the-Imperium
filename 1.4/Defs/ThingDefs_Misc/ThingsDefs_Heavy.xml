@@ -93,7 +93,7 @@
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <recipeMaker>
-            <researchPrerequisite>GW_PlasmaWeapons</researchPrerequisite>
+            <researchPrerequisite>GW_Launchers</researchPrerequisite>
             <displayPriority>420</displayPriority>
         </recipeMaker>
         <thingSetMakerTags>

@@ -70,7 +70,7 @@
             <StuffEffectMultiplierInsulation_Heat>0.15</StuffEffectMultiplierInsulation_Heat>
         </statBases>
         <recipeMaker>
-            <researchPrerequisite>GW_AM_Catachan</researchPrerequisite>
+            <researchPrerequisite>GW_AM_CadianShockTroops</researchPrerequisite>
         </recipeMaker>
         <apparel>
             <wornGraphicPath>Things/Cadian/Headgear/FieldCap</wornGraphicPath>
@@ -103,7 +103,7 @@
             <SocialImpact>0.5</SocialImpact>
         </equippedStatOffsets>	
         <recipeMaker>
-            <researchPrerequisite>GW_AM_Catachan</researchPrerequisite>
+            <researchPrerequisite>GW_AM_CadianShockTroops</researchPrerequisite>
             <skillRequirements>
                 <Crafting>5</Crafting>
             </skillRequirements>	  
