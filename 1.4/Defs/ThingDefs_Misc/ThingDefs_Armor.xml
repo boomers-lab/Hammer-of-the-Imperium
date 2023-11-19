@@ -201,7 +201,7 @@
         <label>Cadian flak armor</label>
         <description>Mass produced flak armor issued to the Cadian regimentum.</description>
         <recipeMaker>
-            <researchPrerequisite>GW_AM_Catachan</researchPrerequisite>
+            <researchPrerequisite>GW_AM_CadianShockTroops</researchPrerequisite>
             <skillRequirements>
                 <Crafting>8</Crafting>
             </skillRequirements>
@@ -242,7 +242,7 @@
         <label>Kasrkin flak armor</label>
         <description>Elite heavy armor used by Kasrkin forces.</description>
         <recipeMaker>
-            <researchPrerequisite>GW_AM_Catachan</researchPrerequisite>
+            <researchPrerequisite>GW_AM_CadianShockTroops</researchPrerequisite>
             <skillRequirements>
                 <Crafting>9</Crafting>
             </skillRequirements>

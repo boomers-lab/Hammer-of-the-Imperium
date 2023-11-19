@@ -59,7 +59,7 @@
             <EquipDelay>1.5</EquipDelay>
         </statBases>
         <recipeMaker>
-            <researchPrerequisite>GW_AM_Catachan</researchPrerequisite>
+            <researchPrerequisite>GW_AM_CadianShockTroops</researchPrerequisite>
         </recipeMaker>
         <apparel>
             <wornGraphicPath>Things/Cadian/Headgear/CadianHelmet</wornGraphicPath>
@@ -100,7 +100,7 @@
             <ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>  
         </equippedStatOffsets>	
         <recipeMaker>
-            <researchPrerequisite>GW_AM_Catachan</researchPrerequisite>
+            <researchPrerequisite>GW_AM_CadianShockTroops</researchPrerequisite>
         </recipeMaker>
         <apparel>
             <immuneToToxGasExposure>true</immuneToToxGasExposure>

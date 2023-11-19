@@ -161,7 +161,7 @@
         <description>Mass produced combat fatigues issued to the Cadian regimentum.</description>
         <label>Cadian fatigues</label>
         <recipeMaker>
-            <researchPrerequisite>GW_AM_Catachan</researchPrerequisite>
+            <researchPrerequisite>GW_AM_CadianShockTroops</researchPrerequisite>
         </recipeMaker>
         <graphicData>
             <texPath>Things/Cadian/Display/CadianFatigues</texPath>
