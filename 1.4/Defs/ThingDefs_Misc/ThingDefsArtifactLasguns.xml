@@ -152,7 +152,7 @@
             <AccuracyShort>0.85</AccuracyShort>
             <AccuracyMedium>0.70</AccuracyMedium>
             <AccuracyLong>0.65</AccuracyLong>
-            <RangedWeapon_Cooldown>1.40</RangedWeapon_Cooldown>
+            <RangedWeapon_Cooldown>1.0</RangedWeapon_Cooldown>
         </statBases>
         <weaponClasses>
             <li>LongShots</li>
@@ -165,8 +165,8 @@
                 <verbClass>Verb_Shoot</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
                 <defaultProjectile>VWEL_Bullet_Lasbolt</defaultProjectile>
-                <warmupTime>1.40</warmupTime>
-                <range>30.0</range>
+                <warmupTime>1.20</warmupTime>
+                <range>34.0</range>
                 <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
                 <burstShotCount>5</burstShotCount>
                 <soundCast>GW_AM_Gun_VossPattern</soundCast>

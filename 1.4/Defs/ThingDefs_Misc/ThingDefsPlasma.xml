@@ -20,7 +20,7 @@
 			<stoppingPower>2</stoppingPower>
 			<armorPenetrationBase>0.7</armorPenetrationBase>
 			<explosionRadius>1.5</explosionRadius>
-			<speed>120</speed>
+			<speed>100</speed>
 		</projectile>
 	</ThingDef>
 	
@@ -57,9 +57,10 @@
     <projectile>
       <damageDef>Bullet</damageDef>
       <damageAmountBase>40</damageAmountBase>
-      <stoppingPower>1.5</stoppingPower>
+      <stoppingPower>1.8</stoppingPower>
 	  <armorPenetrationBase>0.5</armorPenetrationBase>
-      <speed>100</speed>
+	  <explosionRadius>3.0</explosionRadius>
+      <speed>120</speed>
     </projectile>
   </ThingDef>
 
@@ -76,9 +77,9 @@
     <statBases>
       <WorkToMake>38000</WorkToMake>
       <Mass>5</Mass>
-      <AccuracyTouch>0.90</AccuracyTouch>
-      <AccuracyShort>0.85</AccuracyShort>
-      <AccuracyMedium>0.75</AccuracyMedium>
+      <AccuracyTouch>0.65</AccuracyTouch>
+      <AccuracyShort>0.75</AccuracyShort>
+      <AccuracyMedium>0.85</AccuracyMedium>
       <AccuracyLong>0.60</AccuracyLong>
       <RangedWeapon_Cooldown>1.2</RangedWeapon_Cooldown>
     </statBases>
@@ -114,7 +115,7 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>HP_AM_Bullet_PlasmaShot</defaultProjectile>
         <warmupTime>5</warmupTime>
-       <range>40</range>
+        <range>40</range>
         <ticksBetweenBurstShots>12</ticksBetweenBurstShots>
         <burstShotCount>1</burstShotCount>
         <soundCast>HP_AM_Plasma_Gun_Sound</soundCast>

@@ -115,7 +115,7 @@
                 <warmupTime>1.00</warmupTime>
                 <range>35.0</range>
                 <ticksBetweenBurstShots>12</ticksBetweenBurstShots>
-                <burstShotCount>1</burstShotCount>
+                <burstShotCount>3</burstShotCount>
                 <soundCast>GW_AM_Gun_Kantrael</soundCast>
                 <soundCastTail>GunTail_Heavy</soundCastTail>
                 <muzzleFlashScale>12</muzzleFlashScale>
@@ -178,7 +178,7 @@
                 <warmupTime>1.00</warmupTime>
                 <range>28.0</range>
                 <ticksBetweenBurstShots>12</ticksBetweenBurstShots>
-                <burstShotCount>1</burstShotCount>
+                <burstShotCount>3</burstShotCount>
                 <soundCast>GW_AM_Gun_Kantrael</soundCast>
                 <soundCastTail>GunTail_Heavy</soundCastTail>
                 <muzzleFlashScale>12</muzzleFlashScale>
@@ -241,7 +241,7 @@
                 <warmupTime>1.2</warmupTime>
                 <range>26.0</range>
                 <ticksBetweenBurstShots>12</ticksBetweenBurstShots>
-                <burstShotCount>1</burstShotCount>
+                <burstShotCount>2</burstShotCount>
                 <soundCast>GW_AM_Gun_Lascarbinefour</soundCast>
                 <soundCastTail>GunTail_Heavy</soundCastTail>
                 <muzzleFlashScale>12</muzzleFlashScale>
@@ -284,7 +284,7 @@
             <AccuracyShort>0.75</AccuracyShort>
             <AccuracyMedium>0.65</AccuracyMedium>
             <AccuracyLong>0.55</AccuracyLong>
-            <RangedWeapon_Cooldown>1.60</RangedWeapon_Cooldown>
+            <RangedWeapon_Cooldown>1.40</RangedWeapon_Cooldown>
         </statBases>
         <costList>
             <Steel>110</Steel>
@@ -374,7 +374,7 @@
                 <warmupTime>1.40</warmupTime>
                 <range>23.0</range>
                 <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
-                <burstShotCount>3</burstShotCount>
+                <burstShotCount>6</burstShotCount>
                 <soundCast>GW_AM_Gun_Accatranfive</soundCast>
                 <soundCastTail>GunTail_Heavy</soundCastTail>
                 <muzzleFlashScale>12</muzzleFlashScale>
@@ -648,7 +648,7 @@
                 <warmupTime>1.20</warmupTime>
                 <range>25.0</range>
                 <ticksBetweenBurstShots>8</ticksBetweenBurstShots>
-                <burstShotCount>6</burstShotCount>
+                <burstShotCount>9</burstShotCount>
                 <soundCast>GW_AM_Gun_Hellgun</soundCast>
                 <soundCastTail>GunTail_Heavy</soundCastTail>
                 <muzzleFlashScale>12</muzzleFlashScale>
@@ -755,7 +755,7 @@
             <AccuracyShort>0.62</AccuracyShort>
             <AccuracyMedium>0.86</AccuracyMedium>
             <AccuracyLong>0.92</AccuracyLong>
-            <RangedWeapon_Cooldown>2.40</RangedWeapon_Cooldown>
+            <RangedWeapon_Cooldown>2.0</RangedWeapon_Cooldown>
         </statBases>
         <recipeMaker>
             <researchPrerequisite>GW_AM_RatlingIntegration</researchPrerequisite>
