@@ -146,6 +146,12 @@
                 </capacities>
                 <power>42</power>
                 <cooldownTime>3</cooldownTime>
+				<extraMeleeDamages>
+					<li>
+						<def>Bomb</def>
+						<amount>3</amount>
+					</li>
+				</extraMeleeDamages>
             </li>
         </tools>
     </ThingDef>

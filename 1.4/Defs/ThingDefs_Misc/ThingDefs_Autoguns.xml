@@ -23,7 +23,7 @@
         </graphicData>
         <projectile>
             <damageDef>Bullet</damageDef>
-            <damageAmountBase>14</damageAmountBase>
+            <damageAmountBase>16</damageAmountBase>
             <stoppingPower>1</stoppingPower>
             <speed>55</speed>
         </projectile>
@@ -105,8 +105,8 @@
             <RangedWeapon_Cooldown>1.6</RangedWeapon_Cooldown>
         </statBases>
         <costList>
-            <Steel>60</Steel>
-            <ComponentIndustrial>7</ComponentIndustrial>
+            <Steel>75</Steel>
+            <ComponentIndustrial>8</ComponentIndustrial>
         </costList>
         <verbs>
             <li>
@@ -114,8 +114,8 @@
                 <hasStandardCommand>true</hasStandardCommand>
                 <defaultProjectile>GW_AM_Bullet_AutoGun</defaultProjectile>
                 <warmupTime>1.0</warmupTime>
-                <range>32.9</range>
-                <burstShotCount>4</burstShotCount>
+                <range>34</range>
+                <burstShotCount>3</burstShotCount>
                 <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
                 <soundCast>GW_AM_Gun_Agripinaamkii</soundCast>
                 <soundCastTail>GunTail_Medium</soundCastTail>
@@ -180,8 +180,8 @@
                 <hasStandardCommand>true</hasStandardCommand>
                 <defaultProjectile>GW_AM_Bullet_AutoGun</defaultProjectile>
                 <warmupTime>1.0</warmupTime>
-                <range>25</range>
-                <burstShotCount>4</burstShotCount>
+                <range>26</range>
+                <burstShotCount>3</burstShotCount>
                 <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
                 <soundCast>GW_AM_Gun_Agripinaamkii</soundCast>
                 <soundCastTail>GunTail_Medium</soundCastTail>
@@ -251,7 +251,7 @@
                 <defaultProjectile>GW_AM_Bullet_AutoGun</defaultProjectile>
                 <warmupTime>1.4</warmupTime>
                 <range>24</range>
-                <burstShotCount>6</burstShotCount>
+                <burstShotCount>5</burstShotCount>
                 <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
                 <soundCast>GW_AM_Gun_OrlockAutogun</soundCast>
                 <soundCastTail>GunTail_Medium</soundCastTail>
@@ -397,7 +397,7 @@
                 <defaultProjectile>GW_AM_Bullet_Autopistolgrim</defaultProjectile>
                 <warmupTime>0.4</warmupTime>
                 <range>23</range>
-                <burstShotCount>4</burstShotCount>
+                <burstShotCount>6</burstShotCount>
                 <ticksBetweenBurstShots>7</ticksBetweenBurstShots>
                 <soundCast>GW_AM_Gun_Hiveworldautopistol</soundCast>
                 <soundCastTail>GunTail_Light</soundCastTail>
@@ -448,9 +448,9 @@
         <statBases>
             <WorkToMake>38000</WorkToMake>
             <Mass>12</Mass>
-            <AccuracyTouch>0.40</AccuracyTouch>
+            <AccuracyTouch>0.34</AccuracyTouch>
             <AccuracyShort>0.48</AccuracyShort>
-            <AccuracyMedium>0.35</AccuracyMedium>
+            <AccuracyMedium>0.42</AccuracyMedium>
             <AccuracyLong>0.26</AccuracyLong>
             <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
         </statBases>
@@ -605,7 +605,7 @@
                 <verbClass>Verb_Shoot</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
                 <defaultProjectile>GW_AM_Bullet_Shotgungrim</defaultProjectile>
-                <warmupTime>0.9</warmupTime>
+                <warmupTime>0.6</warmupTime>
                 <range>12</range>
                 <soundCast>GW_AM_Gun_MilitarumShotgunSawn</soundCast>
                 <soundCastTail>GunTail_Heavy</soundCastTail>
@@ -654,7 +654,7 @@
         </weaponTags>
         <statBases>
             <WorkToMake>13000</WorkToMake>
-            <Mass>3</Mass>
+            <Mass>8.4</Mass>
             <AccuracyTouch>0.95</AccuracyTouch>
             <AccuracyShort>0.75</AccuracyShort>
             <AccuracyMedium>0.40</AccuracyMedium>

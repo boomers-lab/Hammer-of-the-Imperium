@@ -152,7 +152,7 @@
 			<hasStandardCommand>true</hasStandardCommand>
 			<defaultProjectile>Bullet_MeltaGun</defaultProjectile>
 			<warmupTime>0.6</warmupTime>
-			<range>18</range>
+			<range>22</range>
 			<burstShotCount>1</burstShotCount>
 			<soundCast>HP_AM_Melta_Gun_Sound</soundCast>
 			<soundCastTail>GunTail_Heavy</soundCastTail>
@@ -327,7 +327,7 @@
 			<RangedWeapon_Cooldown>0.36</RangedWeapon_Cooldown>
 			<SightsEfficiency>1.8</SightsEfficiency>
 			<ShotSpread>0.02</ShotSpread>
-			<SwayFactor>1.68</SwayFactor>
+			<SwayFactor>1.4</SwayFactor>
 			<Bulk>14</Bulk>
 			<WorkToMake>20000</WorkToMake>
 		</statBases>
@@ -707,7 +707,7 @@
 			<RangedWeapon_Cooldown>1.28</RangedWeapon_Cooldown>
 			<SightsEfficiency>3.9</SightsEfficiency>
 			<ShotSpread>0.07</ShotSpread>
-			<SwayFactor>1.9375</SwayFactor>
+			<SwayFactor>1.9</SwayFactor>
 			<Bulk>7</Bulk>
 			<WorkToMake>22000</WorkToMake>
 		</statBases>
@@ -752,7 +752,7 @@
 			<Mass>2</Mass>
 			<RangedWeapon_Cooldown>0.37</RangedWeapon_Cooldown>
 			<SightsEfficiency>1</SightsEfficiency>
-			<ShotSpread>0.07</ShotSpread>
+			<ShotSpread>0.09</ShotSpread>
 			<SwayFactor>1.34</SwayFactor>
 			<Bulk>5</Bulk>
 			<WorkToMake>41000</WorkToMake>
@@ -801,8 +801,8 @@
 			<Mass>2</Mass>
 			<RangedWeapon_Cooldown>0.37</RangedWeapon_Cooldown>
 			<SightsEfficiency>1</SightsEfficiency>
-			<ShotSpread>0.15</ShotSpread>
-			<SwayFactor>1</SwayFactor>
+			<ShotSpread>0.21</ShotSpread>
+			<SwayFactor>1.6</SwayFactor>
 			<Bulk>3</Bulk>
 			<WorkToMake>39000</WorkToMake>
 		</statBases>
@@ -851,8 +851,8 @@
 			<Mass>2</Mass>
 			<RangedWeapon_Cooldown>0.37</RangedWeapon_Cooldown>
 			<SightsEfficiency>1</SightsEfficiency>
-			<ShotSpread>0.12</ShotSpread>
-			<SwayFactor>1</SwayFactor>
+			<ShotSpread>0.46</ShotSpread>
+			<SwayFactor>1.8</SwayFactor>
 			<Bulk>3</Bulk>
 			<WorkToMake>30000</WorkToMake>
 		</statBases>
@@ -900,7 +900,7 @@
 			<Mass>12.0</Mass>
 			<RangedWeapon_Cooldown>0.55</RangedWeapon_Cooldown>
 			<SightsEfficiency>1</SightsEfficiency>
-			<ShotSpread>0.08</ShotSpread>
+			<ShotSpread>0.12</ShotSpread>
 			<SwayFactor>1.4</SwayFactor>
 			<Bulk>15</Bulk>
 			<WorkToMake>38000</WorkToMake>
@@ -1174,8 +1174,8 @@
 			<Mass>26.2</Mass>
 			<RangedWeapon_Cooldown>0.98</RangedWeapon_Cooldown>
 			<SightsEfficiency>1.5</SightsEfficiency>
-			<ShotSpread>4.0</ShotSpread>
-			<SwayFactor>1</SwayFactor>
+			<ShotSpread>4.5</ShotSpread>
+			<SwayFactor>1.8</SwayFactor>
 			<Bulk>16.4</Bulk>
 			<WorkToMake>36000</WorkToMake>
 		</statBases>
