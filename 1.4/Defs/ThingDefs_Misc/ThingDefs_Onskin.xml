@@ -219,7 +219,7 @@
     <ThingDef ParentName="GW_AM_OnSkinBase">
 		<defName>GW_AM_TDR_DesertFatigues</defName>
 		<label>Desert Fatigues</label>
-		<description>ToDo.</description>
+		<description>The Tallarn Desert Raiders is the name of the Militarum Regimentum of the Astra Militarum raised from the Desert World of Tallarn whose soldiers are highly skilled at desert and mobile armoured warfare. They are primarily deployed in the Segmentum Tempestus and Segmentum Ultima and are particularly skilled at desert warfare and rapid armoured assaults.</description>
 		<graphicData>
 			<texPath>Things/Tallarn/OnSkin/DesertFatigues_Male_south</texPath>
 		</graphicData>

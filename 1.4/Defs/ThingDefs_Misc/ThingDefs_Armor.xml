@@ -306,7 +306,7 @@
 	<ThingDef ParentName="GW_AM_ArmorBase">
 		<defName>GW_AM_TDR_DesertGear</defName>
 		<label>Desert Gear</label>
-		<description>ToDo.</description>
+		<description>Desert gear with high heat tolerance.</description>
 		<recipeMaker>
 			<researchPrerequisite>GW_AM_TallarnDesertRaiders</researchPrerequisite>
 			<skillRequirements>
