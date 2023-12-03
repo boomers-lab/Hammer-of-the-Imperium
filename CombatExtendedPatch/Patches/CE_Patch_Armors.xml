@@ -457,6 +457,11 @@
 		</value>
 	</Operation>
 
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="ODZ_40k_IG_DKOK_CombatWebbing"]/equippedStatOffsets</xpath>
+		<value><CarryBulk>20</CarryBulk></value>
+	</Operation>
+
 		<!-- Fatigues -->
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="ODZ_40k_IM_TempestusScion_Fatigues"]/statBases/StuffEffectMultiplierArmor</xpath>
