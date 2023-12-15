@@ -213,6 +213,7 @@
         <apparel>
             <wornGraphicPath>Things/TempestusScions/Headgear/TempestusScionHelmet</wornGraphicPath>
             <tags>
+                <li>EVA</li>
                 <li>40kTempestusScion</li>
                 <li>40kTempestusScionHelmet</li>
             </tags>

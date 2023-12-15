@@ -85,6 +85,7 @@
 			</bodyPartGroups>
             <wornGraphicPath>Things/TempestusScions/Middle/CarapaceArmor</wornGraphicPath>
             <tags>
+                <li>EVA</li>
                 <li>40kTempestusScion</li>
                 <li>40kTempestusScionArmor</li>
             </tags>
