@@ -34,6 +34,10 @@
         <factionIconPath>UI/Icons/AstraMilitarum</factionIconPath>
         <factionNameMaker>GW_Namer_AstraMilitarum</factionNameMaker>
         <settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+        <settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+        <colorSpectrum>
+            <li>(0.35, 0.44, 0.26)</li>
+        </colorSpectrum>
         <baseTraderKinds>
             <li>GW_AM_Trader</li>
         </baseTraderKinds>
@@ -41,7 +45,6 @@
             <li>GW_AM_Trader_Caravan</li>
         </caravanTraderKinds>
         <raidLootMaker>GW_AM_RaidLootMaker</raidLootMaker>
-        <settlementTexturePath>UI/Icons/AstraMilitarum</settlementTexturePath>
         <xenotypeSet>
             <xenotypeChances>
                 <Baseliner MayRequire="Ludeon.RimWorld.Biotech">0.86</Baseliner>
