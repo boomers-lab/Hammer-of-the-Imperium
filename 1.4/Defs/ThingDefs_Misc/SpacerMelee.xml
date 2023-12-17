@@ -76,7 +76,7 @@
   
     <ThingDef ParentName="GW_AM_PowerSwordBase">
         <defName>GW_AM_MeleeWeapon_PowerSword</defName>
-        <label>Power sword</label>
+        <label>Militarum powersword</label>
         <graphicData>
             <texPath>Weapons/Power Sword</texPath>
         </graphicData>
@@ -96,7 +96,7 @@
   
     <ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
         <defName>GW_AM_MeleeWeapon_PowerFist</defName>
-        <label>Power fist</label>
+        <label>Militarum power fist</label>
         <description>A power fist is large and slow in combat, and so the bearer must be willing to risk the blows of his enemy before he can strike back. However, a power fFist vastly augments a user's strength, much as power armour does due to the power provided its mechanical servos.</description>
         <possessionCount>1</possessionCount>
         <graphicData>
@@ -160,7 +160,7 @@
 	
 	<ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
         <defName>GW_AM_MeleeWeapon_PowerMaul</defName>
-        <label>Power maul</label>
+        <label>Ogryn power maul</label>
         <description>Ogyrn's Club</description>
         <possessionCount>1</possessionCount>
         <graphicData>

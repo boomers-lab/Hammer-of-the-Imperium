@@ -35,7 +35,7 @@
 
     <ThingDef ParentName="GW_AM_IndustrialSharpBase">
         <defName>GW_AM_MeleeWeapon_Chainsword</defName>
-        <label>Chainsword</label>
+        <label>Militarum Chainsword</label>
         <description>Chainswords are not subtle weapons, and wielding one is a statement in its own right: they are horrific tools of war, designed to bite, tear and eviscerate where more primitive blades merely cut and slice.</description>
         <graphicData>
             <texPath>Weapons/Chainsword</texPath>
@@ -74,7 +74,7 @@
 
     <ThingDef ParentName="GW_AM_IndustrialSharpBase">
         <defName>GW_AM_MeleeWeapon_Chainshortsword</defName>
-        <label>Chain shortsword</label>
+        <label>Short chainsword</label>
         <description>Chainswords are not subtle weapons, and wielding one is a statement in its own right: they are horrific tools of war, designed to bite, tear and eviscerate where more primitive blades merely cut and slice.</description>
         <graphicData>
             <texPath>Weapons/Chain Shortsword</texPath>
@@ -186,7 +186,7 @@
 	
 	<ThingDef ParentName="GW_AM_IndustrialSharpBase">
         <defName>GW_AM_MeleeWeapon_CombatKnife</defName>
-        <label>Combat Knife</label>
+        <label>Combat knife</label>
         <description>Common knife issued to Guardsman.</description>
         <graphicData>
             <texPath>Weapons/CombatKnife</texPath>
@@ -233,7 +233,7 @@
 	
 	<ThingDef ParentName="GW_AM_IndustrialSharpBase">
         <defName>GW_AM_MeleeWeapon_CatachanFang</defName>
-        <label>CatachanFang</label>
+        <label>Catachan fang</label>
         <description>A Catachan favorite.</description>
         <graphicData>
             <texPath>Weapons/CatachanKnife</texPath>
