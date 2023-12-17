@@ -72,7 +72,7 @@
             <li>PlaceWorker_PreventInteractionSpotOverlap</li>
         </placeWorkers>
         <researchPrerequisites>
-            <li>GW_AM_HammerOfTheImperium</li>
+            <li>GW_AM_TacticaImperium</li>
         </researchPrerequisites>
     </ThingDef>
 </Defs>
