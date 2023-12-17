@@ -5,8 +5,8 @@
     </ResearchProjectDef>
 
 	<ResearchProjectDef ParentName="GW_AM_HoITechBase">
-		<defName>GW_AM_HammerOfTheImperium</defName>
-		<label>hammer of the imperium</label>
+		<defName>GW_AM_TacticaImperium</defName>
+		<label>tactica imperium</label>
         <description>Militarum workstation which allows you to craft various Imperial Guard armors and weapons from Warhammer 40.000 universe.</description>
         <baseCost>1000</baseCost>
 		<prerequisites>
@@ -22,7 +22,7 @@
         <description>Allows for the construction of various defensive structures, from trenches to turrets.</description>
         <baseCost>2000</baseCost>
 		<prerequisites>
-			<li>GW_AM_HammerOfTheImperium</li>
+			<li>GW_AM_TacticaImperium</li>
 		</prerequisites>
 		<researchViewX>3.00</researchViewX>
 		<researchViewY>2.00</researchViewY>
@@ -34,7 +34,7 @@
         <description>The first step to learning how to create both the equipment utilized by many regiments along with the equipment used by many of the Imperium's abhuman soldiers</description>
         <baseCost>1000</baseCost>
 		<prerequisites>
-			<li>GW_AM_HammerOfTheImperium</li>
+			<li>GW_AM_TacticaImperium</li>
 		</prerequisites>
 		<researchViewX>3.00</researchViewX>
 		<researchViewY>3.50</researchViewY>
@@ -63,35 +63,35 @@
 
 	<ResearchProjectDef ParentName="GW_AM_RegimentResearchBase">
 		<defName>GW_AM_Catachan</defName>
-		<label>catachan jungle fighters</label>
+		<label>Catachan Jungle Fighters</label>
         <description>Equipment belonging to the Catachan.</description>
 		<researchViewY>0.00</researchViewY>
 	</ResearchProjectDef>
 
 	<ResearchProjectDef ParentName="GW_AM_RegimentResearchBase">
 		<defName>GW_AM_DeathKorpsOfKrieg</defName>
-		<label>death korps of krieg</label>
+		<label>Death Korps of Krieg</label>
         <description>Equipment belonging to the Astra Militarum Regiment of Krieg.</description>
 		<researchViewY>0.70</researchViewY>
 	</ResearchProjectDef>
 
 	<ResearchProjectDef ParentName="GW_AM_RegimentResearchBase">
 		<defName>GW_AM_Mordian</defName>
-		<label>mordian iron guard</label>
+		<label>Mordian Iron Guard</label>
         <description>Equipment belonging to the Mordian.</description>
 		<researchViewY>1.25</researchViewY>
 	</ResearchProjectDef>
 
 	<ResearchProjectDef ParentName="GW_AM_RegimentResearchBase">
 		<defName>GW_AM_TallarnDesertRaiders</defName>
-		<label>tallarn desert warriors</label>
+		<label>Tallarn Desert Warriors</label>
         <description>Equipment belonging to the Tallarn Desert Raiders.</description>
 		<researchViewY>1.80</researchViewY>
 	</ResearchProjectDef>
 
 	<ResearchProjectDef ParentName="GW_AM_RegimentResearchBase">
 		<defName>GW_AM_TempestusScions</defName>
-		<label>tempestus scions</label>
+		<label>Tempestus Scions</label>
         <description>Equipment belonging to the Tempestus Scions.</description>
 		<researchViewY>2.45</researchViewY>
         <modExtensions>
@@ -109,28 +109,28 @@
 
 	<ResearchProjectDef ParentName="GW_AM_RegimentResearchBase">
 		<defName>GW_AM_Valhallan</defName>
-		<label>valhallan ice warriors</label>
+		<label>Valhallan Ice Warriors</label>
         <description>Equipment belonging to the Astra Militarum Regiment of Valhallans.</description>
 		<researchViewY>3.00</researchViewY>
 	</ResearchProjectDef>
 
 	<ResearchProjectDef ParentName="GW_AM_RegimentResearchBase">
 		<defName>GW_AM_VostoyanFirstborn</defName>
-		<label>vostoyan firstborn</label>
+		<label>Vostoyan Firstborn</label>
         <description>Equipment belonging to the Vastoyan Firstborn.</description>
 		<researchViewY>3.60</researchViewY>
 	</ResearchProjectDef>
 
     <ResearchProjectDef ParentName="GW_AM_RegimentResearchBase">
 		<defName>GW_AM_CadianShockTroops</defName>
-		<label>cadian shock troops</label>
+		<label>Cadian Shock Troops</label>
         <description>Equipment belonging to the Astra Militarum Regimentum of Cadia.</description>
 		<researchViewY>4.20</researchViewY>
 	</ResearchProjectDef>
 
     <ResearchProjectDef ParentName="GW_AM_RegimentResearchBase">
 		<defName>GW_AM_SteelLegion</defName>
-		<label>steel legion</label>
+		<label>Steel Legion</label>
         <description>Equipment belonging to the Astra Militarum Regimentum the Steel Legion.</description>
 		<researchViewY>4.80</researchViewY>
 	</ResearchProjectDef>
