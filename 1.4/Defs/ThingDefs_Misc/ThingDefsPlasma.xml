@@ -351,7 +351,7 @@
 			<recipeUsers Inherit="False">
 				<li>HP_AM_MilitarumFabricationBench</li>
 			</recipeUsers>		
-			<researchPrerequisite>GW_PlasmaWeapons</researchPrerequisite>
+			<researchPrerequisite>GW_MeltaWeapons</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>15</Crafting>
 			</skillRequirements>
@@ -408,4 +408,3 @@
 	</ThingDef>
   
 </Defs>
-
