@@ -43,7 +43,7 @@
 	<ResearchProjectDef ParentName="GW_AM_HoITechBase">
 		<defName>GW_AM_RegimentsOfRenown</defName>
 		<label>regiments of renown</label>
-        <description>The second step to leaning how to create the equipment utilized by many of the Imperium's most notable regiments.</description>
+        <description>The second step to leaning how to create the equipment utilized by many of the Imperium's most notable regiments. Most known regiments of Astra Militarum!</description>
         <baseCost>2000</baseCost>
 		<prerequisites>
 			<li>GW_AM_MilitariumArmor</li>
@@ -64,35 +64,35 @@
 	<ResearchProjectDef ParentName="GW_AM_RegimentResearchBase">
 		<defName>GW_AM_Catachan</defName>
 		<label>Catachan Jungle Fighters</label>
-        <description>Equipment belonging to the Catachan.</description>
+        <description>Equipment belonging to the Catachan. The Catachan Jungle Fighters are the members of the Militarum Regimentum of the Astra Militarum that has been recruited from the Death World of Catachan. They have the well-deserved reputation of being the deadliest practitioners of jungle warfare in the galaxy. They are primarily deployed in the Segmentum Solar and the Segmentum Ultima and are highly skilled at combat in especially hazardous terrain and in carrying out guerilla and asymmetric warfare.Their homeworld of Catachan is a jungle Death World, where natural selection ensures only the most deadly flora and fauna survive. Extremely resourceful and uncompromising warriors, the natives of Catachan recruited into the Imperial Guard are deadly melee fighters with their specialised close combat blades or from ambush with their Lascarbines. In jungle terrain they are unsurpassed by nearly any other mortal soldiers in the Imperium, with each Catachan Fighter being worth ten soldiers from any other regiment. The skills learned in the jungles of Catachan are easily adapted to other war zones.Indeed, Catachans believe that even the most suicidal of military engagements are as nothing compared to spending but a single solar day in the lethal jungles of their homeworld. This "gung-ho" enthusiasm is often mistaken for bravado by guardsmen from other regiments. The fact remains, however, that Catachan Jungle Fighters are the most uncomplaining, determined and valorous soldiers of the Astra Militarum, whether assigned to basic garrison duties or a hopeless assault upon an impregnable fortress.</description>
 		<researchViewY>0.00</researchViewY>
 	</ResearchProjectDef>
 
 	<ResearchProjectDef ParentName="GW_AM_RegimentResearchBase">
 		<defName>GW_AM_DeathKorpsOfKrieg</defName>
 		<label>Death Korps of Krieg</label>
-        <description>Equipment belonging to the Astra Militarum Regiment of Krieg.</description>
+        <description>Equipment belonging to the Astra Militarum Regiment of Krieg. The Death Korps of Krieg is the name given to all of the Astra Militarum regiments that originate from the devastated, post-atomic Death World of Krieg in the Segmentum Tempestus. They are most commonly deployed in the war zones of the Segmentum Tempestus and Segmentum Solar and are particularly skilled at attritional trench warfare, sieges of and assaults upon heavily fortified static positions and warfare in extreme environments known for their biological, chemical and radioactive hazards. A typical Death Korps of Krieg infantrymanKrieg was the site of a rebellion against the Imperium of Man over 1,500 standard years ago in the 40th Millennium and was bombarded with nuclear weapons followed by five hundred Terran years of grinding warfare between Loyalists and Traitors to purge the heretical rebels. After all those years of nuclear destruction and bitter trench warfare, Krieg was reduced to a scorched, radioactive husk of a world composed of dust and mud whose surviving people were forced to retreat into underground hive cities to survive the toxic planetary environment.</description>
 		<researchViewY>0.70</researchViewY>
 	</ResearchProjectDef>
 
 	<ResearchProjectDef ParentName="GW_AM_RegimentResearchBase">
 		<defName>GW_AM_Mordian</defName>
 		<label>Mordian Iron Guard</label>
-        <description>Equipment belonging to the Mordian.</description>
+        <description>Equipment belonging to the Mordian. The Mordian Iron Guard is the superbly drilled and accoutred Militarum Regimentum of the Astra Militarum whose constituent regiments hail from the Hive World of Mordian. They are primarily deployed in the Segmentum Solar and the Segmentum Obscurus and are particularly skilled at putting down insurrections against Imperial rule and in urban combat. This bleak world is tidally-locked with its sun, which causes one side of it to always be bathed in perpetual darkness while the other is continuously bathed in its star's radiation, leaving it a scorched and lifeless wasteland. As such, all Human settlements on Mordian are located on the world's dark side, and the planet has well-earned its moniker as the "World of Eternal Night." The planet's oppressive atmosphere, coupled with overpopulation and meagre resources, makes for a sultry hotbed of antagonism. Newly raised regiments from Mordian commonly already have several standard years' experience in putting down insurrections, riots and uprisings with authoritarian firmness. The people of Mordian are grim and dour by nature, respecting only discipline and duty. Their regiments are fiercely loyal to their cause: the prosecution of the Emperor's enemies.</description>
 		<researchViewY>1.25</researchViewY>
 	</ResearchProjectDef>
 
 	<ResearchProjectDef ParentName="GW_AM_RegimentResearchBase">
 		<defName>GW_AM_TallarnDesertRaiders</defName>
-		<label>Tallarn Desert Warriors</label>
-        <description>Equipment belonging to the Tallarn Desert Raiders.</description>
+		<label>Tallarn Desert Raiders</label>
+        <description>Equipment belonging to the Tallarn Desert Raiders. The Tallarn Desert Raiders is the name of the Militarum Regimentum of the Astra Militarum raised from the Desert World of Tallarn whose soldiers are highly skilled at desert and mobile armoured warfare. They are primarily deployed in the Segmentum Tempestus and Segmentum Ultima and are particularly skilled at desert warfare and rapid armoured assaults. The Desert Raiders are mobile guerrilla fighters, evasive and opportunistic. They are especially known for their lightning-quick Sentinel and hard-hitting tank squadrons and are masters of hit-and-run mobile warfare. They love to strike a killing blow at the heart of an enemy formation before returning to their own lines, prepared to pounce once more. The people of Tallarn are extremely resourceful and pragmatic. They are patient, determined and utterly ferocious in pursuit of their enemies. Tallarn are all accomplished riders, and often will use riding mounts to move from battle to battle, dismounting only when they are close to the enemy and wish to employ stealth. Once the enemy is sighted, the Tallarn will stalk them closely, relying on their practiced marksmanship and lightning-quick curved combat knives to achieve victory.</description>
 		<researchViewY>1.80</researchViewY>
 	</ResearchProjectDef>
 
 	<ResearchProjectDef ParentName="GW_AM_RegimentResearchBase">
 		<defName>GW_AM_TempestusScions</defName>
 		<label>Tempestus Scions</label>
-        <description>Equipment belonging to the Tempestus Scions.</description>
+        <description>Equipment belonging to the Tempestus Scions. Tempestus Scions (sing. Tempestus Scion) (pronounced "Tem-PEST-ess cy-ONS"), or as they are known in Low Gothic, Storm Troopers, are the elite special forces units of the Astra Militarum and the Inquisition, but officially belong to a subdivision of the Adeptus Administratum known as the Militarum Tempestus. Trained from their youth by the Schola Progenium in the arts of war, Storm Troopers are, perhaps, the finest soldiers ever to serve in the Imperial Guard. Armed with their trademark Hot-shot Lasguns and Hellpistols, these soldiers take combat to the heart of the enemy with blinding speed and deadly precision. Their accuracy is aided by their highly-protective Carapace Armour's integrated and distinctive Omnishield Helm targeting system. Equipped with the finest weapons and wargear in the Departmento Munitorum's arsenal, Tempestus Scions are trained to carry out missions beyond the capabilities of the rank-and-file Guardsman. Deep strike assaults, reconnaissance, infiltration, sabotage, and airborne or orbital insertion are just a few of the special operations missions with which Tempestus Scions and their equivalents in the Astra Militarum are regularly tasked. They are the very best that the Imperial Guard has to offer, each man a perfect specimen of health and moral purity, forged by experience and training, not into a simple soldier, but into a one-man assault squad.</description>
 		<researchViewY>2.45</researchViewY>
         <modExtensions>
             <li Class="GW_Frame.DefModExtension_ExtraPrerequisiteActions">
@@ -110,28 +110,28 @@
 	<ResearchProjectDef ParentName="GW_AM_RegimentResearchBase">
 		<defName>GW_AM_Valhallan</defName>
 		<label>Valhallan Ice Warriors</label>
-        <description>Equipment belonging to the Astra Militarum Regiment of Valhallans.</description>
+        <description>Equipment belonging to the Astra Militarum Regiment of Valhallans. The Valhallan Ice Warriors comprise the famous Militarum Regimentum of the Astra Militarum which hails from the frozen and desolate Ice World of Valhalla located in the Segmentum Ultima. The Valhallan Ice Warriors have a long and glorious history of victories against the Orks and other enemies of the Imperium. Famed as some of the toughest regiments ever deployed by the Imperial Guard, these grim and tenacious troops never retreat and refuse to surrender. They are particularly successful at cold weather combat and are often used by the Imperium when a campaign of attrition must be fought on an Ice World that is similar in climate to their frigid homeworld or when an operation involves combat against Orks. The regiments of Valhalla have a reputation for stoicism and dedication to the Emperor. When attacking, they are renowned for combining massed artillery barrages with infantry assault waves. When defending they show dogged determination, even in the face of defeat.</description>
 		<researchViewY>3.00</researchViewY>
 	</ResearchProjectDef>
 
 	<ResearchProjectDef ParentName="GW_AM_RegimentResearchBase">
 		<defName>GW_AM_VostoyanFirstborn</defName>
 		<label>Vostoyan Firstborn</label>
-        <description>Equipment belonging to the Vastoyan Firstborn.</description>
+        <description>Equipment belonging to the Vostoyan Firstborn. The Vostroyan Firstborn is the name given to the Militarum Regimentum of the Astra Militarum that originates from the Industrial World of Vostroya located near the Halo Stars in the Segmentum Obscurus. The Vostroyan regiments have served the Emperor of Mankind for countless Terran centuries, though in truth they fight to absolve themselves of a terrible shame incurred by their ancestors over ten millennia ago when, during the dark days of the Horus Heresy, Vostroya failed in its duty to the Emperor. When the galaxy was consumed in civil war and anarchy, the Emperor commanded that worlds still loyal to the Imperium send forth troops to help defend it against the Warmaster Horus and his Traitor Legions. Vostroya refused, arguing that it could better serve the Imperium by continuing to devote all its efforts to the manufacture of weapons for the Emperor's armies in the world's great smelteries, and that to give up so much of its populace to become warriors for the Imperial Army would render it incapable of producing those weapons in sufficient quantities. The Vostroyans' refusal to provide soldiers was met with uncommon mercy by the Imperium once the Heresy had ended, and the people of Vostroya have forever after sought to atone for their mistake, promising to provide the first-born child of every Vostroyan family to the service of the Imperial Guard.</description>
 		<researchViewY>3.60</researchViewY>
 	</ResearchProjectDef>
 
     <ResearchProjectDef ParentName="GW_AM_RegimentResearchBase">
 		<defName>GW_AM_CadianShockTroops</defName>
 		<label>Cadian Shock Troops</label>
-        <description>Equipment belonging to the Astra Militarum Regimentum of Cadia.</description>
+        <description>Equipment belonging to the Astra Militarum Regimentum of Cadia. The Cadian Shock Troops, also sometimes called Cadian Shock Troopers, are the highly disciplined Militarum Regimentum soldiers conscripted in large numbers from the Fortress World of Cadia for the Astra Militarum, which once stood sentinel as the preeminent bastion of the Imperium of Man in the fight against the Emperor's ancient Archenemy, Chaos. They are deployed in every segmentum of the Imperium and are particularly skilled at defending fortified positions against extreme assaults and in warfare against the forces of Chaos. From the famous Shock Troops of its infantry regiments to the dedicated crews of its armoured war engines and the gunners who man its artillery and heavy weapons, the discipline and highly-professional warriors of the Cadian Regimentum are lauded throughout the Imperium as born soldiers. Cadia was one world amongst many tens of thousands in the Imperium, and has an honoured and violent place in its history, for Cadia stood upon the edge of the Eye of Terror within the Segmentum Obscurus, in a narrow corridor of navigable space known as the Cadian Gate. As a result, for 10,000 standard years Cadia endured the constant assaults of the forces of Chaos from within the Eye and remained unbowed and unconquered until Abaddon the Despoiler unleashed his 13th Black Crusade. This history of unending threat from the Archenemy bred a world of warriors who are still known to possess unsurpassed discipline and skill, and whose Astra Militarum regiments stand as examples to the rest of the Imperial Guard and Mankind.</description>
 		<researchViewY>4.20</researchViewY>
 	</ResearchProjectDef>
 
     <ResearchProjectDef ParentName="GW_AM_RegimentResearchBase">
 		<defName>GW_AM_SteelLegion</defName>
-		<label>Steel Legion</label>
-        <description>Equipment belonging to the Astra Militarum Regimentum the Steel Legion.</description>
+		<label>Armageddon Steel Legion</label>
+        <description>Equipment belonging to the Armageddon Steel Legion. The Armageddon Steel Legion is the Militarum Regimentum of the Astra Militarum that fights as mechanised infantry alongside Chimera armoured personnel carriers in defence of the strategically-located Imperial Hive World Armageddon and its surrounding allied star systems of the Armageddon Sector. Armageddon, located in the Segmentum Solar, was a planet blighted and poisoned by millennia of heavy industrial output, though it was also a major manufacturing centre. In the 41st Millennium Armageddon became a constant battleground between the Imperial Guard's Steel Legion and the countless Ork hordes of the Warboss Ghazghkull Mag Uruk Thraka. Regiments of the Astra Militarum vary widely from one world to the next. Civilisation, training, and technology levels are wildly varied from one culture to another within the Imperium of Man, resulting in forces mounted on horseback and carrying spears next to elite troops bearing advanced Grav-Chutes deploying from Valkyrie Assault Carriers.</description>
 		<researchViewY>4.80</researchViewY>
 	</ResearchProjectDef>
 
@@ -151,7 +151,7 @@
 	<ResearchProjectDef ParentName="GW_AM_HoITechBase">
 		<defName>GW_AM_OgrynIntegration</defName>
 		<label>ogryn integration</label>
-        <description>Allows for the creation of equipment usually wielded by Ogryn, massive abhumans usually employed as shock troopers by the Imperium of Man.</description>
+        <description>Allows for the creation of equipment usually wielded by Ogryn, massive abhumans usually employed as shock troopers by the Imperium of Man. The Ogryn (Homo sapiens gigantus) are a huge and physically powerful Abhuman mutant subspecies of Humanity, often employed by the Imperium of Man as shock troopers in the Astra Militarum's Militarum Auxilla. Ogryns possess many traits prized by the Imperium; they are brutally strong and completely loyal, although extremely limited intellectually, which restricts their battlefield role to simple and direct assaults. They hail from a series of cold and barren planets across the galaxy that possess high gravity, such as Anark Zeta, which is why they appear larger, heavier and bulkier compared to baseline Humans. Ogryns compensate for their mental deficiencies with overwhelming physicality -- the brutish creatures stand around 10 Terran feet (3 metres) tall and can shrug off wounds that would kill an Imperial Guardsman several times over. These qualities mean that Ogryns make exceptional shock troops, and are often deployed on the front lines of battle by Imperial commanders.</description>
 		<prerequisites>
 			<li>GW_AM_AbhumanIntegration</li>
 		</prerequisites>
@@ -163,7 +163,7 @@
 	<ResearchProjectDef ParentName="GW_AM_HoITechBase">
 		<defName>GW_AM_RatlingIntegration</defName>
 		<label>ratling integration</label>
-        <description>Allows for the creation of equipment usually wielded by Ratlings, small abhumans usually employed as snipers by the Imperium of Man.</description>
+        <description>Allows for the creation of equipment usually wielded by Ratlings, small abhumans usually employed as snipers by the Imperium of Man. A Ratling (Homo sapiens minimus) is a member of a small, loud, hungry and lecherous Abhuman species. Ratlings are granted full Imperial citizenship despite their mutant status and in the past have often served in the regiments of the Astra Militarum as members of the Militarum Auxilla. However, they are still distrusted by the more Puritanical members of the Inquisition. Though less resilient than their baseline Human comrades, Ratlings are naturally excellent shots. It is said that Ratling marksmen can take the head off a Heretic from over a kilometre away. Coupled with their knack for staying out of harm's way, this makes Ratlings formidable snipers who can exact a withering toll upon superior enemy forces. Inevitably, the Abhuman Ratlings face prejudice from the baseline Human troops they serve alongside, yet their skill as thieves, fences and black marketeers tends to win them acceptance. Indeed, Guardsmen who give the Ratlings too much grief will often find themselves mysteriously short of ammunition in the heat of battle, while their diminutive tormentors watch gleefully through telescopic sights.</description>
 		<prerequisites>
 			<li>GW_AM_AbhumanIntegration</li>
 		</prerequisites>
