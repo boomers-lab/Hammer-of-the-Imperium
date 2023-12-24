@@ -72,7 +72,7 @@
 			</li>
 		</damageMultipliers>
 
-		<passability>PassThroughOnly</passability>
+		<passability>Standable</passability>
 		<pathCost>80</pathCost>
 		<pathCostIgnoreRepeat>false</pathCostIgnoreRepeat>
 		
