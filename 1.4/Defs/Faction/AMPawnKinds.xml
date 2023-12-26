@@ -741,7 +741,7 @@
         </apparelRequired>
     </PawnKindDef>
 
-    <PawnKindDef ParentName="GW_AM_RangedTier3">
+    <PawnKindDef ParentName="GW_AM_RangedTier3" Name="GW_AM_TraderBase"> <!--Uses this as a base so they have an easier time defending themselves-->
         <defName>GW_AM_TempestusScion_RangedTier3</defName>
         <label>tempestus scion sergeant</label>
         <apparelTags Inherit="False">
@@ -753,6 +753,12 @@
             <li>ODZ_40k_IM_TempestusScion_Helmet</li>
             <li>ODZ_40k_IM_TempestusScion_Fatigues</li>
         </apparelRequired>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="GW_AM_TraderBase">
+        <defName>GW_AM_Trader</defName>
+        <label>scion trader</label>
+        <trader>true</trader>
     </PawnKindDef>
 
     <PawnKindDef ParentName="GW_AM_MeleeTier3">

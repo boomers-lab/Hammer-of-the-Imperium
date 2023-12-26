@@ -218,7 +218,7 @@
             <li>
                 <kindDef>Trader</kindDef>
                 <traders>
-                    <GW_AM_TempestusScion_RangedTier3>1</GW_AM_TempestusScion_RangedTier3>
+                    <GW_AM_Trader>1</GW_AM_Trader>
                 </traders>
                 <carriers>
                     <Muffalo>6</Muffalo>
