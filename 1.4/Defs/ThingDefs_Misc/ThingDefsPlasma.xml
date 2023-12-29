@@ -121,6 +121,7 @@
                 <warmupTime>5</warmupTime>
                 <range>40</range>
                 <ticksBetweenBurstShots>12</ticksBetweenBurstShots>
+                <forcedMissRadius>1.9</forcedMissRadius>
                 <burstShotCount>1</burstShotCount>
                 <soundCast>HP_AM_Plasma_Gun_Sound</soundCast>
                 <soundCastTail>GunTail_Heavy</soundCastTail>
@@ -222,6 +223,7 @@
                 <warmupTime>2.5</warmupTime>
                 <range>16</range>
                 <ticksBetweenBurstShots>12</ticksBetweenBurstShots>
+                <forcedMissRadius>1.9</forcedMissRadius>
                 <burstShotCount>1</burstShotCount>
                 <soundCast>HP_AM_Melta_Gun_Sound</soundCast>
                 <soundCastTail>GunTail_Heavy</soundCastTail>
@@ -305,6 +307,7 @@
                 <warmupTime>4</warmupTime>
                 <range>22</range>
                 <ticksBetweenBurstShots>7</ticksBetweenBurstShots>
+                <forcedMissRadius>0.9</forcedMissRadius>
                 <burstShotCount>1</burstShotCount>
                 <soundCast>HP_AM_Plasma_Gun_Sound</soundCast>
                 <soundCastTail>GunTail_Heavy</soundCastTail>
@@ -387,6 +390,7 @@
                 <warmupTime>4</warmupTime>
                 <range>10</range>
                 <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+                <forcedMissRadius>0.9</forcedMissRadius>
                 <burstShotCount>1</burstShotCount>
                 <soundCast>HP_AM_Melta_Gun_Sound</soundCast>
                 <soundCastTail>GunTail_Heavy</soundCastTail>
