@@ -9,6 +9,19 @@
                 <thingDef>Silver</thingDef>
                 <countRange>5000~10000</countRange>
             </li>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>CorpseStarch</thingDef>
+                <countRange>400~500</countRange>
+            </li>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>MealSimple</thingDef>
+                <countRange>200~300</countRange>
+            </li>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>MedicineUltratech</thingDef>
+                <countRange>25~30</countRange>
+            </li>
+
             <li Class="StockGenerator_MarketValue">
                 <tradeTag>GW_AM_IndustrialMelee</tradeTag>
                 <countRange>5~10</countRange>
@@ -69,6 +82,10 @@
                 <thingDef>HP_Ceramite</thingDef>
                 <countRange>50~100</countRange>
             </li>
+
+            <li Class="StockGenerator_Slaves">
+                <countRange>5~8</countRange>
+            </li>
             <li Class="StockGenerator_Tag">
                 <tradeTag>GW_Drugs</tradeTag>
                 <countRange>
@@ -79,6 +96,20 @@
                     <min>0</min>
                     <max>3</max>
                 </thingDefCountRange>
+            </li>
+            <li Class="StockGenerator_Animals">
+                <maxWildness>0.70</maxWildness>
+                <tradeTagsSell>
+                    <li>AnimalFarm</li>
+                </tradeTagsSell>
+                <tradeTagsBuy>
+                    <li>AnimalFarm</li>
+                </tradeTagsBuy>
+                <kindCountRange>2~2</kindCountRange>
+                <countRange>3~4</countRange>
+                <createMatingPair>
+                    <li>AnimalFarm</li>
+                </createMatingPair>
             </li>
             <li Class="StockGenerator_Tag">
                 <tradeTag>GW_BuildingMaterials</tradeTag>
@@ -115,6 +146,19 @@
                 <thingDef>Silver</thingDef>
                 <countRange>2500~5000</countRange>
             </li>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>CorpseStarch</thingDef>
+                <countRange>80~100</countRange>
+            </li>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>MealSimple</thingDef>
+                <countRange>20~50</countRange>
+            </li>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>MedicineUltratech</thingDef>
+                <countRange>10~15</countRange>
+            </li>
+
             <li Class="StockGenerator_MarketValue">
                 <tradeTag>GW_AM_IndustrialMelee</tradeTag>
                 <countRange>2~5</countRange>
@@ -175,6 +219,10 @@
                 <thingDef>HP_Ceramite</thingDef>
                 <countRange>30~50</countRange>
             </li>
+
+            <li Class="StockGenerator_Slaves">
+                <countRange>3~5</countRange>
+            </li>
             <li Class="StockGenerator_Tag">
                 <tradeTag>GW_Drugs</tradeTag>
                 <countRange>
@@ -185,6 +233,20 @@
                     <min>0</min>
                     <max>2</max>
                 </thingDefCountRange>
+            </li>
+            <li Class="StockGenerator_Animals">
+                <maxWildness>0.70</maxWildness>
+                <tradeTagsSell>
+                    <li>AnimalFarm</li>
+                </tradeTagsSell>
+                <tradeTagsBuy>
+                    <li>AnimalFarm</li>
+                </tradeTagsBuy>
+                <kindCountRange>2~2</kindCountRange>
+                <countRange>3~4</countRange>
+                <createMatingPair>
+                    <li>AnimalFarm</li>
+                </createMatingPair>
             </li>
             <li Class="StockGenerator_Tag">
                 <tradeTag>GW_BuildingMaterials</tradeTag>
