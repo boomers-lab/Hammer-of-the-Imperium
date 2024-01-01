@@ -226,7 +226,7 @@
         </costList>	
         <statBases>
             <WorkToMake>1200</WorkToMake>
-            <StuffEffectMultiplierInsulation_Cold>0.25</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Cold>0.80</StuffEffectMultiplierInsulation_Cold>
             <StuffEffectMultiplierInsulation_Heat>0.05</StuffEffectMultiplierInsulation_Heat>
         </statBases>
         <recipeMaker>
@@ -280,7 +280,7 @@
         </graphicData>
         <statBases>
             <WorkToMake>1600</WorkToMake>
-            <StuffEffectMultiplierInsulation_Cold>0.20</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Cold>0.35</StuffEffectMultiplierInsulation_Cold>
             <StuffEffectMultiplierInsulation_Heat>0.05</StuffEffectMultiplierInsulation_Heat>
         </statBases>
         <equippedStatOffsets>
@@ -311,7 +311,7 @@
 			<MaxHitPoints>75</MaxHitPoints>
 			<WorkToMake>1000</WorkToMake>
 			<Mass>0.1</Mass>
-			<Insulation_Cold>1</Insulation_Cold>
+			<Insulation_Cold>1.2</Insulation_Cold>
 			<Insulation_Heat>0</Insulation_Heat>
 			<EquipDelay>1</EquipDelay>
 		</statBases>
