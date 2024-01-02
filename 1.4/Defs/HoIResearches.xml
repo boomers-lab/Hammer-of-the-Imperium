@@ -10,7 +10,7 @@
         <description>Militarum workstation which allows you to craft various Imperial Guard armors and weapons from Warhammer 40.000 universe.</description>
         <baseCost>1000</baseCost>
 		<prerequisites>
-			<li>Fabrication</li>
+			<li>MicroelectronicsBasics</li>
 		</prerequisites>
 		<researchViewX>2.00</researchViewX>
 		<researchViewY>3.00</researchViewY>
