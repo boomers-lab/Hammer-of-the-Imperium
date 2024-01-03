@@ -455,7 +455,7 @@
             <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
         </statBases>
 		<equippedStatOffsets>
-      <MoveSpeed>-0.50</MoveSpeed>
+            <MoveSpeed>-0.50</MoveSpeed>
 		</equippedStatOffsets>
         <costList>
             <Steel>120</Steel>
@@ -522,10 +522,10 @@
             <AccuracyMedium>0.70</AccuracyMedium>
             <AccuracyLong>0.50</AccuracyLong>
             <RangedWeapon_Cooldown>1.25</RangedWeapon_Cooldown>
-			<equippedStatOffsets>
-      <MoveSpeed>-0.10</MoveSpeed>
-			</equippedStatOffsets>
         </statBases>
+        <equippedStatOffsets>
+            <MoveSpeed>-0.10</MoveSpeed>
+        </equippedStatOffsets>
         <costList>
             <Steel>70</Steel>
             <ComponentIndustrial>5</ComponentIndustrial>
