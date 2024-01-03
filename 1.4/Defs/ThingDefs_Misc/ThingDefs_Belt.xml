@@ -85,7 +85,7 @@
         <label>Officer gorget</label>
         <description>A gorget worn by Cadian officers.</description>
         <recipeMaker>
-            <researchPrerequisite>GW_AM_CadianShockTroops</researchPrerequisite>
+            <researchPrerequisite>GW_AM_MilitariumArmor</researchPrerequisite>
             <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>	
             <recipeUsers Inherit="false">
                 <li>HP_AM_MilitarumFabricationBench</li>
