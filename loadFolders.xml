@@ -2,7 +2,7 @@
 	<v1.4>
 		<li>/</li>
 		<li>1.4</li>
-        <li IfModActive="RedMattis.BetterPrerequisites">1.4/Mods/BigAndSmall</li>
+        <li IfModActive="Phonicmas.40kAbhumans">1.4/Mods/Abhumans</li>
         <li IfModActive="ceteam.combatextended">CombatExtendedPatch</li>
 	</v1.4>
 </loadFolders>

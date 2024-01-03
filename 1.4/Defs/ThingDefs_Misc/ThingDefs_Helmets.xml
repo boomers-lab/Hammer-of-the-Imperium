@@ -59,7 +59,7 @@
             <EquipDelay>1.5</EquipDelay>
         </statBases>
         <recipeMaker>
-            <researchPrerequisite>GW_AM_CadianShockTroops</researchPrerequisite>
+            <researchPrerequisite>GW_AM_MilitariumArmor</researchPrerequisite>
         </recipeMaker>
         <apparel>
             <wornGraphicPath>Things/Cadian/Headgear/CadianHelmet</wornGraphicPath>

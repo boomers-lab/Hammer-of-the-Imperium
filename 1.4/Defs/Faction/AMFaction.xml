@@ -48,8 +48,8 @@
         <xenotypeSet>
             <xenotypeChances>
                 <Baseliner MayRequire="Ludeon.RimWorld.Biotech">0.86</Baseliner>
-                <GW_Ratling MayRequire="RedMattis.BetterPrerequisites">0.07</GW_Ratling>
-                <GW_Ogryn MayRequire="RedMattis.BetterPrerequisites">0.07</GW_Ogryn>
+                <BEWH_Ratling MayRequire="Phonicmas.40kAbhumans">0.07</BEWH_Ratling>
+                <BEWH_Ogryn MayRequire="Phonicmas.40kAbhumans">0.07</BEWH_Ogryn>
             </xenotypeChances>
         </xenotypeSet>
         <maxPawnCostPerTotalPointsCurve>
@@ -204,13 +204,13 @@
             </li>
 
             <!--The misfits-->
-            <li MayRequire="RedMattis.BetterPrerequisites">
+            <li MayRequire="Phonicmas.40kAbhumans">
                 <kindDef>Combat</kindDef>
                 <commonality>1</commonality>
                 <options>
-                    <GW_OgrynEnforcer MayRequire="RedMattis.BetterPrerequisites">2</GW_OgrynEnforcer>
-                    <GW_OgrynGunner MayRequire="RedMattis.BetterPrerequisites">2</GW_OgrynGunner>
-                    <GW_RatlingSniper MayRequire="RedMattis.BetterPrerequisites">4</GW_RatlingSniper>
+                    <GW_OgrynEnforcer MayRequire="Phonicmas.40kAbhumans">2</GW_OgrynEnforcer>
+                    <GW_OgrynGunner MayRequire="Phonicmas.40kAbhumans">2</GW_OgrynGunner>
+                    <GW_RatlingSniper MayRequire="Phonicmas.40kAbhumans">4</GW_RatlingSniper>
                 </options>
             </li>
         
@@ -235,9 +235,9 @@
                     <GW_AM_TempestusScion_RangedTier3>3</GW_AM_TempestusScion_RangedTier3>
                     <GW_AM_Mordian_RangedTier3>13</GW_AM_Mordian_RangedTier3>
                     <GW_AM_Valhallan_Lieutenant>3</GW_AM_Valhallan_Lieutenant>
-                    <GW_OgrynEnforcer MayRequire="RedMattis.BetterPrerequisites">2</GW_OgrynEnforcer>
-                    <GW_OgrynGunner MayRequire="RedMattis.BetterPrerequisites">2</GW_OgrynGunner>
-                    <GW_RatlingSniper MayRequire="RedMattis.BetterPrerequisites">4</GW_RatlingSniper>
+                    <GW_OgrynEnforcer MayRequire="Phonicmas.40kAbhumans">2</GW_OgrynEnforcer>
+                    <GW_OgrynGunner MayRequire="Phonicmas.40kAbhumans">2</GW_OgrynGunner>
+                    <GW_RatlingSniper MayRequire="Phonicmas.40kAbhumans">4</GW_RatlingSniper>
                 </guards>
             </li>
             <li>
@@ -251,9 +251,9 @@
                     <GW_AM_TempestusScion_RangedTier3>3</GW_AM_TempestusScion_RangedTier3>
                     <GW_AM_Mordian_RangedTier3>13</GW_AM_Mordian_RangedTier3>
                     <GW_AM_Valhallan_Lieutenant>3</GW_AM_Valhallan_Lieutenant>
-                    <GW_OgrynEnforcer MayRequire="RedMattis.BetterPrerequisites">2</GW_OgrynEnforcer>
-                    <GW_OgrynGunner MayRequire="RedMattis.BetterPrerequisites">2</GW_OgrynGunner>
-                    <GW_RatlingSniper MayRequire="RedMattis.BetterPrerequisites">4</GW_RatlingSniper>
+                    <GW_OgrynEnforcer MayRequire="Phonicmas.40kAbhumans">2</GW_OgrynEnforcer>
+                    <GW_OgrynGunner MayRequire="Phonicmas.40kAbhumans">2</GW_OgrynGunner>
+                    <GW_RatlingSniper MayRequire="Phonicmas.40kAbhumans">4</GW_RatlingSniper>
                 </options>
             </li>
         </pawnGroupMakers>

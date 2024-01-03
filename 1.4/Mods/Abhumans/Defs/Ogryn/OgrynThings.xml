@@ -36,7 +36,7 @@
         <modExtensions>
 			<li Class="GW_Frame.EquipRestrictExtension">
 				<requireOneOfXenotypeToEquip>
-                    <li>GW_Ogryn</li>
+                    <li>BEWH_Ogryn</li>
                 </requireOneOfXenotypeToEquip>
 			</li>
 		</modExtensions>
@@ -85,7 +85,7 @@
             </li>
             <li Class="GW_Frame.EquipRestrictExtension">
 				<requireOneOfXenotypeToEquip>
-                    <li>GW_Ogryn</li>
+                    <li>BEWH_Ogryn</li>
                 </requireOneOfXenotypeToEquip>
 			</li>
 		</modExtensions>
