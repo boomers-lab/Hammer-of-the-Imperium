@@ -165,10 +165,10 @@
         <thingClass>Projectile_Explosive</thingClass>
         <projectile>
             <damageDef>Burn</damageDef>
-            <damageAmountBase>50</damageAmountBase>
-            <stoppingPower>2.5</stoppingPower>
-            <armorPenetrationBase>1</armorPenetrationBase>
-            <explosionRadius>1.6</explosionRadius>
+            <damageAmountBase>90</damageAmountBase>
+            <stoppingPower>3</stoppingPower>
+            <armorPenetrationBase>2.5</armorPenetrationBase>
+            <explosionRadius>0</explosionRadius>
             <speed>70</speed>
         </projectile>
     </ThingDef>
@@ -190,7 +190,7 @@
             <AccuracyShort>0.70</AccuracyShort>
             <AccuracyMedium>0.40</AccuracyMedium>
             <AccuracyLong>0.20</AccuracyLong>
-            <RangedWeapon_Cooldown>2.5</RangedWeapon_Cooldown>
+            <RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
         </statBases>
         <recipeMaker>
             <recipeUsers Inherit="False">
@@ -223,7 +223,7 @@
                 <verbClass>Verb_Shoot</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
                 <defaultProjectile>HP_AM_Bullet_MeltaGun</defaultProjectile>
-                <warmupTime>2.5</warmupTime>
+                <warmupTime>3</warmupTime>
                 <range>16</range>
                 <ticksBetweenBurstShots>12</ticksBetweenBurstShots>
                 <forcedMissRadius>1.9</forcedMissRadius>
