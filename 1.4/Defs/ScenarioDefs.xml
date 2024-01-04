@@ -2,10 +2,10 @@
 <Defs>
     <ScenarioDef>
         <defName>HP_AM_MilitarumCrashlanders</defName>
-        <label>Militarum crashlanders</label>
-        <description>By the Emperor's will you shall claim this world for humanity, and show our enemies that the Hammer of the Emperor will never falter, no matter the price that must be paid.</description>
+        <label>Conquest for the Glory of the Emperor</label>
+        <description>In the face of threat on a distant planet, the Imperial Guard, loyal to the Emperor, is dispatched to conquer and subjugate this mysterious realm in the Emperor's Glory. The planet is inhabited by various factions, none of which recognize the authority of the Imperium.\n\nUnder the command of a seasoned leader, the guardsmen land on the planet's surface, ready to fight and seize control. They must confront not only armed enemy forces but also diverse environmental challenges.\n\nThe planet's environment is harsh and inhospitable, with varied landscapes ranging from rocky mountains to impenetrable jungles, coupled with hazardous weather conditions. The guardsmen must swiftly adapt their tactics and employ their combat and logistical skills to survive and gain control over key areas critical to the mission's success.</description>
         <scenario>
-            <summary>Set up a Militarum Outpost</summary>
+            <summary>The Imperial Guard, led by a seasoned commander, embarks on conquering a hostile planet, aiming for victory!</summary>
             <playerFaction>
                 <def>PlayerFaction</def>
                 <factionDef>PlayerColony</factionDef>
