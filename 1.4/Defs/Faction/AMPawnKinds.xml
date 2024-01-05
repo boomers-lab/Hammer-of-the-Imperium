@@ -43,7 +43,7 @@
         <apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
         <weaponTags>
             <li>HP_Autogun</li>
-            <li>GW_AM_Lasguns</li>
+            <li>GW_AM_Lasgun</li>
         </weaponTags>
         <weaponMoney>550~850</weaponMoney>
         <techHediffsChance>0.04</techHediffsChance>
@@ -110,7 +110,7 @@
         <apparelAllowHeadgearChance>0.8</apparelAllowHeadgearChance>
         <weaponTags>
             <li>HP_Autogun</li>
-            <li>GW_AM_Lasguns</li>
+            <li>GW_AM_Lasgun</li>
         </weaponTags>
         <weaponMoney>750~1250</weaponMoney>
         <techHediffsChance>0.07</techHediffsChance>
