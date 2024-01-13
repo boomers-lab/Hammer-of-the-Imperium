@@ -5,7 +5,6 @@
         <graphicData>
             <graphicClass>Graphic_Single</graphicClass>
             <shaderType>CutoutComplex</shaderType>
-            <drawSize>1.6</drawSize>		  
         </graphicData>
         <uiIconScale>1</uiIconScale>
         <tradeTags>
