@@ -13,7 +13,7 @@
             </recipeUsers>
         </recipeMaker>
         <graphicData>
-            <texPath>Things/DeathKorps/Display/DKOKCombatWebbing</texPath>
+            <texPath>Things/DeathKorps/Belt/DKOKCombatWebbing_Male_south</texPath>
             <graphicClass>Graphic_Single</graphicClass>
             <shaderType>CutoutComplex</shaderType>
             <drawSize>1.7</drawSize>
@@ -92,7 +92,7 @@
             </recipeUsers>  
         </recipeMaker>
         <graphicData>
-            <texPath>Things/Cadian/Display/OfficerGorget</texPath>
+            <texPath>Things/Cadian/Attachments/OfficerGorget_Male_south</texPath>
             <graphicClass>Graphic_Single</graphicClass>
             <shaderType>CutoutComplex</shaderType>
             <drawSize>1.7</drawSize>

@@ -48,7 +48,7 @@
             <researchPrerequisite>GW_AM_TempestusScions</researchPrerequisite>
         </recipeMaker>
         <graphicData>
-            <texPath>Things/TempestusScions/Display/TempestusScionFatigues</texPath>
+            <texPath>Things/TempestusScions/Onskin/TempestusScionFatigues_Male_south</texPath>
         </graphicData>
         <costStuffCount>85</costStuffCount>
         <statBases>
@@ -77,7 +77,7 @@
             <researchPrerequisite>GW_AM_DeathKorpsOfKrieg</researchPrerequisite>
         </recipeMaker>
         <graphicData>
-            <texPath>Things/DeathKorps/Display/DeathKorpsUniform</texPath>
+            <texPath>Things/DeathKorps/Onskin/DeathKorpsUniform_Male_south</texPath>
         </graphicData>
         <costStuffCount>90</costStuffCount>
         <statBases>
@@ -164,7 +164,7 @@
             <researchPrerequisite>GW_AM_MilitariumArmor</researchPrerequisite>
         </recipeMaker>
         <graphicData>
-            <texPath>Things/Cadian/Display/CadianFatigues</texPath>
+            <texPath>Things/Cadian/Onskin/CadianFatigues_Male_south</texPath>
         </graphicData>
         <costStuffCount>80</costStuffCount>
         <statBases>
@@ -193,7 +193,7 @@
             <researchPrerequisite>GW_AM_Catachan</researchPrerequisite>
         </recipeMaker>
         <graphicData>
-            <texPath>Things/Catachan/Display/CatachanSkin</texPath>
+            <texPath>Things/Catachan/CatachanSkin/CatachanSkin_Male_south</texPath>
         </graphicData>
         <costStuffCount>70</costStuffCount>
         <statBases>

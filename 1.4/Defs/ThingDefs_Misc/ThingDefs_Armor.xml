@@ -54,7 +54,7 @@
             </skillRequirements>
         </recipeMaker>
         <graphicData>
-            <texPath>Things/TempestusScions/Display/CarapaceArmor</texPath>
+            <texPath>Things/TempestusScions/Middle/CarapaceArmor_Male_south</texPath>
         </graphicData>
         <statBases>
             <WorkToMake>25000</WorkToMake>
@@ -124,7 +124,7 @@
             </skillRequirements>
         </recipeMaker>
         <graphicData>
-            <texPath>Things/DeathKorps/Display/GrenadierArmor</texPath>
+            <texPath>Things/DeathKorps/Middle/GrenadierArmor_Male_south</texPath>
         </graphicData>
         <statBases>
             <WorkToMake>9000</WorkToMake>
@@ -167,7 +167,7 @@
             </skillRequirements>
         </recipeMaker>
         <graphicData>
-            <texPath>Things/Catachan/Display/CatachanMiddle</texPath>
+            <texPath>Things/Catachan/CatachanMid/CatachanMiddle_Male_south</texPath>
         </graphicData>
         <statBases>
             <WorkToMake>9000</WorkToMake>
@@ -208,7 +208,7 @@
             </skillRequirements>
         </recipeMaker>
         <graphicData>
-            <texPath>Things/Cadian/Display/FlakArmor</texPath>
+            <texPath>Things/Cadian/Middle/FlakArmor_Male_south</texPath>
         </graphicData>
         <statBases>
             <WorkToMake>9000</WorkToMake>
@@ -249,7 +249,7 @@
             </skillRequirements>
         </recipeMaker>
         <graphicData>
-            <texPath>Things/Cadian/Display/KasrkinFlakArmor</texPath>
+            <texPath>Things/Cadian/Middle/KasrkinFlakArmor_Male_south</texPath>
         </graphicData>
         <statBases>
             <WorkToMake>12000</WorkToMake>
