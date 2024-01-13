@@ -42,7 +42,7 @@
             <researchPrerequisite>GW_AM_Catachan</researchPrerequisite>
         </recipeMaker>
         <graphicData>
-            <texPath>Things/Catachan/Display/CatachanOuter</texPath>
+            <texPath>Things/Catachan/CatachanOuter/CatachanOuter_Male_south</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <costStuffCount>70</costStuffCount>

@@ -45,7 +45,7 @@
         <label>Cadian helmet</label>
         <description>A mass produced helmet used by the Cadian regimentum and many others.</description>
         <graphicData>
-            <texPath>Things/Cadian/Display/CadianHelmet</texPath>
+            <texPath>Things/Cadian/Headgear/CadianHelmet_south</texPath>
         </graphicData>
 		<costList>
             <Steel>70</Steel>	
@@ -78,7 +78,7 @@
         <label>Kasrkin helmet</label>
         <description>A helmet with a fitted gasmask worn by the elite Kasrkin forces.</description>
         <graphicData>
-            <texPath>Things/Cadian/Display/KasrkinHelmet</texPath>
+            <texPath>Things/Cadian/Headgear/KasrkinHelmet_south</texPath>
         </graphicData>
         <costList>
             <ComponentIndustrial>4</ComponentIndustrial>
@@ -120,7 +120,7 @@
         <description>A mass produced helmet used by the Krieg regimentum.</description>
         <techLevel>Industrial</techLevel>
         <graphicData>
-            <texPath>Things/DeathKorps/Display/KriegHelmet</texPath>
+            <texPath>Things/DeathKorps/Headgear/KriegHelmet_south</texPath>
         </graphicData>
 		<costList>
             <ComponentIndustrial>2</ComponentIndustrial>
@@ -155,7 +155,7 @@
         <description>A helmet worn by the elite grenadier units of the Death Korps.</description>
         <techLevel>Industrial</techLevel>
         <graphicData>
-            <texPath>Things/DeathKorps/Display/KriegGrenadierHelmet</texPath>
+            <texPath>Things/DeathKorps/Headgear/KriegGrenadierHelmet_south</texPath>
         </graphicData>
 		<costList>
             <ComponentIndustrial>2</ComponentIndustrial>
@@ -189,7 +189,7 @@
         <label>Tempestus Scion helmet</label>
         <description>Elite helmet worn by the Tempestus Scion.</description>
         <graphicData>
-            <texPath>Things/TempestusScions/Display/TempestusScionHelmet</texPath>
+            <texPath>Things/TempestusScions/Headgear/TempestusScionHelmet_south</texPath>
         </graphicData>
         <costList>
             <ComponentIndustrial>2</ComponentIndustrial>

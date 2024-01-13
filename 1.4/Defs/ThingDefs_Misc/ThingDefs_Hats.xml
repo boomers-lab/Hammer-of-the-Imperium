@@ -60,7 +60,7 @@
         <label>Cadian fieldcap</label>
         <description>Mass produced field cap issued to the Cadian Regimentum.</description>
         <graphicData>
-            <texPath>Things/Cadian/Display/FieldCap</texPath>
+            <texPath>Things/Cadian/Headgear/FieldCap_south</texPath>
         </graphicData>
         <costStuffCount>30</costStuffCount>
         <statBases>
@@ -91,7 +91,7 @@
         <label>Cadian crusher cap</label>
         <description>An officers cap worn by Cadian Regimentum Officers to signify authority over their troops.</description>
         <graphicData>
-            <texPath>Things/Cadian/Display/OfficerCap</texPath>
+            <texPath>Things/Cadian/Headgear/OfficerCap_south</texPath>
         </graphicData>
         <costList>
             <Leather_Plain>5</Leather_Plain>
@@ -127,7 +127,7 @@
         <label>Tempestus Scion beret</label>
         <description>An officers Beret.</description>
         <graphicData>
-            <texPath>Things/TempestusScions/Display/TempestusScionBeret</texPath>
+            <texPath>Things/TempestusScions/Headgear/TempestusScionBeret_south</texPath>
         </graphicData>
         <statBases>
             <WorkToMake>1500</WorkToMake>
@@ -157,7 +157,7 @@
         <label>Catachan bandana</label>
         <description>A Catachan Bandana.</description>
         <graphicData>
-            <texPath>Things/Catachan/Display/CatachanBandana</texPath>
+            <texPath>Things/Catachan/CatachanBandana/CatachanBandana_south</texPath>
         </graphicData>
         <costStuffCount>10</costStuffCount>
         <statBases>
@@ -522,7 +522,7 @@
         <description>Iconic Gas mask worn by Death Korps.</description>
         <techLevel>Industrial</techLevel>
         <graphicData>
-            <texPath>Things/DeathKorps/Display/KriegGasmask</texPath>
+            <texPath>Things/DeathKorps/Headgear/KriegGasmask_south</texPath>
         </graphicData>
         <stuffCategories>
             <li>Leathery</li>
@@ -553,7 +553,7 @@
         <description>Iconic Gas mask worn by the elite Death Korps Grenadiers.</description>
         <techLevel>Industrial</techLevel>
         <graphicData>
-            <texPath>Things/DeathKorps/Display/KriegGrenadierGasmask</texPath>
+            <texPath>Things/DeathKorps/Headgear/KriegGrenadierGasmask_south</texPath>
         </graphicData>
         <stuffCategories>
             <li>Leathery</li>
@@ -624,7 +624,7 @@
         <label>Omni Mask</label>
         <description>Mask worn by Tempestus Scions.</description>
         <graphicData>
-            <texPath>Things/TempestusScions/Display/OmniMask</texPath>
+            <texPath>Things/TempestusScions/Headgear/OmniMask_south</texPath>
         </graphicData>
         <stuffCategories>
             <li>Metallic</li>
