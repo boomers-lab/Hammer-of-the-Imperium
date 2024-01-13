@@ -589,7 +589,7 @@
         <description>A Steel Legion Gas mask.</description>
         <techLevel>Industrial</techLevel>
         <graphicData>
-            <texPath>Things/SteelLegion/Headgear/SteelLegionHeadgear</texPath>
+            <texPath>Things/SteelLegion/Headgear/SteelLegionHeadgear_south</texPath>
         </graphicData>
         <stuffCategories>
             <li>Leathery</li>
