@@ -100,7 +100,7 @@
             <WorkToMake>1600</WorkToMake>
         </statBases>
         <equippedStatOffsets>
-            <SocialImpact>0.5</SocialImpact>
+            <SocialImpact>0.6</SocialImpact>
         </equippedStatOffsets>	
         <recipeMaker>
             <researchPrerequisite>GW_AM_MilitariumArmor</researchPrerequisite>
@@ -133,7 +133,7 @@
             <WorkToMake>1500</WorkToMake>
         </statBases>
         <equippedStatOffsets>
-            <SocialImpact>0.5</SocialImpact>
+            <SocialImpact>0.7</SocialImpact>
         </equippedStatOffsets>	
         <recipeMaker>
             <researchPrerequisite>GW_AM_TempestusScions</researchPrerequisite>
@@ -196,6 +196,9 @@
             <StuffEffectMultiplierInsulation_Cold>0.1</StuffEffectMultiplierInsulation_Cold>
             <StuffEffectMultiplierInsulation_Heat>0.25</StuffEffectMultiplierInsulation_Heat>
         </statBases>
+		<equippedStatOffsets>
+            <SocialImpact>0.2</SocialImpact>
+        </equippedStatOffsets>
         <recipeMaker>
             <researchPrerequisite>GW_AM_Mordian</researchPrerequisite>
             <skillRequirements>
@@ -229,6 +232,9 @@
             <StuffEffectMultiplierInsulation_Cold>0.80</StuffEffectMultiplierInsulation_Cold>
             <StuffEffectMultiplierInsulation_Heat>0.05</StuffEffectMultiplierInsulation_Heat>
         </statBases>
+		<equippedStatOffsets>
+            <SocialImpact>0.2</SocialImpact>
+        </equippedStatOffsets>
         <recipeMaker>
             <researchPrerequisite>GW_AM_Valhallan</researchPrerequisite>
         </recipeMaker>
@@ -316,7 +322,7 @@
 			<EquipDelay>1</EquipDelay>
 		</statBases>
         <equippedStatOffsets>
-            <ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>  
+            <ToxicEnvironmentResistance>0.9</ToxicEnvironmentResistance>  
         </equippedStatOffsets>
         <apparel>
             <layers Inherit="False">
@@ -368,8 +374,8 @@
 			<MaxHitPoints>150</MaxHitPoints>
 			<WorkToMake>2200</WorkToMake>
 			<Mass>0.2</Mass>
-			<StuffEffectMultiplierInsulation_Cold>0.25</StuffEffectMultiplierInsulation_Cold>
-			<StuffEffectMultiplierInsulation_Heat>0.2</StuffEffectMultiplierInsulation_Heat>
+			<StuffEffectMultiplierInsulation_Cold>0.10</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.25</StuffEffectMultiplierInsulation_Heat>
 			<EquipDelay>2</EquipDelay>
 		</statBases>
         <apparel>
@@ -462,7 +468,7 @@
 			<MaxHitPoints>100</MaxHitPoints>
 			<Mass>0.1</Mass>
 			<StuffEffectMultiplierArmor>0.25</StuffEffectMultiplierArmor>
-			<StuffEffectMultiplierInsulation_Cold>0.2</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Cold>0.1</StuffEffectMultiplierInsulation_Cold>
 			<EquipDelay>1.5</EquipDelay>
 		</statBases>
         <recipeMaker>
@@ -497,7 +503,7 @@
             <EquipDelay>1.2</EquipDelay>
         </statBases>
         <equippedStatOffsets>
-            <ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>  
+            <ToxicEnvironmentResistance>0.9</ToxicEnvironmentResistance>  
         </equippedStatOffsets>
         <apparel>
             <countsAsClothingForNudity>true</countsAsClothingForNudity>
@@ -581,7 +587,7 @@
         </apparel>
     </ThingDef>
 
-       <!-- Krieger Grenadier Gas Mask -->
+       <!-- Steel legion Gas Mask -->
   
     <ThingDef ParentName="GW_AM_Hat_GasMaskBase">
         <defName>GW_AM_SL_GasMask</defName>
@@ -676,7 +682,7 @@
             </skillRequirements>	  
         </recipeMaker>
         <equippedStatOffsets>
-            <ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>  
+            <ToxicEnvironmentResistance>0.9</ToxicEnvironmentResistance>  
         </equippedStatOffsets>
         <apparel>
             <countsAsClothingForNudity>true</countsAsClothingForNudity>

@@ -67,13 +67,9 @@
 			<Insulation_Heat>8.0</Insulation_Heat>
             <EquipDelay>6</EquipDelay>
         </statBases>
-        <equippedStatOffsets>
-            <MoveSpeed>-0.4</MoveSpeed>
-            <AimingDelayFactor>-0.05</AimingDelayFactor>
-        </equippedStatOffsets>
         <costStuffCount>90</costStuffCount>		
         <costList>
-			<Steel>70</Steel>
+			<Steel>100</Steel>
             <DevilstrandCloth>10</DevilstrandCloth>
         </costList>	
         <apparel>
@@ -138,7 +134,6 @@
         </statBases>
         <equippedStatOffsets>
             <MoveSpeed>-0.2</MoveSpeed>
-            <AimingDelayFactor>-0.02</AimingDelayFactor>
         </equippedStatOffsets>
 		<costList>
             <Steel>100</Steel>
@@ -181,7 +176,6 @@
         </statBases>
         <equippedStatOffsets>
             <MoveSpeed>0.1</MoveSpeed>
-            <AimingDelayFactor>-0.02</AimingDelayFactor>
         </equippedStatOffsets>
 		<costList>
             <Steel>90</Steel>
@@ -222,7 +216,6 @@
         </statBases>
         <equippedStatOffsets>
             <MoveSpeed>-0.2</MoveSpeed>
-            <AimingDelayFactor>-0.02</AimingDelayFactor>
         </equippedStatOffsets>
         <costList>
             <Steel>100</Steel>
@@ -263,11 +256,10 @@
             <EquipDelay>6</EquipDelay>
         </statBases>
         <equippedStatOffsets>
-            <MoveSpeed>-0.3</MoveSpeed>
-            <AimingDelayFactor>-0.03</AimingDelayFactor>
+            <MoveSpeed>-0.1</MoveSpeed>
         </equippedStatOffsets>
 		<costList>
-			<Steel>70</Steel>
+			<Steel>90</Steel>
             <DevilstrandCloth>10</DevilstrandCloth>
         </costList>
         <apparel>
@@ -323,7 +315,7 @@
 			<Mass>5</Mass>
 			<ArmorRating_Sharp>1.00</ArmorRating_Sharp>
 			<ArmorRating_Blunt>0.36</ArmorRating_Blunt>
-			<ArmorRating_Heat>0.27</ArmorRating_Heat>
+			<ArmorRating_Heat>0.40</ArmorRating_Heat>
 			<Insulation_Cold>0.10</Insulation_Cold>
 			<EquipDelay>5</EquipDelay>
 		</statBases>
@@ -373,8 +365,7 @@
             <EquipDelay>3</EquipDelay>
         </statBases>
         <equippedStatOffsets>
-            <MoveSpeed>-0.2</MoveSpeed>
-            <AimingDelayFactor>-0.02</AimingDelayFactor>
+            <MoveSpeed>-0.1</MoveSpeed>
         </equippedStatOffsets>
         <costList>
             <Steel>100</Steel>
