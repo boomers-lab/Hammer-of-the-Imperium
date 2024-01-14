@@ -106,7 +106,7 @@
             <researchPrerequisite>GW_AM_SteelLegion</researchPrerequisite>
         </recipeMaker>
         <graphicData>
-            <texPath>Things/SteelLegion/SkinOutfit/SteelLegion</texPath>
+            <texPath>Things/SteelLegion/SkinOutfit/SteelLegion_Male_south</texPath>
         </graphicData>
         <costStuffCount>90</costStuffCount>
         <statBases>
@@ -256,7 +256,7 @@
             <researchPrerequisite>GW_AM_VostoyanFirstborn</researchPrerequisite>
         </recipeMaker>
         <graphicData>
-            <texPath>Things/VostoyanFirstborn/OnSkin/VostoyanFirstborn</texPath>
+            <texPath>Things/VostoyanFirstborn/OnSkin/VostoyanFirstborn_Male_south</texPath>
         </graphicData>
         <costStuffCount>90</costStuffCount>
         <statBases>
