@@ -19,9 +19,6 @@
             <li>HPArmor</li>
             <li>GW_AM_Armor</li>
         </tradeTags>
-        <equippedStatOffsets>
-	        <MedicalTendSpeed>0.5</MedicalTendSpeed>	  
-        </equippedStatOffsets>
         <statBases>
             <Flammability>0.6</Flammability>
         </statBases>
@@ -67,6 +64,9 @@
 			<Insulation_Heat>8.0</Insulation_Heat>
             <EquipDelay>6</EquipDelay>
         </statBases>
+		<equippedStatOffsets>
+            <MoveSpeed>-0.1</MoveSpeed>
+        </equippedStatOffsets>
         <costStuffCount>90</costStuffCount>		
         <costList>
 			<Steel>100</Steel>
@@ -320,6 +320,7 @@
 			<EquipDelay>5</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
+			<MoveSpeed>-0.1</MoveSpeed>
 			<RangedCooldownFactor MayRequire="Ludeon.Rimworld.Biotech">-0.2</RangedCooldownFactor>
 		</equippedStatOffsets>
 		<costList>
