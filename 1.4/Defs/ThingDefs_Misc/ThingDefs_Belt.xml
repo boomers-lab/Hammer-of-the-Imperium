@@ -43,9 +43,7 @@
             <EquipDelay>1.5</EquipDelay>
         </statBases>
         <equippedStatOffsets>
-            <AimingDelayFactor>-0.05</AimingDelayFactor>
             <CarryingCapacity>30</CarryingCapacity>
-            <MedicalTendSpeed>0.05</MedicalTendSpeed>
             <MoveSpeed>-0.02</MoveSpeed>
         </equippedStatOffsets>
         <apparel>
@@ -54,7 +52,7 @@
                 <li>Waist</li>
             </bodyPartGroups>
             <wornGraphicPath>Things/DeathKorps/Belt/DKOKCombatWebbing</wornGraphicPath>
-            <wornGraphicData />
+            <wornGraphicData/>
             <layers>
                 <li>Belt</li>
             </layers>
@@ -126,7 +124,7 @@
                 <li>Waist</li>
             </bodyPartGroups>
             <wornGraphicPath>Things/Cadian/Attachments/OfficerGorget</wornGraphicPath>
-            <wornGraphicData />
+            <wornGraphicData/>
             <layers>
                 <li>Belt</li>
             </layers>

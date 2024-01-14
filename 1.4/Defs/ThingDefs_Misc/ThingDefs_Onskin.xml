@@ -234,8 +234,8 @@
 			<MaxHitPoints>150</MaxHitPoints>
 			<WorkToMake>7000</WorkToMake>
 			<StuffEffectMultiplierArmor>0.25</StuffEffectMultiplierArmor>
-			<StuffEffectMultiplierInsulation_Cold>0.6</StuffEffectMultiplierInsulation_Cold>
-			<StuffEffectMultiplierInsulation_Heat>0.5</StuffEffectMultiplierInsulation_Heat>
+			<StuffEffectMultiplierInsulation_Cold>0.2</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>1.2</StuffEffectMultiplierInsulation_Heat>
 		</statBases>
 		<apparel>
 			<wornGraphicPath>Things/Tallarn/OnSkin/DesertFatigues</wornGraphicPath>

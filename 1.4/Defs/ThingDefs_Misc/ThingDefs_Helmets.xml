@@ -97,7 +97,7 @@
             <EquipDelay>2.5</EquipDelay>
         </statBases>
         <equippedStatOffsets>
-            <ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>  
+            <ToxicEnvironmentResistance>0.9</ToxicEnvironmentResistance>  
         </equippedStatOffsets>	
         <recipeMaker>
             <researchPrerequisite>GW_AM_CadianShockTroops</researchPrerequisite>
@@ -124,7 +124,7 @@
         </graphicData>
 		<costList>
             <ComponentIndustrial>2</ComponentIndustrial>
-            <DevilstrandCloth>10</DevilstrandCloth>		
+            <Cloth>10</Cloth>		
             <Steel>70</Steel>	
         </costList>
         <statBases>
@@ -159,7 +159,7 @@
         </graphicData>
 		<costList>
             <ComponentIndustrial>2</ComponentIndustrial>
-            <Cloth>50</Cloth>	
+            <DevilstrandCloth>50</DevilstrandCloth>	
             <Steel>70</Steel>		
         </costList>
         <statBases>
@@ -194,7 +194,7 @@
         <costList>
             <ComponentIndustrial>2</ComponentIndustrial>
             <DevilstrandCloth>10</DevilstrandCloth>	
-            <Steel>70</Steel>		
+            <Steel>100</Steel>		
         </costList>
         <statBases>
             <WorkToMake>7500</WorkToMake>
@@ -207,6 +207,9 @@
             <Insulation_Heat>1.8</Insulation_Heat>
             <EquipDelay>2</EquipDelay>
         </statBases>
+		<equippedStatOffsets>
+			<ToxicEnvironmentResistance>0.90</ToxicEnvironmentResistance>
+		</equippedStatOffsets>
         <recipeMaker>
             <researchPrerequisite>GW_AM_TempestusScions</researchPrerequisite>
         </recipeMaker>

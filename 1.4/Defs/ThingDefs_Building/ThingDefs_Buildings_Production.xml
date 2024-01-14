@@ -2,7 +2,7 @@
 <Defs>
     <ThingDef ParentName="BenchBase">
         <defName>HP_AM_MilitarumFabricationBench</defName>
-        <label>Militarum Workbench</label>
+        <label>Militarum workbench</label>
         <description>A workbench equipped with tools required for producing complex Astartes weapons like Lasguns, along with various armors.</description>
         <thingClass>Building_WorkTable</thingClass>
         <altitudeLayer>Building</altitudeLayer>
