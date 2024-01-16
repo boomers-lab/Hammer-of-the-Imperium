@@ -5,7 +5,7 @@
     <ThingDef ParentName="ApparelMakeableBase">
         <defName>ODZ_40k_IG_DKOK_CombatWebbing</defName>
         <label>Death Korps webbing</label>
-        <description>Combat webbing befitting a Krieger.</description>
+        <description>Death Korps Webbing:\n\n A practical and durable accessory, the Death Korps Webbing is an essential component of the elite grenadiers' kit. Meticulously designed for functionality, it provides a customizable and efficient way to carry essential gear on the unforgiving battlefields of Warhammer 40,000. Adorned with pouches and utility pockets, the webbing not only signifies the preparedness of the Death Korps but also reflects the regiment's commitment to order and precision. Worn with the stoic pride of a grenadier, the Death Korps Webbing stands as a symbol of readiness and resilience in the face of the grim and unrelenting warfare.</description>
         <recipeMaker>
             <researchPrerequisite>GW_AM_DeathKorpsOfKrieg</researchPrerequisite>
             <recipeUsers Inherit="false">
@@ -80,7 +80,7 @@
     <ThingDef ParentName="ArmorMachineableBase">
         <defName>ODZ_40k_IG_Cadian_OfficerGorget</defName>
         <label>Officer gorget</label>
-        <description>A gorget worn by Cadian officers.</description>
+        <description>Officer Gorget:\n\n A symbol of authority and command, the Officer Gorget is a distinctive neckpiece worn by the esteemed leaders of Imperial forces in Warhammer 40,000. Crafted with meticulous attention to detail, the gorget features ornate designs and regimental insignia, signaling the rank and expertise of the officer. Worn with pride, it adds a touch of regality to the officer's uniform while serving as a functional piece of protective gear. The Officer Gorget embodies the leadership and authority required to navigate the complex and perilous landscapes of the grim darkness of the 41st millennium.</description>
         <recipeMaker>
             <researchPrerequisite>GW_AM_MilitariumArmor</researchPrerequisite>
             <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>	
@@ -114,7 +114,7 @@
             <EquipDelay>0.8</EquipDelay>
         </statBases>
         <equippedStatOffsets>
-            <SocialImpact>0.5</SocialImpact>
+            <SocialImpact>0.8</SocialImpact>
         </equippedStatOffsets>	
         <apparel>
             <useWornGraphicMask>true</useWornGraphicMask>

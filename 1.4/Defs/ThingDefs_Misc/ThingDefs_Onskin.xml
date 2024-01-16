@@ -6,6 +6,7 @@
             <graphicClass>Graphic_Single</graphicClass>
             <shaderType>CutoutComplex</shaderType>
         </graphicData>
+		<description>Astra Militarum Fatigues:\n\n Battle-tested and reliable, the Astra Militarum Fatigues are the standard-issue attire for the resilient soldiers of the Imperial Guard. Crafted for endurance and comfort, these utilitarian garments feature reinforced fabrics and practical design elements. Worn by guardsmen on the front lines across the vast expanse of the Imperium, the Fatigues embody the indomitable spirit of the common soldier. Symbolizing the unwavering commitment to duty, these fatigues are a testament to the unyielding resolve of the Astra Militarum in the grim and perilous theatre of Warhammer 40,000.</description>
         <stuffCategories>
             <li>Fabric</li>
         </stuffCategories>
@@ -42,7 +43,6 @@
 
     <ThingDef ParentName="GW_AM_OnSkinBase">
         <defName>ODZ_40k_IM_TempestusScion_Fatigues</defName>
-        <description>Hardened combat jump suit worn by the Tempestus Scions.</description>
         <label>Tempestus Scion fatigues</label>
         <recipeMaker>
             <researchPrerequisite>GW_AM_TempestusScions</researchPrerequisite>
@@ -71,7 +71,6 @@
 
     <ThingDef ParentName="GW_AM_OnSkinBase">
         <defName>ODZ_40k_IG_DKOK_KriegUniform</defName>
-        <description>Mass produced uniform widely regarded as a symbol of death.</description>
         <label>Death Korps uniform</label>
         <recipeMaker>
             <researchPrerequisite>GW_AM_DeathKorpsOfKrieg</researchPrerequisite>
@@ -100,7 +99,6 @@
 
     <ThingDef ParentName="GW_AM_OnSkinBase">
         <defName>GW_AM_SL_Uniform</defName>
-        <description>A uniform commonly worn by members of the Armageddon Steel Legion.</description>
         <label>Steel Legion uniform</label>
         <recipeMaker>
             <researchPrerequisite>GW_AM_SteelLegion</researchPrerequisite>
@@ -129,7 +127,6 @@
 
     <ThingDef ParentName="GW_AM_OnSkinBase">
         <defName>GW_AM_Mordian_Uniform</defName>
-        <description>A uniform commonly worn by members of the Mordian.</description>
         <label>Mordian uniform</label>
         <recipeMaker>
             <researchPrerequisite>GW_AM_Mordian</researchPrerequisite>
@@ -158,7 +155,6 @@
 
     <ThingDef ParentName="GW_AM_OnSkinBase">
         <defName>ODZ_40k_IG_Cadian_Fatigues</defName>
-        <description>Mass produced combat fatigues issued to the Cadian regimentum.</description>
         <label>Cadian fatigues</label>
         <recipeMaker>
             <researchPrerequisite>GW_AM_MilitariumArmor</researchPrerequisite>
@@ -187,7 +183,6 @@
 
     <ThingDef ParentName="GW_AM_OnSkinBase">
         <defName>GW_AM_CatachanFatigues</defName>
-        <description>Catachan fatigues that allows for easy movement and protects the wearer from jungle heats.</description>
         <label>Catachan fatigues</label>
         <recipeMaker>
             <researchPrerequisite>GW_AM_Catachan</researchPrerequisite>
@@ -219,7 +214,6 @@
     <ThingDef ParentName="GW_AM_OnSkinBase">
 		<defName>GW_AM_TDR_DesertFatigues</defName>
 		<label>Desert Fatigues</label>
-		<description>The Tallarn Desert Raiders is the name of the Militarum Regimentum of the Astra Militarum raised from the Desert World of Tallarn whose soldiers are highly skilled at desert and mobile armoured warfare. They are primarily deployed in the Segmentum Tempestus and Segmentum Ultima and are particularly skilled at desert warfare and rapid armoured assaults.</description>
 		<graphicData>
 			<texPath>Things/Tallarn/OnSkin/DesertFatigues_Male_south</texPath>
 		</graphicData>
@@ -250,7 +244,6 @@
 
     <ThingDef ParentName="GW_AM_OnSkinBase">
         <defName>GW_AM_VostoyanFirstborn_Uniform</defName>
-        <description>A uniform commonly worn by members of the Vostoyan Firstborn.</description>
         <label>vostoyan firstborn uniform</label>
         <recipeMaker>
             <researchPrerequisite>GW_AM_VostoyanFirstborn</researchPrerequisite>
@@ -279,7 +272,6 @@
 
     <ThingDef ParentName="GW_AM_OnSkinBase">
         <defName>GW_AM_Valhallan_GreatCoat</defName>
-        <description>Mass produced greatcoats issued to the Valhallan regimentum.</description>
         <label>valhallan greatcoat</label>
         <recipeMaker>
             <researchPrerequisite>GW_AM_Valhallan</researchPrerequisite>
@@ -306,7 +298,6 @@
 
     <ThingDef ParentName="GW_AM_OnSkinBase">
         <defName>GW_AM_Valhallan_OfficerGreatCoat</defName>
-        <description>Greatcoats issued to the Valhallan regimentum officers.</description>
         <label>valhallan officer greatcoat</label>
         <recipeMaker>
             <researchPrerequisite>GW_AM_Valhallan</researchPrerequisite>

@@ -37,7 +37,7 @@
     <ThingDef ParentName="GW_AM_OuterBase">
         <defName>GW_AM_CatachanOuter</defName>
         <label>Catachan vest</label>
-        <description>Some Catachan outerwear designed to make movement easier and to protect the wearer from the jungle heat.</description>
+        <description>Catachan Vest:\n\n Born from the untamed jungles of Catachan, this rugged vest is a testament to survival in one of the galaxy's deadliest environments. Crafted for the renowned Catachan Jungle Fighters, the vest provides a blend of flexibility and durability. Its camouflaged exterior seamlessly blends with the dense foliage, allowing for covert maneuvers. Symbolizing the grit and tenacity of the Catachan warriors, this vest is worn with pride, a practical companion for those who navigate the treacherous landscapes of Warhammer 40,000.</description>
         <recipeMaker>
             <researchPrerequisite>GW_AM_Catachan</researchPrerequisite>
         </recipeMaker>
