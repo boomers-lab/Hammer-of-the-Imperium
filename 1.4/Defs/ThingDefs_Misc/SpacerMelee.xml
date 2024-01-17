@@ -12,7 +12,6 @@
         <thingSetMakerTags>
 			<li>RewardStandardQualitySuper</li>
 		</thingSetMakerTags>
-        <costStuffCount>50</costStuffCount>
         <weaponTags>
             <li>SpacerMeleeDecent</li>
             <li>GW_AM_SpacerMelee</li>
@@ -108,7 +107,6 @@
         </graphicData>
         <uiIconScale>1.2</uiIconScale>
         <techLevel>Spacer</techLevel>
-        <costStuffCount>50</costStuffCount>
         <statBases>
             <WorkToMake>36000</WorkToMake>
             <Mass>4</Mass>
@@ -176,7 +174,6 @@
         </graphicData>
         <uiIconScale>1.2</uiIconScale>
         <techLevel>Spacer</techLevel>
-        <costStuffCount>50</costStuffCount>
         <statBases>
             <WorkToMake>42000</WorkToMake>
             <Mass>4.8</Mass>
