@@ -114,7 +114,7 @@
 	<ThingDef ParentName="GW_AM_LauncherBase">
 		<defName>GW_AM_Gun_MissileLauncher</defName>
 		<label>Missile Launcher</label>
-		<description>Big boom</description>
+		<description>Within the vast expanse of the Warhammer 40,000 universe, the Missile Launcher, a formidable heavy weapon, embodies raw power and strategic versatility, often employed by the Imperial Guard. This imposing launcher, compact yet robust, features a matte-black ceramite alloy construction, ensuring resilience in the face of the grim and war-torn battlefield.\n\nDesigned with tactical precision, the Missile Launcher boasts a user-friendly interface with an ergonomic shoulder rest and grip, providing stability for the operator during deployment. The weapon's advanced targeting system adds a layer of versatility, enabling precise engagement against both ground and airborne threats.\n\nA swift and efficient reload mechanism is integral to the launcher's design, facilitating the rapid insertion of munitions and ensuring a continuous onslaught in the chaos of combat. Guided missiles, unleashed by the launcher, carry devastating payloads capable of wreaking havoc on armored adversaries, solidifying its place as a crucial asset in the Imperial Guard's arsenal.\n\nMarked with symbols of the Imperium, the Missile Launcher serves as a testament to unwavering loyalty and the relentless defense waged by the forces of humanity against the myriad threats lurking in the grim and perilous galaxy of Warhammer 40,000.</description>
 		<graphicData>
 			<texPath>Weapons/MissileLauncher</texPath>
 		</graphicData>
@@ -199,7 +199,7 @@
 	<ThingDef ParentName="GW_AM_BolterBase">
         <defName>GW_AM_Gun_BoltPistol</defName>
         <label>Bolt Pistol</label>
-        <description>The Commissar's Special</description>
+        <description>In the expansive tapestry of the Warhammer 40,000 universe, the Bolt Pistol, a formidable sidearm, emerges as a symbol of lethal precision and close-quarters firepower within the arsenal of the Space Marines. This compact yet potent weapon is crafted with a matte-black ceramite alloy, ensuring durability amidst the grim and relentless nature of the galactic battlefield.\n\nThe Bolt Pistol operates as a rapid-firing, self-loading, and magazine-fed firearm, unleashing mass-reactive bolts or projectiles with every precise shot. These explosive bolts, possessing destructive potential upon impact, prove effective against a diverse array of adversaries, showcasing the versatility required in the Space Marine's relentless combat engagements.\n\nFunctioning as a hybrid weapon, the Bolt Pistol seamlessly bridges the gap between conventional sidearms and small-scale artillery. Its deadly accuracy, impactful shots, and rapid firing rate make it a fearsome asset, delivering devastating salvos while maintaining precision in the chaos of close to mid-range combat.\n\nWielding the Bolt Pistol, the Space Marines epitomize the unmatched might and cutting-edge technology of the Imperium of Man, showcasing their unwavering resolve in the eternal struggle against the countless threats that plague the war-ravaged galaxy of Warhammer 40,000.</description>
         <possessionCount>1</possessionCount>
         <graphicData>
             <drawSize>1.1</drawSize>
@@ -222,6 +222,9 @@
             <AccuracyLong>0.75</AccuracyLong>
             <RangedWeapon_Cooldown>1.3</RangedWeapon_Cooldown>
         </statBases>
+		<equippedStatOffsets>
+      <MoveSpeed>0.10</MoveSpeed>
+		</equippedStatOffsets>
         <costList>
             <Steel>150</Steel>
             <ComponentIndustrial>9</ComponentIndustrial>
@@ -275,7 +278,7 @@
 	<ThingDef ParentName="GW_AM_BolterBase">
         <defName>GW_AM_Gun_Bolter</defName>
         <label>Locke Bolter</label>
-        <description>Straight from the under-hive</description>
+        <description>In the sprawling tapestry of the Warhammer 40,000 universe, the Locke Bolter, a distinctive and specialized firearm, emerges as a testament to the precision and adaptability required by the elite forces within the Imperium. This unique bolter, named after its illustrious inventor or revered user, is meticulously crafted with a matte-black ceramite alloy, ensuring resilience in the face of the galaxy's relentless tumult.\n\nOperating as a rapid-firing, self-loading, and magazine-fed weapon, the Locke Bolter unleashes mass-reactive bolts or projectiles with unparalleled precision. These specialized bolts, engineered for optimal performance, carry devastating potential upon impact, proving effective against a broad spectrum of adversaries. The Locke Bolter serves as a pinnacle of versatility, adapting to the demanding needs of the battlefield.\n\nWith its deadly accuracy, impactful shots, and swift firing rate, the Locke Bolter transcends the ordinary, distinguishing itself as a symbol of excellence among the arsenal of the Imperium. Wielded by the most skilled and revered warriors, it stands as a beacon of technological prowess and unwavering dedication in the ceaseless conflict that defines the grim and war-torn galaxy of Warhammer 40,000.</description>
         <possessionCount>1</possessionCount>
         <graphicData>
             <drawSize>1.1</drawSize>
@@ -298,6 +301,9 @@
             <AccuracyLong>0.72</AccuracyLong>
             <RangedWeapon_Cooldown>1.8</RangedWeapon_Cooldown>
         </statBases>
+		<equippedStatOffsets>
+      <MoveSpeed>-0.10</MoveSpeed>
+		</equippedStatOffsets>
         <costList>
             <Steel>225</Steel>
             <ComponentIndustrial>16</ComponentIndustrial>
@@ -361,7 +367,7 @@
 	<ThingDef ParentName="GW_AM_FlamerBase">
 		<defName>GW_AM_Gun_Flamer</defName>
 		<label>Acctran Flamer</label>
-		<description>I bet it burns</description>
+		<description>In the expansive expanse of the Warhammer 40,000 cosmos, the Acctran Flamer, a specialized and fearsome weapon, emerges as a harbinger of unrelenting purgation wielded by the devout forces of the Imperium. Crafted with meticulous precision, this flamethrower variant bears the unmistakable matte-black ceramite alloy, a testament to its durability in the relentless heat of battle.\n\nFunctioning as a formidable and area-denial weapon, the Acctran Flamer projects searing torrents of promethium flames, bathing the battlefield in purifying fire. This weapon is designed to cleanse heretical entities and xenos threats, leaving nothing but scorched remnants in its wake. Its incendiary power is especially effective in close-quarters engagements, turning the tide against foes who dare to stand against the righteous fury of the Imperium.\n\nThe Acctran Flamer, with its infernal glow and destructive capabilities, epitomizes the unyielding resolve of the Imperium's forces in their eternal struggle against the myriad enemies that beset the grim and war-torn galaxy of Warhammer 40,000. Wielded by the faithful, it stands as a beacon of divine retribution, ensuring the enemies of humanity face the relentless cleansing fire of Imperial justice.</description>
 		<graphicData>
 			<texPath>Weapons/Accatran_Flamer</texPath>
 			<graphicClass>Graphic_Single</graphicClass>

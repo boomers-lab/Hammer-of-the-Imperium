@@ -38,13 +38,12 @@
         </graphicData>
         <thingClass>Projectile_Explosive</thingClass>
         <projectile>
-            <damageDef>Burn</damageDef>
-            <damageAmountBase>16</damageAmountBase>
-            <stoppingPower>3</stoppingPower>
-            <armorPenetrationBase>1.3</armorPenetrationBase>
-            <explosionRadius>0.9</explosionRadius>
-            <speed>80</speed>
-        </projectile>
+			<damageDef>Burn</damageDef>
+			<damageAmountBase>18</damageAmountBase>
+			<stoppingPower>3</stoppingPower>
+			<armorPenetrationBase>1.5</armorPenetrationBase>
+			<speed>80</speed>
+		</projectile>
     </ThingDef>
   
   <!-- ====================== Plasma Gun  ===================== -->
@@ -71,7 +70,7 @@
     <ThingDef ParentName="BaseHumanMakeableGun">
         <defName>HP_AM_Gun_PlasmaGun</defName>
         <label>Astra Militarum plasma gun</label>
-        <description>The plasma gun is a rifle-sized plasma weapon common to many of the armed forces of the Imperium of Man. It is classified as a special weapon and is carried by a variety of imperial infantry, including Space Marines, Imperial Guardsmen and Storm Troopers.</description>
+        <description>Within the vast expanse of the Warhammer 40,000 universe, the Astra Militarum Plasma Gun stands as a pinnacle of advanced technology and devastating firepower, wielded by the disciplined forces of the Imperium. Crafted with meticulous engineering, this formidable weapon features a matte-black ceramite alloy construction, symbolizing its resilience amidst the ceaseless chaos of the galactic battleground.\n\nOperating as a rapid-firing and energy-based firearm, the Plasma Gun projects searing blasts of superheated plasma, capable of melting through armor and incinerating adversaries. Its versatile nature allows it to be effective at both short and mid-range engagements, making it an indispensable asset in the tactical arsenal of the Astra Militarum.\n\nThe distinctive hum of ionized energy accompanies each discharge, a herald of the Plasma Gun's destructive potential. Wielded by the disciplined soldiers of the Astra Militarum, this weapon symbolizes the Imperium's commitment to technological superiority and unyielding firepower in the perpetual war against heresy and alien threats in the grim and war-torn galaxy of Warhammer 40,000.</description>
         <techLevel>Spacer</techLevel>
         <graphicData>
             <texPath>Weapons/PlasmaGun</texPath>
@@ -80,13 +79,16 @@
         <soundInteract>Interact_ChargeRifle</soundInteract>
         <statBases>
             <WorkToMake>38000</WorkToMake>
-            <Mass>5</Mass>
-            <AccuracyTouch>0.65</AccuracyTouch>
-            <AccuracyShort>0.75</AccuracyShort>
-            <AccuracyMedium>0.85</AccuracyMedium>
-            <AccuracyLong>0.60</AccuracyLong>
-            <RangedWeapon_Cooldown>1.2</RangedWeapon_Cooldown>
+            <Mass>5.5</Mass>
+            <AccuracyTouch>0.90</AccuracyTouch>
+            <AccuracyShort>0.85</AccuracyShort>
+            <AccuracyMedium>0.75</AccuracyMedium>
+            <AccuracyLong>0.70</AccuracyLong>
+            <RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
         </statBases>
+		<equippedStatOffsets>
+            <MoveSpeed>-0.20</MoveSpeed>
+        </equippedStatOffsets>
         <recipeMaker>
             <recipeUsers Inherit="False">
                 <li>HP_AM_MilitarumFabricationBench</li>
@@ -101,6 +103,7 @@
             <Steel>300</Steel>
             <ComponentIndustrial>20</ComponentIndustrial>
             <ComponentSpacer>3</ComponentSpacer>
+			<HP_Ceramite>50</HP_Ceramite>
         </costList>
         <weaponTags>
             <li>SpacerGun</li>
@@ -118,7 +121,7 @@
                 <verbClass>Verb_Shoot</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
                 <defaultProjectile>HP_AM_Bullet_PlasmaShot</defaultProjectile>
-                <warmupTime>5</warmupTime>
+                <warmupTime>3</warmupTime>
                 <range>40</range>
                 <ticksBetweenBurstShots>12</ticksBetweenBurstShots>
                 <forcedMissRadius>1.9</forcedMissRadius>
@@ -168,7 +171,6 @@
             <damageAmountBase>90</damageAmountBase>
             <stoppingPower>3</stoppingPower>
             <armorPenetrationBase>2.5</armorPenetrationBase>
-            <explosionRadius>0</explosionRadius>
             <speed>70</speed>
         </projectile>
     </ThingDef>
@@ -176,7 +178,7 @@
     <ThingDef ParentName="BaseHumanMakeableGun">
         <defName>HP_AM_Gun_MeltaGun</defName>
         <label>Astra Militarum meltagun</label>
-        <description>The meltagun, also called a "Fusion Gun," "Melter," or "Cooker," is a powerful, short-ranged anti-armour weapon that produces an intense, energetic beam of heat in the tens of thousands degrees Centigrade.</description>
+        <description>Amidst the tumultuous expanses of the Warhammer 40,000 universe, the Astra Militarum Melta Gun emerges as a beacon of concentrated heat and destructive power wielded by the indomitable forces of the Imperium. Forged with precision and purpose, this formidable weapon features a matte-black ceramite alloy construction, a testament to its durability and reliability in the brutal theater of war.\n\nFunctioning as a close-range and anti-armor firearm, the Melta Gun projects concentrated beams of intense thermal energy, capable of liquefying armor and immolating even the most heavily fortified targets. Its design embodies versatility, allowing for devastating assaults on enemy vehicles and structures, making it a critical asset in the strategic repertoire of the Astra Militarum.\n\nEach discharge resonates with a distinctive hiss, heralding the Melta Gun's ability to turn the tide of battle with its unparalleled thermal devastation. In the hands of the disciplined soldiers of the Astra Militarum, this weapon stands as a testament to the Imperium's commitment to overwhelming firepower and technological supremacy in the ceaseless struggle against heresy and alien adversaries in the grim and war-torn galaxy of Warhammer 40,000.</description>
         <techLevel>Spacer</techLevel>
         <graphicData>
             <texPath>Weapons/MeltaGun</texPath>
@@ -192,6 +194,9 @@
             <AccuracyLong>0.20</AccuracyLong>
             <RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
         </statBases>
+		<equippedStatOffsets>
+            <MoveSpeed>-0.20</MoveSpeed>
+        </equippedStatOffsets>
         <recipeMaker>
             <recipeUsers Inherit="False">
                 <li>HP_AM_MilitarumFabricationBench</li>
@@ -202,10 +207,10 @@
             </skillRequirements>
         </recipeMaker>
         <costList>
-            <Plasteel>100</Plasteel>
+            <Plasteel>180</Plasteel>
             <Steel>300</Steel>
             <ComponentIndustrial>20</ComponentIndustrial>
-            <ComponentSpacer>3</ComponentSpacer>
+            <HP_Ceramite>50</HP_Ceramite>
         </costList>
         <weaponTags>
             <li>SpacerGun</li>
@@ -261,8 +266,8 @@
     
     <ThingDef ParentName="BaseHumanMakeableGun">
         <defName>GW_AM_PlasmaPistol</defName>
-        <label>Ryza Plasma Pistol</label>
-        <description>Smol 4th state of matter.</description>
+        <label>Ryza plasma pistol</label>
+        <description>In the unforgiving expanse of the Warhammer 40,000 universe, the Astra Militarum Ryza Plasma Pistol emerges as a beacon of precision and power, brandished by the valiant soldiers of the Imperium. Forged with meticulous craftsmanship, this sidearm boasts a matte-black ceramite alloy exterior, signifying its resilience in the relentless crucible of combat.\n\nOperating as a sidearm of choice for those who demand both versatility and lethality, the Ryza Plasma Pistol propels searing bolts of superheated plasma towards its targets. Whether engaged in close-quarters skirmishes or delivering accurate shots at a distance, this sidearm epitomizes the Imperium's commitment to arming its forces with cutting-edge technology.\n\nWith each discharge, the distinct hum of ionized energy accompanies the expulsion of lethal plasma, a testament to the Ryza Plasma Pistol's capability to turn the tide of battle. In the hands of the Astra Militarum's disciplined soldiers, this sidearm stands as a symbol of the Imperium's dedication to providing its warriors with the means to vanquish heresy and alien threats in the grim and war-torn galaxy of Warhammer 40,000.</description>
         <techLevel>Spacer</techLevel>
         <graphicData>
             <texPath>Weapons/AM_PlasmaPistol</texPath>
@@ -278,6 +283,9 @@
             <AccuracyLong>0.62</AccuracyLong>
             <RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
         </statBases>
+		<equippedStatOffsets>
+            <MoveSpeed>0.10</MoveSpeed>
+        </equippedStatOffsets>
         <recipeMaker>
             <recipeUsers Inherit="False">
                 <li>HP_AM_MilitarumFabricationBench</li>
@@ -345,8 +353,8 @@
     
     <ThingDef ParentName="BaseHumanMakeableGun">
         <defName>GW_AM_InfernoPistol</defName>
-        <label>Mars Inferno Gun</label>
-        <description>Smol fires</description>
+        <label>Mars Inferno pistol</label>
+        <description>Within the sprawling expanse of the Warhammer 40,000 cosmos, the Astra Militarum Mars Inferno Pistol emerges as an epitome of controlled devastation, a sidearm of choice for the disciplined forces of the Imperium. Forged with precision and purpose, this weapon boasts a matte-black ceramite alloy exterior, showcasing its unwavering resilience in the relentless theatre of war.\n\nFunctioning as a potent close-quarters firearm, the Mars Inferno Pistol projects torrents of searing flames towards its targets. Whether in the heat of brutal melee or during precise ranged engagements, this sidearm embodies the Imperium's commitment to equipping its forces with cutting-edge technology for any combat scenario.\n\nWith each discharge, the distinct roar of ignited promethium accompanies the expulsion of deadly flames, a symphony of destruction that signifies the Mars Inferno Pistol's capability to turn the tide of battle. In the hands of the disciplined soldiers of the Astra Militarum, this sidearm stands as a symbol of the Imperium's unwavering dedication to quell heresy and vanquish alien threats in the grim and war-torn galaxy of Warhammer 40,000.</description>
         <techLevel>Spacer</techLevel>
         <graphicData>
             <drawSize>1.2</drawSize>
@@ -363,6 +371,9 @@
             <AccuracyLong>0.80</AccuracyLong>
             <RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
         </statBases>
+		<equippedStatOffsets>
+            <MoveSpeed>0.10</MoveSpeed>
+        </equippedStatOffsets>
         <recipeMaker>
             <recipeUsers Inherit="False">
                 <li>HP_AM_MilitarumFabricationBench</li>
