@@ -681,6 +681,9 @@
             <StuffEffectMultiplierInsulation_Heat>0.2</StuffEffectMultiplierInsulation_Heat>
             <EquipDelay>1.2</EquipDelay>
         </statBases>
+        <stuffCategories>
+            <li>Metallic</li>
+        </stuffCategories>
         <recipeMaker>
             <researchPrerequisite>GW_AM_VostoyanFirstborn</researchPrerequisite>
             <skillRequirements>
