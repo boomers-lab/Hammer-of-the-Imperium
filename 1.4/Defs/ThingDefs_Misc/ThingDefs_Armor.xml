@@ -344,7 +344,7 @@
 
     <ThingDef ParentName="GW_AM_ArmorBase">
         <defName>GW_AM_Valhallan_Armor</defName>
-        <label>valhallan flak armor</label>
+        <label>Valhallan flak armor</label>
         <description>Valhallan Flak Armor:\n\n Fashioned for the resilient soldiers of the Valhallan Ice Warriors, this robust armor stands as a bulwark against the biting cold of the harshest environments. Crafted with precision for the frigid battlefields, the Valhallan Flak Armor offers superior protection without compromising mobility. Its distinctive design reflects the utilitarian ethos of the Valhallan regiment, embodying the indomitable spirit of those who brave the icy frontiers of Warhammer 40,000. Worn with pride, the Valhallan Flak Armor symbolizes the unyielding resolve of the warriors defending the Imperium against the chilling adversaries lurking in the grim darkness of the far future.</description>
         <recipeMaker>
             <researchPrerequisite>GW_AM_Valhallan</researchPrerequisite>
