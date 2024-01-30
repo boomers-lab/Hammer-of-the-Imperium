@@ -115,13 +115,11 @@
 	</Operation>
 
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="GW_AM_MeleeWeapon_Chainshortsword"]</xpath>
+		<xpath>Defs/ThingDef[defName="GW_AM_MeleeWeapon_Chainshortsword"]/equippedStatOffsets</xpath>
 		<value>
-			<equippedStatOffsets>
-				<MeleeCritChance>0.23</MeleeCritChance>
-				<MeleeParryChance>0.46</MeleeParryChance>
-				<MeleeDodgeChance>0.23</MeleeDodgeChance>
-			</equippedStatOffsets>
+			<MeleeCritChance>0.23</MeleeCritChance>
+			<MeleeParryChance>0.46</MeleeParryChance>
+			<MeleeDodgeChance>0.23</MeleeDodgeChance>
 		</value>
 	</Operation>
 
@@ -391,13 +389,11 @@
 	</Operation>
 
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="GW_AM_MeleeWeapon_CombatKnife"]</xpath>
+		<xpath>Defs/ThingDef[defName="GW_AM_MeleeWeapon_CombatKnife"]/equippedStatOffsets</xpath>
 		<value>
-			<equippedStatOffsets>
-				<MeleeCritChance>0.55</MeleeCritChance>
-				<MeleeParryChance>0.18</MeleeParryChance>
-				<MeleeDodgeChance>0.08</MeleeDodgeChance>
-			</equippedStatOffsets>
+			<MeleeCritChance>0.55</MeleeCritChance>
+			<MeleeParryChance>0.18</MeleeParryChance>
+			<MeleeDodgeChance>0.08</MeleeDodgeChance>
 		</value>
 	</Operation>
 	
@@ -468,13 +464,11 @@
 	</Operation>
 
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="GW_AM_MeleeWeapon_CatachanFang"]</xpath>
+		<xpath>Defs/ThingDef[defName="GW_AM_MeleeWeapon_CatachanFang"]/equippedStatOffsets</xpath>
 		<value>
-			<equippedStatOffsets>
-				<MeleeCritChance>0.60</MeleeCritChance>
-				<MeleeParryChance>0.22</MeleeParryChance>
-				<MeleeDodgeChance>0.04</MeleeDodgeChance>
-			</equippedStatOffsets>
+			<MeleeCritChance>0.60</MeleeCritChance>
+			<MeleeParryChance>0.22</MeleeParryChance>
+			<MeleeDodgeChance>0.04</MeleeDodgeChance>
 		</value>
 	</Operation>
 	
