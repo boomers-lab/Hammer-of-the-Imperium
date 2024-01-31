@@ -20,15 +20,12 @@
 	</Operation>
 	
 	<!--===== Melee Attacks =====-->
-	<!-- This causes and error of patch failure somehow? but when the frag launcher is in the main CE guns patch it works fine, leaving this here to come back at a later time to see if I can get this to work to keep the code organized-->
-	<!--<Operation Class="PatchOperationReplace">
+	<Operation Class="PatchOperationAdd">
 		<xpath>
-			Defs/ThingDef[
-			defName="GW_AM_Gun_FragLauncher"
-			]/tools
+			Defs/ThingDef[defName="GW_AM_Gun_FragLauncher"]
 		</xpath>
 		<value>
-			<tools>
+			<tools Inherit="False">
 				<li Class="CombatExtended.ToolCE">
 					<label>barrel</label>
 					<capacities>
@@ -52,8 +49,8 @@
 				</li>
 			</tools>
 		</value>
-	</Operation>-->
-	
+	</Operation>
+
 	<!--===== Grenade Launcher =====-->
 	
 	<Operation Class="PatchOperationReplace">
