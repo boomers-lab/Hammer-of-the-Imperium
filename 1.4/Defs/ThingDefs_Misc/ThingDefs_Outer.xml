@@ -4,6 +4,7 @@
         <graphicData>
             <graphicClass>Graphic_Single</graphicClass>
             <shaderType>CutoutComplex</shaderType>
+            <drawSize>1.3</drawSize>
         </graphicData>
         <thingCategories>
             <li>Apparel</li>

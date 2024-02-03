@@ -5,6 +5,7 @@
         <graphicData>
             <graphicClass>Graphic_Single</graphicClass>
             <shaderType>CutoutComplex</shaderType>
+            <drawSize>1.3</drawSize>
         </graphicData>
 		<description>Astra Militarum Fatigues:\n\n Battle-tested and reliable, the Astra Militarum Fatigues are the standard-issue attire for the resilient soldiers of the Imperial Guard. Crafted for endurance and comfort, these utilitarian garments feature reinforced fabrics and practical design elements. Worn by guardsmen on the front lines across the vast expanse of the Imperium, the Fatigues embody the indomitable spirit of the common soldier. Symbolizing the unwavering commitment to duty, these fatigues are a testament to the unyielding resolve of the Astra Militarum in the grim and perilous theatre of Warhammer 40,000.</description>
         <stuffCategories>

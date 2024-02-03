@@ -11,6 +11,7 @@
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
+            <drawSize>1.2</drawSize>
 		</graphicData>
 		<thingCategories>
 			<li>ApparelArmor</li>
@@ -163,6 +164,7 @@
         </recipeMaker>
         <graphicData>
             <texPath>Things/Catachan/CatachanMid/CatachanMiddle_Male_south</texPath>
+            <drawSize>1.5</drawSize>
         </graphicData>
         <statBases>
             <WorkToMake>9000</WorkToMake>
@@ -362,7 +364,7 @@
             <ArmorRating_Sharp>1.0</ArmorRating_Sharp>
             <ArmorRating_Blunt>0.36</ArmorRating_Blunt>
             <ArmorRating_Heat>0.20</ArmorRating_Heat>
-            <Insulation_Cold>1</Insulation_Cold>
+            <Insulation_Cold>10</Insulation_Cold>
             <EquipDelay>3</EquipDelay>
         </statBases>
         <equippedStatOffsets>
