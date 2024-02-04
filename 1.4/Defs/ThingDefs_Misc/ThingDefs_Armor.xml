@@ -59,9 +59,9 @@
             <WorkToMake>25000</WorkToMake>
             <MaxHitPoints>250</MaxHitPoints>
             <Mass>7</Mass>
-            <ArmorRating_Sharp>0.90</ArmorRating_Sharp>
-            <ArmorRating_Blunt>0.39</ArmorRating_Blunt>
-            <ArmorRating_Heat>0.64</ArmorRating_Heat>
+            <ArmorRating_Sharp>1.10</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.45</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.65</ArmorRating_Heat>
             <Insulation_Cold>30.0</Insulation_Cold>
 			<Insulation_Heat>8.0</Insulation_Heat>
             <EquipDelay>6</EquipDelay>
@@ -251,8 +251,8 @@
             <WorkToMake>12000</WorkToMake>
             <MaxHitPoints>280</MaxHitPoints>
             <Mass>6</Mass>
-            <ArmorRating_Sharp>0.88</ArmorRating_Sharp>
-            <ArmorRating_Blunt>0.38</ArmorRating_Blunt>
+            <ArmorRating_Sharp>1.00</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.45</ArmorRating_Blunt>
             <ArmorRating_Heat>0.62</ArmorRating_Heat>
             <Insulation_Cold>28.0</Insulation_Cold>
 			<Insulation_Heat>7</Insulation_Heat>
