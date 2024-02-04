@@ -17,6 +17,7 @@
             <Mass>0.3</Mass>
             <EquipDelay>1.5</EquipDelay>
         </statBases>
+		<uiIconScale>1.6</uiIconScale>
         <apparel>
             <useWornGraphicMask>true</useWornGraphicMask>		
             <bodyPartGroups>

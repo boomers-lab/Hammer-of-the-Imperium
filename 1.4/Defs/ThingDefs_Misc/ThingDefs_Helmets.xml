@@ -16,6 +16,7 @@
                 <li>HP_AM_MilitarumFabricationBench</li>
             </recipeUsers>
         </recipeMaker>
+		<uiIconScale>1.6</uiIconScale>
         <statBases>
             <MaxHitPoints>150</MaxHitPoints>
             <Flammability>0.25</Flammability>

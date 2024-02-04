@@ -13,6 +13,7 @@
 			<shaderType>CutoutComplex</shaderType>
             <drawSize>1.2</drawSize>
 		</graphicData>
+		<uiIconScale>1.6</uiIconScale>
 		<thingCategories>
 			<li>ApparelArmor</li>
 		</thingCategories>
