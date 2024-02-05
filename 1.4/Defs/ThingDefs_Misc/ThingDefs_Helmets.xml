@@ -207,9 +207,6 @@
             <Insulation_Heat>1.8</Insulation_Heat>
             <EquipDelay>2</EquipDelay>
         </statBases>
-		<equippedStatOffsets>
-			<ToxicEnvironmentResistance>0.90</ToxicEnvironmentResistance>
-		</equippedStatOffsets>
         <recipeMaker>
             <researchPrerequisite>GW_AM_TempestusScions</researchPrerequisite>
         </recipeMaker>
