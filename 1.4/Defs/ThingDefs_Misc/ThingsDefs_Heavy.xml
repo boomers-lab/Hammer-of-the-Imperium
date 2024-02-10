@@ -43,6 +43,7 @@
 		</graphicData>
 		<thingClass>Projectile_Explosive</thingClass>
 		<projectile>
+			<damageAmountBase>100</damageAmountBase>
 			<damageDef>Bomb</damageDef>
 			<explosionRadius>6.8</explosionRadius>
 			<speed>65</speed>
@@ -371,7 +372,7 @@
 		<graphicData>
 			<texPath>Weapons/Accatran_Flamer</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>1.2</drawSize>
+			<drawSize>0.8</drawSize>
 		</graphicData>
 		<tools>
 			<li>

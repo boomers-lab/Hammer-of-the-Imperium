@@ -88,7 +88,7 @@
   
     <ThingDef ParentName="GW_AM_PowerSwordBase">
         <defName>GW_AM_MeleeWeapon_PowerSwordtwo</defName>
-        <label>Crossguard power sword</label>
+        <label>Crossguard powersword</label>
         <graphicData>
             <texPath>Weapons/Power Sword 2</texPath>
         </graphicData>

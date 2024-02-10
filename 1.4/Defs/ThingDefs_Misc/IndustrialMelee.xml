@@ -38,7 +38,7 @@
 
     <ThingDef ParentName="GW_AM_IndustrialSharpBase">
         <defName>GW_AM_MeleeWeapon_Chainsword</defName>
-        <label>Militarum Chainsword</label>
+        <label>Militarum chainsword</label>
         <description>The Militarum Chainsword, a quintessential close combat weapon within the Astra Militarum's vast armory, epitomizes the Imperium's relentless determination in the face of close-quarters engagements within the brutal and unforgiving battles of the Warhammer 40,000 universe.\n\nThis formidable melee weapon is a chainsaw-like implement, featuring a chain of monomolecular teeth powered by a high-torque motor. The Militarum Chainsword's primary function is to deliver swift, brutal, and efficient strikes in hand-to-hand combat. With its buzzing teeth capable of tearing through armor, flesh, and bone, the Chainsword is a symbol of the Astra Militarum's unwavering commitment to close combat effectiveness.\n\nWielded by the courageous soldiers of the Imperium, the Militarum Chainsword serves as a testament to the gritty determination of the Astra Militarum in the face of the galaxy's countless horrors. In the melee chaos of the 41st millennium, the Chainsword becomes an extension of the guardsman's will, embodying the unyielding spirit of the Imperial Guard as they stand against the darkness.\n\nWhether charging headlong into the enemy ranks or used as a last line of defense in desperate situations, the Militarum Chainsword remains a stalwart companion to the courageous soldiers of the Astra Militarum, ready to deliver the Emperor's justice in the form of whirring blades and unyielding resolve.</description>
         <graphicData>
             <texPath>Weapons/Chainsword</texPath>
