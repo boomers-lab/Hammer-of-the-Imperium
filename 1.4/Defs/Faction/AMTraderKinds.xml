@@ -21,7 +21,10 @@
                 <thingDef>MedicineUltratech</thingDef>
                 <countRange>25~30</countRange>
             </li>
-
+			<li Class="StockGenerator_SingleDef">
+                <thingDef>GW_STC_Fragment</thingDef>
+                <countRange>2~5</countRange>
+            </li>
             <li Class="StockGenerator_MarketValue">
                 <tradeTag>GW_AM_IndustrialMelee</tradeTag>
                 <countRange>5~10</countRange>
@@ -158,7 +161,10 @@
                 <thingDef>MedicineUltratech</thingDef>
                 <countRange>10~15</countRange>
             </li>
-
+			<li Class="StockGenerator_SingleDef">
+                <thingDef>GW_STC_Fragment</thingDef>
+                <countRange>1</countRange>
+            </li>
             <li Class="StockGenerator_MarketValue">
                 <tradeTag>GW_AM_IndustrialMelee</tradeTag>
                 <countRange>2~5</countRange>
