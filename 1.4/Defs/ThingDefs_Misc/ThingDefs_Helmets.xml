@@ -105,6 +105,9 @@
         <apparel>
             <immuneToToxGasExposure>true</immuneToToxGasExposure>
             <wornGraphicPath>Things/Cadian/Headgear/KasrkinHelmet</wornGraphicPath>
+            <bodyPartGroups Inherit="False">
+                <li>FullHead</li>
+            </bodyPartGroups>
             <tags>
                 <li>40kCadianGuard</li>
                 <li>40kKasrkinHelmet</li>
