@@ -18,6 +18,11 @@
             <EquipDelay>1.5</EquipDelay>
         </statBases>
 		<uiIconScale>1.6</uiIconScale>
+        <recipeMaker>
+            <recipeUsers Inherit="false">
+                <li>GW_AM_MilitarumArmorBench</li>
+            </recipeUsers>
+        </recipeMaker>
         <apparel>
             <useWornGraphicMask>true</useWornGraphicMask>		
             <bodyPartGroups>

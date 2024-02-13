@@ -15,7 +15,10 @@
         <recipeMaker>
             <skillRequirements>
                 <Crafting>4</Crafting>
-            </skillRequirements>	
+            </skillRequirements>
+            <recipeUsers Inherit="false">
+				        <li>GW_AM_MilitarumArmorBench</li>
+			      </recipeUsers>
         </recipeMaker>
         <tradeTags>
             <li>HPHat</li>
