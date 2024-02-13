@@ -5,8 +5,8 @@
         <label>Militarum weapons workbench</label>
         <description>A workbench equipped with tools required for producing complex Astartes weapons like Lasguns, along with various armors.</description>
         <costList>
-            <Steel>400</Steel>
-            <ComponentIndustrial>8</ComponentIndustrial>
+            <Steel>200</Steel>
+            <ComponentIndustrial>4</ComponentIndustrial>
         </costList>
         <recipes>
             <li>GW_Make_ComponentRelic</li>
@@ -21,11 +21,11 @@
 
     <ThingDef ParentName="GrimworldFabricationBenchBase">
         <defName>GW_AM_MilitarumArmorBench</defName>
-        <label>Militarum armor workbench</label>
+        <label>Militarum armors workbench</label>
         <description>A workbench equipped with tools required for producing complex Astartes weapons like Lasguns, along with various armors.</description>
         <costList>
-            <Steel>400</Steel>
-            <ComponentIndustrial>8</ComponentIndustrial>
+            <Steel>200</Steel>
+            <ComponentIndustrial>4</ComponentIndustrial>
         </costList>
         <recipes>
             <li>GW_Make_ComponentRelic</li>
