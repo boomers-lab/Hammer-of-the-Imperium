@@ -9,7 +9,7 @@
         <recipeMaker>
             <researchPrerequisite>GW_AM_OgrynIntegration</researchPrerequisite>
             <recipeUsers>
-                <li>HP_AM_MilitarumFabricationBench</li>
+                <li>GW_AM_MilitarumArmorBench</li>
             </recipeUsers>  
         </recipeMaker>	
         <graphicData>
