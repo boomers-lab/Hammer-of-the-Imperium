@@ -15,7 +15,10 @@
         <recipeMaker>
             <skillRequirements>
                 <Crafting>4</Crafting>
-            </skillRequirements>	
+            </skillRequirements>
+            <recipeUsers Inherit="false">
+				<li>GW_AM_MilitarumArmorBench</li>
+			</recipeUsers>
         </recipeMaker>
         <tradeTags>
             <li>HPHat</li>
@@ -576,9 +579,6 @@
         </costList>		
         <recipeMaker>
             <researchPrerequisite>GW_AM_DeathKorpsOfKrieg</researchPrerequisite>
-            <recipeUsers>
-                <li>HP_AM_MilitarumFabricationBench</li>
-            </recipeUsers>  
         </recipeMaker>	
         <statBases>
             <WorkToMake>2000</WorkToMake>
@@ -612,9 +612,6 @@
         </costList>		
         <recipeMaker>
             <researchPrerequisite>GW_AM_SteelLegion</researchPrerequisite>
-            <recipeUsers>
-                <li>HP_AM_MilitarumFabricationBench</li>
-            </recipeUsers>  
         </recipeMaker>	
         <statBases>
             <WorkToMake>2000</WorkToMake>

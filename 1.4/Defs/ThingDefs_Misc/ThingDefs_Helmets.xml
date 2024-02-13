@@ -13,7 +13,7 @@
         </tradeTags>
         <recipeMaker>
             <recipeUsers Inherit="false">
-                <li>HP_AM_MilitarumFabricationBench</li>
+                <li>GW_AM_MilitarumArmorBench</li>
             </recipeUsers>
         </recipeMaker>
 		<uiIconScale>1.6</uiIconScale>
