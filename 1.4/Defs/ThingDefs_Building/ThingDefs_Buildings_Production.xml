@@ -8,6 +8,9 @@
             <Steel>400</Steel>
             <ComponentIndustrial>8</ComponentIndustrial>
         </costList>
+        <recipes>
+            <li>GW_Make_ComponentRelic</li>
+        </recipes>
         <graphicData>
             <texPath>Things/Building/Production/MilitarumWeaponBench/AstraMilitarumBench_Weapon</texPath>
         </graphicData>
@@ -24,6 +27,9 @@
             <Steel>400</Steel>
             <ComponentIndustrial>8</ComponentIndustrial>
         </costList>
+        <recipes>
+            <li>GW_Make_ComponentRelic</li>
+        </recipes>
         <graphicData>
             <texPath>Things/Building/Production/MilitarumArmorBench/AstraMilitarumBench_Armor</texPath>
         </graphicData>
