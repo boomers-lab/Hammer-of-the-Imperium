@@ -577,7 +577,7 @@
         <recipeMaker>
             <researchPrerequisite>GW_AM_DeathKorpsOfKrieg</researchPrerequisite>
             <recipeUsers>
-                <li>HP_AM_MilitarumFabricationBench</li>
+                <li>GW_AM_MilitarumArmorBench</li>
             </recipeUsers>  
         </recipeMaker>	
         <statBases>
@@ -613,7 +613,7 @@
         <recipeMaker>
             <researchPrerequisite>GW_AM_SteelLegion</researchPrerequisite>
             <recipeUsers>
-                <li>HP_AM_MilitarumFabricationBench</li>
+                <li>GW_AM_MilitarumArmorBench</li>
             </recipeUsers>  
         </recipeMaker>	
         <statBases>

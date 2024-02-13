@@ -9,7 +9,7 @@
         <recipeMaker>
             <researchPrerequisite>GW_AM_DeathKorpsOfKrieg</researchPrerequisite>
             <recipeUsers Inherit="false">
-                <li>HP_AM_MilitarumFabricationBench</li>
+                <li>GW_AM_MilitarumArmorBench</li>
             </recipeUsers>
         </recipeMaker>
         <graphicData>
@@ -86,7 +86,7 @@
             <researchPrerequisite>GW_AM_MilitariumArmor</researchPrerequisite>
             <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>	
             <recipeUsers Inherit="false">
-                <li>HP_AM_MilitarumFabricationBench</li>
+                <li>GW_AM_MilitarumArmorBench</li>
             </recipeUsers>  
         </recipeMaker>
         <graphicData>
