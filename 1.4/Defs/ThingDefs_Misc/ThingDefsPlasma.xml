@@ -231,14 +231,11 @@
                 <warmupTime>3</warmupTime>
                 <range>16</range>
                 <ticksBetweenBurstShots>12</ticksBetweenBurstShots>
-                <forcedMissRadius>1.9</forcedMissRadius>
+				<forcedMissRadius>1.9</forcedMissRadius>
                 <burstShotCount>1</burstShotCount>
                 <soundCast>HP_AM_Melta_Gun_Sound</soundCast>
                 <soundCastTail>GunTail_Heavy</soundCastTail>
-                <muzzleFlashScale>12</muzzleFlashScale>
-                <targetParams>
-                    <canTargetLocations>true</canTargetLocations>
-                </targetParams>		
+                <muzzleFlashScale>12</muzzleFlashScale>		
             </li>
         </verbs>
         <tools>
@@ -318,7 +315,7 @@
                 <warmupTime>4</warmupTime>
                 <range>22</range>
                 <ticksBetweenBurstShots>7</ticksBetweenBurstShots>
-                <forcedMissRadius>0.9</forcedMissRadius>
+                <forcedMissRadius>1.9</forcedMissRadius>
                 <burstShotCount>1</burstShotCount>
                 <soundCast>HP_AM_Plasma_Gun_Sound</soundCast>
                 <soundCastTail>GunTail_Heavy</soundCastTail>
@@ -407,7 +404,7 @@
                 <warmupTime>4</warmupTime>
                 <range>10</range>
                 <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
-                <forcedMissRadius>0.9</forcedMissRadius>
+				<forcedMissRadius>1.0</forcedMissRadius>
                 <burstShotCount>1</burstShotCount>
                 <soundCast>HP_AM_Melta_Gun_Sound</soundCast>
                 <soundCastTail>GunTail_Heavy</soundCastTail>
