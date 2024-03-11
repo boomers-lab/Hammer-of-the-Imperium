@@ -121,12 +121,14 @@
 		</graphicData>
 		<soundInteract>Interact_ChargeRifle</soundInteract>
 		<recipeMaker>
+			<unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
 			<recipeUsers Inherit="False">
 				<li>HP_AM_MilitarumFabricationBench</li>
 			</recipeUsers>
 			<skillRequirements>
 				<Crafting>10</Crafting>
 			</skillRequirements>
+			<workSkill>Crafting</workSkill>
 		</recipeMaker>
 		<costList>
 			<Plasteel>75</Plasteel>
@@ -232,12 +234,14 @@
 			<HP_Ceramite>5</HP_Ceramite>
         </costList>
         <recipeMaker>
-			<recipeUsers Inherit="False">
-				<li>HP_AM_MilitarumFabricationBench</li>
-			</recipeUsers>
-            <skillRequirements>
-                <Crafting>8</Crafting>
-            </skillRequirements>
+		<unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+		<recipeUsers Inherit="False">
+			<li>HP_AM_MilitarumFabricationBench</li>
+		</recipeUsers>
+		<skillRequirements>
+			<Crafting>8</Crafting>
+	 	</skillRequirements>
+		<workSkill>Crafting</workSkill>
             <displayPriority>430</displayPriority>
         </recipeMaker>
         <verbs>
@@ -311,12 +315,14 @@
 			<HP_Ceramite>15</HP_Ceramite>
         </costList>
         <recipeMaker>
-			<recipeUsers Inherit="False">
-				<li>HP_AM_MilitarumFabricationBench</li>
-			</recipeUsers>
-            <skillRequirements>
-                <Crafting>10</Crafting>
-            </skillRequirements>
+		<unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+		<recipeUsers Inherit="False">
+			<li>HP_AM_MilitarumFabricationBench</li>
+		</recipeUsers>
+            	<skillRequirements>
+            	    <Crafting>10</Crafting>
+	 	</skillRequirements>
+		<workSkill>Crafting</workSkill>
             <displayPriority>430</displayPriority>
         </recipeMaker>
         <verbs>
@@ -385,6 +391,7 @@
 			</li>
 		</tools>
 		<recipeMaker>
+			<unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
 			<recipeUsers Inherit="False">
 				<li>HP_AM_MilitarumFabricationBench</li>
 			</recipeUsers>		
@@ -392,6 +399,7 @@
 			<skillRequirements>
 				<Crafting>10</Crafting>
 			</skillRequirements>
+			<workSkill>Crafting</workSkill>
 		</recipeMaker>
 		<costList>
 			<Plasteel>90</Plasteel>
