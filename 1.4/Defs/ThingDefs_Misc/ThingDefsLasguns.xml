@@ -15,6 +15,22 @@
             <stoppingPower>1.5</stoppingPower>
         </projectile>
     </ThingDef>
+    
+    <ThingDef ParentName="GW_LaserBullet" Class="VanillaWeaponsExpandedLaser.LaserBeamDef">
+        <defName>VWEL_Bullet_Hellbolt</defName>
+        <label>Hellgun Lasbolt</label>
+        <description>A concentrated beam of light that burns the target - and often through them.</description>
+        <textures>
+            <li>Projectiles/Las_Bolt</li>
+        </textures>
+        <seam>0</seam>
+        <projectile>
+            <damageDef>Burn</damageDef>
+            <damageAmountBase>22</damageAmountBase>
+            <armorPenetrationBase>0.82</armorPenetrationBase>
+            <stoppingPower>1.8</stoppingPower>
+        </projectile>
+    </ThingDef>
 
     <ThingDef ParentName="GW_LaserBullet" Class="VanillaWeaponsExpandedLaser.LaserBeamDef">
         <defName>VWEL_Bullet_Lasbolttwo</defName>
@@ -629,7 +645,7 @@
             <RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
         </statBases>
 		<equippedStatOffsets>
-            <MoveSpeed>-0.10</MoveSpeed>
+            <MoveSpeed>-0.20</MoveSpeed>
         </equippedStatOffsets>
         <recipeMaker>
             <skillRequirements>
@@ -653,10 +669,10 @@
             <li>
                 <verbClass>Verb_Shoot</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
-                <defaultProjectile>VWEL_Bullet_Lasboltsmall</defaultProjectile>
+                <defaultProjectile>VWEL_Bullet_Hellbolt</defaultProjectile>
                 <warmupTime>1.20</warmupTime>
                 <range>25.0</range>
-                <ticksBetweenBurstShots>8</ticksBetweenBurstShots>
+                <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
                 <burstShotCount>12</burstShotCount>
                 <soundCast>GW_AM_Gun_Hellgun</soundCast>
                 <soundCastTail>GunTail_Heavy</soundCastTail>
