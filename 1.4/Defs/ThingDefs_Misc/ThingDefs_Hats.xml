@@ -740,11 +740,8 @@
             <MentalBreakThreshold>-0.2</MentalBreakThreshold>
             <PainShockThreshold>-0.2</PainShockThreshold>
         </equippedStatOffsets>
-        <costList>
-            <Steel>100</Steel>
-        </costList>
+        <costStuffCount>50</costStuffCount>
 		<stuffCategories>
-			<!-- <li>Metallic</li> -->
 			<li>Fabric</li>
 			<li>Leathery</li>
 		</stuffCategories>
@@ -798,11 +795,8 @@
             <MentalBreakThreshold>-0.2</MentalBreakThreshold>
             <PainShockThreshold>-0.2</PainShockThreshold>
         </equippedStatOffsets>
-        <costList>
-            <Steel>100</Steel>
-        </costList>
+        <costStuffCount>50</costStuffCount>
 		<stuffCategories>
-			<!-- <li>Metallic</li> -->
 			<li>Fabric</li>
 			<li>Leathery</li>
 		</stuffCategories>
@@ -856,11 +850,8 @@
             <MentalBreakThreshold>-0.2</MentalBreakThreshold>
             <PainShockThreshold>-0.2</PainShockThreshold>
         </equippedStatOffsets>
-        <costList>
-            <Steel>100</Steel>
-        </costList>
+        <costStuffCount>50</costStuffCount>
 		<stuffCategories>
-			<!-- <li>Metallic</li> -->
 			<li>Fabric</li>
 			<li>Leathery</li>
 		</stuffCategories>
@@ -915,11 +906,8 @@
        <recipeMaker>
             <researchPrerequisite>GW_AM_OfficersOfAM</researchPrerequisite>
         </recipeMaker>
-		<costList>
-            <Steel>100</Steel>
-        </costList>
+		<costStuffCount>50</costStuffCount>
 		<stuffCategories>
-			<!-- <li>Metallic</li> -->
 			<li>Fabric</li>
 			<li>Leathery</li>
 		</stuffCategories>

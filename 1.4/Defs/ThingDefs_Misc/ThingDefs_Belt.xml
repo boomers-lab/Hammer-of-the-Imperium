@@ -183,9 +183,6 @@
         </equippedStatOffsets>
 		<apparel>
             <useWornGraphicMask>true</useWornGraphicMask>
-            <bodyPartGroups>
-                <li>Waist</li>
-            </bodyPartGroups>
             <wornGraphicPath>Things/Commissar/Attachments/CommissarGorget</wornGraphicPath>
 			<wornGraphicData>
 				<!-- <renderUtilityAsPack>true</renderUtilityAsPack> -->
