@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef Abstract="true" ParentName="ApparelMakeableBase" Name="GW_AM_MiddleBase">
+        <graphicData>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>1.3</drawSize>
+        </graphicData>
+        <thingCategories>
+            <li>Apparel</li>
+        </thingCategories>
+        <tradeTags>
+            <li>HPMiddle</li>
+            <li>GW_AM_Middle</li>
+        </tradeTags>
+        <statBases>
+            <Mass>0.3</Mass>
+            <EquipDelay>1.5</EquipDelay>
+        </statBases>
+		<uiIconScale>1.6</uiIconScale>
+        <recipeMaker>
+            <recipeUsers Inherit="false">
+                <li>GW_AM_MilitarumArmorBench</li>
+            </recipeUsers>
+        </recipeMaker>
+        <apparel>
+            <useWornGraphicMask>true</useWornGraphicMask>		
+            <!-- <bodyPartGroups> -->
+                <!-- <li>Torso</li> -->
+                <!-- <li>Neck</li> -->
+                <!-- <li>Shoulders</li> -->
+                <!-- <li>Arms</li> -->
+                <!-- <li>Legs</li> -->
+            <!-- </bodyPartGroups> -->
+            <layers>
+                <li>Middle</li>
+            </layers>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+        </apparel>
+    </ThingDef>
+	
+	<!-- Commissar Plate -->
+
+	<ThingDef ParentName="GW_AM_MiddleBase">
+        <defName>GW_AM_CommissarMiddle</defName>
+        <label>commissar plate</label>
+        <description>. . .</description>
+        <recipeMaker>
+            <researchPrerequisite>GW_AM_OfficersOfAM</researchPrerequisite>
+        </recipeMaker>
+        <graphicData>
+            <texPath>Things/Commissar/Display/CommissarPlate</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <costStuffCount>70</costStuffCount>
+        <stuffCategories>
+            <li>Fabric</li>
+            <li>Leathery</li>
+        </stuffCategories>
+        <thingCategories>
+            <li>ApparelMisc</li>
+        </thingCategories>
+        <statBases>
+            <MaxHitPoints>200</MaxHitPoints>
+            <WorkToMake>10000</WorkToMake>
+            <Mass>1.5</Mass>
+            <StuffEffectMultiplierArmor>0.3</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.20</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.85</StuffEffectMultiplierInsulation_Heat>
+            <EquipDelay>3</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <SocialImpact>0.1</SocialImpact>
+        </equippedStatOffsets>
+        <apparel>
+            <wornGraphicPath>Things/Commissar/Middle/CommissarPlate</wornGraphicPath>
+            <tags>
+                <li>40kCommissar</li>
+                <li>40kCommissarMiddle</li>
+            </tags>
+			<bodyPartGroups>
+                <li>Torso</li>
+                <!-- <li>Neck</li> -->
+                <li>Shoulders</li>
+                <!-- <li>Arms</li> -->
+                <!-- <li>Legs</li> -->
+            </bodyPartGroups>
+        </apparel>
+    </ThingDef>
+	
+</Defs>
