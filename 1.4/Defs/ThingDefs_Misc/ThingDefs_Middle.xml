@@ -56,8 +56,7 @@
         </graphicData>
         <costStuffCount>70</costStuffCount>
         <stuffCategories>
-            <li>Fabric</li>
-            <li>Leathery</li>
+		<li>Metallic</li>
         </stuffCategories>
         <thingCategories>
             <li>ApparelMisc</li>
