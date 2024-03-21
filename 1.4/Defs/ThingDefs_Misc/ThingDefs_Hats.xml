@@ -740,7 +740,6 @@
             <MentalBreakThreshold>-0.2</MentalBreakThreshold>
             <PainShockThreshold>-0.2</PainShockThreshold>
         </equippedStatOffsets>
-        <costStuffCount>50</costStuffCount>
 		<stuffCategories>
 			<li>Fabric</li>
 			<li>Leathery</li>
@@ -795,7 +794,6 @@
             <MentalBreakThreshold>-0.2</MentalBreakThreshold>
             <PainShockThreshold>-0.2</PainShockThreshold>
         </equippedStatOffsets>
-        <costStuffCount>50</costStuffCount>
 		<stuffCategories>
 			<li>Fabric</li>
 			<li>Leathery</li>
@@ -850,7 +848,6 @@
             <MentalBreakThreshold>-0.2</MentalBreakThreshold>
             <PainShockThreshold>-0.2</PainShockThreshold>
         </equippedStatOffsets>
-        <costStuffCount>50</costStuffCount>
 		<stuffCategories>
 			<li>Fabric</li>
 			<li>Leathery</li>
