@@ -139,7 +139,8 @@
 		<defName>GW_AM_OfficersOfAM</defName>
 		<label>Officers of Astra Militarum</label>
         <description>In the war-torn realms of Warhammer 40,000, the Armageddon Steel Legion stands as a disciplined and mechanized regiment within the Imperial Guard. Hailing from the industrial world of Armageddon, these soldiers are renowned for their resilience, combined arms tactics, and adaptability in urban warfare.\n\nClad in distinctive gas masks, flak armor, and armored fatigues, the Armageddon Steel Legion presents a rugged and utilitarian appearance. Their attire reflects both the harsh conditions of urban warfare and the necessity for protection against various threats.\n\nKnown for their proficiency in mechanized warfare and armored assaults, the Armageddon Steel Legion excels in deploying heavy infantry alongside formidable armored support. Their training emphasizes combined arms tactics, making them a versatile force capable of engaging in a wide range of battlefield scenarios.\n\nArmed with lasguns and supported by armored vehicles, including Chimera transports and Leman Russ tanks, the Armageddon Steel Legion brings a potent mix of infantry and heavy firepower to the battlefield. Their ability to conduct coordinated mechanized assaults makes them effective in reclaiming urban territories from hostile forces.\n\nEach Armageddon Steel Legionnaire embodies the regiment's commitment to defending their homeworld and the Imperium at large, showcasing the adaptability and resilience required to thrive in the grim darkness of the 41st millennium.</description>
-		<researchViewY>5.40</researchViewY>
+		<researchViewY>0</researchViewY>
+		<researchViewX>6.00</researchViewX>
 	</ResearchProjectDef>
 
 			<!--Abhumans-->
