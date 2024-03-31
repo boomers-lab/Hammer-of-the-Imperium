@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+       <!-- Ogryn Gas Mask -->
+  
+    <ThingDef ParentName="GW_AM_Hat_GasMaskBase">
+        <defName>GW_AM_OgrynMask</defName>
+        <label>ogryn mask</label>
+        <description>A Ogryn mask.</description>
+        <recipeMaker>
+            <researchPrerequisite>GW_AM_OgrynIntegration</researchPrerequisite>
+            <recipeUsers>
+                <li>GW_AM_MilitarumArmorBench</li>
+            </recipeUsers>  
+        </recipeMaker>	
+        <graphicData>
+            <texPath>Things/Ogryn/Mask/mask_south</texPath>
+            <drawSize>1.2</drawSize>
+        </graphicData>
+        <stuffCategories>
+            <li>Leathery</li>
+        </stuffCategories>
+        <costList>
+            <Steel>10</Steel>			
+        </costList>		
+        <statBases>
+            <WorkToMake>2000</WorkToMake>
+            <MaxHitPoints>120</MaxHitPoints>
+            <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+        </statBases>
+        <apparel>
+            <wornGraphicPath>Things/Ogryn/Mask/mask</wornGraphicPath>
+            <tags>
+                <li>40kOgryn</li>
+                <li>40kOgrynMask</li>		
+            </tags>	  
+        </apparel>
+        <modExtensions>
+			<li Class="GW_Frame.EquipRestrictExtension">
+				<requireOneOfXenotypeToEquip>
+                    <li>BEWH_Ogryn</li>
+                </requireOneOfXenotypeToEquip>
+			</li>
+		</modExtensions>
+    </ThingDef>
+                <!-- Ogryn Armor  -->
+
+    <ThingDef ParentName="GW_AM_ArmorBase">
+        <defName>GW_AM_OgrynArmor</defName>
+        <label>ogryn armor</label>
+        <description>Sturdy armor worn by ogryns.</description>
+        <recipeMaker>
+            <researchPrerequisite>GW_AM_OgrynIntegration</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>9</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+        <graphicData>
+            <texPath>Things/Ogryn/Armor/armor_south</texPath>
+            <drawSize>1.2</drawSize>
+        </graphicData>
+        <statBases>
+            <WorkToMake>25000</WorkToMake>
+            <MaxHitPoints>250</MaxHitPoints>
+            <Mass>7</Mass>
+            <ArmorRating_Sharp>0.90</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.39</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.64</ArmorRating_Heat>
+            <Insulation_Cold>30.0</Insulation_Cold>
+			<Insulation_Heat>8.0</Insulation_Heat>
+            <EquipDelay>6</EquipDelay>
+        </statBases>
+        <costStuffCount>90</costStuffCount>		
+        <costList>
+			<Steel>70</Steel>
+        </costList>	
+        <apparel>
+            <wornGraphicPath>Things/Ogryn/Armor/armor</wornGraphicPath>
+            <tags>
+                <li>40kOgryn</li>
+                <li>40kOgrynArmor</li>
+            </tags>
+        </apparel>
+        <modExtensions>
+            <li Class="VFECore.ApparelDrawPosExtension">
+                <isUnifiedApparel>true</isUnifiedApparel>
+				<hideHead>false</hideHead>
+            </li>
+            <li Class="GW_Frame.EquipRestrictExtension">
+				<requireOneOfXenotypeToEquip>
+                    <li>BEWH_Ogryn</li>
+                </requireOneOfXenotypeToEquip>
+			</li>
+		</modExtensions>
+    </ThingDef>  
+
+</Defs>

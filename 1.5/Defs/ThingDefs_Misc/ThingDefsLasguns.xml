@@ -1,0 +1,834 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef ParentName="GW_LaserBullet" Class="VanillaWeaponsExpandedLaser.LaserBeamDef">
+        <defName>VWEL_Bullet_Lasbolt</defName>
+        <label>Lasbolt</label>
+        <description>A beam of focused light that burns the target.</description>
+        <textures>
+            <li>Projectiles/Las_Bolt</li>
+        </textures>
+        <seam>0</seam>
+        <projectile>
+            <damageDef>Burn</damageDef>
+            <damageAmountBase>17</damageAmountBase>
+            <armorPenetrationBase>0.56</armorPenetrationBase>
+            <stoppingPower>1.5</stoppingPower>
+        </projectile>
+    </ThingDef>
+    
+    <ThingDef ParentName="GW_LaserBullet" Class="VanillaWeaponsExpandedLaser.LaserBeamDef">
+        <defName>VWEL_Bullet_Hellbolt</defName>
+        <label>Hellgun Lasbolt</label>
+        <description>A concentrated beam of light that burns the target - and often through them.</description>
+        <textures>
+            <li>Projectiles/Las_Bolt</li>
+        </textures>
+        <seam>0</seam>
+        <projectile>
+            <damageDef>Burn</damageDef>
+            <damageAmountBase>22</damageAmountBase>
+            <armorPenetrationBase>0.82</armorPenetrationBase>
+            <stoppingPower>1.8</stoppingPower>
+        </projectile>
+    </ThingDef>
+
+    <ThingDef ParentName="GW_LaserBullet" Class="VanillaWeaponsExpandedLaser.LaserBeamDef">
+        <defName>VWEL_Bullet_Lasbolttwo</defName>
+        <label>Lasbolt charged</label>
+        <description>An heavily charged beam of focused light, emitting more heat usual.</description>
+        <textures>
+            <li>Projectiles/Las_Bolt</li>
+        </textures>
+        <seam>0</seam>
+        <causefireChance>0.08</causefireChance>
+        <projectile>
+            <damageDef>Burn</damageDef>
+            <damageAmountBase>25</damageAmountBase>
+            <armorPenetrationBase>0.76</armorPenetrationBase>
+            <stoppingPower>1.8</stoppingPower>
+        </projectile>
+    </ThingDef>
+
+    <ThingDef ParentName="GW_LaserBullet" Class="VanillaWeaponsExpandedLaser.LaserBeamDef">
+        <defName>VWEL_Bullet_Lasboltsmall</defName>
+        <label>Pistol lasbolt</label>
+        <description>A reduced beam of focused light.</description>
+        <textures>
+            <li>Projectiles/Las_Bolt</li>
+        </textures>
+        <seam>0</seam>
+        <projectile>
+            <damageDef>Burn</damageDef>
+            <damageAmountBase>13</damageAmountBase>
+            <armorPenetrationBase>0.40</armorPenetrationBase>
+            <stoppingPower>1.2</stoppingPower>
+        </projectile>
+    </ThingDef>
+
+<!-- ====================== Lasgun Bases  ===================== -->
+
+    <ThingDef Abstract="true" Name="GW_AM_LasgunBase" ParentName="BaseHumanMakeableGun">
+        <techLevel>Spacer</techLevel>
+        <graphicData>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Interact_ChargeRifle</soundInteract>
+        <weaponTags>
+            <li>GW_AM_Lasgun</li>
+        </weaponTags>
+        <tradeTags>
+            <li>HPRanged</li>
+            <li>GW_AM_Lasguns</li>
+        </tradeTags>
+        <thingSetMakerTags>
+          <li>RewardStandardQualitySuper</li>
+        </thingSetMakerTags>
+        <recipeMaker>
+            <researchPrerequisite>GW_Lasguns</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>8</Crafting>
+            </skillRequirements>
+            <recipeUsers Inherit="false">
+                <li>HP_AM_MilitarumFabricationBench</li>
+            </recipeUsers>
+            <displayPriority>200</displayPriority>
+        </recipeMaker>
+    </ThingDef>
+
+<!-- ====================== Kantrael MG  ===================== -->
+
+    <ThingDef ParentName="GW_AM_LasgunBase">
+        <defName>GW_AM_Gun_Kantrael</defName>
+        <label>Kantrael MG</label>
+        <description>The Kantrael MG, sanctified and embraced by the indomitable Cadian Shock Troops, becomes an even more imposing force on the battlefield. In the hands of the steadfast Cadian warriors, this malevolent weapon is wielded with unwavering discipline and precision, a testament to the renowned marksmanship and unyielding resolve of the Cadian Shock Troops.\n\nAdorned with the iconic regalia of the Cadian regiments, the Kantrael MG bears the distinctive markings of Cadian pride. The stark lines of the lasgun meld seamlessly with the rugged aesthetic of the Cadian war machine, creating a fusion of efficiency and military grandeur. Each pull of the trigger resonates with the disciplined cadence instilled in every Cadian soldier from the moment they step foot onto the battlefield.\n\nAs the Kantrael MG spits forth its malefic projectiles, the Cadian Shock Troops move in unison, executing precise tactical maneuvers that have been drilled into them through countless training exercises. The seamless coordination between the weapon and its wielders transforms the battlefield into a symphony of destruction, with the Cadian forces orchestrating a deadly ballet of firepower.\n\nEmblematic of the Cadian Shock Troops' unwavering dedication to the Imperium, the Kantrael MG becomes a symbol of the regiment's unbreakable spirit. With the weapon in their hands, the Cadian soldiers stand resolute against the myriad threats that seek to unravel the fabric of the Imperium. The Kantrael MG, sanctified in the fires of conflict, serves as a beacon of hope and an instrument of retribution, ensuring that the enemies of the Imperium are met with the unyielding might of the Cadian Shock Troops.</description>
+        <graphicData>
+            <texPath>Weapons/Kantrael MG</texPath>
+        </graphicData>
+        <statBases>
+            <WorkToMake>20000</WorkToMake>
+            <Mass>3.8</Mass>
+            <AccuracyTouch>0.60</AccuracyTouch>
+            <AccuracyShort>0.75</AccuracyShort>
+            <AccuracyMedium>0.85</AccuracyMedium>
+            <AccuracyLong>0.75</AccuracyLong>
+            <RangedWeapon_Cooldown>1.70</RangedWeapon_Cooldown>
+        </statBases>
+        <costList>
+            <Steel>120</Steel>
+            <ComponentIndustrial>10</ComponentIndustrial>
+        </costList>
+        <weaponClasses>
+            <li>LongShots</li>
+        </weaponClasses>
+        <weaponTags>
+            <li>SpacerGun</li>
+        </weaponTags>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>VWEL_Bullet_Lasbolt</defaultProjectile>
+                <warmupTime>1.00</warmupTime>
+                <range>35.0</range>
+                <ticksBetweenBurstShots>12</ticksBetweenBurstShots>
+                <burstShotCount>3</burstShotCount>
+                <soundCast>GW_AM_Gun_Kantrael</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>12</muzzleFlashScale>
+            </li>
+        </verbs>
+        <tools>
+            <li>
+                <label>stock</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+            <li>
+                <label>barrel</label>
+                <capacities>
+                    <li>Blunt</li>
+                    <li>Poke</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+        </tools>
+    </ThingDef>
+  
+  <!-- ====================== Kantrael MG-t ===================== -->
+
+    <ThingDef ParentName="GW_AM_LasgunBase">
+        <defName>GW_AM_Gun_Kantraelt</defName>
+        <label>Kantrael MG-t</label>
+        <description>The Kantrael MG-T, the Tertium variant of this revered weapon, stands as a testament to the adaptability and ingenuity of the Astra Militarum, particularly the esteemed Cadian Shock Troops. In the crucible of warfare, where versatility is paramount, the Kantrael MG-T emerges as a formidable tool tailored to the specific needs of the Cadian forces.\n\nInfused with the technological advancements of the Adeptus Mechanicus, the Kantrael MG-T incorporates cutting-edge modifications that elevate its functionality on the battlefield. The tertiary variant introduces enhanced targeting systems, allowing for improved accuracy and target acquisition. The addition of specialized ammunition feeds ensures seamless transitions between different projectile types, providing the Cadian Shock Troops with unparalleled adaptability in the face of diverse threats.\n\nThe rugged yet refined design of the Kantrael MG-T mirrors the disciplined nature of the Cadian Shock Troops. Adorned with the heraldic symbols of the Cadian regiments, this variant maintains the iconic aesthetic that signifies the indomitable spirit of the Cadian forces. The integration of auxiliary components, such as telescopic stocks and ergonomic grips, enhances the weapon's maneuverability and ensures optimal performance in a variety of combat scenarios.\n\nAs the Cadian Shock Troops deploy the Kantrael MG-T on the front lines, the weapon becomes a linchpin in their tactical arsenal. Whether suppressing enemy advances or delivering precision fire support, the Tertium variant stands as a beacon of the Astra Militarum's adaptability and resilience. In the hands of the Cadian Shock Troops, the Kantrael MG-T exemplifies the synthesis of tradition and innovation, embodying the unwavering commitment to defend the Imperium against the encroaching darkness.</description>
+        <graphicData>
+            <texPath>Weapons/Kantrael MG-t</texPath>
+        </graphicData>
+        <statBases>
+            <WorkToMake>20500</WorkToMake>
+            <Mass>3.8</Mass>
+            <AccuracyTouch>0.60</AccuracyTouch>
+            <AccuracyShort>0.70</AccuracyShort>
+            <AccuracyMedium>0.65</AccuracyMedium>
+            <AccuracyLong>0.45</AccuracyLong>
+            <RangedWeapon_Cooldown>1.40</RangedWeapon_Cooldown>
+        </statBases>
+        <costList>
+            <Steel>120</Steel>
+            <ComponentIndustrial>11</ComponentIndustrial>
+        </costList>
+        <weaponClasses>
+            <li>RangedLight</li>
+        </weaponClasses>
+        <weaponTags>
+            <li>SpacerGun</li>
+        </weaponTags>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>VWEL_Bullet_Lasbolt</defaultProjectile>
+                <warmupTime>1.00</warmupTime>
+                <range>28.0</range>
+                <ticksBetweenBurstShots>12</ticksBetweenBurstShots>
+                <burstShotCount>3</burstShotCount>
+                <soundCast>GW_AM_Gun_Kantrael</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>12</muzzleFlashScale>
+            </li>
+        </verbs>
+        <tools>
+            <li>
+                <label>stock</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+            <li>
+                <label>barrel</label>
+                <capacities>
+                    <li>Blunt</li>
+                    <li>Poke</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+        </tools>
+    </ThingDef>
+  
+  <!-- ====================== MK4 Lascarbine ===================== -->
+
+    <ThingDef ParentName="GW_AM_LasgunBase">
+        <defName>GW_AM_Gun_Lascarbinefour</defName>
+        <label>MK4 lascarbine</label>
+        <description>The Sanctified MK4 Lascarbine, a sacred relic wielded by the renowned Catachan Jungle Fighters, epitomizes the fusion of rugged durability and deadly precision tailored for the perilous environments of dense jungles and hostile terrains.\n\nForged in the crucible of Catachan's unforgiving wilderness, the MK4 Lascarbine serves as an extension of the indomitable spirit of the Catachan Jungle Fighters. Its compact and lightweight design allows for exceptional maneuverability through thick vegetation, while the specialized materials and coatings protect the weapon from the corrosive effects of the jungle's humidity and flora.\n\nAdorned with the distinctive markings of Catachan regiments, the Sanctified MK4 Lascarbine is a symbol of pride and resilience. The Catachan Jungle Fighters, known for their exceptional marksmanship, rely on the weapon's precise targeting systems to navigate the intricate and perilous jungle terrain. The Sanctified variant incorporates sacred blessings, ensuring the weapon's functionality remains unwavering even in the heart of the Catachan wilderness.\n\nFeaturing a collapsible stock for ease of transport and rapid deployment, the MK4 Lascarbine enables the Catachan Jungle Fighters to maintain the element of surprise in their guerrilla tactics. The weapon's semi-automatic firing mode provides controlled bursts, conserving ammunition while delivering lethal accuracy against adversaries hidden amidst the dense foliage.\n\nAs the Catachan Jungle Fighters traverse the hostile jungles, the Sanctified MK4 Lascarbine becomes an extension of their skill and tenacity. In the hands of these elite warriors, the weapon embodies the spirit of Catachan, standing as a testament to their adaptability and unyielding commitment to defending the Imperium from the myriad threats that lurk within the untamed wilderness.</description>
+        <graphicData>
+            <texPath>Weapons/MK4 Lascarbine</texPath>
+        </graphicData>
+        <statBases>
+            <WorkToMake>20000</WorkToMake>
+            <Mass>3.4</Mass>
+            <AccuracyTouch>0.55</AccuracyTouch>
+            <AccuracyShort>0.80</AccuracyShort>
+            <AccuracyMedium>0.65</AccuracyMedium>
+            <AccuracyLong>0.60</AccuracyLong>
+            <RangedWeapon_Cooldown>1.35</RangedWeapon_Cooldown>
+        </statBases>
+        <costList>
+            <Steel>100</Steel>
+            <ComponentIndustrial>8</ComponentIndustrial>
+        </costList>
+        <weaponClasses>
+            <li>LongShots</li>
+        </weaponClasses>
+        <weaponTags>
+            <li>SpacerGun</li>
+        </weaponTags>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>VWEL_Bullet_Lasbolt</defaultProjectile>
+                <warmupTime>1.2</warmupTime>
+                <range>26.0</range>
+                <ticksBetweenBurstShots>12</ticksBetweenBurstShots>
+                <burstShotCount>2</burstShotCount>
+                <soundCast>GW_AM_Gun_Lascarbinefour</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>12</muzzleFlashScale>
+            </li>
+        </verbs>
+        <tools>
+            <li>
+                <label>stock</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+            <li>
+                <label>barrel</label>
+                <capacities>
+                    <li>Blunt</li>
+                    <li>Poke</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+        </tools>
+    </ThingDef>
+  
+  <!-- ====================== Voss MKI ===================== -->
+
+    <ThingDef ParentName="GW_AM_LasgunBase">
+        <defName>GW_AM_Gun_VossPattern</defName>
+        <label>Voss MKI</label>
+        <description>The Voss MKI, a staple weapon in the arsenal of the Armageddon Steel Legion, stands as a testament to the regiment's adaptability and resilience in the face of the harsh conditions and relentless warfare on the desolate industrial hellscape of Armageddon.\n\nCrafted to withstand the corrosive effects of constant ash storms and industrial pollutants, the Voss MKI is a rugged and durable lasgun that has become synonymous with the Armageddon Steel Legion's signature style of warfare. The weapon's matte black finish and reinforced components not only enhance its durability but also contribute to the Legion's iconic aesthetic.\n\nThe Voss MKI features a semi-automatic firing mode, allowing for precise targeting and controlled bursts that are crucial in the urban warfare scenarios prevalent on Armageddon. Its adaptable design incorporates a folding stock, enabling ease of use in tight spaces and facilitating swift transitions between close-quarters combat and ranged engagements.\n\nThe lasgun's energy-efficient power cell is optimized for prolonged missions in Armageddon's war-torn environments, ensuring the Armageddon Steel Legionnaires can maintain sustained firefights against the relentless hordes of enemies that assail their homeworld.\n\nEmblazoned with the heraldic symbols of the Armageddon Steel Legion, the Voss MKI serves not just as a tool of war but as a symbol of the Legion's unyielding dedication to defending their homeworld from the ceaseless threats that emerge from the twisted landscapes of Armageddon. In the hands of the Steel Legionnaires, the Voss MKI embodies the regiment's indomitable spirit and steadfast commitment to the Imperium's cause.</description>
+        <graphicData>
+            <texPath>Weapons/Voss MKI</texPath>
+        </graphicData>
+        <statBases>
+            <WorkToMake>18000</WorkToMake>
+            <Mass>3.2</Mass>
+            <AccuracyTouch>0.50</AccuracyTouch>
+            <AccuracyShort>0.75</AccuracyShort>
+            <AccuracyMedium>0.65</AccuracyMedium>
+            <AccuracyLong>0.55</AccuracyLong>
+            <RangedWeapon_Cooldown>1.40</RangedWeapon_Cooldown>
+        </statBases>
+        <costList>
+            <Steel>110</Steel>
+            <ComponentIndustrial>10</ComponentIndustrial>
+        </costList>
+        <weaponClasses>
+            <li>LongShots</li>
+        </weaponClasses>
+        <weaponTags>
+            <li>SpacerGun</li>
+        </weaponTags>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>VWEL_Bullet_Lasbolt</defaultProjectile>
+                <warmupTime>1.40</warmupTime>
+                <range>30.0</range>
+                <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+                <burstShotCount>3</burstShotCount>
+                <soundCast>GW_AM_Gun_VossPattern</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>12</muzzleFlashScale>
+            </li>
+        </verbs>
+        <tools>
+            <li>
+                <label>stock</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+            <li>
+                <label>barrel</label>
+                <capacities>
+                    <li>Blunt</li>
+                    <li>Poke</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+        </tools>
+    </ThingDef>
+  
+   <!-- ====================== Accatran MKIV ===================== -->
+
+    <ThingDef ParentName="GW_AM_LasgunBase">
+        <defName>GW_AM_Gun_Accatranfive</defName>
+        <label>Accatran MKIV</label>
+        <description>The Accatran MKIV, revered as the primary weapon of the Elysian Drop Troops, exemplifies the airborne regiment's commitment to swift and precise military operations in the Warhammer 40,000 universe.\n\nCrafted with meticulous attention to detail and functionality, the Accatran MKIV is specifically designed for the unique challenges of aerial insertion and rapid deployment. As the Elysian Drop Troops often engage in high-altitude drops behind enemy lines, the lasgun's lightweight construction ensures minimal encumbrance during descent, allowing the troopers to maintain agility and maneuverability upon landing.\n\nThe weapon features a compact yet powerful design, incorporating a bullpup configuration to maximize barrel length while minimizing overall size. This layout enhances accuracy and muzzle velocity, crucial factors in the Elysian Drop Troops' fast-paced and dynamic combat scenarios.\n\nThe Accatran MKIV's selective fire modes—semi-automatic for precision shots and fully automatic for suppressive fire—provide the Elysian troopers with versatility on the battlefield. This adaptability is essential for engaging various threats encountered during airborne operations.\n\nThe lasgun's integral scope and targeting system are calibrated for pinpoint accuracy, aiding the Elysian Drop Troops in swiftly neutralizing priority targets upon landing. Additionally, the weapon's streamlined silhouette facilitates ease of use in confined spaces, making it an ideal choice for close-quarters combat during urban engagements.\n\nAdorned with the distinctive iconography of the Elysian Drop Troops, the Accatran MKIV is more than a weapon; it symbolizes the regiment's commitment to executing lightning-fast aerial assaults and exemplifies their role as elite shock troopers within the vast and war-torn galaxy of Warhammer 40,000.</description>
+        <graphicData>
+            <texPath>Weapons/Accatran MKIV</texPath>
+        </graphicData>
+        <statBases>
+            <WorkToMake>25000</WorkToMake>
+            <Mass>3.2</Mass>
+            <AccuracyTouch>0.85</AccuracyTouch>
+            <AccuracyShort>0.64</AccuracyShort>
+            <AccuracyMedium>0.35</AccuracyMedium>
+            <AccuracyLong>0.20</AccuracyLong>
+            <RangedWeapon_Cooldown>1.60</RangedWeapon_Cooldown>
+        </statBases>
+        <recipeMaker>
+            <skillRequirements>
+                <Crafting>10</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+        <costList>
+            <Steel>100</Steel>
+            <ComponentIndustrial>6</ComponentIndustrial>
+        </costList>
+        <weaponClasses>
+            <li>ShortShots</li>
+            <li>RangedHeavy</li>
+        </weaponClasses>
+        <weaponTags>
+            <li>SpacerGun</li>
+            <li>ShortShots</li>
+        </weaponTags>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>VWEL_Bullet_Lasbolt</defaultProjectile>
+                <warmupTime>1.40</warmupTime>
+                <range>23.0</range>
+                <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+                <burstShotCount>6</burstShotCount>
+                <soundCast>GW_AM_Gun_Accatranfive</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>12</muzzleFlashScale>
+            </li>
+        </verbs>
+        <tools>
+            <li>
+                <label>stock</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+            <li>
+                <label>barrel</label>
+                <capacities>
+                    <li>Blunt</li>
+                    <li>Poke</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+        </tools>
+    </ThingDef>
+  
+  <!-- ====================== Lucius MKI  ===================== -->
+
+    <ThingDef ParentName="GW_AM_LasgunBase">
+        <defName>GW_AM_Gun_Lucius</defName>
+        <label>Lucius MKI</label>
+        <description>The Lucius MKI, a revered weapon among the Death Korps of Krieg, stands as a testament to the regiment's unwavering commitment to relentless warfare in the grim darkness of the Warhammer 40,000 universe.\n\nForged in the fires of Krieg's industrial might, the Lucius MKI represents the epitome of rugged and reliable lasgun technology. Deployed across the desolate and war-torn landscapes of Krieg, this lasgun is meticulously crafted to endure the harsh conditions and protracted battles that define the Death Korps' relentless campaigns.\n\nThe Lucius MKI features a robust design, characterized by its durable construction and utilitarian aesthetics. The lasgun's heavy-duty frame is tailored to withstand the unforgiving environments of Krieg, ensuring that it remains operational even in the most inhospitable conditions.\n\nEquipped with a powerful and efficient energy cell, the Lucius MKI delivers consistent and potent las blasts, providing Death Korps infantry with the firepower needed to engage adversaries across the war-ravaged battlefields they tread. The lasgun's modular design allows for ease of maintenance and repairs in the field, a crucial aspect for the Death Korps as they endure protracted campaigns far from supply lines.\n\nThe Lucius MKI's design emphasizes functionality and reliability over ornate embellishments, aligning with the Death Korps' austere and disciplined approach to warfare. Its streamlined form and straightforward controls enable troopers to swiftly and efficiently engage targets, embodying the regiment's commitment to efficiency in the face of unrelenting conflict.\n\nAdorned with the iconic insignia of the Death Korps of Krieg, the Lucius MKI is not merely a weapon but a symbol of the regiment's unyielding resolve and willingness to sacrifice for the glory of the Imperium in the tumultuous galaxy of Warhammer 40,000.</description>
+        <graphicData>
+            <drawSize>1.2</drawSize>
+            <texPath>Weapons/Lucius MKI</texPath>
+        </graphicData>
+        <statBases>
+            <WorkToMake>22000</WorkToMake>
+            <Mass>3.8</Mass>
+            <AccuracyTouch>0.65</AccuracyTouch>
+            <AccuracyShort>0.80</AccuracyShort>
+            <AccuracyMedium>0.90</AccuracyMedium>
+            <AccuracyLong>0.80</AccuracyLong>
+            <RangedWeapon_Cooldown>2.40</RangedWeapon_Cooldown>
+        </statBases>
+        <costList>
+            <Steel>110</Steel>
+            <ComponentIndustrial>16</ComponentIndustrial>
+        </costList>
+        <weaponClasses>
+            <li>LongShots</li>
+        </weaponClasses>
+        <weaponTags>
+            <li>SpacerGun</li>
+        </weaponTags>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>VWEL_Bullet_Lasbolttwo</defaultProjectile>
+                <warmupTime>2.5</warmupTime>
+                <range>37.0</range>
+                <ticksBetweenBurstShots>12</ticksBetweenBurstShots>
+                <burstShotCount>1</burstShotCount>
+                <soundCast>GW_AM_Gun_Lucius</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>12</muzzleFlashScale>
+            </li>
+        </verbs>
+        <tools>
+            <li>
+                <label>stock</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+            <li>
+                <label>barrel</label>
+                <capacities>
+                    <li>Blunt</li>
+                    <li>Poke</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+        </tools>
+    </ThingDef>
+  
+  <!-- ====================== Kantrael MG Defender  ===================== -->
+  
+    <ThingDef ParentName="GW_AM_LasgunBase">
+        <defName>GW_AM_Gun_Kantraeldefender</defName>
+        <label>Kantrael MG Defender</label>
+        <description>The Kantrael MG Defender, an esteemed weapon wielded by the officers of the Cadian Shock Troopers, exemplifies the disciplined and battle-hardened nature of the Cadian regiments within the expansive Warhammer 40,000 universe.\n\nCrafted to meet the exacting standards of Cadian military excellence, the Kantrael MG Defender serves as a symbol of the regiment's commitment to unyielding defense and unwavering loyalty to the Imperium. Its robust design reflects the harsh conditions of the Cadian sector, where unrelenting warfare is a constant reality.\n\nThe Kantrael MG Defender boasts a formidable presence on the battlefield, featuring a heavy-duty construction that ensures reliability in the face of relentless combat. Engineered for defensive maneuvers, this heavy machine gun delivers a sustained hail of suppressive fire, allowing Cadian Shock Troopers to hold strategic positions and repel enemy advances with steadfast determination.\n\nEquipped with a precision targeting system, the Kantrael MG Defender enables Cadian officers to direct their troops with lethal efficiency. The weapon's advanced optics and enhanced stability contribute to its accuracy, making it a valuable asset in the hands of Cadian Shock Trooper leaders during intense firefights.\n\nThe iconic Cadian color scheme and regimental insignia adorn the Kantrael MG Defender, underscoring its affiliation with the disciplined ranks of the Cadian Shock Troopers. As a weapon of authority and command, the Kantrael MG Defender reinforces the leadership's role in orchestrating the strategic brilliance for which the Cadian regiments are renowned.\n\nIn the tumultuous galaxy of Warhammer 40,000, the Kantrael MG Defender stands as a testament to the Cadian Shock Troopers' indomitable spirit and their commitment to standing firm against the myriad threats that imperil the Imperium.</description>
+        <graphicData>
+            <texPath>Weapons/Kantrael MG Defender</texPath>
+        </graphicData>
+        <uiIconScale>1.5</uiIconScale>
+        <soundInteract>Interact_Autopistol</soundInteract>
+        <recipeMaker>
+            <skillRequirements>
+                <Crafting>7</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+        <weaponTags>
+            <li>SpacerGun</li>
+            <li>Autopistol</li>
+        </weaponTags>
+        <weaponClasses>
+            <li>RangedLight</li>
+        </weaponClasses>
+        <statBases>
+            <WorkToMake>14000</WorkToMake>
+            <Mass>1.6</Mass>
+            <AccuracyTouch>0.78</AccuracyTouch>
+            <AccuracyShort>0.76</AccuracyShort>
+            <AccuracyMedium>0.40</AccuracyMedium>
+            <AccuracyLong>0.30</AccuracyLong>
+            <RangedWeapon_Cooldown>1.00</RangedWeapon_Cooldown>
+        </statBases>
+		<equippedStatOffsets>
+            <MoveSpeed>0.10</MoveSpeed>
+        </equippedStatOffsets>
+        <costList>
+            <Steel>120</Steel>
+            <ComponentIndustrial>6</ComponentIndustrial>
+        </costList>
+        <verbs>
+        <li>
+            <verbClass>Verb_Shoot</verbClass>
+            <hasStandardCommand>true</hasStandardCommand>
+            <defaultProjectile>VWEL_Bullet_Lasboltsmall</defaultProjectile>
+            <warmupTime>0.3</warmupTime>
+            <range>24.0</range>
+            <soundCast>GW_AM_Gun_Kantraeldefender</soundCast>
+            <soundCastTail>GunTail_Heavy</soundCastTail>
+            <muzzleFlashScale>9</muzzleFlashScale>
+        </li>
+        </verbs>
+        <tools>
+            <li>
+                <label>grip</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+            <li>
+                <label>barrel</label>
+                <capacities>
+                    <li>Blunt</li>
+                    <li>Poke</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+        </tools>
+    </ThingDef>
+  
+  <!-- ====================== Kantrael MG-t Defender  ===================== -->
+  
+    <ThingDef ParentName="GW_AM_LasgunBase">
+        <defName>GW_AM_Gun_Kantraeldefendert</defName>
+        <label>Kantrael MG-t Defender</label>
+        <description>The Kantrael MG-t Defender, a distinctive sidearm employed on the war-torn world of Tertium, epitomizes the adaptability and resilience of the forces fighting in the harsh environments within the expansive Warhammer 40,000 universe.\n\nDesigned to complement the diverse combat scenarios encountered on Tertium, the Kantrael MG-t Defender serves as a formidable secondary weapon for individuals operating in the unpredictable and challenging landscapes of the planet. Its compact size and versatile functionality make it well-suited for the close-quarters engagements and rapid response required in Tertium's dynamic theaters of war.\n\nThe Kantrael MG-t Defender boasts a sleek and streamlined design, allowing for ease of carry and maneuverability in Tertium's varied terrains. Despite its smaller frame, this pistol maintains the robust construction and firepower characteristic of its larger counterparts, providing a reliable means of self-defense for those navigating the perils of Tertium's battlegrounds.\n\nFeaturing specialized modifications for Tertium's distinct challenges, the Kantrael MG-t Defender excels in delivering controlled bursts of firepower. Its quick-draw capabilities and rapid target acquisition make it a preferred sidearm for individuals navigating the intricate urban landscapes or confronting adversaries in the dense and hazardous environments that define Tertium's combat zones.\n\nThe pistol bears markings and embellishments reflective of Tertium's unique culture and the gritty resilience of its fighters. Whether wielded by local defenders or interstellar warriors adapting to the planet's demands, the Kantrael MG-t Defender embodies the fusion of cutting-edge technology and practical design required to navigate the perilous battlegrounds of Tertium.\n\nIn the tumultuous expanse of Warhammer 40,000, the Kantrael MG-t Defender stands as a symbol of adaptability, offering a potent sidearm solution tailored to the challenges presented by Tertium's war-ravaged landscapes.</description>
+        <graphicData>
+            <texPath>Weapons/Kantrael MG-t Defender</texPath>
+        </graphicData>
+        <uiIconScale>1.5</uiIconScale>
+        <soundInteract>Interact_Autopistol</soundInteract>
+        <recipeMaker>
+            <skillRequirements>
+                <Crafting>7</Crafting>
+            </skillRequirements>
+            <displayPriority>405</displayPriority>
+        </recipeMaker>
+        <weaponTags>
+            <li>SpacerGun</li>
+            <li>Autopistol</li>
+        </weaponTags>
+        <weaponClasses>
+            <li>RangedLight</li>
+        </weaponClasses>
+        <statBases>
+            <WorkToMake>14500</WorkToMake>
+            <Mass>1.6</Mass>
+            <AccuracyTouch>0.78</AccuracyTouch>
+            <AccuracyShort>0.76</AccuracyShort>
+            <AccuracyMedium>0.40</AccuracyMedium>
+            <AccuracyLong>0.30</AccuracyLong>
+            <RangedWeapon_Cooldown>0.80</RangedWeapon_Cooldown>
+        </statBases>
+		<equippedStatOffsets>
+            <MoveSpeed>0.10</MoveSpeed>
+        </equippedStatOffsets>
+        <costList>
+            <Steel>110</Steel>
+            <ComponentIndustrial>7</ComponentIndustrial>
+        </costList>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>VWEL_Bullet_Lasboltsmall</defaultProjectile>
+                <warmupTime>0.3</warmupTime>
+                <range>24.0</range>
+                <soundCast>GW_AM_Gun_Kantraeldefender</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+        <tools>
+            <li>
+                <label>grip</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+            <li>
+                <label>barrel</label>
+                <capacities>
+                    <li>Blunt</li>
+                    <li>Poke</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+        </tools>
+    </ThingDef>
+  
+  <!-- ====================== Ryza Hellgun  ===================== -->
+
+    <ThingDef ParentName="GW_AM_LasgunBase">
+        <defName>GW_AM_Gun_Hellgun</defName>
+        <label>Ryza Hellgun</label>
+        <description>The Ryza Hellgun, a potent and iconic firearm, is emblematic of the advanced technology and formidable firepower harnessed by the Astra Militarum forces associated with the Forge World of Ryza in the expansive Warhammer 40,000 universe.\n\nCrafted with precision and superior engineering, the Ryza Hellgun stands as a testament to the technological prowess of Ryza's adeptus mechanicus. This rapid-firing, energy-based weapon is designed to deliver devastating bursts of focused energy projectiles, making it a preferred choice for Astra Militarum troopers facing a diverse array of adversaries.\n\nThe Ryza Hellgun's distinctive design incorporates advanced plasma technology, channeling the raw power of plasma energy into lethal bolts that can penetrate a variety of armored targets. This makes it a versatile and effective tool on the battlefield, capable of engaging both infantry and heavily armored foes with equal ferocity.\n\nAdorned with the heraldry and symbols of Ryza, the Hellgun serves not only as a powerful tool of war but also as a symbol of the forge world's contribution to the Imperium's military might. The weapon's sleek lines, reinforced construction, and expert craftsmanship reflect the meticulous care taken by Ryza's tech-priests in ensuring the reliability and efficiency of each Hellgun produced.\n\nWielded by the disciplined soldiers of the Astra Militarum, the Ryza Hellgun embodies the fusion of cutting-edge technology and martial strength, making it a formidable asset in the ceaseless conflicts of the grim darkness of the 41st millennium. Whether deployed in the defense of the Imperium or as part of an advancing infantry line, the Ryza Hellgun stands ready to unleash the fiery wrath of Ryza upon the enemies of humanity.</description>
+        <graphicData>
+            <texPath>Weapons/Hellgun</texPath>
+        </graphicData>
+        <statBases>
+            <WorkToMake>32000</WorkToMake>
+            <Mass>7.4</Mass>
+            <AccuracyTouch>0.40</AccuracyTouch>
+            <AccuracyShort>0.48</AccuracyShort>
+            <AccuracyMedium>0.35</AccuracyMedium>
+            <AccuracyLong>0.26</AccuracyLong>
+            <RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
+        </statBases>
+		<equippedStatOffsets>
+            <MoveSpeed>-0.20</MoveSpeed>
+        </equippedStatOffsets>
+        <recipeMaker>
+            <skillRequirements>
+                <Crafting>9</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+        <costList>
+            <Steel>150</Steel>
+            <ComponentIndustrial>12</ComponentIndustrial>
+        </costList>
+        <thingSetMakerTags>
+            <li>RewardStandardQualitySuper</li>
+        </thingSetMakerTags>
+        <weaponClasses>
+            <li>RangedHeavy</li>
+        </weaponClasses>
+        <weaponTags>
+            <li>SpacerGun</li>
+        </weaponTags>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>VWEL_Bullet_Hellbolt</defaultProjectile>
+                <warmupTime>1.20</warmupTime>
+                <range>25.0</range>
+                <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+                <burstShotCount>12</burstShotCount>
+                <soundCast>GW_AM_Gun_Hellgun</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>12</muzzleFlashScale>
+            </li>
+        </verbs>
+        <tools>
+            <li>
+                <label>stock</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+            <li>
+                <label>barrel</label>
+                <capacities>
+                    <li>Blunt</li>
+                    <li>Poke</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+        </tools>
+    </ThingDef>
+  
+  <!-- ====================== Locke MKI  ===================== -->
+
+    <ThingDef ParentName="GW_AM_LasgunBase">
+        <defName>GW_AM_Gun_Locke</defName>
+        <label>Locke MKI</label>
+        <description>The Locke MKI Lightweight Lascarbine, a sleek and nimble firearm, represents a compact yet deadly addition to the armory of Astra Militarum forces in the grim and war-torn galaxy of Warhammer 40,000.\n\nEngineered for agility and versatility, the Locke MKI is designed to provide Astra Militarum troopers with a lightweight yet potent ranged option. Its compact frame and reduced weight make it an ideal choice for mobile warfare, allowing soldiers to maintain speed and agility without sacrificing firepower.\n\nThe Locke MKI Lascarbine features a streamlined design, incorporating advanced materials and ergonomic considerations. The weapon's shortened barrel and overall compact profile make it easy to wield in tight quarters and well-suited for urban combat scenarios.\n\nDespite its reduced size, the Locke MKI doesn't compromise on stopping power. Utilizing energy-based projectiles, this carbine delivers precise and rapid bursts of firepower, making it effective against a variety of targets, from enemy infantry to lightly armored foes.\n\nEmblazoned with the markings and heraldry of the Astra Militarum, the Locke MKI reflects the adaptability and resourcefulness required in the unforgiving battles of the 41st millennium. Whether carried by scouting units, reconnaissance teams, or specialized infantry forces, the Locke MKI Lightweight Lascarbine stands as a testament to the Imperium's commitment to arming its soldiers with cutting-edge technology.\n\nIn the hands of the brave men and women of the Astra Militarum, the Locke MKI serves as a symbol of resilience and adaptability, embodying the Imperium's determination to face the myriad threats that assail it from every corner of the galaxy.</description>
+        <graphicData>
+            <texPath>Weapons/Locke MKI</texPath>
+        </graphicData>
+        <statBases>
+            <WorkToMake>19400</WorkToMake>
+            <Mass>3.3</Mass>
+            <AccuracyTouch>0.63</AccuracyTouch>
+            <AccuracyShort>0.80</AccuracyShort>
+            <AccuracyMedium>0.90</AccuracyMedium>
+            <AccuracyLong>0.80</AccuracyLong>
+            <RangedWeapon_Cooldown>1.3</RangedWeapon_Cooldown>
+        </statBases>
+        <costList>
+            <Steel>110</Steel>
+            <ComponentIndustrial>7</ComponentIndustrial>
+        </costList>
+        <weaponClasses>
+            <li>LongShots</li>
+        </weaponClasses>
+        <weaponTags>
+            <li>SpacerGun</li>
+        </weaponTags>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>VWEL_Bullet_Lasbolt</defaultProjectile>
+                <warmupTime>0.80</warmupTime>
+                <range>35.0</range>
+                <ticksBetweenBurstShots>12</ticksBetweenBurstShots>
+                <burstShotCount>1</burstShotCount>
+                <soundCast>GW_AM_Gun_Locke</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>12</muzzleFlashScale>
+            </li>
+        </verbs>
+        <tools>
+            <li>
+                <label>stock</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+            <li>
+                <label>barrel</label>
+                <capacities>
+                    <li>Blunt</li>
+                    <li>Poke</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+        </tools>
+    </ThingDef>
+  
+  <!-- ====================== Longlas  ===================== -->
+
+    <ThingDef ParentName="GW_AM_LasgunBase">
+        <defName>GW_AM_Gun_Longlas</defName>
+        <label>Longlas</label>
+        <description>The Longlas, a lasgun variant transformed into a precision sniper rifle, stands as a testament to the Astra Militarum's commitment to adapting their weaponry for long-range precision engagements in the grim and perilous battles of the Warhammer 40,000 universe.\n\nCrafted with meticulous attention to detail, the Longlas combines the reliability of the standard lasgun with specialized modifications tailored for sniper roles. The weapon features an extended barrel for enhanced accuracy, a high-powered optic system for superior target acquisition, and additional stabilization mechanisms to reduce recoil during precise shots.\n\nThe Longlas excels in providing accurate and lethal firepower at extended ranges, making it an ideal choice for marksmen and sharpshooters within the Astra Militarum ranks. Its energy-based projectiles offer consistent performance without the need for conventional ammunition, ensuring troopers can maintain a sustained rate of fire without the logistical challenges associated with traditional sniper rifles.\n\nAdorned with the symbols and regalia of the Astra Militarum, the Longlas embodies the discipline and skill required for precision marksmanship in the service of the Imperium. Deployed in the hands of specially trained snipers, this lasgun variant plays a crucial role in eliminating high-value targets, disrupting enemy formations, and providing cover fire for advancing Astra Militarum forces.\n\nIn the unrelenting warfare of Warhammer 40,000, the Longlas stands as a symbol of the Imperium's adaptability, using technology and innovation to overcome the myriad threats that plague the galaxy. Whether deployed in urban environments, open battlefields, or hostile alien landscapes, the Longlas serves as a deadly tool in the arsenal of the Astra Militarum, striking fear into the hearts of those who dare oppose the might of the Imperium of Man.</description>
+        <graphicData>
+            <drawSize>1.2</drawSize>
+            <texPath>Weapons/LongLas</texPath>
+        </graphicData>
+        <statBases>
+            <WorkToMake>22000</WorkToMake>
+            <Mass>4</Mass>
+            <AccuracyTouch>0.43</AccuracyTouch>
+            <AccuracyShort>0.62</AccuracyShort>
+            <AccuracyMedium>0.86</AccuracyMedium>
+            <AccuracyLong>0.92</AccuracyLong>
+            <RangedWeapon_Cooldown>2.0</RangedWeapon_Cooldown>
+        </statBases>
+        <recipeMaker>
+            <researchPrerequisite>GW_AM_RatlingIntegration</researchPrerequisite>
+        </recipeMaker>
+        <costList>
+            <Steel>140</Steel>
+            <ComponentIndustrial>18</ComponentIndustrial>
+        </costList>
+        <weaponClasses>
+            <li>LongShots</li>
+            <li>RangedHeavy</li>
+        </weaponClasses>
+        <weaponTags>
+            <li>SpacerGun</li>
+            <li>GW_AM_LongLas</li>
+        </weaponTags>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>VWEL_Bullet_Lasbolttwo</defaultProjectile>
+                <warmupTime>3.2</warmupTime>
+                <range>46</range>
+                <ticksBetweenBurstShots>12</ticksBetweenBurstShots>
+                <burstShotCount>1</burstShotCount>
+                <soundCast>GW_AM_Gun_Longlas</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>12</muzzleFlashScale>
+            </li>
+        </verbs>
+        <tools>
+            <li>
+                <label>stock</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
+                </li>
+            <li>
+                <label>barrel</label>
+                <capacities>
+                    <li>Blunt</li>
+                    <li>Poke</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+        </tools>
+    </ThingDef>
+</Defs>

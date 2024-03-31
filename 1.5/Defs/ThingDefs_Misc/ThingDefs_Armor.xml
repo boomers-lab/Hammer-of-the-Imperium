@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <ThingDef Abstract="true" Name="GW_AM_ArmorBase" ParentName="ArmorMachineableBase">
+        <techLevel>Industrial</techLevel>
+		<recipeMaker>
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+			<recipeUsers Inherit="false">
+				<li>GW_AM_MilitarumArmorBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+            <drawSize>1.2</drawSize>
+		</graphicData>
+		<uiIconScale>1.6</uiIconScale>
+		<thingCategories>
+			<li>ApparelArmor</li>
+		</thingCategories>
+        <tradeTags>
+            <li>HPArmor</li>
+            <li>GW_AM_Armor</li>
+        </tradeTags>
+        <statBases>
+            <Flammability>0.6</Flammability>
+        </statBases>
+		<apparel>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<bodyPartGroups>
+                <li>Torso</li>
+                <li>Shoulders</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Middle</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+    </ThingDef>
+
+            <!-- Tempestus Scions Carapace Armor  -->
+
+    <ThingDef ParentName="GW_AM_ArmorBase">
+        <defName>ODZ_40k_IM_TempestusScion_CarapaceArmor</defName>
+        <label>Tempestus Scion carapace</label>
+        <description>Tempestus Scion Carapace:\n\n Exemplifying the pinnacle of elite protection, the Tempestus Scion Carapace is the pinnacle of the Militarum Tempestus arsenal. Meticulously designed and expertly crafted, this armor represents the cutting edge of defensive technology. Its sleek and imposing silhouette combines form with function, providing unparalleled resilience on the battlefield. Worn exclusively by the elite Tempestus Scions, this carapace armor symbolizes the unwavering commitment to excellence and the unrelenting pursuit of victory in the relentless warfare of the Warhammer 40,000 universe.</description>
+        <recipeMaker>
+            <researchPrerequisite>GW_AM_TempestusScions</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>9</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+        <graphicData>
+            <texPath>Things/TempestusScions/Middle/CarapaceArmor_Male_south</texPath>
+        </graphicData>
+        <statBases>
+            <WorkToMake>25000</WorkToMake>
+            <MaxHitPoints>250</MaxHitPoints>
+            <Mass>7</Mass>
+            <ArmorRating_Sharp>1.10</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.45</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.65</ArmorRating_Heat>
+            <Insulation_Cold>30.0</Insulation_Cold>
+			<Insulation_Heat>8.0</Insulation_Heat>
+            <EquipDelay>6</EquipDelay>
+        </statBases>
+		<equippedStatOffsets>
+            <MoveSpeed>-0.1</MoveSpeed>
+        </equippedStatOffsets>
+        <costStuffCount>90</costStuffCount>		
+        <costList>
+			<Steel>100</Steel>
+            <DevilstrandCloth>10</DevilstrandCloth>
+        </costList>	
+        <apparel>
+			<bodyPartGroups>
+				<li>Arms</li>
+				<li>Legs</li>
+				<li MayRequire="ceteam.combatextended">Hands</li>
+				<li MayRequire="ceteam.combatextended">Feet</li>
+			</bodyPartGroups>
+            <wornGraphicPath>Things/TempestusScions/Middle/CarapaceArmor</wornGraphicPath>
+            <tags>
+                <li>EVA</li>
+                <li>40kTempestusScion</li>
+                <li>40kTempestusScionArmor</li>
+            </tags>
+        </apparel>
+	    <modExtensions>
+            <li Class="CombatExtended.PartialArmorExt" MayRequire="ceteam.combatextended">
+                <stats>		  				  
+                    <li>
+                        <ArmorRating_Sharp>0.7</ArmorRating_Sharp>
+                        <parts>
+                            <li>Hand</li>
+                        </parts>
+                    </li>
+                    <li>
+                        <ArmorRating_Blunt>0.7</ArmorRating_Blunt>
+                        <parts>
+                            <li>Hand</li>
+                        </parts>
+                    </li>
+                </stats>
+            </li>
+	    </modExtensions>
+    </ThingDef>  
+  
+            <!-- Krieger Flak Armor  -->
+
+    <ThingDef ParentName="GW_AM_ArmorBase">
+        <defName>ODZ_40k_IG_DKOK_GrenadierArmor</defName>
+        <label>Death Korps grenadier armor</label>
+        <description>Krieger Flak Armor:\n\n Forged in the foundries of Krieg, the Flak Armor worn by the Death Korps Grenadiers is an embodiment of resilience and stoic determination. Imposing in its design, this battle-worn armor offers exceptional protection against the relentless threats of the 41st millennium. Crafted with precision and a commitment to duty, the Krieger Flak Armor symbolizes the unyielding spirit of those who march steadfastly into the grim darkness of war. Worn proudly by the elite, it stands as a formidable bulwark against the perils of the battlefield in Warhammer 40,000.</description>
+        <techLevel>Industrial</techLevel>
+        <recipeMaker>
+            <researchPrerequisite>GW_AM_DeathKorpsOfKrieg</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>8</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+        <graphicData>
+            <texPath>Things/DeathKorps/Middle/GrenadierArmor_Male_south</texPath>
+        </graphicData>
+        <statBases>
+            <WorkToMake>9000</WorkToMake>
+            <MaxHitPoints>200</MaxHitPoints>
+            <Mass>5</Mass>
+            <ArmorRating_Sharp>1.0</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.38</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.60</ArmorRating_Heat>
+            <Insulation_Cold>1</Insulation_Cold>
+            <EquipDelay>3</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <MoveSpeed>-0.2</MoveSpeed>
+        </equippedStatOffsets>
+		<costList>
+            <Steel>100</Steel>
+        </costList>		
+        <apparel>
+            <wornGraphicPath>Things/DeathKorps/Middle/GrenadierArmor</wornGraphicPath>
+            <tags>
+                <li>40kDeathKorps</li>
+                <li>40kDeathKorpsArmor</li>
+            </tags>
+        </apparel>
+    </ThingDef>
+
+  
+            <!-- Catachan Armor  -->
+
+    <ThingDef ParentName="GW_AM_ArmorBase">
+        <defName>GW_AM_CatachanArmor</defName>
+        <label>Catachan armor</label>
+        <description>Catachan Armor:\n\n Forged in the crucible of Catachan, this battle-tested armor is the embodiment of survival and tenacity in the harshest of landscapes. Engineered for the fearless Catachan Jungle Fighters, it seamlessly blends rugged durability with the agility required in dense jungles. The camouflage patterns not only provide effective concealment but also signify a warrior's ability to adapt and thrive in the perilous war zones. Worn with pride, the Catachan Armor symbolizes the unyielding spirit of those who navigate the lethal theatres of Warhammer 40,000, ready to face any challenge head-on.</description>
+        <techLevel>Industrial</techLevel>
+        <recipeMaker>
+            <researchPrerequisite>GW_AM_Catachan</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>8</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+        <graphicData>
+            <texPath>Things/Catachan/CatachanMid/CatachanMiddle_Male_south</texPath>
+            <drawSize>1.5</drawSize>
+        </graphicData>
+        <statBases>
+            <WorkToMake>9000</WorkToMake>
+            <MaxHitPoints>200</MaxHitPoints>
+            <Mass>4.5</Mass>
+            <ArmorRating_Sharp>0.8</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.3</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.60</ArmorRating_Heat>
+			<Insulation_Heat>1</Insulation_Heat>
+            <EquipDelay>3</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <MoveSpeed>0.1</MoveSpeed>
+        </equippedStatOffsets>
+		<costList>
+            <Steel>90</Steel>
+        </costList>		
+        <apparel>
+            <wornGraphicPath>Things/Catachan/CatachanMid/CatachanMiddle</wornGraphicPath>
+            <tags>
+                <li>40kCatachan</li>
+                <li>40kCatachanArmor</li>
+            </tags>
+        </apparel>
+    </ThingDef>
+
+            <!-- Cadian Flak Armor  -->
+
+    <ThingDef ParentName="GW_AM_ArmorBase">
+        <defName>ODZ_40k_IG_Cadian_FlakArmor</defName>
+        <label>Cadian flak armor</label>
+        <description>Cadian Flak Armor:\n\n The hallmark of the stalwart defenders of the Imperium, Cadian Flak Armor is a testament to both reliability and resilience. Crafted for the valiant soldiers of Cadia, this battle-tested armor strikes a balance between durability and mobility on the grim battlefields of Warhammer 40,000. The distinctive design not only offers superior protection but also stands as a symbol of the unyielding resolve of the Cadian Shock Troops. Worn with pride, the Cadian Flak Armor embodies the indomitable spirit of those who stand guard against the encroaching darkness, ready to face the myriad threats that assail the Imperium.</description>
+        <recipeMaker>
+            <researchPrerequisite>GW_AM_MilitariumArmor</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>8</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+        <graphicData>
+            <texPath>Things/Cadian/Middle/FlakArmor_Male_south</texPath>
+        </graphicData>
+        <statBases>
+            <WorkToMake>9000</WorkToMake>
+            <MaxHitPoints>250</MaxHitPoints>
+            <Mass>5</Mass>
+            <ArmorRating_Sharp>1.0</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.36</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.60</ArmorRating_Heat>
+            <Insulation_Cold>1</Insulation_Cold>
+            <EquipDelay>3</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <MoveSpeed>-0.2</MoveSpeed>
+        </equippedStatOffsets>
+        <costList>
+            <Steel>100</Steel>
+        </costList>	
+        <apparel>
+            <wornGraphicPath>Things/Cadian/Middle/FlakArmor</wornGraphicPath>
+            <tags>
+                <li>40kCadianGuard</li>
+                <li>40kCadianArmor</li>
+            </tags>
+        </apparel>
+    </ThingDef>
+  
+            <!-- Kasrkin Flak Armor  -->
+
+    <ThingDef ParentName="GW_AM_ArmorBase">
+        <defName>ODZ_40k_IG_CadianKasrkin_FlakArmor</defName>
+        <label>Kasrkin flak armor</label>
+        <description>Kasrkin Flak Armor:\n\n The pinnacle of elite protection within the Militarum Tempestus, the Kasrkin Flak Armor is a masterpiece of defensive engineering. Meticulously designed for the elite forces, it combines cutting-edge technology with the sleek aesthetic befitting the finest warriors of the Imperium. This armor not only provides impeccable defense against varied threats but also signifies the elevated status of its wearers – the elite Kasrkin forces. Worn with pride and purpose, the Kasrkin Flak Armor stands as an iconic symbol of excellence on the unforgiving battlefields of Warhammer 40,000.</description>
+        <recipeMaker>
+            <researchPrerequisite>GW_AM_CadianShockTroops</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>9</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+        <graphicData>
+            <texPath>Things/Cadian/Middle/KasrkinFlakArmor_Male_south</texPath>
+        </graphicData>
+        <statBases>
+            <WorkToMake>12000</WorkToMake>
+            <MaxHitPoints>280</MaxHitPoints>
+            <Mass>6</Mass>
+            <ArmorRating_Sharp>1.00</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.45</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.62</ArmorRating_Heat>
+            <Insulation_Cold>28.0</Insulation_Cold>
+			<Insulation_Heat>7</Insulation_Heat>
+            <EquipDelay>6</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <MoveSpeed>-0.1</MoveSpeed>
+        </equippedStatOffsets>
+		<costList>
+			<Steel>90</Steel>
+            <DevilstrandCloth>10</DevilstrandCloth>
+        </costList>
+        <apparel>
+            <bodyPartGroups>
+                <li>Legs</li>
+                <li>Arms</li>
+				<li MayRequire="ceteam.combatextended">Hands</li>
+				<li MayRequire="ceteam.combatextended">Feet</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Things/Cadian/Middle/KasrkinFlakArmor</wornGraphicPath>
+            <tags>
+                <li>40kCadianGuard</li>
+                <li>40kKasrkinArmor</li>
+            </tags>
+        </apparel>
+	    <modExtensions>
+            <li Class="CombatExtended.PartialArmorExt" MayRequire="ceteam.combatextended">
+                <stats>		  				  
+                    <li>
+                        <ArmorRating_Sharp>0.7</ArmorRating_Sharp>
+                        <parts>
+                            <li>Hand</li>
+                        </parts>
+                    </li>
+                    <li>
+                        <ArmorRating_Blunt>0.7</ArmorRating_Blunt>
+                        <parts>
+                            <li>Hand</li>
+                        </parts>
+                    </li>
+                </stats>
+            </li>
+	    </modExtensions>
+    </ThingDef>  
+
+            <!-- Tallarn Desert Raiders -->
+	<ThingDef ParentName="GW_AM_ArmorBase">
+		<defName>GW_AM_TDR_DesertGear</defName>
+		<label>Tallarn desert gear</label>
+		<description>Tallarn desert gear:\n\n Crafted for survival in the arid expanses of the 41st millennium, the Tallarn Desert Gear is a testament to adaptability and resilience. Meticulously designed for the renowned Tallarn Desert Raiders, this specialized attire seamlessly blends functionality with comfort. Its lightweight construction allows for swift and agile maneuvers, while the desert camouflage pattern provides effective concealment in the shifting sands. Worn proudly by those who navigate the harsh deserts of Warhammer 40,000, the Tallarn Desert Gear signifies the unwavering determination and resourcefulness of the warriors defending humanity against the galactic threats.</description>
+		<recipeMaker>
+			<researchPrerequisite>GW_AM_TallarnDesertRaiders</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Tallarn/Middle/DesertGear_Male_south</texPath>
+		</graphicData>
+		<statBases>
+			<WorkToMake>9000</WorkToMake>
+			<MaxHitPoints>175</MaxHitPoints>
+			<Mass>5</Mass>
+			<ArmorRating_Sharp>1.00</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.36</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.40</ArmorRating_Heat>
+			<Insulation_Cold>0.10</Insulation_Cold>
+			<EquipDelay>5</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<CarryingCapacity>30</CarryingCapacity>
+            <MoveSpeed>-0.02</MoveSpeed>
+		</equippedStatOffsets>
+		<costList>
+			<Cloth>50</Cloth>
+			<Steel>60</Steel>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<apparel>
+            <bodyPartGroups>
+                <li>Neck</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Tallarn/Middle/DesertGear</wornGraphicPath>
+			<tags>
+                <li>40kTallarnDesertRaiders</li>
+                <li>40kTallarnDesertRaidersArmor</li>
+            </tags>
+		</apparel>
+	</ThingDef>
+
+            <!-- Valhallan Flak Armor  -->
+
+    <ThingDef ParentName="GW_AM_ArmorBase">
+        <defName>GW_AM_Valhallan_Armor</defName>
+        <label>Valhallan flak armor</label>
+        <description>Valhallan Flak Armor:\n\n Fashioned for the resilient soldiers of the Valhallan Ice Warriors, this robust armor stands as a bulwark against the biting cold of the harshest environments. Crafted with precision for the frigid battlefields, the Valhallan Flak Armor offers superior protection without compromising mobility. Its distinctive design reflects the utilitarian ethos of the Valhallan regiment, embodying the indomitable spirit of those who brave the icy frontiers of Warhammer 40,000. Worn with pride, the Valhallan Flak Armor symbolizes the unyielding resolve of the warriors defending the Imperium against the chilling adversaries lurking in the grim darkness of the far future.</description>
+        <recipeMaker>
+            <researchPrerequisite>GW_AM_Valhallan</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>8</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+        <graphicData>
+            <texPath>Things/Valhallan/Middle/armor_Male_south</texPath>
+        </graphicData>
+        <statBases>
+            <WorkToMake>9000</WorkToMake>
+            <MaxHitPoints>250</MaxHitPoints>
+            <Mass>5</Mass>
+            <ArmorRating_Sharp>1.0</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.36</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.20</ArmorRating_Heat>
+            <Insulation_Cold>10</Insulation_Cold>
+            <EquipDelay>3</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <MoveSpeed>-0.1</MoveSpeed>
+        </equippedStatOffsets>
+        <costList>
+            <Steel>100</Steel>
+        </costList>	
+        <apparel>
+            <wornGraphicPath>Things/Valhallan/Middle/armor</wornGraphicPath>
+            <tags>
+                <li>40kValhallanGuard</li>
+                <li>40kValhallanArmor</li>
+            </tags>
+        </apparel>
+    </ThingDef>
+	
+		<!-- Priest Gear -->
+		
+	<ThingDef ParentName="GW_AM_ArmorBase">
+        <defName>GW_AM_PriestGear</defName>
+        <label>Priest Robe</label>
+        <description>. . .</description>
+        <recipeMaker>
+            <researchPrerequisite>GW_AM_OfficersOfAM</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>8</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+        <graphicData>
+            <texPath>Things/Priestgear/Priest</texPath>
+        </graphicData>
+        <statBases>
+            <WorkToMake>9000</WorkToMake>
+            <MaxHitPoints>250</MaxHitPoints>
+            <Mass>5</Mass>
+            <ArmorRating_Sharp>1.0</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.36</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.20</ArmorRating_Heat>
+            <Insulation_Cold>10</Insulation_Cold>
+            <EquipDelay>3</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <MentalBreakThreshold>-0.2</MentalBreakThreshold>
+            <PainShockThreshold>-0.2</PainShockThreshold>
+        </equippedStatOffsets>
+        <costList>
+            <Steel>100</Steel>
+        </costList>
+		<stuffCategories>
+			<!-- <li>Metallic</li> -->
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<costStuffCount>50</costStuffCount>
+        <apparel>
+            <wornGraphicPath>Things/Priestgear/Priest</wornGraphicPath>
+            <tags>
+                <li>40kPriest</li>
+                <li>40kPriestGear</li>
+            </tags>
+			<layers Inherit="False">
+                <li>Shell</li>
+				<li>Middle</li>
+            </layers>
+        </apparel>
+    </ThingDef>
+	
+</Defs>
