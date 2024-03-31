@@ -213,11 +213,5 @@
 			<li>HPUtility</li>
             <li>GW_AM_Utility</li>
         </tradeTags>
-		<!--<modExtensions>
-			<li Class="VFECore.ApparelDrawPosExtension">
-                <isUnifiedApparel>true</isUnifiedApparel>
-				<hideHead>false</hideHead>
-            </li>
-	    </modExtensions>-->
     </ThingDef>
 </Defs>
