@@ -1,0 +1,1095 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+            <!-- Pawn Bases -->
+    <PawnKindDef Name="GW_AM_PawnBase" Abstract="True">
+        <race>Human</race>
+        <defaultFactionType>GW_AM_AstraMilitarum</defaultFactionType>
+        <invNutrition>2.55</invNutrition>
+        <chemicalAddictionChance>0</chemicalAddictionChance>
+        <backstoryCryptosleepCommonality>0.08</backstoryCryptosleepCommonality>
+        <itemQuality>Good</itemQuality>
+        <gearHealthRange>1~1</gearHealthRange>
+        <minGenerationAge>20</minGenerationAge>
+        <maxGenerationAge>35</maxGenerationAge>
+        <combatEnhancingDrugsChance>0</combatEnhancingDrugsChance>
+        <isFighter>true</isFighter>
+        <initialWillRange>3~5</initialWillRange>
+        <initialResistanceRange>7~11</initialResistanceRange>
+        <xenotypeSet Inherit="False">
+            <xenotypeChances>
+                <Baseliner MayRequire="Ludeon.RimWorld.Biotech">999</Baseliner>
+            </xenotypeChances>
+        </xenotypeSet>
+        <useFactionXenotypes>false</useFactionXenotypes>
+        <inventoryOptions>
+            <skipChance>0.9</skipChance>
+            <subOptionsChooseOne>
+                <li>
+                    <thingDef>AdvancedMedkit</thingDef>
+                    <countRange>1</countRange>
+                </li>
+                <li>
+                    <thingDef>FieldMedkit</thingDef>
+                    <countRange>5</countRange>
+                </li>
+            </subOptionsChooseOne>
+        </inventoryOptions>
+    </PawnKindDef>
+
+        <!--Tier 1-->
+    <PawnKindDef Name="GW_AM_RangedTier1" ParentName="GW_AM_PawnBase" Abstract="True">
+        <combatPower>60</combatPower>
+        <apparelMoney>1000~1200</apparelMoney>
+        <apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
+        <weaponTags>
+            <li>HP_Autogun</li>
+            <li>GW_AM_Lasgun</li>
+        </weaponTags>
+        <weaponMoney>550~850</weaponMoney>
+        <techHediffsChance>0.04</techHediffsChance>
+        <techHediffsMoney>750~1050</techHediffsMoney>
+        <techHediffsTags>
+            <li>Simple</li>
+        </techHediffsTags>
+        <skills>
+            <li>
+                <skill>Shooting</skill>
+                <range>2~8</range>
+            </li>
+        </skills>
+        <disallowedTraits>
+            <li>Brawler</li>
+        </disallowedTraits>
+        <modExtensions>
+            <li Class="CombatExtended.LoadoutPropertiesExtension" MayRequire="ceteam.combatextended">
+			    <primaryMagazineCount>
+				    <min>3</min>
+				    <max>5</max>
+			    </primaryMagazineCount>
+				<sidearms>
+					<li>
+						<generateChance>0.5</generateChance>
+						<sidearmMoney>
+							<min>300</min>
+							<max>500</max>
+						</sidearmMoney>
+						<weaponTags>
+							<li>CE_Sidearm_Melee</li>
+						</weaponTags>
+					</li>
+				</sidearms>
+		    </li>
+        </modExtensions>
+    </PawnKindDef>
+
+    <PawnKindDef Name="GW_AM_MeleeTier1" ParentName="GW_AM_PawnBase" Abstract="True">
+        <combatPower>60</combatPower>
+        <apparelMoney>1000~1200</apparelMoney>
+        <apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
+        <weaponTags>
+            <li>GW_AM_IndustrialMelee</li>
+        </weaponTags>
+        <weaponMoney>550~850</weaponMoney>
+        <techHediffsChance>0.04</techHediffsChance>
+        <techHediffsMoney>750~1050</techHediffsMoney>
+        <techHediffsTags>
+            <li>Simple</li>
+        </techHediffsTags>
+        <skills>
+            <li>
+                <skill>Melee</skill>
+                <range>2~8</range>
+            </li>
+        </skills>
+    </PawnKindDef>
+
+        <!--Tier 2-->
+    <PawnKindDef Name="GW_AM_RangedTier2" ParentName="GW_AM_PawnBase" Abstract="True">
+        <combatPower>100</combatPower>
+        <apparelMoney>1750~2250</apparelMoney>
+        <apparelAllowHeadgearChance>0.8</apparelAllowHeadgearChance>
+        <weaponTags>
+            <li>HP_Autogun</li>
+            <li>GW_AM_Lasgun</li>
+        </weaponTags>
+        <weaponMoney>750~1250</weaponMoney>
+        <techHediffsChance>0.07</techHediffsChance>
+        <techHediffsMoney>1300~1700</techHediffsMoney>
+        <techHediffsTags>
+            <li>Simple</li>
+            <li>Advanced</li>
+        </techHediffsTags>
+        <skills>
+            <li>
+                <skill>Shooting</skill>
+                <range>6~10</range>
+            </li>
+        </skills>
+        <disallowedTraits>
+            <li>Brawler</li>
+        </disallowedTraits>
+        <modExtensions>
+            <li Class="CombatExtended.LoadoutPropertiesExtension" MayRequire="ceteam.combatextended">
+			    <primaryMagazineCount>
+				    <min>3</min>
+				    <max>5</max>
+			    </primaryMagazineCount>
+				<sidearms>
+					<li>
+						<generateChance>0.7</generateChance>
+						<sidearmMoney>
+							<min>400</min>
+							<max>700</max>
+						</sidearmMoney>
+						<weaponTags>
+							<li>CE_Sidearm_Melee</li>
+						</weaponTags>
+					</li>
+				</sidearms>
+		    </li>
+        </modExtensions>
+    </PawnKindDef>
+
+    <PawnKindDef Name="GW_AM_MeleeTier2" ParentName="GW_AM_PawnBase" Abstract="True">
+        <combatPower>100</combatPower>
+        <apparelMoney>1750~2250</apparelMoney>
+        <apparelAllowHeadgearChance>0.8</apparelAllowHeadgearChance>
+        <weaponTags>
+            <li>GW_AM_IndustrialMelee</li>
+        </weaponTags>
+        <weaponMoney>750~1250</weaponMoney>
+        <techHediffsChance>0.07</techHediffsChance>
+        <techHediffsMoney>1300~1700</techHediffsMoney>
+        <techHediffsTags>
+            <li>Simple</li>
+            <li>Advanced</li>
+        </techHediffsTags>
+        <skills>
+            <li>
+                <skill>Melee</skill>
+                <range>6~10</range>
+            </li>
+        </skills>
+    </PawnKindDef>
+
+        <!--Tier 3-->
+    <PawnKindDef Name="GW_AM_RangedTier3" ParentName="GW_AM_PawnBase" Abstract="True">
+        <combatPower>150</combatPower>
+        <apparelMoney>1500~2000</apparelMoney>
+        <weaponTags>
+            <li>GW_AM_SpacerRanged</li>
+        </weaponTags>
+        <weaponMoney>2800~3100</weaponMoney>
+        <techHediffsChance>0.1</techHediffsChance>
+        <techHediffsMoney>1800~2300</techHediffsMoney>
+        <techHediffsTags>
+            <li>Advanced</li>
+        </techHediffsTags>
+        <skills>
+            <li>
+                <skill>Shooting</skill>
+                <range>8~12</range>
+            </li>
+        </skills>
+        <disallowedTraits>
+            <li>Brawler</li>
+        </disallowedTraits>
+        <modExtensions>
+            <li Class="CombatExtended.LoadoutPropertiesExtension" MayRequire="ceteam.combatextended">
+			    <primaryMagazineCount>
+				    <min>3</min>
+				    <max>5</max>
+			    </primaryMagazineCount>
+				<sidearms>
+					<li>
+						<generateChance>0.9</generateChance>
+						<sidearmMoney>
+							<min>750</min>
+							<max>1000</max>
+						</sidearmMoney>
+						<weaponTags>
+							<li>CE_Sidearm_Melee</li>
+						</weaponTags>
+					</li>
+				</sidearms>
+		    </li>
+        </modExtensions>
+    </PawnKindDef>
+
+    <PawnKindDef Name="GW_AM_MeleeTier3" ParentName="GW_AM_PawnBase" Abstract="True">
+        <combatPower>150</combatPower>
+        <apparelMoney>2600~2900</apparelMoney>
+        <weaponTags>
+            <li>GW_AM_SpacerMelee</li>
+        </weaponTags>
+        <weaponMoney>1500~2000</weaponMoney>
+        <techHediffsChance>0.1</techHediffsChance>
+        <techHediffsMoney>2000~2500</techHediffsMoney>
+        <techHediffsTags>
+            <li>Advanced</li>
+        </techHediffsTags>
+        <skills>
+            <li>
+                <skill>Melee</skill>
+                <range>8~12</range>
+            </li>
+        </skills>
+    </PawnKindDef>
+
+            <!-- Pawns -->
+
+        <!--Cadian-->
+    <PawnKindDef ParentName="GW_AM_RangedTier1">
+        <defName>GW_AM_Cadian_RangedTier1</defName>
+        <label>cadian conscript</label>
+        <apparelTags Inherit="False">
+            <li>40kCadianGuard</li>
+        </apparelTags>
+        <apparelRequired>
+            <li>ODZ_40k_IG_Cadian_FlakArmor</li>
+            <li>ODZ_40k_IG_Cadian_Helmet</li>
+            <li>ODZ_40k_IG_Cadian_Fatigues</li>
+        </apparelRequired>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="GW_AM_MeleeTier1">
+        <defName>GW_AM_Cadian_MeleeTier1</defName>
+        <label>cadian conscript</label>
+        <apparelTags Inherit="False">
+            <li>40kCadianGuard</li>
+        </apparelTags>
+        <apparelRequired>
+            <li>ODZ_40k_IG_Cadian_FlakArmor</li>
+            <li>ODZ_40k_IG_Cadian_Helmet</li>
+            <li>ODZ_40k_IG_Cadian_Fatigues</li>
+        </apparelRequired>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="GW_AM_RangedTier2">
+        <defName>GW_AM_Cadian_RangedTier2</defName>
+        <label>cadian trooper</label>
+        <apparelTags Inherit="False">
+            <li>40kCadianGuard</li>
+        </apparelTags>
+        <apparelRequired>
+            <li>ODZ_40k_IG_Cadian_FlakArmor</li>
+            <li>ODZ_40k_IG_Cadian_Helmet</li>
+            <li>ODZ_40k_IG_Cadian_Fatigues</li>
+        </apparelRequired>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="GW_AM_MeleeTier2">
+        <defName>GW_AM_Cadian_MeleeTier2</defName>
+        <label>cadian trooper</label>
+        <apparelTags Inherit="False">
+            <li>40kCadianGuard</li>
+        </apparelTags>
+        <apparelRequired>
+            <li>ODZ_40k_IG_Cadian_FlakArmor</li>
+            <li>ODZ_40k_IG_Cadian_Helmet</li>
+            <li>ODZ_40k_IG_Cadian_Fatigues</li>
+        </apparelRequired>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="GW_AM_RangedTier3">
+        <defName>GW_AM_Cadian_RangedTier3</defName>
+        <label>cadian sergeant</label>
+        <apparelTags Inherit="False">
+            <li>40kCadianGuard</li>
+        </apparelTags>
+        <apparelRequired>
+            <li>ODZ_40k_IG_CadianKasrkin_FlakArmor</li>
+            <li>ODZ_40k_IG_CadianKasrkin_Helmet</li>
+            <li>ODZ_40k_IG_Cadian_Fatigues</li>
+        </apparelRequired>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="GW_AM_MeleeTier3">
+        <defName>GW_AM_Cadian_MeleeTier3</defName>
+        <label>cadian sergeant</label>
+        <apparelTags Inherit="False">
+            <li>40kCadianGuard</li>
+        </apparelTags>
+        <apparelRequired>
+            <li>ODZ_40k_IG_CadianKasrkin_FlakArmor</li>
+            <li>ODZ_40k_IG_CadianKasrkin_Helmet</li>
+            <li>ODZ_40k_IG_Cadian_Fatigues</li>
+        </apparelRequired>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="GW_AM_RangedTier3">
+        <defName>GW_AM_Cadian_Lieutenant</defName>
+        <label>cadian lieutenant</label>
+        <combatPower>160</combatPower>
+        <apparelMoney>4500~5000</apparelMoney>
+        <apparelTags Inherit="False">
+            <li>40kCadianGuard</li>
+        </apparelTags>
+        <apparelRequired>
+            <li>ODZ_40k_IG_Cadian_OfficerGorget</li>
+            <li>ODZ_40k_IG_CadianKasrkin_FlakArmor</li>
+            <li>ODZ_40k_IG_Cadian_CrusherCap</li>
+            <li>ODZ_40k_IG_Cadian_Fatigues</li>
+        </apparelRequired>
+        <techHediffsChance>0.3</techHediffsChance>
+    </PawnKindDef>
+
+        <!--Catachan-->
+    <PawnKindDef ParentName="GW_AM_RangedTier1">
+        <defName>GW_AM_Catachan_RangedTier1</defName>
+        <label>catachan conscript</label>
+        <apparelTags Inherit="False">
+            <li>40kCatachan</li>
+        </apparelTags>
+        <apparelRequired>
+            <li>GW_AM_CatachanArmor</li>
+            <li>GW_AM_CatachanBandana</li>
+            <li>GW_AM_CatachanFatigues</li>
+            <li>GW_AM_CatachanOuter</li>
+        </apparelRequired>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="GW_AM_MeleeTier1">
+        <defName>GW_AM_Catachan_MeleeTier1</defName>
+        <label>catachan conscript</label>
+        <apparelTags Inherit="False">
+            <li>40kCatachan</li>
+        </apparelTags>
+        <apparelRequired>
+            <li>GW_AM_CatachanArmor</li>
+            <li>GW_AM_CatachanBandana</li>
+            <li>GW_AM_CatachanFatigues</li>
+            <li>GW_AM_CatachanOuter</li>
+        </apparelRequired>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="GW_AM_RangedTier2">
+        <defName>GW_AM_Catachan_RangedTier2</defName>
+        <label>catachan trooper</label>
+        <apparelTags Inherit="False">
+            <li>40kCatachan</li>
+        </apparelTags>
+        <apparelRequired>
+            <li>GW_AM_CatachanArmor</li>
+            <li>GW_AM_CatachanBandana</li>
+            <li>GW_AM_CatachanFatigues</li>
+            <li>GW_AM_CatachanOuter</li>
+        </apparelRequired>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="GW_AM_MeleeTier2">
+        <defName>GW_AM_Catachan_MeleeTier2</defName>
+        <label>catachan trooper</label>
+        <apparelTags Inherit="False">
+            <li>40kCatachan</li>
+        </apparelTags>
+        <apparelRequired>
+            <li>GW_AM_CatachanArmor</li>
+            <li>GW_AM_CatachanBandana</li>
+            <li>GW_AM_CatachanFatigues</li>
+            <li>GW_AM_CatachanOuter</li>
+        </apparelRequired>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="GW_AM_RangedTier3">
+        <defName>GW_AM_Catachan_RangedTier3</defName>
+        <label>catachan sergeant</label>
+        <apparelTags Inherit="False">
+            <li>40kCatachan</li>
+        </apparelTags>
+        <apparelRequired>
+            <li>GW_AM_CatachanArmor</li>
+            <li>GW_AM_CatachanBandana</li>
+            <li>GW_AM_CatachanFatigues</li>
+            <li>GW_AM_CatachanOuter</li>
+        </apparelRequired>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="GW_AM_MeleeTier3">
+        <defName>GW_AM_Catachan_MeleeTier3</defName>
+        <label>catachan sergeant</label>
+        <apparelTags Inherit="False">
+            <li>40kCatachan</li>
+        </apparelTags>
+        <apparelRequired>
+            <li>GW_AM_CatachanArmor</li>
+            <li>GW_AM_CatachanBandana</li>
+            <li>GW_AM_CatachanFatigues</li>
+            <li>GW_AM_CatachanOuter</li>
+        </apparelRequired>
+    </PawnKindDef>
+
+        <!--Death Korps-->
+    <PawnKindDef ParentName="GW_AM_RangedTier1">
+        <defName>GW_AM_DeathKorps_RangedTier1</defName>
+        <label>death korps conscript</label>
+        <apparelTags Inherit="False">
+            <li>40kDeathKorps</li>
+        </apparelTags>
+        <apparelRequired>
+            <li>ODZ_40k_IG_DKOK_Gasmask</li>
+            <li>ODZ_40k_IG_DKOK_Helmet</li>
+            <li>ODZ_40k_IG_DKOK_KriegUniform</li>
+        </apparelRequired>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="GW_AM_MeleeTier1">
+        <defName>GW_AM_DeathKorps_MeleeTier1</defName>
+        <label>death korps conscript</label>
+        <apparelTags Inherit="False">
+            <li>40kDeathKorps</li>
+        </apparelTags>
+        <apparelRequired>
+            <li>ODZ_40k_IG_DKOK_Gasmask</li>
+            <li>ODZ_40k_IG_DKOK_Helmet</li>
+            <li>ODZ_40k_IG_DKOK_KriegUniform</li>
+        </apparelRequired>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="GW_AM_RangedTier2">
+        <defName>GW_AM_DeathKorps_RangedTier2</defName>
+        <label>death korps trooper</label>
+        <apparelTags Inherit="False">
+            <li>40kDeathKorps</li>
+        </apparelTags>
+        <apparelRequired>
+            <li>ODZ_40k_IG_DKOK_Gasmask</li>
+            <li>ODZ_40k_IG_DKOK_Helmet</li>
+            <li>ODZ_40k_IG_DKOK_KriegUniform</li>
+        </apparelRequired>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="GW_AM_MeleeTier2">
+        <defName>GW_AM_DeathKorps_MeleeTier2</defName>
+        <label>death korps trooper</label>
+        <apparelTags Inherit="False">
+            <li>40kDeathKorps</li>
+        </apparelTags>
+        <apparelRequired>
+            <li>ODZ_40k_IG_DKOK_Gasmask</li>
+            <li>ODZ_40k_IG_DKOK_Helmet</li>
+            <li>ODZ_40k_IG_DKOK_KriegUniform</li>
+        </apparelRequired>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="GW_AM_RangedTier3">
+        <defName>GW_AM_DeathKorps_RangedTier3</defName>
+        <label>death korps sergeant</label>
+        <apparelTags Inherit="False">
+            <li>40kDeathKorps</li>
+        </apparelTags>
+        <apparelRequired>
+            <li>ODZ_40k_IG_DKOK_GrenadierArmor</li>
+            <li>ODZ_40k_IG_DKOK_Gasmask</li>
+            <li>ODZ_40k_IG_DKOK_Helmet</li>
+            <li>ODZ_40k_IG_DKOK_KriegUniform</li>
+            <li>ODZ_40k_IG_DKOK_CombatWebbing</li>
+        </apparelRequired>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="GW_AM_MeleeTier3">
+        <defName>GW_AM_DeathKorps_MeleeTier3</defName>
+        <label>death korps sergeant</label>
+        <apparelTags Inherit="False">
+            <li>40kDeathKorps</li>
+        </apparelTags>
+        <apparelRequired>
+            <li>ODZ_40k_IG_DKOK_GrenadierArmor</li>
+            <li>ODZ_40k_IG_DKOK_Gasmask</li>
+            <li>ODZ_40k_IG_DKOK_Helmet</li>
+            <li>ODZ_40k_IG_DKOK_KriegUniform</li>
+            <li>ODZ_40k_IG_DKOK_CombatWebbing</li>
+        </apparelRequired>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="GW_AM_RangedTier3">
+        <defName>GW_AM_DeathKorps_Grenadier</defName>
+        <label>death korps grenadier</label>
+        <combatPower>160</combatPower>
+        <apparelMoney>4500~5000</apparelMoney>
+        <apparelTags Inherit="False">
+            <li>40kDeathKorps</li>
+        </apparelTags>
+        <apparelRequired>
+            <li>ODZ_40k_IG_DKOK_GrenadierArmor</li>
+            <li>ODZ_40k_IG_DKOK_GrenadierGasmask</li>
+            <li>ODZ_40k_IG_DKOK_GrenadierHelmet</li>
+            <li>ODZ_40k_IG_DKOK_KriegUniform</li>
+            <li>ODZ_40k_IG_DKOK_CombatWebbing</li>
+        </apparelRequired>
+        <techHediffsChance>0.3</techHediffsChance>
+        <weaponTags Inherit="False">
+            <li>GrenadeDestructive</li>
+        </weaponTags>
+    </PawnKindDef>
+
+        <!--Steel Legion-->
+    <PawnKindDef ParentName="GW_AM_RangedTier1">
+        <defName>GW_AM_SteelLegion_RangedTier1</defName>
+        <label>steel legion conscript</label>
+        <apparelTags Inherit="False">
+            <li>40kSteelLegion</li>
+        </apparelTags>
+        <apparelRequired>
+            <li>GW_AM_SL_GasMask</li>
+            <li>GW_AM_SL_Uniform</li>
+        </apparelRequired>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="GW_AM_MeleeTier1">
+        <defName>GW_AM_SteelLegion_MeleeTier1</defName>
+        <label>steel legion conscript</label>
+        <apparelTags Inherit="False">
+            <li>40kSteelLegion</li>
+        </apparelTags>
+        <apparelRequired>
+            <li>GW_AM_SL_GasMask</li>
+            <li>GW_AM_SL_Uniform</li>
+        </apparelRequired>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="GW_AM_RangedTier2">
+        <defName>GW_AM_SteelLegion_RangedTier2</defName>
+        <label>steel legion trooper</label>
+        <apparelTags Inherit="False">
+            <li>40kSteelLegion</li>
+        </apparelTags>
+        <apparelRequired>
+            <li>GW_AM_SL_GasMask</li>
+            <li>GW_AM_SL_Uniform</li>
+        </apparelRequired>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="GW_AM_MeleeTier2">
+        <defName>GW_AM_SteelLegion_MeleeTier2</defName>
+        <label>steel legion trooper</label>
+        <apparelTags Inherit="False">
+            <li>40kSteelLegion</li>
+        </apparelTags>
+        <apparelRequired>
+            <li>GW_AM_SL_GasMask</li>
+            <li>GW_AM_SL_Uniform</li>
+        </apparelRequired>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="GW_AM_RangedTier3">
+        <defName>GW_AM_SteelLegion_RangedTier3</defName>
+        <label>steel legion sergeant</label>
+        <apparelTags Inherit="False">
+            <li>40kSteelLegion</li>
+        </apparelTags>
+        <apparelRequired>
+            <li>GW_AM_SL_GasMask</li>
+            <li>GW_AM_SL_Uniform</li>
+        </apparelRequired>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="GW_AM_MeleeTier3">
+        <defName>GW_AM_SteelLegion_MeleeTier3</defName>
+        <label>steel legion sergeant</label>
+        <apparelTags Inherit="False">
+            <li>40kSteelLegion</li>
+        </apparelTags>
+        <apparelRequired>
+            <li>GW_AM_SL_GasMask</li>
+            <li>GW_AM_SL_Uniform</li>
+        </apparelRequired>
+    </PawnKindDef>
+
+        <!--Tallarn Desert Raiders-->
+    <PawnKindDef ParentName="GW_AM_RangedTier1">
+        <defName>GW_AM_TallarnDesertRaiders_RangedTier1</defName>
+        <label>tallarn desert raider conscript</label>
+        <apparelTags Inherit="False">
+            <li>40kTallarnDesertRaiders</li>
+        </apparelTags>
+        <apparelRequired>
+            <li>GW_AM_TDR_DesertFatigues</li>
+            <li>GW_AM_TDR_Goggles</li>
+            <li>GW_AM_TDR_DesertGear</li>
+        </apparelRequired>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="GW_AM_MeleeTier1">
+        <defName>GW_AM_TallarnDesertRaiders_MeleeTier1</defName>
+        <label>tallarn desert raider conscript</label>
+        <apparelTags Inherit="False">
+            <li>40kTallarnDesertRaiders</li>
+        </apparelTags>
+        <apparelRequired>
+            <li>GW_AM_TDR_DesertFatigues</li>
+            <li>GW_AM_TDR_Goggles</li>
+            <li>GW_AM_TDR_DesertGear</li>
+        </apparelRequired>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="GW_AM_RangedTier2">
+        <defName>GW_AM_TallarnDesertRaiders_RangedTier2</defName>
+        <label>tallarn desert raider trooper</label>
+        <apparelTags Inherit="False">
+            <li>40kTallarnDesertRaiders</li>
+        </apparelTags>
+        <apparelRequired>
+            <li>GW_AM_TDR_DesertFatigues</li>
+            <li>GW_AM_TDR_GogglesHeadwrap</li>
+            <li>GW_AM_TDR_DesertGear</li>
+        </apparelRequired>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="GW_AM_MeleeTier2">
+        <defName>GW_AM_TallarnDesertRaiders_MeleeTier2</defName>
+        <label>tallarn desert raider trooper</label>
+        <apparelTags Inherit="False">
+            <li>40kTallarnDesertRaiders</li>
+        </apparelTags>
+        <apparelRequired>
+            <li>GW_AM_TDR_DesertFatigues</li>
+            <li>GW_AM_TDR_GogglesHeadwrap</li>
+            <li>GW_AM_TDR_DesertGear</li>
+        </apparelRequired>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="GW_AM_RangedTier3">
+        <defName>GW_AM_TallarnDesertRaiders_RangedTier3</defName>
+        <label>tallarn desert raider sergeant</label>
+        <apparelTags Inherit="False">
+            <li>40kTallarnDesertRaiders</li>
+        </apparelTags>
+        <apparelRequired>
+            <li>GW_AM_TDR_DesertFatigues</li>
+            <li>GW_AM_TDR_GogglesHeadwrap</li>
+            <li>GW_AM_TDR_DesertGear</li>
+        </apparelRequired>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="GW_AM_MeleeTier3">
+        <defName>GW_AM_TallarnDesertRaiders_MeleeTier3</defName>
+        <label>tallarn desert raider sergeant</label>
+        <apparelTags Inherit="False">
+            <li>40kTallarnDesertRaiders</li>
+        </apparelTags>
+        <apparelRequired>
+            <li>GW_AM_TDR_DesertFatigues</li>
+            <li>GW_AM_TDR_GogglesHeadwrap</li>
+            <li>GW_AM_TDR_DesertGear</li>
+        </apparelRequired>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="GW_AM_RangedTier3">
+        <defName>GW_AM_TallarnDesertRaiders_Officer</defName>
+        <label>tallarn desert raider officer</label>
+        <combatPower>160</combatPower>
+        <apparelMoney>4500~5000</apparelMoney>
+        <apparelTags Inherit="False">
+            <li>40kTallarnDesertRaiders</li>
+        </apparelTags>
+        <apparelRequired>
+            <li>GW_AM_TDR_DesertFatigues</li>
+            <li>GW_AM_TDR_OfficerHeadwrap</li>
+            <li>GW_AM_TDR_DesertGear</li>
+        </apparelRequired>
+    </PawnKindDef>
+
+        <!--Tempestus Scions-->
+    <PawnKindDef ParentName="GW_AM_RangedTier1">
+        <defName>GW_AM_TempestusScion_RangedTier1</defName>
+        <label>tempestus scion conscript</label>
+        <apparelTags Inherit="False">
+            <li>40kTempestusScion</li>
+        </apparelTags>
+        <apparelRequired>
+            <li>ODZ_40k_IM_TempestusScion_Mask</li>
+            <li>ODZ_40k_IM_TempestusScion_Fatigues</li>
+        </apparelRequired>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="GW_AM_MeleeTier1">
+        <defName>GW_AM_TempestusScion_MeleeTier1</defName>
+        <label>tempestus scion conscript</label>
+        <apparelTags Inherit="False">
+            <li>40kTempestusScion</li>
+        </apparelTags>
+        <apparelRequired>
+            <li>ODZ_40k_IM_TempestusScion_Mask</li>
+            <li>ODZ_40k_IM_TempestusScion_Fatigues</li>
+        </apparelRequired>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="GW_AM_RangedTier2">
+        <defName>GW_AM_TempestusScion_RangedTier2</defName>
+        <label>tempestus scion trooper</label>
+        <apparelTags Inherit="False">
+            <li>40kTempestusScion</li>
+        </apparelTags>
+        <apparelRequired>
+            <li>ODZ_40k_IM_TempestusScion_CarapaceArmor</li>
+            <li>ODZ_40k_IM_TempestusScion_Mask</li>
+            <li>ODZ_40k_IM_TempestusScion_Fatigues</li>
+        </apparelRequired>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="GW_AM_MeleeTier2">
+        <defName>GW_AM_TempestusScion_MeleeTier2</defName>
+        <label>tempestus scion trooper</label>
+        <apparelTags Inherit="False">
+            <li>40kTempestusScion</li>
+        </apparelTags>
+        <apparelRequired>
+            <li>ODZ_40k_IM_TempestusScion_CarapaceArmor</li>
+            <li>ODZ_40k_IM_TempestusScion_Mask</li>
+            <li>ODZ_40k_IM_TempestusScion_Fatigues</li>
+        </apparelRequired>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="GW_AM_RangedTier3" Name="GW_AM_TraderBase"> <!--Uses this as a base so they have an easier time defending themselves-->
+        <defName>GW_AM_TempestusScion_RangedTier3</defName>
+        <label>tempestus scion sergeant</label>
+        <apparelTags Inherit="False">
+            <li>40kTempestusScion</li>
+        </apparelTags>
+        <apparelRequired>
+            <li>ODZ_40k_IM_TempestusScion_CarapaceArmor</li>
+            <li>ODZ_40k_IM_TempestusScion_Mask</li>
+            <li>ODZ_40k_IM_TempestusScion_Helmet</li>
+            <li>ODZ_40k_IM_TempestusScion_Fatigues</li>
+        </apparelRequired>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="GW_AM_TraderBase">
+        <defName>GW_AM_Trader</defName>
+        <label>scion trader</label>
+        <trader>true</trader>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="GW_AM_MeleeTier3">
+        <defName>GW_AM_TempestusScion_MeleeTier3</defName>
+        <label>tempestus scion sergeant</label>
+        <apparelTags Inherit="False">
+            <li>40kTempestusScion</li>
+        </apparelTags>
+        <apparelRequired>
+            <li>ODZ_40k_IM_TempestusScion_CarapaceArmor</li>
+            <li>ODZ_40k_IM_TempestusScion_Mask</li>
+            <li>ODZ_40k_IM_TempestusScion_Helmet</li>
+            <li>ODZ_40k_IM_TempestusScion_Fatigues</li>
+        </apparelRequired>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="GW_AM_RangedTier3">
+        <defName>GW_AM_TempestusScion_Officer</defName>
+        <label>tempestus scion officer</label>
+        <combatPower>160</combatPower>
+        <apparelMoney>4500~5000</apparelMoney>
+        <apparelTags Inherit="False">
+            <li>40kTempestusScion</li>
+        </apparelTags>
+        <apparelRequired>
+            <li>ODZ_40k_IM_TempestusScion_CarapaceArmor</li>
+            <li>ODZ_40k_IM_TempestusScion_Mask</li>
+            <li>ODZ_40k_IM_TempestusScion_Beret</li>
+            <li>ODZ_40k_IM_TempestusScion_Fatigues</li>
+        </apparelRequired>
+    </PawnKindDef>
+
+    <!--Mordian-->
+    <PawnKindDef ParentName="GW_AM_RangedTier1">
+        <defName>GW_AM_Mordian_RangedTier1</defName>
+        <label>mordian conscript</label>
+        <apparelTags Inherit="False">
+            <li>40kMordian</li>
+        </apparelTags>
+        <apparelRequired>
+            <li>GW_AM_MordianHat</li>
+            <li>GW_AM_Mordian_Uniform</li>
+        </apparelRequired>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="GW_AM_MeleeTier1">
+        <defName>GW_AM_Mordian_MeleeTier1</defName>
+        <label>mordian conscript</label>
+        <apparelTags Inherit="False">
+            <li>40kMordian</li>
+        </apparelTags>
+        <apparelRequired>
+            <li>GW_AM_MordianHat</li>
+            <li>GW_AM_Mordian_Uniform</li>
+        </apparelRequired>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="GW_AM_RangedTier2">
+        <defName>GW_AM_Mordian_RangedTier2</defName>
+        <label>mordian trooper</label>
+        <apparelTags Inherit="False">
+            <li>40kMordian</li>
+        </apparelTags>
+        <apparelRequired>
+            <li>GW_AM_MordianHat</li>
+            <li>GW_AM_Mordian_Uniform</li>
+        </apparelRequired>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="GW_AM_MeleeTier2">
+        <defName>GW_AM_Mordian_MeleeTier2</defName>
+        <label>mordian trooper</label>
+        <apparelTags Inherit="False">
+            <li>40kMordian</li>
+        </apparelTags>
+        <apparelRequired>
+            <li>GW_AM_MordianHat</li>
+            <li>GW_AM_Mordian_Uniform</li>
+        </apparelRequired>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="GW_AM_RangedTier3">
+        <defName>GW_AM_Mordian_RangedTier3</defName>
+        <label>mordian sergeant</label>
+        <apparelTags Inherit="False">
+            <li>40kMordian</li>
+        </apparelTags>
+        <apparelRequired>
+            <li>GW_AM_MordianHat</li>
+            <li>GW_AM_Mordian_Uniform</li>
+        </apparelRequired>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="GW_AM_MeleeTier3">
+        <defName>GW_AM_Mordian_MeleeTier3</defName>
+        <label>mordian sergeant</label>
+        <apparelTags Inherit="False">
+            <li>40kMordian</li>
+        </apparelTags>
+        <apparelRequired>
+            <li>GW_AM_MordianHat</li>
+            <li>GW_AM_Mordian_Uniform</li>
+        </apparelRequired>
+    </PawnKindDef>
+
+    <!--Vostoyan Firstborn-->
+    <PawnKindDef ParentName="GW_AM_RangedTier1">
+        <defName>GW_AM_VostoyanFirstborn_RangedTier1</defName>
+        <label>vostoyan firstborn conscript</label>
+        <apparelTags Inherit="False">
+            <li>40kVostoyanFirstborn</li>
+        </apparelTags>
+        <apparelRequired>
+            <li>GW_AM_VostoyanFirstbornHeadgear</li>
+            <li>GW_AM_VostoyanFirstborn_Uniform</li>
+        </apparelRequired>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="GW_AM_MeleeTier1">
+        <defName>GW_AM_VostoyanFirstborn_MeleeTier1</defName>
+        <label>vostoyan firstborn conscript</label>
+        <apparelTags Inherit="False">
+            <li>40kVostoyanFirstborn</li>
+        </apparelTags>
+        <apparelRequired>
+            <li>GW_AM_VostoyanFirstbornHeadgear</li>
+            <li>GW_AM_VostoyanFirstborn_Uniform</li>
+        </apparelRequired>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="GW_AM_RangedTier2">
+        <defName>GW_AM_VostoyanFirstborn_RangedTier2</defName>
+        <label>vostoyan firstborn trooper</label>
+        <apparelTags Inherit="False">
+            <li>40kVostoyanFirstborn</li>
+        </apparelTags>
+        <apparelRequired>
+            <li>GW_AM_VostoyanFirstbornHeadgear</li>
+            <li>GW_AM_VostoyanFirstborn_Uniform</li>
+        </apparelRequired>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="GW_AM_MeleeTier2">
+        <defName>GW_AM_VostoyanFirstborn_MeleeTier2</defName>
+        <label>vostoyan firstborn trooper</label>
+        <apparelTags Inherit="False">
+            <li>40kVostoyanFirstborn</li>
+        </apparelTags>
+        <apparelRequired>
+            <li>GW_AM_VostoyanFirstbornHeadgear</li>
+            <li>GW_AM_VostoyanFirstborn_Uniform</li>
+        </apparelRequired>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="GW_AM_RangedTier3">
+        <defName>GW_AM_VostoyanFirstborn_RangedTier3</defName>
+        <label>vostoyan firstborn sergeant</label>
+        <apparelTags Inherit="False">
+            <li>40kVostoyanFirstborn</li>
+        </apparelTags>
+        <apparelRequired>
+            <li>GW_AM_VostoyanFirstbornHeadgear</li>
+            <li>GW_AM_VostoyanFirstborn_Uniform</li>
+        </apparelRequired>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="GW_AM_MeleeTier3">
+        <defName>GW_AM_VostoyanFirstborn_MeleeTier3</defName>
+        <label>vostoyan firstborn sergeant</label>
+        <apparelTags Inherit="False">
+            <li>40kVostoyanFirstborn</li>
+        </apparelTags>
+        <apparelRequired>
+            <li>GW_AM_VostoyanFirstbornHeadgear</li>
+            <li>GW_AM_VostoyanFirstborn_Uniform</li>
+        </apparelRequired>
+    </PawnKindDef>
+
+            <!--Valhallan-->
+    <PawnKindDef ParentName="GW_AM_RangedTier1">
+        <defName>GW_AM_Valhallan_RangedTier1</defName>
+        <label>valhallan conscript</label>
+        <apparelTags Inherit="False">
+            <li>40kValhallan</li>
+        </apparelTags>
+        <apparelRequired>
+            <li>GW_AM_Valhallan_Armor</li>
+            <li>GW_AM_Valhallan_Ushanka</li>
+            <li>GW_AM_Valhallan_GreatCoat</li>
+        </apparelRequired>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="GW_AM_MeleeTier1">
+        <defName>GW_AM_Valhallan_MeleeTier1</defName>
+        <label>valhallan conscript</label>
+        <apparelTags Inherit="False">
+            <li>40kValhallan</li>
+        </apparelTags>
+        <apparelRequired>
+            <li>GW_AM_Valhallan_Armor</li>
+            <li>GW_AM_Valhallan_Ushanka</li>
+            <li>GW_AM_Valhallan_GreatCoat</li>
+        </apparelRequired>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="GW_AM_RangedTier2">
+        <defName>GW_AM_Valhallan_RangedTier2</defName>
+        <label>valhallan trooper</label>
+        <apparelTags Inherit="False">
+            <li>40kValhallan</li>
+        </apparelTags>
+        <apparelRequired>
+            <li>GW_AM_Valhallan_Armor</li>
+            <li>GW_AM_Valhallan_Ushanka</li>
+            <li>GW_AM_Valhallan_GreatCoat</li>
+        </apparelRequired>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="GW_AM_MeleeTier2">
+        <defName>GW_AM_Valhallan_MeleeTier2</defName>
+        <label>valhallan trooper</label>
+        <apparelTags Inherit="False">
+            <li>40kValhallan</li>
+        </apparelTags>
+        <apparelRequired>
+            <li>GW_AM_Valhallan_Armor</li>
+            <li>GW_AM_Valhallan_Ushanka</li>
+            <li>GW_AM_Valhallan_GreatCoat</li>
+        </apparelRequired>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="GW_AM_RangedTier3">
+        <defName>GW_AM_Valhallan_RangedTier3</defName>
+        <label>valhallan sergeant</label>
+        <apparelTags Inherit="False">
+            <li>40kValhallan</li>
+        </apparelTags>
+        <apparelRequired>
+            <li>GW_AM_Valhallan_Armor</li>
+            <li>GW_AM_Valhallan_GarrisonCap</li>
+            <li>GW_AM_Valhallan_GreatCoat</li>
+        </apparelRequired>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="GW_AM_MeleeTier3">
+        <defName>GW_AM_Valhallan_MeleeTier3</defName>
+        <label>valhallan sergeant</label>
+        <apparelTags Inherit="False">
+            <li>40kValhallan</li>
+        </apparelTags>
+        <apparelRequired>
+            <li>GW_AM_Valhallan_Armor</li>
+            <li>GW_AM_Valhallan_GarrisonCap</li>
+            <li>GW_AM_Valhallan_GreatCoat</li>
+        </apparelRequired>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="GW_AM_RangedTier3">
+        <defName>GW_AM_Valhallan_Lieutenant</defName>
+        <label>valhallan lieutenant</label>
+        <combatPower>160</combatPower>
+        <apparelMoney>4500~5000</apparelMoney>
+        <apparelTags Inherit="False">
+            <li>40kValhallan</li>
+        </apparelTags>
+        <apparelRequired>
+            <li>GW_AM_Valhallan_Armor</li>
+            <li>GW_AM_Valhallan_OfficerUshanka</li>
+            <li>GW_AM_Valhallan_OfficerGreatCoat</li>
+        </apparelRequired>
+        <techHediffsChance>0.3</techHediffsChance>
+    </PawnKindDef>
+
+        <!--Leader-->
+    <PawnKindDef ParentName="GW_AM_PawnBase">
+        <defName>GW_AM_LordGeneral</defName>
+        <label>lord general</label>
+        <labelPlural>lord generals</labelPlural>
+        <combatPower>180</combatPower>
+        <factionLeader>true</factionLeader>
+        <minGenerationAge>30</minGenerationAge>
+        <maxGenerationAge>45</maxGenerationAge>
+        <itemQuality>Excellent</itemQuality>
+        <apparelMoney>6500~6800</apparelMoney>
+        <weaponMoney>5000~5500</weaponMoney>
+        <apparelTags Inherit="False">
+            <li>40kCadianGuard</li>
+        </apparelTags>
+        <weaponTags>
+            <li>GW_AM_SpacerRanged</li>
+        </weaponTags>
+        <apparelRequired>
+            <li>ODZ_40k_IG_Cadian_OfficerGorget</li>
+            <li>ODZ_40k_IG_Cadian_Fatigues</li>
+            <li>ODZ_40k_IG_CadianKasrkin_Helmet</li>
+            <li>ODZ_40k_IG_CadianKasrkin_FlakArmor</li>
+        </apparelRequired>
+        <techHediffsChance>0.5</techHediffsChance>
+        <techHediffsMoney>5800~6000</techHediffsMoney>
+        <techHediffsTags>
+            <li>Advanced</li>
+        </techHediffsTags>
+        <skills>
+            <li>
+                <skill>Shooting</skill>
+                <range>10~15</range>
+            </li>
+            <li>
+                <skill>Melee</skill>
+                <range>10~15</range>
+            </li>
+        </skills>
+        <modExtensions>
+            <li Class="CombatExtended.LoadoutPropertiesExtension" MayRequire="ceteam.combatextended">
+			    <primaryMagazineCount>
+				    <min>3</min>
+				    <max>5</max>
+			    </primaryMagazineCount>
+				<sidearms>
+					<li>
+						<generateChance>1</generateChance>
+						<sidearmMoney>
+							<min>2500</min>
+							<max>3000</max>
+						</sidearmMoney>
+						<weaponTags>
+							<li>CE_Sidearm_Melee</li>
+						</weaponTags>
+					</li>
+				</sidearms>
+		    </li>
+        </modExtensions>
+    </PawnKindDef>
+</Defs>

@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+        <!-- Combat Webbing -->
+
+    <ThingDef ParentName="ApparelMakeableBase">
+        <defName>ODZ_40k_IG_DKOK_CombatWebbing</defName>
+        <label>Death Korps webbing</label>
+        <description>Death Korps Webbing:\n\n A practical and durable accessory, the Death Korps Webbing is an essential component of the elite grenadiers' kit. Meticulously designed for functionality, it provides a customizable and efficient way to carry essential gear on the unforgiving battlefields of Warhammer 40,000. Adorned with pouches and utility pockets, the webbing not only signifies the preparedness of the Death Korps but also reflects the regiment's commitment to order and precision. Worn with the stoic pride of a grenadier, the Death Korps Webbing stands as a symbol of readiness and resilience in the face of the grim and unrelenting warfare.</description>
+        <recipeMaker>
+            <researchPrerequisite>GW_AM_DeathKorpsOfKrieg</researchPrerequisite>
+            <recipeUsers Inherit="false">
+                <li>GW_AM_MilitarumArmorBench</li>
+            </recipeUsers>
+        </recipeMaker>
+        <graphicData>
+            <texPath>Things/DeathKorps/Belt/DKOKCombatWebbing_Male_south</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>1.2</drawSize>
+        </graphicData>
+        <costStuffCount>30</costStuffCount>
+        <stuffCategories>
+            <li>Leathery</li>
+        </stuffCategories>
+        <costList>
+            <Steel>15</Steel>
+        </costList>
+        <thingCategories>
+            <li>ApparelUtility</li>
+        </thingCategories>
+        <tradeTags>
+            <li>HPUtility</li>
+            <li>GW_AM_Utility</li>
+        </tradeTags>
+        <statBases>
+            <MaxHitPoints>150</MaxHitPoints>
+            <WorkToMake>1000</WorkToMake>
+            <Mass>1</Mass> 
+            <Flammability>0.25</Flammability>
+            <StuffEffectMultiplierArmor>0.20</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.05</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.05</StuffEffectMultiplierInsulation_Heat>
+            <EquipDelay>1.5</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <CarryingCapacity>30</CarryingCapacity>
+            <MoveSpeed>-0.02</MoveSpeed>
+        </equippedStatOffsets>
+        <apparel>
+            <useWornGraphicMask>true</useWornGraphicMask>
+            <bodyPartGroups>
+                <li>Waist</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Things/DeathKorps/Belt/DKOKCombatWebbing</wornGraphicPath>
+            <wornGraphicData/>
+            <layers>
+                <li>Belt</li>
+            </layers>
+            <tags>
+                <li>40kDeathKorps</li>
+                <li>40kDeathKorpsWebbing</li>
+            </tags>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+            <canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
+        </apparel>
+        <colorGenerator Class="ColorGenerator_Options">
+            <options>
+                <li>
+                    <weight>10</weight>
+                    <min>(97, 113, 51)</min>
+                    <max>(85, 100, 45)</max>
+                </li>
+            </options>
+        </colorGenerator>
+    </ThingDef>  
+
+ <!--__________ Officer Gorget ____________-->  
+
+    <ThingDef ParentName="ArmorMachineableBase">
+        <defName>ODZ_40k_IG_Cadian_OfficerGorget</defName>
+        <label>Officer gorget</label>
+        <description>Officer Gorget:\n\n A symbol of authority and command, the Officer Gorget is a distinctive neckpiece worn by the esteemed leaders of Imperial forces in Warhammer 40,000. Crafted with meticulous attention to detail, the gorget features ornate designs and regimental insignia, signaling the rank and expertise of the officer. Worn with pride, it adds a touch of regality to the officer's uniform while serving as a functional piece of protective gear. The Officer Gorget embodies the leadership and authority required to navigate the complex and perilous landscapes of the grim darkness of the 41st millennium.</description>
+        <recipeMaker>
+            <researchPrerequisite>GW_AM_MilitariumArmor</researchPrerequisite>
+            <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>	
+            <recipeUsers Inherit="false">
+                <li>GW_AM_MilitarumArmorBench</li>
+            </recipeUsers>  
+        </recipeMaker>
+        <graphicData>
+            <texPath>Things/Cadian/Attachments/OfficerGorget_Male_south</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>3</drawSize>
+        </graphicData>
+        <costList>
+            <Steel>10</Steel>
+        </costList>
+        <thingCategories>
+            <li>ApparelUtility</li>
+        </thingCategories>
+        <tradeTags>
+            <li>HPUtility</li>
+            <li>GW_AM_Utility</li>
+        </tradeTags>
+        <statBases>
+            <MaxHitPoints>150</MaxHitPoints>
+            <WorkToMake>800</WorkToMake>
+            <Mass>1</Mass> 
+            <Flammability>0.25</Flammability>
+            <StuffEffectMultiplierArmor>0.20</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.05</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.05</StuffEffectMultiplierInsulation_Heat>
+            <EquipDelay>0.8</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <SocialImpact>0.8</SocialImpact>
+        </equippedStatOffsets>	
+        <apparel>
+            <useWornGraphicMask>true</useWornGraphicMask>
+            <bodyPartGroups>
+                <li>Waist</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Things/Cadian/Attachments/OfficerGorget</wornGraphicPath>
+            <wornGraphicData/>
+            <layers>
+                <li>Belt</li>
+            </layers>
+            <tags>
+                <li>40kCadianGuard</li>
+                <li>40kCadianOfficer</li>
+            </tags>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+            <canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
+        </apparel>
+        <colorGenerator Class="ColorGenerator_Options">
+            <options>
+                <li>
+                    <weight>10</weight>
+                    <min>(97, 113, 51)</min>
+                    <max>(85, 100, 45)</max>
+                </li>
+            </options>
+        </colorGenerator>
+    </ThingDef>  
+	
+	<ThingDef ParentName="ArmorMachineableBase">
+        <defName>GW_AM_CommissarAttachment</defName>
+        <label>Commissar gorget</label>
+        <description>. . .</description>
+        <recipeMaker>
+            <researchPrerequisite>GW_AM_OfficersOfAM</researchPrerequisite>
+        </recipeMaker>
+        <graphicData>
+            <texPath>Things/Commissar/Display/CommissarGorget</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>1.5</drawSize>
+        </graphicData>
+        <costStuffCount>70</costStuffCount>
+        <stuffCategories>
+            <li>Fabric</li>
+            <li>Leathery</li>
+        </stuffCategories>
+        <thingCategories>
+            <li>ApparelMisc</li>
+        </thingCategories>
+        <statBases>
+            <MaxHitPoints>200</MaxHitPoints>
+            <WorkToMake>10000</WorkToMake>
+            <Mass>1.5</Mass>
+            <StuffEffectMultiplierArmor>0.3</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.20</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.85</StuffEffectMultiplierInsulation_Heat>
+            <EquipDelay>3</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <SocialImpact>0.1</SocialImpact>
+        </equippedStatOffsets>
+		<apparel>
+            <useWornGraphicMask>true</useWornGraphicMask>
+            <wornGraphicPath>Things/Commissar/Attachments/CommissarGorget</wornGraphicPath>
+            <drawData>
+                <dataWest>
+                    <offset>(0.37, 0.0,0.15)</offset>
+                </dataWest>
+                <dataEast>
+                    <offset>(-0.37, 0.0,0.15)</offset>
+                </dataEast>
+                <scale>1.5</scale>
+                <childScale>1.5</childScale>
+            </drawData>
+            <tags>
+                <li>40kCommissar</li>
+                <li>40kCommissarGorget</li>
+            </tags>
+			<bodyPartGroups>
+                <li>Torso</li>
+            </bodyPartGroups>
+            <layers>
+                <li>Belt</li>
+            </layers>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+            <canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
+        </apparel>
+        <tradeTags>
+			<li>HPUtility</li>
+            <li>GW_AM_Utility</li>
+        </tradeTags>
+    </ThingDef>
+</Defs>
