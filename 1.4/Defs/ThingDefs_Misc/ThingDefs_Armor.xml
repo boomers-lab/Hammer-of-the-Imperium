@@ -382,56 +382,6 @@
             </tags>
         </apparel>
     </ThingDef>
-	
-		<!-- Priest Gear -->
 		
-	<ThingDef ParentName="GW_AM_ArmorBase">
-        <defName>GW_AM_PriestGear</defName>
-        <label>Priest Robe</label>
-        <description>. . .</description>
-        <recipeMaker>
-            <researchPrerequisite>GW_AM_OfficersOfAM</researchPrerequisite>
-            <skillRequirements>
-                <Crafting>8</Crafting>
-            </skillRequirements>
-        </recipeMaker>
-        <graphicData>
-            <texPath>Things/Priestgear/Priest</texPath>
-        </graphicData>
-        <statBases>
-            <WorkToMake>9000</WorkToMake>
-            <MaxHitPoints>250</MaxHitPoints>
-            <Mass>5</Mass>
-            <ArmorRating_Sharp>1.0</ArmorRating_Sharp>
-            <ArmorRating_Blunt>0.36</ArmorRating_Blunt>
-            <ArmorRating_Heat>0.20</ArmorRating_Heat>
-            <Insulation_Cold>10</Insulation_Cold>
-            <EquipDelay>3</EquipDelay>
-        </statBases>
-        <equippedStatOffsets>
-            <MentalBreakThreshold>-0.2</MentalBreakThreshold>
-            <PainShockThreshold>-0.2</PainShockThreshold>
-        </equippedStatOffsets>
-        <costList>
-            <Steel>100</Steel>
-        </costList>
-		<stuffCategories>
-			<!-- <li>Metallic</li> -->
-			<li>Fabric</li>
-			<li>Leathery</li>
-		</stuffCategories>
-		<costStuffCount>50</costStuffCount>
-        <apparel>
-            <wornGraphicPath>Things/Priestgear/Priest</wornGraphicPath>
-            <tags>
-                <li>40kPriest</li>
-                <li>40kPriestGear</li>
-            </tags>
-			<layers Inherit="False">
-                <li>Shell</li>
-				<li>Middle</li>
-            </layers>
-        </apparel>
-    </ThingDef>
 	
 </Defs>
