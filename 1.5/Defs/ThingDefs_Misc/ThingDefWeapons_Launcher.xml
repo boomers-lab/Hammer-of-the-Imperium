@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+	<!--===== Launcher frag Projectile =====-->
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>GW_AM_LauncherFrag_Bullet</defName>
+		<label>frag launcher shell</label>
+		<graphicData>
+			<texPath>Things/Projectile/LauncherShot</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<color>(160,160,160)</color>
+			<drawSize>1.2</drawSize>
+		</graphicData>
+		<thingClass>Projectile_Explosive</thingClass>
+		<projectile>
+			<damageDef>Bomb</damageDef>
+			<damageAmountBase>52</damageAmountBase>
+			<explosionRadius>1.4</explosionRadius>
+			<stoppingPower>2</stoppingPower>
+			<speed>55</speed>
+			<arcHeightFactor>0.2</arcHeightFactor>
+			<shadowSize>0.6</shadowSize>
+		</projectile>
+	</ThingDef>
+
+	<!--===== Launcher EMP Projectile =====-->
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>GW_AM_LauncherEMP_Bullet</defName>
+		<label>EMP launcher shell</label>
+		<graphicData>
+			<texPath>Things/Projectile/LauncherShot</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<color>(102,255,255)</color>
+			<drawSize>1.2</drawSize>
+		</graphicData>
+		<thingClass>Projectile_Explosive</thingClass>
+		<projectile>
+			<damageDef>EMP</damageDef>
+			<!-- Default Explosion Damage -->
+			<explosionRadius>2.6</explosionRadius>
+			<speed>55</speed>
+			<arcHeightFactor>0.2</arcHeightFactor>
+			<shadowSize>0.6</shadowSize>
+		</projectile>
+	</ThingDef>
+	
+	<!--===== Launcher Smoke Projectile =====-->
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>GW_AM_LauncherSmoke_Bullet</defName>
+		<label>smoke launcher shell</label>
+		<graphicData>
+			<texPath>Things/Projectile/LauncherShot</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<color>(96,96,96)</color>
+			<drawSize>1.2</drawSize>
+		</graphicData>
+		<thingClass>Projectile_Explosive</thingClass>
+		<projectile>
+			<damageDef>Smoke</damageDef>
+			<!-- Default Explosion Damage -->
+			<explosionRadius>3.6</explosionRadius>
+			<postExplosionGasType>BlindSmoke</postExplosionGasType>
+			<speed>55</speed>
+			<arcHeightFactor>0.2</arcHeightFactor>
+			<shadowSize>0.6</shadowSize>
+		</projectile>
+	</ThingDef>
+
+	<!--===== Launcher Stun Projectile =====-->
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>GW_AM_LauncherStun_Bullet</defName>
+		<label>stun launcher shell</label>
+		<graphicData>
+			<texPath>Things/Projectile/LauncherShot</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<color>(224,224,224)</color>
+			<drawSize>1.2</drawSize>
+		</graphicData>
+		<thingClass>Projectile_Explosive</thingClass>
+		<projectile>
+			<damageDef>Stun</damageDef>
+			<damageAmountBase>8</damageAmountBase>
+			<explosionRadius>2.4</explosionRadius>
+			<speed>55</speed>
+			<arcHeightFactor>0.2</arcHeightFactor>
+			<shadowSize>0.6</shadowSize>
+		</projectile>
+	</ThingDef>
+	
+	<!--===== Launcher Tox Projectile =====-->
+	
+	<ThingDef ParentName="BaseBullet" MayRequire="Ludeon.RimWorld.Biotech">
+		<defName>GW_AM_LauncherTox_Bullet</defName>
+		<label>stun launcher shell</label>
+		<graphicData>
+			<texPath>Things/Projectile/LauncherShot</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<color>(140,135,156)</color>
+			<drawSize>1.2</drawSize>
+		</graphicData>
+		<thingClass>Projectile_Explosive</thingClass>
+		<projectile>
+			<damageDef>ToxGas</damageDef>
+			<damageAmountBase>6</damageAmountBase>
+			<explosionRadius>2.7</explosionRadius>
+			<postExplosionGasType>ToxGas</postExplosionGasType>
+			<speed>55</speed>
+			<arcHeightFactor>0.2</arcHeightFactor>
+			<shadowSize>0.6</shadowSize>
+		</projectile>
+	</ThingDef>
+	
+	<!--===== Launcher Base =====-->
+
+	<ThingDef Abstract="true" ParentName="BaseHumanMakeableGun" Name="GW_AM_GrenadeLauncherBase">
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<recipeMaker>
+			<researchPrerequisite>GW_Launchers</researchPrerequisite>
+			<displayPriority>420</displayPriority>
+			<recipeUsers Inherit="False">
+				<li>HP_AM_MilitarumFabricationBench</li>
+			</recipeUsers>
+			<skillRequirements>
+				<Crafting>12</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<thingSetMakerTags>
+			<li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+		<tradeTags>
+			<li>HPRanged</li>
+		</tradeTags>
+		<weaponTags>
+			<li>IndustrialGunAdvanced</li>
+			<li>GW_SM_Ranged</li>
+		</weaponTags>
+		<tools>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>14</power>
+				<cooldownTime>2.5</cooldownTime>
+			</li>
+			<li>
+				<label>grip</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2.2</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+	
+	<!--===== Frag Launcher =====-->
+
+	<ThingDef ParentName="GW_AM_GrenadeLauncherBase">
+		<defName>GW_AM_Gun_FragLauncher</defName>
+		<label>Voss Pattern Launcher (Frag)</label>
+		<description>The Voss Pattern Launcher, now equipped with frag grenades, is a formidable addition to the Astra Militarum's arsenal, enhancing their firepower and versatility on the perilous battlefields of the Warhammer 40,000 universe.\n\nThe Voss Pattern Launcher, originally designed for the delivery of specialized payloads, has been modified to accommodate frag grenades. These grenades, filled with lethal shrapnel, are particularly effective against clusters of enemy infantry and can wreak havoc in confined spaces or dense terrain.\n\nCrafted with the rugged reliability characteristic of Astra Militarum weaponry, the Voss Pattern Launcher with frag grenades provides troopers with a means to unleash explosive devastation upon adversaries. The launcher's sturdy construction ensures consistent performance, allowing soldiers to rain fragmentation upon enemy positions with precision and efficiency.\n\nThe frag grenade modification empowers Astra Militarum squads with a versatile tool for clearing out enemy infantry, disrupting enemy advances, and fortifying defensive positions. Whether engaged in urban warfare or battling in the untamed wilderness, the Voss Pattern Launcher with frag grenades offers troopers a tactical advantage against a wide range of threats.\n\nAdorned with the regimental insignia and symbols of the Astra Militarum, the Voss Pattern Launcher with frag grenades stands as a symbol of the Imperium's commitment to adaptability and unwavering firepower. Deployed by skilled grenadiers, this weapon plays a crucial role in the broader strategy of the Astra Militarum, ensuring that they remain a force to be reckoned with in the grim and unrelenting conflicts of Warhammer 40,000.</description>
+		<graphicData>
+			<texPath>Weapons/Launcher/GrenadeLauncher</texPath>
+			<drawSize>1.2</drawSize>
+		</graphicData>
+		<statBases>
+			<WorkToMake>42000</WorkToMake>
+			<Mass>10</Mass>
+			<RangedWeapon_Cooldown>3.2</RangedWeapon_Cooldown>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.10</MoveSpeed>
+		</equippedStatOffsets>
+		<costList>
+			<Steel>240</Steel>
+			<Plasteel>85</Plasteel>
+			<ComponentIndustrial>22</ComponentIndustrial>
+			<HP_Ceramite>8</HP_Ceramite>
+		</costList>
+		<weaponClasses>
+			<li>RangedHeavy</li>
+		</weaponClasses>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>GW_AM_LauncherFrag_Bullet</defaultProjectile>
+				<forcedMissRadius>2.4</forcedMissRadius>
+				<warmupTime>3</warmupTime>
+				<range>26</range>
+				<burstShotCount>1</burstShotCount>
+				<soundCast>HP_AM_Plasma_Gun_Sound</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>10</muzzleFlashScale>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+			</li>
+		</verbs>
+	</ThingDef>
+
+	<!--===== EMP Launcher =====-->
+
+	<ThingDef ParentName="GW_AM_GrenadeLauncherBase">
+		<defName>GW_AM_Gun_EMPLauncher</defName>
+		<label>Voss Pattern Launcher (EMP)</label>
+		<description>The Voss Pattern Launcher equipped with EMP grenades emerges as a formidable anti-mechanoid weapon within the Astra Militarum's arsenal, delivering a devastating blow against the metallic foes that threaten the Imperium in the Warhammer 40,000 universe.\n\nThis specialized configuration of the Voss Pattern Launcher, now optimized for anti-mechanoid warfare, allows Astra Militarum forces to confront the relentless onslaught of mechanoids with strategic precision. The EMP grenades, upon detonation, unleash a powerful electromagnetic pulse capable of disrupting and incapacitating the electronic systems that govern mechanoid functionality.\n\nIn battles against the mechanical monstrosities of the 41st millennium, the Voss Pattern Launcher with EMP grenades becomes an indispensable tool. Skilled operators, trained in anti-mechanoid tactics, wield this weapon to strategically disable and neutralize the technological threats posed by autonomous war machines.\n\nThe EMP grenades' ability to interfere with mechanoid sensors, communications, and mobility systems makes the Voss Pattern Launcher a key asset for Astra Militarum detachments facing robotic adversaries. This weapon allows Imperial forces to level the playing field against the cold, unfeeling might of the machine, emphasizing the Imperium's determination to resist and overcome even the most advanced technological foes.\n\nDeployed with precision and tactical insight, the Voss Pattern Launcher with EMP grenades serves as a symbol of the Astra Militarum's adaptability and resilience in the face of diverse and evolving threats across the expansive battlefield of Warhammer 40,000.</description>
+		<graphicData>
+			<texPath>Weapons/Launcher/GrenadeLauncherEMP</texPath>
+			<drawSize>1.2</drawSize>
+		</graphicData>
+		<statBases>
+			<WorkToMake>42000</WorkToMake>
+			<Mass>10</Mass>
+			<RangedWeapon_Cooldown>3.2</RangedWeapon_Cooldown>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.10</MoveSpeed>
+		</equippedStatOffsets>
+		<costList>
+			<Steel>240</Steel>
+			<Plasteel>70</Plasteel>
+			<ComponentIndustrial>36</ComponentIndustrial>
+			<HP_Ceramite>8</HP_Ceramite>
+		</costList>
+		<weaponClasses>
+			<li>RangedHeavy</li>
+		</weaponClasses>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>GW_AM_LauncherEMP_Bullet</defaultProjectile>
+				<forcedMissRadius>3.2</forcedMissRadius>
+				<warmupTime>3</warmupTime>
+				<range>32</range>
+				<burstShotCount>1</burstShotCount>
+				<soundCast>HP_AM_Plasma_Gun_Sound</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>10</muzzleFlashScale>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+			</li>
+		</verbs>
+	</ThingDef>
+
+	<!--===== Smoke Launcher =====-->
+
+	<ThingDef ParentName="GW_AM_GrenadeLauncherBase">
+		<defName>GW_AM_Gun_SmokeLauncher</defName>
+		<label>Voss Pattern Launcher (Smoke)</label>
+		<description>The Voss Pattern Launcher, now configured with smoke grenades, stands as a strategic solution within the Astra Militarum's arsenal, specifically tailored for countering turrets and ranged adversaries in the war-torn landscapes of the Warhammer 40,000 universe.\n\nThis specialized adaptation of the Voss Pattern Launcher transforms it into a versatile support weapon, allowing Imperial forces to manipulate the battlefield dynamics to their advantage. The smoke grenades, when deployed with precision, create dense clouds of obscuring smoke that shroud the movements and positions of Astra Militarum troops from the prying eyes of turrets and ranged enemies.\n\nIn engagements where cover is scarce and the threat of precision firepower looms, the Voss Pattern Launcher with smoke grenades provides a crucial tactical advantage. By blanketing the battlefield in a protective veil of smoke, this weapon disrupts the targeting capabilities of turrets and ranged adversaries, forcing them to contend with diminished accuracy and compromised visibility.\n\nThe adaptability of the Voss Pattern Launcher with smoke grenades extends the strategic options available to Astra Militarum commanders. Whether advancing through open terrain or seeking to outmaneuver entrenched foes, this weapon becomes a force multiplier, enabling Imperial forces to navigate the battlefield with greater resilience and tactical finesse.\n\nAs a symbol of the Astra Militarum's ingenuity in adapting weaponry to address specific threats, the Voss Pattern Launcher with smoke grenades exemplifies the Imperium's determination to overcome challenges and emerge victorious in the relentless warfare of Warhammer 40,000.</description>
+		<graphicData>
+			<texPath>Weapons/Launcher/GrenadeLauncherSmoke</texPath>
+			<drawSize>1.2</drawSize>
+		</graphicData>
+		<statBases>
+			<WorkToMake>42000</WorkToMake>
+			<Mass>10</Mass>
+			<RangedWeapon_Cooldown>3.2</RangedWeapon_Cooldown>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.10</MoveSpeed>
+		</equippedStatOffsets>
+		<costList>
+			<Steel>240</Steel>
+			<Plasteel>85</Plasteel>
+			<ComponentIndustrial>22</ComponentIndustrial>
+			<HP_Ceramite>8</HP_Ceramite>
+		</costList>
+		<weaponClasses>
+			<li>RangedHeavy</li>
+		</weaponClasses>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>GW_AM_LauncherSmoke_Bullet</defaultProjectile>
+				<forcedMissRadius>1.2</forcedMissRadius>
+				<warmupTime>3</warmupTime>
+				<range>36</range>
+				<burstShotCount>1</burstShotCount>
+				<soundCast>HP_AM_Plasma_Gun_Sound</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>10</muzzleFlashScale>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+			</li>
+		</verbs>
+	</ThingDef>
+
+	<!--===== Stun Launcher =====-->
+
+	<ThingDef ParentName="GW_AM_GrenadeLauncherBase">
+		<defName>GW_AM_Gun_StunLauncher</defName>
+		<label>Voss Pattern Launcher (Stun)</label>
+		<description>The Voss Pattern Launcher, now equipped with stun grenades, emerges as a formidable asset in the Astra Militarum's arsenal, strategically designed to neutralize threats posed by human and animal adversaries across the war-torn expanses of the Warhammer 40,000 universe.\n\nThis specialized adaptation transforms the Voss Pattern Launcher into a non-lethal, crowd-control device, providing Imperial forces with a humane yet effective means of dealing with threats that may not require lethal force. The stun grenades, when deployed with precision, emit disorienting bursts that incapacitate and temporarily disable both human and animal targets in their vicinity.\n\nIn scenarios where the preservation of life or the need to subdue potential allies-turned-enemies arises, the Voss Pattern Launcher with stun grenades becomes an invaluable tool. By incapacitating threats without inflicting lethal harm, Imperial forces can navigate delicate situations with a measured response, mitigating the risk of collateral damage or unnecessary loss of life.\n\nThe adaptability of the Voss Pattern Launcher with stun grenades underscores the Astra Militarum's commitment to employing a spectrum of force tailored to the nature of the encountered opposition. This weapon allows Imperial commanders to exercise greater control over engagements, ensuring that conflicts are resolved with a balance of force and restraint.\n\nAs a symbol of the Astra Militarum's dedication to employing versatile weaponry, the Voss Pattern Launcher with stun grenades exemplifies the Imperium's approach to confronting the diverse challenges present in the grim darkness of the far future.</description>
+		<graphicData>
+			<texPath>Weapons/Launcher/GrenadeLauncherStun</texPath>
+			<drawSize>1.2</drawSize>
+		</graphicData>
+		<statBases>
+			<WorkToMake>42000</WorkToMake>
+			<Mass>10</Mass>
+			<RangedWeapon_Cooldown>3.2</RangedWeapon_Cooldown>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.10</MoveSpeed>
+		</equippedStatOffsets>
+		<costList>
+			<Steel>250</Steel>
+			<Plasteel>80</Plasteel>
+			<ComponentIndustrial>28</ComponentIndustrial>
+			<HP_Ceramite>8</HP_Ceramite>
+		</costList>
+		<weaponClasses>
+			<li>RangedHeavy</li>
+		</weaponClasses>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>GW_AM_LauncherStun_Bullet</defaultProjectile>
+				<forcedMissRadius>2.4</forcedMissRadius>
+				<warmupTime>3</warmupTime>
+				<range>32</range>
+				<burstShotCount>1</burstShotCount>
+				<soundCast>HP_AM_Plasma_Gun_Sound</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>10</muzzleFlashScale>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+			</li>
+		</verbs>
+	</ThingDef>
+	
+	<!--===== Tox Launcher =====-->
+
+	<ThingDef ParentName="GW_AM_GrenadeLauncherBase" MayRequire="Ludeon.RimWorld.Biotech">
+		<defName>GW_AM_Gun_ToxLauncher</defName>
+		<label>Voss Pattern Launcher (Tox)</label>
+		<description>The Voss Pattern Launcher, now armed with toxic grenades, stands as a potent addition to the Astra Militarum's arsenal, specifically tailored for engagements against both human and animal adversaries in the tumultuous theaters of the Warhammer 40,000 universe.\n\nThis specialized configuration transforms the Voss Pattern Launcher into a formidable toxic weapon, delivering payloads that release noxious substances upon detonation. The toxic grenades are designed to inflict widespread harm by introducing poisonous elements that induce debilitating effects on impacted targets. Against organic adversaries, the toxic nature of the payload proves particularly effective, causing harm over time and impairing combat capabilities.\n\nIn scenarios where the Astra Militarum faces adversaries resistant to conventional weaponry or requires a means of neutralizing threats without direct engagement, the Voss Pattern Launcher with toxic grenades becomes a strategic choice. The lingering effects of the toxins can disrupt enemy formations, create barriers, and inflict damage over extended periods, providing Imperial forces with a tactical advantage.\n\nAs a symbol of the Imperium's adaptability, the Voss Pattern Launcher with toxic grenades underscores the Astra Militarum's commitment to employing a diverse array of weapons tailored to counter the unique challenges present in the grim darkness of the far future. This toxic variant of the Voss Pattern Launcher represents the Imperium's relentless pursuit of innovative solutions to overcome the myriad threats that plague the galaxy.</description>
+		<graphicData>
+			<texPath>Weapons/Launcher/GrenadeLauncherToxic</texPath>
+			<drawSize>1.2</drawSize>
+		</graphicData>
+		<statBases>
+			<WorkToMake>42000</WorkToMake>
+			<Mass>10</Mass>
+			<RangedWeapon_Cooldown>3.2</RangedWeapon_Cooldown>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.10</MoveSpeed>
+		</equippedStatOffsets>
+		<costList>
+			<Steel>250</Steel>
+			<Plasteel>95</Plasteel>
+			<ComponentIndustrial>26</ComponentIndustrial>
+			<HP_Ceramite>8</HP_Ceramite>
+		</costList>
+		<weaponClasses>
+			<li>RangedHeavy</li>
+		</weaponClasses>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>GW_AM_LauncherTox_Bullet</defaultProjectile>
+				<forcedMissRadius>2.4</forcedMissRadius>
+				<warmupTime>3</warmupTime>
+				<range>36</range>
+				<burstShotCount>1</burstShotCount>
+				<soundCast>HP_AM_Plasma_Gun_Sound</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>10</muzzleFlashScale>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+			</li>
+		</verbs>
+	</ThingDef>
+
+</Defs>

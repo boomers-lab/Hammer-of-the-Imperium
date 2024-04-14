@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef Abstract="true" ParentName="ApparelMakeableBase" Name="GW_AM_OnSkinBase">
+    	<techLevel>Industrial</techLevel>
+        <graphicData>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>1.3</drawSize>
+        </graphicData>
+		<description>Astra Militarum Fatigues:\n\n Battle-tested and reliable, the Astra Militarum Fatigues are the standard-issue attire for the resilient soldiers of the Imperial Guard. Crafted for endurance and comfort, these utilitarian garments feature reinforced fabrics and practical design elements. Worn by guardsmen on the front lines across the vast expanse of the Imperium, the Fatigues embody the indomitable spirit of the common soldier. Symbolizing the unwavering commitment to duty, these fatigues are a testament to the unyielding resolve of the Astra Militarum in the grim and perilous theatre of Warhammer 40,000.</description>
+        <stuffCategories>
+            <li>Fabric</li>
+        </stuffCategories>
+        <thingCategories>
+            <li>Apparel</li>
+        </thingCategories>
+        <recipeMaker>
+            <recipeUsers Inherit="false">
+                <li>GW_AM_MilitarumArmorBench</li>
+            </recipeUsers>
+        </recipeMaker>
+		<uiIconScale>1.6</uiIconScale>
+        <tradeTags>
+            <li>HPOnSkin</li>
+            <li>GW_AM_OnSkin</li>
+        </tradeTags>
+        <statBases>
+            <Mass>0.3</Mass>
+            <EquipDelay>1.5</EquipDelay>
+        </statBases>
+        <apparel>
+            <useWornGraphicMask>true</useWornGraphicMask>		
+            <countsAsClothingForNudity>true</countsAsClothingForNudity>
+            <bodyPartGroups>
+                <li>Torso</li>
+                <li>Legs</li>
+                <li>Shoulders</li>
+                <li>Arms</li>
+            </bodyPartGroups>
+            <layers>
+                <li>OnSkin</li>
+            </layers>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+        </apparel>
+    </ThingDef>
+
+            <!-- Tempestus Scions Fatigues -->
+
+    <ThingDef ParentName="GW_AM_OnSkinBase">
+        <defName>ODZ_40k_IM_TempestusScion_Fatigues</defName>
+        <label>Tempestus Scion fatigues</label>
+        <recipeMaker>
+            <researchPrerequisite>GW_AM_TempestusScions</researchPrerequisite>
+        </recipeMaker>
+        <graphicData>
+            <texPath>Things/TempestusScions/Onskin/TempestusScionFatigues_Male_south</texPath>
+        </graphicData>
+        <costStuffCount>85</costStuffCount>
+        <statBases>
+            <MaxHitPoints>150</MaxHitPoints>
+            <WorkToMake>4500</WorkToMake>
+            <StuffEffectMultiplierArmor>0.5</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.48</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.15</StuffEffectMultiplierInsulation_Heat>
+        </statBases>
+        <apparel>
+            <wornGraphicPath>Things/TempestusScions/Onskin/TempestusScionFatigues</wornGraphicPath>
+            <tags>
+                <li>40kTempestusScion</li>
+                <li>40kTempestusScionUniform</li>
+            </tags>
+        </apparel>
+    </ThingDef> 
+
+            <!-- Krieger Uniform -->
+
+    <ThingDef ParentName="GW_AM_OnSkinBase">
+        <defName>ODZ_40k_IG_DKOK_KriegUniform</defName>
+        <label>Death Korps uniform</label>
+        <recipeMaker>
+            <researchPrerequisite>GW_AM_DeathKorpsOfKrieg</researchPrerequisite>
+        </recipeMaker>
+        <graphicData>
+            <texPath>Things/DeathKorps/Onskin/DeathKorpsUniform_Male_south</texPath>
+        </graphicData>
+        <costStuffCount>90</costStuffCount>
+        <statBases>
+            <MaxHitPoints>180</MaxHitPoints>
+            <WorkToMake>6000</WorkToMake>
+            <StuffEffectMultiplierArmor>0.4</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>1.50</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.25</StuffEffectMultiplierInsulation_Heat>
+        </statBases>
+        <apparel>
+            <wornGraphicPath>Things/DeathKorps/Onskin/DeathKorpsUniform</wornGraphicPath>
+            <tags>
+                <li>40kDeathKorps</li>
+                <li>40kDeathKorpsUniform</li>
+            </tags>
+        </apparel>
+    </ThingDef>
+
+            <!-- Steel Legion Uniform -->
+
+    <ThingDef ParentName="GW_AM_OnSkinBase">
+        <defName>GW_AM_SL_Uniform</defName>
+        <label>Steel Legion uniform</label>
+        <recipeMaker>
+            <researchPrerequisite>GW_AM_SteelLegion</researchPrerequisite>
+        </recipeMaker>
+        <graphicData>
+            <texPath>Things/SteelLegion/SkinOutfit/SteelLegion_Male_south</texPath>
+        </graphicData>
+        <costStuffCount>90</costStuffCount>
+        <statBases>
+            <MaxHitPoints>180</MaxHitPoints>
+            <WorkToMake>6000</WorkToMake>
+            <StuffEffectMultiplierArmor>0.4</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>1.50</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.25</StuffEffectMultiplierInsulation_Heat>
+        </statBases>
+        <apparel>
+            <wornGraphicPath>Things/SteelLegion/SkinOutfit/SteelLegion</wornGraphicPath>
+            <tags>
+                <li>40kSteelLegion</li>
+                <li>40kSteelLegionUniform</li>
+            </tags>
+        </apparel>
+    </ThingDef>
+
+            <!-- Mordian Uniform -->
+
+    <ThingDef ParentName="GW_AM_OnSkinBase">
+        <defName>GW_AM_Mordian_Uniform</defName>
+        <label>Mordian uniform</label>
+        <recipeMaker>
+            <researchPrerequisite>GW_AM_Mordian</researchPrerequisite>
+        </recipeMaker>
+        <graphicData>
+            <texPath>Things/Mordian/OnSkin/Mordian_Male_south</texPath>
+        </graphicData>
+        <costStuffCount>90</costStuffCount>
+        <statBases>
+            <MaxHitPoints>180</MaxHitPoints>
+            <WorkToMake>6000</WorkToMake>
+            <StuffEffectMultiplierArmor>0.4</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>1.50</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.25</StuffEffectMultiplierInsulation_Heat>
+        </statBases>
+        <apparel>
+            <wornGraphicPath>Things/Mordian/OnSkin/Mordian</wornGraphicPath>
+            <tags>
+                <li>40kMordian</li>
+                <li>40kMordianUniform</li>
+            </tags>
+        </apparel>
+    </ThingDef>
+
+            <!-- Cadian Fatigues -->
+
+    <ThingDef ParentName="GW_AM_OnSkinBase">
+        <defName>ODZ_40k_IG_Cadian_Fatigues</defName>
+        <label>Cadian fatigues</label>
+        <recipeMaker>
+            <researchPrerequisite>GW_AM_MilitariumArmor</researchPrerequisite>
+        </recipeMaker>
+        <graphicData>
+            <texPath>Things/Cadian/Onskin/CadianFatigues_Male_south</texPath>
+        </graphicData>
+        <costStuffCount>80</costStuffCount>
+        <statBases>
+            <MaxHitPoints>120</MaxHitPoints>
+            <WorkToMake>4000</WorkToMake>
+            <StuffEffectMultiplierArmor>0.4</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.50</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.25</StuffEffectMultiplierInsulation_Heat>
+        </statBases>
+        <apparel>
+            <wornGraphicPath>Things/Cadian/Onskin/CadianFatigues</wornGraphicPath>
+            <tags>
+                <li>40kCadianGuard</li>
+                <li>40kCadianUniform</li>
+            </tags>
+        </apparel>
+    </ThingDef>
+
+            <!-- Catachan -->
+
+    <ThingDef ParentName="GW_AM_OnSkinBase">
+        <defName>GW_AM_CatachanFatigues</defName>
+        <label>Catachan fatigues</label>
+        <recipeMaker>
+            <researchPrerequisite>GW_AM_Catachan</researchPrerequisite>
+        </recipeMaker>
+        <graphicData>
+            <texPath>Things/Catachan/CatachanSkin/CatachanSkin_Male_south</texPath>
+        </graphicData>
+        <costStuffCount>70</costStuffCount>
+        <statBases>
+            <MaxHitPoints>180</MaxHitPoints>
+            <WorkToMake>6000</WorkToMake>
+            <StuffEffectMultiplierArmor>0.3</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.25</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>1.50</StuffEffectMultiplierInsulation_Heat>
+        </statBases>
+        <equippedStatOffsets>
+            <MoveSpeed>0.1</MoveSpeed>
+        </equippedStatOffsets>
+        <apparel>
+            <wornGraphicPath>Things/Catachan/CatachanSkin/CatachanSkin</wornGraphicPath>
+            <tags>
+                <li>40kCatachan</li>
+                <li>40kCatachanFatigues</li>
+            </tags>
+        </apparel>
+    </ThingDef>
+
+            <!-- Tallarn Desert Raiders -->
+    <ThingDef ParentName="GW_AM_OnSkinBase">
+		<defName>GW_AM_TDR_DesertFatigues</defName>
+		<label>Desert Fatigues</label>
+		<graphicData>
+			<texPath>Things/Tallarn/OnSkin/DesertFatigues_Male_south</texPath>
+		</graphicData>
+		<recipeMaker>
+			<researchPrerequisite>GW_AM_TallarnDesertRaiders</researchPrerequisite>
+		</recipeMaker>
+		<costStuffCount>80</costStuffCount>
+		<stuffCategories>
+			<li>Leathery</li>
+		</stuffCategories>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<WorkToMake>7000</WorkToMake>
+			<StuffEffectMultiplierArmor>0.25</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.2</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>1.2</StuffEffectMultiplierInsulation_Heat>
+		</statBases>
+		<apparel>
+			<wornGraphicPath>Things/Tallarn/OnSkin/DesertFatigues</wornGraphicPath>
+			<tags>
+				<li>40kTallarnDesertRaiders</li>
+                <li>40kTallarnDesertRaidersFatigues</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+
+    <!-- Vostoyan Firstborn Uniform -->
+
+    <ThingDef ParentName="GW_AM_OnSkinBase">
+        <defName>GW_AM_VostoyanFirstborn_Uniform</defName>
+        <label>vostoyan firstborn uniform</label>
+        <recipeMaker>
+            <researchPrerequisite>GW_AM_VostoyanFirstborn</researchPrerequisite>
+        </recipeMaker>
+        <graphicData>
+            <texPath>Things/VostoyanFirstborn/OnSkin/VostoyanFirstborn_Male_south</texPath>
+        </graphicData>
+        <costStuffCount>90</costStuffCount>
+        <statBases>
+            <MaxHitPoints>180</MaxHitPoints>
+            <WorkToMake>6000</WorkToMake>
+            <StuffEffectMultiplierArmor>0.4</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.50</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.25</StuffEffectMultiplierInsulation_Heat>
+        </statBases>
+        <apparel>
+            <wornGraphicPath>Things/VostoyanFirstborn/OnSkin/VostoyanFirstborn</wornGraphicPath>
+            <tags>
+                <li>40kVostoyanFirstborn</li>
+                <li>40kVostoyanFirstbornUniform</li>
+            </tags>
+        </apparel>
+    </ThingDef>
+
+            <!-- Valhallan Greatcoat -->
+
+    <ThingDef ParentName="GW_AM_OnSkinBase">
+        <defName>GW_AM_Valhallan_GreatCoat</defName>
+        <label>valhallan greatcoat</label>
+        <recipeMaker>
+            <researchPrerequisite>GW_AM_Valhallan</researchPrerequisite>
+        </recipeMaker>
+        <graphicData>
+            <texPath>Things/Valhallan/OnSkin/greatcoat_Male_south</texPath>
+        </graphicData>
+        <costStuffCount>80</costStuffCount>
+        <statBases>
+            <MaxHitPoints>120</MaxHitPoints>
+            <WorkToMake>4000</WorkToMake>
+            <StuffEffectMultiplierArmor>0.4</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.90</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.05</StuffEffectMultiplierInsulation_Heat>
+        </statBases>
+        <apparel>
+            <wornGraphicPath>Things/Valhallan/OnSkin/greatcoat</wornGraphicPath>
+            <tags>
+                <li>40kValhallanGuard</li>
+                <li>40kValhallanGreatcoat</li>
+            </tags>
+        </apparel>
+    </ThingDef>
+
+    <ThingDef ParentName="GW_AM_OnSkinBase">
+        <defName>GW_AM_Valhallan_OfficerGreatCoat</defName>
+        <label>valhallan officer greatcoat</label>
+        <recipeMaker>
+            <researchPrerequisite>GW_AM_Valhallan</researchPrerequisite>
+        </recipeMaker>
+        <graphicData>
+            <texPath>Things/Valhallan/OnSkin/officergreatcoat_Male_south</texPath>
+        </graphicData>
+        <costStuffCount>100</costStuffCount>
+        <equippedStatOffsets>
+            <SocialImpact>0.25</SocialImpact>
+        </equippedStatOffsets>	
+        <statBases>
+            <MaxHitPoints>150</MaxHitPoints>
+            <WorkToMake>5000</WorkToMake>
+            <StuffEffectMultiplierArmor>0.4</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>1.10</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.05</StuffEffectMultiplierInsulation_Heat>
+        </statBases>
+        <apparel>
+            <wornGraphicPath>Things/Valhallan/OnSkin/officergreatcoat</wornGraphicPath>
+            <tags>
+                <li>40kValhallanGuard</li>
+                <li>40kValhallanGreatcoat</li>
+            </tags>
+        </apparel>
+    </ThingDef>
+
+	<!-- Commissar Uniform -->
+
+    <ThingDef ParentName="GW_AM_OnSkinBase">
+        <defName>GW_AM_CommissarUniform</defName>
+        <label>Commissar Uniform</label>
+       <recipeMaker>
+            <researchPrerequisite>GW_AM_OfficersOfAM</researchPrerequisite>
+        </recipeMaker>
+        <graphicData>
+            <texPath>Things/Commissar/Display/CommissarUniform</texPath>
+        </graphicData>
+        <costStuffCount>100</costStuffCount>
+        <equippedStatOffsets>
+            <SocialImpact>0.1</SocialImpact>
+        </equippedStatOffsets>	
+        <statBases>
+            <MaxHitPoints>150</MaxHitPoints>
+            <WorkToMake>5000</WorkToMake>
+            <StuffEffectMultiplierArmor>0.4</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>1.10</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.05</StuffEffectMultiplierInsulation_Heat>
+        </statBases>
+        <apparel>
+            <wornGraphicPath>Things/Commissar/Onskin/CommissarUniform</wornGraphicPath>
+            <tags>
+                <li>40kCommissar</li>
+                <li>40kCommissarOnSkin</li>
+            </tags>
+        </apparel>
+    </ThingDef>
+</Defs>
