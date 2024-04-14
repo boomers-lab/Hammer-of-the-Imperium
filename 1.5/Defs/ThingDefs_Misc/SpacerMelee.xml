@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef Abstract="true" Name="GW_AM_PowerSwordBase" ParentName="BaseMeleeWeapon_Sharp_Quality">
+        <possessionCount>1</possessionCount>
+        <description>The Militarum Power Sword, a symbol of authority and lethal precision wielded by the disciplined forces of the Astra Militarum, embodies the fusion of martial prowess and advanced technology within the grim and war-torn universe of Warhammer 40,000.\n\nForged in the crucibles of Imperial manufactorums, the Power Sword is a masterfully crafted melee weapon. Its razor-sharp blade, sheathed in an energy field, crackles with a lethal charge capable of cutting through armor and flesh alike. This energy field not only enhances the sword's cutting power but also renders it a formidable weapon against even the most heavily armored adversaries.\n\nThe Power Sword serves as a potent symbol of command within the Astra Militarum, often carried by officers and leaders on the front lines. Its gleaming blade and hum of contained energy project an aura of authority and martial prowess, inspiring the soldiers of the Imperium to stand resolute in the face of the galaxy's myriad threats.\n\nIn the hands of a skilled Astra Militarum officer, the Power Sword becomes a versatile instrument of war, capable of delivering precise strikes and cleaving through the enemies of humanity. As the Imperium fights for survival, the Militarum Power Sword stands as a testament to the enduring might of the Astra Militarum in the grim darkness of the far future.</description>
+        <graphicData>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+        </graphicData>
+        <uiIconScale>1.2</uiIconScale>
+        <techLevel>Spacer</techLevel>
+        <thingSetMakerTags>
+			<li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+        <weaponTags>
+            <li>SpacerMeleeDecent</li>
+            <li>GW_AM_SpacerMelee</li>
+        </weaponTags>
+        <stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+        <tradeTags>
+            <li>HPMelee</li>
+            <li>GW_AM_SpacerMelee</li>
+        </tradeTags>
+        <statBases>
+            <WorkToMake>32000</WorkToMake>
+            <Mass>3</Mass>
+        </statBases>
+        <relicChance>2</relicChance>
+        <equippedAngleOffset>-65</equippedAngleOffset>
+        <tools>
+            <li>
+                <label>handle</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>14</power>
+                <cooldownTime>1.6</cooldownTime>
+            </li>
+            <li>
+                <label>point</label>
+                <capacities>
+                    <li>Stab</li>
+                </capacities>
+                <power>30</power>
+                <cooldownTime>2</cooldownTime>
+				<armorPenetration>1.0</armorPenetration>
+            </li>
+            <li>
+                <label>edge</label>
+                <capacities>
+                    <li>Cut</li>
+                </capacities>
+                <power>30</power>
+                <cooldownTime>2</cooldownTime>
+				<armorPenetration>1.0</armorPenetration>
+            </li>
+        </tools>
+        <recipeMaker>
+            <researchPrerequisite>GW_PowerMeleeWeapons</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>10</Crafting>
+            </skillRequirements>
+            <recipeUsers Inherit="false">
+                <li>HP_AM_MilitarumFabricationBench</li>
+            </recipeUsers>
+            <displayPriority>400</displayPriority>
+        </recipeMaker>
+        <costStuffCount>60</costStuffCount>
+	    <costList>
+            <Plasteel>60</Plasteel>
+            <ComponentSpacer>2</ComponentSpacer>
+        </costList>
+    </ThingDef>
+  
+  <!-- ====================== Power Sword ===================== -->
+  
+    <ThingDef ParentName="GW_AM_PowerSwordBase">
+        <defName>GW_AM_MeleeWeapon_PowerSword</defName>
+        <label>Militarum powersword</label>
+        <graphicData>
+            <texPath>Weapons/Power Sword</texPath>
+        </graphicData>
+    </ThingDef>
+	
+	 <!-- ====================== Power Sword Crossguard ===================== -->
+  
+    <ThingDef ParentName="GW_AM_PowerSwordBase">
+        <defName>GW_AM_MeleeWeapon_PowerSwordtwo</defName>
+        <label>Crossguard powersword</label>
+        <graphicData>
+            <texPath>Weapons/Power Sword 2</texPath>
+        </graphicData>
+    </ThingDef>
+
+	<!-- ====================== Power Fist ===================== -->
+  
+    <ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
+        <defName>GW_AM_MeleeWeapon_PowerFist</defName>
+        <label>Militarum power fist</label>
+        <description>The Militarum Power Fist, a colossal and formidable melee weapon wielded by the mighty warriors of the Astra Militarum, is a symbol of raw, unbridled power and crushing force on the battlefield within the dark and unforgiving expanse of Warhammer 40,000.\n\nCrafted with uncompromising strength, the Power Fist is an oversized gauntlet encasing the user's hand and forearm. Embedded within its reinforced structure are powerful hydraulic systems and energy field generators. This combination grants the Power Fist unparalleled destructive capability, allowing it to deliver bone-crushing blows and obliterate heavily armored foes with ease.\n\nThough the Power Fist's size and weight slow the user's movements, its devastating impact compensates for the reduced agility. It is a close-quarters weapon, ideal for smashing through enemy lines and engaging formidable adversaries at point-blank range. The kinetic force generated by the Power Fist is often sufficient to crush armored vehicles, making it a favored choice against the armored war machines that threaten the Imperium.\n\nWielding the Power Fist requires both strength and skill, traits possessed by the most formidable warriors and commanders of the Astra Militarum. Its presence on the battlefield instills fear in the hearts of the enemies of the Imperium, as they face an unstoppable force that can shatter defenses and turn the tide of battle in favor of humanity. In the grim and perilous universe of Warhammer 40,000, the Militarum Power Fist stands as a testament to the unyielding might of the Astra Militarum.</description>
+        <possessionCount>1</possessionCount>
+        <graphicData>
+            <texPath>Weapons/Power Fist</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <uiIconScale>1.2</uiIconScale>
+        <techLevel>Spacer</techLevel>
+        <statBases>
+            <WorkToMake>36000</WorkToMake>
+            <Mass>4</Mass>
+        </statBases>
+        <equippedAngleOffset>-65</equippedAngleOffset>
+        <recipeMaker>
+            <researchPrerequisite>GW_PowerMeleeWeapons</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>10</Crafting>
+            </skillRequirements>
+            <recipeUsers Inherit="false">
+                <li>HP_AM_MilitarumFabricationBench</li>
+            </recipeUsers>
+            <displayPriority>400</displayPriority>
+        </recipeMaker>
+        <stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+        <costStuffCount>60</costStuffCount>
+        <costList>
+            <Plasteel>80</Plasteel>
+            <ComponentSpacer>1</ComponentSpacer>
+        </costList>
+        <weaponTags>
+            <li>SpacerMeleeDecent</li>
+            <li>GW_AM_SpacerMelee</li>
+        </weaponTags>
+        <tradeTags>
+            <li>HPMelee</li>
+            <li>GW_AM_SpacerMelee</li>
+        </tradeTags>
+        <weaponClasses>
+            <li>Melee</li>
+        </weaponClasses>
+        <tools>
+            <li>
+                <label>Fist</label>
+                <labelUsedInLogging>false</labelUsedInLogging>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>42</power>
+                <cooldownTime>3</cooldownTime>
+				<extraMeleeDamages>
+					<li>
+						<def>Bomb</def>
+						<amount>3</amount>
+					</li>
+				</extraMeleeDamages>
+            </li>
+        </tools>
+    </ThingDef>
+	
+	<!--===== Power Maul =====-->
+	
+	<ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
+        <defName>GW_AM_MeleeWeapon_PowerMaul</defName>
+        <label>Ogryn power maul</label>
+        <description>The Ogryn Power Maul, an imposing melee weapon wielded by the formidable Ogryn shock troops of the Astra Militarum, epitomizes raw power and devastating impact on the war-torn battlefields of Warhammer 40,000.\n\nCrafted to match the colossal strength of the Ogryns, the Power Maul is a massive, blunt instrument designed to deliver bone-crushing blows to adversaries. Enhanced with sturdy construction and powered by formidable hydraulic systems, the Power Maul is capable of generating tremendous force upon impact. It is particularly effective against heavily armored foes and in smashing through barricades and fortifications.\n\nThe sheer size and weight of the Power Maul contribute to the slow and deliberate movements of the Ogryn wielding it. While lacking the swiftness of smaller melee weapons, the Power Maul compensates with its ability to pulverize enemies in close-quarters combat. The weapon's impact can incapacitate foes, shatter armor, and disrupt enemy formations.\n\nUtilizing the Power Maul requires a combination of immense strength and calculated precision. The Ogryn shock troops, with their inherent physical might, are well-suited to leverage the full potential of this devastating melee weapon. On the battlefield, the presence of Ogryns armed with Power Mauls instills fear in the enemies of the Imperium, as they face a relentless force capable of smashing through any resistance.\n\nIn the grim and brutal universe of Warhammer 40,000, the Ogryn Power Maul stands as a symbol of the Astra Militarum's commitment to overwhelming force in the defense of humanity.</description>
+        <possessionCount>1</possessionCount>
+        <graphicData>
+            <texPath>Weapons/Power_Maul</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.2</drawSize>
+        </graphicData>
+        <uiIconScale>1.2</uiIconScale>
+        <techLevel>Spacer</techLevel>
+        <statBases>
+            <WorkToMake>42000</WorkToMake>
+            <Mass>4.8</Mass>
+        </statBases>
+        <equippedAngleOffset>-65</equippedAngleOffset>
+        <recipeMaker>
+            <researchPrerequisite>GW_AM_OgrynIntegration</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>10</Crafting>
+            </skillRequirements>
+            <recipeUsers Inherit="false">
+                <li>HP_AM_MilitarumFabricationBench</li>
+            </recipeUsers>
+            <displayPriority>400</displayPriority>
+        </recipeMaker>
+        <stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+        <costStuffCount>75</costStuffCount>
+        <costList>
+            <Plasteel>85</Plasteel>
+            <ComponentSpacer>2</ComponentSpacer>
+        </costList>
+        <weaponTags>
+            <li>SpacerMeleeDecent</li>
+            <li>GW_AM_SpacerMelee</li>
+            <li>GW_PowerMaul</li>
+        </weaponTags>
+        <tradeTags>
+            <li>HPMelee</li>
+            <li>GW_AM_SpacerMelee</li>
+        </tradeTags>
+        <weaponClasses>
+            <li>Melee</li>
+        </weaponClasses>
+        <tools>
+			<li>
+                <label>handle</label>
+                <capacities>
+                    <li>Poke</li>
+                </capacities>
+                <power>16</power>
+                <cooldownTime>1.75</cooldownTime>
+				<armorPenetration>0.24</armorPenetration>
+            </li>
+            <li>
+                <label>head</label>
+				<labelUsedInLogging>false</labelUsedInLogging>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>36</power>
+                <cooldownTime>3.25</cooldownTime>
+				<extraMeleeDamages>
+					<li>
+						<def>Bomb</def>
+						<amount>5</amount>
+					</li>
+				</extraMeleeDamages>
+				<armorPenetration>0.48</armorPenetration>
+            </li>
+        </tools>
+    </ThingDef>
+</Defs>

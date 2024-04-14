@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--===== Flamer Projectile =====-->
+
+	<VFECore.ExpandableProjectileDef ParentName="BaseBullet">
+		<defName>GW_AM_Bullet_Flamer</defName>
+		<label>flamer shot</label>
+		<thingClass>VFECore.FlamethrowProjectile</thingClass>
+		<graphicData>
+			<texPath>Projectiles/AMFlamer_Flame</texPath>
+			<texPathFadeOut>Projectiles/AMFlamer_End</texPathFadeOut>
+			<shaderType>MoteGlow</shaderType>
+		</graphicData>
+		<projectile>
+			<damageDef>Flame</damageDef>
+			<speed>45</speed>
+			<damageAmountBase>3</damageAmountBase>
+		</projectile>
+
+		<drawOffscreen>true</drawOffscreen>
+		<lifeTimeDuration>55</lifeTimeDuration>
+		<widthScaleFactor>0.65</widthScaleFactor>
+		<heightScaleFactor>1</heightScaleFactor>
+		<startingPositionOffset>(0, 0, -1)</startingPositionOffset>
+		<totalSizeScale>1.15</totalSizeScale>
+		<tickFrameRate>2</tickFrameRate>
+		<finalTickFrameRate>5</finalTickFrameRate>
+		<tickDamageRate>20</tickDamageRate>
+		<dealsDamageOnce>true</dealsDamageOnce>
+		<minDistanceToAffect>2</minDistanceToAffect>
+	</VFECore.ExpandableProjectileDef>
+
+	<!--===== missile Projectile =====-->
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>GW_AM_Missile</defName>
+		<label>missile</label>
+		<graphicData>
+			<texPath>Things/Projectile/Rocket_Big</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<thingClass>Projectile_Explosive</thingClass>
+		<projectile>
+			<damageAmountBase>100</damageAmountBase>
+			<damageDef>Bomb</damageDef>
+			<explosionRadius>6.8</explosionRadius>
+			<speed>65</speed>
+		</projectile>
+	</ThingDef>
+	
+	<!--===== Bolt Pistol Projectile =====-->
+	
+	<ThingDef ParentName="BaseBullet">
+        <defName>GW_AM_Bullet_BoltPistol</defName>
+        <label>bolt pistol round</label>
+        <graphicData>
+            <texPath>Projectiles/AM_BoltPistol_Proj</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.8</drawSize>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>18</damageAmountBase>
+			<stoppingPower>0.7</stoppingPower>
+			<armorPenetrationBase>0.35</armorPenetrationBase>
+            <speed>50</speed>
+        </projectile>
+    </ThingDef>
+	
+	<!--===== Bolter Projectile =====-->
+	
+	<ThingDef ParentName="BaseBullet">
+        <defName>GW_AM_Bullet_Bolter</defName>
+        <label>bolter round</label>
+        <graphicData>
+            <texPath>Projectiles/AM_BoltPistol_Proj</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>30</damageAmountBase>
+			<stoppingPower>1.2</stoppingPower>
+			<armorPenetrationBase>0.55</armorPenetrationBase>
+            <speed>50</speed>
+        </projectile>
+    </ThingDef>
+	
+	<!--===== Base Launcher =====-->
+	
+	<ThingDef Abstract="true" ParentName="BaseHumanMakeableGun" Name="GW_AM_LauncherBase">
+		<graphicData>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <recipeMaker>
+            <researchPrerequisite>GW_Launchers</researchPrerequisite>
+            <displayPriority>420</displayPriority>
+        </recipeMaker>
+        <thingSetMakerTags>
+            <li>RewardStandardQualitySuper</li>
+        </thingSetMakerTags>
+        <tradeTags>
+            <li>SpacerGun</li>
+			<li>GW_AM_SpacerRanged</li>
+        </tradeTags>
+        <weaponTags>
+			<li>HPRanged</li>
+            <li>GW_AM_SpacerRanged</li>
+        </weaponTags>
+	</ThingDef>
+	
+	<!--===== Missile Launcher =====-->
+	
+	<ThingDef ParentName="GW_AM_LauncherBase">
+		<defName>GW_AM_Gun_MissileLauncher</defName>
+		<label>Missile Launcher</label>
+		<description>Within the vast expanse of the Warhammer 40,000 universe, the Missile Launcher, a formidable heavy weapon, embodies raw power and strategic versatility, often employed by the Imperial Guard. This imposing launcher, compact yet robust, features a matte-black ceramite alloy construction, ensuring resilience in the face of the grim and war-torn battlefield.\n\nDesigned with tactical precision, the Missile Launcher boasts a user-friendly interface with an ergonomic shoulder rest and grip, providing stability for the operator during deployment. The weapon's advanced targeting system adds a layer of versatility, enabling precise engagement against both ground and airborne threats.\n\nA swift and efficient reload mechanism is integral to the launcher's design, facilitating the rapid insertion of munitions and ensuring a continuous onslaught in the chaos of combat. Guided missiles, unleashed by the launcher, carry devastating payloads capable of wreaking havoc on armored adversaries, solidifying its place as a crucial asset in the Imperial Guard's arsenal.\n\nMarked with symbols of the Imperium, the Missile Launcher serves as a testament to unwavering loyalty and the relentless defense waged by the forces of humanity against the myriad threats lurking in the grim and perilous galaxy of Warhammer 40,000.</description>
+		<graphicData>
+			<texPath>Weapons/MissileLauncher</texPath>
+		</graphicData>
+		<soundInteract>Interact_ChargeRifle</soundInteract>
+		<recipeMaker>
+			<unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+			<recipeUsers Inherit="False">
+				<li>HP_AM_MilitarumFabricationBench</li>
+			</recipeUsers>
+			<skillRequirements>
+				<Crafting>10</Crafting>
+			</skillRequirements>
+			<workSkill>Crafting</workSkill>
+		</recipeMaker>
+		<costList>
+			<Plasteel>75</Plasteel>
+			<Steel>250</Steel>
+			<ComponentIndustrial>15</ComponentIndustrial>
+		</costList>
+		<weaponClasses>
+			<li>RangedHeavy</li>
+		</weaponClasses>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>GW_AM_Missile</defaultProjectile>
+				<warmupTime>5</warmupTime>
+				<range>36</range>
+				<forcedMissRadius>1.4</forcedMissRadius>
+				<burstShotCount>1</burstShotCount>
+				<soundCast>InfernoCannon_Fire</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<muzzleFlashScale>14</muzzleFlashScale>
+			</li>
+		</verbs>
+		<statBases>
+			<WorkToMake>37000</WorkToMake>
+            <Mass>7.5</Mass>
+            <AccuracyTouch>0.55</AccuracyTouch>
+            <AccuracyShort>0.64</AccuracyShort>
+            <AccuracyMedium>0.80</AccuracyMedium>
+            <AccuracyLong>0.90</AccuracyLong>
+            <RangedWeapon_Cooldown>5</RangedWeapon_Cooldown>
+		</statBases>
+		<tools>
+            <li>
+                <label>barrel</label>
+                <capacities>
+					<li>Blunt</li>
+                </capacities>
+				<power>12</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+        </tools>
+	</ThingDef>
+	
+	<!--===== Bolt pistol base =====-->
+	
+	<ThingDef Abstract="true" ParentName="BaseHumanMakeableGun" Name="GW_AM_BolterBase">
+        <graphicData>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <recipeMaker>
+            <researchPrerequisite>GW_Bolters</researchPrerequisite>
+            <displayPriority>420</displayPriority>
+        </recipeMaker>
+        <thingSetMakerTags>
+            <li>RewardStandardQualitySuper</li>
+        </thingSetMakerTags>
+        <tradeTags>
+            <li>GW_AM_SpacerRanged</li>
+        </tradeTags>
+        <weaponTags>
+            <li>HPRanged</li>
+        </weaponTags>
+    </ThingDef>
+	
+	<!--===== Bolt Pistol =====-->
+	
+	<ThingDef ParentName="GW_AM_BolterBase">
+        <defName>GW_AM_Gun_BoltPistol</defName>
+        <label>Bolt Pistol</label>
+        <description>In the expansive tapestry of the Warhammer 40,000 universe, the Bolt Pistol, a formidable sidearm, emerges as a symbol of lethal precision and close-quarters firepower within the arsenal of the Space Marines. This compact yet potent weapon is crafted with a matte-black ceramite alloy, ensuring durability amidst the grim and relentless nature of the galactic battlefield.\n\nThe Bolt Pistol operates as a rapid-firing, self-loading, and magazine-fed firearm, unleashing mass-reactive bolts or projectiles with every precise shot. These explosive bolts, possessing destructive potential upon impact, prove effective against a diverse array of adversaries, showcasing the versatility required in the Space Marine's relentless combat engagements.\n\nFunctioning as a hybrid weapon, the Bolt Pistol seamlessly bridges the gap between conventional sidearms and small-scale artillery. Its deadly accuracy, impactful shots, and rapid firing rate make it a fearsome asset, delivering devastating salvos while maintaining precision in the chaos of close to mid-range combat.\n\nWielding the Bolt Pistol, the Space Marines epitomize the unmatched might and cutting-edge technology of the Imperium of Man, showcasing their unwavering resolve in the eternal struggle against the countless threats that plague the war-ravaged galaxy of Warhammer 40,000.</description>
+        <possessionCount>1</possessionCount>
+        <graphicData>
+            <drawSize>1.1</drawSize>
+            <texPath>Weapons/bolt_pistol</texPath>
+        </graphicData>
+        <soundInteract>Interact_Autopistol</soundInteract>
+        <weaponClasses>
+            <li>RangedHeavy</li>
+        </weaponClasses>
+        <weaponTags>
+			<li>HPRanged</li>
+            <li>ShortShots</li>
+        </weaponTags>
+        <statBases>
+            <WorkToMake>14000</WorkToMake>
+            <Mass>2.8</Mass>
+            <AccuracyTouch>0.65</AccuracyTouch>
+            <AccuracyShort>0.70</AccuracyShort>
+            <AccuracyMedium>0.80</AccuracyMedium>
+            <AccuracyLong>0.75</AccuracyLong>
+            <RangedWeapon_Cooldown>1.3</RangedWeapon_Cooldown>
+        </statBases>
+		<equippedStatOffsets>
+      <MoveSpeed>0.10</MoveSpeed>
+		</equippedStatOffsets>
+        <costList>
+            <Steel>150</Steel>
+            <ComponentIndustrial>9</ComponentIndustrial>
+			<HP_Ceramite>5</HP_Ceramite>
+        </costList>
+        <recipeMaker>
+		<unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+		<recipeUsers Inherit="False">
+			<li>HP_AM_MilitarumFabricationBench</li>
+		</recipeUsers>
+		<skillRequirements>
+			<Crafting>8</Crafting>
+	 	</skillRequirements>
+		<workSkill>Crafting</workSkill>
+            <displayPriority>430</displayPriority>
+        </recipeMaker>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>GW_AM_Bullet_BoltPistol</defaultProjectile>
+                <warmupTime>0.9</warmupTime>
+                <range>24</range>
+				<burstShotCount>1</burstShotCount>
+                <soundCast>GW_AM_Bolt_Pistol_Sound</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+        <tools>
+            <li>
+                <label>grip</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>10</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+            <li>
+                <label>barrel</label>
+                <capacities>
+                    <li>Blunt</li>
+                    <li>Poke</li>
+                </capacities>
+                <power>10</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+        </tools>
+    </ThingDef>
+	
+	<!--===== Locke Bolter =====-->
+	
+	<ThingDef ParentName="GW_AM_BolterBase">
+        <defName>GW_AM_Gun_Bolter</defName>
+        <label>Locke Bolter</label>
+        <description>In the sprawling tapestry of the Warhammer 40,000 universe, the Locke Bolter, a distinctive and specialized firearm, emerges as a testament to the precision and adaptability required by the elite forces within the Imperium. This unique bolter, named after its illustrious inventor or revered user, is meticulously crafted with a matte-black ceramite alloy, ensuring resilience in the face of the galaxy's relentless tumult.\n\nOperating as a rapid-firing, self-loading, and magazine-fed weapon, the Locke Bolter unleashes mass-reactive bolts or projectiles with unparalleled precision. These specialized bolts, engineered for optimal performance, carry devastating potential upon impact, proving effective against a broad spectrum of adversaries. The Locke Bolter serves as a pinnacle of versatility, adapting to the demanding needs of the battlefield.\n\nWith its deadly accuracy, impactful shots, and swift firing rate, the Locke Bolter transcends the ordinary, distinguishing itself as a symbol of excellence among the arsenal of the Imperium. Wielded by the most skilled and revered warriors, it stands as a beacon of technological prowess and unwavering dedication in the ceaseless conflict that defines the grim and war-torn galaxy of Warhammer 40,000.</description>
+        <possessionCount>1</possessionCount>
+        <graphicData>
+            <drawSize>1.1</drawSize>
+            <texPath>Weapons/Locke_Bolt</texPath>
+        </graphicData>
+        <soundInteract>Interact_Rifle</soundInteract>
+        <weaponClasses>
+            <li>RangedHeavy</li>
+        </weaponClasses>
+        <weaponTags>
+			<li>HPRanged</li>
+            <li>ShortShots</li>
+        </weaponTags>
+        <statBases>
+            <WorkToMake>18000</WorkToMake>
+            <Mass>7</Mass>
+            <AccuracyTouch>0.55</AccuracyTouch>
+            <AccuracyShort>0.68</AccuracyShort>
+            <AccuracyMedium>0.84</AccuracyMedium>
+            <AccuracyLong>0.72</AccuracyLong>
+            <RangedWeapon_Cooldown>1.8</RangedWeapon_Cooldown>
+        </statBases>
+		<equippedStatOffsets>
+      <MoveSpeed>-0.10</MoveSpeed>
+		</equippedStatOffsets>
+        <costList>
+            <Steel>225</Steel>
+            <ComponentIndustrial>16</ComponentIndustrial>
+			<HP_Ceramite>15</HP_Ceramite>
+        </costList>
+        <recipeMaker>
+		<unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+		<recipeUsers Inherit="False">
+			<li>HP_AM_MilitarumFabricationBench</li>
+		</recipeUsers>
+            	<skillRequirements>
+            	    <Crafting>10</Crafting>
+	 	</skillRequirements>
+		<workSkill>Crafting</workSkill>
+            <displayPriority>430</displayPriority>
+        </recipeMaker>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>GW_AM_Bullet_Bolter</defaultProjectile>
+                <warmupTime>0.9</warmupTime>
+                <range>32</range>
+				<burstShotCount>3</burstShotCount>
+                <soundCast>GW_AM_Bolt_Pistol_Sound</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+        <tools>
+            <li>
+                <label>grip</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>10</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+            <li>
+                <label>barrel</label>
+                <capacities>
+                    <li>Blunt</li>
+                    <li>Poke</li>
+                </capacities>
+                <power>10</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+        </tools>
+    </ThingDef>
+	
+	<!--===== Flamer Base =====-->
+	
+	<ThingDef Abstract="True" ParentName="BaseGunWithQuality" Name="GW_AM_FlamerBase">
+		<smeltable>false</smeltable>
+		<techLevel>Spacer</techLevel>
+		<generateCommonality>0.5</generateCommonality>
+		<tradeability>None</tradeability>
+		<relicChance>0</relicChance>
+	</ThingDef>
+	
+	<!--===== Flamer =====-->
+	
+	<ThingDef ParentName="GW_AM_FlamerBase">
+		<defName>GW_AM_Gun_Flamer</defName>
+		<label>Acctran Flamer</label>
+		<description>In the expansive expanse of the Warhammer 40,000 cosmos, the Acctran Flamer, a specialized and fearsome weapon, emerges as a harbinger of unrelenting purgation wielded by the devout forces of the Imperium. Crafted with meticulous precision, this flamethrower variant bears the unmistakable matte-black ceramite alloy, a testament to its durability in the relentless heat of battle.\n\nFunctioning as a formidable and area-denial weapon, the Acctran Flamer projects searing torrents of promethium flames, bathing the battlefield in purifying fire. This weapon is designed to cleanse heretical entities and xenos threats, leaving nothing but scorched remnants in its wake. Its incendiary power is especially effective in close-quarters engagements, turning the tide against foes who dare to stand against the righteous fury of the Imperium.\n\nThe Acctran Flamer, with its infernal glow and destructive capabilities, epitomizes the unyielding resolve of the Imperium's forces in their eternal struggle against the myriad enemies that beset the grim and war-torn galaxy of Warhammer 40,000. Wielded by the faithful, it stands as a beacon of divine retribution, ensuring the enemies of humanity face the relentless cleansing fire of Imperial justice.</description>
+		<graphicData>
+			<texPath>Weapons/Accatran_Flamer</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.8</drawSize>
+		</graphicData>
+		<tools>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>11.7</power>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+		</tools>
+		<recipeMaker>
+			<unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+			<recipeUsers Inherit="False">
+				<li>HP_AM_MilitarumFabricationBench</li>
+			</recipeUsers>		
+			<researchPrerequisite>GW_Flamers</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>10</Crafting>
+			</skillRequirements>
+			<workSkill>Crafting</workSkill>
+		</recipeMaker>
+		<costList>
+			<Plasteel>90</Plasteel>
+			<Steel>135</Steel>
+			<ComponentIndustrial>15</ComponentIndustrial>
+			<HP_Ceramite>30</HP_Ceramite>
+		</costList>
+		<statBases>
+			<Mass>14</Mass>
+			<RangedWeapon_Cooldown>3.8</RangedWeapon_Cooldown>
+			<WorkToMake>38000</WorkToMake>
+		</statBases>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>GW_AM_Bullet_Flamer</defaultProjectile>
+				<ai_AvoidFriendlyFireRadius>3</ai_AvoidFriendlyFireRadius>
+				<warmupTime>1.25</warmupTime>
+				<range>14</range>
+				<burstShotCount>1</burstShotCount>
+				<soundCast>GW_AM_Flamer_Sound</soundCast>
+				<soundCastTail>GunTail_Light</soundCastTail>
+				<muzzleFlashScale>14</muzzleFlashScale>
+			</li>
+		</verbs>
+	</ThingDef>
+	
+</Defs>
