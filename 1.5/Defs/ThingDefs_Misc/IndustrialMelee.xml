@@ -293,7 +293,7 @@
 	<ThingDef ParentName="GW_AM_IndustrialSharpBase">
         <defName>GW_AM_MeleeWeapon_Eviscerator</defName>
         <label>Eviscerator</label>
-        <description>. . .</description>
+        <description>The Eviscerator, a towering symbol of the Imperium's might, this monstrous chainsword cleaves through the enemies of humanity with relentless brutality, leaving a trail of devastation in the grim darkness of the 41st millennium's unending wars.</description>
         <graphicData>
             <texPath>Weapons/Eviscerator</texPath>
         </graphicData>

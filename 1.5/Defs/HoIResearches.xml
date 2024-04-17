@@ -138,7 +138,7 @@
 	<ResearchProjectDef ParentName="GW_AM_RegimentResearchBase">
 		<defName>GW_AM_OfficersOfAM</defName>
 		<label>Officers of Astra Militarum</label>
-        <description>Officers of the Militarum in Warhammer 40,000 have distinct attire: the Commissar wears a black greatcoat and peaked cap, the Militarum Priest dons religious robes, the Field Medic dresses in standard fatigues with a red cross symbol, and the Sanctioned Psyker is clad in robes with psychic glyphs, bearing a glowing mark, and wielding a crackling staff.</description>
+        <description>Officers of the Militarum in Warhammer 40,000 have distinct attire: the Commissar wears a black greatcoat and peaked cap, the Militarum Priest dons religious robes, Militarum Engineseer which help Guard with thier tanks, the Field Medic dresses in standard fatigues with a red cross symbol, and the Sanctioned Psyker is clad in robes with psychic glyphs, bearing a glowing mark, and wielding a crackling staff.</description>
 		<researchViewY>0</researchViewY>
 		<researchViewX>6.00</researchViewX>
 	</ResearchProjectDef>
