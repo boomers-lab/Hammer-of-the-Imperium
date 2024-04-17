@@ -85,7 +85,7 @@
     <ThingDef ParentName="GW_AM_AutogunBase">
         <defName>Gun_Agripinaamkii</defName>
         <label>Agripinaa MKII</label>
-        <description>In the relentless expanse of the Warhammer 40,000 galaxy, the Astra Militarum Agripinaa MKII Bolter stands as a paragon of firepower, wielded by the indomitable soldiers of the Imperium. Crafted with meticulous care, this bolter features a robust and matte-black ceramite alloy exterior, symbolizing its steadfastness in the unyielding crucible of war.\n\nFunctioning as a rapid-firing and magazine-fed weapon, the Agripinaa MKII Bolter unleashes mass-reactive bolts with lethal precision. Its versatile design makes it a stalwart companion on the battlefield, capable of engaging a spectrum of adversaries, from infantry to armored foes.\n\nWith each discharge, the unmistakable crack of mass-reactive bolts echoes, a symphony of destruction that heralds the Agripinaa MKII Bolter's prowess in turning the tide of battle. In the hands of the disciplined soldiers of the Astra Militarum, this bolter stands as a testament to the Imperium's commitment to overwhelming firepower and technological supremacy in the ceaseless struggle against heresy and alien adversaries in the grim and war-torn galaxy of Warhammer 40,000.</description>
+        <description>The Agripinaa MKII Autogun stands as a fearsome weapon within the Warhammer 40,000 universe, renowned for its devastating firepower and resilience. Crafted with meticulous detail, its design reflects a balance of robustness and efficiency to endure the harsh conditions of futuristic battlefields.</description>
         <graphicData>
             <texPath>Weapons/Agripinaa MKII</texPath>
         </graphicData>
@@ -151,7 +151,7 @@
     <ThingDef ParentName="GW_AM_AutogunBase">
         <defName>Gun_Agripinaamkiitanker</defName>
         <label>Tanker Agripinaa MKII</label>
-        <description>In the vast expanses of the Warhammer 40,000 universe, the Astra Militarum Tanker Agripinaa MKII Bolter stands as a formidable testament to the might of the Imperium's armored forces. Forged with precision engineering, this bolter bears a rugged and matte-black ceramite alloy exterior, a symbol of its resilience amidst the relentless tumult of warfare.\n\nDesigned for the armored crews of the Astra Militarum, the Agripinaa MKII Tanker Bolter serves as a compact yet potent firearm. Its rapid-firing mechanism and magazine-fed design make it an ideal companion for tank crews, providing them with a means to repel threats both within and outside their armored vehicles.\n\nWith each discharge, the sharp report of mass-reactive bolts resounds, a harmonious symphony of firepower that underscores the Agripinaa MKII Tanker Bolter's capability to maintain dominance on the battlefield. In the hands of the valiant tank crews of the Astra Militarum, this bolter stands as a symbol of the Imperium's commitment to arming its forces with advanced technology, ensuring victory against the myriad foes in the grim and war-torn galaxy of Warhammer 40,000.</description>
+        <description>The Tanker Agripinaa MKII Autogun stands as a fearsome weapon within the Warhammer 40,000 universe, renowned for its devastating firepower and resilience. Crafted with meticulous detail, its design reflects a balance of robustness and efficiency to endure the harsh conditions of futuristic battlefields.</description>
         <graphicData>
             <texPath>Weapons/Tanker Agripinaa MKII</texPath>
         </graphicData>
