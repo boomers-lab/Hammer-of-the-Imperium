@@ -87,7 +87,7 @@
 	<ThingDef ParentName="GW_AM_OuterBase">
         <defName>GW_AM_CommissarOuter</defName>
         <label>Commissar Jacket</label>
-        <description>. . .</description>
+        <description>The Commissar Jacket\n\n A distinctive garment worn by the revered Commissars of the Imperium, exuding authority and discipline on the battlefield. Crafted from durable yet supple materials, it features a tailored fit that emphasizes the wearer's imposing presence.</description>
         <recipeMaker>
             <researchPrerequisite>GW_AM_OfficersOfAM</researchPrerequisite>
         </recipeMaker>

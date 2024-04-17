@@ -152,7 +152,7 @@
 	<ThingDef ParentName="ArmorMachineableBase">
         <defName>GW_AM_CommissarAttachment</defName>
         <label>Commissar gorget</label>
-        <description>. . .</description>
+        <description>The Commissar gorget, a symbol of authority in the Imperium, is a rigid high-collar piece worn around the neck, extending down to cover the upper chest. Made of durable materials like adamantium or ceramite, it bears the golden aquila of the Imperium and intricate filigree. It's both protective and symbolic, reminding soldiers of the consequences of disobedience and heresy.</description>
         <recipeMaker>
             <researchPrerequisite>GW_AM_OfficersOfAM</researchPrerequisite>
         </recipeMaker>

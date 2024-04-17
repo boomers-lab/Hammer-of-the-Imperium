@@ -45,8 +45,8 @@
 
 	<ThingDef ParentName="GW_AM_MiddleBase">
         <defName>GW_AM_CommissarMiddle</defName>
-        <label>commissar plate</label>
-        <description>. . .</description>
+        <label>commissar armor plate</label>
+        <description>The Commissar armor plate\n\n Imposing symbol of authority and resilience worn by the esteemed Commissars of the Imperium. Fashioned from adamantium or ceramite, it boasts a formidable design, providing both protection and intimidation on the battlefield.</description>
         <recipeMaker>
             <researchPrerequisite>GW_AM_OfficersOfAM</researchPrerequisite>
         </recipeMaker>

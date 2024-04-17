@@ -726,7 +726,7 @@
 	<ThingDef ParentName="GW_AM_Hat_CapBase">
         <defName>GW_AM_PriestHat</defName>
         <label>Priest Hat</label>
-        <description>. . .</description>
+        <description>The Priest hat\n\n In the grim darkness of the 41st millennium is a solemn and iconic piece of headwear worn by the devout clergy of the Imperium of Man. Resembling a tall, conical shape, it is often crafted from heavy fabrics and adorned with intricate embroideries and religious symbols.</description>
         <recipeMaker>
             <researchPrerequisite>GW_AM_OfficersOfAM</researchPrerequisite>
             <skillRequirements>
@@ -780,7 +780,7 @@
 	<ThingDef ParentName="GW_AM_Hat_CapBase">
         <defName>GW_AM_PriestHood</defName>
         <label>Priest Hood</label>
-        <description>. . .</description>
+        <description>The Priest hood\n\n In the 41st millennium is a sacred garment worn by the devout clergy of the Imperium of Man. Crafted from heavy, durable fabrics, it drapes over the shoulders and frames the face, conveying an aura of solemnity and reverence.</description>
         <recipeMaker>
             <researchPrerequisite>GW_AM_OfficersOfAM</researchPrerequisite>
             <skillRequirements>
@@ -834,7 +834,7 @@
 	<ThingDef ParentName="GW_AM_Hat_CapBase">
         <defName>GW_AM_PriestHoodDown</defName>
         <label>Priest Hood(down)</label>
-        <description>. . .</description>
+        <description>The Priest hood\n\n In the 41st millennium is a sacred garment worn by the devout clergy of the Imperium of Man. Crafted from heavy, durable fabrics, it drapes over the shoulders and frames the face, conveying an aura of solemnity and reverence.</description>
         <recipeMaker>
             <researchPrerequisite>GW_AM_OfficersOfAM</researchPrerequisite>
             <skillRequirements>
@@ -890,7 +890,7 @@
     <ThingDef ParentName="GW_AM_Hat_CapBase">
         <defName>GW_AM_CommissarCap</defName>
         <label>Commissar Cap</label>
-        <description>. . .</description>
+        <description>The Commissar cap\n\n A distinguished emblem of authority within the Imperium of Man, donned by the revered Commissariat officers. It features a sleek, peaked design, crafted from sturdy materials like leather or reinforced fabric.</description>
         <graphicData>
             <texPath>Things/Commissar/Display/CommissarCap</texPath>
         </graphicData>
