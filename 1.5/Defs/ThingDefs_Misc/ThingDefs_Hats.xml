@@ -764,16 +764,16 @@
         </apparel>
 		
 		<modExtensions>
-			<li Class="VFECore.ApparelDrawPosExtension" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
-				<apparelDrawSettings>
-                    <drawPosNorthOffset>(0, 0, 0)</drawPosNorthOffset>
-                    <drawPosSouthOffset>(0, 0, 0)</drawPosSouthOffset>
-                    <drawPosWestOffset>(0, 0, 0)</drawPosWestOffset>
-                    <drawPosEastOffset>(0, 0, 0)</drawPosEastOffset>
-                </apparelDrawSettings>
-                <isUnifiedApparel>true</isUnifiedApparel>
-				<hideHead>false</hideHead>
-            </li>
+			<!-- <li Class="VFECore.ApparelDrawPosExtension" MayRequire="oskarpotocki.vanillafactionsexpanded.core"> -->
+				<!-- <apparelDrawSettings> -->
+                    <!-- <drawPosNorthOffset>(0, 0, 0)</drawPosNorthOffset> -->
+                    <!-- <drawPosSouthOffset>(0, 0, 0)</drawPosSouthOffset> -->
+                    <!-- <drawPosWestOffset>(0, 0, 0)</drawPosWestOffset> -->
+                    <!-- <drawPosEastOffset>(0, 0, 0)</drawPosEastOffset> -->
+                <!-- </apparelDrawSettings> -->
+                <!-- <isUnifiedApparel>true</isUnifiedApparel> -->
+				<!-- <hideHead>false</hideHead> -->
+            <!-- </li> -->
 	    </modExtensions>
     </ThingDef>
 	
@@ -818,16 +818,16 @@
         </apparel>
 		
 		<modExtensions>
-			<li Class="VFECore.ApparelDrawPosExtension" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
-				<apparelDrawSettings>
-                    <drawPosNorthOffset>(0, 0, 0)</drawPosNorthOffset>
-                    <drawPosSouthOffset>(0, 0, 0)</drawPosSouthOffset>
-                    <drawPosWestOffset>(0, 0, 0)</drawPosWestOffset>
-                    <drawPosEastOffset>(0, 0, 0)</drawPosEastOffset>
-                </apparelDrawSettings>
-                <isUnifiedApparel>true</isUnifiedApparel>
-				<hideHead>false</hideHead>
-            </li>
+			<!-- <li Class="VFECore.ApparelDrawPosExtension" MayRequire="oskarpotocki.vanillafactionsexpanded.core"> -->
+				<!-- <apparelDrawSettings> -->
+                    <!-- <drawPosNorthOffset>(0, 0, 0)</drawPosNorthOffset> -->
+                    <!-- <drawPosSouthOffset>(0, 0, 0)</drawPosSouthOffset> -->
+                    <!-- <drawPosWestOffset>(0, 0, 0)</drawPosWestOffset> -->
+                    <!-- <drawPosEastOffset>(0, 0, 0)</drawPosEastOffset> -->
+                <!-- </apparelDrawSettings> -->
+                <!-- <isUnifiedApparel>true</isUnifiedApparel> -->
+				<!-- <hideHead>false</hideHead> -->
+            <!-- </li> -->
 	    </modExtensions>
     </ThingDef>
 	
@@ -872,16 +872,16 @@
         </apparel>
 		
 		<modExtensions>
-			<li Class="VFECore.ApparelDrawPosExtension" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
-				<apparelDrawSettings>
-                    <drawPosNorthOffset>(0, 0, 0)</drawPosNorthOffset>
-                    <drawPosSouthOffset>(0, 0, 0)</drawPosSouthOffset>
-                    <drawPosWestOffset>(0, 0, 0)</drawPosWestOffset>
-                    <drawPosEastOffset>(0, 0, 0)</drawPosEastOffset>
-                </apparelDrawSettings>
-                <isUnifiedApparel>true</isUnifiedApparel>
-				<hideHead>false</hideHead>
-            </li>
+			<!-- <li Class="VFECore.ApparelDrawPosExtension" MayRequire="oskarpotocki.vanillafactionsexpanded.core"> -->
+				<!-- <apparelDrawSettings> -->
+                    <!-- <drawPosNorthOffset>(0, 0, 0)</drawPosNorthOffset> -->
+                    <!-- <drawPosSouthOffset>(0, 0, 0)</drawPosSouthOffset> -->
+                    <!-- <drawPosWestOffset>(0, 0, 0)</drawPosWestOffset> -->
+                    <!-- <drawPosEastOffset>(0, 0, 0)</drawPosEastOffset> -->
+                <!-- </apparelDrawSettings> -->
+                <!-- <isUnifiedApparel>true</isUnifiedApparel> -->
+				<!-- <hideHead>false</hideHead> -->
+            <!-- </li> -->
 	    </modExtensions>
     </ThingDef>
 	
@@ -930,16 +930,16 @@
         </apparel>
 		
 		<modExtensions>
-			<li Class="VFECore.ApparelDrawPosExtension" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
-				<apparelDrawSettings>
-                    <drawPosNorthOffset>(0, 0, 0)</drawPosNorthOffset>
-                    <drawPosSouthOffset>(0, 0, 0)</drawPosSouthOffset>
-                    <drawPosWestOffset>(0, 0, 0)</drawPosWestOffset>
-                    <drawPosEastOffset>(0, 0, 0)</drawPosEastOffset>
-                </apparelDrawSettings>
-                <isUnifiedApparel>true</isUnifiedApparel>
-				<hideHead>false</hideHead>
-            </li>
+			<!-- <li Class="VFECore.ApparelDrawPosExtension" MayRequire="oskarpotocki.vanillafactionsexpanded.core"> -->
+				<!-- <apparelDrawSettings> -->
+                    <!-- <drawPosNorthOffset>(0, 0, 0)</drawPosNorthOffset> -->
+                    <!-- <drawPosSouthOffset>(0, 0, 0)</drawPosSouthOffset> -->
+                    <!-- <drawPosWestOffset>(0, 0, 0)</drawPosWestOffset> -->
+                    <!-- <drawPosEastOffset>(0, 0, 0)</drawPosEastOffset> -->
+                <!-- </apparelDrawSettings> -->
+                <!-- <isUnifiedApparel>true</isUnifiedApparel> -->
+				<!-- <hideHead>false</hideHead> -->
+            <!-- </li> -->
 	    </modExtensions>
     </ThingDef>  
 
