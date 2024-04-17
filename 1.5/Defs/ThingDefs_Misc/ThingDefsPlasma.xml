@@ -22,6 +22,7 @@
             <armorPenetrationBase>0.7</armorPenetrationBase>
             <explosionRadius>0.9</explosionRadius>
             <speed>100</speed>
+			<explosionEffect>GW_PlasmaEffecter</explosionEffect>
         </projectile>
     </ThingDef>
     
@@ -64,6 +65,7 @@
             <armorPenetrationBase>0.5</armorPenetrationBase>
             <explosionRadius>1.6</explosionRadius>
             <speed>120</speed>
+			<explosionEffect>GW_PlasmaEffecter</explosionEffect>
         </projectile>
     </ThingDef>
 
