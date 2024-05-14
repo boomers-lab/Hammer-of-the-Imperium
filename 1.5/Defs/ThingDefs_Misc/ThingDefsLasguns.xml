@@ -132,7 +132,6 @@
           <li>RewardStandardQualitySuper</li>
         </thingSetMakerTags>
         <recipeMaker>
-            <researchPrerequisite>GW_Lasguns</researchPrerequisite>
             <skillRequirements>
                 <Crafting>8</Crafting>
             </skillRequirements>
@@ -187,7 +186,7 @@
         </verbs>
 		<recipeMaker>
             <researchPrerequisite>GW_AM_MilitariumArmor</researchPrerequisite>
-		<recipeMaker>
+		</recipeMaker>
         <tools>
             <li>
                 <label>stock</label>
@@ -253,7 +252,7 @@
         </verbs>
 		<recipeMaker>
             <researchPrerequisite>GW_AM_MilitariumArmor</researchPrerequisite>
-		<recipeMaker>
+		</recipeMaker>
         <tools>
             <li>
                 <label>stock</label>
@@ -319,7 +318,7 @@
         </verbs>
 		<recipeMaker>
             <researchPrerequisite>GW_AM_Catachan</researchPrerequisite>
-		<recipeMaker>
+		</recipeMaker>
         <tools>
             <li>
                 <label>stock</label>
@@ -385,7 +384,7 @@
         </verbs>
 		<recipeMaker>
             <researchPrerequisite>GW_AM_SteelLegion</researchPrerequisite>
-		<recipeMaker>
+		</recipeMaker>
         <tools>
             <li>
                 <label>stock</label>
@@ -426,6 +425,7 @@
             <RangedWeapon_Cooldown>1.60</RangedWeapon_Cooldown>
         </statBases>
         <recipeMaker>
+		<researchPrerequisite>GW_Lasguns</researchPrerequisite>
             <skillRequirements>
                 <Crafting>10</Crafting>
             </skillRequirements>
@@ -522,7 +522,7 @@
         </verbs>
 		<recipeMaker>
             <researchPrerequisite>GW_AM_DeathKorpsOfKrieg</researchPrerequisite>
-		<recipeMaker>
+		</recipeMaker>
         <tools>
             <li>
                 <label>stock</label>
@@ -556,6 +556,7 @@
         <uiIconScale>1.5</uiIconScale>
         <soundInteract>Interact_Autopistol</soundInteract>
         <recipeMaker>
+		<researchPrerequisite>GW_AM_MilitariumArmor</researchPrerequisite>
             <skillRequirements>
                 <Crafting>7</Crafting>
             </skillRequirements>
@@ -595,9 +596,6 @@
             <muzzleFlashScale>9</muzzleFlashScale>
         </li>
         </verbs>
-		<recipeMaker>
-            <researchPrerequisite>GW_AM_MilitariumArmor</researchPrerequisite>
-		<recipeMaker>
         <tools>
             <li>
                 <label>grip</label>
@@ -631,6 +629,7 @@
         <uiIconScale>1.5</uiIconScale>
         <soundInteract>Interact_Autopistol</soundInteract>
         <recipeMaker>
+		<researchPrerequisite>GW_AM_OfficersOfAM</researchPrerequisite>
             <skillRequirements>
                 <Crafting>7</Crafting>
             </skillRequirements>
@@ -671,9 +670,6 @@
                 <muzzleFlashScale>9</muzzleFlashScale>
             </li>
         </verbs>
-		<recipeMaker>
-            <researchPrerequisite>GW_AM_OfficersOfAM</researchPrerequisite>
-		<recipeMaker>
         <tools>
             <li>
                 <label>grip</label>
@@ -717,6 +713,7 @@
             <MoveSpeed>-0.20</MoveSpeed>
         </equippedStatOffsets>
         <recipeMaker>
+		<researchPrerequisite>GW_AM_TempestusScions</researchPrerequisite>
             <skillRequirements>
                 <Crafting>9</Crafting>
             </skillRequirements>
@@ -748,9 +745,6 @@
                 <muzzleFlashScale>12</muzzleFlashScale>
             </li>
         </verbs>
-		<recipeMaker>
-            <researchPrerequisite>GW_AM_TempestusScions</researchPrerequisite>
-		<recipeMaker>
         <tools>
             <li>
                 <label>stock</label>
@@ -816,7 +810,7 @@
         </verbs>
 		<recipeMaker>
             <researchPrerequisite>GW_AM_MilitariumArmor</researchPrerequisite>
-		<recipeMaker>
+		</recipeMaker>
         <tools>
             <li>
                 <label>stock</label>
