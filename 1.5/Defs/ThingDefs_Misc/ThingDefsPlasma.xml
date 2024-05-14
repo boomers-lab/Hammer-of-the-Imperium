@@ -95,7 +95,7 @@
             <recipeUsers Inherit="False">
                 <li>HP_AM_MilitarumFabricationBench</li>
             </recipeUsers>		
-            <researchPrerequisite>GW_PlasmaWeapons</researchPrerequisite>
+            <researchPrerequisite>GW_AM_CadianShockTroops</researchPrerequisite>
             <skillRequirements>
                 <Crafting>15</Crafting>
             </skillRequirements>
@@ -203,7 +203,7 @@
             <recipeUsers Inherit="False">
                 <li>HP_AM_MilitarumFabricationBench</li>
             </recipeUsers>		
-            <researchPrerequisite>GW_MeltaWeapons</researchPrerequisite>
+            <researchPrerequisite>GW_AM_CadianShockTroops</researchPrerequisite>
             <skillRequirements>
                 <Crafting>15</Crafting>
             </skillRequirements>
@@ -289,7 +289,7 @@
             <recipeUsers Inherit="False">
                 <li>HP_AM_MilitarumFabricationBench</li>
             </recipeUsers>		
-            <researchPrerequisite>GW_PlasmaWeapons</researchPrerequisite>
+            <researchPrerequisite>GW_AM_OfficersOfAM</researchPrerequisite>
             <skillRequirements>
                 <Crafting>15</Crafting>
             </skillRequirements>

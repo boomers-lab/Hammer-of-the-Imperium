@@ -10,12 +10,44 @@
         <seam>0</seam>
         <projectile>
             <damageDef>Burn</damageDef>
-            <damageAmountBase>17</damageAmountBase>
+            <damageAmountBase>18</damageAmountBase>
             <armorPenetrationBase>0.56</armorPenetrationBase>
             <stoppingPower>1.5</stoppingPower>
         </projectile>
     </ThingDef>
     
+	<ThingDef ParentName="GW_LaserBullet" Class="VanillaWeaponsExpandedLaser.LaserBeamDef">
+        <defName>VWEL_Bullet_LasboltACC</defName>
+        <label>Lasbolt</label>
+        <description>A beam of focused light that burns the target.</description>
+        <textures>
+            <li>Projectiles/Las_Bolt</li>
+        </textures>
+        <seam>0</seam>
+        <projectile>
+            <damageDef>Burn</damageDef>
+            <damageAmountBase>15</damageAmountBase>
+            <armorPenetrationBase>0.56</armorPenetrationBase>
+            <stoppingPower>1.5</stoppingPower>
+        </projectile>
+    </ThingDef>
+	
+	<ThingDef ParentName="GW_LaserBullet" Class="VanillaWeaponsExpandedLaser.LaserBeamDef">
+        <defName>VWELMG_Bullet_Lasbolt</defName>
+        <label>Lasbolt</label>
+        <description>A beam of focused light that burns the target.</description>
+        <textures>
+            <li>Projectiles/Las_Bolt</li>
+        </textures>
+        <seam>0</seam>
+        <projectile>
+            <damageDef>Burn</damageDef>
+            <damageAmountBase>20</damageAmountBase>
+            <armorPenetrationBase>0.56</armorPenetrationBase>
+            <stoppingPower>1.5</stoppingPower>
+        </projectile>
+    </ThingDef>
+	
     <ThingDef ParentName="GW_LaserBullet" Class="VanillaWeaponsExpandedLaser.LaserBeamDef">
         <defName>VWEL_Bullet_Hellbolt</defName>
         <label>Hellgun Lasbolt</label>
@@ -26,8 +58,8 @@
         <seam>0</seam>
         <projectile>
             <damageDef>Burn</damageDef>
-            <damageAmountBase>22</damageAmountBase>
-            <armorPenetrationBase>0.82</armorPenetrationBase>
+            <damageAmountBase>20</damageAmountBase>
+            <armorPenetrationBase>0.70</armorPenetrationBase>
             <stoppingPower>1.8</stoppingPower>
         </projectile>
     </ThingDef>
@@ -60,6 +92,22 @@
         <projectile>
             <damageDef>Burn</damageDef>
             <damageAmountBase>13</damageAmountBase>
+            <armorPenetrationBase>0.40</armorPenetrationBase>
+            <stoppingPower>1.2</stoppingPower>
+        </projectile>
+    </ThingDef>
+	
+	<ThingDef ParentName="GW_LaserBullet" Class="VanillaWeaponsExpandedLaser.LaserBeamDef">
+        <defName>VWEL_Bullet_Lasboltsmall2</defName>
+        <label>Pistol lasbolt</label>
+        <description>A reduced beam of focused light.</description>
+        <textures>
+            <li>Projectiles/Las_Bolt</li>
+        </textures>
+        <seam>0</seam>
+        <projectile>
+            <damageDef>Burn</damageDef>
+            <damageAmountBase>14</damageAmountBase>
             <armorPenetrationBase>0.40</armorPenetrationBase>
             <stoppingPower>1.2</stoppingPower>
         </projectile>
@@ -115,7 +163,7 @@
         </statBases>
         <costList>
             <Steel>120</Steel>
-            <ComponentIndustrial>10</ComponentIndustrial>
+            <ComponentIndustrial>8</ComponentIndustrial>
         </costList>
         <weaponClasses>
             <li>LongShots</li>
@@ -137,6 +185,9 @@
                 <muzzleFlashScale>12</muzzleFlashScale>
             </li>
         </verbs>
+		<recipeMaker>
+            <researchPrerequisite>GW_AM_MilitariumArmor</researchPrerequisite>
+		<recipeMaker>
         <tools>
             <li>
                 <label>stock</label>
@@ -170,15 +221,15 @@
         <statBases>
             <WorkToMake>20500</WorkToMake>
             <Mass>3.8</Mass>
-            <AccuracyTouch>0.60</AccuracyTouch>
-            <AccuracyShort>0.70</AccuracyShort>
-            <AccuracyMedium>0.65</AccuracyMedium>
-            <AccuracyLong>0.45</AccuracyLong>
+            <AccuracyTouch>0.65</AccuracyTouch>
+            <AccuracyShort>0.75</AccuracyShort>
+            <AccuracyMedium>0.70</AccuracyMedium>
+            <AccuracyLong>0.50</AccuracyLong>
             <RangedWeapon_Cooldown>1.40</RangedWeapon_Cooldown>
         </statBases>
         <costList>
             <Steel>120</Steel>
-            <ComponentIndustrial>11</ComponentIndustrial>
+            <ComponentIndustrial>12</ComponentIndustrial>
         </costList>
         <weaponClasses>
             <li>RangedLight</li>
@@ -190,7 +241,7 @@
             <li>
                 <verbClass>Verb_Shoot</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
-                <defaultProjectile>VWEL_Bullet_Lasbolt</defaultProjectile>
+                <defaultProjectile>VWELMG_Bullet_Lasbolt</defaultProjectile>
                 <warmupTime>1.00</warmupTime>
                 <range>28.0</range>
                 <ticksBetweenBurstShots>12</ticksBetweenBurstShots>
@@ -200,6 +251,9 @@
                 <muzzleFlashScale>12</muzzleFlashScale>
             </li>
         </verbs>
+		<recipeMaker>
+            <researchPrerequisite>GW_AM_MilitariumArmor</researchPrerequisite>
+		<recipeMaker>
         <tools>
             <li>
                 <label>stock</label>
@@ -263,6 +317,9 @@
                 <muzzleFlashScale>12</muzzleFlashScale>
             </li>
         </verbs>
+		<recipeMaker>
+            <researchPrerequisite>GW_AM_Catachan</researchPrerequisite>
+		<recipeMaker>
         <tools>
             <li>
                 <label>stock</label>
@@ -304,7 +361,7 @@
         </statBases>
         <costList>
             <Steel>110</Steel>
-            <ComponentIndustrial>10</ComponentIndustrial>
+            <ComponentIndustrial>8</ComponentIndustrial>
         </costList>
         <weaponClasses>
             <li>LongShots</li>
@@ -326,6 +383,9 @@
                 <muzzleFlashScale>12</muzzleFlashScale>
             </li>
         </verbs>
+		<recipeMaker>
+            <researchPrerequisite>GW_AM_SteelLegion</researchPrerequisite>
+		<recipeMaker>
         <tools>
             <li>
                 <label>stock</label>
@@ -372,7 +432,7 @@
         </recipeMaker>
         <costList>
             <Steel>100</Steel>
-            <ComponentIndustrial>6</ComponentIndustrial>
+            <ComponentIndustrial>8</ComponentIndustrial>
         </costList>
         <weaponClasses>
             <li>ShortShots</li>
@@ -386,7 +446,7 @@
             <li>
                 <verbClass>Verb_Shoot</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
-                <defaultProjectile>VWEL_Bullet_Lasbolt</defaultProjectile>
+                <defaultProjectile>VWEL_Bullet_LasboltACC</defaultProjectile>
                 <warmupTime>1.40</warmupTime>
                 <range>23.0</range>
                 <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
@@ -438,7 +498,7 @@
         </statBases>
         <costList>
             <Steel>110</Steel>
-            <ComponentIndustrial>16</ComponentIndustrial>
+            <ComponentIndustrial>12</ComponentIndustrial>
         </costList>
         <weaponClasses>
             <li>LongShots</li>
@@ -460,6 +520,9 @@
                 <muzzleFlashScale>12</muzzleFlashScale>
             </li>
         </verbs>
+		<recipeMaker>
+            <researchPrerequisite>GW_AM_DeathKorpsOfKrieg</researchPrerequisite>
+		<recipeMaker>
         <tools>
             <li>
                 <label>stock</label>
@@ -532,6 +595,9 @@
             <muzzleFlashScale>9</muzzleFlashScale>
         </li>
         </verbs>
+		<recipeMaker>
+            <researchPrerequisite>GW_AM_MilitariumArmor</researchPrerequisite>
+		<recipeMaker>
         <tools>
             <li>
                 <label>grip</label>
@@ -597,7 +663,7 @@
             <li>
                 <verbClass>Verb_Shoot</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
-                <defaultProjectile>VWEL_Bullet_Lasboltsmall</defaultProjectile>
+                <defaultProjectile>VWEL_Bullet_Lasboltsmall2</defaultProjectile>
                 <warmupTime>0.3</warmupTime>
                 <range>24.0</range>
                 <soundCast>GW_AM_Gun_Kantraeldefender</soundCast>
@@ -605,6 +671,9 @@
                 <muzzleFlashScale>9</muzzleFlashScale>
             </li>
         </verbs>
+		<recipeMaker>
+            <researchPrerequisite>GW_AM_OfficersOfAM</researchPrerequisite>
+		<recipeMaker>
         <tools>
             <li>
                 <label>grip</label>
@@ -654,7 +723,7 @@
         </recipeMaker>
         <costList>
             <Steel>150</Steel>
-            <ComponentIndustrial>12</ComponentIndustrial>
+            <ComponentIndustrial>14</ComponentIndustrial>
         </costList>
         <thingSetMakerTags>
             <li>RewardStandardQualitySuper</li>
@@ -671,14 +740,17 @@
                 <hasStandardCommand>true</hasStandardCommand>
                 <defaultProjectile>VWEL_Bullet_Hellbolt</defaultProjectile>
                 <warmupTime>1.20</warmupTime>
-                <range>25.0</range>
-                <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+                <range>30.0</range>
+                <ticksBetweenBurstShots>8</ticksBetweenBurstShots>
                 <burstShotCount>12</burstShotCount>
                 <soundCast>GW_AM_Gun_Hellgun</soundCast>
                 <soundCastTail>GunTail_Heavy</soundCastTail>
                 <muzzleFlashScale>12</muzzleFlashScale>
             </li>
         </verbs>
+		<recipeMaker>
+            <researchPrerequisite>GW_AM_TempestusScions</researchPrerequisite>
+		<recipeMaker>
         <tools>
             <li>
                 <label>stock</label>
@@ -732,16 +804,19 @@
             <li>
                 <verbClass>Verb_Shoot</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
-                <defaultProjectile>VWEL_Bullet_Lasbolt</defaultProjectile>
+                <defaultProjectile>VWELMG_Bullet_Lasbolt</defaultProjectile>
                 <warmupTime>0.80</warmupTime>
                 <range>35.0</range>
-                <ticksBetweenBurstShots>12</ticksBetweenBurstShots>
+                <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
                 <burstShotCount>1</burstShotCount>
                 <soundCast>GW_AM_Gun_Locke</soundCast>
                 <soundCastTail>GunTail_Heavy</soundCastTail>
                 <muzzleFlashScale>12</muzzleFlashScale>
             </li>
         </verbs>
+		<recipeMaker>
+            <researchPrerequisite>GW_AM_MilitariumArmor</researchPrerequisite>
+		<recipeMaker>
         <tools>
             <li>
                 <label>stock</label>
