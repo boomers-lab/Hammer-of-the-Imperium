@@ -323,18 +323,18 @@
                 <capacities>
                     <li>Cut</li>
                 </capacities>
-                <power>30</power>
-                <cooldownTime>2.5</cooldownTime>
-				<armorPenetration>1.0</armorPenetration>
+                <power>50</power>
+                <cooldownTime>1.5</cooldownTime>
+				<armorPenetration>1.5</armorPenetration>
             </li>
 			<li>
 				<label>point</label>
 				<capacities>
 					<li>Stab</li>
 				</capacities>
-				<power>30</power>
+				<power>10</power>
 				<cooldownTime>2.5</cooldownTime>
-				<armorPenetration>1.3</armorPenetration>
+				<armorPenetration>0.5</armorPenetration>
 			</li>
         </tools>
     </ThingDef>
