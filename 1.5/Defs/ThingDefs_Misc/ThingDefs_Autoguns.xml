@@ -384,7 +384,7 @@
             <AccuracyShort>0.70</AccuracyShort>
             <AccuracyMedium>0.40</AccuracyMedium>
             <AccuracyLong>0.30</AccuracyLong>
-            <RangedWeapon_Cooldown>0.7</RangedWeapon_Cooldown>
+            <RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
         </statBases>
         <costList>
             <Steel>60</Steel>
@@ -395,9 +395,9 @@
                 <verbClass>Verb_Shoot</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
                 <defaultProjectile>GW_AM_Bullet_Autopistolgrim</defaultProjectile>
-                <warmupTime>0.4</warmupTime>
-                <range>23</range>
-                <burstShotCount>6</burstShotCount>
+                <warmupTime>1</warmupTime>
+                <range>18</range>
+                <burstShotCount>5</burstShotCount>
                 <ticksBetweenBurstShots>7</ticksBetweenBurstShots>
                 <soundCast>GW_AM_Gun_Hiveworldautopistol</soundCast>
                 <soundCastTail>GunTail_Light</soundCastTail>
