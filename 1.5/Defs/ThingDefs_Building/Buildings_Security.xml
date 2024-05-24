@@ -42,7 +42,6 @@
         <costList>
             <Steel>200</Steel>
             <Plasteel>40</Plasteel>
-            <HP_Ceramite>30</HP_Ceramite>
             <ComponentIndustrial>6</ComponentIndustrial>
         </costList>
             <stuffCategories>
@@ -447,7 +446,6 @@
         <costList>
             <Steel>200</Steel>
             <Plasteel>40</Plasteel>
-            <HP_Ceramite>30</HP_Ceramite>
             <ComponentIndustrial>6</ComponentIndustrial>
         </costList>
             <stuffCategories>
