@@ -373,7 +373,7 @@
 	
 	<ThingDef ParentName="GW_AM_FlamerBase">
 		<defName>GW_AM_Gun_Flamer</defName>
-		<label>Acctran Flamer</label>
+		<label>Acctran flamer</label>
 		<description>In the expansive expanse of the Warhammer 40,000 cosmos, the Acctran Flamer, a specialized and fearsome weapon, emerges as a harbinger of unrelenting purgation wielded by the devout forces of the Imperium. Crafted with meticulous precision, this flamethrower variant bears the unmistakable matte-black ceramite alloy, a testament to its durability in the relentless heat of battle.\n\nFunctioning as a formidable and area-denial weapon, the Acctran Flamer projects searing torrents of promethium flames, bathing the battlefield in purifying fire. This weapon is designed to cleanse heretical entities and xenos threats, leaving nothing but scorched remnants in its wake. Its incendiary power is especially effective in close-quarters engagements, turning the tide against foes who dare to stand against the righteous fury of the Imperium.\n\nThe Acctran Flamer, with its infernal glow and destructive capabilities, epitomizes the unyielding resolve of the Imperium's forces in their eternal struggle against the myriad enemies that beset the grim and war-torn galaxy of Warhammer 40,000. Wielded by the faithful, it stands as a beacon of divine retribution, ensuring the enemies of humanity face the relentless cleansing fire of Imperial justice.</description>
 		<graphicData>
 			<texPath>Weapons/Accatran_Flamer</texPath>
