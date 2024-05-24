@@ -174,9 +174,9 @@
         <tickerType>Normal</tickerType>
         <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
         <designationCategory>GrimworldCategory</designationCategory>
-        <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+        <constructionSkillPrerequisite>10</constructionSkillPrerequisite>
         <costList>
-            <Steel>350</Steel>
+            <Steel>200</Steel>
             <Plasteel>40</Plasteel>
             <ComponentIndustrial>6</ComponentIndustrial>
         </costList>
