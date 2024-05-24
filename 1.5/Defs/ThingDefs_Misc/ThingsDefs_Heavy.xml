@@ -114,7 +114,7 @@
 	
 	<ThingDef ParentName="GW_AM_LauncherBase">
 		<defName>GW_AM_Gun_MissileLauncher</defName>
-		<label>Missile Launcher</label>
+		<label>Militarum missile launcher</label>
 		<description>Within the vast expanse of the Warhammer 40,000 universe, the Missile Launcher, a formidable heavy weapon, embodies raw power and strategic versatility, often employed by the Imperial Guard. This imposing launcher, compact yet robust, features a matte-black ceramite alloy construction, ensuring resilience in the face of the grim and war-torn battlefield.\n\nDesigned with tactical precision, the Missile Launcher boasts a user-friendly interface with an ergonomic shoulder rest and grip, providing stability for the operator during deployment. The weapon's advanced targeting system adds a layer of versatility, enabling precise engagement against both ground and airborne threats.\n\nA swift and efficient reload mechanism is integral to the launcher's design, facilitating the rapid insertion of munitions and ensuring a continuous onslaught in the chaos of combat. Guided missiles, unleashed by the launcher, carry devastating payloads capable of wreaking havoc on armored adversaries, solidifying its place as a crucial asset in the Imperial Guard's arsenal.\n\nMarked with symbols of the Imperium, the Missile Launcher serves as a testament to unwavering loyalty and the relentless defense waged by the forces of humanity against the myriad threats lurking in the grim and perilous galaxy of Warhammer 40,000.</description>
 		<graphicData>
 			<texPath>Weapons/MissileLauncher</texPath>
