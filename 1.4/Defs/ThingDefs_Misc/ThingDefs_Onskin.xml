@@ -12,7 +12,7 @@
             <li>Fabric</li>
         </stuffCategories>
         <thingCategories>
-            <li>Apparel</li>
+            <li>ApparelMisc</li>
         </thingCategories>
         <recipeMaker>
             <recipeUsers Inherit="false">
