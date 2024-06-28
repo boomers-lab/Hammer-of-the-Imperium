@@ -12,7 +12,7 @@
 				<li>GW_AM_MilitarumArmorBench</li>
 			</recipeUsers>
 		</recipeMaker>
-        <costStuffCount>50</costStuffCount>
+        <costStuffCount>100</costStuffCount>
         <stuffCategories>
             <li>Fabric</li>
             <li>Leathery</li>
@@ -134,9 +134,12 @@
 			<VEF_MassCarryCapacity>10</VEF_MassCarryCapacity>
             <CarryBulk MayRequire="CETeam.CombatExtended">10</CarryBulk>
             <ConstructionSpeed>0.2</ConstructionSpeed>
+			<RepairSpeed>0.4</RepairSpeed>
+			<ConstructionSuccessChance>0.1</ConstructionSuccessChance>
+			<RepairSuccessChance>0.1</RepairSuccessChance>
 		</equippedStatOffsets>
 		<costList>
-			<ComponentSpacer>4</ComponentSpacer>
+			<ComponentIndustrail>2</ComponentIndustrail>
 		</costList>
 		<apparel>
 			<wornGraphicPath>Things/Backpacks/Battleline_Backpack</wornGraphicPath>
@@ -169,13 +172,13 @@
 			<EquipDelay>2</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
-			<MedicalTendSpeed>0.1</MedicalTendSpeed>
+			<MedicalTendSpeed>0.2</MedicalTendSpeed>
             <MedicalTendQuality>0.1</MedicalTendQuality>
-            <MedicalOperationSpeed>0.1</MedicalOperationSpeed>
+            <MedicalOperationSpeed>0.2</MedicalOperationSpeed>
             <MedicalSurgerySuccessChance>0.1</MedicalSurgerySuccessChance>
 		</equippedStatOffsets>
 		<costList>
-			<ComponentIndustrial>4</ComponentIndustrial>
+			<Medicine>10</Medicine>
 		</costList>
 		<apparel>
 			<wornGraphicPath>Things/Backpacks/Medical_Pack</wornGraphicPath>
