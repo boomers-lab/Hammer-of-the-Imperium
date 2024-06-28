@@ -26,6 +26,14 @@
 			<li>GW_AM_Backpacks</li>
 		</tradeTags>
 		<apparel>
+            <drawData>
+				<dataWest>
+					<offset>(0.2, 0.0, 0.0)</offset>
+				</dataWest>
+				<dataEast>
+					<offset>(-0.2, 0.0, 0.0)</offset>
+				</dataEast>
+			</drawData>
 			<tags>
 				<li>Spacer</li>
                 <li>GW_AM_Backpack</li>
@@ -134,12 +142,10 @@
 			<VEF_MassCarryCapacity>10</VEF_MassCarryCapacity>
             <CarryBulk MayRequire="CETeam.CombatExtended">10</CarryBulk>
             <ConstructionSpeed>0.2</ConstructionSpeed>
-			<RepairSpeed>0.4</RepairSpeed>
-			<ConstructionSuccessChance>0.1</ConstructionSuccessChance>
-			<RepairSuccessChance>0.1</RepairSuccessChance>
+			<ConstructSuccessChance>0.1</ConstructSuccessChance>
 		</equippedStatOffsets>
 		<costList>
-			<ComponentIndustrail>2</ComponentIndustrail>
+			<ComponentIndustrial>2</ComponentIndustrial>
 		</costList>
 		<apparel>
 			<wornGraphicPath>Things/Backpacks/Battleline_Backpack</wornGraphicPath>
@@ -178,7 +184,7 @@
             <MedicalSurgerySuccessChance>0.1</MedicalSurgerySuccessChance>
 		</equippedStatOffsets>
 		<costList>
-			<Medicine>10</Medicine>
+			<MedicineIndustrial>10</MedicineIndustrial>
 		</costList>
 		<apparel>
 			<wornGraphicPath>Things/Backpacks/Medical_Pack</wornGraphicPath>
@@ -244,6 +250,20 @@
             </li>
         </comps>
 		<apparel>
+            <drawData>
+				<dataSouth>
+                    <offset>(0.0, 0.0, 0.4)</offset>
+				</dataSouth>
+				<dataWest>
+					<offset>(0.2, 0.0, 0.4)</offset>
+				</dataWest>
+				<dataEast>
+					<offset>(-0.2, 0.0, 0.4)</offset>
+				</dataEast>
+				<dataNorth>
+					<offset>(0.0, 0.0, 0.4)</offset>
+				</dataNorth>
+			</drawData>
 			<wornGraphicPath>Things/Backpacks/Vox_Pack</wornGraphicPath>
 			<tags>
 				<li>GW_CadianBackpack</li>
