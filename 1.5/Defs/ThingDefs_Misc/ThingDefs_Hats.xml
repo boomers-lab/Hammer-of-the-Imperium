@@ -192,7 +192,7 @@
     </ThingDef>
 
     <ThingDef ParentName="GW_AM_Hat_CapBase">
-        <defName>GW_AM_CatachanBandana</defName>
+        <defName>GW_AM_CatachanBandanaFull</defName>
         <label>catachan bandana (full wrap)</label>
         <description>Catachan Bandana:\n\n Infused with the untamed spirit of the Catachan Jungle Fighters, the Catachan Bandana is a symbol of both rugged style and practicality. Worn with a nod to the wilderness, this distinctive bandana features camouflage patterns reminiscent of the dense jungles of Catachan. Its versatile design provides protection against the elements while allowing for swift and covert maneuvers on the relentless battlefields of Warhammer 40,000. Worn proudly by Catachan warriors, the bandana embodies the gritty determination and resourcefulness required to survive in the perilous theatres of the 41st millennium.</description>
         <graphicData>
