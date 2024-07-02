@@ -161,7 +161,7 @@
 
     <ThingDef ParentName="GW_AM_Hat_CapBase">
         <defName>GW_AM_CatachanBandana</defName>
-        <label>Catachan bandana</label>
+        <label>catachan bandana</label>
         <description>Catachan Bandana:\n\n Infused with the untamed spirit of the Catachan Jungle Fighters, the Catachan Bandana is a symbol of both rugged style and practicality. Worn with a nod to the wilderness, this distinctive bandana features camouflage patterns reminiscent of the dense jungles of Catachan. Its versatile design provides protection against the elements while allowing for swift and covert maneuvers on the relentless battlefields of Warhammer 40,000. Worn proudly by Catachan warriors, the bandana embodies the gritty determination and resourcefulness required to survive in the perilous theatres of the 41st millennium.</description>
         <graphicData>
             <texPath>Things/Catachan/CatachanBandana/CatachanBandana_south</texPath>
@@ -189,7 +189,39 @@
                 <li>40kCatachanBandana</li>
             </tags>
         </apparel>
-    </ThingDef>   
+    </ThingDef>
+
+    <ThingDef ParentName="GW_AM_Hat_CapBase">
+        <defName>GW_AM_CatachanBandana</defName>
+        <label>catachan bandana (full wrap)</label>
+        <description>Catachan Bandana:\n\n Infused with the untamed spirit of the Catachan Jungle Fighters, the Catachan Bandana is a symbol of both rugged style and practicality. Worn with a nod to the wilderness, this distinctive bandana features camouflage patterns reminiscent of the dense jungles of Catachan. Its versatile design provides protection against the elements while allowing for swift and covert maneuvers on the relentless battlefields of Warhammer 40,000. Worn proudly by Catachan warriors, the bandana embodies the gritty determination and resourcefulness required to survive in the perilous theatres of the 41st millennium.</description>
+        <graphicData>
+            <texPath>Things/Catachan/CatachanBandana/CatachanBandanaFullWrap</texPath>
+        </graphicData>
+        <costStuffCount>10</costStuffCount>
+        <statBases>
+            <WorkToMake>1000</WorkToMake>
+            <StuffEffectMultiplierArmor>0.1</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.1</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.25</StuffEffectMultiplierInsulation_Heat>
+        </statBases>
+		<equippedStatOffsets>
+            <MoveSpeed>0.1</MoveSpeed>
+        </equippedStatOffsets>
+        <recipeMaker>
+            <researchPrerequisite>GW_AM_Catachan</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>5</Crafting>
+            </skillRequirements>	  
+        </recipeMaker>
+        <apparel>
+            <wornGraphicPath>Things/Catachan/CatachanBandana/CatachanBandanaFullWrap</wornGraphicPath>
+            <tags>
+                <li>40kCatachan</li>
+                <li>40kCatachanBandana</li>
+            </tags>
+        </apparel>
+    </ThingDef>
 
         <!-- Mordian Hat -->
 
