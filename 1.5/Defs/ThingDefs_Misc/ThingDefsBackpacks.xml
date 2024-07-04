@@ -305,8 +305,8 @@
 				<hasStandardCommand>true</hasStandardCommand>
 				<onlyManualCast>True</onlyManualCast>
 				<forceNormalTimeSpeed>false</forceNormalTimeSpeed>
-				<warmupTime>1</warmupTime>
-				<range>15</range>
+				<warmupTime>2</warmupTime>
+				<range>10</range>
 				<!-- <warmupEffecter>JumpWarmupEffect</warmupEffecter> -->
 				<requireLineOfSight>true</requireLineOfSight>
 				<!-- <flightEffecterDef>ExplosiveJumpFlightEffect</flightEffecterDef> No HoI Variant that I know of-->
@@ -361,7 +361,7 @@
 		</pawnFlyer>
 		<modExtensions>
 			<li Class="ExplosiveJump.PawnFlyerExtension">
-				<radius>2</radius>
+				<radius>0</radius>
 				<damageDef>Bomb</damageDef>
 				<damageAmount>10</damageAmount>
 				<armorPen>1.0</armorPen>
