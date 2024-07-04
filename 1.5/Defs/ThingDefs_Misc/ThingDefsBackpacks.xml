@@ -20,7 +20,7 @@
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
-			<drawSize>1</drawSize>
+			<drawSize>0.5</drawSize>
 		</graphicData>
 		<tradeTags>
 			<li>GW_AM_Backpacks</li>
