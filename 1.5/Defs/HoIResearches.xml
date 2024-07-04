@@ -143,6 +143,14 @@
 		<researchViewX>4.00</researchViewX>
 	</ResearchProjectDef>
 
+	<ResearchProjectDef ParentName="GW_AM_RegimentResearchBase">
+		<defName>GW_AM_ElysianDropTroopers</defName>
+		<label>Elysian Drop Troopers</label>
+        <description>.</description>
+		<researchViewY>0.70</researchViewY>
+		<researchViewX>4.00</researchViewX>
+	</ResearchProjectDef>
+
 			<!--Abhumans-->
 	<ResearchProjectDef ParentName="GW_AM_HoITechBase">
 		<defName>GW_AM_AbhumanIntegration</defName>
