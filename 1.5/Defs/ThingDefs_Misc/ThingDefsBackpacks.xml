@@ -228,7 +228,7 @@
                 <warmupTime>3</warmupTime>
                 <ai_AvoidFriendlyFireRadius>23</ai_AvoidFriendlyFireRadius>
                 <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
-                <range>44.9</range>
+                <range>25</range>
                 <burstShotCount>1</burstShotCount>
                 <soundAiming>OrbitalTargeter_Aiming</soundAiming>
                 <soundCast>OrbitalTargeter_Fire</soundCast>
@@ -294,8 +294,9 @@
 			<EquipDelay>2</EquipDelay>
 		</statBases>
 		<costList>
-			<ComponentIndustrial>10</ComponentIndustrial>
-            <ComponentSpacer>3</ComponentSpacer>
+			<ComponentIndustrial>15</ComponentIndustrial>
+			<Steel>80</Steel>
+			<Chemfuel>100</Chemfuel>
 		</costList>
 		<verbs>
 			<li>
@@ -357,7 +358,7 @@
 		<thingClass>ExplosiveJump.PawnFlyer_ExplosiveLanding</thingClass>
 		<pawnFlyer>
 			<flightDurationMin>0.2</flightDurationMin>
-			<flightSpeed>13</flightSpeed>
+			<flightSpeed>8</flightSpeed>
 		</pawnFlyer>
 		<modExtensions>
 			<li Class="ExplosiveJump.PawnFlyerExtension">
