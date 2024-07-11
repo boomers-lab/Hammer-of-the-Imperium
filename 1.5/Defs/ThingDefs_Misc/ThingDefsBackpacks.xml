@@ -302,6 +302,7 @@
 			<li>
 				<verbClass>ExplosiveJump.Verb_JumpExplosive</verbClass>
 				<label>jump</label>
+				<commandIcon>UI/Icons/jetpck</commandIcon>
 				<violent>false</violent>
 				<hasStandardCommand>true</hasStandardCommand>
 				<onlyManualCast>True</onlyManualCast>
