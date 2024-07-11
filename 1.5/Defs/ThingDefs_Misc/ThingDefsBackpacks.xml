@@ -358,7 +358,7 @@
 		</pawnFlyer>
 		<modExtensions>
 			<li Class="ExplosiveJump.PawnFlyerExtension">
-				<radius>0</radius>
+				<radius>10</radius>
 				<damageDef>Bomb</damageDef>
 				<damageAmount>10</damageAmount>
 				<armorPen>1.0</armorPen>
