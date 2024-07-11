@@ -300,7 +300,7 @@
 		</costList>
 		<verbs>
 			<li>
-				<verbClass>ExplosiveJump.Verb_JumpExplosive</verbClass>
+				<verbClass>Verb_Jump</verbClass>
 				<label>jump</label>
 				<violent>false</violent>
 				<hasStandardCommand>true</hasStandardCommand>
@@ -346,11 +346,7 @@
 				<li>40kElysianJetpack</li>
 			</tags>
 		</apparel>
-		<modExtensions>
-			<li Class="ExplosiveJump.PawnFlyerExtension">
-				<pawnFlyerDef>GW_AM_JumpyExplody</pawnFlyerDef>
-			</li>
-		</modExtensions>
+		<modExtensions />
 	</ThingDef>
 
 	<ThingDef ParentName="PawnFlyerBase">
