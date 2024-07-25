@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	<!--Generic armor base. Every armor will have these things. Only add/change stuff in this if you want every armor to be affected-->
-	<ThingDef Abstract="true" Name="GW_AM_BackpackBase" ParentName="GW_BackpackBase">
+	
+	<ApparelLayerDef>
+		<defName>Backpack</defName>
+		<label>backpack</label>
+		<drawOrder>220</drawOrder>
+	</ApparelLayerDef>
+	
+	<ThingDef Abstract="true" Name="GW_AM_BackpackBase" ParentName="ArmorMachineableBase">
 		<techLevel>Spacer</techLevel>
 		<recipeMaker>
 			<unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
@@ -34,6 +41,9 @@
 					<offset>(-0.2, 0.0, 0.0)</offset>
 				</dataEast>
 			</drawData>
+			<layers>
+				<li>Backpack</li>
+			</layers>
 			<tags>
 				<li>Spacer</li>
                 <li>GW_AM_Backpack</li>
