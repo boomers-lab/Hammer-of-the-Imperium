@@ -4,7 +4,19 @@
 		<techLevel>Industrial</techLevel>
 	</ResearchProjectDef>	
 	
-	<ResearchProjectDef ParentName="GW_ImperiumTechBase">
+	<ResearchProjectDef ParentName="GW_AM_HoITechBase">
+		<defName>GW_AM_TacticaImperium</defName>
+		<label>militarium fabrication</label>
+		<description>The Tactica Imperium is the cornerstone of Imperial military strategy in GrimWorld 40,000. It's a weathered tome filled with battle wisdom, guiding commanders through the complexities of warfare. With its doctrines on combined arms and adaptable tactics, it shapes the minds of Imperial leaders, aiding them in their quest for survival and dominance.</description>
+		<baseCost>1000</baseCost>
+		<prerequisites>
+			<li>Electricity</li>
+		</prerequisites>
+		<researchViewX>0.50</researchViewX>
+		<researchViewY>3.00</researchViewY>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef ParentName="GW_AM_HoITechBase">
         <defName>GW_ImperiumDefenseStructure</defName>
         <label>imperium defense structures</label>
         <description>Allows for the creation of blast doors, which are super thick doors that can take an extremely long time to open when unpowered.</description>
