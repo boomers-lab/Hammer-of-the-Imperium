@@ -17,14 +17,23 @@
 				<isStunTarget>true</isStunTarget>
 				<stunDuration>120</stunDuration>
 				
-				<isNullifyDamage>false</isNullifyDamage>
+				<isNullifyDamage>true</isNullifyDamage>
+				<nullifyDamageChance>0.35</nullifyDamageChance>
+				
 				<isReduceDamageTakenWhenParry>true</isReduceDamageTakenWhenParry>
-				<damageReduction>0.5</damageReduction>
+				<damageReduction>0.50</damageReduction>
 				
 				<isGiveDebuff>true</isGiveDebuff>
 				<isDebuffToSelf>false</isDebuffToSelf>
 				<debuffHediff>GW_Posebreak</debuffHediff>
-				<debuffDuration>120</debuffDuration>		
+				<debuffDuration>120</debuffDuration>				
+				
+				<isReflectDamage>false</isReflectDamage>
+				
+				<isKnockbackAttacker>true</isKnockbackAttacker>
+				<knockbackDistance>2.0</knockbackDistance>
+				
+				<isReflectProjectile>false</isReflectProjectile>
 				
 				<parrySounds>
 					<li>Deflect_Metal</li>
