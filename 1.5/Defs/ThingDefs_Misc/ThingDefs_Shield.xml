@@ -69,6 +69,14 @@
 		<recipeMaker>
 			<researchPrerequisite>GW_AM_OgrynIntegration</researchPrerequisite>
 		</recipeMaker>
+		<comps>
+			<li Class="GWParryShield.CompProperties_GW_Parryable">
+				<parryHediff>GW_OgrynShieldParry</parryHediff>
+				<parryChance>0.20</parryChance> <!-- 0.20 = 20% -->
+				<parryWindow>30</parryWindow>
+				<parryCooldown>60</parryCooldown>
+			</li>
+        </comps>
 		<modExtensions>
 			<li Class="VFECore.ApparelDrawPosExtension">
 				<isUnifiedApparel>true</isUnifiedApparel>
