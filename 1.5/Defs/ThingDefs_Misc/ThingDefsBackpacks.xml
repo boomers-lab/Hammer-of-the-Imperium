@@ -235,7 +235,7 @@
                 <verbClass>Verb_Bombardment</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
                 <useableInPocketMaps>false</useableInPocketMaps>
-                <warmupTime>3</warmupTime>
+                <warmupTime>5</warmupTime>
                 <ai_AvoidFriendlyFireRadius>23</ai_AvoidFriendlyFireRadius>
                 <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
                 <range>25</range>
@@ -253,7 +253,7 @@
                 <maxCharges>1</maxCharges>
                 <destroyOnEmpty>false</destroyOnEmpty>
                 <replenishAfterCooldown>True</replenishAfterCooldown>
-                <baseReloadTicks>300000</baseReloadTicks>
+                <baseReloadTicks>600000</baseReloadTicks>
                 <hotKey>Misc4</hotKey>
                 <chargeNoun>charge</chargeNoun>
                 <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
