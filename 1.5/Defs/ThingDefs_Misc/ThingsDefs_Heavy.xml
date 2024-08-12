@@ -174,6 +174,29 @@
                 <cooldownTime>2</cooldownTime>
             </li>
         </tools>
+		<equippedAngleOffset>45</equippedAngleOffset>
+		<modExtensions>
+			<!-- <li Class="VFECore.ThingDefExtension"> -->
+				<!-- <weaponCarryDrawOffsets> -->
+					<!-- <north> -->
+						<!-- <drawOffset>(-0.25,0,0.4)</drawOffset> -->
+						<!-- <angleOffset>-230</angleOffset> -->
+					<!-- </north> -->
+					<!-- <east> -->
+						<!-- <drawOffset>(-0.25,0,0.4)</drawOffset> -->
+						<!-- <angleOffset>-230</angleOffset> -->
+					<!-- </east> -->
+					<!-- <west> -->
+						<!-- <drawOffset>(0.25,-0.1,0.4)</drawOffset> -->
+						<!-- <angleOffset>760</angleOffset> -->
+					<!-- </west> -->
+					<!-- <south> -->
+						<!-- <drawOffset>(-0.25,0,0.4)</drawOffset> -->
+						<!-- <angleOffset>-230</angleOffset> -->
+					<!-- </south> -->
+				<!-- </weaponCarryDrawOffsets> -->
+			<!-- </li> -->
+		</modExtensions>
 	</ThingDef>
 	
 	<!--===== Bolt pistol base =====-->
