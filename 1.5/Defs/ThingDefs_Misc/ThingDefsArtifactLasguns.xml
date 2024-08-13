@@ -19,6 +19,15 @@
             <li>Artifact</li>
             <li>HPRanged</li>
         </tradeTags>
+		<recipeMaker>
+            <skillRequirements>
+                <Crafting>8</Crafting>
+            </skillRequirements>
+            <recipeUsers Inherit="false">
+                <li>HP_AM_MilitarumFabricationBench</li>
+            </recipeUsers>
+            <displayPriority>200</displayPriority>
+        </recipeMaker>
     </ThingDef>
 
             <!-- Sanctified Kantrael MG -->
@@ -41,6 +50,10 @@
 		<equippedStatOffsets>
 			<Beauty>5</Beauty> 
         </equippedStatOffsets>
+		<costList>
+            <Steel>120</Steel>
+            <ComponentIndustrial>8</ComponentIndustrial>
+        </costList>
         <weaponClasses>
             <li>LongShots</li>
         </weaponClasses>
@@ -80,6 +93,11 @@
                 <cooldownTime>2</cooldownTime>
             </li>
         </tools>
+		<comps>
+			<li Class="GrimworldItemLimit.CompProperties_ItemCraftingLimit">
+				<maxNumberCraftable>5</maxNumberCraftable>
+			</li>
+		</comps>
     </ThingDef>
   
             <!-- Sanctified MK4 Lascarbine -->
@@ -102,6 +120,10 @@
 		<equippedStatOffsets>
 			<Beauty>5</Beauty> 
         </equippedStatOffsets>
+		<costList>
+            <Steel>120</Steel>
+            <ComponentIndustrial>8</ComponentIndustrial>
+        </costList>
         <weaponClasses>
             <li>LongShots</li>
         </weaponClasses>
@@ -141,6 +163,11 @@
                 <cooldownTime>2</cooldownTime>
             </li>
         </tools>
+		<comps>
+			<li Class="GrimworldItemLimit.CompProperties_ItemCraftingLimit">
+				<maxNumberCraftable>5</maxNumberCraftable>
+			</li>
+		</comps>
     </ThingDef>
   
             <!-- Sanctified Voss MKI -->
@@ -163,6 +190,10 @@
 		<equippedStatOffsets>
 			<Beauty>5</Beauty> 
         </equippedStatOffsets>
+		<costList>
+            <Steel>120</Steel>
+            <ComponentIndustrial>8</ComponentIndustrial>
+        </costList>
         <weaponClasses>
             <li>LongShots</li>
         </weaponClasses>
@@ -202,5 +233,10 @@
                 <cooldownTime>2</cooldownTime>
             </li>
         </tools>
+		<comps>
+			<li Class="GrimworldItemLimit.CompProperties_ItemCraftingLimit">
+				<maxNumberCraftable>5</maxNumberCraftable>
+			</li>
+		</comps>
     </ThingDef>
 </Defs>

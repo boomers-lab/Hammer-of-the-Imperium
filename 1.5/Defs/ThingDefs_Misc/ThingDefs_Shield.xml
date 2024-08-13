@@ -1,0 +1,98 @@
+<Defs>
+
+	<ThingDef ParentName="GWShieldBase" Name="GWHammerShieldBase" Abstract="true">
+		<description>The Custodes Shield, used by the elite Adeptus Custodes in Warhammer 40,000, combines advanced technology with exceptional craftsmanship. It provides superior protection, adorned with symbols of their noble heritage and dedication to the Emperor. The shield allows for both defense and counterattacks, embodying the Custodes' formidable battlefield presence.</description>
+		<apparel>
+		</apparel>
+		<statBases>
+			<WorkToMake>15000</WorkToMake>
+			<MaxHitPoints>1200</MaxHitPoints>
+		</statBases>
+		<recipeMaker>
+			<recipeUsers>
+				<li>GW_AM_MilitarumArmorBench</li>
+			</recipeUsers>
+		</recipeMaker>
+	</ThingDef>
+	
+	<ThingDef ParentName="GWHammerShieldBase" Name="GWHammerCombatShieldBase">
+		<defName>GM_HotE_ShieldOgryn</defName>
+		<label>ogryn shield</label>
+		<graphicData>
+			<texPath>Things/Ogryn/Armor/Ogryn Shield Interface</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<costStuffCount>60</costStuffCount>
+		<statBases>
+			<StuffEffectMultiplierArmor>1</StuffEffectMultiplierArmor>
+			<Mass>7</Mass>
+			<Bulk MayRequire="CETeam.CombatExtended">8</Bulk>
+			<WornBulk MayRequire="CETeam.CombatExtended">5</WornBulk>
+		</statBases>
+		<equippedStatOffsets>
+			<ReloadSpeed MayRequire="CETeam.CombatExtended">-0.2</ReloadSpeed>
+			<MeleeHitChance>-1</MeleeHitChance>
+			<ShootingAccuracyPawn>-0.15</ShootingAccuracyPawn>
+			<AimingAccuracy MayRequire="CETeam.CombatExtended">-0.08</AimingAccuracy>
+			<Suppressability MayRequire="CETeam.CombatExtended">-0.25</Suppressability>
+			<MeleeCritChance MayRequire="CETeam.CombatExtended">-0.05</MeleeCritChance>
+			<MeleeParryChance MayRequire="CETeam.CombatExtended">1.0</MeleeParryChance>
+		</equippedStatOffsets>
+		<apparel>
+			<drawData>
+				<defaultData>
+					<layer>75</layer> <!--70-77 is over helmet and under gun-->
+				</defaultData>
+				<dataNorth>
+					<offset>(0.0, -0.4, 0.0)</offset>
+				</dataNorth>
+				<!-- 0.2 the height is just enough that pawn's eyes visible through the port -->
+				<dataSouth>
+					<offset>(0.25, 0.0, -0.2)</offset>
+				</dataSouth>
+                <!-- <dataWest> -->
+                    <!-- <offset>(-0.25, 0.0, 0.0)</offset> -->
+                <!-- </dataWest> -->
+                <dataEast>
+                    <offset>(0.50, 0.0, -0.2)</offset>
+                </dataEast>
+                <scale>0.75</scale>
+                <childScale>1.0</childScale>
+            </drawData>
+			<wornGraphicPath>Things/Ogryn/Armor/Ogryn Shield</wornGraphicPath>
+			<developmentalStageFilter>Child, Adult</developmentalStageFilter>
+			<tags>
+				<li>GW_HotE_CombatShield</li>
+			</tags>
+		</apparel>
+		<recipeMaker>
+			<researchPrerequisite>GW_AM_OgrynIntegration</researchPrerequisite>
+		</recipeMaker>
+		<comps>
+			<li Class="GWParryShield.CompProperties_GW_Parryable">
+				<parryHediff>GW_OgrynShieldParry</parryHediff>
+				<parryChance>0.40</parryChance> <!-- 0.20 = 20% -->
+				<parryWindow>30</parryWindow>
+				<parryCooldown>150</parryCooldown>
+			</li>
+        </comps>
+		<modExtensions>
+			<li Class="VFECore.ApparelDrawPosExtension">
+				<isUnifiedApparel>true</isUnifiedApparel>
+				<hideHead>false</hideHead>
+			</li>
+			<li Class="CombatExtended.ShieldDefExtension" MayRequire="CETeam.CombatExtended">
+				<shieldCoverage>
+					<li>Hands</li>
+					<li>Arms</li>
+					<li>Shoulders</li>
+					<li>Torso</li>
+					<li>Neck</li>
+				</shieldCoverage>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+
+</Defs>

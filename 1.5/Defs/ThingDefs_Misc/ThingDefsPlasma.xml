@@ -71,8 +71,8 @@
 
     <ThingDef ParentName="BaseHumanMakeableGun">
         <defName>HP_AM_Gun_PlasmaGun</defName>
-        <label>Astra Militarum plasma gun</label>
-        <description>Within the vast expanse of the Warhammer 40,000 universe, the Astra Militarum Plasma Gun stands as a pinnacle of advanced technology and devastating firepower, wielded by the disciplined forces of the Imperium. Crafted with meticulous engineering, this formidable weapon features a matte-black ceramite alloy construction, symbolizing its resilience amidst the ceaseless chaos of the galactic battleground.\n\nOperating as a rapid-firing and energy-based firearm, the Plasma Gun projects searing blasts of superheated plasma, capable of melting through armor and incinerating adversaries. Its versatile nature allows it to be effective at both short and mid-range engagements, making it an indispensable asset in the tactical arsenal of the Astra Militarum.\n\nThe distinctive hum of ionized energy accompanies each discharge, a herald of the Plasma Gun's destructive potential. Wielded by the disciplined soldiers of the Astra Militarum, this weapon symbolizes the Imperium's commitment to technological superiority and unyielding firepower in the perpetual war against heresy and alien threats in the grim and war-torn galaxy of Warhammer 40,000.</description>
+        <label>Militarum plasma gun</label>
+        <description>A smaller plasma gun for use by the Imperial Guard. Even though it is scaled for a baseline human, the plasma it fires is still a big threat even to armored targets.\n\nBeing a squad’s plasma gunner is a dubious honor. While a plasma gunner has the power of the sun in their hands, that same power could also blast them to pieces with one too many trigger pulls.</description>
         <techLevel>Spacer</techLevel>
         <graphicData>
             <texPath>Weapons/PlasmaGun</texPath>
@@ -377,7 +377,7 @@
             <recipeUsers Inherit="False">
                 <li>HP_AM_MilitarumFabricationBench</li>
             </recipeUsers>		
-            <researchPrerequisite>GW_MeltaWeapons</researchPrerequisite>
+            <researchPrerequisite>GW_MilitarumAdvancedWeapons</researchPrerequisite>
             <skillRequirements>
                 <Crafting>15</Crafting>
             </skillRequirements>

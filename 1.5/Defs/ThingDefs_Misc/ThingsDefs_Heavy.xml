@@ -115,7 +115,7 @@
 	<ThingDef ParentName="GW_AM_LauncherBase">
 		<defName>GW_AM_Gun_MissileLauncher</defName>
 		<label>Militarum missile launcher</label>
-		<description>Within the vast expanse of the Warhammer 40,000 universe, the Missile Launcher, a formidable heavy weapon, embodies raw power and strategic versatility, often employed by the Imperial Guard. This imposing launcher, compact yet robust, features a matte-black ceramite alloy construction, ensuring resilience in the face of the grim and war-torn battlefield.\n\nDesigned with tactical precision, the Missile Launcher boasts a user-friendly interface with an ergonomic shoulder rest and grip, providing stability for the operator during deployment. The weapon's advanced targeting system adds a layer of versatility, enabling precise engagement against both ground and airborne threats.\n\nA swift and efficient reload mechanism is integral to the launcher's design, facilitating the rapid insertion of munitions and ensuring a continuous onslaught in the chaos of combat. Guided missiles, unleashed by the launcher, carry devastating payloads capable of wreaking havoc on armored adversaries, solidifying its place as a crucial asset in the Imperial Guard's arsenal.\n\nMarked with symbols of the Imperium, the Missile Launcher serves as a testament to unwavering loyalty and the relentless defense waged by the forces of humanity against the myriad threats lurking in the grim and perilous galaxy of Warhammer 40,000.</description>
+		<description>A single-shot, shoulder-fired guided missile launcher used by the Astra Militarum. A favorite of Heavy Weapons Teams, these launchers can sling a potent, high-speed missile far outside the range of hand grenades and grenade launchers.\n\nHeavy Weapons Teams aim to destroy what massive volleys of lasgun fire cannot. A direct hit from a krak missile will destroy even a Space Marine Terminator.</description>
 		<graphicData>
 			<texPath>Weapons/MissileLauncher</texPath>
 		</graphicData>
@@ -174,6 +174,29 @@
                 <cooldownTime>2</cooldownTime>
             </li>
         </tools>
+		<equippedAngleOffset>45</equippedAngleOffset>
+		<modExtensions>
+			<!-- <li Class="VFECore.ThingDefExtension"> -->
+				<!-- <weaponCarryDrawOffsets> -->
+					<!-- <north> -->
+						<!-- <drawOffset>(-0.25,0,0.4)</drawOffset> -->
+						<!-- <angleOffset>-230</angleOffset> -->
+					<!-- </north> -->
+					<!-- <east> -->
+						<!-- <drawOffset>(-0.25,0,0.4)</drawOffset> -->
+						<!-- <angleOffset>-230</angleOffset> -->
+					<!-- </east> -->
+					<!-- <west> -->
+						<!-- <drawOffset>(0.25,-0.1,0.4)</drawOffset> -->
+						<!-- <angleOffset>760</angleOffset> -->
+					<!-- </west> -->
+					<!-- <south> -->
+						<!-- <drawOffset>(-0.25,0,0.4)</drawOffset> -->
+						<!-- <angleOffset>-230</angleOffset> -->
+					<!-- </south> -->
+				<!-- </weaponCarryDrawOffsets> -->
+			<!-- </li> -->
+		</modExtensions>
 	</ThingDef>
 	
 	<!--===== Bolt pistol base =====-->
