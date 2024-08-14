@@ -61,8 +61,8 @@
 			<li>GW_Autoguns</li>
 		</prerequisites>
         <baseCost>5500</baseCost>
-		<researchViewX>6.50</researchViewX>
-		<researchViewY>0.60</researchViewY>
+		<researchViewX>1.00</researchViewX>
+  		<researchViewY>4.00</researchViewY>
         <modExtensions>
             <li Class="GW_Frame.DefModExtension_ExtraPrerequisiteActions">
                 <StudyLocation>GW_Cogitator</StudyLocation>
@@ -85,15 +85,15 @@
 		<prerequisites>
 			<li MayRequire="grimworld.astramilitarum">GW_AM_TacticaImperium</li>
 		</prerequisites>
-		<researchViewX>9.50</researchViewX>
-		<researchViewY>0.20</researchViewY>
+		<researchViewX>6.00</researchViewX>
+		<researchViewY>0.70</researchViewY>
 		<modExtensions>
 			<li Class="GW_Frame.DefModExtension_ExtraPrerequisiteActions">
 				<StudyLocation>GW_Cogitator</StudyLocation>
 				<ItemStudyRequirements>
 					<li Class="GW_Frame.StudyRequirement">
 						<StudyObject>GW_STC_Fragment</StudyObject>
-						<NumberRequired>3</NumberRequired>
+						<NumberRequired>4</NumberRequired>
 					</li>
 				</ItemStudyRequirements>
 			</li>
@@ -195,8 +195,8 @@
 		<defName>GW_AM_ElysianDropTroopers</defName>
 		<label>Elysian Drop Troopers</label>
         <description>.</description>
-		<researchViewX>4.00</researchViewX>
-		<researchViewY>0.10</researchViewY>
+		<researchViewX>6.00</researchViewX>
+		<researchViewY>0.00</researchViewY>
 	</ResearchProjectDef>
 
 			<!--Abhumans-->
