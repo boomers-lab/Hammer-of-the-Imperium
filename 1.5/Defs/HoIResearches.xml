@@ -7,7 +7,7 @@
 	<ResearchProjectDef ParentName="GW_AM_HoITechBase">
 		<defName>GW_AM_TacticaImperium</defName>
 		<label>tactica imperium</label>
-        <description>The Tactica Imperium is the cornerstone of Imperial military strategy in GrimWorld 40,000. It's a weathered tome filled with battle wisdom, guiding commanders through the complexities of warfare. With its doctrines on combined arms and adaptable tactics, it shapes the minds of Imperial leaders, aiding them in their quest for survival and dominance.</description>
+        <description>Study the Tactica Imperium, the Astra Militarum’s most prominent manual. Though it is incredibly long and sometimes contradicts itself, it remains highly useful for both the rookie officer, the grizzled NCO, and the newly-minted enlisted troops.</description>
         <baseCost>1000</baseCost>
 		<prerequisites>
 			<li>Electricity</li>
@@ -19,7 +19,7 @@
 	<ResearchProjectDef ParentName="GW_AM_HoITechBase">
 		<defName>GW_AM_ImperiumDefense</defName>
 		<label>imperium defense</label>
-        <description>Imperium Defense in GrimWorld 40,000 is a robust network of fortifications showcasing the Imperium's resolve against threats. It includes walls, automated defenses, and strategic positions. Scarred bunkers symbolize defenders' commitment, embodying the Imperium's determination to survive.</description>
+        <description>Research and produce Imperium-style defenses. While researching this allows for the construction of basic field fortifications such as trenches and tank traps, it is also a requirement for other defensive emplacements.</description>
         <baseCost>2000</baseCost>
 		<prerequisites>
 			<li>GW_AM_TacticaImperium</li>
@@ -31,7 +31,7 @@
 	<ResearchProjectDef ParentName="GW_AM_HoITechBase">
 		<defName>GW_AM_MilitariumArmor</defName>
 		<label>militarium armor</label>
-        <description>In GrimWorld 40,000, Militarum Armor is sturdy protection for Imperial Guard soldiers, made from reinforced ceramite. Marked with the Aquila and regimental insignias, it symbolizes duty and sacrifice. Equipped for hazardous conditions, it stands as a defense against the darkness.</description>
+        <description>Produce the standardized Cadian Shock Troops-style weapons and armor used by many regiments of the Imperial Guard.</description>
         <baseCost>1000</baseCost>
 		<prerequisites>
 			<li>GW_AM_TacticaImperium</li>
@@ -43,7 +43,7 @@
 	<ResearchProjectDef ParentName="GW_AM_HoITechBase">
 		<defName>GW_AM_RegimentsOfRenown</defName>
 		<label>regiments of renown</label>
-        <description>The Regiments of Renown in GrimWorld 40,000 are elite units within the Imperial Guard, known for their valor and distinction. They carry unique heraldry, battle honors, and exceptional combat prowess, serving as inspirations for fellow Guardsmen. These forces deploy specialized tactics and wield advanced weaponry, showcasing the Imperium's commitment to victory. Legends on the battlefield, they inspire awe and fear, echoing through Imperial history.</description>
+        <description>Discover some of the more unique and specialized regiments of the Astra Militarum.</description>
         <baseCost>500</baseCost>
 		<prerequisites>
 			<li>GW_AM_MilitariumArmor</li>
@@ -112,35 +112,35 @@
 	<ResearchProjectDef ParentName="GW_AM_RegimentResearchBase">
 		<defName>GW_AM_Catachan</defName>
 		<label>Catachan Jungle Fighters</label>
-        <description>The Catachan Jungle Fighters of Warhammer 40,000 are elite soldiers bred on the death world Catachan. Known for their combat skills and resilience, they wear camouflaged fatigues for jungle warfare. Masters of guerrilla tactics, they ambush enemies with precision. Armed with rugged weaponry, they turn the jungle into a deadly weapon. Their reputation for skill and tenacity is legendary in the Imperium, symbolizing the ability to thrive in hazardous conditions.</description>
+        <description>Produce the armor and weapons of the Catachan Jungle Fighters - deathworlder guerrillas at home in the deadliest jungles of the galaxy.</description>
 		<researchViewY>0.00</researchViewY>
 	</ResearchProjectDef>
 
 	<ResearchProjectDef ParentName="GW_AM_RegimentResearchBase">
 		<defName>GW_AM_DeathKorpsOfKrieg</defName>
 		<label>Death Korps of Krieg</label>
-        <description>The Death Korps of Krieg in Warhammer 40,000 are disciplined soldiers from the irradiated Death World of Krieg. They wear gas masks and trench coats, reflecting their harsh environment. Known for discipline and resilience, they excel in trench warfare and sieges. Armed with lasguns and heavy artillery, they employ attrition tactics on the battlefield. Each soldier carries the weight of their world's tragic history, exemplifying the resolve needed to defend humanity.</description>
+        <description>Produce the armor and weapons of the Death Korps of Krieg - grim, stoic siege-specialists who atone for their planet’s shame through brutal combat.</description>
 		<researchViewY>0.70</researchViewY>
 	</ResearchProjectDef>
 
 	<ResearchProjectDef ParentName="GW_AM_RegimentResearchBase">
 		<defName>GW_AM_Mordian</defName>
 		<label>Mordian Iron Guard</label>
-        <description>The Mordian Iron Guard in Warhammer 40,000 is a disciplined regiment from the fortress world of Mordian. They wear distinctive uniforms and excel in line formations and defensive tactics. Armed with lasguns and heavy weapons, they bring disciplined firepower to battle. Each soldier embodies precision and order, dedicated to defending the Imperium.</description>
+        <description>Produce the armor and weapons of the Mordian Iron Guard - disciplined line infantry crushing their enemies under volleys of laser fire.</description>
 		<researchViewY>1.25</researchViewY>
 	</ResearchProjectDef>
 
 	<ResearchProjectDef ParentName="GW_AM_RegimentResearchBase">
 		<defName>GW_AM_TallarnDesertRaiders</defName>
 		<label>Tallarn Desert Raiders</label>
-        <description>The Tallarn Desert Raiders in Warhammer 40,000 are known for their swift and adaptive warfare. Hailing from Tallarn, they excel in desert combat with their mobility and hit-and-run tactics. Clad in desert camouflage, they blend into their surroundings. Armed with lasguns and fast-moving vehicles, they bring rapid firepower to battle. Each soldier embodies adaptability and mastery of desert warfare, showcasing the Imperium's ability to produce specialized forces.</description>
+        <description>Produce the armor and weapons of the Tallarn Desert Raiders - fast-moving mechanized infantry specializing in hit-and-run tactics.</description>
 		<researchViewY>1.80</researchViewY>
 	</ResearchProjectDef>
 
 	<ResearchProjectDef ParentName="GW_AM_RegimentResearchBase">
 		<defName>GW_AM_TempestusScions</defName>
 		<label>Tempestus Scions</label>
-        <description>The Tempestus Scions in Warhammer 40,000 are elite shock troops within the Imperial Guard. Clad in advanced carapace armor, they excel in precision missions and rapid deployment. Armed with hot-shot lasguns, they bring potent firepower to battle. Each Scion symbolizes the Imperium's commitment to producing highly trained shock troops to face threats in the 41st millennium.</description>
+        <description>Produce the armor and weapons of the Tempestus Scions - elite, precise special-forces soldiers who serve best under maximum pressure.</description>
 		<researchViewY>2.45</researchViewY>
         <modExtensions>
             <li Class="GW_Frame.DefModExtension_ExtraPrerequisiteActions">
@@ -158,35 +158,35 @@
 	<ResearchProjectDef ParentName="GW_AM_RegimentResearchBase">
 		<defName>GW_AM_Valhallan</defName>
 		<label>Valhallan Ice Warriors</label>
-        <description>The Valhallan Ice Warriors in Warhammer 40,000 are stalwart defenders from the frozen world of Valhalla. Cloaked in winter gear, they excel in enduring extreme cold and expert marksmanship. Armed with lasguns and heavy weapons, they bring potent firepower to battle. Each soldier embodies resilience and adaptability, showcasing the Imperium's capacity to produce specialized forces for the harsh realities of the 41st millennium.</description>
+        <description>Produce the armor and weapons of the Valhallan Ice Warriors - cold-weather defensive specialists known for holding their ground against the worst odds.</description>
 		<researchViewY>3.00</researchViewY>
 	</ResearchProjectDef>
 
 	<ResearchProjectDef ParentName="GW_AM_RegimentResearchBase">
 		<defName>GW_AM_VostoyanFirstborn</defName>
 		<label>Vostoyan Firstborn</label>
-        <description>The Vostroyan Firstborn in Warhammer 40,000 are a distinguished regiment from the hive world of Vostroya. Adorned in elaborate carapace armor, they excel in marksmanship and methodical tactics. Armed with lasguns and ornate weaponry, they bring lethal firepower to battle. Each soldier embodies the regiment's heritage and commitment to excellence, showcasing the Imperium's capacity to produce specialized forces for the challenges of the 41st millennium.</description>
+        <description>Produce the armor and weapons of the Vostroyan Firstborn - a storied and disciplined regiment consisting of the firstborn sons and daughters of every family on Vostroya.</description>
 		<researchViewY>3.60</researchViewY>
 	</ResearchProjectDef>
 
     <ResearchProjectDef ParentName="GW_AM_RegimentResearchBase">
 		<defName>GW_AM_CadianShockTroops</defName>
 		<label>Kasrkin Elite Troops</label>
-        <description>The Kasrkin in Warhammer 40,000 are elite troops within the Imperial Guard, known for their specialized training and discipline. Adorned in distinctive carapace armor, they excel in various battlefield scenarios. Armed with hot-shot lasguns, they bring formidable firepower to critical missions. Each soldier embodies the Imperium's commitment to producing an elite force for the challenges of the 41st millennium.</description>
+        <description>Produce the armor and weapons of the Kasrkin - the honored elite of the Cadian Shock Troops equalling even the Tempestus Scions.</description>
 		<researchViewY>4.20</researchViewY>
 	</ResearchProjectDef>
 
     <ResearchProjectDef ParentName="GW_AM_RegimentResearchBase">
 		<defName>GW_AM_SteelLegion</defName>
 		<label>Armageddon Steel Legion</label>
-        <description>The Armageddon Steel Legion in Warhammer 40,000 is a disciplined regiment from the industrial world of Armageddon. Clad in gas masks and flak armor, they excel in urban warfare and combined arms tactics. Armed with lasguns and supported by armored vehicles, they reclaim urban territories effectively. Each soldier embodies resilience and adaptability, defending their homeworld and the Imperium in the grim darkness of the 41st millennium.</description>
+        <description>Produce the armor and weapons of the Armageddon Steel Legion - expert tankers combined with mechanized infantry.</description>
 		<researchViewY>4.80</researchViewY>
 	</ResearchProjectDef>
 	
 	<ResearchProjectDef ParentName="GW_AM_RegimentResearchBase">
 		<defName>GW_AM_OfficersOfAM</defName>
 		<label>Officers of Astra Militarum</label>
-        <description>Officers of the Militarum in Warhammer 40,000 have distinct attire: the Commissar wears a black greatcoat and peaked cap, the Militarum Priest dons religious robes, Militarum Engineseer which help Guard with thier tanks, the Field Medic dresses in standard fatigues with a red cross symbol, and the Sanctioned Psyker is clad in robes with psychic glyphs, bearing a glowing mark, and wielding a crackling staff.</description>
+        <description>Produce armor and weapons befitting of Imperial Guard officers - the fearsome Commissar and the charismatic Priest.</description>
 		<researchViewY>0</researchViewY>
 		<researchViewX>4.00</researchViewX>
 	</ResearchProjectDef>
@@ -203,7 +203,7 @@
 	<ResearchProjectDef ParentName="GW_AM_HoITechBase">
 		<defName>GW_AM_AbhumanIntegration</defName>
 		<label>abhuman integration</label>
-        <description>In the expansive lore of Warhammer 40,000, "Abhumans" is a collective term used to describe various non-standard human strains or subspecies that have evolved under different environmental conditions or circumstances. These Abhumans exhibit distinct physical and genetic traits that set them apart from the baseline human population.</description>
+        <description>Research the Abhumans of the Imperial Guard - stable mutations of the human baseline.</description>
 		<prerequisites>
 			<li>GW_AM_MilitariumArmor</li>
 		</prerequisites>
@@ -215,7 +215,7 @@
 	<ResearchProjectDef ParentName="GW_AM_HoITechBase">
 		<defName>GW_AM_OgrynIntegration</defName>
 		<label>ogryn integration</label>
-        <description>The Ogryn, massive abhumans employed as shock troopers by the Imperium of Man, are physically powerful mutants standing around 10 feet tall. They hail from cold, barren planets with high gravity, making them larger and bulkier than humans. Despite limited intellect, they compensate with overwhelming physical strength and loyalty, making them exceptional shock troops for direct assaults on the front lines of battle in the Astra Militarum's Militarum Auxilla.</description>
+        <description>Produce gear of the Ogryns - huge but unintelligent abhumans evolved on a cold, high-gravity prison planet.</description>
 		<prerequisites>
 			<li>GW_AM_AbhumanIntegration</li>
 		</prerequisites>
@@ -227,7 +227,7 @@
 	<ResearchProjectDef ParentName="GW_AM_HoITechBase">
 		<defName>GW_AM_RatlingIntegration</defName>
 		<label>ratling integration</label>
-        <description>Ratlings, small abhumans employed as snipers by the Imperium of Man, are granted Imperial citizenship despite their mutant status. They excel as marksmen, capable of precise shots from over a kilometer away. In battle, Ratlings can exact a heavy toll on enemy forces, using their knack for staying out of harm's way to their advantage.</description>
+        <description>Produce gear used by the small and sneaky Ratling abhumans.</description>
 		<prerequisites>
 			<li>GW_AM_AbhumanIntegration</li>
 		</prerequisites>
