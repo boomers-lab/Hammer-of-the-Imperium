@@ -23,7 +23,10 @@
         <stuffCategories>
             <li>Fabric</li>
             <li>Leathery</li>
-        </stuffCategories>      
+        </stuffCategories>     
+		<thingCategories>
+			<li>ApparelMisc</li>
+		</thingCategories>		
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
