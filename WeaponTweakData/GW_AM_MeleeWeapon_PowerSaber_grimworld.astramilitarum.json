@@ -1,0 +1,11 @@
+{
+  "TextureModID": "grimworld.astramilitarum",
+  "ItemDefName": "GW_AM_MeleeWeapon_PowerSaber",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.221696451,
+  "OffY": 0.0197242517,
+  "BladeStart": 0.111242607,
+  "BladeEnd": 0.6887574,
+  "MeleeWeaponType": 6
+}

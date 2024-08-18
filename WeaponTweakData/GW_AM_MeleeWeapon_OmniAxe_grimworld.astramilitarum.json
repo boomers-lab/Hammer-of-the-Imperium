@@ -1,0 +1,12 @@
+{
+  "TextureModID": "grimworld.astramilitarum",
+  "ItemDefName": "GW_AM_MeleeWeapon_OmniAxe",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": -0.06548285,
+  "OffY": 0.259566277,
+  "Rotation": -45.0,
+  "BladeStart": 0.03550296,
+  "BladeEnd": 0.193294078,
+  "MeleeWeaponType": 6
+}

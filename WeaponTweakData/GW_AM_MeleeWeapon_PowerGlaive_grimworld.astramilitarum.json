@@ -1,0 +1,11 @@
+{
+  "TextureModID": "grimworld.astramilitarum",
+  "ItemDefName": "GW_AM_MeleeWeapon_PowerGlaive",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": -0.06548285,
+  "Rotation": -45.0,
+  "BladeStart": -0.081262134,
+  "BladeEnd": 0.0134124216,
+  "MeleeWeaponType": 6
+}

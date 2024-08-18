@@ -1,0 +1,10 @@
+{
+  "TextureModID": "grimworld.astramilitarum",
+  "ItemDefName": "GW_AM_MeleeWeapon_Eviscerator",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.24,
+  "OffY": 0.3288893,
+  "BladeEnd": 0.702222645,
+  "MeleeWeaponType": 6
+}
