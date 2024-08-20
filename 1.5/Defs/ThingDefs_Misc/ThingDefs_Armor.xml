@@ -471,4 +471,44 @@
         </apparel>
     </ThingDef>
 	
+	<!-- Lucifer Black -->
+	
+	 <ThingDef ParentName="GW_AM_ArmorBase">
+        <defName>GW_AM_LuciferBlack_Armor</defName>
+        <label>Lucifer black armor</label>
+        <description>Lucifer black armor:\n\n Fashioned for the resilient soldiers of the Valhallan Ice Warriors, this robust armor stands as a bulwark against the biting cold of the harshest environments. Crafted with precision for the frigid battlefields, the Valhallan Flak Armor offers superior protection without compromising mobility. Its distinctive design reflects the utilitarian ethos of the Valhallan regiment, embodying the indomitable spirit of those who brave the icy frontiers of Warhammer 40,000. Worn with pride, the Valhallan Flak Armor symbolizes the unyielding resolve of the warriors defending the Imperium against the chilling adversaries lurking in the grim darkness of the far future.</description>
+        <recipeMaker>
+            <researchPrerequisite>GW_LuciferBlack</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>8</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+        <graphicData>
+            <texPath>Things/LuciferBlack/Armor/Lucifer_Male_south</texPath>
+        </graphicData>
+        <statBases>
+            <WorkToMake>9000</WorkToMake>
+            <MaxHitPoints>250</MaxHitPoints>
+            <Mass>5</Mass>
+            <ArmorRating_Sharp>1.0</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.36</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.20</ArmorRating_Heat>
+            <Insulation_Cold>10</Insulation_Cold>
+            <EquipDelay>3</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <MoveSpeed>-0.1</MoveSpeed>
+        </equippedStatOffsets>
+        <costList>
+            <Steel>100</Steel>
+        </costList>	
+        <apparel>
+            <wornGraphicPath>Things/LuciferBlack/Armor/Lucifer</wornGraphicPath>
+            <tags>
+                <li>40kLucifer</li>
+                <li>40kLuciferArmor</li>
+            </tags>
+        </apparel>
+    </ThingDef>
+	
 </Defs>

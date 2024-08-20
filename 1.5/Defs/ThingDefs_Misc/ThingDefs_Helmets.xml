@@ -289,5 +289,106 @@
             </tags>
         </apparel>
     </ThingDef>
-
+	
+	<!-- Lucifer Black -->
+	
+	<ThingDef ParentName="GW_AM_HelmetBase">
+        <defName>GW_AM_LuciferBlackSkull</defName>
+        <label>lucifer black skull</label>
+        <description>.</description>
+        <techLevel>Industrial</techLevel>
+        <graphicData>
+            <texPath>Things/LuciferBlack/Helmet/Lucifer_Skull_south</texPath>
+        </graphicData>
+        <costList>
+            <ComponentIndustrial>2</ComponentIndustrial>
+            <Cloth>10</Cloth>		
+            <Steel>70</Steel>	
+        </costList>
+        <statBases>
+            <WorkToMake>2500</WorkToMake>
+            <Mass>1.2</Mass>
+            <ArmorRating_Sharp>0.85</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.45</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.60</ArmorRating_Heat>
+            <EquipDelay>1.2</EquipDelay>
+        </statBases>
+        <recipeMaker>
+            <researchPrerequisite>GW_LuciferBlack</researchPrerequisite>
+        </recipeMaker>
+        <apparel>
+            <wornGraphicPath>Things/LuciferBlack/Helmet/Lucifer_Skull</wornGraphicPath>
+            <tags>
+                <li>40kLucifer</li>
+                <li>40kLuciferHelmet</li>
+            </tags>
+        </apparel>
+    </ThingDef>
+	
+	<ThingDef ParentName="GW_AM_HelmetBase">
+        <defName>GW_AM_LuciferBlackAlt</defName>
+        <label>lucifer black alt</label>
+        <description>.</description>
+        <techLevel>Industrial</techLevel>
+        <graphicData>
+            <texPath>Things/LuciferBlack/Helmet/Lucifer_AltHelmet_south</texPath>
+        </graphicData>
+        <costList>
+            <ComponentIndustrial>2</ComponentIndustrial>
+            <Cloth>10</Cloth>		
+            <Steel>70</Steel>	
+        </costList>
+        <statBases>
+            <WorkToMake>2500</WorkToMake>
+            <Mass>1.2</Mass>
+            <ArmorRating_Sharp>0.85</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.45</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.60</ArmorRating_Heat>
+            <EquipDelay>1.2</EquipDelay>
+        </statBases>
+        <recipeMaker>
+            <researchPrerequisite>GW_LuciferBlack</researchPrerequisite>
+        </recipeMaker>
+        <apparel>
+            <wornGraphicPath>Things/LuciferBlack/Helmet/Lucifer_AltHelmet</wornGraphicPath>
+            <tags>
+                <li>40kLucifer</li>
+                <li>40kLuciferHelmet</li>
+            </tags>
+        </apparel>
+    </ThingDef>
+	
+	<ThingDef ParentName="GW_AM_HelmetBase">
+        <defName>GW_AM_LuciferBlackMask</defName>
+        <label>lucifer black mask</label>
+        <description>.</description>
+        <techLevel>Industrial</techLevel>
+        <graphicData>
+            <texPath>Things/LuciferBlack/Helmet/Lucifer_SkullMask_south</texPath>
+        </graphicData>
+        <costList>
+            <ComponentIndustrial>2</ComponentIndustrial>
+            <Cloth>10</Cloth>		
+            <Steel>70</Steel>	
+        </costList>
+        <statBases>
+            <WorkToMake>2500</WorkToMake>
+            <Mass>1.2</Mass>
+            <ArmorRating_Sharp>0.85</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.45</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.60</ArmorRating_Heat>
+            <EquipDelay>1.2</EquipDelay>
+        </statBases>
+        <recipeMaker>
+            <researchPrerequisite>GW_LuciferBlack</researchPrerequisite>
+        </recipeMaker>
+        <apparel>
+            <wornGraphicPath>Things/LuciferBlack/Helmet/Lucifer_SkullMask</wornGraphicPath>
+            <tags>
+                <li>40kLucifer</li>
+                <li>40kLuciferHelmet</li>
+            </tags>
+        </apparel>
+    </ThingDef>
+	
 </Defs>
