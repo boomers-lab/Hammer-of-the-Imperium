@@ -44,8 +44,11 @@
 					<offset>(-0.2, 0.0, 0.0)</offset>
 				</dataEast>
 			</drawData>
+			<bodyPartGroups>
+				<li>Torso</li>
+			</bodyPartGroups>
 			<layers>
-				<li>Backpack</li>
+				<li>Belt</li>
 			</layers>
 			<tags>
 				<li>Spacer</li>
@@ -353,6 +356,9 @@
 				<dataEast>
 					<offset>(-0.2, 0.0, 0.0)</offset>
 				</dataEast>
+				<dataSouth>
+                    <offset>(0.0, -0.1, 0.0)</offset>
+				</dataSouth>
 			</drawData>
 			<wornGraphicPath>Things/ElysianDrop/Backpack/Elysium_Jetpack</wornGraphicPath>
 			<tags>
@@ -407,6 +413,9 @@
 			<Insulation_Heat>5</Insulation_Heat>
 			<EquipDelay>2</EquipDelay>
 		</statBases>
+		<stuffCategories Inherit="False">
+			<li>Fabric</li>
+		</stuffCategories>
 		<costList>
 			<ComponentIndustrial>10</ComponentIndustrial>
             <ComponentSpacer>3</ComponentSpacer>
