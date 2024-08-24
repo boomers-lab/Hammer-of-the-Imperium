@@ -29,7 +29,7 @@
 		</thingCategories>		
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
-			<shaderType>CutoutComplex</shaderType>
+			<shaderType>Cutout</shaderType>
 			<drawSize>1</drawSize>
 		</graphicData>
 		<tradeTags>
