@@ -20,16 +20,16 @@
 			</recipeUsers>
 		</recipeMaker>
         <costStuffCount>100</costStuffCount>
-        <stuffCategories>
+        <stuffCategories Inherit="False">
             <li>Fabric</li>
-            <li>Leathery</li>
+            <!-- <li>Leathery</li> -->
         </stuffCategories>     
 		<thingCategories>
 			<li>ApparelMisc</li>
 		</thingCategories>		
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
-			<shaderType>Cutout</shaderType>
+			<shaderType>CutoutComplex</shaderType>
 			<drawSize>1</drawSize>
 		</graphicData>
 		<tradeTags>
@@ -37,6 +37,9 @@
 		</tradeTags>
 		<apparel>
             <drawData>
+				<dataSouth>
+                    <offset>(0.0, -0.01, 0.0)</offset>
+				</dataSouth>
 				<dataWest>
 					<offset>(0.2, 0.0, 0.0)</offset>
 				</dataWest>
