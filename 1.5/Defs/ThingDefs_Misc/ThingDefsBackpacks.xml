@@ -147,7 +147,7 @@
 		<recipeMaker>
 			<researchPrerequisite>GW_AM_CadianShockTroops</researchPrerequisite>
 		</recipeMaker>
-        <costStuffCount>100</costStuffCount>
+        <costStuffCount>60</costStuffCount>
 		<statBases>
 			<WorkToMake>3500</WorkToMake>
 			<MaxHitPoints>500</MaxHitPoints>
