@@ -41,6 +41,9 @@
 				<dataSouth>
                     <offset>(0.0, -0.01, 0.0)</offset>
 				</dataSouth>
+				<dataNorth>
+					<offset>(0.0, 0.05, 0.0)</offset>
+				</dataNorth>
 				<dataWest>
 					<offset>(0.2, 0.0, 0.0)</offset>
 				</dataWest>
