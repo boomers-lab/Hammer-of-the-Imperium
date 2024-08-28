@@ -36,6 +36,7 @@
 			<li>GW_AM_Backpacks</li>
 		</tradeTags>
 		<apparel>
+			<useWornGraphicMask>true</useWornGraphicMask>
             <drawData>
 				<dataSouth>
                     <offset>(0.0, -0.01, 0.0)</offset>
