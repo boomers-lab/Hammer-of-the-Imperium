@@ -76,7 +76,7 @@
 		</recipeMaker>
         <costStuffCount>30</costStuffCount>
 		<statBases>
-			<WorkToMake>2500</WorkToMake>
+			<WorkToMake>3500</WorkToMake>
 			<MaxHitPoints>500</MaxHitPoints>
 			<Mass>2</Mass>
 			<Flammability>0.2</Flammability>
@@ -112,7 +112,7 @@
 		</recipeMaker>
         <costStuffCount>100</costStuffCount>
 		<statBases>
-			<WorkToMake>2500</WorkToMake>
+			<WorkToMake>3500</WorkToMake>
 			<MaxHitPoints>500</MaxHitPoints>
 			<Mass>2</Mass>
 			<Flammability>0.2</Flammability>
@@ -149,7 +149,7 @@
 		</recipeMaker>
         <costStuffCount>100</costStuffCount>
 		<statBases>
-			<WorkToMake>2500</WorkToMake>
+			<WorkToMake>3500</WorkToMake>
 			<MaxHitPoints>500</MaxHitPoints>
 			<Mass>2</Mass>
 			<Flammability>0.2</Flammability>
@@ -189,7 +189,7 @@
 			<researchPrerequisite>GW_AM_CadianShockTroops</researchPrerequisite>
 		</recipeMaker>
 		<statBases>
-			<WorkToMake>2500</WorkToMake>
+			<WorkToMake>5000</WorkToMake>
 			<MaxHitPoints>500</MaxHitPoints>
 			<Mass>2</Mass>
 			<Flammability>0.2</Flammability>
@@ -228,7 +228,7 @@
 			<researchPrerequisite>GW_AM_CadianShockTroops</researchPrerequisite>
 		</recipeMaker>
 		<statBases>
-			<WorkToMake>2500</WorkToMake>
+			<WorkToMake>7000</WorkToMake>
 			<MaxHitPoints>500</MaxHitPoints>
 			<Mass>2</Mass>
 			<Flammability>0.2</Flammability>
@@ -305,7 +305,7 @@
 			<researchPrerequisite>GW_AM_ElysianDropTroopers</researchPrerequisite>
 		</recipeMaker>
 		<statBases>
-			<WorkToMake>2500</WorkToMake>
+			<WorkToMake>5000</WorkToMake>
 			<MaxHitPoints>500</MaxHitPoints>
 			<Mass>2</Mass>
 			<Flammability>0.2</Flammability>
@@ -409,7 +409,7 @@
 			<researchPrerequisite>GW_LuciferBlack</researchPrerequisite>
 		</recipeMaker>
 		<statBases>
-			<WorkToMake>2500</WorkToMake>
+			<WorkToMake>5000</WorkToMake>
 			<MaxHitPoints>500</MaxHitPoints>
 			<Mass>2</Mass>
 			<Flammability>0.2</Flammability>
