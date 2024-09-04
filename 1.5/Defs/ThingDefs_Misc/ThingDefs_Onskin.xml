@@ -220,7 +220,7 @@
             <!-- Tallarn Desert Raiders -->
     <ThingDef ParentName="GW_AM_OnSkinBase">
 		<defName>GW_AM_TDR_DesertFatigues</defName>
-		<label>Desert Fatigues</label>
+		<label>Desert fatigues</label>
 		<graphicData>
 			<texPath>Things/Tallarn/OnSkin/DesertFatigues_Male_south</texPath>
 		</graphicData>
@@ -228,9 +228,6 @@
 			<researchPrerequisite>GW_AM_TallarnDesertRaiders</researchPrerequisite>
 		</recipeMaker>
 		<costStuffCount>80</costStuffCount>
-		<stuffCategories>
-			<li>Leathery</li>
-		</stuffCategories>
 		<statBases>
 			<MaxHitPoints>150</MaxHitPoints>
 			<WorkToMake>7000</WorkToMake>
