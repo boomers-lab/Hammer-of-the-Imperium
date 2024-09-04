@@ -25,7 +25,7 @@
     <FactionDef ParentName="GW_ImperialFactionBase">
         <defName>GW_AM_AstraMilitarum</defName>
         <label>Astra Militarum</label>
-        <description>The Astra Militarum, also known as the Imperial Guard, are a massive fighting force in the Imperium of Man with a strong focus on defending humanity from the countless threats that endanger them. When a planet's defenses fail, they can often be found on the front lines, overwhelming enemies with their massive army.</description>
+        <description>A regiment of the Astra Militarum, the regular army of the former Imperium of Man. Specializing in massed attack and sheer stubbornness, the Imperial Guard overwhelms their enemies with a storm of lasbolts and a rush of bayonets.</description>
         <configurationListOrderPriority>998</configurationListOrderPriority>
         <leaderTitle>lord general</leaderTitle>
         <techLevel>Spacer</techLevel>
