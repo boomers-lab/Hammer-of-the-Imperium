@@ -164,7 +164,7 @@
 
 	<ResearchProjectDef ParentName="GW_AM_RegimentResearchBase">
 		<defName>GW_AM_VostoyanFirstborn</defName>
-		<label>Vostoyan Firstborn</label>
+		<label>Vostroyan Firstborn</label>
         <description>Produce the armor and weapons of the Vostroyan Firstborn - a storied and disciplined regiment consisting of the firstborn sons and daughters of every family on Vostroya.</description>
 		<researchViewY>3.60</researchViewY>
 	</ResearchProjectDef>
