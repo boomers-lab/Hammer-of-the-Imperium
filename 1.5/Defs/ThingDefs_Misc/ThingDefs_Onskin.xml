@@ -244,11 +244,11 @@
 		</apparel>
 	</ThingDef>
 
-    <!-- Vostoyan Firstborn Uniform -->
+    <!-- Vostroyan Firstborn Uniform -->
 
     <ThingDef ParentName="GW_AM_OnSkinBase">
         <defName>GW_AM_VostoyanFirstborn_Uniform</defName>
-        <label>vostoyan firstborn uniform</label>
+        <label>vostroyan firstborn uniform</label>
         <recipeMaker>
             <researchPrerequisite>GW_AM_VostoyanFirstborn</researchPrerequisite>
         </recipeMaker>
