@@ -705,11 +705,11 @@
         </apparel>
     </ThingDef>
     
-        <!-- Vostoyan Firstborn Headgear -->
+        <!-- Vostroyan Firstborn Headgear -->
 
     <ThingDef ParentName="GW_AM_HatBase">
         <defName>GW_AM_VostoyanFirstbornHeadgear</defName>
-        <label>vostoyan firstborn headgear</label>
+        <label>vostroyan firstborn headgear</label>
         <description>Vostroyan Firstborn Helmet:\n\n A regal symbol of the Vostroyan Firstborn, this helmet seamlessly combines elegance with practicality on the war-torn battlefields of Warhammer 40,000. Crafted with ornate details, the Vostroyan Firstborn Helmet stands as a testament to the regiment's prestigious heritage and commitment to warfare. Worn with pride by the Firstborn soldiers, it signifies not only protection on the front lines but also a connection to the rich traditions of the Vostroyan people. As a distinctive piece of headgear, the Vostroyan Firstborn Helmet embodies the fusion of noble aesthetics and battle-ready functionality in the unyielding future of the 41st millennium.</description>
         <costStuffCount>20</costStuffCount>
         <costList>
