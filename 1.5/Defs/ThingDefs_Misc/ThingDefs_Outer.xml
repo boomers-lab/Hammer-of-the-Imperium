@@ -229,13 +229,64 @@
             </layers>
             <tags>
                 <li>40kTanith</li>
-                <li>40kTanithMiddle</li>
+                <li>40kTanithOuter</li>
             </tags>
         </apparel>
         <tradeTags>
-            <li>HPMiddle</li>
+            <li>HPOuter</li>
         </tradeTags>
 		<comps />
     </ThingDef>
+	
+	<ThingDef ParentName="GW_AM_OuterBase">
+        <defName>GW_AM_Tanith1stCloak</defName>
+        <label>Tanith 1st cloak</label>
+        <description>. . .</description>
+        <recipeMaker>
+            <researchPrerequisite>GW_AM_OfficersOfAM</researchPrerequisite>
+        </recipeMaker>
+        <graphicData>
+            <texPath>Things/Tanith1st/Cloak_Male_south</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <costStuffCount>70</costStuffCount>
+        <stuffCategories>
+            <li>Fabric</li>
+            <li>Leathery</li>
+        </stuffCategories>
+        <thingCategories>
+            <li>ApparelMisc</li>
+        </thingCategories>
+        <statBases>
+            <MaxHitPoints>200</MaxHitPoints>
+            <WorkToMake>10000</WorkToMake>
+            <Mass>1.5</Mass>
+            <StuffEffectMultiplierArmor>0.3</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>1.0</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.85</StuffEffectMultiplierInsulation_Heat>
+            <EquipDelay>3</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <SocialImpact>0.1</SocialImpact>
+        </equippedStatOffsets>
+        <apparel>
+            <wornGraphicPath>Things/Tanith1st/Cloak</wornGraphicPath>
+            <tags>
+                <li>40kTanith</li>
+                <li>40kTanithOuter</li>
+            </tags>
+			<bodyPartGroups>
+                <li>Torso</li>
+                <li>Neck</li>
+                <li>Shoulders</li>
+                <li>Arms</li>
+                <li>Legs</li>
+            </bodyPartGroups>
+        </apparel>
+        <tradeTags>
+            <li>HPOuter</li>
+        </tradeTags>
+		<comps />
+    </ThingDef>	
     
 </Defs>
