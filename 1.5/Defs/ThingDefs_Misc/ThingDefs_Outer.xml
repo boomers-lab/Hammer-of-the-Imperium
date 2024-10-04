@@ -177,15 +177,15 @@
             <li>HPOuter</li>
         </tradeTags>
 		<comps>
-			<li Class="BM_ApparelSet.CompProperties_ApparelSet">
-				<apparelSetEffect>
-					<allApparels>
-						<li>GW_AM_EngineseererHood</li>
-						<li>GW_AM_EngineseererBackpack</li>
-					</allApparels>
-					<hediff>GW40k_AM_EngineerSet</hediff>
-				</apparelSetEffect>
-			</li>
+			<!-- <li Class="BM_ApparelSet.CompProperties_ApparelSet"> -->
+				<!-- <apparelSetEffect> -->
+					<!-- <allApparels> -->
+						<!-- <li>GW_AM_EngineseererHood</li> -->
+						<!-- <li>GW_AM_EngineseererBackpack</li> -->
+					<!-- </allApparels> -->
+					<!-- <hediff>GW40k_AM_EngineerSet</hediff> -->
+				<!-- </apparelSetEffect> -->
+			<!-- </li> -->
 		</comps>
     </ThingDef>
 	

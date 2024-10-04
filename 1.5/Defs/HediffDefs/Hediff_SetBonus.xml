@@ -1,43 +1,43 @@
 <Defs>
 
-	<HediffDef>
-		<defName>GW40k_AM_EngineerSet</defName>
-		<hediffClass>HediffWithComps</hediffClass>
-		<label>engineer power</label>
-		<description>engineer set bonus</description>
-		<initialSeverity>1</initialSeverity>
-		<maxSeverity>1</maxSeverity>
-		<isBad>false</isBad>
-		<comps />
-		<stages>
-			<li>
-				<minSeverity>1</minSeverity>
-				<statOffsets>
-					<WorkSpeedGlobal>0.25</WorkSpeedGlobal>				
-					<ResearchSpeed>0.25</ResearchSpeed>				
-				</statOffsets>
-			</li>
-		</stages>
-	</HediffDef>
+	<!-- <HediffDef> -->
+		<!-- <defName>GW40k_AM_EngineerSet</defName> -->
+		<!-- <hediffClass>HediffWithComps</hediffClass> -->
+		<!-- <label>engineer power</label> -->
+		<!-- <description>engineer set bonus</description> -->
+		<!-- <initialSeverity>1</initialSeverity> -->
+		<!-- <maxSeverity>1</maxSeverity> -->
+		<!-- <isBad>false</isBad> -->
+		<!-- <comps /> -->
+		<!-- <stages> -->
+			<!-- <li> -->
+				<!-- <minSeverity>1</minSeverity> -->
+				<!-- <statOffsets> -->
+					<!-- <WorkSpeedGlobal>0.25</WorkSpeedGlobal>				 -->
+					<!-- <ResearchSpeed>0.25</ResearchSpeed>				 -->
+				<!-- </statOffsets> -->
+			<!-- </li> -->
+		<!-- </stages> -->
+	<!-- </HediffDef> -->
 
-	<HediffDef>
-		<defName>GW40k_AM_Tanith1stSet</defName>
-		<hediffClass>HediffWithComps</hediffClass>
-		<label>sniper power</label>
-		<description>tanith 1st set bonus</description>
-		<initialSeverity>1</initialSeverity>
-		<maxSeverity>1</maxSeverity>
-		<isBad>false</isBad>
-		<comps />
-		<stages>
-			<li>
-				<minSeverity>1</minSeverity>
-				<statFactors>
-					<ShootingAccuracyPawn>1.5</ShootingAccuracyPawn>
-					<VEF_VerbRangeFactor>1.5</VEF_VerbRangeFactor>
-				</statFactors>
-			</li>
-		</stages>
-	</HediffDef>
+	<!-- <HediffDef> -->
+		<!-- <defName>GW40k_AM_Tanith1stSet</defName> -->
+		<!-- <hediffClass>HediffWithComps</hediffClass> -->
+		<!-- <label>sniper power</label> -->
+		<!-- <description>tanith 1st set bonus</description> -->
+		<!-- <initialSeverity>1</initialSeverity> -->
+		<!-- <maxSeverity>1</maxSeverity> -->
+		<!-- <isBad>false</isBad> -->
+		<!-- <comps /> -->
+		<!-- <stages> -->
+			<!-- <li> -->
+				<!-- <minSeverity>1</minSeverity> -->
+				<!-- <statFactors> -->
+					<!-- <ShootingAccuracyPawn>1.5</ShootingAccuracyPawn> -->
+					<!-- <VEF_VerbRangeFactor>1.5</VEF_VerbRangeFactor> -->
+				<!-- </statFactors> -->
+			<!-- </li> -->
+		<!-- </stages> -->
+	<!-- </HediffDef> -->
 
 </Defs>

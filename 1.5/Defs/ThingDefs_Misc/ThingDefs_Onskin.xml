@@ -406,16 +406,16 @@
             <li>HPMiddle</li>
         </tradeTags>
 		<comps>
-			<li Class="BM_ApparelSet.CompProperties_ApparelSet">
-				<apparelSetEffect>
-					<allApparels>
-						<li>GW_AM_Tanith1stCloak</li>
-						<li>GW_AM_Tanith1stHood</li>
-						<li>GW_AM_Tanith1stGoggle</li>
-					</allApparels>
-					<hediff>GW40k_AM_Tanith1stSet</hediff>
-				</apparelSetEffect>
-			</li>
+			<!-- <li Class="BM_ApparelSet.CompProperties_ApparelSet"> -->
+				<!-- <apparelSetEffect> -->
+					<!-- <allApparels> -->
+						<!-- <li>GW_AM_Tanith1stCloak</li> -->
+						<!-- <li>GW_AM_Tanith1stHood</li> -->
+						<!-- <li>GW_AM_Tanith1stGoggle</li> -->
+					<!-- </allApparels> -->
+					<!-- <hediff>GW40k_AM_Tanith1stSet</hediff> -->
+				<!-- </apparelSetEffect> -->
+			<!-- </li> -->
 		</comps>
     </ThingDef>  
 
