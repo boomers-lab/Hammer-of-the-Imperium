@@ -25,13 +25,16 @@
         </recipeMaker>
         <apparel>
             <useWornGraphicMask>true</useWornGraphicMask>		
-            <!-- <bodyPartGroups> -->
+			<tags>
+				<li>RoyalTier2</li>
+			</tags>
+            <bodyPartGroups>
                 <!-- <li>Torso</li> -->
-                <!-- <li>Neck</li> -->
+                <li>Neck</li>
                 <!-- <li>Shoulders</li> -->
                 <!-- <li>Arms</li> -->
                 <!-- <li>Legs</li> -->
-            <!-- </bodyPartGroups> -->
+            </bodyPartGroups>
             <layers>
                 <li>Middle</li>
             </layers>

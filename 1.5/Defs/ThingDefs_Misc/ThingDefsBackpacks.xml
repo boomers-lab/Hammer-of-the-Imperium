@@ -59,6 +59,7 @@
 			</layers>
 			<tags>
 				<li>Spacer</li>
+				<li>RoyalTier2</li>
                 <li>GW_AM_Backpack</li>
 			</tags>
 		</apparel>
@@ -69,7 +70,7 @@
 		<label>small backpack</label>
         <description>A small backpack used by Imperial Guardsmen. It helps the user carry more equipment. \n\nEven the rookie Guardsman quickly learns to fend for themselves by grabbing what they can. A loose power pack here, an extra grenade there, a laspistol from a dead officer.</description>
 		<graphicData>
-			<texPath>Things/Backpacks/Small_Backpack_Display</texPath>
+			<texPath>Things/Backpacks/Small_Backpack_south</texPath>
 		</graphicData>
 		<recipeMaker>
 			<researchPrerequisite>GW_AM_CadianShockTroops</researchPrerequisite>
@@ -105,7 +106,7 @@
 		<label>large backpack</label>
         <description>A larger backpack for Astra Militarum use. While it helps carry even more equipment than smaller backpacks do, it slows down the user due to its bulk. \n\nThe veteran Guardsman knows that on the battlefield, supplies from the Munitorum are irregular at best and nonexistent at worst. Going through the pockets of the dead during a lull in the fighting may turn the stomach of a rookie, but it can and has saved lives - many a salvaged plasma pistol has been the salvation of a wise Guardsman.</description>
 		<graphicData>
-			<texPath>Things/Backpacks/Large_Backpack_Display</texPath>
+			<texPath>Things/Backpacks/Large_Backpack_south</texPath>
 		</graphicData>
 		<recipeMaker>
 			<researchPrerequisite>GW_AM_CadianShockTroops</researchPrerequisite>
@@ -142,7 +143,7 @@
 		<label>battleline backpack</label>
         <description>A combat engineer’s pack, containing construction tools. It allows the wearer to build and repair objects faster. \n\nEvery soldier of the Death Korps of Krieg knows how to dig a good trench, but for stronger defenses, the Death Korps Engineers are ready and willing. They can quickly set up fighting positions of surprising strength, helping the Kriegsmen limit their casualties while maximizing the attrition of enemy forces.</description>
 		<graphicData>
-			<texPath>Things/Backpacks/Battleline_Backpack_Display</texPath>
+			<texPath>Things/Backpacks/Battleline_Backpack_south</texPath>
 		</graphicData>
 		<recipeMaker>
 			<researchPrerequisite>GW_AM_CadianShockTroops</researchPrerequisite>
@@ -183,7 +184,7 @@
 		<label>medicae backpack</label>
         <description>An Imperial Guard backpack containing medical supplies. Wearing it assists the user in tending to wounded troops in the field, yielding better tend quality. \n\nHuman resources are  the one thing the Imperium of Man is never short of, but only a foolish commander would consider the supply infinite. While the Guardsmen of the Astra Militarum are indeed expendable, they are still resources to be conserved, and combat medics save wounded soldiers who would otherwise be lost to infection.</description>
 		<graphicData>
-			<texPath>Things/Backpacks/Medical_Pack_Display</texPath>
+			<texPath>Things/Backpacks/Medical_Pack_south</texPath>
 		</graphicData>
 		<recipeMaker>
 			<researchPrerequisite>GW_AM_CadianShockTroops</researchPrerequisite>
@@ -222,7 +223,7 @@
 		<label>vox backpack</label>
         <description>A large backpack containing a vox-caster, an Imperial Guard device. Similar to a modern radio backpack, this vox-caster allows the user to communicate over long distances on the battlefield. This particular vox-caster is linked to an Imperial Navy ship in orbit above the rimworld, allowing the user to call in a low-powered support strike on a target of their choosing - though that can only be used every five days. \n\nVox-casters are vital to maintaining battlefield communication within Imperial Guard units. Without them, commanders would have no way of sending orders to their units, and enemy forces would quickly isolate and destroy them in piecemeal fashion.</description>
 		<graphicData>
-			<texPath>Things/Backpacks/Vox_Pack_Display</texPath>
+			<texPath>Things/Backpacks/Vox_Pack_south</texPath>
 		</graphicData>
 		<recipeMaker>
 			<researchPrerequisite>GW_AM_CadianShockTroops</researchPrerequisite>

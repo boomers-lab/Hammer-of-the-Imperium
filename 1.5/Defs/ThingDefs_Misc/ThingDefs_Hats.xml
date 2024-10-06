@@ -28,6 +28,9 @@
 			<developmentalStageFilter>Child, Adult</developmentalStageFilter>
 			<useWornGraphicMask>true</useWornGraphicMask>
 			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<tags>
+				<li>RoyalTier2</li>
+			</tags>
 			<layers>
 				<li>Overhead</li>
 			</layers>

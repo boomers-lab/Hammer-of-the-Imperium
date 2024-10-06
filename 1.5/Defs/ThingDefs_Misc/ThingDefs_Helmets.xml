@@ -25,6 +25,9 @@
         </statBases>
         <apparel>
             <useWornGraphicMask>true</useWornGraphicMask>
+			<tags>
+				<li>RoyalTier2</li>
+			</tags>
             <countsAsClothingForNudity>false</countsAsClothingForNudity>
             <bodyPartGroups>
                 <li>UpperHead</li>

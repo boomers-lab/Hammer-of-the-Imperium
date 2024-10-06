@@ -30,8 +30,12 @@
         </statBases>
         <apparel>
             <useWornGraphicMask>true</useWornGraphicMask>		
+			<tags>
+				<li>RoyalTier2</li>
+			</tags>
             <countsAsClothingForNudity>true</countsAsClothingForNudity>
             <bodyPartGroups>
+                <li>Neck</li>
                 <li>Torso</li>
                 <li>Legs</li>
                 <li>Shoulders</li>

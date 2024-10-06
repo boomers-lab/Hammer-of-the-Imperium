@@ -25,6 +25,9 @@
         </recipeMaker>
         <apparel>
             <useWornGraphicMask>true</useWornGraphicMask>		
+			<tags>
+				<li>RoyalTier2</li>
+			</tags>
             <bodyPartGroups>
                 <li>Torso</li>
                 <li>Neck</li>
