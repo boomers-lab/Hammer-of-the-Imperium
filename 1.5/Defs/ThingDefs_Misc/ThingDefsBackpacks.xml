@@ -461,7 +461,7 @@
 		<label>militarum engineseerer backpack</label>
         <description>People with this pack can call in an orbital strike once every 5 days.</description>
 		<graphicData>
-            <texPath>Things/MilitarumEngineseerer/MilitarumEngineseerer_Backpack_north</texPath>		
+            <texPath>Things/MilitarumEngineseerer/Backpack_north</texPath>		
 			<drawSize>(2,2)</drawSize>				
 		</graphicData>
 		<recipeMaker>
@@ -501,7 +501,7 @@
 					<!-- <offset>(0.0, 0.0, 0.4)</offset> -->
 				<!-- </dataNorth> -->
 			</drawData>
-			<wornGraphicPath>Things/MilitarumEngineseerer/MilitarumEngineseerer_Backpack</wornGraphicPath>
+			<wornGraphicPath>Things/MilitarumEngineseerer/Backpack</wornGraphicPath>
 			<tags>
 				<li>40kEngineerBackpack</li>
 			</tags>

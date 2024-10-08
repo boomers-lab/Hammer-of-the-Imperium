@@ -405,7 +405,7 @@
         <description>.</description>
         <techLevel>Industrial</techLevel>
         <graphicData>
-            <texPath>Things/MilitarumEngineseerer/MilitarumEngineseerer_Hood_south</texPath>
+            <texPath>Things/MilitarumEngineseerer/Hood_south</texPath>
         </graphicData>
         <costList>
             <ComponentIndustrial>2</ComponentIndustrial>
@@ -424,10 +424,49 @@
             <researchPrerequisite>GW_AM_OfficersOfAM</researchPrerequisite>
         </recipeMaker>
         <apparel>
-            <wornGraphicPath>Things/MilitarumEngineseerer/MilitarumEngineseerer_Hood</wornGraphicPath>
+            <wornGraphicPath>Things/MilitarumEngineseerer/Hood</wornGraphicPath>
             <renderSkipFlags>
                 <li>None</li>
             </renderSkipFlags>
+            <tags>
+                <li>40kEngineer</li>
+                <li>40kEngineerHood</li>
+            </tags>
+        </apparel>
+    </ThingDef>
+	
+    <ThingDef ParentName="GW_AM_HelmetBase">
+        <defName>GW_AM_EngineseererMask</defName>
+        <label>militarum engineseerer mask</label>
+        <description>.</description>
+        <techLevel>Industrial</techLevel>
+        <graphicData>
+            <texPath>Things/MilitarumEngineseerer/Mask_south</texPath>
+        </graphicData>
+        <costList>
+            <ComponentIndustrial>2</ComponentIndustrial>
+            <Cloth>10</Cloth>
+            <Steel>70</Steel>
+        </costList>
+        <statBases>
+            <WorkToMake>2500</WorkToMake>
+            <Mass>1.2</Mass>
+            <ArmorRating_Sharp>0.85</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.45</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.60</ArmorRating_Heat>
+            <EquipDelay>1.2</EquipDelay>
+        </statBases>
+        <recipeMaker>
+            <researchPrerequisite>GW_AM_OfficersOfAM</researchPrerequisite>
+        </recipeMaker>
+        <apparel>
+            <wornGraphicPath>Things/MilitarumEngineseerer/Mask</wornGraphicPath>
+            <renderSkipFlags>
+                <li>None</li>
+            </renderSkipFlags>
+			<layers Inherit="False">
+				<li>EyeCover</li>
+			</layers>
             <tags>
                 <li>40kEngineer</li>
                 <li>40kEngineerHood</li>
