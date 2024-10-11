@@ -4,7 +4,7 @@
     <ThingDef ParentName="AutocannonTurret">
         <defName>GW_Building_HeavyBolter</defName>
         <label>Heavy bolter turret</label>
-        <description>A heavy bolter mounted on a turret stand for easier use.</description>
+        <description>A heavy bolter mounted on a tripod, capable of firing long bursts of high-caliber bolts. \n\nAs baseline humans do not have the strength to wield heavy bolters as light machine guns, these turrets instead give the Imperial Guard a strong anti-infantry emplacement.</description>
         <thingClass>Building_TurretGun</thingClass>
         <drawerType>MapMeshAndRealTime</drawerType>
         <uiIconPath>Things/Building/Emplacement/HeavyBolter</uiIconPath>
@@ -88,7 +88,7 @@
     <ThingDef ParentName="BaseWeaponTurret">
         <defName>GW_BuildingGun_HeavyBolter</defName>
         <label>Mounted heavy bolter</label>
-        <description>A heavy bolter that has been designed to sit upon a turret stand to be easier to use.</description>
+        <description>A heavy bolter that has been designed to sit upon a turret mount so that baseline humans can use it.</description>
         <recoilPower>3</recoilPower>
         <graphicData>
             <texPath>Things/Building/Emplacement/HeavyBolter</texPath>
@@ -122,7 +122,7 @@
 
     <ThingDef ParentName="BaseBullet">
         <defName>GW_BuildingBullet_HeavyBolter</defName>
-        <label>Heavy bolter round</label>
+        <label>heavy bolter round</label>
         <graphicData>
             <texPath>Things/Projectile/Bullet_Big</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -140,6 +140,7 @@
     <ThingDef ParentName="AutocannonTurret">
         <defName>GW_Building_Autocannon</defName>
         <label>Mannable autocannon turret</label>
+        <description>An emplaced autocannon that can be operated by a single soldier. The strongest of the slugthrowers, even Space Marines cannot withstand its fire for long. \n\nOrks greatly enjoy using their own autocannons, loving the massive amount of noise it makes. Similar principles are followed by all Ork firearms, with accuracy being a distant third to firepower and noise.</description>
         <thingClass>Building_TurretGun</thingClass>
         <drawerType>MapMeshAndRealTime</drawerType>
         <uiIconPath>Things/Building/Emplacement/AutoCannon</uiIconPath>
@@ -224,7 +225,7 @@
     <ThingDef ParentName="BaseWeaponTurret">
         <defName>GW_BuildingGun_AutoCannon</defName>
         <label>Autocannon</label>
-        <description>A mannable autocannon.</description>
+        <description>An autocannon emplaced on a mount for Imperial Guard use.</description>
         <recoilPower>3</recoilPower>
         <graphicData>
             <texPath>Things/Building/Emplacement/AutoCannon</texPath>
@@ -277,6 +278,7 @@
     <ThingDef ParentName="AutocannonTurret">
         <defName>GW_Building_Lascannon</defName>
         <label>Mannable lascannon turret</label>
+        <description>A lascannon emplacement. When manned by a gunner, it can fire a potent, vehicle-busting lasbolt at enemy targets. Its low rate of fire makes it unsuitable in defending against massed attack, but excellent at destroying armored vehicles and heavy infantry. \n\nLascannons are a favorite of many Astra Militarum commanders, as they are a reliable source of long-range anti-armor firepower. Space Marines of the Adeptus Astartes have also been known to use lascannons as infantry weapons.</description>
         <thingClass>Building_TurretGun</thingClass>
         <drawerType>MapMeshAndRealTime</drawerType>
         <uiIconPath>Things/Building/Emplacement/Lascannon</uiIconPath>
@@ -389,7 +391,7 @@
 
     <ThingDef ParentName="GW_LaserBullet" Class="VanillaWeaponsExpandedLaser.LaserBeamDef">
         <defName>GW_BuildingBullet_LascanonShot</defName>
-        <label>Lascanon shot</label>
+        <label>Lascannon shot</label>
         <description>An heavily charged beam of focused light fired from a lascannon.</description>
         <textures>
             <li>Things/Projectiles/Las_Bolt</li>
@@ -408,7 +410,7 @@
     <ThingDef ParentName="AutocannonTurret">
         <defName>GW_Building_TarantulaHeavyBolter</defName>
         <label>Tarantula bolter turret</label>
-        <description>An automatic bolter turret.</description>
+        <description>A Tarantula auto-turret used by Astra Militarum forces. This version contains a pair of heavy bolters, laying down enough fire to terrify even massed and armored foes. \n\nTarantula turrets are operated by a “machine spirit” that selects and engages targets autonomously. Distinct from the forbidden Abominable Intelligences, machine spirits have no ability to think for themselves or improve themselves.</description>
         <thingClass>Building_TurretGun</thingClass>
         <drawerType>MapMeshAndRealTime</drawerType>
         <uiIconPath>Things/Building/Emplacement/TarantulaTurret_UI</uiIconPath>
@@ -486,7 +488,7 @@
     <ThingDef ParentName="BaseWeaponTurret">
         <defName>GW_BuildingGun_TarantulaHeavyBolter</defName>
         <label>Tarantula heavy bolter</label>
-        <description>An automated bolter turret.</description>
+        <description>A pair of heavy bolters aimed and fired by the Tarantula turret's Machine Spirit.</description>
         <recoilPower>3</recoilPower>
         <graphicData>
             <texPath>Things/Building/Emplacement/TarantulaTurret_Top</texPath>
@@ -522,7 +524,7 @@
     <ThingDef ParentName="AutocannonTurret">
         <defName>GW_Building_TarantulaLascannon</defName>
         <label>Tarantula lascannon turret</label>
-        <description>An automatic lascannon turret</description>
+        <description>A Tarantula auto-turret used by Astra Militarum forces. This version contains a pair of lascannons, able to punch through the armor of heavy infantry and APCs. \n\nTarantula turrets, though somewhat exotic, appeal greatly to Imperial Guard commanders. Unlike a human sentry, they will never fall asleep on duty or attempt mating with a “friendly” xenos approaching their post.</description>
         <thingClass>Building_TurretGun</thingClass>
         <drawerType>MapMeshAndRealTime</drawerType>
         <uiIconPath>Things/Building/Emplacement/TarantulaTurret_LasCannon_UI</uiIconPath>
@@ -596,7 +598,7 @@
     <ThingDef ParentName="BaseWeaponTurret">
         <defName>GW_BuildingGun_TarantulaLascannon</defName>
         <label>Tarantula lascannon</label>
-        <description>An automated lascannon.</description>
+        <description>A pair of lascannons, aimed and fired by the Tarantula turret's Machine Spirit.</description>
         <recoilPower>3</recoilPower>
         <graphicData>
             <texPath>Things/Building/Emplacement/TarantulaTurret_LasCannon_Top</texPath>
