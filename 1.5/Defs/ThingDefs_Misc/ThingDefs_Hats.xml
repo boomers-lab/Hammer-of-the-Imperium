@@ -978,52 +978,5 @@
 			<!-- </li> -->
 		</modExtensions>
 	</ThingDef>
-	
-	<!-- Tanith 1st -->
-	
-	<ThingDef ParentName="GW_AM_Hat_CapBase">
-		<defName>GW_AM_Tanith1stGoggle</defName>
-		<label>Tanith 1st goggle</label>
-		<description>.</description>
-		<recipeMaker>
-			<researchPrerequisite>GW_AM_OfficersOfAM</researchPrerequisite>
-			<skillRequirements>
-				<Crafting>8</Crafting>
-			</skillRequirements>
-		</recipeMaker>
-		<graphicData>
-            <texPath>Things/Tanith1st/Goggles_south</texPath>
-		</graphicData>
-		<statBases>
-			<WorkToMake>9000</WorkToMake>
-			<MaxHitPoints>250</MaxHitPoints>
-			<Mass>5</Mass>
-			<ArmorRating_Sharp>1.0</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.36</ArmorRating_Blunt>
-			<ArmorRating_Heat>0.20</ArmorRating_Heat>
-			<Insulation_Cold>10</Insulation_Cold>
-			<EquipDelay>3</EquipDelay>
-		</statBases>
-		<equippedStatOffsets>
-			<AimingDelayFactor>-0.2</AimingDelayFactor>
-		</equippedStatOffsets>
-		<stuffCategories>
-			<li>Leathery</li>
-		</stuffCategories>
-		<costStuffCount>50</costStuffCount>
-		<apparel>
-			<wornGraphicPath>Things/Tanith1st/Goggles</wornGraphicPath>
-			<tags>
-				<li>40kTanith</li>
-				<li>40kTanithGoggle</li>
-			</tags>
-			<bodyPartGroups>
-				<li>Eyes</li>
-			</bodyPartGroups>
-			<layers Inherit="False">
-				<li>EyeCover</li>
-			</layers>
-		</apparel>
-	</ThingDef>
 
 </Defs>

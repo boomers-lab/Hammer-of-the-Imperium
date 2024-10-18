@@ -363,64 +363,6 @@
                 <li>40kCommissarOnSkin</li>
             </tags>
         </apparel>
-    </ThingDef>
-	
-	<!-- Tanith 1st -->
-	
-	<ThingDef ParentName="GW_AM_OnSkinBase">
-        <defName>GW_AM_Tanith1stArmor</defName>
-        <label>Tanith 1st armor</label>
-        <description>. . .</description>
-        <recipeMaker>
-            <researchPrerequisite>GW_AM_OfficersOfAM</researchPrerequisite>
-        </recipeMaker>
-        <graphicData>
-            <texPath>Things/Tanith1st/Armor_Male_south</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-        </graphicData>
-		<tickerType>Normal</tickerType>
-        <costStuffCount>70</costStuffCount>
-        <stuffCategories>
-            <li>Fabric</li>
-            <li>Leathery</li>
-        </stuffCategories>
-        <thingCategories>
-            <li>ApparelMisc</li>
-        </thingCategories>
-        <statBases>
-            <MaxHitPoints>200</MaxHitPoints>
-            <WorkToMake>10000</WorkToMake>
-            <Mass>1.5</Mass>
-            <StuffEffectMultiplierArmor>0.3</StuffEffectMultiplierArmor>
-            <StuffEffectMultiplierInsulation_Cold>1.0</StuffEffectMultiplierInsulation_Cold>
-            <StuffEffectMultiplierInsulation_Heat>0.85</StuffEffectMultiplierInsulation_Heat>
-            <EquipDelay>3</EquipDelay>
-        </statBases>
-        <equippedStatOffsets>
-            <SocialImpact>0.1</SocialImpact>
-        </equippedStatOffsets>
-        <apparel>
-            <wornGraphicPath>Things/Tanith1st/Armor</wornGraphicPath>
-            <tags>
-                <li>40kTanith</li>
-                <li>40kTanithMiddle</li>
-            </tags>
-        </apparel>
-        <tradeTags>
-            <li>HPMiddle</li>
-        </tradeTags>
-		<comps>
-			<!-- <li Class="BM_ApparelSet.CompProperties_ApparelSet"> -->
-				<!-- <apparelSetEffect> -->
-					<!-- <allApparels> -->
-						<!-- <li>GW_AM_Tanith1stCloak</li> -->
-						<!-- <li>GW_AM_Tanith1stHood</li> -->
-						<!-- <li>GW_AM_Tanith1stGoggle</li> -->
-					<!-- </allApparels> -->
-					<!-- <hediff>GW40k_AM_Tanith1stSet</hediff> -->
-				<!-- </apparelSetEffect> -->
-			<!-- </li> -->
-		</comps>
-    </ThingDef>  
+    </ThingDef> 
 
 </Defs>
