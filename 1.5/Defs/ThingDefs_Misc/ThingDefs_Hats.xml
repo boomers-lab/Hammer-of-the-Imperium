@@ -65,7 +65,7 @@
 	<ThingDef ParentName="GW_AM_Hat_CapBase">
 		<defName>ODZ_40k_IG_Cadian_Fieldcap</defName>
 		<label>Cadian fieldcap</label>
-		<description>Cadian Fieldcap:\n\n A quintessential piece of the Cadian Shock Troops' uniform, the Cadian Fieldcap is a practical and distinctive headgear designed for the rigors of the battlefield. With its iconic shape and durable construction, it provides soldiers with essential protection from the elements while maintaining a professional appearance. Worn with pride by Cadian guardsmen, the fieldcap symbolizes the regiment's commitment to duty and readiness for action on the relentless front lines of Warhammer 40,000. Its presence echoes the disciplined and steadfast spirit of the Cadian Shock Troops, standing as a recognizable emblem in the war-torn landscapes of the Imperium.</description>
+		<description>An unarmored field cap worn by Guardsmen of the Cadian Shock Troops. \n\nThe Cadian Shock Troops did not die alongside their planet. Evacuating to several Imperial worlds according to the contingencies of Ursarkar E. Creed, they continue the fight against Chaos.</description>
 		<graphicData>
 			<texPath>Things/Cadian/Headgear/FieldCap_south</texPath>
 		</graphicData>
@@ -99,7 +99,7 @@
 	<ThingDef ParentName="GW_AM_Hat_CapBase">
 		<defName>ODZ_40k_IG_Cadian_CrusherCap</defName>
 		<label>Cadian crusher cap</label>
-		<description>Cadian Crusher Cap:\n\n A rugged and utilitarian headgear, the Cadian Crusher Cap is a distinctive part of the Cadian Shock Troops' attire. Crafted for durability and functionality, this cap features a reinforced brim and a sturdy crown, providing essential protection on the harsh battlefields of Warhammer 40,000. Worn with the pride of a seasoned guardsman, the Crusher Cap symbolizes the resilience and readiness of the Cadian Shock Troops in the face of the relentless challenges posed by the grim darkness of the far future. Its worn appearance tells tales of countless campaigns, reflecting the indomitable spirit of the regiment.</description>
+		<description>An officer’s cap, worn by high-ranking Cadian Shock Troopers. \n\nThe Astra Militarum forces here, like the rest of the stranded Imperial fleet, are in dire straits. Without Warp travel, the Guard’s strongest assets - their sheer weight in manpower - can no longer be counted upon.</description>
 		<graphicData>
 			<texPath>Things/Cadian/Headgear/OfficerCap_south</texPath>
 		</graphicData>
@@ -135,7 +135,7 @@
 	<ThingDef ParentName="GW_AM_Hat_CapBase">
 		<defName>ODZ_40k_IM_TempestusScion_Beret</defName>
 		<label>Tempestus Scion beret</label>
-		<description>Tempestus Scion Beret:\n\n A symbol of elite distinction, the Tempestus Scion Beret is a sleek and iconic headgear worn by the finest soldiers of the Militarum Tempestus. Meticulously designed for both style and function, the beret complements the disciplined precision of the Scions. Its deep black color and crisp regimental insignia convey an air of authority on the battlefield. Worn with pride, the Tempestus Scion Beret represents the pinnacle of military professionalism and excellence in the grim and unyielding expanse of Warhammer 40,000, marking its wearer as a true elite force within the Imperium.</description>
+		<description>A red beret with a golden eagle insignia, a symbol of the Tempestus Scions. \n\nThe Scions are generally kept in orbit, running their own combat exercises to stay on their toes. They are at the disposal of the General commanding the Imperial Guard remnant, with a single squad of them being sufficient to wipe out a tribal village or an outlander town that significantly displeases them. \n\nFor the ultratech-level Shattered Empire, however, greater forces should be employed - or the General could ask the Adeptus Astartes for a favor.</description>
 		<graphicData>
 			<texPath>Things/TempestusScions/Headgear/TempestusScionBeret_south</texPath>
 		</graphicData>
@@ -165,7 +165,7 @@
 	<ThingDef ParentName="GW_AM_Hat_CapBase">
 		<defName>GW_AM_CatachanBandana</defName>
 		<label>catachan bandana</label>
-		<description>Catachan Bandana:\n\n Infused with the untamed spirit of the Catachan Jungle Fighters, the Catachan Bandana is a symbol of both rugged style and practicality. Worn with a nod to the wilderness, this distinctive bandana features camouflage patterns reminiscent of the dense jungles of Catachan. Its versatile design provides protection against the elements while allowing for swift and covert maneuvers on the relentless battlefields of Warhammer 40,000. Worn proudly by Catachan warriors, the bandana embodies the gritty determination and resourcefulness required to survive in the perilous theatres of the 41st millennium.</description>
+		<description>A red bandana, worn by some Catachan Jungle Fighters on the forehead. In humid jungle, these help to keep the sweat out of one’s eyes. \n\nThe jungles of 2nd Millennium Terra pale in comparison to some of the green hells the galaxy can produce. However, the Catachan Jungle Fighters thrive in such an environment, where other Guard regiments would be torn to pieces before ever laying eyes upon the enemy.</description>
 		<graphicData>
 			<texPath>Things/Catachan/CatachanBandana/CatachanBandana_south</texPath>
 		</graphicData>
@@ -197,7 +197,7 @@
 	<ThingDef ParentName="GW_AM_Hat_CapBase">
 		<defName>GW_AM_CatachanBandanaFull</defName>
 		<label>catachan bandana (full wrap)</label>
-		<description>Catachan Bandana:\n\n Infused with the untamed spirit of the Catachan Jungle Fighters, the Catachan Bandana is a symbol of both rugged style and practicality. Worn with a nod to the wilderness, this distinctive bandana features camouflage patterns reminiscent of the dense jungles of Catachan. Its versatile design provides protection against the elements while allowing for swift and covert maneuvers on the relentless battlefields of Warhammer 40,000. Worn proudly by Catachan warriors, the bandana embodies the gritty determination and resourcefulness required to survive in the perilous theatres of the 41st millennium.</description>
+		<description>A red bandana, worn by some Catachan Jungle Fighters over the top of the head. In humid jungle, these help to keep the sweat out of one’s eyes. \n\nThe jungles of 2nd Millennium Terra pale in comparison to some of the green hells the galaxy can produce. However, the Catachan Jungle Fighters thrive in such an environment, where other Guard regiments would be torn to pieces before ever laying eyes upon the enemy.</description>
 		<graphicData>
 			<texPath>Things/Catachan/CatachanBandana/CatachanBandanaFullWrap</texPath>
 		</graphicData>
@@ -231,7 +231,7 @@
 	<ThingDef ParentName="GW_AM_Hat_CapBase">
 		<defName>GW_AM_MordianHat</defName>
 		<label>mordian hat</label>
-		<description>Mordian Hat:\n\n A hallmark of discipline and regal elegance, the Mordian Hat is a distinctive headwear choice for the soldiers of Mordian Iron Guard. Crafted with precision and a nod to military formality, this hat features a distinctive shape and polished aesthetic. Worn with pride, it complements the formal regalia of the Mordian Iron Guard while standing as a symbol of order and unwavering loyalty. On the unforgiving battlefields of Warhammer 40,000, the Mordian Hat embodies the regiment's commitment to precision and adherence to tradition, making it a recognizable emblem in the grim and disciplined warfare of the Imperium.</description>
+		<description>The standard peaked cap of the Mordian Iron Guard. This particular one bears an Imperialis on the front. \n\nIf one word is to describe the Mordian Iron Guard, it is “disciplined”. Whether on the parade ground or the battlefield, they serve with perfect precision. Many enemies have made the error of believing them to be merely ceremonial troops - a fatal error indeed.</description>
 		<graphicData>
 			<texPath>Things/Mordian/Headgear/MordianHat_south</texPath>
 		</graphicData>
@@ -265,7 +265,7 @@
 	<ThingDef ParentName="GW_AM_Hat_CapBase">
 		<defName>GW_AM_Valhallan_GarrisonCap</defName>
 		<label>valhallan garrison cap</label>
-		<description>Valhallan Cap:\n\n An emblem of resilience against the icy tundra, the Valhallan Cap is a practical and durable headgear worn by the soldiers of Valhallan Ice Warriors. Crafted for protection against biting cold winds, this cap features a sturdy design and insulation to endure the harsh environments of Warhammer 40,000. Its worn appearance tells tales of frigid campaigns, reflecting the indomitable spirit of Valhallan soldiers. Worn with pride, the Valhallan Cap signifies the regiment's unyielding resolve and adaptability in facing the chilling challenges that define the grim and frozen battlefields of the far future.</description>
+		<description>A garrison cap with a chin strap, worn by Valhallan Ice Warriors. No winter wind will disturb it from its place on the wearer’s head. \n\nThe greatest nemesis of the Valhallans are the Orks, for it was they who invaded the planet during a time of grave food shortages. The desperate struggle for food and shelter against the cold made the Ice Warriors into expert Ork-slayers.</description>
 		<graphicData>
 			<texPath>Things/Valhallan/Headgear/garrisoncap_south</texPath>
 		</graphicData>
@@ -298,7 +298,7 @@
 	<ThingDef ParentName="GW_AM_Hat_CapBase">
 		<defName>GW_AM_Valhallan_Ushanka</defName>
 		<label>valhallan ushanka</label>
-		<description>Valhallan Ushanka:\n\n A testament to both style and practicality in the frozen realms of Warhammer 40,000, the Valhallan Ushanka is a distinctive and warm headpiece worn by the hardy soldiers of Valhallan Ice Warriors. Crafted for enduring the biting cold, this ushanka features fur lining, ear flaps, and a sturdy design. Worn with pride by Valhallan soldiers, it symbolizes the regiment's resilience and adaptability in the face of the unforgiving icy terrains. The Valhallan Ushanka stands as both a practical necessity and a proud emblem of the regiment's unyielding spirit in the grim and frozen battlefields of the far future.</description>
+		<description>A furred hat with earflaps, best worn in cold weather. Valhallan Ice Warriors typically eschew metal helmets, which chill easily and can stick painfully to skin. \n\nSome Valhallan Guardsmen have made tentative, but friendly contact with tribes and outlanders living in the colder regions. Although the Guardsmen are intimidating with their uniforms and (relatively) high-tech weaponry, the overall feeling is that the ice and snow makes an equal of them all.</description>
 		<graphicData>
 			<texPath>Things/Valhallan/Headgear/ushanka_south</texPath>
 		</graphicData>
@@ -324,8 +324,8 @@
 
 	<ThingDef ParentName="GW_AM_Hat_CapBase">
 		<defName>GW_AM_Valhallan_OfficerUshanka</defName>
-		<label>valhallan garrison cap</label>
-		<description>Valhallan Garrison Cap:\n\n A blend of practicality and military tradition, the Valhallan Garrison Cap is a distinctive headwear choice for the soldiers of Valhallan Ice Warriors. With its simple yet functional design, the cap provides a comfortable fit and protection against the elements on the frigid battlefields of Warhammer 40,000. Worn with pride by Valhallan soldiers, it signifies the regiment's commitment to duty and readiness for action in the chilling challenges that define the grim and frozen landscapes of the far future. The Valhallan Garrison Cap embodies the regiment's disciplined approach to warfare and their ability to face adversity with steadfast resolve.</description>
+		<label>valhallan officer ushanka</label>
+		<description>A variant of the normal Valhallan ushanka. The untrained eye can distinguish little between them, but any Valhallan Guardsman knows an officer’s hat when they see one. \n\nThe Valhallan 597th Regiment has the honor of being the home unit of Commissar Ciaphas Cain - Hero of the Imperium - for many years. A fusion of two sundered regiments, there was at first much friction between the combined Guardsmen, even to the point of violence. \n\nThe Commissar, upon his arrival in the middle of a riot, forced them to integrate at the squad level and heavily incentivised teamwork in combat exercises. By the time of their first deployment on Gravalax, the 597th was completely combat-effective.</description>
 		<graphicData>
 			<texPath>Things/Valhallan/Headgear/officerushanka_south</texPath>
 		</graphicData>
@@ -388,7 +388,7 @@
 	<ThingDef ParentName="GW_AM_Hat_EyesBase">
 		<defName>GW_AM_TDR_Goggles</defName>
 		<label>Tallarn desert goggles</label>
-		<description>Tallarn Desert Goggles:\n\n A vital asset for warriors traversing the sun-scorched expanses of Warhammer 40,000, the Tallarn Desert Goggles are a fusion of form and function. Designed for the harsh conditions of arid landscapes, these goggles boast shatter-resistant lenses and an adjustable strap for a secure fit. Worn by soldiers navigating the shifting sands, the goggles provide essential eye protection against the glaring sunlight and blowing sandstorms. As a symbol of tactical readiness and adaptability, the Tallarn Desert Goggles embody the resourcefulness required to confront the myriad challenges presented by the unforgiving deserts of the 41st millennium.</description>
+		<description>Goggles unique to the Tallarn Desert Raiders. Provides much-needed protection for the eyes against sand - useful when operating under cover of a sandstorm. \n\nThe Guardsmen of Tallarn suffered greatly in the fall of the Imperium, with their Sentinel walkers essentially going extinct. Nonetheless, they have transitioned fairly well into light infantry, and the deserts are mostly the same whatever planet they are on.</description>
 		<graphicData>
 			<texPath>Things/Tallarn/Headgear/TDRGoggles_south</texPath>
 		</graphicData>
@@ -442,7 +442,7 @@
 	<ThingDef ParentName="GW_AM_Hat_FullWrapBase">
 		<defName>GW_AM_TDR_GogglesHeadwrap</defName>
 		<label>Tallarn goggled headwrap</label>
-		<description>Tallarn Goggled Headwrap:\n\n A distinctive blend of practicality and style, the Tallarn Goggled Headwrap stands as a signature accessory for the desert warriors of Warhammer 40,000. Crafted for both protection and stealth, this headwrap features integrated goggles and a camouflage pattern suited for the arid expanses of the battlefield. Worn with pride by the Tallarn Desert Raiders, it not only shields against the sun and sand but also symbolizes their strategic acumen and adaptability. The Tallarn Goggled Headwrap embodies the regiment's commitment to both survival and tactical finesse in the relentless deserts of the 41st millennium.</description>
+		<description>A combination of a headwrap and goggles, perfect for fast-paced desert warfare. \n\nRecently, some Guardsmen of Tallarn have requested deployment not in the deserts, but in the forests of the rimworld. Much speculation has been made about this phenomenon - the leading theory is that it gives the Desert Raiders a glimpse into what Tallarn once was, before war had razed their whole planet into a wasteland.</description>
 		<graphicData>
 			<texPath>Things/Tallarn/Headgear/TDRGogglesHeadwrap_south</texPath>
 		</graphicData>
@@ -475,7 +475,7 @@
 	<ThingDef ParentName="GW_AM_Hat_FullWrapBase">
 		<defName>GW_AM_TDR_OfficerHeadwrap</defName>
 		<label>Tallarn officer headwrap</label>
-		<description>Tallarn Officer Headwrap:\n\n An emblem of command and tactical expertise in the scorching deserts of Warhammer 40,000, the Tallarn Officer Headwrap blends authority with practicality. Meticulously crafted with a desert camouflage pattern, this headwrap symbolizes both rank and the ability to navigate the challenging landscapes with strategic finesse. Worn by officers leading the Tallarn Desert Raiders, it stands as a testament to their leadership, resilience, and adaptability in the unforgiving terrain of the 41st millennium. The Tallarn Officer Headwrap embodies the perfect union of battlefield command and survival instincts.</description>
+		<description>A headwrap and goggles combination, distinctly colored to show that the wearer is a Tallarnian officer. \n\nThe people of Tallarn used to live in tribes, but with the fall of the Imperium such things have fallen by the wayside. Different beliefs can sometimes be seen among their ranks, but the greatest of tragedies have turned them into one people.</description>
 		<graphicData>
 			<texPath>Things/Tallarn/Headgear/TDROfficerHeadwrap_south</texPath>
 		</graphicData>
@@ -508,7 +508,7 @@
 	<ThingDef ParentName="GW_AM_Hat_FullWrapBase">
 		<defName>GW_AM_TDR_Headwrap</defName>
 		<label>Tallarn Headwrap</label>
-		<description>Tallarn Headwrap:\n\n A quintessential accessory for the desert warriors of Warhammer 40,000, the Tallarn Headwrap is both practical and emblematic. Crafted with a desert-themed camouflage pattern, it shields against the relentless sun and sand while allowing for efficient camouflage. Worn by the resilient Tallarn Desert Raiders, the headwrap signifies not only their adaptability in the harsh desert environments but also their commitment to stealth and strategic prowess. As a symbol of survival and tactical finesse, the Tallarn Headwrap embodies the indomitable spirit of those who navigate the treacherous landscapes of the 41st millennium.</description>
+		<description>A headwrap, or “shemagh”, worn by the Tallarn Desert Raiders. It provides no protection against enemy fire, but it is good to wear in hot weather, and the Desert Raiders prefer not to be shot in the first place. \n\nAfter the desolation of Tallarn, the planet could provide the Imperium nothing but manpower. The population lives both above and below ground, keeping in touch with the endless desert.</description>
 		<graphicData>
 			<texPath>Things/Tallarn/Headgear/TDRHeadwrap_south</texPath>
 		</graphicData>
@@ -579,7 +579,7 @@
 	<ThingDef ParentName="GW_AM_Hat_GasMaskBase">
 		<defName>ODZ_40k_IG_DKOK_Gasmask</defName>
 		<label>Death Korps gas mask</label>
-		<description>Death Korps Gas Mask:\n\n A distinctive and utilitarian piece worn by the disciplined soldiers of the Death Korps of Krieg, the Death Korps Gas Mask is a symbol of both protection and stoic resolve. Crafted with a minimalist yet functional design, the gas mask provides essential defense against toxic environments and chemical threats on the grim battlefields of Warhammer 40,000. Worn with an air of solemnity by the Death Korps grenadiers, it signifies their unyielding commitment to duty even in the face of hazardous conditions. The Death Korps Gas Mask is a testament to the regiment's unwavering dedication to warfare in the darkest corners of the 41st millennium.</description>
+		<description>The characteristic gas mask of a member of the Death Korps of Krieg. Protects well against dangerous gas and toxic fallout. \n\nTo sustain their grueling attrition rates, the Death Korps use a method known as “Vitae-Womb” - a system for mass-manufacture of human beings. Genetic samples are taken from the people of Krieg, used to create artificial sperm and egg cells, and are randomly paired together to rapidly produce humans. \n\nThis system continues in the stranded fleet, with a voidship repurposed to contain Vitae-Womb equipment. As well as the Kriegsmen, samples are also taken from other Imperial volunteers, as well as suitable rimworlders - this increases the genetic diversity of the Death Korps.</description>
 		<techLevel>Industrial</techLevel>
 		<graphicData>
 			<texPath>Things/DeathKorps/Headgear/KriegGasmask_south</texPath>
@@ -610,7 +610,7 @@
 	<ThingDef ParentName="GW_AM_Hat_GasMaskBase">
 		<defName>ODZ_40k_IG_DKOK_GrenadierGasmask</defName>
 		<label>Death Korps grenadier gas mask</label>
-		<description>Death Korps Grenadier Gas Mask:\n\n A stoic symbol of the elite Death Korps grenadiers, the Death Korps Grenadier Gas Mask blends functionality with an air of formidable determination. Crafted with a robust design, this gas mask serves as crucial protection against the hazardous environments and chemical threats encountered on the grim battlefields of Warhammer 40,000. Worn with unwavering resolve by the grenadiers, it symbolizes their commitment to face the darkest and most perilous challenges in the 41st millennium. The Death Korps Grenadier Gas Mask is a testament to the regiment's elite status and unwavering dedication to triumph in the bleakest of conditions.</description>
+		<description>The gas mask of a Death Korps Grenadier, an elite shock trooper of Krieg. It is slightly reinforced to provide a little better protection against shrapnel, with the reinforcement in the shape of a skull. \n\nIf the Kriegsmen were not fanatics, they would be disheartened by a lack of serious siege warfare on this rimworld - their speciality is little needed any more. But fanatics they are, and they soldier on without complaint.</description>
 		<techLevel>Industrial</techLevel>
 		<graphicData>
 			<texPath>Things/DeathKorps/Headgear/KriegGrenadierGasmask_south</texPath>
@@ -646,7 +646,7 @@
 	<ThingDef ParentName="GW_AM_Hat_GasMaskBase">
 		<defName>GW_AM_SL_GasMask</defName>
 		<label>Steel Legion gas mask</label>
-		<description>Steel Legion Gas Mask:\n\n A distinctive and functional accessory worn by the disciplined soldiers of the Steel Legion, the Steel Legion Gas Mask is a symbol of resilience and preparedness on the war-torn battlefields of Warhammer 40,000. Crafted with a utilitarian design, this gas mask provides vital protection against toxic environments and chemical threats. Worn with determination by the Steel Legionnaires, it signifies their commitment to standing firm against the darkest challenges of the 41st millennium. The Steel Legion Gas Mask embodies the regiment's unwavering dedication to warfare, where survival often depends on being ready for the unseen dangers that lurk in the grim and relentless future.</description>
+		<description>A gas mask perfect for the Armageddon Steel Legion. Filters out exhaust fumes as well as toxic gas. \n\nVehicle specialists without vehicles are a sad thing indeed. Out of all of the regiments, morale is worst in the Steel Legion, who have found themselves shoved into an awkward light infantry role. Were it not for the General's orders, they would likely have dissolved entirely and dispersed into the other regiments.</description>
 		<techLevel>Industrial</techLevel>
 		<graphicData>
 			<texPath>Things/SteelLegion/Headgear/SteelLegionHeadgear_south</texPath>
@@ -682,7 +682,7 @@
 	<ThingDef ParentName="GW_AM_Hat_GasMaskBase">
 		<defName>ODZ_40k_IM_TempestusScion_Mask</defName>
 		<label>Scion Omni mask</label>
-		<description>Scion Omni Mask:\n\n A cutting-edge marvel of protective technology worn by the elite Tempestus Scions, the Scion Omni Mask is a symbol of advanced warfare in the grim darkness of Warhammer 40,000. Crafted with precision engineering, this mask offers comprehensive defense against environmental hazards, toxins, and hostile atmospheres. Worn with a sense of elite pride by the Scions, it embodies their commitment to facing the deadliest challenges head-on. The Scion Omni Mask is a testament to the regiment's mastery of high-tech equipment and their readiness to execute precision operations in the harshest conditions of the 41st millennium.</description>
+		<description>A high-quality gas mask with ominously-glowing green lenses, worn only by the Tempestus Scions. It protects the user against the most dangerous of enemy chemical and biological attacks, allowing the Scion inside to operate at peak performance. \n\nThe Scions recruit from the Schola Progenia - special training academies for the orphans of dead Imperial officials. This continues even in the stranded fleet, with a Schola Progenium being run on board a voidship, but the Storm Troopers have also been recruiting the very best of the Imperial Guard as well.</description>
 		<graphicData>
 			<texPath>Things/TempestusScions/Headgear/OmniMask_south</texPath>
 		</graphicData>
@@ -713,7 +713,7 @@
 	<ThingDef ParentName="GW_AM_HatBase">
 		<defName>GW_AM_VostoyanFirstbornHeadgear</defName>
 		<label>vostroyan firstborn headgear</label>
-		<description>Vostroyan Firstborn Helmet:\n\n A regal symbol of the Vostroyan Firstborn, this helmet seamlessly combines elegance with practicality on the war-torn battlefields of Warhammer 40,000. Crafted with ornate details, the Vostroyan Firstborn Helmet stands as a testament to the regiment's prestigious heritage and commitment to warfare. Worn with pride by the Firstborn soldiers, it signifies not only protection on the front lines but also a connection to the rich traditions of the Vostroyan people. As a distinctive piece of headgear, the Vostroyan Firstborn Helmet embodies the fusion of noble aesthetics and battle-ready functionality in the unyielding future of the 41st millennium.</description>
+		<description>A tall, bearskin (the style, not necessarily the actual material) hat worn by Guardsmen of the Vostroyan Firstborn. \n\nThe story goes that the planet of Vostroya failed to provide troops to the Imperium during the Horus Heresy, so the people of the planet have atoned ever since by sending their firstborn sons (and, recently, daughters) to the Imperial Guard without exception - hence the regiment’s name.</description>
 		<costStuffCount>20</costStuffCount>
 		<costList>
 			<ComponentIndustrial>2</ComponentIndustrial>
@@ -761,7 +761,7 @@
 	<ThingDef ParentName="GW_AM_Hat_CapBase">
 		<defName>GW_AM_PriestHat</defName>
 		<label>Priest Hat</label>
-		<description>The Priest hat\n\n In the grim darkness of the 41st millennium is a solemn and iconic piece of headwear worn by the devout clergy of the Imperium of Man. Resembling a tall, conical shape, it is often crafted from heavy fabrics and adorned with intricate embroideries and religious symbols.</description>
+		<description>A hat, akin to that of a 2nd Millennium bishop, that shows the wearer is a Ministorum Priest - a religious leader attached to the Astra Militarum. \n\nThe various priests of the Adeptus Ministorum - more commonly known as the Ecclesiarchy - preach the Imperial Cult to the Guardsmen, worshiping the Emperor as a god. Their teachings strengthen resolve and ensure faith, keeping the Guard a motivated fighting force.</description>
 		<recipeMaker>
 			<researchPrerequisite>GW_AM_OfficersOfAM</researchPrerequisite>
 			<skillRequirements>
@@ -815,7 +815,7 @@
 	<ThingDef ParentName="GW_AM_Hat_CapBase">
 		<defName>GW_AM_PriestHood</defName>
 		<label>Priest Hood</label>
-		<description>The Priest hood\n\n In the 41st millennium is a sacred garment worn by the devout clergy of the Imperium of Man. Crafted from heavy, durable fabrics, it drapes over the shoulders and frames the face, conveying an aura of solemnity and reverence.</description>
+		<description>A hood suited to Ministorum Priests. Such apparel is more suited to the battlefield, where Priests preach to their followers under enemy fire. \n\nWith a number of Priests dead and no prospect of returning to the Imperium any time soon, some Guardsmen have had their faith shaken. An increasing number of them have started to rediscover the older, atheistic Imperial Truth instead, while others are drifting away to follow the various Chaplains of the Adeptus Astartes instead - most of the Space Marine cults do not worship the Emperor as a god, but merely as the greatest man who has ever and will ever live.</description>
 		<recipeMaker>
 			<researchPrerequisite>GW_AM_OfficersOfAM</researchPrerequisite>
 			<skillRequirements>
@@ -869,7 +869,7 @@
 	<ThingDef ParentName="GW_AM_Hat_CapBase">
 		<defName>GW_AM_PriestHoodDown</defName>
 		<label>Priest Hood(down)</label>
-		<description>The Priest hood\n\n In the 41st millennium is a sacred garment worn by the devout clergy of the Imperium of Man. Crafted from heavy, durable fabrics, it drapes over the shoulders and frames the face, conveying an aura of solemnity and reverence.</description>
+		<description>A hood suited to Ministorum Priests. Such apparel is more suited to the battlefield, where Priests preach to their followers under enemy fire. \n\nWith a number of Priests dead and no prospect of returning to the Imperium any time soon, some Guardsmen have had their faith shaken. An increasing number of them have started to rediscover the older, atheistic Imperial Truth instead, while others are drifting away to follow the various Chaplains of the Adeptus Astartes instead - most of the Space Marine cults do not worship the Emperor as a god, but merely as the greatest man who has ever and will ever live.</description>
 		<recipeMaker>
 			<researchPrerequisite>GW_AM_OfficersOfAM</researchPrerequisite>
 			<skillRequirements>
@@ -925,7 +925,7 @@
 	<ThingDef ParentName="GW_AM_Hat_CapBase">
 		<defName>GW_AM_CommissarCap</defName>
 		<label>Commissar Cap</label>
-		<description>The Commissar cap\n\n A distinguished emblem of authority within the Imperium of Man, donned by the revered Commissariat officers. It features a sleek, peaked design, crafted from sturdy materials like leather or reinforced fabric.</description>
+		<description>The black peaked cap of an Imperial Commissar. It is such a symbol of their status that Orks like to take them as battlefield trophies. \n\nThe Commissars in the Astra Militarum remnant are hard-pressed to keep order. The Guardsmen are spending too much time in contact with the local population for the Commissariat's liking, hearing too much about heretic and apostate ideoligions. Such insidious ideas as “democracy” and “freedom” must not take root in the Guard, lest disorder sweep through the ranks.</description>
 		<graphicData>
 			<texPath>Things/Commissar/Display/CommissarCap</texPath>
 		</graphicData>
