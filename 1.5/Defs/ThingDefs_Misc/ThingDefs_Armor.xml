@@ -49,7 +49,7 @@
     <ThingDef ParentName="GW_AM_ArmorBase">
         <defName>ODZ_40k_IM_TempestusScion_CarapaceArmor</defName>
         <label>Tempestus Scion carapace</label>
-        <description>Tempestus Scion Carapace:\n\n Exemplifying the pinnacle of elite protection, the Tempestus Scion Carapace is the pinnacle of the Militarum Tempestus arsenal. Meticulously designed and expertly crafted, this armor represents the cutting edge of defensive technology. Its sleek and imposing silhouette combines form with function, providing unparalleled resilience on the battlefield. Worn exclusively by the elite Tempestus Scions, this carapace armor symbolizes the unwavering commitment to excellence and the unrelenting pursuit of victory in the relentless warfare of the Warhammer 40,000 universe.</description>
+        <description>A full-body suit of Carapace Armor, a type of heavy armor that provides more protection than standard Flak Armor. Suits like this are typically worn only by elite soldiers, such as the Tempestus Scions. \n\nThe Tempestus Scions, or “Storm Troopers”, are the special forces of the Astra Militarum - the best army the Imperium can muster short of the Space Marines and Sisters of Battle. Typical missions involve deep striking and infiltration of enemy territory, surgically eliminating high-ranking officers and sabotaging equipment and infrastructure. \n\nEven the Chaos Space Marines are wary of them, as their Hellguns are powerful enough to pierce weaknesses in Power Armor.</description>
         <recipeMaker>
             <researchPrerequisite>GW_AM_TempestusScions</researchPrerequisite>
             <skillRequirements>
@@ -117,7 +117,7 @@
     <ThingDef ParentName="GW_AM_ArmorBase">
         <defName>ODZ_40k_IG_DKOK_GrenadierArmor</defName>
         <label>Death Korps grenadier armor</label>
-        <description>Krieger Flak Armor:\n\n Forged in the foundries of Krieg, the Flak Armor worn by the Death Korps Grenadiers is an embodiment of resilience and stoic determination. Imposing in its design, this battle-worn armor offers exceptional protection against the relentless threats of the 41st millennium. Crafted with precision and a commitment to duty, the Krieger Flak Armor symbolizes the unyielding spirit of those who march steadfastly into the grim darkness of war. Worn proudly by the elite, it stands as a formidable bulwark against the perils of the battlefield in Warhammer 40,000.</description>
+        <description>A vest of black Flak Armor. This particular model is worn by the elite Death Korps Grenadiers, but performance is roughly the same as standard Flak Armor. \n\nThe Grenadiers are generally formed from the survivors of units that suffer massive battle casualties, such that it would be better to form a new unit instead of reconstituting the old. While it is an honor (and an obligation, if asked) to become one, the Grenadiers are sometimes said to be soldiers who have “lived too long” - they must now either earn a promotion to a commanding rank or die as martyrs in battle.</description>
         <techLevel>Industrial</techLevel>
         <recipeMaker>
             <researchPrerequisite>GW_AM_DeathKorpsOfKrieg</researchPrerequisite>
@@ -159,7 +159,7 @@
     <ThingDef ParentName="GW_AM_ArmorBase">
         <defName>GW_AM_CatachanArmor</defName>
         <label>Catachan armor</label>
-        <description>Catachan Armor:\n\n Forged in the crucible of Catachan, this battle-tested armor is the embodiment of survival and tenacity in the harshest of landscapes. Engineered for the fearless Catachan Jungle Fighters, it seamlessly blends rugged durability with the agility required in dense jungles. The camouflage patterns not only provide effective concealment but also signify a warrior's ability to adapt and thrive in the perilous war zones. Worn with pride, the Catachan Armor symbolizes the unyielding spirit of those who navigate the lethal theatres of Warhammer 40,000, ready to face any challenge head-on.</description>
+        <description>A vest of flak armor, in Catachan fashion. The Jungle Fighters wear a lightweight version of flak armor, believing in speed and concealment over cumbersome protection. \n\nThe Catachan Jungle Fighters are notoriously free-spirited and insular, and only respect those who prove themselves worthy of it. This extends to officers and other leaders, with many Guardsmen choosing to follow the direction of veteran NCOs over inexperienced officers.</description>
         <techLevel>Industrial</techLevel>
         <recipeMaker>
             <researchPrerequisite>GW_AM_Catachan</researchPrerequisite>
@@ -201,7 +201,7 @@
     <ThingDef ParentName="GW_AM_ArmorBase">
         <defName>ODZ_40k_IG_Cadian_FlakArmor</defName>
         <label>Cadian flak armor</label>
-        <description>Cadian Flak Armor:\n\n The hallmark of the stalwart defenders of the Imperium, Cadian Flak Armor is a testament to both reliability and resilience. Crafted for the valiant soldiers of Cadia, this battle-tested armor strikes a balance between durability and mobility on the grim battlefields of Warhammer 40,000. The distinctive design not only offers superior protection but also stands as a symbol of the unyielding resolve of the Cadian Shock Troops. Worn with pride, the Cadian Flak Armor embodies the indomitable spirit of those who stand guard against the encroaching darkness, ready to face the myriad threats that assail the Imperium.</description>
+        <description>A suit of flak armor, protecting the chest and shoulders. This armor pattern was used by the Cadian Shock Troops, as well as its many imitators. This is normally made of low-grade ceramite, but necessity means that rimworld steel has become an acceptable alternative. \n\nThe planet of Cadia broke before the Guard did. The leader of the 13th Black Crusade, Abbadon the Despoiler, resorted to throwing a massive, ancient voidship at the planet, knowing that he was about to lose the battle of Cadia. The resulting devastation destroyed the planet and split the Milky Way in twain, the Eye of Terror expanding into the Great Rift. \n\nSo began the Era Indomitus.</description>
         <recipeMaker>
             <researchPrerequisite>GW_AM_MilitariumArmor</researchPrerequisite>
             <skillRequirements>
@@ -241,7 +241,7 @@
     <ThingDef ParentName="GW_AM_ArmorBase">
         <defName>ODZ_40k_IG_CadianKasrkin_FlakArmor</defName>
         <label>Kasrkin flak armor</label>
-        <description>Kasrkin Flak Armor:\n\n The pinnacle of elite protection within the Militarum Tempestus, the Kasrkin Flak Armor is a masterpiece of defensive engineering. Meticulously designed for the elite forces, it combines cutting-edge technology with the sleek aesthetic befitting the finest warriors of the Imperium. This armor not only provides impeccable defense against varied threats but also signifies the elevated status of its wearers – the elite Kasrkin forces. Worn with pride and purpose, the Kasrkin Flak Armor stands as an iconic symbol of excellence on the unforgiving battlefields of Warhammer 40,000.</description>
+        <description>A full-body suit of Flak Armor. While the Kasrkin used to wear carapace armor like the Tempestus Scions do, they have had to make do with this in recent times. \n\nDuring the Fall of Cadia, a regiment of Kasrkin battled against Khornate Berserkers. The Chaos Marines expected fifty dead Guardsmen to one dead Berserker. The Kasrkin achieved thirty-to-one instead - a feat so impressive that the commanding Daemon Prince regarded it as unthinkable.</description>
         <recipeMaker>
             <researchPrerequisite>GW_AM_CadianShockTroops</researchPrerequisite>
             <skillRequirements>
@@ -306,7 +306,7 @@
 	<ThingDef ParentName="GW_AM_ArmorBase">
 		<defName>GW_AM_TDR_DesertGear</defName>
 		<label>Tallarn desert gear</label>
-		<description>Tallarn desert gear:\n\n Crafted for survival in the arid expanses of the 41st millennium, the Tallarn Desert Gear is a testament to adaptability and resilience. Meticulously designed for the renowned Tallarn Desert Raiders, this specialized attire seamlessly blends functionality with comfort. Its lightweight construction allows for swift and agile maneuvers, while the desert camouflage pattern provides effective concealment in the shifting sands. Worn proudly by those who navigate the harsh deserts of Warhammer 40,000, the Tallarn Desert Gear signifies the unwavering determination and resourcefulness of the warriors defending humanity against the galactic threats.</description>
+		<description>A lightweight battle rig typically worn by soldiers of the Tallarn Desert Raiders. It combines a lightweight version of Flak Armor with a carrier rig for extra storage. \n\nThe soldiers of Tallarn are well-known in the Imperium for their hit-and-run tactics, delivering death by a thousand cuts. They particularly specialize in their use of Sentinel light combat walkers, using them to quickly strike and withdraw before the enemy could respond.</description>
 		<recipeMaker>
 			<researchPrerequisite>GW_AM_TallarnDesertRaiders</researchPrerequisite>
 			<skillRequirements>
@@ -352,7 +352,7 @@
     <ThingDef ParentName="GW_AM_ArmorBase">
         <defName>GW_AM_Valhallan_Armor</defName>
         <label>Valhallan flak armor</label>
-        <description>Valhallan Flak Armor:\n\n Fashioned for the resilient soldiers of the Valhallan Ice Warriors, this robust armor stands as a bulwark against the biting cold of the harshest environments. Crafted with precision for the frigid battlefields, the Valhallan Flak Armor offers superior protection without compromising mobility. Its distinctive design reflects the utilitarian ethos of the Valhallan regiment, embodying the indomitable spirit of those who brave the icy frontiers of Warhammer 40,000. Worn with pride, the Valhallan Flak Armor symbolizes the unyielding resolve of the warriors defending the Imperium against the chilling adversaries lurking in the grim darkness of the far future.</description>
+        <description>Flak armor of the Valhallan Ice Warriors. It protects little against lasbolts, but provides very good insulation against cold environments and can stand up decently against explosions, autogun rounds, and pulse-charged munitions. \n\nThe Ice Warriors hail from Valhalla, a once-lush planet turned into an Ice World by the impact of a massive comet. The impact was so large that the planet itself was knocked out of orbit. As such, the Valhallans are well-suited to winter warfare.</description>
         <recipeMaker>
             <researchPrerequisite>GW_AM_Valhallan</researchPrerequisite>
             <skillRequirements>
@@ -391,7 +391,7 @@
 
     <!-- <ThingDef ParentName="GW_AM_ArmorBase"> -->
         <!-- <defName>GW_AM_Elysian_Armor</defName> -->
-        <!-- <label>elisian flak armor</label> -->
+        <!-- <label>elysian flak armor</label> -->
         <!-- <description>.</description> -->
         <!-- <recipeMaker> -->
             <!-- <researchPrerequisite>GW_AM_ElysianDropTroopers</researchPrerequisite> -->
@@ -429,7 +429,7 @@
 	<ThingDef ParentName="GW_AM_ArmorBase">
         <defName>GW_AM_PriestGear</defName>
         <label>Priest Robe</label>
-        <description>The Priest robe\n\n In the grim darkness of the 41st millennium is a garment that symbolizes both the sacred and the utilitarian. Crafted from heavy, coarse fabrics adorned with intricate iconography and religious symbols, it serves as the outer vestment of the devout clergy within the Imperium of Man.</description>
+        <description>The robes of a Ministorum Priest, intended to be worn in the field. Ornate, but more rugged than the lavish outfits of civilian Priests. \n\nFew know that the true roots of the Imperial Cult lies in the “Lectitio Divinitatus”, a book written by the traitor Primarch Lorgar of the Word Bearers. If such a fact was ever widely revealed, the Ecclesiarchy (and in turn the Imperium) would fall into chaos - quite literally.</description>
         <recipeMaker>
             <researchPrerequisite>GW_AM_OfficersOfAM</researchPrerequisite>
             <skillRequirements>
