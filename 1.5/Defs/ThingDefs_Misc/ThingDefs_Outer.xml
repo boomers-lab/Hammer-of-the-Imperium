@@ -47,7 +47,7 @@
     <ThingDef ParentName="GW_AM_OuterBase">
         <defName>GW_AM_CatachanOuter</defName>
         <label>Catachan vest</label>
-        <description>Catachan Vest:\n\n Born from the untamed jungles of Catachan, this rugged vest is a testament to survival in one of the galaxy's deadliest environments. Crafted for the renowned Catachan Jungle Fighters, the vest provides a blend of flexibility and durability. Its camouflaged exterior seamlessly blends with the dense foliage, allowing for covert maneuvers. Symbolizing the grit and tenacity of the Catachan warriors, this vest is worn with pride, a practical companion for those who navigate the treacherous landscapes of Warhammer 40,000.</description>
+        <description>An unarmored ammo carrier vest, worn by some Catachan Jungle Fighters to hold extra supplies and lasgun power packs. \n\nCatachan Jungle Fighters famously refuse to shower or otherwise wash, as the lack of scent would make them stick out compared to their jungle environment. This greatly upsets Guardsmen and Navy crewmen stuck on voidships with them - generally, the Imperial remnant’s Catachan troops live in jungle bases and only use voidships for transport around the planet.</description>
         <recipeMaker>
             <researchPrerequisite>GW_AM_Catachan</researchPrerequisite>
         </recipeMaker>
@@ -89,7 +89,7 @@
 	<ThingDef ParentName="GW_AM_OuterBase">
         <defName>GW_AM_CommissarOuter</defName>
         <label>Commissar Jacket</label>
-        <description>The Commissar Jacket\n\n A distinctive garment worn by the revered Commissars of the Imperium, exuding authority and discipline on the battlefield. Crafted from durable yet supple materials, it features a tailored fit that emphasizes the wearer's imposing presence.</description>
+        <description>A greatcoat with golden epaulets and a red lining, clearly identifying the wearer as an Imperial Commissar. \n\nA Commissar should be respected and must be feared, but never hated - otherwise, they will not last long. Some of the more free-spirited regiments, such as the Catachan Jungle Fighters, are notorious for “battlefield accidents”.</description>
         <recipeMaker>
             <researchPrerequisite>GW_AM_OfficersOfAM</researchPrerequisite>
         </recipeMaker>
