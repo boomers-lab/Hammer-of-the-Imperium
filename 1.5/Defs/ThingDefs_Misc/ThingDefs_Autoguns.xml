@@ -2,7 +2,7 @@
 <Defs>
     <ThingDef ParentName="BaseBullet">
         <defName>GW_AM_Bullet_AutoGun</defName>
-        <label>Autogun bullet</label>
+        <label>autogun bullet</label>
         <graphicData>
             <texPath>Things/Projectile/Bullet_Small</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -16,7 +16,7 @@
 
     <ThingDef ParentName="BaseBullet">
         <defName>GW_AM_Bullet_Stubround</defName>
-        <label>Stub round</label>
+        <label>stub round</label>
         <graphicData>
             <texPath>Things/Projectile/Bullet_Small</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -31,7 +31,7 @@
 
     <ThingDef ParentName="BaseBullet">
         <defName>GW_AM_Bullet_Shotgungrim</defName>
-        <label>Shotgun blast</label>
+        <label>shotgun blast</label>
         <graphicData>
             <texPath>Things/Projectile/Bullet_Shotgun</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -47,7 +47,7 @@
 
     <ThingDef ParentName="BaseBullet">
         <defName>GW_AM_Bullet_Autopistolgrim</defName>
-        <label>Autopistol round</label>
+        <label>autopistol round</label>
         <graphicData>
             <texPath>Things/Projectile/Bullet_Small</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -61,7 +61,7 @@
 
     <!-- <ThingDef ParentName="BaseBullet"> -->
         <!-- <defName>GW_AM_Bullet_LasLock</defName> -->
-        <!-- <label>Laslock round</label> -->
+        <!-- <label>laslock round</label> -->
         <!-- <graphicData> -->
             <!-- <texPath>Things/Projectile/Bullet_Small</texPath> -->
             <!-- <graphicClass>Graphic_Single</graphicClass> -->
