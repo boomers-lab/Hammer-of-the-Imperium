@@ -259,7 +259,7 @@
 
     <ThingDef ParentName="BaseBullet">
         <defName>GW_BuildingBullet_Autocannon</defName>
-        <label>Autocannon round</label>
+        <label>autocannon round</label>
         <graphicData>
             <texPath>Things/Projectile/Bullet_Big</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -391,7 +391,7 @@
 
     <ThingDef ParentName="GW_LaserBullet" Class="VanillaWeaponsExpandedLaser.LaserBeamDef">
         <defName>GW_BuildingBullet_LascanonShot</defName>
-        <label>Lascannon shot</label>
+        <label>lascannon shot</label>
         <description>An heavily charged beam of focused light fired from a lascannon.</description>
         <textures>
             <li>Things/Projectiles/Las_Bolt</li>
