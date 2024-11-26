@@ -88,7 +88,7 @@
 	
 	<ThingDef ParentName="GW_AM_OuterBase">
         <defName>GW_AM_CommissarOuter</defName>
-        <label>Commissar Jacket</label>
+        <label>Commissar jacket</label>
         <description>A greatcoat with golden epaulets and a red lining, clearly identifying the wearer as an Imperial Commissar. \n\nA Commissar should be respected and must be feared, but never hated - otherwise, they will not last long. Some of the more free-spirited regiments, such as the Catachan Jungle Fighters, are notorious for “battlefield accidents”.</description>
         <recipeMaker>
             <researchPrerequisite>GW_AM_OfficersOfAM</researchPrerequisite>
