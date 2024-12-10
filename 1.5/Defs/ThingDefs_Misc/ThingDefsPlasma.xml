@@ -51,7 +51,7 @@
 
     <ThingDef ParentName="BaseBullet">
         <defName>HP_AM_Bullet_PlasmaShot</defName>
-        <label>plasma shot</label>
+        <label>Plasma shot</label>
         <graphicData>
             <texPath>Things/Projectiles/Plasma_Projectile</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -161,7 +161,7 @@
 
     <ThingDef ParentName="BaseBullet">
         <defName>HP_AM_Bullet_MeltaGun</defName>
-        <label>meltagun shot</label>
+        <label>Meltagun shot</label>
         <graphicData>
             <texPath>Things/Projectiles/Melta_Projectile</texPath>
             <graphicClass>Graphic_Single</graphicClass>

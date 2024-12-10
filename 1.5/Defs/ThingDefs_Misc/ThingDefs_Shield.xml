@@ -1,6 +1,7 @@
 <Defs>
 
 	<ThingDef ParentName="GWShieldBase" Name="GWHammerShieldBase" Abstract="true">
+		<description>The Custodes Shield, used by the elite Adeptus Custodes in Warhammer 40,000, combines advanced technology with exceptional craftsmanship. It provides superior protection, adorned with symbols of their noble heritage and dedication to the Emperor. The shield allows for both defense and counterattacks, embodying the Custodes' formidable battlefield presence.</description>
 		<apparel>
 		</apparel>
 		<statBases>
@@ -16,8 +17,7 @@
 	
 	<ThingDef ParentName="GWHammerShieldBase" Name="GWHammerCombatShieldBase">
 		<defName>GM_HotE_ShieldOgryn</defName>
-		<label>Ogryn slab shield</label>
-		<description>A large, heavy, and unpowerful shield used by Ogryns of the Imperial Guard. No normal man can lift such a thick and dense shield, but the brute strength of an Ogryn allows them to do so. \n\nShields like these are used by Bullgryn assault troops. Locking their thick shields together into a defensive line, they crush the enemy under their power mauls while providing cover for their allies.</description>
+		<label>ogryn shield</label>
 		<graphicData>
 			<texPath>Things/Ogryn/Armor/Ogryn Shield Interface</texPath>
 			<graphicClass>Graphic_Single</graphicClass>

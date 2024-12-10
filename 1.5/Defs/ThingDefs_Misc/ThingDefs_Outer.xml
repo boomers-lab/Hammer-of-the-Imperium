@@ -47,7 +47,7 @@
     <ThingDef ParentName="GW_AM_OuterBase">
         <defName>GW_AM_CatachanOuter</defName>
         <label>Catachan vest</label>
-        <description>An unarmored ammo carrier vest, worn by some Catachan Jungle Fighters to hold extra supplies and lasgun power packs. \n\nCatachan Jungle Fighters famously refuse to shower or otherwise wash, as the lack of scent would make them stick out compared to their jungle environment. This greatly upsets Guardsmen and Navy crewmen stuck on voidships with them - generally, the Imperial remnant’s Catachan troops live in jungle bases and only use voidships for transport around the planet.</description>
+        <description>Catachan Vest:\n\n Born from the untamed jungles of Catachan, this rugged vest is a testament to survival in one of the galaxy's deadliest environments. Crafted for the renowned Catachan Jungle Fighters, the vest provides a blend of flexibility and durability. Its camouflaged exterior seamlessly blends with the dense foliage, allowing for covert maneuvers. Symbolizing the grit and tenacity of the Catachan warriors, this vest is worn with pride, a practical companion for those who navigate the treacherous landscapes of Warhammer 40,000.</description>
         <recipeMaker>
             <researchPrerequisite>GW_AM_Catachan</researchPrerequisite>
         </recipeMaker>
@@ -88,8 +88,8 @@
 	
 	<ThingDef ParentName="GW_AM_OuterBase">
         <defName>GW_AM_CommissarOuter</defName>
-        <label>Commissar jacket</label>
-        <description>A greatcoat with golden epaulets and a red lining, clearly identifying the wearer as an Imperial Commissar. \n\nA Commissar should be respected and must be feared, but never hated - otherwise, they will not last long. Some of the more free-spirited regiments, such as the Catachan Jungle Fighters, are notorious for “battlefield accidents”.</description>
+        <label>Commissar Jacket</label>
+        <description>The Commissar Jacket\n\n A distinctive garment worn by the revered Commissars of the Imperium, exuding authority and discipline on the battlefield. Crafted from durable yet supple materials, it features a tailored fit that emphasizes the wearer's imposing presence.</description>
         <recipeMaker>
             <researchPrerequisite>GW_AM_OfficersOfAM</researchPrerequisite>
         </recipeMaker>
@@ -129,5 +129,171 @@
             <li>HPOuter</li>
         </tradeTags>
     </ThingDef>   
+	
+	<!-- Engineer -->
+	
+	<ThingDef ParentName="GW_AM_OuterBase">
+        <defName>GW_AM_Engineseerer</defName>
+        <label>Militarum Engineseerer</label>
+        <description>. . .</description>
+        <recipeMaker>
+            <researchPrerequisite>GW_AM_OfficersOfAM</researchPrerequisite>
+        </recipeMaker>
+        <graphicData>
+            <texPath>Things/MilitarumEngineseerer/MilitarumEngineseerer_Male_south</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+		<tickerType>Normal</tickerType>
+        <costStuffCount>70</costStuffCount>
+        <stuffCategories>
+            <li>Fabric</li>
+            <li>Leathery</li>
+        </stuffCategories>
+        <thingCategories>
+            <li>ApparelMisc</li>
+        </thingCategories>
+        <costList>
+            <ComponentIndustrial>2</ComponentIndustrial>
+            <Steel>70</Steel>
+        </costList>
+        <statBases>
+            <MaxHitPoints>200</MaxHitPoints>
+            <WorkToMake>10000</WorkToMake>
+            <Mass>1.5</Mass>
+            <StuffEffectMultiplierArmor>0.3</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>1.0</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.85</StuffEffectMultiplierInsulation_Heat>
+            <EquipDelay>3</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <SocialImpact>0.1</SocialImpact>
+			<SlaveSuppressionOffset MayRequire="Ludeon.Rimworld.Ideology">0.1</SlaveSuppressionOffset>
+        </equippedStatOffsets>
+        <apparel>
+            <wornGraphicPath>Things/MilitarumEngineseerer/MilitarumEngineseerer</wornGraphicPath>
+			<layers>
+                <li>Middle</li>
+            </layers>
+            <tags>
+                <li>40kEngineer</li>
+                <li>40kEngineerOuter</li>
+            </tags>
+        </apparel>
+        <tradeTags>
+            <li>HPMiddle</li>
+            <li>HPOuter</li>
+        </tradeTags>
+		<comps>
+			<!-- <li Class="BM_ApparelSet.CompProperties_ApparelSet"> -->
+				<!-- <apparelSetEffect> -->
+					<!-- <allApparels> -->
+						<!-- <li>GW_AM_EngineseererHood</li> -->
+						<!-- <li>GW_AM_EngineseererBackpack</li> -->
+					<!-- </allApparels> -->
+					<!-- <hediff>GW40k_AM_EngineerSet</hediff> -->
+				<!-- </apparelSetEffect> -->
+			<!-- </li> -->
+		</comps>
+    </ThingDef>
+	
+	<!-- Tanith 1st -->
+	
+	<ThingDef ParentName="GW_AM_OuterBase">
+        <defName>GW_AM_Tanith1stGhili</defName>
+        <label>Tanith 1st ghili</label>
+        <description>. . .</description>
+        <recipeMaker>
+            <researchPrerequisite>GW_Tanith1st</researchPrerequisite>
+        </recipeMaker>
+        <graphicData>
+            <texPath>Things/Tanith1st/Ghili_Male_south</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <costStuffCount>70</costStuffCount>
+        <stuffCategories>
+            <li>Fabric</li>
+            <li>Leathery</li>
+        </stuffCategories>
+        <thingCategories>
+            <li>ApparelMisc</li>
+        </thingCategories>
+        <statBases>
+            <MaxHitPoints>200</MaxHitPoints>
+            <WorkToMake>10000</WorkToMake>
+            <Mass>1.5</Mass>
+            <StuffEffectMultiplierArmor>0.3</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>1.0</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.85</StuffEffectMultiplierInsulation_Heat>
+            <EquipDelay>3</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <SocialImpact>0.1</SocialImpact>
+        </equippedStatOffsets>
+        <apparel>
+            <wornGraphicPath>Things/Tanith1st/Ghili</wornGraphicPath>
+			<layers>
+                <!-- <li>Middle</li> -->
+            </layers>
+            <tags>
+                <li>40kTanith</li>
+                <li>40kTanithOuter</li>
+            </tags>
+        </apparel>
+        <tradeTags>
+            <li>HPOuter</li>
+        </tradeTags>
+		<comps />
+    </ThingDef>
+	
+	<ThingDef ParentName="GW_AM_OuterBase">
+        <defName>GW_AM_Tanith1stCloak</defName>
+        <label>Tanith 1st cloak</label>
+        <description>. . .</description>
+        <recipeMaker>
+            <researchPrerequisite>GW_AM_OfficersOfAM</researchPrerequisite>
+        </recipeMaker>
+        <graphicData>
+            <texPath>Things/Tanith1st/Cloak_Male_south</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <costStuffCount>70</costStuffCount>
+        <stuffCategories>
+            <li>Fabric</li>
+            <li>Leathery</li>
+        </stuffCategories>
+        <thingCategories>
+            <li>ApparelMisc</li>
+        </thingCategories>
+        <statBases>
+            <MaxHitPoints>200</MaxHitPoints>
+            <WorkToMake>10000</WorkToMake>
+            <Mass>1.5</Mass>
+            <StuffEffectMultiplierArmor>0.3</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>1.0</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.85</StuffEffectMultiplierInsulation_Heat>
+            <EquipDelay>3</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <SocialImpact>0.1</SocialImpact>
+        </equippedStatOffsets>
+        <apparel>
+            <wornGraphicPath>Things/Tanith1st/Cloak</wornGraphicPath>
+            <tags>
+                <li>40kTanith</li>
+                <li>40kTanithOuter</li>
+            </tags>
+			<bodyPartGroups>
+                <li>Torso</li>
+                <li>Neck</li>
+                <li>Shoulders</li>
+                <li>Arms</li>
+                <li>Legs</li>
+            </bodyPartGroups>
+        </apparel>
+        <tradeTags>
+            <li>HPOuter</li>
+        </tradeTags>
+		<comps />
+    </ThingDef>	
     
 </Defs>

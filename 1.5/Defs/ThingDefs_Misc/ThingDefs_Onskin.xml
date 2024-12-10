@@ -7,6 +7,7 @@
             <shaderType>CutoutComplex</shaderType>
             <drawSize>1.3</drawSize>
         </graphicData>
+		<description>Astra Militarum Fatigues:\n\n Battle-tested and reliable, the Astra Militarum Fatigues are the standard-issue attire for the resilient soldiers of the Imperial Guard. Crafted for endurance and comfort, these utilitarian garments feature reinforced fabrics and practical design elements. Worn by guardsmen on the front lines across the vast expanse of the Imperium, the Fatigues embody the indomitable spirit of the common soldier. Symbolizing the unwavering commitment to duty, these fatigues are a testament to the unyielding resolve of the Astra Militarum in the grim and perilous theatre of Warhammer 40,000.</description>
         <stuffCategories>
             <li>Fabric</li>
         </stuffCategories>
@@ -54,7 +55,6 @@
     <ThingDef ParentName="GW_AM_OnSkinBase">
         <defName>ODZ_40k_IM_TempestusScion_Fatigues</defName>
         <label>Tempestus Scion fatigues</label>
-	<description>Standard, dark brown fatigues of the Tempestus Scions. These fatigues are able to endure a little more punishment than regular fatigues, but don’t protect the user from hot or cold temperatures as well - but the Storm Troopers are used to operating under those conditions. \n\nThe Tempestus Scions have little in the way of downtime, being given only the minimum of rest time their bodies need. If they are not being deployed, they spend their days sharpening their skills in training, with a high-tech simulator on their voidship giving them the harshest combat conditions they can withstand - and, occasionally, a little more than that, just to push the envelope. \n\nA Scion would tell you that these brutal combat exercises are indeed what they consider to be recreation - after getting used to running them all day every day, they consider the exercises rather fun.</description>
         <recipeMaker>
             <researchPrerequisite>GW_AM_TempestusScions</researchPrerequisite>
         </recipeMaker>
@@ -83,7 +83,6 @@
     <ThingDef ParentName="GW_AM_OnSkinBase">
         <defName>ODZ_40k_IG_DKOK_KriegUniform</defName>
         <label>Death Korps uniform</label>
-	<description>Standard dark gray fatigues of the Death Korps of Krieg. It is impregnated with chemicals to protect against biological and chemical warfare, which also gives the uniform a strong, unpleasant smell. \n\nThe rulers of Krieg once attempted to break away from the Imperium, only to be defeated by a global nuclear bombardment and a 500-year civil war to reclaim the planet. Ever since then, the Death Korps of Krieg has felt that they needed to atone for their sin of rebellion, throwing themselves into battle without heed of casualties.</description>
         <recipeMaker>
             <researchPrerequisite>GW_AM_DeathKorpsOfKrieg</researchPrerequisite>
         </recipeMaker>
@@ -112,7 +111,6 @@
     <ThingDef ParentName="GW_AM_OnSkinBase">
         <defName>GW_AM_SL_Uniform</defName>
         <label>Steel Legion uniform</label>
-	<description>A uniform of the Armageddon Steel Legion, consisting of a greatcoat (traditionally in the color mustard yellow), boots, and gloves over fatigues. Very good at insulating the wearer against the cold, but it provides little protection against enemy attack. \n\nArmageddon is a battle-scarred world, with a history containing no less than three major wars and uncountable skirmishes against the Ork population and Chaos incursions. As such, the planet’s Guardsmen are weathered and experienced, able to put up a stiff resistance against any threat they face.</description>
         <recipeMaker>
             <researchPrerequisite>GW_AM_SteelLegion</researchPrerequisite>
         </recipeMaker>
@@ -141,7 +139,6 @@
     <ThingDef ParentName="GW_AM_OnSkinBase">
         <defName>GW_AM_Mordian_Uniform</defName>
         <label>Mordian uniform</label>
-	<description>A dress uniform of the Mordian Iron Guard, with a golden eagle on the left breast (unfortunately, the Mordianites have been forced to get rid of their golden epaulets by their current circumstances). Unlike most regiments of the Astra Militarum, these uniforms are meant to be worn in battle as well. \n\nThe loss of the epaulets has been a significant blow to the morale of the Iron Guard. To an outsider, it would be a surprise for an aesthetic sacrifice to have such an effect on professional soldiers. However, to the Mordianites, the loss of a critical part of their uniform is a stain upon them - their regimental culture places great emphasis on the dignity of soldier and uniform alike.</description>
         <recipeMaker>
             <researchPrerequisite>GW_AM_Mordian</researchPrerequisite>
         </recipeMaker>
@@ -170,7 +167,6 @@
     <ThingDef ParentName="GW_AM_OnSkinBase">
         <defName>ODZ_40k_IG_Cadian_Fatigues</defName>
         <label>Cadian fatigues</label>
-	<description>Combat fatigues used by the Cadian Shock Troops. Cadia stands. \n\nThe planet of Cadia was situated next to the infamous Eye of Terror, the largest Warp rift in the galaxy. As such, it was under constant siege, and every single Cadian was trained to fight for their Fortress World - one in ten Cadians were assigned to the Cadian Interior Guard, the world’s Planetary Defense Force.</description>
         <recipeMaker>
             <researchPrerequisite>GW_AM_MilitariumArmor</researchPrerequisite>
         </recipeMaker>
@@ -199,7 +195,6 @@
     <ThingDef ParentName="GW_AM_OnSkinBase">
         <defName>GW_AM_CatachanFatigues</defName>
         <label>Catachan fatigues</label>
-	<description>Lightweight and breathable fatigues, suitable for jungle warfare. Almost all Catachan Jungle Fighters cut away the sleeves, but rarely the trouser legs, as they protect against various leeches and other creatures that inhabit the jungle floor. \n\nThe Jungle Fighters feel right at home on the rimworld jungles - quite literally, as their home planet is a jungle-covered Death World. Many consider it to be quite relaxing, as the fauna and flora here are much less punishing than that of Catachan.</description>
         <recipeMaker>
             <researchPrerequisite>GW_AM_Catachan</researchPrerequisite>
         </recipeMaker>
@@ -230,7 +225,6 @@
     <ThingDef ParentName="GW_AM_OnSkinBase">
 		<defName>GW_AM_TDR_DesertFatigues</defName>
 		<label>Desert fatigues</label>
-	    	<description>Astra Militarum fatigues built for desert warfare, usually worn by the Tallarn Desert Raiders. The khaki colors blend into the desert better than the standard green, and they are made to be breathable to reduce sweating. \n\nTallarn was once a lush agri-world, but during the Horus Heresy, the traitorous Iron Warriors virus-bombed the entire planet into a featureless desert. However, the survivors emerged from underground bunkers and valiantly fought the Iron Warriors until reinforcements arrived to remove them from the planet. \n\nA few decades later, the Tallarn Desert Raiders regiment was formed, and have specialized in desert warfare ever since.</description>
 		<graphicData>
 			<texPath>Things/Tallarn/OnSkin/DesertFatigues_Male_south</texPath>
 		</graphicData>
@@ -259,7 +253,6 @@
     <ThingDef ParentName="GW_AM_OnSkinBase">
         <defName>GW_AM_VostoyanFirstborn_Uniform</defName>
         <label>vostroyan firstborn uniform</label>
-	<description>An ornate uniform of the Vostroyan Firstborn. Like their weapons, Vostroyan uniforms are generally passed down from father to son - in essence, Vostroyan Guardsmen are almost entirely equipped with regimental relics. \n\nMuch trouble has been had with recruitment, as taking in outside blood is particularly anathema to the Firstborn.</description>
         <recipeMaker>
             <researchPrerequisite>GW_AM_VostoyanFirstborn</researchPrerequisite>
         </recipeMaker>
@@ -288,7 +281,6 @@
     <ThingDef ParentName="GW_AM_OnSkinBase">
         <defName>GW_AM_Valhallan_GreatCoat</defName>
         <label>valhallan greatcoat</label>
-	<description>A heavy greatcoat, worn by Imperial Guardsmen of Valhalla. The insulation it provides against the cold is truly remarkable, and allows the user to operate effectively even in the harshest winters. \n\nAs cold-environment specialists, the Valhallans are typically deployed to ice sheets and tundras of the rimworld. Compared to their home planet, the coldest regions of the rimworld are positively toasty.</description>
         <recipeMaker>
             <researchPrerequisite>GW_AM_Valhallan</researchPrerequisite>
         </recipeMaker>
@@ -315,7 +307,6 @@
     <ThingDef ParentName="GW_AM_OnSkinBase">
         <defName>GW_AM_Valhallan_OfficerGreatCoat</defName>
         <label>valhallan officer greatcoat</label>
-	<description>A Valhallan greatcoat with a lining of fur on the collar, to symbolize the wearer’s status as an officer. This actually lets a little water in which makes the coat less insulating, but that is little issue to a true Valhallan. \n\nA force of Ice Warriors was once accidentally dispatched to the deep jungle of the rimworld, causing a large number of them to develop serious heatstroke even when they stripped to their bare skin. The officer responsible was demoted to the enlisted ranks… and assigned to the squad that suffered from his mistake.</description>
         <recipeMaker>
             <researchPrerequisite>GW_AM_Valhallan</researchPrerequisite>
         </recipeMaker>
@@ -346,9 +337,8 @@
 
     <ThingDef ParentName="GW_AM_OnSkinBase">
         <defName>GW_AM_CommissarUniform</defName>
-        <label>Commissar uniform</label>
-	<description>A distinctive uniform made for an Imperial Commissar of the Astra Militarum. \n\nCommissars are political officers, ensuring the loyalty of their Guardsmen to the Imperium. As well as providing oratory and in-battle inspiration, they also have absolute authority to punish heresy, cowardice, and gross incompetence - all the way to summary execution, and all the way up to the Regimental Commander they were assigned to.</description>
-        <recipeMaker>
+        <label>Commissar Uniform</label>
+       <recipeMaker>
             <researchPrerequisite>GW_AM_OfficersOfAM</researchPrerequisite>
         </recipeMaker>
         <graphicData>
@@ -373,6 +363,64 @@
                 <li>40kCommissarOnSkin</li>
             </tags>
         </apparel>
-    </ThingDef> 
+    </ThingDef>
+	
+	<!-- Tanith 1st -->
+	
+	<ThingDef ParentName="GW_AM_OnSkinBase">
+        <defName>GW_AM_Tanith1stArmor</defName>
+        <label>Tanith 1st armor</label>
+        <description>. . .</description>
+        <recipeMaker>
+            <researchPrerequisite>GW_Tanith1st</researchPrerequisite>
+        </recipeMaker>
+        <graphicData>
+            <texPath>Things/Tanith1st/Armor_Male_south</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+		<tickerType>Normal</tickerType>
+        <costStuffCount>70</costStuffCount>
+        <stuffCategories>
+            <li>Fabric</li>
+            <li>Leathery</li>
+        </stuffCategories>
+        <thingCategories>
+            <li>ApparelMisc</li>
+        </thingCategories>
+        <statBases>
+            <MaxHitPoints>200</MaxHitPoints>
+            <WorkToMake>10000</WorkToMake>
+            <Mass>1.5</Mass>
+            <StuffEffectMultiplierArmor>0.3</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>1.0</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.85</StuffEffectMultiplierInsulation_Heat>
+            <EquipDelay>3</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <SocialImpact>0.1</SocialImpact>
+        </equippedStatOffsets>
+        <apparel>
+            <wornGraphicPath>Things/Tanith1st/Armor</wornGraphicPath>
+            <tags>
+                <li>40kTanith</li>
+                <li>40kTanithMiddle</li>
+            </tags>
+        </apparel>
+        <tradeTags>
+            <li>HPMiddle</li>
+        </tradeTags>
+		<comps>
+			<!-- <li Class="BM_ApparelSet.CompProperties_ApparelSet"> -->
+				<!-- <apparelSetEffect> -->
+					<!-- <allApparels> -->
+						<!-- <li>GW_AM_Tanith1stCloak</li> -->
+						<!-- <li>GW_AM_Tanith1stHood</li> -->
+						<!-- <li>GW_AM_Tanith1stGoggle</li> -->
+					<!-- </allApparels> -->
+					<!-- <hediff>GW40k_AM_Tanith1stSet</hediff> -->
+				<!-- </apparelSetEffect> -->
+			<!-- </li> -->
+		</comps>
+    </ThingDef>  
 
 </Defs>

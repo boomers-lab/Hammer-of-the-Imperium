@@ -237,4 +237,133 @@
             </li>
         </tools>
     </ThingDef>
+
+    <!-- PowerGlaive -->
+	
+	<ThingDef ParentName="GW_AM_IndustrialSharpBase">
+		<defName>GW_AM_MeleeWeapon_PowerGlaive</defName>
+		<label>Power glaive</label>
+		<description>Glaive</description>
+		<graphicData>
+			<texPath>Weapons/PowerGlaive</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.00</drawSize>
+		</graphicData>
+		<statBases>
+			<WorkToMake>3400</WorkToMake>
+			<Mass>1.0</Mass>
+		</statBases>
+		<costStuffCount>55</costStuffCount>
+        <costList>
+            <Plasteel>12</Plasteel>
+        </costList>
+        <recipeMaker>
+            <researchPrerequisite>GW_LuciferBlack</researchPrerequisite>
+        </recipeMaker>
+		<tools>
+            <li>
+                <label>handle</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>20</power>
+                <cooldownTime>2.5</cooldownTime>
+            </li>
+            <li>
+                <label>edge</label>
+                <capacities>
+                    <li>Cut</li>
+                </capacities>
+                <power>50</power>
+                <cooldownTime>1.5</cooldownTime>
+				<armorPenetration>1.5</armorPenetration>
+            </li>
+			<li>
+				<label>point</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>2.5</cooldownTime>
+				<armorPenetration>0.5</armorPenetration>
+			</li>
+        </tools>
+		<comps />
+		<equippedAngleOffset>45</equippedAngleOffset>
+		<modExtensions>
+			<li Class="VFECore.ThingDefExtension">
+				<weaponDraftedDrawOffsets>
+					<north>
+						<drawOffset>(0.3, 0, 0.36)</drawOffset>
+						<angleOffset>-143</angleOffset>
+					</north>
+					<east>
+						<drawOffset>(0.15, 0, 0.42)</drawOffset>
+						<angleOffset>-122</angleOffset>
+					</east>
+					<south>
+						<drawOffset>(-0.40, 0, 0.47)</drawOffset>
+						<angleOffset>-143</angleOffset>
+					</south>
+					<west>
+						<drawOffset>(-0.15, 0, 0.42)</drawOffset>
+						<angleOffset>122</angleOffset>
+					</west>
+				</weaponDraftedDrawOffsets>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	
+	<!-- Power Saber -->
+	<ThingDef ParentName="GW_AM_IndustrialSharpBase">
+        <defName>GW_AM_MeleeWeapon_PowerSaber</defName>
+        <label>Power saber</label>
+        <description>The Power Saber.</description>
+        <graphicData>
+            <texPath>Weapons/PowerSaber</texPath>
+        </graphicData>
+        <statBases>
+            <WorkToMake>6400</WorkToMake>
+            <Mass>1.0</Mass>
+        </statBases>
+		<equippedAngleOffset>-75</equippedAngleOffset>
+		<equippedStatOffsets>
+			<MoveSpeed>0.20</MoveSpeed>
+		</equippedStatOffsets>
+        <costStuffCount>55</costStuffCount>
+        <costList>
+            <Plasteel>12</Plasteel>
+        </costList>
+        <recipeMaker>
+        <researchPrerequisite>GW_LuciferBlack</researchPrerequisite>
+        </recipeMaker>
+        <tools>
+            <li>
+                <label>handle</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>20</power>
+                <cooldownTime>2.5</cooldownTime>
+            </li>
+            <li>
+                <label>edge</label>
+                <capacities>
+                    <li>Cut</li>
+                </capacities>
+                <power>50</power>
+                <cooldownTime>1.5</cooldownTime>
+				<armorPenetration>1.5</armorPenetration>
+            </li>
+			<li>
+				<label>point</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>2.5</cooldownTime>
+				<armorPenetration>0.5</armorPenetration>
+			</li>
+        </tools>
+    </ThingDef>
 </Defs>

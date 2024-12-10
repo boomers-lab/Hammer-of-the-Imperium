@@ -77,10 +77,10 @@
         </modExtensions>
 	</ResearchProjectDef>
 	
-	<!--<ResearchProjectDef ParentName="GW_ImperiumTechBase">
+	<ResearchProjectDef ParentName="GW_ImperiumTechBase">
 		<defName>GW_LuciferBlack</defName>
 		<label>lucifer black</label>
-		<description>Unlocks grav weapons. Grav-weaponry, also called Graviton Weapons, or just Grav Weapons, are devastating graviton-based personal and vehicular weapons employed by the Imperial Adeptus Astartes and the Collegia Titanica and the military forces of the Leagues of Votann based on ancient and forgotten technology dating back to the time of the Age of Technology.</description>
+		<description>unlock lucifer black equipment</description>
 		<baseCost>4000</baseCost>
 		<prerequisites>
 			<li MayRequire="grimworld.astramilitarum">GW_AM_RegimentsOfRenown</li>
@@ -98,7 +98,19 @@
 				</ItemStudyRequirements>
 			</li>
 		</modExtensions>
-	</ResearchProjectDef>-->
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef ParentName="GW_ImperiumTechBase">
+		<defName>GW_Tanith1st</defName>
+		<label>Tanith first and only</label>
+		<description>. . .</description>
+		<baseCost>4000</baseCost>
+		<prerequisites>
+			<li MayRequire="grimworld.astramilitarum">GW_AM_RegimentsOfRenown</li>
+		</prerequisites>
+ 		<researchViewX>6.00</researchViewX>
+ 		<researchViewY>1.30</researchViewY>
+	</ResearchProjectDef>
 
 		<!--Regiments-->
     <ResearchProjectDef Abstract="True" Name="GW_AM_RegimentResearchBase" ParentName="GW_AM_HoITechBase">
@@ -191,13 +203,13 @@
 		<researchViewX>4.00</researchViewX>
 	</ResearchProjectDef>
 	
-	<!--<ResearchProjectDef ParentName="GW_AM_RegimentResearchBase">
+	<ResearchProjectDef ParentName="GW_AM_RegimentResearchBase">
 		<defName>GW_AM_ElysianDropTroopers</defName>
 		<label>Elysian Drop Troopers</label>
         <description>Produce the armor and weapons of the Elysian Drop Troopers - fearless airborne infantry who rain from the sky.</description>
 		<researchViewX>6.00</researchViewX>
 		<researchViewY>0.00</researchViewY>
-	</ResearchProjectDef>-->
+	</ResearchProjectDef>
 
 			<!--Abhumans-->
 	<ResearchProjectDef ParentName="GW_AM_HoITechBase">
@@ -224,7 +236,7 @@
 		<researchViewY>5.40</researchViewY>
 	</ResearchProjectDef>
 
-	<ResearchProjectDef ParentName="GW_AM_HoITechBase">
+	<!--<ResearchProjectDef ParentName="GW_AM_HoITechBase">
 		<defName>GW_AM_RatlingIntegration</defName>
 		<label>ratling integration</label>
         <description>Produce gear used by the small and sneaky Ratling abhumans.</description>
@@ -234,5 +246,5 @@
         <baseCost>1500</baseCost>
 		<researchViewX>5.00</researchViewX>
 		<researchViewY>6.00</researchViewY>
-	</ResearchProjectDef>
+	</ResearchProjectDef>-->
 </Defs>
