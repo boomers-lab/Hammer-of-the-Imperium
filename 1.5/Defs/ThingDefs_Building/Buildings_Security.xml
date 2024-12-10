@@ -217,7 +217,6 @@
             <li>PlaceWorker_PreventInteractionSpotOverlap</li>
         </placeWorkers>
         <researchPrerequisites>
-            <li>GW_Autoguns</li>
             <li>GW_AM_ImperiumDefense</li>
         </researchPrerequisites>
     </ThingDef>
