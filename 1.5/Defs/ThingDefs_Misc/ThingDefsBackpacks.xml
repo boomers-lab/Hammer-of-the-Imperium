@@ -279,7 +279,7 @@
 
 	<ThingDef ParentName="GW_AM_BackpackBase">
 		<defName>GW_AM_Elysian_Jetpack</defName>
-		<label>elysian jetpack</label>
+		<label>Elysian jetpack</label>
         <description>A modified grav-chute specifically tailored for the Elysian Drop Troops of the Astra Militarum. Normally, grav-chutes are only meant to slow a user’s fall onto the battlefield, but this design has been improved to allow for a burst of ascension before descent, like a jump-pack. \n\nThe airborne insertions once favored by the Elysians are a very rare occurrence in modern times. This jetpack is something of a compromise - allowing the Elysians to jump straight into the fray and unleash hell upon the enemy, just as they did before.</description>
 		<graphicData>
 			<texPath>Things/ElysianDrop/Backpack/Elysium_Jetpack_Display</texPath>
@@ -438,8 +438,8 @@
 	
 	<ThingDef ParentName="GW_AM_BackpackBase">
 		<defName>GW_AM_EngineseererBackpack</defName>
-		<label>militarum engineseerer backpack</label>
-        <description>Militarum engineserer backpack equpt with additional arm and servoskull for better performance in crafting and other mechanicus duties.</description>
+		<label>Enginseer backpack</label>
+        <description>The backpack of an Imperial Guard Enginseer, complete with an additional arm (or “mechadendrite”) and a servo skull. Though the mechadendrite is wired into the central nervous system, it is strangely modified into a more “plug-and-play” format, allowing any user to wear it and benefit from increased work speed. \n\nEnginseers are low-ranking tech-priests that are assigned to repair equipment and vehicles, and are a common sight in the Imperial Guard and Imperial Navy. This includes field repairs - enginseers are no stranger to enemy contact and will fight hard for the Omnissiah.</description>
 		<graphicData>
             <texPath>Things/MilitarumEngineseerer/Backpack_north</texPath>		
 			<drawSize>(1.5,1.5)</drawSize>				
