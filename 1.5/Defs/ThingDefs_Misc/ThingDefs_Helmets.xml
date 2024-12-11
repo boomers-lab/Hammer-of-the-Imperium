@@ -331,6 +331,9 @@
                 <li>40kLucifer</li>
                 <li>40kLuciferHelmet</li>
             </tags>
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
         </apparel>
     </ThingDef>
 
@@ -367,6 +370,9 @@
                 <li>40kLucifer</li>
                 <li>40kLuciferHelmet</li>
             </tags>
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
         </apparel>
     </ThingDef>
 
@@ -406,6 +412,9 @@
                 <li>40kLucifer</li>
                 <li>40kLuciferHelmet</li>
             </tags>
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
         </apparel>
     </ThingDef>
 

@@ -250,6 +250,8 @@
 			<ComponentIndustrial>10</ComponentIndustrial>
             <ComponentSpacer>3</ComponentSpacer>
 		</costList>
+		<costStuffCount Inherit="False" />
+        <stuffCategories Inherit="False" />
         <comps>
 			<li Class="GW40kHediffAura.CompProperties_ApparelGiveHediff">
 				<hediffDef>GW40k_AM_VoxAura</hediffDef>
@@ -462,9 +464,8 @@
 		<equippedStatOffsets>
 			<WorkSpeedGlobal>0.25</WorkSpeedGlobal>
 		</equippedStatOffsets>
-		<stuffCategories Inherit="False">
-			<li>Metallic</li>
-		</stuffCategories>
+		<costStuffCount Inherit="False" />
+        <stuffCategories Inherit="False" />
 		<costList>
 			<ComponentIndustrial>10</ComponentIndustrial>
             <ComponentSpacer>3</ComponentSpacer>

@@ -994,6 +994,9 @@
 		<graphicData>
             <texPath>Things/Tanith1st/Goggles_south</texPath>
 		</graphicData>
+		<costList>
+			<Leather_Plain>5</Leather_Plain>
+		</costList>
 		<statBases>
 			<WorkToMake>9000</WorkToMake>
 			<MaxHitPoints>250</MaxHitPoints>
@@ -1012,6 +1015,10 @@
 		<equippedStatOffsets>
 			<AimingDelayFactor>-0.3</AimingDelayFactor>
 		</equippedStatOffsets>
+		<!-- <stuffCategories> -->
+			<!-- <li>Leathery</li> -->
+		<!-- </stuffCategories> -->
+		<!-- <costStuffCount>50</costStuffCount> -->
 		<apparel>
 			<wornGraphicPath>Things/Tanith1st/Goggles</wornGraphicPath>
 			<tags>
