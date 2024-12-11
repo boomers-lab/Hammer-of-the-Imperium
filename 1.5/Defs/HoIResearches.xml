@@ -6,7 +6,7 @@
 
 	<ResearchProjectDef ParentName="GW_AM_HoITechBase">
 		<defName>GW_AM_TacticaImperium</defName>
-		<label>tactica imperium</label>
+		<label>Tactica Imperium</label>
         <description>Study the Tactica Imperium, the Astra Militarum’s most prominent manual. Though it is incredibly long and sometimes contradicts itself, it remains highly useful for both the rookie officer, the grizzled NCO, and the newly-minted enlisted troops.</description>
         <baseCost>1000</baseCost>
 		<prerequisites>
@@ -18,7 +18,7 @@
 
 	<ResearchProjectDef ParentName="GW_AM_HoITechBase">
 		<defName>GW_AM_ImperiumDefense</defName>
-		<label>imperium defense</label>
+		<label>Imperial fortifications</label>
         <description>Research and produce Imperium-style defenses. While researching this allows for the construction of basic field fortifications such as trenches and tank traps, it is also a requirement for other defensive emplacements.</description>
         <baseCost>2000</baseCost>
 		<prerequisites>
@@ -30,7 +30,7 @@
 
 	<ResearchProjectDef ParentName="GW_AM_HoITechBase">
 		<defName>GW_AM_MilitariumArmor</defName>
-		<label>militarium armor</label>
+		<label>militarum armor</label>
         <description>Produce the standardized Cadian Shock Troops-style weapons and armor used by many regiments of the Imperial Guard.</description>
         <baseCost>1000</baseCost>
 		<prerequisites>
@@ -55,7 +55,7 @@
 	<ResearchProjectDef ParentName="GW_ImperiumTechBase">
 		<defName>GW_MilitarumAdvancedWeapons</defName>
 		<label>militarum advanced weapons</label>
-        <description>Power Weapons are rare and greatly coveted personal close combat weapons that are used on the battlefields of the 41st Millennium. Power weapons generally exude a hazy field of bluish energy that wraps around the primary impact region of a melee weapon, be it a sword's blade or warhammer's head, which is capable of disrupting the molecular bonds of matter when it strikes. These weapons may be constructed to appear as a primitive, simple melee weapon, with the power field generator concealed within the hilt or haft of the weapon.</description>
+        <description>Research advanced weapons of the Astra Militarum, such as the Inferno Pistol.</description>
 		<prerequisites>
 			<li>GW_Cogitator</li>
 			<li>GW_Autoguns</li>
@@ -79,8 +79,8 @@
 	
 	<ResearchProjectDef ParentName="GW_ImperiumTechBase">
 		<defName>GW_LuciferBlack</defName>
-		<label>lucifer black</label>
-		<description>unlock lucifer black equipment</description>
+		<label>Lucifer Blacks</label>
+		<description>Produce the armor and weapons of the Lucifer Blacks - the praetorian guard of Terra.</description>
 		<baseCost>4000</baseCost>
 		<prerequisites>
 			<li MayRequire="grimworld.astramilitarum">GW_AM_RegimentsOfRenown</li>
@@ -102,8 +102,8 @@
 	
 	<ResearchProjectDef ParentName="GW_ImperiumTechBase">
 		<defName>GW_Tanith1st</defName>
-		<label>Tanith first and only</label>
-		<description>. . .</description>
+		<label>Tanith First and Only</label>
+		<description>Produce the armor and weapons of the Tanith First and Only - a scout-sniper regiment with no home planet of their own and the will to gain one.</description>
 		<baseCost>4000</baseCost>
 		<prerequisites>
 			<li MayRequire="grimworld.astramilitarum">GW_AM_RegimentsOfRenown</li>
