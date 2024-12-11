@@ -50,7 +50,7 @@
 	
     <ThingDef ParentName="GW_LaserBullet" Class="VanillaWeaponsExpandedLaser.LaserBeamDef">
         <defName>VWEL_Bullet_Hellbolt</defName>
-        <label>Hellgun lasbolt</label>
+        <label>hellgun lasbolt</label>
         <description>A concentrated beam of light that burns the target - and often through them.</description>
         <textures>
             <li>Projectiles/Las_Bolt</li>
@@ -695,7 +695,7 @@
 
     <ThingDef ParentName="GW_AM_LasgunBase">
         <defName>GW_AM_Gun_Hellgun</defName>
-        <label>Ryza Hellgun</label>
+        <label>Ryza hellgun</label>
         <description>Hellguns are a special type of high-powered lasgun, also known as a “hot-shot lasgun”. Instead of a standard power pack, hellguns feed from a backpack, allowing it to unleash a long burst of potent lasbolts. \n\nHellguns are generally seen only in the hands of elite Astra Militarum forces, such as the Tempestus Scions and the Cadian Kasrkin. Their superior penetration over normal lasguns gives hellguns a decent chance even against opponents wearing Power Armor.</description>
         <graphicData>
             <texPath>Weapons/Hellgun</texPath>
