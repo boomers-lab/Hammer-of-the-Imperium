@@ -810,6 +810,9 @@
         </costList>
         <recipeMaker>
             <researchPrerequisite>GW_LuciferBlack</researchPrerequisite>
+			<recipeUsers Inherit="false">
+                <li>HP_AM_MilitarumFabricationBench</li>
+            </recipeUsers>
             <skillRequirements>
                 <Crafting>14</Crafting>
             </skillRequirements>
@@ -898,6 +901,9 @@
         </costList>
         <recipeMaker>
             <researchPrerequisite>GW_LuciferBlack</researchPrerequisite>
+			<recipeUsers Inherit="false">
+                <li>HP_AM_MilitarumFabricationBench</li>
+            </recipeUsers>
             <skillRequirements>
                 <Crafting>12</Crafting>
             </skillRequirements>
@@ -971,6 +977,9 @@
         </costList>
         <recipeMaker>
             <researchPrerequisite>GW_LuciferBlack</researchPrerequisite>
+			<recipeUsers Inherit="false">
+                <li>HP_AM_MilitarumFabricationBench</li>
+            </recipeUsers>
             <skillRequirements>
                 <Crafting>12</Crafting>
             </skillRequirements>
