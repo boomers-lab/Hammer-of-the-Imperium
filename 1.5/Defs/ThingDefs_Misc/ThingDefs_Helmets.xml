@@ -486,7 +486,7 @@
         <apparel>
             <wornGraphicPath>Things/MilitarumEngineseerer/Mask</wornGraphicPath>
             <renderSkipFlags>
-                <li>None</li>
+                <li>Beard</li>
             </renderSkipFlags>
 			<layers Inherit="False">
 				<li>EyeCover</li>

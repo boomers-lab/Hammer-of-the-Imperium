@@ -97,6 +97,20 @@
 		</equippedStatOffsets>
 		<apparel>
 			<wornGraphicPath>Things/Backpacks/Small_Backpack</wornGraphicPath>
+			<drawData>
+				<dataSouth>
+                    <offset>(0.0, -0.1, 0.0)</offset>
+				</dataSouth>
+				<dataWest>
+					<offset>(0.3, 0.0, 0.0)</offset>
+				</dataWest>
+				<dataEast>
+					<offset>(-0.3, 0.0, 0.0)</offset>
+				</dataEast>
+				<dataNorth>
+					<offset>(0.0, 0.1, 0.0)</offset>
+				</dataNorth>
+			</drawData>
 			<tags>
 				<li>GW_CadianBackpack</li>
 			</tags>
@@ -135,6 +149,20 @@
 		</equippedStatOffsets>
 		<apparel>
 			<wornGraphicPath>Things/Backpacks/Large_Backpack</wornGraphicPath>
+			<drawData>
+				<dataSouth>
+                    <offset>(0.0, -0.1, 0.0)</offset>
+				</dataSouth>
+				<dataWest>
+					<offset>(0.3, 0.0, 0.0)</offset>
+				</dataWest>
+				<dataEast>
+					<offset>(-0.3, 0.0, 0.0)</offset>
+				</dataEast>
+				<dataNorth>
+					<offset>(0.0, 0.1, 0.0)</offset>
+				</dataNorth>
+			</drawData>
 			<tags>
 				<li>GW_CadianBackpack</li>
 			</tags>
@@ -177,6 +205,20 @@
 		</costList>
 		<apparel>
 			<wornGraphicPath>Things/Backpacks/Battleline_Backpack</wornGraphicPath>
+			<drawData>
+				<dataSouth>
+                    <offset>(0.0, -0.1, 0.0)</offset>
+				</dataSouth>
+				<dataWest>
+					<offset>(0.4, 0.0, 0.0)</offset>
+				</dataWest>
+				<dataEast>
+					<offset>(-0.4, 0.0, 0.0)</offset>
+				</dataEast>
+				<dataNorth>
+					<offset>(0.0, 0.1, 0.0)</offset>
+				</dataNorth>
+			</drawData>
 			<tags>
 				<li>GW_CadianBackpack</li>
 			</tags>
@@ -217,6 +259,20 @@
 		</costList>
 		<apparel>
 			<wornGraphicPath>Things/Backpacks/Medical_Pack</wornGraphicPath>
+			<drawData>
+				<dataSouth>
+                    <offset>(0.0, -0.1, 0.0)</offset>
+				</dataSouth>
+				<dataWest>
+					<offset>(0.3, 0.0, 0.0)</offset>
+				</dataWest>
+				<dataEast>
+					<offset>(-0.3, 0.0, 0.0)</offset>
+				</dataEast>
+				<dataNorth>
+					<offset>(0.0, 0.1, 0.0)</offset>
+				</dataNorth>
+			</drawData>
 			<tags>
 				<li>GW_CadianBackpack</li>
 			</tags>
@@ -263,10 +319,10 @@
                     <offset>(0.0, -0.01, 0.4)</offset>
 				</dataSouth>
 				<dataWest>
-					<offset>(0.2, 0.0, 0.4)</offset>
+					<offset>(0.3, 0.01, 0.4)</offset>
 				</dataWest>
 				<dataEast>
-					<offset>(-0.2, 0.0, 0.4)</offset>
+					<offset>(-0.3, 0.0, 0.4)</offset>
 				</dataEast>
 				<dataNorth>
 					<offset>(0.0, 0.1, 0.4)</offset>

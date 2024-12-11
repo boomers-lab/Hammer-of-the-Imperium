@@ -201,7 +201,9 @@
 		<description>A red bandana, worn by some Catachan Jungle Fighters. In humid jungle, these help to keep the sweat out of one’s eyes. \n\nThe jungles of 2nd Millennium Terra pale in comparison to some of the green hells the galaxy can produce. However, the Catachan Jungle Fighters thrive in such an environment, where other Guard regiments would be torn to pieces before ever laying eyes upon the enemy.</description>
 		<graphicData>
 			<texPath>Things/Catachan/CatachanBandana/CatachanBandanaFullWrap</texPath>
+			<drawSize>(1.0,1.0)</drawSize>
 		</graphicData>
+		<uiIconScale>1.0</uiIconScale>
 		<costStuffCount>10</costStuffCount>
 		<statBases>
 			<WorkToMake>1000</WorkToMake>
