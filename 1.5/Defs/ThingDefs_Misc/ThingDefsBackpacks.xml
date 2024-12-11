@@ -226,7 +226,7 @@
 	<ThingDef ParentName="GW_AM_BackpackBase">
 		<defName>GW_AM_VoxBackpack</defName>
 		<label>vox backpack</label>
-        <description>A large backpack containing a vox-caster, an Imperial Guard device. Similar to a modern radio backpack, this vox-caster allows the user to communicate over long distances on the battlefield. This particular vox-caster is linked to an Imperial Navy ship in orbit above the rimworld, allowing the user to call in a low-powered support strike on a target of their choosing - though that can only be used every five days. \n\nVox-casters are vital to maintaining battlefield communication within Imperial Guard units. Without them, commanders would have no way of sending orders to their units, and enemy forces would quickly isolate and destroy them in piecemeal fashion.</description>
+        <description>A large backpack containing a vox-caster, an Imperial Guard device. Similar to a modern radio backpack, this vox-caster allows the user to communicate over long distances on the battlefield. This particular vox-caster communicates with all nearby soldiers, increasing their mobility and shooting accuracy. \n\nVox-casters are vital to maintaining battlefield communication within Imperial Guard units. Without them, commanders would have no way of sending orders to their units, and enemy forces would quickly isolate and destroy them in piecemeal fashion.</description>
 		<graphicData>
 			<texPath>Things/Backpacks/Vox_Pack_north</texPath>
 			<drawSize>(1.25,1.25)</drawSize>	
