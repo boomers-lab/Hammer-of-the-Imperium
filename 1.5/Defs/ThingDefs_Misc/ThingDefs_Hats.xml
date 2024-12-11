@@ -169,6 +169,7 @@
 		<graphicData>
 			<texPath>Things/Catachan/CatachanBandana/CatachanBandana_south</texPath>
 		</graphicData>
+		<uiIconScale>1.0</uiIconScale>
 		<costStuffCount>10</costStuffCount>
 		<statBases>
 			<WorkToMake>1000</WorkToMake>
