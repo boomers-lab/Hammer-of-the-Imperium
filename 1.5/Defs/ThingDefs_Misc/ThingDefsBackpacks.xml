@@ -186,7 +186,7 @@
 	<ThingDef ParentName="GW_AM_BackpackBase">
 		<defName>GW_AM_MedicalBackpack</defName>
 		<label>medicae backpack</label>
-        <description>An Imperial Guard backpack containing medical supplies. Wearing it assists the user in tending to wounded troops in the field, yielding better tend quality. \n\nHuman resources are  the one thing the Imperium of Man is never short of, but only a foolish commander would consider the supply infinite. While the Guardsmen of the Astra Militarum are indeed expendable, they are still resources to be conserved, and combat medics save wounded soldiers who would otherwise be lost to infection.</description>
+        <description>An Imperial Guard backpack containing medical supplies. Wearing it assists the user in tending to wounded troops in the field, yielding better tend quality. \n\nHuman resources are the one thing the Imperium of Man is never short of, but only a foolish commander would consider the supply infinite. While the Guardsmen of the Astra Militarum are indeed expendable, they are still resources to be conserved, and combat medics save wounded soldiers who would otherwise be lost to infection.</description>
 		<graphicData>
 			<texPath>Things/Backpacks/Medical_Pack_south</texPath>
 			<drawSize>(2,2)</drawSize>	
@@ -226,7 +226,7 @@
 	<ThingDef ParentName="GW_AM_BackpackBase">
 		<defName>GW_AM_VoxBackpack</defName>
 		<label>vox backpack</label>
-        <description>A large backpack containing a vox-caster, an Imperial Guard device. Similar to a modern radio backpack, this vox-caster allows the user to communicate over long distances on the battlefield. This particular vox-caster is linked to an Imperial Navy ship in orbit above the rimworld, allowing the user to call in a low-powered support strike on a target of their choosing - though that can only be used every five days. \n\nVox-casters are vital to maintaining battlefield communication within Imperial Guard units. Without them, commanders would have no way of sending orders to their units, and enemy forces would quickly isolate and destroy them in piecemeal fashion.</description>
+        <description>A large backpack containing a vox-caster, an Imperial Guard device. Similar to a modern radio backpack, this vox-caster allows the user to communicate over long distances on the battlefield. This particular vox-caster communicates with all nearby soldiers, increasing their mobility and shooting accuracy. \n\nVox-casters are vital to maintaining battlefield communication within Imperial Guard units. Without them, commanders would have no way of sending orders to their units, and enemy forces would quickly isolate and destroy them in piecemeal fashion.</description>
 		<graphicData>
 			<texPath>Things/Backpacks/Vox_Pack_north</texPath>
 			<drawSize>(1.25,1.25)</drawSize>	
@@ -279,7 +279,7 @@
 
 	<ThingDef ParentName="GW_AM_BackpackBase">
 		<defName>GW_AM_Elysian_Jetpack</defName>
-		<label>elysian jetpack</label>
+		<label>Elysian jetpack</label>
         <description>A modified grav-chute specifically tailored for the Elysian Drop Troops of the Astra Militarum. Normally, grav-chutes are only meant to slow a user’s fall onto the battlefield, but this design has been improved to allow for a burst of ascension before descent, like a jump-pack. \n\nThe airborne insertions once favored by the Elysians are a very rare occurrence in modern times. This jetpack is something of a compromise - allowing the Elysians to jump straight into the fray and unleash hell upon the enemy, just as they did before.</description>
 		<graphicData>
 			<texPath>Things/ElysianDrop/Backpack/Elysium_Jetpack_Display</texPath>
@@ -438,8 +438,8 @@
 	
 	<ThingDef ParentName="GW_AM_BackpackBase">
 		<defName>GW_AM_EngineseererBackpack</defName>
-		<label>militarum engineseerer backpack</label>
-        <description>Militarum engineserer backpack equpt with additional arm and servoskull for better performance in crafting and other mechanicus duties.</description>
+		<label>Enginseer backpack</label>
+        <description>The backpack of an Imperial Guard Enginseer, complete with an additional arm (or “mechadendrite”) and a servo skull. Though the mechadendrite is wired into the central nervous system, it is strangely modified into a more “plug-and-play” format, allowing any user to wear it and benefit from increased work speed. \n\nEnginseers are low-ranking tech-priests that are assigned to repair equipment and vehicles, and are a common sight in the Imperial Guard and Imperial Navy. This includes field repairs - enginseers are no stranger to enemy contact and will fight hard for the Omnissiah.</description>
 		<graphicData>
             <texPath>Things/MilitarumEngineseerer/Backpack_north</texPath>		
 			<drawSize>(1.5,1.5)</drawSize>				

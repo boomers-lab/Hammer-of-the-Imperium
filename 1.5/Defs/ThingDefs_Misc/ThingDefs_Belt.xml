@@ -5,7 +5,7 @@
     <ThingDef ParentName="ApparelMakeableBase">
         <defName>ODZ_40k_IG_DKOK_CombatWebbing</defName>
         <label>Death Korps webbing</label>
-        <description>Death Korps Webbing:\n\n A practical and durable accessory, the Death Korps Webbing is an essential component of the elite grenadiers' kit. Meticulously designed for functionality, it provides a customizable and efficient way to carry essential gear on the unforgiving battlefields of Warhammer 40,000. Adorned with pouches and utility pockets, the webbing not only signifies the preparedness of the Death Korps but also reflects the regiment's commitment to order and precision. Worn with the stoic pride of a grenadier, the Death Korps Webbing stands as a symbol of readiness and resilience in the face of the grim and unrelenting warfare.</description>
+        <description>The webbing of a Death Korps of Krieg Guardsman. It provides space to carry more equipment, such as lasgun power packs and grenades. \n\nA true Kriegsman bears his load without complaint. A grim and deadpan joke, perhaps, but never complaint. He is a soldier through and through, at home in a muddy trench.</description>
         <recipeMaker>
             <researchPrerequisite>GW_AM_DeathKorpsOfKrieg</researchPrerequisite>
             <recipeUsers Inherit="false">
@@ -81,7 +81,7 @@
     <ThingDef ParentName="ArmorMachineableBase">
         <defName>ODZ_40k_IG_Cadian_OfficerGorget</defName>
         <label>Officer gorget</label>
-        <description>Officer Gorget:\n\n A symbol of authority and command, the Officer Gorget is a distinctive neckpiece worn by the esteemed leaders of Imperial forces in Warhammer 40,000. Crafted with meticulous attention to detail, the gorget features ornate designs and regimental insignia, signaling the rank and expertise of the officer. Worn with pride, it adds a touch of regality to the officer's uniform while serving as a functional piece of protective gear. The Officer Gorget embodies the leadership and authority required to navigate the complex and perilous landscapes of the grim darkness of the 41st millennium.</description>
+        <description>A special type of collar worn around the neck, acting as a symbol of rank. This particular gorget is made of metal, and is worn by officers of the Cadian Shock Troops. \n\nOfficers of the Imperial Guard are expected to lead from the front - some are in fact the very tip of the spear, carving a path forward with laspistol and powersword. Even the highest ranks have faced the enemy - the legendary Lord Castellan Ursarkar E. Creed, supreme commander of all forces on Cadia, led the defense of the Fortress World from the front lines, until the moment the planet broke apart.</description>
         <recipeMaker>
             <researchPrerequisite>GW_AM_MilitariumArmor</researchPrerequisite>
             <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>	
@@ -152,7 +152,7 @@
 	<ThingDef ParentName="ArmorMachineableBase">
         <defName>GW_AM_CommissarAttachment</defName>
         <label>Commissar gorget</label>
-        <description>The Commissar gorget, a symbol of authority in the Imperium, is a rigid high-collar piece worn around the neck, extending down to cover the upper chest. Made of durable materials like adamantium or ceramite, it bears the golden aquila of the Imperium and intricate filigree. It's both protective and symbolic, reminding soldiers of the consequences of disobedience and heresy.</description>
+        <description>A Commissar’s gorget, worn around the neck. Unlike the gorget of Cadian officers, this version is made of leather or fabric. \n\nCommissars are graduates of the Schola Progenium. They are typically those with great oratory ability, as well as a healthy (but not quite exceptional) aptitude for combat. While some Commissars are excellent warriors, most of the best soldiers are instead sent to the Tempestus Scions.</description>
         <recipeMaker>
             <researchPrerequisite>GW_AM_OfficersOfAM</researchPrerequisite>
         </recipeMaker>
