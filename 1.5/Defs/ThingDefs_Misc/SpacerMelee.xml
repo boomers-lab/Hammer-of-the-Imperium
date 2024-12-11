@@ -2,7 +2,7 @@
 <Defs>
     <ThingDef Abstract="true" Name="GW_AM_PowerSwordBase" ParentName="BaseMeleeWeapon_Sharp_Quality">
         <possessionCount>1</possessionCount>
-        <description>An Astra Militarum powersword. Sometimes issued to Imperial Guard officers, the disruptive power field of the blade helps the user to cut through enemy flesh and armor.\n\nWhile baseline humans seem ill-suited for battle in a galaxy of super soldiers, psykers, and high technology, it is only the foolish opponent that underestimates the sheer grit of Humanity.</description>
+        <description>An Astra Militarum power sword. Sometimes issued to Imperial Guard officers, the disruptive power field of the blade helps the user to cut through enemy flesh and armor.\n\nWhile baseline humans seem ill-suited for battle in a galaxy of super soldiers, psykers, and high technology, it is only the foolish opponent that underestimates the sheer grit of Humanity.</description>
         <graphicData>
             <graphicClass>Graphic_Single</graphicClass>
             <shaderType>CutoutComplex</shaderType>
@@ -78,7 +78,7 @@
   
     <ThingDef ParentName="GW_AM_PowerSwordBase">
         <defName>GW_AM_MeleeWeapon_PowerSword</defName>
-        <label>Militarum powersword</label>
+        <label>Militarum power sword</label>
         <graphicData>
             <texPath>Weapons/Power Sword</texPath>
         </graphicData>
@@ -88,7 +88,7 @@
   
     <ThingDef ParentName="GW_AM_PowerSwordBase">
         <defName>GW_AM_MeleeWeapon_PowerSwordtwo</defName>
-        <label>Crossguard powersword</label>
+        <label>Crossguard power sword</label>
         <graphicData>
             <texPath>Weapons/Power Sword 2</texPath>
         </graphicData>
