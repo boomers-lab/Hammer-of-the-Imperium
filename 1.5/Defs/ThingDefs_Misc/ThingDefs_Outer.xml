@@ -250,7 +250,7 @@
         <label>Tanith 1st cloak</label>
         <description>. . .</description>
         <recipeMaker>
-            <researchPrerequisite>GW_AM_OfficersOfAM</researchPrerequisite>
+            <researchPrerequisite>GW_Tanith1st</researchPrerequisite>
         </recipeMaker>
         <graphicData>
             <texPath>Things/Tanith1st/Cloak_Male_south</texPath>
