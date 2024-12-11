@@ -3,8 +3,8 @@
 	<HediffDef>
 		<defName>GW40k_AM_VoxAura</defName>
 		<hediffClass>HediffWithComps</hediffClass>
-		<label>coordination aura</label>
-		<description>vox aura</description>
+		<label>Voxcaster</label>
+		<description>This pawn is using a vox backpack, allowing them to communicate with nearby pawns and increase their combat effectiveness.</description>
 		<initialSeverity>1</initialSeverity>
 		<maxSeverity>1</maxSeverity>
 		<isBad>false</isBad>
