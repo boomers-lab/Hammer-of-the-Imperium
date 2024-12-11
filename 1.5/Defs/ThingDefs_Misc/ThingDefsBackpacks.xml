@@ -186,7 +186,7 @@
 	<ThingDef ParentName="GW_AM_BackpackBase">
 		<defName>GW_AM_MedicalBackpack</defName>
 		<label>medicae backpack</label>
-        <description>An Imperial Guard backpack containing medical supplies. Wearing it assists the user in tending to wounded troops in the field, yielding better tend quality. \n\nHuman resources are  the one thing the Imperium of Man is never short of, but only a foolish commander would consider the supply infinite. While the Guardsmen of the Astra Militarum are indeed expendable, they are still resources to be conserved, and combat medics save wounded soldiers who would otherwise be lost to infection.</description>
+        <description>An Imperial Guard backpack containing medical supplies. Wearing it assists the user in tending to wounded troops in the field, yielding better tend quality. \n\nHuman resources are the one thing the Imperium of Man is never short of, but only a foolish commander would consider the supply infinite. While the Guardsmen of the Astra Militarum are indeed expendable, they are still resources to be conserved, and combat medics save wounded soldiers who would otherwise be lost to infection.</description>
 		<graphicData>
 			<texPath>Things/Backpacks/Medical_Pack_south</texPath>
 			<drawSize>(2,2)</drawSize>	
