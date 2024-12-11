@@ -30,8 +30,8 @@
 	<HediffDef>
 		<defName>GW40k_AM_VoxAuraBuff</defName>
 		<hediffClass>HediffWithComps</hediffClass>
-		<label>coordination buff</label>
-		<description>vox buff</description>
+		<label>Voxcaster comms</label>
+		<description>This pawn is in range of a friendly pawn with a voxcaster. Their combat effectiveness is increased by their greater ability to communicate to one another.</description>
 		<initialSeverity>1</initialSeverity>
 		<maxSeverity>1</maxSeverity>
 		<isBad>false</isBad>
