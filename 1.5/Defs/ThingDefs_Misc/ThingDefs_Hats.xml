@@ -1015,10 +1015,8 @@
 		<equippedStatOffsets>
 			<AimingDelayFactor>-0.3</AimingDelayFactor>
 		</equippedStatOffsets>
-		<!-- <stuffCategories> -->
-			<!-- <li>Leathery</li> -->
-		<!-- </stuffCategories> -->
-		<!-- <costStuffCount>50</costStuffCount> -->
+		<stuffCategories Inherit="False" />
+		<costStuffCount Inherit="False" />
 		<apparel>
 			<wornGraphicPath>Things/Tanith1st/Goggles</wornGraphicPath>
 			<tags>
