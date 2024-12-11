@@ -54,7 +54,7 @@
 	
 	<ThingDef ParentName="BaseBullet">
         <defName>GW_AM_Bullet_BoltPistol</defName>
-        <label>bolt pistol round</label>
+        <label>bolt</label>
         <graphicData>
             <texPath>Projectiles/AM_BoltPistol_Proj</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -73,7 +73,7 @@
 	
 	<ThingDef ParentName="BaseBullet">
         <defName>GW_AM_Bullet_Bolter</defName>
-        <label>bolter round</label>
+        <label>bolt</label>
         <graphicData>
             <texPath>Projectiles/AM_BoltPistol_Proj</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -224,7 +224,7 @@
 	
 	<ThingDef ParentName="GW_AM_BolterBase">
         <defName>GW_AM_Gun_BoltPistol</defName>
-        <label>Bolt Pistol</label>
+        <label>Bolt pistol</label>
         <description>A semi-automatic pistol firing smaller, but still powerful bolts. A common sidearm of Space Marines, but human-scaled versions can be found in use by the Imperial Guard. \n\nThese pistols are also infamous as the weapons of Imperial Commissars - when executing a cowardly Guardsman, a bolt pistol produces a much bigger (and thus more impactful on morale) spray of blood and gore than a mere laspistol.</description>
         <possessionCount>1</possessionCount>
         <graphicData>
@@ -305,7 +305,7 @@
 	
 	<ThingDef ParentName="GW_AM_BolterBase">
         <defName>GW_AM_Gun_Bolter</defName>
-        <label>Locke Bolter</label>
+        <label>Locke bolter</label>
         <description>A scaled-down bolter of the Locke pattern. The weapon’s smaller size makes it suitable for use by baseline humans. While it is indeed powerful, its recoil and weight is high.\n\nThis pattern of bolter was common in the Koronus Expanse, seeing use by a wide variety of characters - Rogue Traders, pirates, Chaos cultists, and more.</description>
         <possessionCount>1</possessionCount>
         <graphicData>
@@ -396,7 +396,7 @@
 	
 	<ThingDef ParentName="GW_AM_FlamerBase">
 		<defName>GW_AM_Gun_Flamer</defName>
-		<label>Acctran flamer</label>
+		<label>Accatran flamer</label>
 		<description>An Imperial flamer design hailing from the forge world of Accatran, used by the Elysian Drop Troops of the Astra Militarum. Instead of using a canister of promethium held by the flamer, this design features a promethium tank worn on the user’s back. \n\nFlamers are useful when fighting certain xenos species such as Orks and Tyranids, which require thorough destruction to defeat permanently. The former, as a fungoid species, can regrow itself even when reduced to spores, while the latter feeds on biomass (including corpses from both sides) to reproduce and sustain itself.</description>
 		<graphicData>
 			<texPath>Weapons/Accatran_Flamer</texPath>
