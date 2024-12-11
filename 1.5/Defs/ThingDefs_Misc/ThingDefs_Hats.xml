@@ -995,9 +995,6 @@
 		<graphicData>
             <texPath>Things/Tanith1st/Goggles_south</texPath>
 		</graphicData>
-		<costList>
-			<Leather_Plain>5</Leather_Plain>
-		</costList>
 		<statBases>
 			<WorkToMake>9000</WorkToMake>
 			<MaxHitPoints>250</MaxHitPoints>
