@@ -243,7 +243,7 @@
 	<ThingDef ParentName="GW_AM_IndustrialSharpBase">
 		<defName>GW_AM_MeleeWeapon_PowerGlaive</defName>
 		<label>Power glaive</label>
-		<description>Glaive</description>
+		<description>A long polearm with a single-edged blade on the end, coated in a disruptive power field. Normally seen only in the hands of ceremonial Lucifer Black guards, this weapon is still horribly effective on any attacker. \n\nA similar weapon is the Star Glaive, used in battle by Eldar Autarchs - commanders of Eldar war hosts.</description>
 		<graphicData>
 			<texPath>Weapons/PowerGlaive</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -317,8 +317,8 @@
 	<!-- Power Saber -->
 	<ThingDef ParentName="GW_AM_IndustrialSharpBase">
         <defName>GW_AM_MeleeWeapon_PowerSaber</defName>
-        <label>Power saber</label>
-        <description>The Power Saber.</description>
+        <label>Power sabre</label>
+        <description>A well-designed power sword with a knuckle guard. The close-combat weapon of choice of the Lucifer Blacks, these weapons cut more viciously and penetrate armor even better than standard-issue Astra Militarum power swords. \n\nThe Lucifer Blacks tend to see a different kind of action to regular Imperial Guardsmen - not that of the assaulting army, but the assassin in the crowd or sneaking around. Almost like the mortal version of Custodians, they must keep a watchful eye, lest a dagger slip between their principal’s ribs.</description>
         <graphicData>
             <texPath>Weapons/PowerSaber</texPath>
         </graphicData>
