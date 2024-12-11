@@ -518,8 +518,7 @@
             <texPath>Things/Tanith1st/Hood_south</texPath>
         </graphicData>
         <costList>
-            <ComponentIndustrial>2</ComponentIndustrial>
-            <Cloth>10</Cloth>
+            <Cloth>150</Cloth>
             <Steel>70</Steel>
         </costList>
         <statBases>
