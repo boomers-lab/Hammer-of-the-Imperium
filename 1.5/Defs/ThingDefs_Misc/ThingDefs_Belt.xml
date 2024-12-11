@@ -81,7 +81,7 @@
     <ThingDef ParentName="ArmorMachineableBase">
         <defName>ODZ_40k_IG_Cadian_OfficerGorget</defName>
         <label>Officer gorget</label>
-        <description>A special type of collar worn around the neck, acting as a symbol of rank. This particular gorget is made of metal, and is worn by officers of the Cadian Shock Troops. \n\nOfficers of the Imperial Guard are expected to lead from the front - some are in fact the very tip of the spear, carving a path forward with laspistol and powersword. Even the highest ranks have faced the enemy - the legendary Lord Castellan Ursarkar E. Creed, supreme commander of all forces on Cadia, led the defense of the Fortress World from the front lines, until the moment the planet broke apart.</description>
+        <description>A special type of collar worn around the neck, acting as a symbol of rank. This particular gorget is made of metal, and is worn by officers of the Cadian Shock Troops. \n\nOfficers of the Imperial Guard are expected to lead from the front - some are in fact the very tip of the spear, carving a path forward with laspistol and power sword. Even the highest ranks have faced the enemy - the legendary Lord Castellan Ursarkar E. Creed, supreme commander of all forces on Cadia, led the defense of the Fortress World from the front lines, until the moment the planet broke apart.</description>
         <recipeMaker>
             <researchPrerequisite>GW_AM_MilitariumArmor</researchPrerequisite>
             <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>	
