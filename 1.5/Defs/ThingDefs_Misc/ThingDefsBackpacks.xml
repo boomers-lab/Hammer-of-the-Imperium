@@ -519,6 +519,7 @@
 		</statBases>
 		<equippedStatOffsets>
 			<WorkSpeedGlobal>0.25</WorkSpeedGlobal>
+			<MechBandwidth MayRequire="ludeon.rimworld.biotech">2</MechBandwidth>
 		</equippedStatOffsets>
 		<costStuffCount Inherit="False" />
         <stuffCategories Inherit="False" />
