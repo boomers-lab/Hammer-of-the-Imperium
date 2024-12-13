@@ -7,7 +7,7 @@
         <description>Mass produced shirts designed for ratlings.</description>
         <label>ratling shirt</label>
         <recipeMaker>
-            <researchPrerequisite>GW_AM_RatlingIntegration</researchPrerequisite>
+            <!-- <researchPrerequisite>GW_AM_RatlingIntegration</researchPrerequisite> -->
         </recipeMaker>
         <graphicData>
             <texPath>Things/Ratling/Shirt/shirt_south</texPath>
@@ -50,7 +50,7 @@
             <texPath>Things/Ratling/Fieldcap/fieldcap_south</texPath>
         </graphicData>
         <recipeMaker>
-            <researchPrerequisite>GW_AM_RatlingIntegration</researchPrerequisite>
+            <!-- <researchPrerequisite>GW_AM_RatlingIntegration</researchPrerequisite> -->
         </recipeMaker>
         <costStuffCount>30</costStuffCount>
         <statBases>
@@ -85,7 +85,7 @@
         <label>ratling cloak</label>
         <description>Some Ratling outerwear designed provide a small amount of protection against attacks and some protection against heat and cold.</description>
         <recipeMaker>
-            <researchPrerequisite>GW_AM_RatlingIntegration</researchPrerequisite>
+            <!-- <researchPrerequisite>GW_AM_RatlingIntegration</researchPrerequisite> -->
         </recipeMaker>
         <graphicData>
             <texPath>Things/Ratling/Cloak/cloak_south</texPath>
