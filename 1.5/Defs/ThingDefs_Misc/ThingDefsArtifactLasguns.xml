@@ -23,6 +23,8 @@
             <skillRequirements>
                 <Crafting>8</Crafting>
             </skillRequirements>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
             <recipeUsers Inherit="false">
                 <li>HP_AM_MilitarumFabricationBench</li>
             </recipeUsers>
