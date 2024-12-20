@@ -11,7 +11,7 @@
 	<ThingDef Abstract="true" Name="GW_AM_BackpackBase" ParentName="ArmorMachineableBase">
 		<techLevel>Spacer</techLevel>
 		<recipeMaker>
-			<unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+			<unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
 			<skillRequirements>
 				<Crafting>9</Crafting>
 			</skillRequirements>
@@ -305,6 +305,7 @@
 		<costList>
 			<ComponentIndustrial>10</ComponentIndustrial>
             <ComponentSpacer>3</ComponentSpacer>
+			<Steel>10</Steel>			
 		</costList>
 		<costStuffCount Inherit="False" />
         <stuffCategories Inherit="False" />
@@ -526,6 +527,7 @@
 		<costList>
 			<ComponentIndustrial>10</ComponentIndustrial>
             <ComponentSpacer>3</ComponentSpacer>
+			<Steel>10</Steel>			
 		</costList>
 		<apparel>
             <drawData>
