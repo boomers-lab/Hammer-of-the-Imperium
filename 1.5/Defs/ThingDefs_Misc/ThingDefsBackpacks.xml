@@ -305,7 +305,7 @@
 		<costList>
 			<ComponentIndustrial>10</ComponentIndustrial>
             <ComponentSpacer>3</ComponentSpacer>
-			<Steel>10</Steel>			
+			<Cloth>10</Cloth>			
 		</costList>
 		<costStuffCount Inherit="False" />
         <stuffCategories Inherit="False" />
@@ -527,7 +527,7 @@
 		<costList>
 			<ComponentIndustrial>10</ComponentIndustrial>
             <ComponentSpacer>3</ComponentSpacer>
-			<Steel>10</Steel>			
+			<Cloth>10</Cloth>			
 		</costList>
 		<apparel>
             <drawData>
