@@ -527,7 +527,7 @@
 		<costList>
 			<ComponentIndustrial>10</ComponentIndustrial>
             <ComponentSpacer>3</ComponentSpacer>
-			<Cloth>10</Cloth>			
+			<Cloth>150</Cloth>			
 		</costList>
 		<apparel>
             <drawData>
