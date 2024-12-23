@@ -10,6 +10,7 @@
 	    <relicChance>3</relicChance>
         <statBases>
 	        <MarketValue>1200</MarketValue>
+			<WorkToMake>10000</WorkToMake>
         </statBases>
         <thingSetMakerTags>
             <li>RewardStandardQualitySuper</li>
