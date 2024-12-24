@@ -305,6 +305,9 @@
 		<equippedStatOffsets>
 			<MoveSpeed>0.20</MoveSpeed>
 		</equippedStatOffsets>
+        <recipeMaker>
+            <researchPrerequisite>GW_AM_OfficersOfAM</researchPrerequisite>
+        </recipeMaker>
         <costStuffCount>55</costStuffCount>
         <costList>
             <Plasteel>12</Plasteel>
@@ -341,7 +344,7 @@
 	
 	<ThingDef ParentName="GW_AM_IndustrialSharpBase">
         <defName>GW_AM_MeleeWeapon_OmniAxe</defName>
-        <label>Omnissian Axe</label>
+        <label>Omnissiah axe</label>
         <description>A serrated power axe wielded by some tech-priests. It is somewhat slow to swing, but is able to cut through enemy armor and flesh to an impressive degree. \n\nThe axe is inscribed with sacred equations as an act of worship, for the Adeptus Mechanicus treats knowledge as a form of holy relic.</description>
         <graphicData>
             <texPath>Weapons/OmniAxe</texPath>
@@ -350,6 +353,9 @@
             <WorkToMake>6400</WorkToMake>
             <Mass>1.0</Mass>
         </statBases>
+        <recipeMaker>
+            <researchPrerequisite>GW_AM_OfficersOfAM</researchPrerequisite>
+        </recipeMaker>
 		<equippedAngleOffset>25</equippedAngleOffset>
 		<equippedStatOffsets>
 			<MoveSpeed>0.20</MoveSpeed>
