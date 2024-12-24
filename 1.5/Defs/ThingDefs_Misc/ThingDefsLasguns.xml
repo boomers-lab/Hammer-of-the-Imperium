@@ -425,7 +425,7 @@
             <RangedWeapon_Cooldown>1.60</RangedWeapon_Cooldown>
         </statBases>
         <recipeMaker>
-		<researchPrerequisite>GW_Lasguns</researchPrerequisite>
+		<researchPrerequisite>GW_AM_ElysianDropTroopers</researchPrerequisite>
             <skillRequirements>
                 <Crafting>10</Crafting>
             </skillRequirements>
