@@ -52,7 +52,7 @@
 		<researchViewY>2.00</researchViewY>
 	</ResearchProjectDef>
 	
-	<ResearchProjectDef ParentName="GW_ImperiumTechBase">
+	<!--<ResearchProjectDef ParentName="GW_ImperiumTechBase">
 		<defName>GW_MilitarumAdvancedWeapons</defName>
 		<label>militarum advanced weapons</label>
         <description>Research advanced weapons of the Astra Militarum, such as the Inferno Pistol.</description>
@@ -75,7 +75,7 @@
                 </ItemStudyRequirements>
             </li>
         </modExtensions>
-	</ResearchProjectDef>
+	</ResearchProjectDef>!-->
 	
 	<ResearchProjectDef ParentName="GW_ImperiumTechBase">
 		<defName>GW_LuciferBlack</defName>
@@ -197,7 +197,7 @@
 	
 	<ResearchProjectDef ParentName="GW_AM_RegimentResearchBase">
 		<defName>GW_AM_OfficersOfAM</defName>
-		<label>Officers of Astra Militarum</label>
+		<label>Officers of astra militarum</label>
         <description>Produce armor and weapons befitting of Imperial Guard officers - the fearsome Commissar and the charismatic Priest.</description>
 		<researchViewY>0</researchViewY>
 		<researchViewX>4.00</researchViewX>

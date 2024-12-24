@@ -377,7 +377,7 @@
             <recipeUsers Inherit="False">
                 <li>HP_AM_MilitarumFabricationBench</li>
             </recipeUsers>		
-            <researchPrerequisite>GW_MilitarumAdvancedWeapons</researchPrerequisite>
+            <researchPrerequisite>GW_AM_OfficersOfAM</researchPrerequisite>
             <skillRequirements>
                 <Crafting>15</Crafting>
             </skillRequirements>
