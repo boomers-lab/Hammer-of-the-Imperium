@@ -364,6 +364,8 @@
 			<Steel>80</Steel>
 			<Chemfuel>100</Chemfuel>
 		</costList>
+		<costStuffCount Inherit="False" />
+        <stuffCategories Inherit="False" />
 		<verbs>
 			<li>
 				<verbClass>ExplosiveJump.Verb_JumpExplosive</verbClass>
