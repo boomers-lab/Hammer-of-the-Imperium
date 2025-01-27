@@ -824,7 +824,7 @@
                 <hasStandardCommand>true</hasStandardCommand>
                 <defaultProjectile>GW_AM_Bullet_Bolter</defaultProjectile>
                 <warmupTime>0.9</warmupTime>
-                <range>16</range>
+                <range>36</range>
 				<burstShotCount>4</burstShotCount>
                 <soundCast>GW_AM_Bolt_Pistol_Sound</soundCast>
                 <soundCastTail>GunTail_Heavy</soundCastTail>
