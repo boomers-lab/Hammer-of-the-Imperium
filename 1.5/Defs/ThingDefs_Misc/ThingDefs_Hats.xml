@@ -559,12 +559,15 @@
 		</equippedStatOffsets>
 		<apparel>
 			<countsAsClothingForNudity>true</countsAsClothingForNudity>
+			<renderSkipFlags>
+				<li>Hair</li>
+			</renderSkipFlags>
 			<layers Inherit="False">
 				<li>EyeCover</li>
 			</layers>
 			<drawData>
 				<defaultData>
-					<layer>61</layer>
+					<layer>71</layer>
 				</defaultData>
 			</drawData>
 			<bodyPartGroups>
