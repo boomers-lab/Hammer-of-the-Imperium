@@ -63,6 +63,12 @@
                 <li>GW_AM_Backpack</li>
 			</tags>
 		</apparel>
+		<modExtensions>
+			<li Class="VFECore.ApparelDrawPosExtension">
+                <isUnifiedApparel>true</isUnifiedApparel>
+				<hideHead>false</hideHead>
+            </li>
+	    </modExtensions>
 	</ThingDef>
 
     <ThingDef ParentName="GW_AM_BackpackBase">
