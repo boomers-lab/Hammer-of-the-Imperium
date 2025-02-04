@@ -36,6 +36,10 @@
 		<maxSeverity>1</maxSeverity>
 		<isBad>false</isBad>
 		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>true</showRemainingTime>
+				<disappearsAfterTicks>250</disappearsAfterTicks>
+			</li>
 		</comps>
 		<stages>
 			<li>
