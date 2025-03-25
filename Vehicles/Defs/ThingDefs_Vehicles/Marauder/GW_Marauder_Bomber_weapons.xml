@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+	<!--===== this def can be deleted safely if you do not need a slot for a new projectile =====-->
+	<ThingDef ParentName="BaseBullet">
+		<defName>GW_MarauderBomberboltor</defName>
+		<label>Boltor shot</label>
+		<thingClass>Projectile_Explosive</thingClass>
+		
+		<graphicData>
+			<texPath>Things/Projectiles/Bolter_Projectile</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>20</damageAmountBase>
+			<explosionRadius>0.6</explosionRadius>
+			<speed>100</speed>
+      			<flyOverhead>true</flyOverhead>
+			<soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+		</projectile>
+	</ThingDef>
+
+	<!--===== this def can be deleted safely if you do not need a slot for a new projectile =====-->
+
+    <ThingDef ParentName="GW_LaserBullet" Class="VanillaWeaponsExpandedLaser.LaserBeamDef">
+        <defName>GW_MarauderBomberlas</defName>
+        <label>Lascanon shot</label>
+        <description>The Lascannon, a devastating energy weapon, is mounted on a formidable vehicle in the war-ridden GrimWorld 40,000. With a sleek design and ominous presence, this armament is affixed to the vehicle's battle-hardened chassis, embodying precision and destructive power against heavily armored foes. Bearing the Imperial Aquila, it symbolizes the unwavering might of the Imperium in the relentless struggle against darkness.</description>
+        <textures>
+            <li>Things/Projectiles/Las_Bolt</li>
+        </textures>
+        <seam>0</seam>
+        <causefireChance>0.08</causefireChance>
+        <projectile>
+            <damageDef>Burn</damageDef>
+            <damageAmountBase>100</damageAmountBase>
+            <armorPenetrationBase>1</armorPenetrationBase>
+            <stoppingPower>2.0</stoppingPower>
+        </projectile>
+    </ThingDef>
+
+	<!--===== Below This are the sounds for the Overlord weapons, and by extension, the astartes Bike =====-->
+
+	
+	<Vehicles.VehicleTurretDef ParentName="VehicleTurretBase">
+		<defName>GW_Marauder_Bomber_Nose</defName>
+		<label>lasgun</label>
+		<description>The Lascannon, a devastating energy weapon, is mounted on a formidable vehicle in the war-ridden GrimWorld 40,000. With a sleek design and ominous presence, this armament is affixed to the vehicle's battle-hardened chassis, embodying precision and destructive power against heavily armored foes. Bearing the Imperial Aquila, it symbolizes the unwavering might of the Imperium in the relentless struggle against darkness.</description>
+		
+		<turretType>Rotatable</turretType>
+		<shotSound>OverlordLascannon</shotSound>
+		
+		<projectile>GW_MarauderBomberlas</projectile>
+		<reloadTimer>3.5</reloadTimer>
+		<warmUpTimer>0.4</warmUpTimer>
+		
+		<magazineCapacity>60</magazineCapacity>
+		<genericAmmo>true</genericAmmo>
+		
+		<hitFlags>IntendedTarget</hitFlags>
+		
+		<autoSnapTargeting>false</autoSnapTargeting>
+		<rotationSpeed>2.95</rotationSpeed>
+		
+		<projectileOffset>2</projectileOffset>
+		<projectileShifting>
+			<li>-1.0</li>
+			<li>1.0</li>
+		</projectileShifting>
+		
+		<minRange>1</minRange>
+		<maxRange>42.9</maxRange>
+		
+		
+		
+		<fireModes>
+			<li>
+				<shotsPerBurst>1</shotsPerBurst>
+				<ticksBetweenShots>5</ticksBetweenShots>
+				<ticksBetweenBursts>30</ticksBetweenBursts>
+				<label>Single</label>
+				<texPath>UI/Gizmos/FireRate_Single</texPath>
+			</li>
+			<li>
+				<shotsPerBurst>10</shotsPerBurst>
+				<ticksBetweenShots>5</ticksBetweenShots>
+				<ticksBetweenBursts>30</ticksBetweenBursts>
+				<spreadRadius>1</spreadRadius>
+				<label>Burst</label>
+				<texPath>UI/Gizmos/FireRate_Burst</texPath>
+			</li>
+			<li>
+				<shotsPerBurst>25</shotsPerBurst>
+				<ticksBetweenShots>5</ticksBetweenShots>
+				<ticksBetweenBursts>45</ticksBetweenBursts>
+				<label>Auto</label>
+				<texPath>UI/Gizmos/FireRate_Auto</texPath>
+			</li>
+		</fireModes>
+
+		<graphicData>
+			<texPath>Things/Vehicles/Marauder/marauderlasyT</texPath>
+			<graphicClass>Vehicles.Graphic_Turret</graphicClass>
+			<shaderType>CutoutComplexPattern</shaderType>
+			<drawSize>(4, 4)</drawSize>
+			<layer>0</layer>
+		</graphicData>
+		
+		<ammunition>
+			<thingDefs>
+				<li>GW_LascannonammoNonCE</li>
+			</thingDefs>
+		</ammunition>
+	</Vehicles.VehicleTurretDef>
+
+	<Vehicles.VehicleTurretDef ParentName="VehicleTurretBase">
+			<defName>GW_Marauder_Bomber_Dorsal</defName>
+			<label>big shootta</label>
+			<description>The Heavy Bolter, a formidable weapon in the Warhammer 40,000 universe, is often mounted on vehicles to enhance their firepower. This versatile weapon, characterized by its rapid and powerful firepower, serves as a potent anti-infantry and suppressive tool on the battlefield. When mounted on a vehicle, it becomes a symbol of mobile and devastating firepower, capable of mowing down enemy infantry and providing valuable support in diverse combat scenarios.</description>
+			<turretType>Rotatable</turretType>
+
+			<shotSound>OverlordHBolter</shotSound>
+
+			<projectile>GW_MarauderBomberboltor</projectile>
+
+			<reloadTimer>7.8</reloadTimer>
+			<warmUpTimer>1.0</warmUpTimer>
+
+			<magazineCapacity>200</magazineCapacity>
+			<chargePerAmmoCount>1</chargePerAmmoCount>
+			<genericAmmo>true</genericAmmo>
+
+			<hitFlags>IntendedTarget</hitFlags>
+
+			<autoSnapTargeting>false</autoSnapTargeting>
+
+			<projectileOffset>2</projectileOffset>
+			<projectileShifting>
+				<li>-1.0</li>
+				<li>1.0</li>
+			</projectileShifting>
+		
+
+			<maxRange>28.9</maxRange>
+
+			<attachProjectileFlag>GW_Tank</attachProjectileFlag>
+
+			<fireModes>
+			<li>
+				<shotsPerBurst>5</shotsPerBurst>
+				<ticksBetweenShots>5</ticksBetweenShots>
+				<ticksBetweenBursts>30</ticksBetweenBursts>
+				<label>Single</label>
+				<texPath>UI/Gizmos/FireRate_Single</texPath>
+			</li>
+			<li>
+				<shotsPerBurst>10</shotsPerBurst>
+				<ticksBetweenShots>5</ticksBetweenShots>
+				<ticksBetweenBursts>30</ticksBetweenBursts>
+				<spreadRadius>1</spreadRadius>
+				<label>Burst</label>
+				<texPath>UI/Gizmos/FireRate_Burst</texPath>
+			</li>
+			<li>
+				<shotsPerBurst>25</shotsPerBurst>
+				<ticksBetweenShots>5</ticksBetweenShots>
+				<ticksBetweenBursts>45</ticksBetweenBursts>
+				<label>Auto</label>
+				<texPath>UI/Gizmos/FireRate_Auto</texPath>
+			</li>
+			</fireModes>
+
+		<graphicData>
+			<texPath>Things/Vehicles/Marauder/marauderHBT</texPath>
+			<graphicClass>Vehicles.Graphic_Turret</graphicClass>
+			<shaderType>CutoutComplexPattern</shaderType>
+			<drawSize>(3, 3)</drawSize>
+		</graphicData>
+
+		<ammunition>
+			<thingDefs>
+				<li>GW_HeavyBolterNonCE</li>
+			</thingDefs>
+		</ammunition>
+	</Vehicles.VehicleTurretDef>
+
+	<Vehicles.VehicleTurretDef ParentName="VehicleTurretBase">
+			<defName>GW_Marauder_Bomber_Tail</defName>
+			<label>big shootta</label>
+			<description>The Heavy Bolter, a formidable weapon in the Warhammer 40,000 universe, is often mounted on vehicles to enhance their firepower. This versatile weapon, characterized by its rapid and powerful firepower, serves as a potent anti-infantry and suppressive tool on the battlefield. When mounted on a vehicle, it becomes a symbol of mobile and devastating firepower, capable of mowing down enemy infantry and providing valuable support in diverse combat scenarios.</description>
+			<turretType>Rotatable</turretType>
+
+			<shotSound>OverlordHBolter</shotSound>
+
+			<projectile>GW_MarauderBomberboltor</projectile>
+
+			<reloadTimer>7.8</reloadTimer>
+			<warmUpTimer>1.0</warmUpTimer>
+
+			<magazineCapacity>200</magazineCapacity>
+			<chargePerAmmoCount>1</chargePerAmmoCount>
+			<genericAmmo>true</genericAmmo>
+
+			<hitFlags>IntendedTarget</hitFlags>
+
+			<autoSnapTargeting>false</autoSnapTargeting>
+
+			<projectileOffset>2</projectileOffset>
+			<projectileShifting>
+				<li>-1.0</li>
+				<li>1.0</li>
+			</projectileShifting>
+
+			<maxRange>28.9</maxRange>
+
+			<attachProjectileFlag>GW_Tank</attachProjectileFlag>
+
+			<fireModes>
+			<li>
+				<shotsPerBurst>5</shotsPerBurst>
+				<ticksBetweenShots>5</ticksBetweenShots>
+				<ticksBetweenBursts>30</ticksBetweenBursts>
+				<label>Single</label>
+				<texPath>UI/Gizmos/FireRate_Single</texPath>
+			</li>
+			<li>
+				<shotsPerBurst>10</shotsPerBurst>
+				<ticksBetweenShots>5</ticksBetweenShots>
+				<ticksBetweenBursts>30</ticksBetweenBursts>
+				<spreadRadius>1</spreadRadius>
+				<label>Burst</label>
+				<texPath>UI/Gizmos/FireRate_Burst</texPath>
+			</li>
+			<li>
+				<shotsPerBurst>25</shotsPerBurst>
+				<ticksBetweenShots>5</ticksBetweenShots>
+				<ticksBetweenBursts>45</ticksBetweenBursts>
+				<label>Auto</label>
+				<texPath>UI/Gizmos/FireRate_Auto</texPath>
+			</li>
+			</fireModes>
+
+		<graphicData>
+			<texPath>Things/Vehicles/Marauder/marauderHBT</texPath>
+			<graphicClass>Vehicles.Graphic_Turret</graphicClass>
+			<shaderType>CutoutComplexPattern</shaderType>
+			<drawSize>(3, 3)</drawSize>
+		</graphicData>
+
+		<ammunition>
+			<thingDefs>
+				<li>GW_HeavyBolterNonCE</li>
+			</thingDefs>
+		</ammunition>
+	</Vehicles.VehicleTurretDef>
+</Defs>
