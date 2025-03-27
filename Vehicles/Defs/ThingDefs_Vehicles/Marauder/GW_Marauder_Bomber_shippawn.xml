@@ -181,7 +181,40 @@
 					<key>gunnerTop</key>
 					<label>Dorsal Gunner</label>
 					<slots>1</slots>
+					<slotsToOperate>1</slotsToOperate>
+					<handlingTypes>Turret</handlingTypes>
+					<turretIds>
+						<li>dorsalGun</li>
+					</turretIds>
+					<hitbox>
+						<side>Body</side>
+					</hitbox>
 					
+				</li>
+				<li>
+					<key>gunnerFront</key>
+					<label>Nose Gunner</label>
+					<slots>1</slots>
+					<slotsToOperate>1</slotsToOperate>
+					<handlingTypes>Turret</handlingTypes>
+					<turretIds>
+						<li>noseGun</li>
+					</turretIds>
+					
+					<hitbox>
+						<side>Body</side>
+					</hitbox>
+					
+				</li>
+				<li>
+					<key>gunnerTail</key>
+					<label>Tail Gunner</label>
+					<slots>1</slots>
+					<slotsToOperate>1</slotsToOperate>
+					<handlingTypes>Turret</handlingTypes>
+					<turretIds>
+						<li>tailGun</li>
+					</turretIds>
 					<hitbox>
 						<side>Body</side>
 					</hitbox>
@@ -355,30 +388,30 @@
 						</renderProperties>
 						<defaultAngleRotated>0</defaultAngleRotated>
 						<angleRestricted>(290,70)</angleRestricted>
-						<gizmoLabel>Twin Lascannons</gizmoLabel>
+						<gizmoLabel>Nose Lascannons</gizmoLabel>
 						
 						<aimPieOffset>(0, 2.55)</aimPieOffset>
 						
 						<key>noseGun</key>
 					</li>
 					<li>
-						<turretDef>GW_Marauder_Bomber_Dorsal</turretDef>
+						<turretDef>GW_Marauder_Bolter</turretDef>
 						
 						<renderProperties>
-							<north>(0, 2.25)</north>
+							<north>(0, 2)</north>
 							<south>(-1, -3.5)</south>
 							<east>(3.5, -1.2)</east>
 						</renderProperties>
 						<defaultAngleRotated>180</defaultAngleRotated>
 						<angleRestricted>(80,280)</angleRestricted>
-						<gizmoLabel>Dorsal Gun</gizmoLabel>
+						<gizmoLabel>Dorsal Bolters</gizmoLabel>
 						<drawLayer>3</drawLayer>
 						<aimPieOffset>(0, 2.55)</aimPieOffset>
 						
 						<key>dorsalGun</key>
 					</li>
 					<li>
-						<turretDef>GW_Marauder_Bomber_Tail</turretDef>
+						<turretDef>GW_Marauder_Bolter</turretDef>
 						
 						<renderProperties>
 							<north>(0, -8)</north>
@@ -387,7 +420,7 @@
 						</renderProperties>
 						<defaultAngleRotated>180</defaultAngleRotated>
 						<angleRestricted>(120,240)</angleRestricted>
-						<gizmoLabel>Heavy Boltor</gizmoLabel>
+						<gizmoLabel>Tail Bolters</gizmoLabel>
 						<drawLayer>0</drawLayer>
 						<aimPieOffset>(0, 2.55)</aimPieOffset>
 						
