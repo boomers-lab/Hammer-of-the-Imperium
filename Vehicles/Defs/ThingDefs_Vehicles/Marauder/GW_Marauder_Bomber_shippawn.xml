@@ -169,7 +169,7 @@
 				</li>
 				<li>
 					<key>bombardier</key>
-					<label>bombardier</label>
+					<label>Bombardier</label>
 					<slots>1</slots>
 					
 					<hitbox>
@@ -186,21 +186,6 @@
 					<turretIds>
 						<li>dorsalGun</li>
 					</turretIds>
-					<hitbox>
-						<side>Body</side>
-					</hitbox>
-					
-				</li>
-				<li>
-					<key>gunnerFront</key>
-					<label>Nose Gunner</label>
-					<slots>1</slots>
-					<slotsToOperate>1</slotsToOperate>
-					<handlingTypes>Turret</handlingTypes>
-					<turretIds>
-						<li>noseGun</li>
-					</turretIds>
-					
 					<hitbox>
 						<side>Body</side>
 					</hitbox>
@@ -377,57 +362,8 @@
 				<def>GW_Marauder_Bomber_UpgradeTree</def>
 			</li>
 			<li Class="Vehicles.CompProperties_VehicleTurrets">
-				<turrets>
-					<li>
-						<turretDef>GW_Marauder_Bomber_Nose</turretDef>
-						
-						<renderProperties>
-							<north>(0, 8)</north>
-							<south>(1, -3.5)</south>
-							<east>(3.5, 0.1)</east>
-						</renderProperties>
-						<defaultAngleRotated>0</defaultAngleRotated>
-						<angleRestricted>(290,70)</angleRestricted>
-						<gizmoLabel>Nose Lascannons</gizmoLabel>
-						
-						<aimPieOffset>(0, 2.55)</aimPieOffset>
-						
-						<key>noseGun</key>
-					</li>
-					<li>
-						<turretDef>GW_Marauder_Bolter</turretDef>
-						
-						<renderProperties>
-							<north>(0, 2)</north>
-							<south>(-1, -3.5)</south>
-							<east>(3.5, -1.2)</east>
-						</renderProperties>
-						<defaultAngleRotated>180</defaultAngleRotated>
-						<angleRestricted>(80,280)</angleRestricted>
-						<gizmoLabel>Dorsal Bolters</gizmoLabel>
-						<drawLayer>3</drawLayer>
-						<aimPieOffset>(0, 2.55)</aimPieOffset>
-						
-						<key>dorsalGun</key>
-					</li>
-					<li>
-						<turretDef>GW_Marauder_Bolter</turretDef>
-						
-						<renderProperties>
-							<north>(0, -8)</north>
-							<south>(-5.4, -2.5)</south>
-							<east>(1.5, -5.7)</east>
-						</renderProperties>
-						<defaultAngleRotated>180</defaultAngleRotated>
-						<angleRestricted>(120,240)</angleRestricted>
-						<gizmoLabel>Tail Bolters</gizmoLabel>
-						<drawLayer>0</drawLayer>
-						<aimPieOffset>(0, 2.55)</aimPieOffset>
-						
-						<key>tailGun</key>
-					</li>
-				</turrets>
-			</li>
+				<turrets></turrets>
+				</li>
 			<li Class="Vehicles.CompProperties_VehicleLauncher">
 				<launchProtocol Class="Vehicles.PropellerTakeoff">
 					<launchProperties Class = "Vehicles.PropellerProtocolProperties">
