@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_Baneblade_MainTurret</defName>
+		<label>High Caliber Round</label>
+		<thingClass>Projectile_Explosive</thingClass>
+		<graphicData>
+			<texPath>Things/Projectiles/Bolter_Projectile</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<projectile>
+			<damageDef>Bomb</damageDef>
+			<damageAmountBase>200</damageAmountBase>
+			<speed>190</speed>
+			<explosionRadius>5.9</explosionRadius>
+			<soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+			<soundExplode>MortarBomb_Explode</soundExplode>
+			<soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
+			<soundAmbient>MortarRound_Ambient</soundAmbient>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_Demolisher_Round</defName>
+		<label>High Caliber Round</label>
+		<thingClass>Projectile_Explosive</thingClass>
+		<graphicData>
+			<texPath>Things/Projectiles/Bolter_Projectile</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<projectile>
+			<damageDef>Bomb</damageDef>
+			<damageAmountBase>700</damageAmountBase>
+			<speed>190</speed>
+			<explosionRadius>8.9</explosionRadius>
+			<soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+			<soundExplode>MortarBomb_Explode</soundExplode>
+			<soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
+			<soundAmbient>MortarRound_Ambient</soundAmbient>
+		</projectile>
+	</ThingDef>
+
+	<Vehicles.VehicleTurretDef ParentName="VehicleTurretBase">
+		<defName>GW_Baneblade_PrimaryTurret</defName>
+		<label>Baneblade main cannon</label>
+		<description>A turret-mounted Baneblade Cannon, used on the eponymous Baneblade heavy tank. Fires 250mm Battle Cannon shells.</description>
+		<turretType>Rotatable</turretType>
+		<shotSound>Shot_TurretSniper</shotSound>
+		<projectile>Bullet_Baneblade_MainTurret</projectile>
+		<reloadTimer>30.0</reloadTimer>
+		<warmUpTimer>4.0</warmUpTimer>
+		<magazineCapacity>1</magazineCapacity>
+		<chargePerAmmoCount>1</chargePerAmmoCount>
+		<genericAmmo>true</genericAmmo>
+		<hitFlags>IntendedTarget</hitFlags>
+		<autoSnapTargeting>false</autoSnapTargeting>
+		<rotationSpeed>3.5</rotationSpeed>
+
+		<projectileOffset>9.25</projectileOffset>
+
+		<projectileShifting>
+			<li>-0.5</li>
+		</projectileShifting>
+
+		<minRange>5</minRange>
+
+		<maxRange>70.9</maxRange>
+		<recoil>
+			<distanceTotal>0.0</distanceTotal>
+			<distancePerTick>0.0</distancePerTick>
+			<speedMultiplierPostRecoil>0.0</speedMultiplierPostRecoil>
+		</recoil>
+		<attachProjectileFlag>GW_Tank</attachProjectileFlag>
+		<fireModes>
+			<li>
+				<shotsPerBurst>1</shotsPerBurst>
+				<ticksBetweenShots>2</ticksBetweenShots>
+				<ticksBetweenBursts>5</ticksBetweenBursts>
+				<label>Single</label>
+				<spreadRadius>7</spreadRadius>
+				<texPath>UI/Gizmos/FireRate_Single</texPath>
+			</li>
+		</fireModes>
+		<graphicData>
+			<texPath>Things/Vehicles/Baneblade/BaneBlade_MainCannon</texPath>
+			<graphicClass>Vehicles.Graphic_Turret</graphicClass>
+			<shaderType>CutoutComplexPattern</shaderType>
+			<drawSize>(14, 14)</drawSize>
+			<layer>4</layer>
+		</graphicData>
+		<ammunition>
+			<thingDefs>
+				<li>GW_BanePrimaryCannonShellNonCE</li>
+			</thingDefs>
+		</ammunition>
+		<motes>
+			<li>
+				<cycles>1</cycles>
+				<moteDef>Mote_GW_Plume</moteDef>
+				<animationType>Reset</animationType>
+			</li>
+		</motes>
+	</Vehicles.VehicleTurretDef>
+
+	<Vehicles.VehicleTurretDef ParentName="VehicleTurretBase">
+		<defName>GW_Baneblade_CoaaxTurret</defName>
+		<label>Baneblade Coax cannon</label>
+		<description>A coaxial autocannon slaved to the Baneblade Cannon. Fires 0.787 cal autocannon rounds.</description>
+		<turretType>Rotatable</turretType>
+		<shotSound>Shot_TurretSniper</shotSound>
+		<projectile>Bullet_Predator_MainTurret</projectile>
+		<reloadTimer>10.0</reloadTimer>
+		<warmUpTimer>0.0</warmUpTimer>
+		<magazineCapacity>30</magazineCapacity>
+		<chargePerAmmoCount>1</chargePerAmmoCount>
+		<genericAmmo>true</genericAmmo>
+		<hitFlags>IntendedTarget</hitFlags>
+		<autoSnapTargeting>false</autoSnapTargeting>
+		<rotationSpeed>3.5</rotationSpeed>
+		<projectileOffset>4.0</projectileOffset>
+		<projectileShifting>
+			<li>-0.0</li>
+		</projectileShifting>
+		<minRange>5</minRange>
+		<maxRange>45.9</maxRange>
+		<recoil>
+			<distanceTotal>0.0</distanceTotal>
+			<distancePerTick>0.0</distancePerTick>
+			<speedMultiplierPostRecoil>0.0</speedMultiplierPostRecoil>
+		</recoil>
+		<attachProjectileFlag>GW_Tank</attachProjectileFlag>
+		<fireModes>
+			<li>
+				<shotsPerBurst>5</shotsPerBurst>
+				<ticksBetweenShots>12</ticksBetweenShots>
+				<ticksBetweenBursts>90</ticksBetweenBursts>
+				<spreadRadius>1</spreadRadius>
+				<label>Burst</label>
+				<texPath>UI/Gizmos/FireRate_Burst</texPath>
+			</li>
+		</fireModes>
+		<graphicData>
+			<texPath>Things/Vehicles/Baneblade/BaneBlade_CoaxGun</texPath>
+			<graphicClass>Vehicles.Graphic_Turret</graphicClass>
+			<shaderType>CutoutComplexPattern</shaderType>
+			<drawSize>(3, 5)</drawSize>
+			<layer>3</layer>
+		</graphicData>
+		<ammunition>
+			<thingDefs>
+				<li>GW_AutocannonammoNonCE</li>
+			</thingDefs>
+		</ammunition>
+		<motes>
+			<li>
+				<cycles>1</cycles>
+				<moteDef>Mote_GW_Plume</moteDef>
+				<animationType>Reset</animationType>
+			</li>
+		</motes>
+	</Vehicles.VehicleTurretDef>
+
+	<Vehicles.VehicleTurretDef ParentName="VehicleTurretBase">
+		<defName>GW_Baneblade_Lasgun</defName>
+		<label>lasgun</label>
+		<description>A turret-mounted lascannon, used on the Baneblade as secondary turrets. Consumes lascannon battery packs.</description>
+		
+		<turretType>Rotatable</turretType>
+		<shotSound>OverlordLascannon</shotSound>
+		
+		<projectile>GW_Valkyrielas</projectile>
+		<reloadTimer>3.5</reloadTimer>
+		<warmUpTimer>0.4</warmUpTimer>
+		
+		<magazineCapacity>60</magazineCapacity>
+		<genericAmmo>true</genericAmmo>
+		
+		<hitFlags>IntendedTarget</hitFlags>
+		
+		<autoSnapTargeting>false</autoSnapTargeting>
+		<rotationSpeed>2.95</rotationSpeed>
+		
+		<projectileOffset>0</projectileOffset>
+		
+		<minRange>1</minRange>
+		<maxRange>42.9</maxRange>
+		
+		
+		
+		<fireModes>
+			<li>
+				<shotsPerBurst>1</shotsPerBurst>
+				<ticksBetweenShots>5</ticksBetweenShots>
+				<ticksBetweenBursts>150</ticksBetweenBursts>
+				<spreadRadius>1</spreadRadius>
+				<label>Burst</label>
+				<texPath>UI/Gizmos/FireRate_Burst</texPath>
+			</li>
+		</fireModes>
+
+		<graphicData>
+			<texPath>Things/Vehicles/Baneblade/BaneBlade_SponsonGun</texPath>
+			<graphicClass>Vehicles.Graphic_Turret</graphicClass>
+			<shaderType>CutoutComplexPattern</shaderType>
+			<drawSize>(8, 8)</drawSize>
+			<layer>3</layer>
+		</graphicData>
+		
+		<ammunition>
+			<thingDefs>
+				<li>GW_LascannonammoNonCE</li>
+			</thingDefs>
+		</ammunition>
+	</Vehicles.VehicleTurretDef>
+
+	<Vehicles.VehicleTurretDef ParentName="VehicleTurretBase">
+		<defName>GW_Baneblade_BoltersecondaryTurret</defName>
+		<label>Baneblade main cannon</label>
+		<description>A turret-mounted twin-linked heavy bolter, used as a secondary turret on the Baneblade. Fires 0.998 cal bolts.</description>
+		<turretType>Rotatable</turretType>
+		<shotSound>Shot_TurretSniper</shotSound>
+		<projectile>HP_Bullet_HeavyBolter</projectile>
+		<reloadTimer>7.8</reloadTimer>
+		<warmUpTimer>1.0</warmUpTimer>
+		<magazineCapacity>100</magazineCapacity>
+		<chargePerAmmoCount>1</chargePerAmmoCount>
+		<genericAmmo>true</genericAmmo>
+		<hitFlags>IntendedTarget</hitFlags>
+		<autoSnapTargeting>false</autoSnapTargeting>
+		<rotationSpeed>3.5</rotationSpeed>
+		<projectileOffset>4.0</projectileOffset>
+		<projectileShifting>
+			<li>-0.2</li>
+			<li>0.2</li>
+		</projectileShifting>
+		<minRange>5</minRange>
+		<maxRange>45.9</maxRange>
+		<recoil>
+			<distanceTotal>0.0</distanceTotal>
+			<distancePerTick>0.0</distancePerTick>
+			<speedMultiplierPostRecoil>0.0</speedMultiplierPostRecoil>
+		</recoil>
+		<attachProjectileFlag>GW_Tank</attachProjectileFlag>
+		<fireModes>
+			<li>
+				<shotsPerBurst>5</shotsPerBurst>
+				<ticksBetweenShots>9</ticksBetweenShots>
+				<ticksBetweenBursts>90</ticksBetweenBursts>
+				<label>Auto</label>
+				<texPath>UI/Gizmos/FireRate_Auto</texPath>
+			</li>
+		</fireModes>
+		<graphicData>
+			<texPath>Things/Vehicles/Baneblade/BaneBlade_ExtraFrontGun</texPath>
+			<graphicClass>Vehicles.Graphic_Turret</graphicClass>
+			<shaderType>CutoutComplexPattern</shaderType>
+			<drawSize>(8, 8)</drawSize>
+			<layer>2</layer>
+		</graphicData>
+		<ammunition>
+			<thingDefs>
+				<li>GW_HeavyBolterNonCE</li>
+			</thingDefs>
+		</ammunition>
+		<motes>
+			<li>
+				<cycles>1</cycles>
+				<moteDef>Mote_GW_SmallPlume</moteDef>
+				<animationType>Reset</animationType>
+			</li>
+		</motes>
+	</Vehicles.VehicleTurretDef>
+
+	<Vehicles.VehicleTurretDef ParentName="VehicleTurretBase">
+		<defName>GW_Baneblade_Demolisher</defName>
+		<label>Baneblade main cannon</label>
+		<description>A hull-mounted Demolisher Cannon used on the Baneblade. Fires 380mm demolisher shells.</description>
+		<turretType>Rotatable</turretType>
+		<shotSound>Shot_TurretSniper</shotSound>
+		<projectile>Bullet_Demolisher_Round</projectile>
+		<reloadTimer>30.0</reloadTimer>
+		<warmUpTimer>5.0</warmUpTimer>
+		<magazineCapacity>1</magazineCapacity>
+		<chargePerAmmoCount>1</chargePerAmmoCount>
+		<genericAmmo>true</genericAmmo>
+		<hitFlags>IntendedTarget</hitFlags>
+		<autoSnapTargeting>false</autoSnapTargeting>
+		<rotationSpeed>3.5</rotationSpeed>
+		<projectileOffset>4.0</projectileOffset>
+		<projectileShifting>
+			<li>-0.0</li>
+		</projectileShifting>
+		<minRange>5</minRange>
+		<maxRange>45.9</maxRange>
+		<recoil>
+			<distanceTotal>0.0</distanceTotal>
+			<distancePerTick>0.0</distancePerTick>
+			<speedMultiplierPostRecoil>0.0</speedMultiplierPostRecoil>
+		</recoil>
+		<attachProjectileFlag>GW_Tank</attachProjectileFlag>
+		<fireModes>
+			<li>
+				<shotsPerBurst>100</shotsPerBurst>
+				<ticksBetweenShots>2</ticksBetweenShots>
+				<ticksBetweenBursts>5</ticksBetweenBursts>
+				<label>Single</label>
+				<spreadRadius>7</spreadRadius>
+				<texPath>UI/Gizmos/FireRate_Single</texPath>
+			</li>
+		</fireModes>
+		<graphicData>
+			<texPath>Things/Vehicles/Baneblade/DemolisherIcon</texPath>
+			<graphicClass>Vehicles.Graphic_Turret</graphicClass>
+			<shaderType>CutoutComplexPattern</shaderType>
+			<drawSize>(0, 0)</drawSize>
+			<layer>4</layer>
+		</graphicData>
+		<ammunition>
+			<thingDefs>
+				<li>GW_BaneDemolisherCannonShellNonCE</li>
+			</thingDefs>
+		</ammunition>
+		<motes>
+			<li>
+				<cycles>1</cycles>
+				<moteDef>Mote_GW_SmallPlume</moteDef>
+				<animationType>Reset</animationType>
+			</li>
+		</motes>
+	</Vehicles.VehicleTurretDef>
+
+	<Vehicles.VehicleTurretDef ParentName="VehicleTurretBase">
+		<defName>GW_Baneblade_HeavyBolter</defName>
+		<label>A twin-linked, sponson-mounted heavy bolter used on the Baneblade. Fires 0.998 cal bolts.</label>
+		<description>bolt.</description>
+		<turretType>Rotatable</turretType>
+		<shotSound>HP_Heavy_Bolt_Gun_Sound</shotSound>
+		<projectile>HP_Bullet_HeavyBolter</projectile>
+		<reloadTimer>7.8</reloadTimer>
+		<warmUpTimer>1.0</warmUpTimer>
+		<magazineCapacity>100</magazineCapacity>
+		<chargePerAmmoCount>2</chargePerAmmoCount>
+		<genericAmmo>true</genericAmmo>
+		<hitFlags>IntendedTarget</hitFlags>
+		<autoSnapTargeting>false</autoSnapTargeting>
+		<rotationSpeed>2.0</rotationSpeed>
+		<projectileOffset>1.0</projectileOffset>
+		<projectileShifting>
+			<li>-0.2</li>
+			<li>0.2</li>
+		</projectileShifting>
+		<maxRange>28.9</maxRange>
+		<attachProjectileFlag>GW_Tank</attachProjectileFlag>
+		<fireModes>
+			<li>
+				<shotsPerBurst>5</shotsPerBurst>
+				<ticksBetweenShots>9</ticksBetweenShots>
+				<ticksBetweenBursts>90</ticksBetweenBursts>
+				<label>Auto</label>
+				<texPath>UI/Gizmos/FireRate_Auto</texPath>
+			</li>
+		</fireModes>
+		<graphicData>
+			<texPath>Things/Vehicles/Baneblade/BaneBlade_Sponson_ExtraGun</texPath>
+			<graphicClass>Vehicles.Graphic_Turret</graphicClass>
+			<shaderType>CutoutComplexPattern</shaderType>
+			<drawSize>(8, 8)</drawSize>
+			<layer>1</layer>
+		</graphicData>
+		<ammunition>
+			<thingDefs>
+				<li>GW_HeavyBolterNonCE</li>
+			</thingDefs>
+		</ammunition>
+	</Vehicles.VehicleTurretDef>
+
+
+
+
+
+
+
+
+</Defs>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_LemanRussExecutioner_MainTurret</defName>
+		<label>high-explosive shell</label>
+		<thingClass>Projectile_Explosive</thingClass>
+		<graphicData>
+			<texPath>Things/Projectiles/Plasma_Projectile</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>2</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>Bomb</damageDef>
+			<damageAmountBase>200</damageAmountBase>
+			<speed>50</speed>
+			<explosionRadius>2.9</explosionRadius>
+			<soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+			<soundExplode>MortarBomb_Explode</soundExplode>
+			<soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
+			<soundAmbient>MortarRound_Ambient</soundAmbient>
+			<explosionEffect>GW_PlasmaEffecter</explosionEffect>
+		</projectile>
+	</ThingDef>
+
+	<Vehicles.VehicleTurretDef ParentName="VehicleTurretBase">
+		<defName>GW_LemanRussExecutioner_MainTurret</defName>
+		<label>Leman Russ main cannon</label>
+		<description>The Lemann Russ Main Battle Cannon, a formidable weapon in the war-torn landscape of GrimWorld 40,000, is mounted on a heavily armored vehicle. The cannon boasts a rugged design with reinforced plating, reflecting the harsh aesthetic of the 41st millennium.\n\nPositioned on the vehicle's chassis, the cannon is a symbol of raw, devastating firepower. Its sleek barrel and menacing presence underscore its role as a primary anti-armor and anti-infantry weapon. Adorned with Imperial symbols, it signifies the might of the Imperium in the relentless battle against myriad threats.</description>
+		<turretType>Rotatable</turretType>
+		<shotSound>Shot_TurretSniper</shotSound>
+		<projectile>Bullet_LemanRussExecutioner_MainTurret</projectile>
+		<reloadTimer>12.0</reloadTimer>
+		<warmUpTimer>4.0</warmUpTimer>
+		<magazineCapacity>6</magazineCapacity>
+		<chargePerAmmoCount>1</chargePerAmmoCount>
+		<genericAmmo>true</genericAmmo>
+		<hitFlags>IntendedTarget</hitFlags>
+		<autoSnapTargeting>false</autoSnapTargeting>
+		<rotationSpeed>1.0</rotationSpeed>
+		<projectileOffset>4.0</projectileOffset>
+		<projectileShifting>
+			<li>-0.1</li>
+		</projectileShifting>
+		<minRange>5</minRange>
+		<maxRange>60.9</maxRange>
+		<recoil>
+			<distanceTotal>0.25</distanceTotal>
+			<distancePerTick>0.1</distancePerTick>
+			<speedMultiplierPostRecoil>0.25</speedMultiplierPostRecoil>
+		</recoil>
+		<attachProjectileFlag>GW_Tank</attachProjectileFlag>
+		<fireModes>
+			<li>
+				<shotsPerBurst>1</shotsPerBurst>
+				<ticksBetweenShots>22</ticksBetweenShots>
+				<ticksBetweenBursts>70</ticksBetweenBursts>
+				<label>Single</label>
+				<texPath>UI/Gizmos/FireRate_Single</texPath>
+			</li>
+		</fireModes>
+		<graphicData>
+			<texPath>Things/Vehicles/LemanRuss/LemanRussExecutioner_Cannon</texPath>
+			<graphicClass>Vehicles.Graphic_Turret</graphicClass>
+			<shaderType>CutoutComplexPattern</shaderType>
+			<drawSize>(6, 6)</drawSize>
+		</graphicData>
+		<ammunition>
+			<thingDefs>
+				<li>GW_HeavyPlasmaNonCE</li>
+			</thingDefs>
+		</ammunition>
+		<motes>
+			<li>
+				<cycles>1</cycles>
+				<moteDef>Mote_GW_Plume</moteDef>
+				<animationType>Reset</animationType>
+			</li>
+		</motes>
+	</Vehicles.VehicleTurretDef>
+
+</Defs>

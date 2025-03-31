@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_LemanRuss_MainTurret</defName>
+		<label>high-explosive shell</label>
+		<thingClass>Projectile_Explosive</thingClass>
+		<graphicData>
+			<texPath>Things/Projectile/ShellHighExplosive</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<projectile>
+			<damageDef>Bomb</damageDef>
+			<damageAmountBase>80</damageAmountBase>
+			<speed>90</speed>
+			<explosionRadius>5.9</explosionRadius>
+			<soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+			<soundExplode>MortarBomb_Explode</soundExplode>
+			<soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
+			<soundAmbient>MortarRound_Ambient</soundAmbient>
+		</projectile>
+	</ThingDef>
+
+	<Vehicles.VehicleTurretDef ParentName="VehicleTurretBase">
+		<defName>GW_LemanRuss_MainTurret</defName>
+		<label>Leman Russ main cannon</label>
+		<description>A turret-mounted Battle Cannon used on the Leman Russ battle tank. Fires 120mm battle cannon shells.</description>
+		<turretType>Rotatable</turretType>
+		<shotSound>Shot_TurretSniper</shotSound>
+		<projectile>Bullet_LemanRuss_MainTurret</projectile>
+		<reloadTimer>4.0</reloadTimer>
+		<warmUpTimer>4.0</warmUpTimer>
+		<magazineCapacity>1</magazineCapacity>
+		<chargePerAmmoCount>1</chargePerAmmoCount>
+		<genericAmmo>true</genericAmmo>
+		<hitFlags>IntendedTarget</hitFlags>
+		<autoSnapTargeting>false</autoSnapTargeting>
+		<rotationSpeed>1.5</rotationSpeed>
+		<projectileOffset>4.0</projectileOffset>
+		<projectileShifting>
+			<li>-0.1</li>
+		</projectileShifting>
+		<minRange>5</minRange>
+		<maxRange>50.9</maxRange>
+		<recoil>
+			<distanceTotal>0.25</distanceTotal>
+			<distancePerTick>0.1</distancePerTick>
+			<speedMultiplierPostRecoil>0.25</speedMultiplierPostRecoil>
+		</recoil>
+		<attachProjectileFlag>GW_Tank</attachProjectileFlag>
+		<fireModes>
+			<li>
+				<shotsPerBurst>1</shotsPerBurst>
+				<ticksBetweenShots>12</ticksBetweenShots>
+				<ticksBetweenBursts>60</ticksBetweenBursts>
+				<label>Single</label>
+				<texPath>UI/Gizmos/FireRate_Single</texPath>
+			</li>
+		</fireModes>
+		<graphicData>
+			<texPath>Things/Vehicles/LemanRuss/LemanRuss_CannonTop</texPath>
+			<graphicClass>Vehicles.Graphic_Turret</graphicClass>
+			<shaderType>CutoutComplexPattern</shaderType>
+			<drawSize>(6, 6)</drawSize>
+		</graphicData>
+		<ammunition>
+			<thingDefs>
+				<li>GW_BattleCannonShellNonCE</li>
+			</thingDefs>
+		</ammunition>
+		<motes>
+			<li>
+				<cycles>1</cycles>
+				<moteDef>Mote_GW_Plume</moteDef>
+				<animationType>Reset</animationType>
+			</li>
+		</motes>
+	</Vehicles.VehicleTurretDef>
+
+	<Vehicles.VehicleTurretDef ParentName="VehicleTurretBase">
+		<defName>GW_LemanRuss_HeavyBolter</defName>
+		<label>Leman Russ Heavy Bolter</label>
+		<description>A sponson-mounted heavy bolter used on the Leman Russ battle tank. Fires 0.998 cal bolts.</description>
+		<turretType>Rotatable</turretType>
+		<shotSound>Shot_Autocannon</shotSound>
+		<projectile>Bullet_HeavyBolter</projectile>
+		<reloadTimer>7.8</reloadTimer>
+		<warmUpTimer>1.0</warmUpTimer>
+		<magazineCapacity>100</magazineCapacity>
+		<chargePerAmmoCount>2</chargePerAmmoCount>
+		<genericAmmo>true</genericAmmo>
+		<hitFlags>IntendedTarget</hitFlags>
+		<autoSnapTargeting>false</autoSnapTargeting>
+		<rotationSpeed>2.0</rotationSpeed>
+		<projectileOffset>1.0</projectileOffset>
+		<maxRange>28.9</maxRange>
+		<attachProjectileFlag>GW_Tank</attachProjectileFlag>
+		<fireModes>
+			<li>
+				<shotsPerBurst>1</shotsPerBurst>
+				<ticksBetweenShots>9</ticksBetweenShots>
+				<ticksBetweenBursts>60</ticksBetweenBursts>
+				<label>Single</label>
+				<texPath>UI/Gizmos/FireRate_Single</texPath>
+			</li>
+			<li>
+				<shotsPerBurst>2</shotsPerBurst>
+				<ticksBetweenShots>9</ticksBetweenShots>
+				<ticksBetweenBursts>60</ticksBetweenBursts>
+				<spreadRadius>1</spreadRadius>
+				<label>Burst</label>
+				<texPath>UI/Gizmos/FireRate_Burst</texPath>
+			</li>
+			<li>
+				<shotsPerBurst>5</shotsPerBurst>
+				<ticksBetweenShots>9</ticksBetweenShots>
+				<ticksBetweenBursts>90</ticksBetweenBursts>
+				<label>Auto</label>
+				<texPath>UI/Gizmos/FireRate_Auto</texPath>
+			</li>
+		</fireModes>
+		<graphicData>
+			<texPath>Things/Vehicles/LemanRuss/LemanRuss_CannonSide</texPath>
+			<graphicClass>Vehicles.Graphic_Turret</graphicClass>
+			<shaderType>CutoutComplexPattern</shaderType>
+			<drawSize>(2.25, 2.25)</drawSize>
+		</graphicData>
+		<ammunition>
+			<thingDefs>
+				<li>GW_HeavyBolterNonCE</li>
+			</thingDefs>
+		</ammunition>
+	</Vehicles.VehicleTurretDef>
+
+</Defs>
