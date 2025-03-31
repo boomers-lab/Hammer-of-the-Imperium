@@ -9,7 +9,7 @@
           <li>
             <grains>
               <li Class="AudioGrain_Folder">
-                <clipPath>Lasgun</clipPath>
+                <clipPath>Weapons/HammerOfTheImperium/Lasgun</clipPath>
               </li>
             </grains>      
             <volumeRange>35~35</volumeRange>      
@@ -26,7 +26,7 @@
           <li>
             <grains>
               <li Class="AudioGrain_Folder">
-                <clipPath>LasgunB</clipPath>
+                <clipPath>Weapons/HammerOfTheImperium/LasgunB</clipPath>
               </li>
             </grains>      
             <volumeRange>40~40</volumeRange>      
@@ -43,7 +43,7 @@
           <li>
             <grains>
               <li Class="AudioGrain_Folder">
-                <clipPath>LasgunB</clipPath>
+                <clipPath>Weapons/HammerOfTheImperium/LasgunB</clipPath>
               </li>
             </grains>      
             <volumeRange>35~35</volumeRange>      
@@ -60,7 +60,7 @@
           <li>
             <grains>
               <li Class="AudioGrain_Folder">
-                <clipPath>Lasgun</clipPath>
+                <clipPath>Weapons/HammerOfTheImperium/Lasgun</clipPath>
               </li>
             </grains>      
             <volumeRange>30~30</volumeRange>      
@@ -77,7 +77,7 @@
           <li>
             <grains>
               <li Class="AudioGrain_Folder">
-                <clipPath>Lasgun</clipPath>
+                <clipPath>Weapons/HammerOfTheImperium/Lasgun</clipPath>
               </li>
             </grains>      
             <volumeRange>50~50</volumeRange>      
@@ -94,7 +94,7 @@
           <li>
             <grains>
               <li Class="AudioGrain_Folder">
-                <clipPath>LasgunB</clipPath>
+                <clipPath>Weapons/HammerOfTheImperium/LasgunB</clipPath>
               </li>
             </grains>      
             <volumeRange>30~30</volumeRange>      
@@ -111,7 +111,7 @@
           <li>
             <grains>
               <li Class="AudioGrain_Folder">
-                <clipPath>Hellgun</clipPath>
+                <clipPath>Weapons/HammerOfTheImperium/Hellgun</clipPath>
               </li>
             </grains>      
             <volumeRange>50~50</volumeRange>      
@@ -128,7 +128,7 @@
           <li>
             <grains>
               <li Class="AudioGrain_Folder">
-                <clipPath>Lasgun</clipPath>
+                <clipPath>Weapons/HammerOfTheImperium/Lasgun</clipPath>
               </li>
             </grains>      
             <volumeRange>30~30</volumeRange>      
@@ -145,7 +145,7 @@
           <li>
             <grains>
               <li Class="AudioGrain_Folder">
-                <clipPath>Lasgun</clipPath>
+                <clipPath>Weapons/HammerOfTheImperium/Lasgun</clipPath>
               </li>
             </grains>      
             <volumeRange>50~50</volumeRange>      

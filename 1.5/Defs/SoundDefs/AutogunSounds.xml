@@ -9,7 +9,7 @@
           <li>
             <grains>
               <li Class="AudioGrain_Folder">
-                <clipPath>AutogunC</clipPath>
+               <clipPath>Weapons/HammerOfTheImperium/AutogunC</clipPath>
               </li>
             </grains>      
             <volumeRange>40~40</volumeRange>      
@@ -26,7 +26,7 @@
           <li>
             <grains>
               <li Class="AudioGrain_Folder">
-                <clipPath>AutogunC</clipPath>
+               <clipPath>Weapons/HammerOfTheImperium/AutogunC</clipPath>
               </li>
             </grains>      
             <volumeRange>30~30</volumeRange>      
@@ -43,7 +43,7 @@
           <li>
             <grains>
               <li Class="AudioGrain_Folder">
-                <clipPath>AutogunA</clipPath>
+               <clipPath>Weapons/HammerOfTheImperium/AutogunA</clipPath>
               </li>
             </grains>      
             <volumeRange>35~35</volumeRange>      
@@ -60,7 +60,7 @@
           <li>
             <grains>
               <li Class="AudioGrain_Folder">
-                <clipPath>AutogunB</clipPath>
+               <clipPath>Weapons/HammerOfTheImperium/AutogunB</clipPath>
               </li>
             </grains>      
             <volumeRange>35~35</volumeRange>      
@@ -77,7 +77,7 @@
           <li>
             <grains>
               <li Class="AudioGrain_Folder">
-                <clipPath>ImperialShotgun</clipPath>
+               <clipPath>Weapons/HammerOfTheImperium/ImperialShotgun</clipPath>
               </li>
             </grains>      
             <volumeRange>40~40</volumeRange>      
@@ -94,7 +94,7 @@
           <li>
             <grains>
               <li Class="AudioGrain_Folder">
-                <clipPath>ImperialShotgun</clipPath>
+               <clipPath>Weapons/HammerOfTheImperium/ImperialShotgun</clipPath>
               </li>
             </grains>      
             <volumeRange>50~50</volumeRange>      
@@ -111,7 +111,7 @@
           <li>
             <grains>
               <li Class="AudioGrain_Folder">
-                <clipPath>Weapons/Boltgun</clipPath>
+               <clipPath>Weapons/Boltgun</clipPath>
               </li>
             </grains>      
             <volumeRange>35~35</volumeRange>      
