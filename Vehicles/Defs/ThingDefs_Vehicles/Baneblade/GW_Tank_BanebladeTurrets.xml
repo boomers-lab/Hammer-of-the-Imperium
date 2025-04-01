@@ -171,7 +171,7 @@
 		<turretType>Rotatable</turretType>
 		<shotSound>OverlordLascannon</shotSound>
 		
-		<projectile>GW_Valkyrielas</projectile>
+		<projectile>GW_LascanonShot</projectile>
 		<reloadTimer>3.5</reloadTimer>
 		<warmUpTimer>0.4</warmUpTimer>
 		
@@ -222,7 +222,7 @@
 		<description>A turret-mounted twin-linked heavy bolter, used as a secondary turret on the Baneblade. Fires 0.998 cal bolts.</description>
 		<turretType>Rotatable</turretType>
 		<shotSound>Shot_TurretSniper</shotSound>
-		<projectile>HP_Bullet_HeavyBolter</projectile>
+		<projectile>GW_Bullet_HeavyBolter</projectile>
 		<reloadTimer>7.8</reloadTimer>
 		<warmUpTimer>1.0</warmUpTimer>
 		<magazineCapacity>100</magazineCapacity>
@@ -338,7 +338,7 @@
 		<description>bolt.</description>
 		<turretType>Rotatable</turretType>
 		<shotSound>HP_Heavy_Bolt_Gun_Sound</shotSound>
-		<projectile>HP_Bullet_HeavyBolter</projectile>
+		<projectile>GW_Bullet_HeavyBolter</projectile>
 		<reloadTimer>7.8</reloadTimer>
 		<warmUpTimer>1.0</warmUpTimer>
 		<magazineCapacity>100</magazineCapacity>

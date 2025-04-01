@@ -107,7 +107,7 @@
         <verbs>
             <li>
                 <verbClass>Verb_Shoot</verbClass>
-                <defaultProjectile>GW_BuildingBullet_HeavyBolter</defaultProjectile>
+                <defaultProjectile>GW_Bullet_HeavyBolter</defaultProjectile>
                 <warmupTime>2</warmupTime>
                 <range>30</range>
                 <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
@@ -118,22 +118,6 @@
                 <consumeFuelPerShot>1</consumeFuelPerShot>
             </li>
         </verbs>
-    </ThingDef>
-
-    <ThingDef ParentName="BaseBullet">
-        <defName>GW_BuildingBullet_HeavyBolter</defName>
-        <label>heavy bolter round</label>
-        <graphicData>
-            <texPath>Things/Projectile/Bullet_Big</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-            <drawSize>1.2</drawSize>
-        </graphicData>
-        <projectile>
-            <damageDef>Bullet</damageDef>
-            <damageAmountBase>70</damageAmountBase>
-            <stoppingPower>0.5</stoppingPower>
-            <speed>70</speed>
-        </projectile>
     </ThingDef>
 
         <!-- Autocannon -->
@@ -472,7 +456,7 @@
         <verbs>
             <li>
                 <verbClass>Verb_Shoot</verbClass>
-                <defaultProjectile>GW_BuildingBullet_HeavyBolter</defaultProjectile>
+                <defaultProjectile>GW_Bullet_HeavyBolter</defaultProjectile>
                 <warmupTime>2</warmupTime>
                 <range>30</range>
                 <ticksBetweenBurstShots>10</ticksBetweenBurstShots>

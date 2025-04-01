@@ -1,25 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <Defs>
-	<!--===== this def can be deleted safely if you do not need a slot for a new projectile =====-->
-
-    <ThingDef ParentName="GW_LaserBullet" Class="VanillaWeaponsExpandedLaser.LaserBeamDef">
-        <defName>GW_Valkyrielas</defName>
-        <label>Lascanon shot</label>
-        <description>The Lascannon, a devastating energy weapon, is mounted on a formidable vehicle in the war-ridden GrimWorld 40,000. With a sleek design and ominous presence, this armament is affixed to the vehicle's battle-hardened chassis, embodying precision and destructive power against heavily armored foes. Bearing the Imperial Aquila, it symbolizes the unwavering might of the Imperium in the relentless struggle against darkness.</description>
-        <textures>
-            <li>Things/Projectiles/Las_Bolt</li>
-        </textures>
-        <seam>0</seam>
-        <causefireChance>0.08</causefireChance>
-        <projectile>
-            <damageDef>Burn</damageDef>
-            <damageAmountBase>100</damageAmountBase>
-            <armorPenetrationBase>1</armorPenetrationBase>
-            <stoppingPower>2.0</stoppingPower>
-        </projectile>
-    </ThingDef>
-
 	<!--===== Below This are the sounds for the Overlord weapons, and by extension, the astartes Bike =====-->
 
 	
@@ -31,7 +12,7 @@
 		<turretType>Rotatable</turretType>
 		<shotSound>OverlordLascannon</shotSound>
 		
-		<projectile>GW_Valkyrielas</projectile>
+		<projectile>GW_LascanonShot</projectile>
 		<reloadTimer>3.5</reloadTimer>
 		<warmUpTimer>0.4</warmUpTimer>
 		
@@ -97,7 +78,7 @@
 
 			<shotSound>OverlordHBolter</shotSound>
 
-			<projectile>Bullet_HeavyBolter</projectile>
+			<projectile>GW_Bullet_HeavyBolter</projectile>
 
 			<reloadTimer>7.8</reloadTimer>
 			<warmUpTimer>1.0</warmUpTimer>

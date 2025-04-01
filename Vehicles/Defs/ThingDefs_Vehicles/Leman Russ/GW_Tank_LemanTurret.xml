@@ -84,7 +84,7 @@
 		<description>A sponson-mounted heavy bolter used on the Leman Russ battle tank. Fires 0.998 cal bolts.</description>
 		<turretType>Rotatable</turretType>
 		<shotSound>Shot_Autocannon</shotSound>
-		<projectile>Bullet_HeavyBolter</projectile>
+		<projectile>GW_Bullet_HeavyBolter</projectile>
 		<reloadTimer>7.8</reloadTimer>
 		<warmUpTimer>1.0</warmUpTimer>
 		<magazineCapacity>100</magazineCapacity>
