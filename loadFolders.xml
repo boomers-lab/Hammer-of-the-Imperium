@@ -9,6 +9,6 @@
 		<li>/</li>
 		<li>1.5</li>
         <li IfModActive="Phonicmas.40kAbhumans">1.5/Mods/Abhumans</li>
-		<li IfModActive="Grimworld.Vehicles">Vehicles</li>
+		<li IfModActive="SmashPhil.VehicleFramework">Vehicles</li>
 	</v1.5>
 </loadFolders>
