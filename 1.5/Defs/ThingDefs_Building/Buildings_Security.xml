@@ -243,7 +243,7 @@
         <verbs>
             <li>
                 <verbClass>Verb_Shoot</verbClass>
-                <defaultProjectile>GW_BuildingBullet_Autocannon</defaultProjectile>
+                <defaultProjectile>GW_Bullet_Autocannon</defaultProjectile>
                 <warmupTime>2</warmupTime>
                 <range>35</range>
                 <ticksBetweenBurstShots>17</ticksBetweenBurstShots>
@@ -254,23 +254,6 @@
                 <consumeFuelPerShot>1</consumeFuelPerShot>
             </li>
         </verbs>
-    </ThingDef>
-
-    <ThingDef ParentName="BaseBullet">
-        <defName>GW_BuildingBullet_Autocannon</defName>
-        <label>autocannon round</label>
-        <graphicData>
-            <texPath>Things/Projectile/Bullet_Big</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-            <drawSize>1.2</drawSize>
-        </graphicData>
-        <projectile>
-            <damageDef>Bullet</damageDef>
-            <damageAmountBase>90</damageAmountBase>
-            <stoppingPower>1</stoppingPower>
-            <armorPenetrationBase>0.40</armorPenetrationBase><!--Supposed to have better armor piercing abilities than the heavy bolter-->
-            <speed>88</speed>
-        </projectile>
     </ThingDef>
 
         <!-- Lascannon -->
@@ -375,7 +358,7 @@
         <verbs>
             <li>
                 <verbClass>Verb_Shoot</verbClass>
-                <defaultProjectile>GW_BuildingBullet_LascanonShot</defaultProjectile>
+                <defaultProjectile>GW_LascanonShot</defaultProjectile>
                 <warmupTime>2</warmupTime>
                 <range>40</range>
                 <ticksBetweenBurstShots>17</ticksBetweenBurstShots>
@@ -386,23 +369,6 @@
                 <consumeFuelPerShot>1</consumeFuelPerShot>
             </li>
         </verbs>
-    </ThingDef>
-
-    <ThingDef ParentName="GW_LaserBullet" Class="VanillaWeaponsExpandedLaser.LaserBeamDef">
-        <defName>GW_BuildingBullet_LascanonShot</defName>
-        <label>lascannon shot</label>
-        <description>An heavily charged beam of focused light fired from a lascannon.</description>
-        <textures>
-            <li>Things/Projectiles/Las_Bolt</li>
-        </textures>
-        <seam>0</seam>
-        <causefireChance>0.08</causefireChance>
-        <projectile>
-            <damageDef>Burn</damageDef>
-            <damageAmountBase>120</damageAmountBase>
-            <armorPenetrationBase>1</armorPenetrationBase>
-            <stoppingPower>1.8</stoppingPower>
-        </projectile>
     </ThingDef>
 
             <!--Tarantula Heavy Bolter-->
@@ -616,7 +582,7 @@
         <verbs>
             <li>
                 <verbClass>Verb_Shoot</verbClass>
-                <defaultProjectile>GW_BuildingBullet_LascanonShot</defaultProjectile>
+                <defaultProjectile>GW_LascanonShot</defaultProjectile>
                 <warmupTime>2</warmupTime>
                 <range>40</range>
                 <ticksBetweenBurstShots>17</ticksBetweenBurstShots>
