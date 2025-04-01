@@ -303,7 +303,7 @@
 
 		<ammunition>
 			<thingDefs>
-				<li>GW_HeavyBolterNonCE</li>
+				<li>GW_AutocannonammoNonCE</li>
 			</thingDefs>
 		</ammunition>
 	</Vehicles.VehicleTurretDef>
