@@ -154,12 +154,12 @@
 
 			<shotSound>Shot_Autocannon</shotSound>
 
-			<projectile>GW_Bullet_HeavyBolter</projectile>
+			<projectile>GW_Bullet_Assaultcannon</projectile>
 
 			<reloadTimer>7.8</reloadTimer>
 			<warmUpTimer>1.0</warmUpTimer>
 
-			<magazineCapacity>200</magazineCapacity>
+			<magazineCapacity>400</magazineCapacity>
 			<chargePerAmmoCount>1</chargePerAmmoCount>
 			<genericAmmo>true</genericAmmo>
 
@@ -178,30 +178,30 @@
 
 			<attachProjectileFlag>GW_Tank</attachProjectileFlag>
 
-			<fireModes>
+		<fireModes>
 			<li>
-				<shotsPerBurst>10</shotsPerBurst>
-				<ticksBetweenShots>2</ticksBetweenShots>
-				<ticksBetweenBursts>35</ticksBetweenBursts>
+				<shotsPerBurst>15</shotsPerBurst>
+				<ticksBetweenShots>0.5</ticksBetweenShots>
+				<ticksBetweenBursts>30</ticksBetweenBursts>
 				<label>Single</label>
 				<texPath>UI/Gizmos/FireRate_Single</texPath>
 			</li>
 			<li>
-				<shotsPerBurst>30</shotsPerBurst>
-				<ticksBetweenShots>2</ticksBetweenShots>
-				<ticksBetweenBursts>45</ticksBetweenBursts>
+				<shotsPerBurst>50</shotsPerBurst>
+				<ticksBetweenShots>0.5</ticksBetweenShots>
+				<ticksBetweenBursts>30</ticksBetweenBursts>
 				<spreadRadius>1</spreadRadius>
 				<label>Burst</label>
 				<texPath>UI/Gizmos/FireRate_Burst</texPath>
 			</li>
 			<li>
-				<shotsPerBurst>50</shotsPerBurst>
-				<ticksBetweenShots>2</ticksBetweenShots>
+				<shotsPerBurst>100</shotsPerBurst>
+				<ticksBetweenShots>0.5</ticksBetweenShots>
 				<ticksBetweenBursts>45</ticksBetweenBursts>
 				<label>Auto</label>
 				<texPath>UI/Gizmos/FireRate_Auto</texPath>
 			</li>
-			</fireModes>
+		</fireModes>
 
 		<graphicData>
 			<texPath>Things/Vehicles/Marauder/MarauderAssaultCannons</texPath>
