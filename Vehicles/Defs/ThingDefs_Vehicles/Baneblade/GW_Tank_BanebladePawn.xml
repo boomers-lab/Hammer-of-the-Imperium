@@ -11,7 +11,7 @@
       <li>
         <grains>
           <li Class="AudioGrain_Clip">
-            <clipPath>Vehicles/Baneblade_Drive</clipPath>
+            <clipPath>Baneblade_Drive</clipPath>
           </li>
         </grains>
         <pitchRange>0.99~1.01</pitchRange>

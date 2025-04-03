@@ -13,7 +13,7 @@
       <li>
         <grains>
           <li Class="AudioGrain_Clip">
-            <clipPath>Vehicles/JetLoop</clipPath>
+            <clipPath>JetLoop</clipPath>
           </li>
         </grains>
         <pitchRange>0.99~1.01</pitchRange>
@@ -33,7 +33,7 @@
       <li>
         <grains>
           <li Class="AudioGrain_Clip">
-            <clipPath>Vehicles/JetStart5s</clipPath>
+            <clipPath>JetStart5s</clipPath>
           </li>
         </grains>
         <pitchRange>0.99~1.01</pitchRange>
@@ -51,7 +51,7 @@
       <li>
         <grains>
           <li Class="AudioGrain_Clip">
-            <clipPath>Vehicles/JetStop5s</clipPath>
+            <clipPath>JetStop5s</clipPath>
           </li>
         </grains>
         <pitchRange>0.99~1.01</pitchRange>

@@ -1,65 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 
 <Defs>
-
-
-  <SoundDef>
-    <sustain>true</sustain>
-    <defName>valkloop</defName>  
-    <context>MapOnly</context>  
-    <maxSimultaneous>1</maxSimultaneous>
-    <priorityMode>PrioritizeNearest</priorityMode>   
-    <subSounds>
-      <li>
-        <grains>
-          <li Class="AudioGrain_Clip">
-            <clipPath>JetLoop</clipPath>
-          </li>
-        </grains>
-        <pitchRange>0.99~1.01</pitchRange>
-        <volumeRange>35~35</volumeRange>
-        <sustainAttack>2.5</sustainAttack>      
-        <sustainRelease>2.5</sustainRelease>
-      </li>
-    </subSounds>
-  </SoundDef>
-
-  <SoundDef>
-    <defName>valkfly</defName>  
-    <context>MapOnly</context>  
-    <maxSimultaneous>1</maxSimultaneous>  
-    <priorityMode>PrioritizeNearest</priorityMode>  
-    <subSounds>
-      <li>
-        <grains>
-          <li Class="AudioGrain_Clip">
-            <clipPath>JetStart5s</clipPath>
-          </li>
-        </grains>
-        <pitchRange>0.99~1.01</pitchRange>
-        <volumeRange>35~35</volumeRange>
-      </li>
-    </subSounds>
-  </SoundDef>
-
-  <SoundDef>
-    <defName>valklanding</defName>  
-    <context>MapOnly</context>  
-    <maxSimultaneous>1</maxSimultaneous>
-    <priorityMode>PrioritizeNearest</priorityMode>   
-    <subSounds>
-      <li>
-        <grains>
-          <li Class="AudioGrain_Clip">
-            <clipPath>JetStop5s</clipPath>
-          </li>
-        </grains>
-        <pitchRange>0.99~1.01</pitchRange>
-        <volumeRange>35~35</volumeRange>
-      </li>
-    </subSounds>
-  </SoundDef>
-
 	<Vehicles.VehicleDef ParentName="BaseVehiclePawn">
 		<defName>MarauderBomberpawn</defName>
 		<label>Marauder</label>
@@ -107,33 +48,33 @@
 			<li>
 				<start>AerialVehicleLaunch</start>
 				<stop>AerialVehicleLeftMap</stop>
-				<value>valkloop</value>
+				<value>jetloop</value>
 			</li>
 			<li>
 				<start>AerialVehicleLanding</start>
 				<stop>Spawned</stop>
-				<value>valkloop</value>
+				<value>jetloop</value>
 			</li>
 			<li>
 				<start>AerialVehicleCrashLanding</start>
 				<stop>Spawned</stop>
-				<value>valkloop</value>
+				<value>jetloop</value>
 			</li>
 			<li>
 				<start>IgnitionOn</start>
 				<stop>IgnitionOff</stop>
-				<value>valkloop</value>
+				<value>jetloop</value>
 			</li>
 		</soundSustainersOnEvent>
 		
 		<soundOneShotsOnEvent Inherit = "False">
 			<li>
 				<key>AerialVehicleLaunch</key>
-				<value>valkfly</value>
+				<value>jetfly</value>
 			</li>
 			<li>
 				<key>Spawned</key>
-				<value>valklanding</value>
+				<value>jetlanding</value>
 			</li>
 		</soundOneShotsOnEvent>
 
