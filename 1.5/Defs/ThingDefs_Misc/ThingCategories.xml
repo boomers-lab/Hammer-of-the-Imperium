@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingCategoryDef>
+      <defName>GW_HOI_EarthshakerShells</defName>
+      <label>earthshaker shells</label>
+      <parent>Manufactured</parent>
+      <iconPath>Things/Ammo/HMMR_EarthshakerAmmo/HMMR_EarthshakerAmmo_a</iconPath>
+    </ThingCategoryDef>
+</Defs>

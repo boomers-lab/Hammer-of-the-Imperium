@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<KCSG.StructureLayoutDef>
+  <defName>sandbagBunkerBolterN</defName>
+  <spawnConduits>false</spawnConduits>
+  <layouts>
+    <li>
+      <li>Sandbags_Cloth,Sandbags_Cloth,GW_Trenches,Sandbags_Cloth,Sandbags_Cloth</li>
+      <li>Sandbags_Cloth,GW_Trenches,GW_Trenches,GW_Trenches,Sandbags_Cloth</li>
+      <li>Sandbags_Cloth,GW_Trenches,GW_Building_HeavyBolter_Steel_North,GW_Trenches,Sandbags_Cloth</li>
+      <li>Sandbags_Cloth,Sandbags_Cloth,Sandbags_Cloth,Sandbags_Cloth,Sandbags_Cloth</li>
+    </li>
+  </layouts>
+  <needRoofClearance>true</needRoofClearance>
+  <tags>
+    <li>bunker</li>
+  </tags>
+  <modRequirements>
+    <li>grimworld.astramilitarum</li>
+  </modRequirements>
+</KCSG.StructureLayoutDef>
+
+<KCSG.StructureLayoutDef>
+  <defName>sandbagBunkerBolterS</defName>
+  <spawnConduits>false</spawnConduits>
+  <layouts>
+    <li>
+        <li>Sandbags_Cloth,Sandbags_Cloth,Sandbags_Cloth,Sandbags_Cloth,Sandbags_Cloth</li>
+        <li>Sandbags_Cloth,GW_Trenches,GW_Building_HeavyBolter_Steel_South,GW_Trenches,Sandbags_Cloth</li>
+        <li>Sandbags_Cloth,GW_Trenches,GW_Trenches,GW_Trenches,Sandbags_Cloth</li>
+        <li>Sandbags_Cloth,Sandbags_Cloth,GW_Trenches,Sandbags_Cloth,Sandbags_Cloth</li>
+    </li>
+  </layouts>
+  <needRoofClearance>true</needRoofClearance>
+  <tags>
+    <li>bunker</li>
+  </tags>
+  <modRequirements>
+    <li>grimworld.astramilitarum</li>
+  </modRequirements>
+</KCSG.StructureLayoutDef>
+
+<KCSG.StructureLayoutDef>
+  <defName>sandbagBunkerAutoN</defName>
+  <spawnConduits>false</spawnConduits>
+  <layouts>
+    <li>
+      <li>Sandbags_Cloth,Sandbags_Cloth,GW_Trenches,Sandbags_Cloth,Sandbags_Cloth</li>
+      <li>Sandbags_Cloth,GW_Trenches,GW_Trenches,GW_Trenches,Sandbags_Cloth</li>
+      <li>Sandbags_Cloth,GW_Trenches,GW_Building_Autocannon_Steel_North,GW_Trenches,Sandbags_Cloth</li>
+      <li>Sandbags_Cloth,Sandbags_Cloth,Sandbags_Cloth,Sandbags_Cloth,Sandbags_Cloth</li>
+    </li>
+  </layouts>
+  <needRoofClearance>true</needRoofClearance>
+  <tags>
+    <li>bunker</li>
+  </tags>
+  <modRequirements>
+    <li>grimworld.astramilitarum</li>
+  </modRequirements>
+</KCSG.StructureLayoutDef>
+
+<KCSG.StructureLayoutDef>
+  <defName>sandbagBunkerAutoS</defName>
+  <spawnConduits>false</spawnConduits>
+  <layouts>
+    <li>
+        <li>Sandbags_Cloth,Sandbags_Cloth,Sandbags_Cloth,Sandbags_Cloth,Sandbags_Cloth</li>
+        <li>Sandbags_Cloth,GW_Trenches,GW_Building_Autocannon_Steel_South,GW_Trenches,Sandbags_Cloth</li>
+        <li>Sandbags_Cloth,GW_Trenches,GW_Trenches,GW_Trenches,Sandbags_Cloth</li>
+        <li>Sandbags_Cloth,Sandbags_Cloth,GW_Trenches,Sandbags_Cloth,Sandbags_Cloth</li>
+    </li>
+  </layouts>
+  <needRoofClearance>true</needRoofClearance>
+  <tags>
+    <li>bunker</li>
+  </tags>
+  <modRequirements>
+    <li>grimworld.astramilitarum</li>
+  </modRequirements>
+</KCSG.StructureLayoutDef>
+
+<KCSG.SymbolDef>
+  <defName>GW_Trenches</defName>
+  <thing>GW_Trenches</thing>
+</KCSG.SymbolDef>
+</Defs>

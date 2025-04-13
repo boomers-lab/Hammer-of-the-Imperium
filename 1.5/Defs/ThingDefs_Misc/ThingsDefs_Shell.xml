@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef Name="GW_HOI_ShellBase" ParentName="ResourceBase" Abstract="True">
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <tickerType>Normal</tickerType>
+    <stackLimit>25</stackLimit>
+    <techLevel>Industrial</techLevel>
+    <statBases>
+      <MaxHitPoints>60</MaxHitPoints>
+      <MarketValue>250</MarketValue>
+      <Mass>3</Mass>
+      <Flammability>1.0</Flammability>
+      <DeteriorationRate>0.3</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>GW_HOI_EarthshakerShells</li>
+    </thingCategories>
+    <tradeTags>
+      <li>GW_HOI_EarthshakerShell</li>
+    </tradeTags>
+  </ThingDef>
+
+  <ThingDef Name="GW_HOI_MakeableShellBase" ParentName="GW_HOI_ShellBase" Abstract="True">
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <effectWorking>Cook</effectWorking>
+      <soundWorking>Recipe_Machining</soundWorking>
+      <workAmount>1000</workAmount>
+      <targetCountAdjustment>5</targetCountAdjustment>
+      <workSkill>Crafting</workSkill>
+      <recipeUsers>
+        <li>HP_AM_MilitarumFabricationBench</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+      <displayPriority>100</displayPriority>
+    </recipeMaker>
+  </ThingDef>
+
+  <!-- High-explosive -->
+
+  <ThingDef ParentName="GW_HOI_MakeableShellBase">
+    <defName>GW_HOI_132mm_HighExplosive</defName>
+    <label>132mm high-explosive shell</label>
+    <description>132mm, Earthshaker. big boom. WIP</description>
+    <possessionCount>1</possessionCount>
+    <graphicData>
+      <texPath>Things/Ammo/HMMR_EarthshakerAmmo</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>4.9</explosiveRadius>
+        <explosiveDamageType>Bomb</explosiveDamageType>
+        <explosiveExpandPerStackcount>0.4</explosiveExpandPerStackcount>
+        <startWickHitPointsPercent>0.7</startWickHitPointsPercent>
+        <wickTicks>30~60</wickTicks>
+      </li>
+    </comps>
+    <projectileWhenLoaded>GW_HOI_Bullet_132mm_HighExplosive</projectileWhenLoaded>
+    <costList>
+      <Steel>40</Steel>
+      <Chemfuel>25</Chemfuel>
+    </costList>
+    <recipeMaker>
+      <researchPrerequisite>GW_AM_ImperiumDefense</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>GW_HOI_Bullet_132mm_HighExplosive</defName>
+    <label>high-explosive shell</label>
+    <graphicData>
+      <texPath>Things/Projectile/ShellHighExplosive</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <damageDef>Bomb</damageDef>
+      <!-- damage amount is the damage def default -->
+      <speed>30</speed>
+      <explosionRadius>6.9</explosionRadius>
+      <flyOverhead>true</flyOverhead>
+      <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+      <soundExplode>MortarBomb_Explode</soundExplode>
+      <soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
+      <soundAmbient>MortarRound_Ambient</soundAmbient>
+    </projectile>
+  </ThingDef>
+</Defs>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <QuestScriptDef>
+    <defName>GuardSiege</defName>
+    <rootSelectionWeight>1</rootSelectionWeight>
+    <questNameRules>
+      <rulesStrings>
+        <li>questName->The Siege of [location]</li>
+        <li>questName->Sieging [location]</li>
+      </rulesStrings>
+    </questNameRules>
+    <questDescriptionRules>
+      <rulesStrings>
+
+        <!-- Asker is faction leader -->
+        <li>questDescription(asker_factionLeader==True)->[asker_faction_leaderTitle] [asker_nameFull] of [asker_faction_name] requests your support in sieging [location].\n\nYour forces will be resupplied throughout the campaign.\n\n</li>
+
+      </rulesStrings>
+    </questDescriptionRules>
+    
+    <root Class="QuestNode_Sequence">
+      <nodes>
+        <li Class="VFECore.QuestNode_GetFaction">
+			    <allowEnemy>false</allowEnemy>
+          <allowAlly>true</allowAlly>
+          <allowNeutral>true</allowNeutral>
+			    <allowPermanentEnemy>false</allowPermanentEnemy>
+			    <storeAs>faction</storeAs>
+		    <factionDef>GW_AM_AstraMilitarum</factionDef>
+		</li>
+
+    <li Class="eridanus_quests.QuestNode_GWFaction">
+      <inList>true</inList>
+      <factionList>
+      <li>GW_AM_AstraMilitarum</li>
+      </factionList>
+    </li>
+
+        <li Class="QuestNode_SubScript">
+          <def>Util_RandomizePointsChallengeRating</def>
+        </li>
+        <!-- Change to number of trench lines and hive tiles needed to break through -->
+        <li Class="QuestNode_GetRandomInRangeForChallengeRating">
+        <storeAs>colonistsToLendCount</storeAs>
+          <oneStarRange>1~1</oneStarRange>
+          <twoStarRange>1~1</twoStarRange>
+          <threeStarRange>1~1</threeStarRange>
+        </li>
+        
+        <li Class="QuestNode_Set">
+          <name>returnLetterText</name>
+          <value TKey="LetterTextReturnAfterHelping">{PAWNS} [pawnListHaveConjugation] faithfully completed their service in the Deathwatch.</value>
+        </li>
+
+        <!-- Calculate days to lend colonists for -->
+        <li Class="QuestNode_GetRandomInRangeForChallengeRating">
+          <storeAs>lendForDays</storeAs>
+            <oneStarRange>300~600</oneStarRange>
+            <twoStarRange>300~600</twoStarRange>
+            <threeStarRange>300~600</threeStarRange>
+          <roundRandom>true</roundRandom>
+        </li>
+        
+      </nodes>
+    </root>
+  </QuestScriptDef>
+  
+</Defs>

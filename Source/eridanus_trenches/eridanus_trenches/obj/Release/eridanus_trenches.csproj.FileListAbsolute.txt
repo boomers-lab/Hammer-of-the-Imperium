@@ -1,0 +1,4 @@
+C:\Users\Paul\Documents\GitHub\Hammer-of-the-Imperium\Source\eridanus_trenches\eridanus_trenches\obj\Release\eridanus_trenches.csproj.AssemblyReference.cache
+C:\Users\Paul\Documents\GitHub\Hammer-of-the-Imperium\Source\eridanus_trenches\eridanus_trenches\obj\Release\eridanus_trenches.csproj.CoreCompileInputs.cache
+C:\Users\Paul\Documents\GitHub\Hammer-of-the-Imperium\Source\eridanus_trenches\Assemblies\eridanus_trenches.dll
+C:\Users\Paul\Documents\GitHub\Hammer-of-the-Imperium\Source\eridanus_trenches\eridanus_trenches\obj\Release\eridanus_trenches.dll
