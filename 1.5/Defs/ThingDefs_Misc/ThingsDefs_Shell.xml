@@ -48,7 +48,7 @@
     <description>132mm, Earthshaker. big boom. WIP</description>
     <possessionCount>1</possessionCount>
     <graphicData>
-      <texPath>Things/Ammo/HMMR_EarthshakerAmmo</texPath>
+      <texPath>Things/Ammo/GW_HOI_EarthshakerAmmo/HE</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
     <comps>
@@ -89,6 +89,166 @@
       <soundExplode>MortarBomb_Explode</soundExplode>
       <soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
       <soundAmbient>MortarRound_Ambient</soundAmbient>
+    </projectile>
+  </ThingDef>
+
+
+  <!-- Smoke Shell-->
+    <ThingDef ParentName="GW_HOI_MakeableShellBase">
+    <defName>GW_HOI_132mm_Smoke</defName>
+    <label>132mm smoke shell</label>
+    <description>132mm, Earthshaker. Obscurant. WIP</description>
+    <possessionCount>1</possessionCount>
+    <graphicData>
+      <texPath>Things/Ammo/GW_HOI_EarthshakerAmmo/Smoke</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveDamageType>Smoke</explosiveDamageType>
+        <explosiveRadius>11</explosiveRadius>
+        <postExplosionGasType>BlindSmoke</postExplosionGasType>
+        <wickTicks>30~60</wickTicks>
+      </li>
+    </comps>
+    <projectileWhenLoaded>GW_HOI_Bullet_132mm_Smoke</projectileWhenLoaded>
+    <costList>
+      <Steel>25</Steel>
+      <Chemfuel>10</Chemfuel>
+    </costList>
+    <recipeMaker>
+      <researchPrerequisite>GW_AM_ImperiumDefense</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>GW_HOI_Bullet_132mm_Smoke</defName>
+    <label>smoke shell</label>
+    <graphicData>
+      <texPath>Things/Projectile/ShellSmoke</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <damageDef>Smoke</damageDef>
+      <speed>30</speed>
+      <explosionRadius>11</explosionRadius>
+      <flyOverhead>true</flyOverhead>
+      <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+      <soundExplode>Explosion_Smoke</soundExplode>
+      <soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
+      <soundAmbient>MortarRound_Ambient</soundAmbient>
+      <postExplosionGasType>BlindSmoke</postExplosionGasType>
+    </projectile>
+  </ThingDef>
+
+<!--Incendiary-->
+    <ThingDef ParentName="GW_HOI_MakeableShellBase">
+    <defName>GW_HOI_132mm_Incendiary</defName>
+    <label>132mm Incendiary shell</label>
+    <description>132mm, Earthshaker. Burns bright. WIP</description>
+    <possessionCount>1</possessionCount>
+    <graphicData>
+      <texPath>Things/Ammo/GW_HOI_EarthshakerAmmo/Incendiary</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>3.9</explosiveRadius>
+        <explosiveDamageType>Flame</explosiveDamageType>
+        <explosiveExpandPerStackcount>0.4</explosiveExpandPerStackcount>
+        <startWickHitPointsPercent>0.7</startWickHitPointsPercent>
+        <wickTicks>30~60</wickTicks>
+      </li>
+    </comps>
+    <projectileWhenLoaded>GW_HOI_Bullet_132mm_Incendiary</projectileWhenLoaded>
+    <costList>
+      <Steel>30</Steel>
+      <Chemfuel>50</Chemfuel>
+    </costList>
+    <recipeMaker>
+      <researchPrerequisite>GW_AM_ImperiumDefense</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>GW_HOI_Bullet_132mm_Incendiary</defName>
+    <label>incendiary shell</label>
+    <graphicData>
+      <texPath>Things/Projectile/ShellIncendiary</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <damageDef>Flame</damageDef>
+      <!-- damage amount is the damage def default -->
+      <speed>30</speed>
+      <explosionRadius>4.9</explosionRadius>
+      <preExplosionSpawnThingDef>Filth_Fuel</preExplosionSpawnThingDef>
+      <preExplosionSpawnChance>0.25</preExplosionSpawnChance>
+      <flyOverhead>true</flyOverhead>
+      <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+      <soundExplode>MortarIncendiary_Explode</soundExplode>
+      <soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
+      <soundAmbient>MortarRound_Ambient</soundAmbient>
+      <ai_IsIncendiary>true</ai_IsIncendiary>
+    </projectile>
+  </ThingDef>
+
+    <!-- High-explosive -->
+
+  <ThingDef ParentName="GW_HOI_MakeableShellBase">
+    <defName>GW_HOI_132mm_AP</defName>
+    <label>132mm AP shell</label>
+    <description>132mm, Earthshaker. Anti armor. WIP</description>
+    <possessionCount>1</possessionCount>
+    <graphicData>
+      <texPath>Things/Ammo/GW_HOI_EarthshakerAmmo/AP</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>3.9</explosiveRadius>
+        <explosiveDamageType>Bomb</explosiveDamageType>
+        <explosiveExpandPerStackcount>0.4</explosiveExpandPerStackcount>
+        <startWickHitPointsPercent>0.7</startWickHitPointsPercent>
+        <wickTicks>30~60</wickTicks>
+      </li>
+    </comps>
+    <projectileWhenLoaded>GW_HOI_Bullet_132mm_AP</projectileWhenLoaded>
+    <costList>
+      <Steel>60</Steel>
+      <Chemfuel>25</Chemfuel>
+    </costList>
+    <recipeMaker>
+      <researchPrerequisite>GW_AM_ImperiumDefense</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>GW_HOI_Bullet_132mm_AP</defName>
+    <label>high-explosive shell</label>
+    <graphicData>
+      <texPath>Things/Projectile/ShellHighExplosive</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <damageDef>Bomb</damageDef>
+      <!-- damage amount is the damage def default -->
+      <speed>30</speed>
+      <damageAmountBase>50</damageAmountBase>
+      <explosionRadius>3.9</explosionRadius>
+      <flyOverhead>true</flyOverhead>
+      <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+      <soundExplode>MortarBomb_Explode</soundExplode>
+      <soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
+      <soundAmbient>MortarRound_Ambient</soundAmbient>
+      <armorPenetrationBase>2.5</armorPenetrationBase>
+      <stoppingPower>3</stoppingPower>
     </projectile>
   </ThingDef>
 </Defs>

@@ -2,7 +2,7 @@
 <Defs>
   <QuestScriptDef>
     <defName>GuardSiege</defName>
-    <rootSelectionWeight>1</rootSelectionWeight>
+    <rootSelectionWeight>0.5</rootSelectionWeight>
     <questNameRules>
       <rulesStrings>
         <li>questName->The Siege of [location]</li>

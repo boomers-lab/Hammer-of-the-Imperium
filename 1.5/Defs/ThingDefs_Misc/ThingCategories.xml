@@ -4,6 +4,6 @@
       <defName>GW_HOI_EarthshakerShells</defName>
       <label>earthshaker shells</label>
       <parent>Manufactured</parent>
-      <iconPath>Things/Ammo/HMMR_EarthshakerAmmo/HMMR_EarthshakerAmmo_a</iconPath>
+      <iconPath>Things/Ammo/GW_HOI_EarthshakerAmmo/HE/GW_HOI_EarthshakerHEAmmo_a</iconPath>
     </ThingCategoryDef>
 </Defs>
