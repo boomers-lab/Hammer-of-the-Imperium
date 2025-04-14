@@ -395,7 +395,8 @@
         <costList>
             <Steel>200</Steel>
             <Plasteel>40</Plasteel>
-            <ComponentIndustrial>6</ComponentIndustrial>
+            <ComponentIndustrial>3</ComponentIndustrial>
+            <ComponentSpacer>1</ComponentSpacer>
         </costList>
             <stuffCategories>
                 <li>Metallic</li>
@@ -408,7 +409,7 @@
                 <fuelGizmoLabel>Current Ammo</fuelGizmoLabel>
                 <outOfFuelMessage>Needs more ammo</outOfFuelMessage>
                 <fuelFilter><thingDefs><li>Steel</li></thingDefs></fuelFilter>
-                <fuelCapacity>140</fuelCapacity>       <!-- 20 bursts, 140 total shots -->
+                <fuelCapacity>200</fuelCapacity>       <!-- 20 bursts, 200 total shots -->
                 <fuelMultiplier>1</fuelMultiplier> <!-- 10 steel per burst, 1 per shot -->
                 <initialFuelPercent>1</initialFuelPercent>
                 <autoRefuelPercent>0.5</autoRefuelPercent>
@@ -509,7 +510,8 @@
         <costList>
             <Steel>100</Steel>
             <Plasteel>60</Plasteel>
-            <ComponentIndustrial>18</ComponentIndustrial>
+            <ComponentIndustrial>10</ComponentIndustrial>
+            <ComponentSpacer>1</ComponentSpacer>
         </costList>
             <stuffCategories>
                 <li>Metallic</li>

@@ -9,9 +9,9 @@ using Verse;
 
 namespace eridanus_trenches
 {
-    public abstract class QuestNode_Site : QuestNode
+    public abstract class QuestNode_MultiSite : QuestNode
     {
-        public abstract SitePartDef QuestSite { get; }
+        public SitePartDef QuestSite { get; }
         protected bool TryFindSiteTile(out int tile, Predicate<int> extraValidator = null, List<BiomeDef> allowedBiomes = null)
         {
             if (allowedBiomes != null && Find.WorldGrid.tiles.Any(x => allowedBiomes.Contains(x.biome)) is false)
@@ -51,6 +51,54 @@ namespace eridanus_trenches
             if (allowedBiomes != null && allowedBiomes.Count > 0 && !allowedBiomes.Contains(tile2.biome))
             {
                 return false;
+            }
+            return true;
+        }
+
+        // Check to make sure this won't overwrite any existing settlements
+        public static bool CheckTileNeighbors(int tile, int dist)
+        {
+            List<int> tileNeighborsMaster = new List<int>();
+            WorldGrid worldGrid = Find.WorldGrid;
+
+            if (Find.WorldObjects.AnySettlementBaseAt(tile))
+            {
+                return false;
+            }
+
+            tileNeighborsMaster.Add(tile); // add center tile so its not checked
+
+            List<int> tileNeighbors = new List<int>();
+            Find.WorldGrid.GetTileNeighbors(tile, tileNeighbors);
+            Queue<int> tilesLeft = new Queue<int>();
+            foreach (int item in tileNeighbors) {
+                tilesLeft.Enqueue(item);
+            }
+
+            while(tilesLeft.Count > 0)
+            {
+                int item = tilesLeft.Dequeue();
+                if (!tileNeighborsMaster.Contains(item))
+                {
+                    if (Find.WorldObjects.AnySettlementBaseAt(item))
+                    {
+                        return false;
+                    }
+                    else
+                    {
+                        tileNeighborsMaster.Add(item);
+                        Find.WorldGrid.GetTileNeighbors(tile, tileNeighbors);
+                        foreach (int item2 in tileNeighbors)
+                        {
+                            // doesn't check twice, and checks it within the distance
+                            if (!tileNeighborsMaster.Contains(item) && Find.WorldGrid.TraversalDistanceBetween(tile, item2) < dist)
+                            {
+                                tilesLeft.Enqueue(item2);
+                            }
+                        }
+                        tileNeighbors.Clear();
+                    }
+                }
             }
             return true;
         }

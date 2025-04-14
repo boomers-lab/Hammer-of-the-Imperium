@@ -72,6 +72,8 @@
     <Compile Include="HOIThingDefOf.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="GenStep_Trench.cs" />
+    <Compile Include="QuestNode_Root_GuardSiege.cs" />
+    <Compile Include="QuestNode_Site.cs" />
     <Compile Include="RoadDefGenStep_PlaceTrench.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

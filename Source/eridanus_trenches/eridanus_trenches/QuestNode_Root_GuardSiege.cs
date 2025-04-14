@@ -6,7 +6,7 @@ using System.Collections.Generic;
 
 namespace eridanus_trenches
 {
-    public class QuestNode_Root_GuardSiege : QuestNode_Site
+    public class QuestNode_Root_GuardSiege : QuestNode_MultiSite
     {
         public override void RunInt()
         {
@@ -19,12 +19,14 @@ namespace eridanus_trenches
                 return;
             }
             var hostileFaction = Faction.OfMechanoids ?? Find.FactionManager.RandomEnemyFaction(allowNonHumanlike: false);
-            var site = GenerateSite(quest, slate, points, tile, hostileFaction,
-            out string siteMapGeneratedSignal, failWhenMapRemoved: false);
+            //var site = GenerateSite(quest, slate, points, tile, hostileFaction,
+            //out string siteMapGeneratedSignal, failWhenMapRemoved: false);
             
             List<int> tileNeighbors = new List<int>();
             WorldGrid worldGrid = Find.WorldGrid;
             Find.WorldGrid.GetTileNeighbors(tile, tileNeighbors);
+
+            // Sort them by distance relative to each other
             int j = 1;
             for (int i = 0; i < tileNeighbors.Count-1; i++)
             {
@@ -36,14 +38,6 @@ namespace eridanus_trenches
                     j = 0;
                 }
             }
-
-            QuestPart_EndQuestOnScanSignals questPart_ScanSignalsCounter = new QuestPart_EndQuestOnScanSignals();
-            questPart_ScanSignalsCounter.mapParent = site;
-            questPart_ScanSignalsCounter.inSignalEnable = siteMapGeneratedSignal;
-            questPart_ScanSignalsCounter.scanningBuilding = InternalDefOf.VQE_FrozenScanningRelay;
-            questPart_ScanSignalsCounter.maxSignalsCount = 2;
-            questPart_ScanSignalsCounter.inSignal = QuestGenUtility.HardcodedSignalWithQuestID("site.Scanned_" + InternalDefOf.VQE_FrozenScanningRelay.defName);
-            quest.AddPart(questPart_ScanSignalsCounter);
         }
 
         public override bool TestRunInt(Slate slate)
