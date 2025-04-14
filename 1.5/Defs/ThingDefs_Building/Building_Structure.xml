@@ -25,7 +25,7 @@
 				<edgeRight>Damage/Edge</edgeRight>
 			</damageData>
 		</graphicData>
-		<uiIconPath>Things/Building/Linked/Embrasure/GW_OrdinaryWalls_Emb_Atlas</uiIconPath>
+		<uiIconPath>Things/Building/Linked/Embrasure/GW_OrdinaryWalls_Emb_Icon</uiIconPath>
 		<!-- <uiIconPathsStuff> -->
 		<!-- <li> -->
 		<!-- <appearance>Planks</appearance> -->
@@ -106,7 +106,7 @@
 				<edgeRight>Damage/Edge</edgeRight>
 			</damageData>
 		</graphicData>
-		<uiIconPath>Things/Building/Linked/Embrasure/GW_ReinforcedWall_Emb_Atlas</uiIconPath>
+		<uiIconPath>Things/Building/Linked/Embrasure/GW_ReinforcedWall_Emb_Icon</uiIconPath>
 		<!-- <uiIconPathsStuff> -->
 		<!-- <li> -->
 		<!-- <appearance>Planks</appearance> -->
