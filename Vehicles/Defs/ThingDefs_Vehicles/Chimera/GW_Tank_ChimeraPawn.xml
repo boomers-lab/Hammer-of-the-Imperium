@@ -27,6 +27,7 @@
 			<ArmorRating_Heat>1.0</ArmorRating_Heat>
 			<Flammability>0</Flammability>
 			<MarketValue>4200</MarketValue>
+			<Mass>525</Mass>
 		</statBases>
 		<vehicleStats>
 			<Mass>525</Mass>
@@ -342,7 +343,7 @@
 			<li Class="Vehicles.CompProperties_FueledTravel">
 				<fuelType>Chemfuel</fuelType>
 				<leakDef>Filth_Fuel</leakDef>
-				<fuelConsumptionRate>36</fuelConsumptionRate>
+				<fuelConsumptionRate>18</fuelConsumptionRate>
 				<fuelConsumptionWorldMultiplier>0.75</fuelConsumptionWorldMultiplier>
 				<fuelCapacity>135</fuelCapacity>
 			</li>
