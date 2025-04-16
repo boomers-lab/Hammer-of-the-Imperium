@@ -10,7 +10,7 @@
 		<description>The Lascannon, a devastating energy weapon, is mounted on a formidable vehicle in the war-ridden GrimWorld 40,000. With a sleek design and ominous presence, this armament is affixed to the vehicle's battle-hardened chassis, embodying precision and destructive power against heavily armored foes. Bearing the Imperial Aquila, it symbolizes the unwavering might of the Imperium in the relentless struggle against darkness.</description>
 		
 		<turretType>Rotatable</turretType>
-		<shotSound>OverlordLascannon</shotSound>
+		<shotSound>GW_AM_Lascannon</shotSound>
 		
 		<projectile>GW_LascanonShot</projectile>
 		<reloadTimer>3.5</reloadTimer>
@@ -37,26 +37,11 @@
 		
 		<fireModes>
 			<li>
-				<shotsPerBurst>1</shotsPerBurst>
-				<ticksBetweenShots>5</ticksBetweenShots>
-				<ticksBetweenBursts>30</ticksBetweenBursts>
+				<shotsPerBurst>2</shotsPerBurst>
+				<ticksBetweenShots>0</ticksBetweenShots>
+				<ticksBetweenBursts>10</ticksBetweenBursts>
 				<label>Single</label>
 				<texPath>UI/Gizmos/FireRate_Single</texPath>
-			</li>
-			<li>
-				<shotsPerBurst>10</shotsPerBurst>
-				<ticksBetweenShots>5</ticksBetweenShots>
-				<ticksBetweenBursts>30</ticksBetweenBursts>
-				<spreadRadius>1</spreadRadius>
-				<label>Burst</label>
-				<texPath>UI/Gizmos/FireRate_Burst</texPath>
-			</li>
-			<li>
-				<shotsPerBurst>25</shotsPerBurst>
-				<ticksBetweenShots>5</ticksBetweenShots>
-				<ticksBetweenBursts>45</ticksBetweenBursts>
-				<label>Auto</label>
-				<texPath>UI/Gizmos/FireRate_Auto</texPath>
 			</li>
 		</fireModes>
 

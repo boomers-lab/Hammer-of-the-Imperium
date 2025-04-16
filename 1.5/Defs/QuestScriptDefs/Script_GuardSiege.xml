@@ -18,6 +18,21 @@
         </questDescriptionRules>
         <root Class="QuestNode_Sequence">
             <nodes>
+                <li Class="QuestNode_RandomNode">
+                    <nodes>
+                        <li Class="QuestNode_Set">
+                            <selectionWeight>0.5</selectionWeight>
+                            <name>askerIsNull</name>
+                            <value>true</value>
+                        </li>
+                        <li Class="QuestNode_GetPawn">
+                            <selectionWeight>0.5</selectionWeight>
+                            <storeAs>asker</storeAs>
+                            <mustBeFactionLeader>true</mustBeFactionLeader>
+                            <mustBeNonHostileToPlayer>false</mustBeNonHostileToPlayer>
+                        </li>
+                    </nodes>
+                </li>
                 <li Class="VFECore.QuestNode_GetFaction">
                     <allowEnemy>false</allowEnemy>
                      <allowAlly>true</allowAlly>

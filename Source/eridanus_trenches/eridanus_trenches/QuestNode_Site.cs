@@ -12,14 +12,10 @@ namespace eridanus_trenches
     public abstract class QuestNode_MultiSite : QuestNode
     {
         public SitePartDef QuestSite { get; }
-        protected bool TryFindSiteTile(out int tile, Predicate<int> extraValidator = null, List<BiomeDef> allowedBiomes = null)
+        protected bool TryFindSiteTile(out int tile, Predicate<int> extraValidator = null)
         {
-            if (allowedBiomes != null && Find.WorldGrid.tiles.Any(x => allowedBiomes.Contains(x.biome)) is false)
-            {
-                allowedBiomes = null;
-            }
             var tiles = Find.World.tilesInRandomOrder.Tiles.Where((int x) => (extraValidator == null || extraValidator(x))
-                && IsValidTile(x, allowedBiomes));
+                && IsValidTile(x));
             if (tiles.TryRandomElement(out tile))
             {
                 return true;
@@ -28,7 +24,7 @@ namespace eridanus_trenches
             return false;
         }
 
-        public static bool IsValidTile(int tile, List<BiomeDef> allowedBiomes = null)
+        public static bool IsValidTile(int tile)
         {
             Tile tile2 = Find.WorldGrid[tile];
             if (!tile2.biome.canBuildBase)
@@ -45,10 +41,6 @@ namespace eridanus_trenches
             }
             if (Find.WorldObjects.AnyMapParentAt(tile) || Current.Game.FindMap(tile) != null
             || Find.WorldObjects.AnyWorldObjectOfDefAt(WorldObjectDefOf.AbandonedSettlement, tile))
-            {
-                return false;
-            }
-            if (allowedBiomes != null && allowedBiomes.Count > 0 && !allowedBiomes.Contains(tile2.biome))
             {
                 return false;
             }
@@ -159,7 +151,7 @@ namespace eridanus_trenches
         }
 
         protected bool PrepareQuest(out Quest quest, out Slate slate, out Map map, out float points,
-        out int tile, Predicate<int> extraValidator = null, List<BiomeDef> allowedBiomes = null)
+        out int tile, Predicate<int> extraValidator = null)
         {
             quest = QuestGen.quest;
             slate = QuestGen.slate;
@@ -168,7 +160,7 @@ namespace eridanus_trenches
             points = slate.Get("points", 0f);
             slate.Set("playerFaction", Faction.OfPlayer);
             slate.Set("map", map);
-            if (!TryFindSiteTile(out tile, extraValidator, allowedBiomes))
+            if (!TryFindSiteTile(out tile, extraValidator))
             {
                 return false;
             }

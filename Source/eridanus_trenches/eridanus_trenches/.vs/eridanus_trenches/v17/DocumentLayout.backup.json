@@ -15,7 +15,7 @@
       "RelativeMoniker": "D:0:0:{97FA1308-3ED7-41D8-827D-0CC3A3291EE8}|eridanus_trenches.csproj|solutionrelative:genstep_trench.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{97FA1308-3ED7-41D8-827D-0CC3A3291EE8}|eridanus_trenches.csproj|c:\\users\\paul\\documents\\github\\hammer-of-the-imperium\\source\\eridanus_trenches\\eridanus_trenches\\roaddefgenstep_placetrench.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{97FA1308-3ED7-41D8-827D-0CC3A3291EE8}|eridanus_trenches.csproj|C:\\Users\\Paul\\Documents\\GitHub\\Hammer-of-the-Imperium\\Source\\eridanus_trenches\\eridanus_trenches\\roaddefgenstep_placetrench.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{97FA1308-3ED7-41D8-827D-0CC3A3291EE8}|eridanus_trenches.csproj|solutionrelative:roaddefgenstep_placetrench.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -29,7 +29,7 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 121,
+          "DockedWidth": 143,
           "SelectedChildIndex": 2,
           "Children": [
             {
@@ -42,8 +42,7 @@
               "RelativeToolTip": "HOIThingDefOf.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-10T19:18:44.978Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-10T19:18:44.978Z"
             },
             {
               "$type": "Document",
@@ -55,8 +54,7 @@
               "RelativeToolTip": "GenStep_Trench.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAE4BAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-10T16:48:10.846Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-10T16:48:10.846Z"
             },
             {
               "$type": "Document",
@@ -66,7 +64,7 @@
               "RelativeDocumentMoniker": "QuestNode_Site.cs",
               "ToolTip": "C:\\Users\\Paul\\Documents\\GitHub\\Hammer-of-the-Imperium\\Source\\eridanus_trenches\\eridanus_trenches\\QuestNode_Site.cs",
               "RelativeToolTip": "QuestNode_Site.cs",
-              "ViewState": "AgIAAFsAAAAAAAAAAAAMwC4AAAAmAAAAAAAAAA==",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAhwCgAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-14T01:26:18.866Z",
               "EditorCaption": ""
@@ -74,7 +72,7 @@
           ]
         },
         {
-          "DockedWidth": 187,
+          "DockedWidth": 165,
           "SelectedChildIndex": 0,
           "Children": [
             {
@@ -85,7 +83,7 @@
               "RelativeDocumentMoniker": "QuestNode_Root_GuardSiege.cs",
               "ToolTip": "C:\\Users\\Paul\\Documents\\GitHub\\Hammer-of-the-Imperium\\Source\\eridanus_trenches\\eridanus_trenches\\QuestNode_Root_GuardSiege.cs",
               "RelativeToolTip": "QuestNode_Root_GuardSiege.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADQAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-14T01:11:31.232Z",
               "EditorCaption": ""
@@ -100,8 +98,7 @@
               "RelativeToolTip": "RoadDefGenStep_PlaceTrench.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAIwCgAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-10T03:03:41.754Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-10T03:03:41.754Z"
             }
           ]
         }

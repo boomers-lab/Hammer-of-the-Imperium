@@ -19,21 +19,41 @@ namespace eridanus_trenches
                 return;
             }
             var hostileFaction = Faction.OfMechanoids ?? Find.FactionManager.RandomEnemyFaction(allowNonHumanlike: false);
-            //var site = GenerateSite(quest, slate, points, tile, hostileFaction,
-            //out string siteMapGeneratedSignal, failWhenMapRemoved: false);
+            var site = GenerateSite(quest, slate, points, tile, hostileFaction,
+            out string siteMapGeneratedSignal, failWhenMapRemoved: false);
             
             List<int> tileNeighbors = new List<int>();
-            WorldGrid worldGrid = Find.WorldGrid;
-            Find.WorldGrid.GetTileNeighbors(tile, tileNeighbors);
+            tileNeighbors.Add(tile);
+            addTrenchLineAround(tileNeighbors);
 
             // Sort them by distance relative to each other
-            int j = 1;
-            for (int i = 0; i < tileNeighbors.Count-1; i++)
+
+        }
+
+        // tiles is the tiles within the trench line, whether it be another trench line or a city within
+        public void addTrenchLineAround(List<int> tiles)
+        {
+            List<int> trenchTiles = new List<int>();
+            foreach(int tile in tiles)
             {
-                var path = Find.WorldPathFinder.FindPath(tileNeighbors[i], tileNeighbors[j], null);
-                worldGrid.OverlayRoad(path.Peek(i), path.Peek(j), RoadDefOf.AncientAsphaltHighway);
+                List<int> tileNeighbors = new List<int>();
+                Find.WorldGrid.GetTileNeighbors(tile, tileNeighbors);
+                foreach(int tile2 in tileNeighbors)
+                {
+                    if(!tiles.Contains(tile2) && !trenchTiles.Contains(tile2))
+                    {
+                        trenchTiles.Add(tile2);
+                    }
+                }
+            }
+
+            WorldGrid worldGrid = Find.WorldGrid;
+            int j = 1;
+            for (int i = 0; i < trenchTiles.Count - 1; i++)
+            {
+                worldGrid.OverlayRoad(trenchTiles[i], trenchTiles[j], RoadDefOf.AncientAsphaltHighway);
                 j++;
-                if (j >= tileNeighbors.Count)
+                if (j >= trenchTiles.Count)
                 {
                     j = 0;
                 }
