@@ -29,7 +29,7 @@
 		<turretType>Rotatable</turretType>
 		<shotSound>Shot_Autocannon</shotSound>
 		<projectile>GW_Bullet_HeavyBolter</projectile>
-		<reloadTimer>7.8</reloadTimer>
+		<reloadTimer>6.0</reloadTimer>
 		<warmUpTimer>1.0</warmUpTimer>
 		<magazineCapacity>100</magazineCapacity>
 		<chargePerAmmoCount>2</chargePerAmmoCount>

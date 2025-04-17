@@ -65,25 +65,41 @@
 					<slotsToOperate>1</slotsToOperate>
 					<handlingTypes>
 						<li>Movement</li>
+						<li>Turret</li>
 					</handlingTypes>
+					<turretIds>
+						<li>hullTurret</li>
+					</turretIds>
 				</li>
 				<li>
 					<key>gunner</key>
-					<label>Gunner</label>
+					<label>Turret Gunner</label>
 					<slots>1</slots>
 					<slotsToOperate>1</slotsToOperate>
 					<handlingTypes>Turret</handlingTypes>
 					<turretIds>
 						<li>mainTurret</li>
-						<li>leftMountedTurret</li>
-						<li>frontMountedTurret</li>
-						<li>rightMountedTurret</li>
 					</turretIds>
 				</li>
 				<li>
-					<key>passenger</key>
-					<label>Passenger</label>
-					<slots>2</slots>
+					<key>leftGunner</key>
+					<label>Left Sponson Gunner</label>
+					<slots>1</slots>
+					<slotsToOperate>1</slotsToOperate>
+					<handlingTypes>Turret</handlingTypes>
+					<turretIds>
+						<li>leftSponsonTurret</li>
+					</turretIds>
+				</li>
+				<li>
+					<key>rightGunner</key>
+					<label>Right Sponson Gunner</label>
+					<slots>1</slots>
+					<slotsToOperate>1</slotsToOperate>
+					<handlingTypes>Turret</handlingTypes>
+					<turretIds>
+						<li>rightSponsonTurret</li>
+					</turretIds>
 				</li>
 			</roles>
 		</properties>

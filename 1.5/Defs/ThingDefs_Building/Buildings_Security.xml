@@ -345,7 +345,7 @@
                 <defaultProjectile>GW_LascanonShot</defaultProjectile>
                 <warmupTime>2</warmupTime>
                 <range>40</range>
-                <ticksBetweenBurstShots>17</ticksBetweenBurstShots>
+                <ticksBetweenBurstShots>15</ticksBetweenBurstShots>
                 <burstShotCount>1</burstShotCount>
                 <soundCast>GW_AM_Lascannon</soundCast>
                 <soundCastTail>GunTail_Heavy</soundCastTail>
