@@ -469,10 +469,10 @@
 							<li>
 								<turretDef>GW_Vehicle_HeavyBolter</turretDef>
 								<renderProperties>
-									<north>(-2, 0)</north>
-									<south>(2, 0)</south>
-									<east>(0, 2.15)</east>
-									<west>(0, -2.15)</west>
+									<north>(-2, 0.73)</north>
+									<south>(2, -0.45)</south>
+									<east>(0.6, 2.15)</east>
+									<west>(-0.6, -2.15)</west>
 								</renderProperties>
 								<drawLayer>1</drawLayer>
 								<gizmoLabel>Left Sponson Bolter</gizmoLabel>
@@ -483,10 +483,10 @@
 							<li>
 								<turretDef>GW_Vehicle_HeavyBolter</turretDef>
 								<renderProperties>
-									<north>(2, 0)</north>
-									<south>(-2, 0)</south>
-									<east>(0, -2.15)</east>
-									<west>(0, 2.15)</west>
+									<north>(2, 0.73)</north>
+									<south>(-2, -0.45)</south>
+									<east>(0.6, -2.15)</east>
+									<west>(-0.6, 2.15)</west>
 								</renderProperties>
 								<drawLayer>1</drawLayer>
 								<gizmoLabel>Right Sponson Bolter</gizmoLabel>
@@ -543,10 +543,10 @@
 							<li>
 								<turretDef>GW_Vehicle_HeavyFlamer</turretDef>
 								<renderProperties>
-									<north>(-2, 0)</north>
-									<south>(2, 0)</south>
-									<east>(0, 2.15)</east>
-									<west>(0, -2.15)</west>
+									<north>(-2, 0.73)</north>
+									<south>(2, -0.45)</south>
+									<east>(0.6, 2.15)</east>
+									<west>(-0.6, -2.15)</west>
 								</renderProperties>
 								<drawLayer>1</drawLayer>
 								<gizmoLabel>Left Sponson Flamer</gizmoLabel>
@@ -557,10 +557,10 @@
 							<li>
 								<turretDef>GW_Vehicle_HeavyFlamer</turretDef>
 								<renderProperties>
-									<north>(2, 0)</north>
-									<south>(-2, 0)</south>
-									<east>(0, -2.15)</east>
-									<west>(0, 2.15)</west>
+									<north>(2, 0.73)</north>
+									<south>(-2, -0.45)</south>
+									<east>(0.6, -2.15)</east>
+									<west>(-0.6, 2.15)</west>
 								</renderProperties>
 								<drawLayer>1</drawLayer>
 								<gizmoLabel>Right Sponson Flamer</gizmoLabel>
@@ -617,10 +617,10 @@
 							<li>
 								<turretDef>GW_LemanRuss_MultiMelta</turretDef>
 								<renderProperties>
-									<north>(-2, 0)</north>
-									<south>(2, 0)</south>
-									<east>(0, 2.15)</east>
-									<west>(0, -2.15)</west>
+									<north>(-2, 0.73)</north>
+									<south>(2, -0.45)</south>
+									<east>(0.6, 2.15)</east>
+									<west>(-0.6, -2.15)</west>
 								</renderProperties>
 								<drawLayer>1</drawLayer>
 								<gizmoLabel>Left Sponson Melta</gizmoLabel>
@@ -631,10 +631,10 @@
 							<li>
 								<turretDef>GW_LemanRuss_MultiMelta</turretDef>
 								<renderProperties>
-									<north>(2, 0)</north>
-									<south>(-2, 0)</south>
-									<east>(0, -2.15)</east>
-									<west>(0, 2.15)</west>
+									<north>(2, 0.73)</north>
+									<south>(-2, -0.45)</south>
+									<east>(0.6, -2.15)</east>
+									<west>(-0.6, 2.15)</west>
 								</renderProperties>
 								<drawLayer>1</drawLayer>
 								<gizmoLabel>Right Sponson Melta</gizmoLabel>
@@ -691,10 +691,10 @@
 							<li>
 								<turretDef>GW_LemanRuss_PlasmaSponson</turretDef>
 								<renderProperties>
-									<north>(-2, 0)</north>
-									<south>(2, 0)</south>
-									<east>(0, 2.15)</east>
-									<west>(0, -2.15)</west>
+									<north>(-2, 0.73)</north>
+									<south>(2, -0.45)</south>
+									<east>(0.6, 2.15)</east>
+									<west>(-0.6, -2.15)</west>
 								</renderProperties>
 								<drawLayer>1</drawLayer>
 								<gizmoLabel>Left Sponson Plasma</gizmoLabel>
@@ -705,10 +705,10 @@
 							<li>
 								<turretDef>GW_LemanRuss_PlasmaSponson</turretDef>
 								<renderProperties>
-									<north>(2, 0)</north>
-									<south>(-2, 0)</south>
-									<east>(0, -2.15)</east>
-									<west>(0, 2.15)</west>
+									<north>(2, 0.73)</north>
+									<south>(-2, -0.45)</south>
+									<east>(0.6, -2.15)</east>
+									<west>(-0.6, 2.15)</west>
 								</renderProperties>
 								<drawLayer>1</drawLayer>
 								<gizmoLabel>Right Sponson Plasma</gizmoLabel>
@@ -844,6 +844,44 @@
 						</graphicData>
 					</li>
 				</graphicOverlays>
+			</li>
+			<li>
+				<key>PintleStormBolterUpgrade</key>
+				<label>Pintle Storm Bolter</label>
+				<description>WIP</description>
+				<icon>Things/Item/Turrets/StormBolter/GW_HOI_PintleMounted_StormBolter</icon>
+				<work>7500</work>
+				<gridCoordinate>(15, 20)</gridCoordinate>
+				<drawSize>(80, 80)</drawSize>
+				<disableIfUpgradeNodesEnabled>
+
+				</disableIfUpgradeNodesEnabled>
+				<upgrades>
+					<li Class = "Vehicles.TurretUpgrade">
+						<turrets>
+							<li>
+								<turretDef>GW_Vehicle_StormBolter</turretDef>
+								<renderProperties>
+									<north>(0, 0.4)</north>
+									<south>(0, -0.4)</south>
+									<east>(0.4, 0)</east>
+								</renderProperties>
+								<drawLayer>6</drawLayer>
+								<gizmoLabel>Storm Bolter</gizmoLabel>
+								<angleRestricted>(295, 65)</angleRestricted>
+								<aimPieOffset>(0, 0)</aimPieOffset>
+								<key>pintleTurret</key>
+								<parentKey>mainTurret</parentKey>
+							</li>
+						</turrets>
+					</li>
+				</upgrades>
+				<ingredients>
+				 	<Steel>100</Steel>
+			    	<GW_VehicleSideTurret>1</GW_VehicleSideTurret>
+			     	<HP_Ceramite>40</HP_Ceramite>
+				 	<ComponentIndustrial>2</ComponentIndustrial>
+				</ingredients>
 			</li>
 		</nodes>
 	</Vehicles.UpgradeTreeDef>

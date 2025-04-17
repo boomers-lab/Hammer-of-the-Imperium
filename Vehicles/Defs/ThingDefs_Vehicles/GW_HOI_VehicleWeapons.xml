@@ -37,7 +37,7 @@
 		<hitFlags>IntendedTarget</hitFlags>
 		<autoSnapTargeting>false</autoSnapTargeting>
 		<rotationSpeed>2.0</rotationSpeed>
-		<projectileOffset>1.0</projectileOffset>
+		<projectileOffset>2.0</projectileOffset>
 		<maxRange>28.9</maxRange>
 		<attachProjectileFlag>GW_Tank</attachProjectileFlag>
 		<fireModes>
@@ -52,7 +52,6 @@
 				<shotsPerBurst>8</shotsPerBurst>
 				<ticksBetweenShots>9</ticksBetweenShots>
 				<ticksBetweenBursts>60</ticksBetweenBursts>
-				<spreadRadius>1</spreadRadius>
 				<label>Burst</label>
 				<texPath>UI/Gizmos/FireRate_Burst</texPath>
 			</li>
@@ -92,7 +91,7 @@
 		<hitFlags>IntendedTarget</hitFlags>
 		<autoSnapTargeting>false</autoSnapTargeting>
 		<rotationSpeed>2.0</rotationSpeed>
-		<projectileOffset>1.0</projectileOffset>
+		<projectileOffset>2.0</projectileOffset>
 		<maxRange>15.9</maxRange>
 		<attachProjectileFlag>GW_Tank</attachProjectileFlag>
 		<fireModes>

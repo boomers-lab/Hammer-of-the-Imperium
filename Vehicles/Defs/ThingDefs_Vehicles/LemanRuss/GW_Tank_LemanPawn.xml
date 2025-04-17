@@ -79,6 +79,7 @@
 					<handlingTypes>Turret</handlingTypes>
 					<turretIds>
 						<li>mainTurret</li>
+						<li>pintleTurret</li>
 					</turretIds>
 				</li>
 				<li>
