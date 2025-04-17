@@ -85,6 +85,7 @@
       <speed>30</speed>
       <explosionRadius>6.9</explosionRadius>
       <flyOverhead>true</flyOverhead>
+      <arcHeightFactor>0.4</arcHeightFactor>
       <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
       <soundExplode>MortarBomb_Explode</soundExplode>
       <soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
@@ -135,6 +136,7 @@
       <speed>30</speed>
       <explosionRadius>11</explosionRadius>
       <flyOverhead>true</flyOverhead>
+      <arcHeightFactor>0.4</arcHeightFactor>
       <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
       <soundExplode>Explosion_Smoke</soundExplode>
       <soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
@@ -189,6 +191,7 @@
       <preExplosionSpawnThingDef>Filth_Fuel</preExplosionSpawnThingDef>
       <preExplosionSpawnChance>0.25</preExplosionSpawnChance>
       <flyOverhead>true</flyOverhead>
+      <arcHeightFactor>0.4</arcHeightFactor>
       <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
       <soundExplode>MortarIncendiary_Explode</soundExplode>
       <soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
@@ -243,6 +246,7 @@
       <damageAmountBase>50</damageAmountBase>
       <explosionRadius>3.9</explosionRadius>
       <flyOverhead>true</flyOverhead>
+      <arcHeightFactor>0.4</arcHeightFactor>
       <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
       <soundExplode>MortarBomb_Explode</soundExplode>
       <soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>

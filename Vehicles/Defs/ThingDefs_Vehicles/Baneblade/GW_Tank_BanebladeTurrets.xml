@@ -280,7 +280,7 @@
 		<description>A hull-mounted Demolisher Cannon used on the Baneblade. Fires 380mm demolisher shells.</description>
 		<turretType>Rotatable</turretType>
 		<shotSound>Shot_TurretSniper</shotSound>
-		<projectile>Bullet_Demolisher_Round</projectile>
+		<projectile>GW_Bullet_Demolisher_Round</projectile>
 		<reloadTimer>30.0</reloadTimer>
 		<warmUpTimer>5.0</warmUpTimer>
 		<magazineCapacity>1</magazineCapacity>
@@ -320,7 +320,7 @@
 		</graphicData>
 		<ammunition>
 			<thingDefs>
-				<li>GW_BaneDemolisherCannonShellNonCE</li>
+				<li>GW_DemolisherCannonShellNonCE</li>
 			</thingDefs>
 		</ammunition>
 		<motes>

@@ -110,7 +110,7 @@
                 <defaultProjectile>GW_Bullet_HeavyBolter</defaultProjectile>
                 <warmupTime>2</warmupTime>
                 <range>30</range>
-                <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+                <ticksBetweenBurstShots>9</ticksBetweenBurstShots>
                 <burstShotCount>10</burstShotCount>  <!--Normal heavy bolter has a burst count of 10-->
                 <soundCast>GW_AM_HeavyBolter</soundCast>
                 <soundCastTail>GunTail_Heavy</soundCastTail>
