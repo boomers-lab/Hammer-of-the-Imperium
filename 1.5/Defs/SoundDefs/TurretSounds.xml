@@ -9,7 +9,7 @@
           <li>
             <grains>
               <li Class="AudioGrain_Folder">
-                <clipPath>GWHeavyBolterTurret</clipPath>
+                <clipPath>Weapons/HammerOfTheImperium/GWHeavyBolterTurret</clipPath>
               </li>
             </grains>      
             <volumeRange>50~50</volumeRange>      
@@ -26,7 +26,7 @@
           <li>
             <grains>
               <li Class="AudioGrain_Folder">
-                <clipPath>GWAutocannon</clipPath>
+                <clipPath>Weapons/HammerOfTheImperium/GWAutocannon</clipPath>
               </li>
             </grains>      
             <volumeRange>50~50</volumeRange>      
@@ -43,7 +43,7 @@
           <li>
             <grains>
               <li Class="AudioGrain_Folder">
-                <clipPath>Lascannon</clipPath>
+                <clipPath>Weapons/HammerOfTheImperium/Lascannon</clipPath>
               </li>
             </grains>      
             <volumeRange>50~50</volumeRange>      
