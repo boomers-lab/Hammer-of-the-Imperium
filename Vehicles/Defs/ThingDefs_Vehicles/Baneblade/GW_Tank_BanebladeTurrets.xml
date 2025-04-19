@@ -337,7 +337,7 @@
 		<label>A twin-linked, sponson-mounted heavy bolter used on the Baneblade. Fires 0.998 cal bolts.</label>
 		<description>bolt.</description>
 		<turretType>Rotatable</turretType>
-		<shotSound>HP_Heavy_Bolt_Gun_Sound</shotSound>
+		<shotSound>GW_Heavy_Bolt_Gun_Sound</shotSound>
 		<projectile>GW_Bullet_HeavyBolter</projectile>
 		<reloadTimer>7.8</reloadTimer>
 		<warmUpTimer>1.0</warmUpTimer>
