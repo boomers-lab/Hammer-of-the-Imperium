@@ -1,0 +1,889 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+	<Vehicles.UpgradeTreeDef>
+		<defName>GW_HOI_Lemanruss_UpgradeTree</defName>		 
+		<nodes>
+			<li>
+				<key>BattleCannonUpgrade</key>
+				<label>Battle Cannon</label>
+				<description>WIP</description>
+				<icon>Things/Vehicles/LemanRuss/MainTurret/GW_HOI_LemanRuss_MainTurret_BattleCannon</icon>
+				<work>7500</work>
+				<gridCoordinate>(5, 5)</gridCoordinate>
+				<drawSize>(80, 80)</drawSize>
+				<disableIfUpgradeNodesEnabled>
+					<li>AnnihilatorUpgrade</li>
+					<li>DemolisherUpgrade</li>
+					<li>ExecutionerUpgrade</li>
+					<li>ExterminatorUpgrade</li>
+					<li>PunisherUpgrade</li>
+					<li>VanquisherUpgrade</li>
+				</disableIfUpgradeNodesEnabled>
+				<upgrades>
+					<li Class = "Vehicles.TurretUpgrade">
+						<turrets>
+							<li>
+								<turretDef>GW_LemanRuss_BattleCannonTurret</turretDef>
+								<renderProperties>
+							<north>(0.0, 0.2)</north>
+							<south>(0.0, -0.2)</south>
+							<east>(0.2, 0)</east>
+								</renderProperties>
+								<drawLayer>5</drawLayer>
+								<gizmoLabel>Battle Cannon</gizmoLabel>
+								<angleRestricted/>
+								<aimPieOffset>(0, 1.4)</aimPieOffset>
+								<key>mainTurret</key>
+							</li>
+						</turrets>
+					</li>
+				</upgrades>
+				<ingredients>
+				 <Steel>100</Steel>
+			     <GW_VehicleCannon>1</GW_VehicleCannon>
+			     <HP_Ceramite>100</HP_Ceramite>
+				 <ComponentIndustrial>4</ComponentIndustrial>
+				</ingredients>
+			</li>
+			<li>
+				<key>AnnihilatorUpgrade</key>
+				<label>Annihilator</label>
+				<description>WIP</description>
+				<icon>Things/Vehicles/LemanRuss/MainTurret/GW_HOI_LemanRuss_MainTurret_TwinLascannons</icon>
+				<work>7500</work>
+				<gridCoordinate>(10, 5)</gridCoordinate>
+				<drawSize>(80, 80)</drawSize>
+				<disableIfUpgradeNodesEnabled>
+					<li>BattleCannonUpgrade</li>
+					<li>DemolisherUpgrade</li>
+					<li>ExecutionerUpgrade</li>
+					<li>ExterminatorUpgrade</li>
+					<li>PunisherUpgrade</li>
+					<li>VanquisherUpgrade</li>
+				</disableIfUpgradeNodesEnabled>
+				<upgrades>
+					<li Class = "Vehicles.TurretUpgrade">
+						<turrets>
+							<li>
+								<turretDef>GW_LemanRuss_AnnihilatorTurret</turretDef>
+								<renderProperties>
+							<north>(0.0, 0.2)</north>
+							<south>(0.0, -0.2)</south>
+							<east>(0.2, 0)</east>
+								</renderProperties>
+								<drawLayer>5</drawLayer>
+								<gizmoLabel>Annihilator Cannon</gizmoLabel>
+								<angleRestricted/>
+								<aimPieOffset>(0, 1.4)</aimPieOffset>
+								<key>mainTurret</key>
+							</li>
+						</turrets>
+					</li>
+				</upgrades>
+				<ingredients>
+				 <Steel>100</Steel>
+			     <GW_VehicleCannon>2</GW_VehicleCannon>
+			     <HP_Ceramite>100</HP_Ceramite>
+				 <ComponentIndustrial>6</ComponentIndustrial>
+				</ingredients>
+			</li>
+			<li>
+				<key>ExterminatorUpgrade</key>
+				<label>Exterminator</label>
+				<description>WIP</description>
+				<icon>Things/Vehicles/LemanRuss/MainTurret/GW_HOI_LemanRuss_MainTurret_TwinAutocannons</icon>
+				<work>7500</work>
+				<gridCoordinate>(15, 5)</gridCoordinate>
+				<drawSize>(80, 80)</drawSize>
+				<disableIfUpgradeNodesEnabled>
+					<li>AnnihilatorUpgrade</li>
+					<li>BattleCannonUpgrade</li>
+					<li>DemolisherUpgrade</li>
+					<li>ExecutionerUpgrade</li>
+					<li>PunisherUpgrade</li>
+					<li>VanquisherUpgrade</li>
+				</disableIfUpgradeNodesEnabled>
+				<upgrades>
+					<li Class = "Vehicles.TurretUpgrade">
+						<turrets>
+							<li>
+								<turretDef>GW_LemanRuss_ExterminatorTurret</turretDef>
+								<renderProperties>
+							<north>(0.0, 0.2)</north>
+							<south>(0.0, -0.2)</south>
+							<east>(0.2, 0)</east>
+								</renderProperties>
+								<drawLayer>5</drawLayer>
+								<gizmoLabel>Exterminator Cannon</gizmoLabel>
+								<angleRestricted/>
+								<aimPieOffset>(0, 1.4)</aimPieOffset>
+								<key>mainTurret</key>
+							</li>
+						</turrets>
+					</li>
+				</upgrades>
+				<ingredients>
+				 <Steel>100</Steel>
+			     <GW_VehicleCannon>2</GW_VehicleCannon>
+			     <HP_Ceramite>100</HP_Ceramite>
+				 <ComponentIndustrial>4</ComponentIndustrial>
+				</ingredients>
+			</li>
+			<li>
+				<key>PunisherUpgrade</key>
+				<label>Punisher</label>
+				<description>WIP</description>
+				<icon>Things/Vehicles/LemanRuss/MainTurret/GW_HOI_LemanRuss_MainTurret_PunisherGatlingCannon</icon>
+				<work>7500</work>
+				<gridCoordinate>(20, 5)</gridCoordinate>
+				<drawSize>(80, 80)</drawSize>
+				<disableIfUpgradeNodesEnabled>
+					<li>AnnihilatorUpgrade</li>
+					<li>BattleCannonUpgrade</li>
+					<li>DemolisherUpgrade</li>
+					<li>ExecutionerUpgrade</li>
+					<li>ExterminatorUpgrade</li>
+					<li>VanquisherUpgrade</li>
+				</disableIfUpgradeNodesEnabled>
+				<upgrades>
+					<li Class = "Vehicles.TurretUpgrade">
+						<turrets>
+							<li>
+								<turretDef>GW_LemanRuss_PunisherTurret</turretDef>
+								<renderProperties>
+							<north>(0.0, 0.2)</north>
+							<south>(0.0, -0.2)</south>
+							<east>(0.2, 0)</east>
+								</renderProperties>
+								<drawLayer>5</drawLayer>
+								<gizmoLabel>Punisher Cannon</gizmoLabel>
+								<angleRestricted/>
+								<aimPieOffset>(0, 1.4)</aimPieOffset>
+								<key>mainTurret</key>
+							</li>
+						</turrets>
+					</li>
+				</upgrades>
+				<ingredients>
+				 <Steel>100</Steel>
+			     <GW_VehicleCannon>6</GW_VehicleCannon>
+			     <HP_Ceramite>100</HP_Ceramite>
+				 <ComponentIndustrial>4</ComponentIndustrial>
+				</ingredients>
+			</li>
+			<li>
+				<key>ExecutionerUpgrade</key>
+				<label>Executioner</label>
+				<description>WIP</description>
+				<icon>Things/Vehicles/LemanRuss/MainTurret/GW_HOI_LemanRuss_MainTurret_PlasmaDestroyer</icon>
+				<work>7500</work>
+				<gridCoordinate>(25, 5)</gridCoordinate>
+				<drawSize>(80, 80)</drawSize>
+				<disableIfUpgradeNodesEnabled>
+					<li>AnnihilatorUpgrade</li>
+					<li>BattleCannonUpgrade</li>
+					<li>DemolisherUpgrade</li>
+					<li>ExterminatorUpgrade</li>
+					<li>PunisherUpgrade</li>
+					<li>VanquisherUpgrade</li>
+				</disableIfUpgradeNodesEnabled>
+				<upgrades>
+					<li Class = "Vehicles.TurretUpgrade">
+						<turrets>
+							<li>
+								<turretDef>GW_LemanRuss_ExecutionerTurret</turretDef>
+								<renderProperties>
+							<north>(0.0, 0.2)</north>
+							<south>(0.0, -0.2)</south>
+							<east>(0.2, 0)</east>
+								</renderProperties>
+								<drawLayer>5</drawLayer>
+								<gizmoLabel>Executioner Cannon</gizmoLabel>
+								<angleRestricted/>
+								<aimPieOffset>(0, 1.4)</aimPieOffset>
+								<key>mainTurret</key>
+							</li>
+						</turrets>
+					</li>
+				</upgrades>
+				<ingredients>
+				 <Steel>100</Steel>
+			     <GW_VehicleCannon>1</GW_VehicleCannon>
+			     <HP_Ceramite>100</HP_Ceramite>
+				 <ComponentIndustrial>2</ComponentIndustrial>
+				 <ComponentSpacer>1</ComponentSpacer>
+				</ingredients>
+			</li>
+			<li>
+				<key>VanquisherUpgrade</key>
+				<label>Vanquisher</label>
+				<description>WIP</description>
+				<icon>Things/Vehicles/LemanRuss/MainTurret/GW_HOI_LemanRuss_MainTurret_VanquisherCannon</icon>
+				<work>7500</work>
+				<gridCoordinate>(30, 5)</gridCoordinate>
+				<drawSize>(80, 80)</drawSize>
+				<disableIfUpgradeNodesEnabled>
+					<li>AnnihilatorUpgrade</li>
+					<li>BattleCannonUpgrade</li>
+					<li>DemolisherUpgrade</li>
+					<li>ExecutionerUpgrade</li>
+					<li>ExterminatorUpgrade</li>
+					<li>PunisherUpgrade</li>
+				</disableIfUpgradeNodesEnabled>
+				<upgrades>
+					<li Class = "Vehicles.TurretUpgrade">
+						<turrets>
+							<li>
+								<turretDef>GW_LemanRuss_VanquisherTurret</turretDef>
+								<renderProperties>
+							<north>(0.0, 0.2)</north>
+							<south>(0.0, -0.2)</south>
+							<east>(0.2, 0)</east>
+								</renderProperties>
+								<drawLayer>5</drawLayer>
+								<gizmoLabel>Vanquisher Cannon</gizmoLabel>
+								<angleRestricted/>
+								<aimPieOffset>(0, 1.4)</aimPieOffset>
+								<key>mainTurret</key>
+							</li>
+						</turrets>
+					</li>
+				</upgrades>
+				<ingredients>
+				 <Steel>150</Steel>
+			     <GW_VehicleCannon>1</GW_VehicleCannon>
+			     <HP_Ceramite>100</HP_Ceramite>
+				 <ComponentIndustrial>4</ComponentIndustrial>
+				</ingredients>
+			</li>
+			<li>
+				<key>DemolisherUpgrade</key>
+				<label>Demolisher</label>
+				<description>WIP</description>
+				<icon>Things/Vehicles/LemanRuss/MainTurret/GW_HOI_LemanRuss_MainTurret_DemolisherCannon</icon>
+				<work>7500</work>
+				<gridCoordinate>(35, 5)</gridCoordinate>
+				<drawSize>(80, 80)</drawSize>
+				<disableIfUpgradeNodesEnabled>
+					<li>AnnihilatorUpgrade</li>
+					<li>BattleCannonUpgrade</li>
+					<li>ExecutionerUpgrade</li>
+					<li>ExterminatorUpgrade</li>
+					<li>PunisherUpgrade</li>
+					<li>VanquisherUpgrade</li>
+				</disableIfUpgradeNodesEnabled>
+				<upgrades>
+					<li Class = "Vehicles.TurretUpgrade">
+						<turrets>
+							<li>
+								<turretDef>GW_LemanRuss_DemolisherTurret</turretDef>
+								<renderProperties>
+							<north>(0.0, 0.2)</north>
+							<south>(0.0, -0.2)</south>
+							<east>(0.2, 0)</east>
+								</renderProperties>
+								<drawLayer>5</drawLayer>
+								<gizmoLabel>Demolisher Cannon</gizmoLabel>
+								<angleRestricted/>
+								<aimPieOffset>(0, 1.4)</aimPieOffset>
+								<key>mainTurret</key>
+							</li>
+						</turrets>
+					</li>
+				</upgrades>
+				<ingredients>
+				 <Steel>150</Steel>
+			     <GW_VehicleCannon>1</GW_VehicleCannon>
+			     <HP_Ceramite>100</HP_Ceramite>
+				 <ComponentIndustrial>4</ComponentIndustrial>
+				</ingredients>
+			</li>
+			<li>
+				<key>HullBolterUpgrade</key>
+				<label>Hull Bolter</label>
+				<description>WIP</description>
+				<icon>Things/Vehicles/LemanRuss/SponsonGuns/GW_HOI_LemanRuss_SponsonTurret_Bolters</icon>
+				<work>7500</work>
+				<gridCoordinate>(5, 10)</gridCoordinate>
+				<drawSize>(80, 80)</drawSize>
+				<disableIfUpgradeNodesEnabled>
+					<li>HullFlamerUpgrade</li>
+					<li>HullLascannonUpgrade</li>
+				</disableIfUpgradeNodesEnabled>
+				<upgrades>
+					<li Class = "Vehicles.TurretUpgrade">
+						<turrets>
+							<li>
+								<turretDef>GW_Vehicle_HeavyBolter</turretDef>
+								<renderProperties>
+									<north>(-0.43, 1.8)</north>
+									<south>(0.43, -1.45)</south>
+									<east>(1.7, 0.38)</east>
+									<west>(-1.7, -0.38)</west>
+								</renderProperties>
+								<drawLayer>1</drawLayer>
+								<gizmoLabel>Hull Bolter</gizmoLabel>
+								<angleRestricted>(295, 65)</angleRestricted>
+								<aimPieOffset>(0, 0)</aimPieOffset>
+								<key>hullTurret</key>
+							</li>
+						</turrets>
+					</li>
+				</upgrades>
+				<ingredients>
+				 	<Steel>100</Steel>
+			    	<GW_VehicleSideTurret>1</GW_VehicleSideTurret>
+			     	<HP_Ceramite>40</HP_Ceramite>
+				 	<ComponentIndustrial>2</ComponentIndustrial>
+				</ingredients>
+				<graphicOverlays>
+					<li>
+						<graphicData>
+							<texPath>Things/Vehicles/LemanRuss/SponsonStructure/GW_HOI_LemanRuss_FrontCover</texPath>
+							<graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
+							<drawSize>(6,6)</drawSize>
+							<layer>2</layer>
+							<shaderType>CutoutComplexPattern</shaderType>
+						</graphicData>
+					</li>
+				</graphicOverlays>
+			</li>
+			<li>
+				<key>HullFlamerUpgrade</key>
+				<label>Hull Flamer</label>
+				<description>WIP</description>
+				<icon>Things/Vehicles/LemanRuss/SponsonGuns/GW_HOI_LemanRuss_SponsonTurret_HeavyFlamers</icon>
+				<work>7500</work>
+				<gridCoordinate>(10, 10)</gridCoordinate>
+				<drawSize>(80, 80)</drawSize>
+				<disableIfUpgradeNodesEnabled>
+					<li>HullBolterUpgrade</li>
+					<li>HullLascannonUpgrade</li>
+				</disableIfUpgradeNodesEnabled>
+				<upgrades>
+					<li Class = "Vehicles.TurretUpgrade">
+						<turrets>
+							<li>
+								<turretDef>GW_Vehicle_HeavyFlamer</turretDef>
+								<renderProperties>
+									<north>(-0.43, 1.8)</north>
+									<south>(0.43, -1.45)</south>
+									<east>(1.7, 0.38)</east>
+									<west>(-1.7, -0.38)</west>
+								</renderProperties>
+								<drawLayer>1</drawLayer>
+								<gizmoLabel>Hull Flamer</gizmoLabel>
+								<angleRestricted>(295, 65)</angleRestricted>
+								<aimPieOffset>(0, 0)</aimPieOffset>
+								<key>hullTurret</key>
+							</li>
+						</turrets>
+					</li>
+				</upgrades>
+				<ingredients>
+				 	<Steel>100</Steel>
+			    	<GW_VehicleSideTurret>1</GW_VehicleSideTurret>
+			     	<HP_Ceramite>40</HP_Ceramite>
+				 	<ComponentIndustrial>2</ComponentIndustrial>
+				</ingredients>
+				<graphicOverlays>
+					<li>
+						<graphicData>
+							<texPath>Things/Vehicles/LemanRuss/SponsonStructure/GW_HOI_LemanRuss_FrontCover</texPath>
+							<graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
+							<drawSize>(6,6)</drawSize>
+							<layer>2</layer>
+							<shaderType>CutoutComplexPattern</shaderType>
+						</graphicData>
+					</li>
+				</graphicOverlays>
+			</li>
+			<li>
+				<key>HullLascannonUpgrade</key>
+				<label>Hull Lascannon</label>
+				<description>WIP</description>
+				<icon>Things/Vehicles/LemanRuss/SponsonGuns/GW_HOI_LemanRuss_SponsonTurret_Lascannon</icon>
+				<work>7500</work>
+				<gridCoordinate>(15, 10)</gridCoordinate>
+				<drawSize>(80, 80)</drawSize>
+				<disableIfUpgradeNodesEnabled>
+					<li>HullBolterUpgrade</li>
+					<li>HullFlamerUpgrade</li>
+				</disableIfUpgradeNodesEnabled>
+				<upgrades>
+					<li Class = "Vehicles.TurretUpgrade">
+						<turrets>
+							<li>
+								<turretDef>GW_LemanRuss_HullLascannon</turretDef>
+								<renderProperties>
+									<north>(-0.43, 1.8)</north>
+									<south>(0.43, -1.45)</south>
+									<east>(1.7, 0.38)</east>
+									<west>(-1.7, -0.38)</west>
+								</renderProperties>
+								<drawLayer>1</drawLayer>
+								<gizmoLabel>Hull Lascannon</gizmoLabel>
+								<angleRestricted>(295, 65)</angleRestricted>
+								<aimPieOffset>(0, 0)</aimPieOffset>
+								<key>hullTurret</key>
+							</li>
+						</turrets>
+					</li>
+				</upgrades>
+				<ingredients>
+				 	<Steel>80</Steel>
+			    	<GW_VehicleSideTurret>1</GW_VehicleSideTurret>
+			     	<HP_Ceramite>40</HP_Ceramite>
+				 	<ComponentIndustrial>4</ComponentIndustrial>
+				</ingredients>
+				<graphicOverlays>
+					<li>
+						<graphicData>
+							<texPath>Things/Vehicles/LemanRuss/SponsonStructure/GW_HOI_LemanRuss_FrontCover</texPath>
+							<graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
+							<drawSize>(6,6)</drawSize>
+							<layer>2</layer>
+							<shaderType>CutoutComplexPattern</shaderType>
+						</graphicData>
+					</li>
+				</graphicOverlays>
+			</li>
+			<li>
+				<key>SponsonBolterUpgrade</key>
+				<label>Sponson Bolters</label>
+				<description>WIP</description>
+				<icon>Things/Vehicles/LemanRuss/SponsonGuns/GW_HOI_LemanRuss_SponsonTurret_Bolters</icon>
+				<work>7500</work>
+				<gridCoordinate>(5, 15)</gridCoordinate>
+				<drawSize>(80, 80)</drawSize>
+				<disableIfUpgradeNodesEnabled>
+					<li>SponsonFlamerUpgrade</li>
+					<li>SponsonMeltaUpgrade</li>
+					<li>SponsonPlasmaUpgrade</li>
+				</disableIfUpgradeNodesEnabled>
+				<upgrades>
+					<li Class = "Vehicles.TurretUpgrade">
+						<turrets>
+							<li>
+								<turretDef>GW_Vehicle_HeavyBolter</turretDef>
+								<renderProperties>
+									<north>(-2, 0.73)</north>
+									<south>(2, -0.45)</south>
+									<east>(0.6, 2.15)</east>
+									<west>(-0.6, -2.15)</west>
+								</renderProperties>
+								<drawLayer>1</drawLayer>
+								<gizmoLabel>Left Sponson Bolter</gizmoLabel>
+								<angleRestricted>(270, 0)</angleRestricted>
+								<aimPieOffset>(0, 0)</aimPieOffset>
+								<key>leftSponsonTurret</key>
+							</li>
+							<li>
+								<turretDef>GW_Vehicle_HeavyBolter</turretDef>
+								<renderProperties>
+									<north>(2, 0.73)</north>
+									<south>(-2, -0.45)</south>
+									<east>(0.6, -2.15)</east>
+									<west>(-0.6, 2.15)</west>
+								</renderProperties>
+								<drawLayer>1</drawLayer>
+								<gizmoLabel>Right Sponson Bolter</gizmoLabel>
+								<angleRestricted>(0, 90)</angleRestricted>
+								<aimPieOffset>(0, 0)</aimPieOffset>
+								<key>rightSponsonTurret</key>
+							</li>
+						</turrets>
+					</li>
+				</upgrades>
+				<ingredients>
+				 	<Steel>100</Steel>
+			    	<GW_VehicleSideTurret>2</GW_VehicleSideTurret>
+			     	<HP_Ceramite>60</HP_Ceramite>
+				 	<ComponentIndustrial>4</ComponentIndustrial>
+				</ingredients>
+				<graphicOverlays>
+					<li>
+						<graphicData>
+							<texPath>Things/Vehicles/LemanRuss/SponsonStructure/GW_HOI_LemanRuss_SideCover</texPath>
+							<graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
+							<drawSize>(6,6)</drawSize>
+							<layer>2</layer>
+							<shaderType>CutoutComplexPattern</shaderType>
+						</graphicData>
+					</li>
+					<li>
+						<graphicData>
+							<texPath>Things/Vehicles/LemanRuss/SponsonStructure/GW_HOI_LemanRuss_SideUnder</texPath>
+							<graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
+							<drawSize>(6,6)</drawSize>
+							<layer>0</layer>
+							<shaderType>CutoutComplexPattern</shaderType>
+						</graphicData>
+					</li>
+				</graphicOverlays>
+			</li>
+			<li>
+				<key>SponsonFlamerUpgrade</key>
+				<label>Sponson Flamers</label>
+				<description>WIP</description>
+				<icon>Things/Vehicles/LemanRuss/SponsonGuns/GW_HOI_LemanRuss_SponsonTurret_HeavyFlamers</icon>
+				<work>7500</work>
+				<gridCoordinate>(10, 15)</gridCoordinate>
+				<drawSize>(80, 80)</drawSize>
+				<disableIfUpgradeNodesEnabled>
+					<li>SponsonBolterUpgrade</li>
+					<li>SponsonMeltaUpgrade</li>
+					<li>SponsonPlasmaUpgrade</li>
+				</disableIfUpgradeNodesEnabled>
+				<upgrades>
+					<li Class = "Vehicles.TurretUpgrade">
+						<turrets>
+							<li>
+								<turretDef>GW_Vehicle_HeavyFlamer</turretDef>
+								<renderProperties>
+									<north>(-2, 0.73)</north>
+									<south>(2, -0.45)</south>
+									<east>(0.6, 2.15)</east>
+									<west>(-0.6, -2.15)</west>
+								</renderProperties>
+								<drawLayer>1</drawLayer>
+								<gizmoLabel>Left Sponson Flamer</gizmoLabel>
+								<angleRestricted>(270, 0)</angleRestricted>
+								<aimPieOffset>(0, 0)</aimPieOffset>
+								<key>leftSponsonTurret</key>
+							</li>
+							<li>
+								<turretDef>GW_Vehicle_HeavyFlamer</turretDef>
+								<renderProperties>
+									<north>(2, 0.73)</north>
+									<south>(-2, -0.45)</south>
+									<east>(0.6, -2.15)</east>
+									<west>(-0.6, 2.15)</west>
+								</renderProperties>
+								<drawLayer>1</drawLayer>
+								<gizmoLabel>Right Sponson Flamer</gizmoLabel>
+								<angleRestricted>(0, 90)</angleRestricted>
+								<aimPieOffset>(0, 0)</aimPieOffset>
+								<key>rightSponsonTurret</key>
+							</li>
+						</turrets>
+					</li>
+				</upgrades>
+				<ingredients>
+				 	<Steel>100</Steel>
+			    	<GW_VehicleSideTurret>2</GW_VehicleSideTurret>
+			     	<HP_Ceramite>60</HP_Ceramite>
+				 	<ComponentIndustrial>4</ComponentIndustrial>
+				</ingredients>
+				<graphicOverlays>
+					<li>
+						<graphicData>
+							<texPath>Things/Vehicles/LemanRuss/SponsonStructure/GW_HOI_LemanRuss_SideCover</texPath>
+							<graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
+							<drawSize>(6,6)</drawSize>
+							<layer>2</layer>
+							<shaderType>CutoutComplexPattern</shaderType>
+						</graphicData>
+					</li>
+					<li>
+						<graphicData>
+							<texPath>Things/Vehicles/LemanRuss/SponsonStructure/GW_HOI_LemanRuss_SideUnder</texPath>
+							<graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
+							<drawSize>(6,6)</drawSize>
+							<layer>0</layer>
+							<shaderType>CutoutComplexPattern</shaderType>
+						</graphicData>
+					</li>
+				</graphicOverlays>
+			</li>
+			<li>
+				<key>SponsonMeltaUpgrade</key>
+				<label>Sponson Meltas</label>
+				<description>WIP</description>
+				<icon>Things/Vehicles/LemanRuss/SponsonGuns/GW_HOI_LemanRuss_SponsonTurret_MultiMeltas</icon>
+				<work>7500</work>
+				<gridCoordinate>(15, 15)</gridCoordinate>
+				<drawSize>(80, 80)</drawSize>
+				<disableIfUpgradeNodesEnabled>
+					<li>SponsonBolterUpgrade</li>
+					<li>SponsonFlamerUpgrade</li>
+					<li>SponsonPlasmaUpgrade</li>
+				</disableIfUpgradeNodesEnabled>
+				<upgrades>
+					<li Class = "Vehicles.TurretUpgrade">
+						<turrets>
+							<li>
+								<turretDef>GW_LemanRuss_MultiMelta</turretDef>
+								<renderProperties>
+									<north>(-2, 0.73)</north>
+									<south>(2, -0.45)</south>
+									<east>(0.6, 2.15)</east>
+									<west>(-0.6, -2.15)</west>
+								</renderProperties>
+								<drawLayer>1</drawLayer>
+								<gizmoLabel>Left Sponson Melta</gizmoLabel>
+								<angleRestricted>(270, 0)</angleRestricted>
+								<aimPieOffset>(0, 0)</aimPieOffset>
+								<key>leftSponsonTurret</key>
+							</li>
+							<li>
+								<turretDef>GW_LemanRuss_MultiMelta</turretDef>
+								<renderProperties>
+									<north>(2, 0.73)</north>
+									<south>(-2, -0.45)</south>
+									<east>(0.6, -2.15)</east>
+									<west>(-0.6, 2.15)</west>
+								</renderProperties>
+								<drawLayer>1</drawLayer>
+								<gizmoLabel>Right Sponson Melta</gizmoLabel>
+								<angleRestricted>(0, 90)</angleRestricted>
+								<aimPieOffset>(0, 0)</aimPieOffset>
+								<key>rightSponsonTurret</key>
+							</li>
+						</turrets>
+					</li>
+				</upgrades>
+				<ingredients>
+				 	<Steel>100</Steel>
+			    	<GW_VehicleSideTurret>2</GW_VehicleSideTurret>
+			     	<HP_Ceramite>60</HP_Ceramite>
+				 	<ComponentIndustrial>4</ComponentIndustrial>
+				</ingredients>
+				<graphicOverlays>
+					<li>
+						<graphicData>
+							<texPath>Things/Vehicles/LemanRuss/SponsonStructure/GW_HOI_LemanRuss_SideCover</texPath>
+							<graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
+							<drawSize>(6,6)</drawSize>
+							<layer>2</layer>
+							<shaderType>CutoutComplexPattern</shaderType>
+						</graphicData>
+					</li>
+					<li>
+						<graphicData>
+							<texPath>Things/Vehicles/LemanRuss/SponsonStructure/GW_HOI_LemanRuss_SideUnder</texPath>
+							<graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
+							<drawSize>(6,6)</drawSize>
+							<layer>0</layer>
+							<shaderType>CutoutComplexPattern</shaderType>
+						</graphicData>
+					</li>
+				</graphicOverlays>
+			</li>
+			<li>
+				<key>SponsonPlasmaUpgrade</key>
+				<label>Sponson Plasma Cannons</label>
+				<description>WIP</description>
+				<icon>Things/Vehicles/LemanRuss/SponsonGuns/GW_HOI_LemanRuss_SponsonTurret_PlasmaCannon</icon>
+				<work>7500</work>
+				<gridCoordinate>(20, 15)</gridCoordinate>
+				<drawSize>(80, 80)</drawSize>
+				<disableIfUpgradeNodesEnabled>
+					<li>SponsonBolterUpgrade</li>
+					<li>SponsonFlamerUpgrade</li>
+					<li>SponsonMeltaUpgrade</li>
+				</disableIfUpgradeNodesEnabled>
+				<upgrades>
+					<li Class = "Vehicles.TurretUpgrade">
+						<turrets>
+							<li>
+								<turretDef>GW_LemanRuss_PlasmaSponson</turretDef>
+								<renderProperties>
+									<north>(-2, 0.73)</north>
+									<south>(2, -0.45)</south>
+									<east>(0.6, 2.15)</east>
+									<west>(-0.6, -2.15)</west>
+								</renderProperties>
+								<drawLayer>1</drawLayer>
+								<gizmoLabel>Left Sponson Plasma</gizmoLabel>
+								<angleRestricted>(270, 0)</angleRestricted>
+								<aimPieOffset>(0, 0)</aimPieOffset>
+								<key>leftSponsonTurret</key>
+							</li>
+							<li>
+								<turretDef>GW_LemanRuss_PlasmaSponson</turretDef>
+								<renderProperties>
+									<north>(2, 0.73)</north>
+									<south>(-2, -0.45)</south>
+									<east>(0.6, -2.15)</east>
+									<west>(-0.6, 2.15)</west>
+								</renderProperties>
+								<drawLayer>1</drawLayer>
+								<gizmoLabel>Right Sponson Plasma</gizmoLabel>
+								<angleRestricted>(0, 90)</angleRestricted>
+								<aimPieOffset>(0, 0)</aimPieOffset>
+								<key>rightSponsonTurret</key>
+							</li>
+						</turrets>
+					</li>
+				</upgrades>
+				<ingredients>
+				 	<Steel>100</Steel>
+			    	<GW_VehicleSideTurret>2</GW_VehicleSideTurret>
+			     	<HP_Ceramite>60</HP_Ceramite>
+				 	<ComponentIndustrial>4</ComponentIndustrial>
+				</ingredients>
+				<graphicOverlays>
+					<li>
+						<graphicData>
+							<texPath>Things/Vehicles/LemanRuss/SponsonStructure/GW_HOI_LemanRuss_SideCover</texPath>
+							<graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
+							<drawSize>(6,6)</drawSize>
+							<layer>2</layer>
+							<shaderType>CutoutComplexPattern</shaderType>
+						</graphicData>
+					</li>
+					<li>
+						<graphicData>
+							<texPath>Things/Vehicles/LemanRuss/SponsonStructure/GW_HOI_LemanRuss_SideUnder</texPath>
+							<graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
+							<drawSize>(6,6)</drawSize>
+							<layer>0</layer>
+							<shaderType>CutoutComplexPattern</shaderType>
+						</graphicData>
+					</li>
+				</graphicOverlays>
+			</li>
+			<li>
+				<key>DozerBlade</key>
+				<label>Dozer Blade</label>
+				<description>Reinforce the front bumper to allow this vehicle to deal more damage during collisions.</description>
+				<icon>Things/Vehicles/LemanRuss/DozerBlade/GW_HOI_LemanRuss_Dozer_east</icon>
+				<work>1800</work>
+				<gridCoordinate>(5, 20)</gridCoordinate>
+				<drawSize>(80, 80)</drawSize>
+				<upgrades>
+					<li Class = "Vehicles.StatUpgrade">
+						<vehicleStats>
+							<li>
+								<def>MoveSpeed</def>
+								<value>-0.3</value>
+								<type>Add</type>
+							</li>
+						</vehicleStats>
+						<statCategories>
+							<li>
+								<def>PawnCollisionMultiplier</def>
+								<value>0.2</value>
+							</li>
+						</statCategories>
+					</li>
+					<li Class = "Vehicles.VehicleUpgrade">
+						<health>
+							<li>
+								<key>FrontArmorPlating</key>
+								<value>500</value>
+							</li>
+						</health>
+					</li>
+				</upgrades>
+				<ingredients>
+				 <Steel>75</Steel>
+			     <HP_Ceramite>40</HP_Ceramite>
+				 <ComponentIndustrial>2</ComponentIndustrial>
+				</ingredients>
+				<graphicOverlays>
+					<li>
+						<graphicData>
+							<texPath>Things/Vehicles/LemanRuss/DozerBlade/GW_HOI_LemanRuss_Dozer</texPath>
+							<graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
+							<drawSize>(6,6)</drawSize>
+							<layer>0</layer>
+							<shaderType>CutoutComplexPattern</shaderType>
+						</graphicData>
+					</li>
+				</graphicOverlays>
+			</li>
+			<li>
+				<key>TrackArmor</key>
+				<label>Track Armor</label>
+				<description>Protect the vulnerable tracks with armor plating on top.</description>
+				<icon>Things/Vehicles/LemanRuss/TrackArmor/GW_HOI_LemanRuss_TrackArmor_east</icon>
+				<work>1800</work>
+				<gridCoordinate>(10, 20)</gridCoordinate>
+				<drawSize>(80, 80)</drawSize>
+				<upgrades>
+					<li Class = "Vehicles.StatUpgrade">
+						<vehicleStats>
+							<li>
+								<def>MoveSpeed</def>
+								<value>-0.25</value>
+								<type>Add</type>
+							</li>
+						</vehicleStats>
+					</li>
+					<li Class = "Vehicles.VehicleUpgrade">
+						<health>
+							<li>
+								<key>RightArmorPlating</key>
+								<value>150</value>
+								<type>Add</type>
+							</li>
+							<li>
+								<key>LeftArmorPlating</key>
+								<value>150</value>
+								<type>Add</type>
+							</li>
+						</health>
+					</li>
+				</upgrades>
+				<ingredients>
+				 <Steel>100</Steel>
+			     <HP_Ceramite>100</HP_Ceramite>
+				</ingredients>
+				<graphicOverlays>
+					<li>
+						<graphicData>
+							<texPath>Things/Vehicles/LemanRuss/TrackArmor/GW_HOI_LemanRuss_TrackArmor</texPath>
+							<graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
+							<drawSize>(6,6)</drawSize>
+							<layer>2</layer>
+							<shaderType>CutoutComplexPattern</shaderType>
+						</graphicData>
+					</li>
+				</graphicOverlays>
+			</li>
+			<li>
+				<key>PintleStormBolterUpgrade</key>
+				<label>Pintle Storm Bolter</label>
+				<description>WIP</description>
+				<icon>Things/Item/Turrets/StormBolter/GW_HOI_PintleMounted_StormBolter</icon>
+				<work>7500</work>
+				<gridCoordinate>(15, 20)</gridCoordinate>
+				<drawSize>(80, 80)</drawSize>
+				<disableIfUpgradeNodesEnabled>
+
+				</disableIfUpgradeNodesEnabled>
+				<upgrades>
+					<li Class = "Vehicles.TurretUpgrade">
+						<turrets>
+							<li>
+								<turretDef>GW_Vehicle_StormBolter</turretDef>
+								<renderProperties>
+									<north>(0, 0.4)</north>
+									<south>(0, -0.4)</south>
+									<east>(0.4, 0)</east>
+								</renderProperties>
+								<drawLayer>6</drawLayer>
+								<gizmoLabel>Storm Bolter</gizmoLabel>
+								<angleRestricted>(295, 65)</angleRestricted>
+								<aimPieOffset>(0, 0)</aimPieOffset>
+								<key>pintleTurret</key>
+								<parentKey>mainTurret</parentKey>
+							</li>
+						</turrets>
+					</li>
+				</upgrades>
+				<ingredients>
+				 	<Steel>100</Steel>
+			    	<GW_VehicleSideTurret>1</GW_VehicleSideTurret>
+			     	<HP_Ceramite>40</HP_Ceramite>
+				 	<ComponentIndustrial>2</ComponentIndustrial>
+				</ingredients>
+			</li>
+		</nodes>
+	</Vehicles.UpgradeTreeDef>
+	
+</Defs>

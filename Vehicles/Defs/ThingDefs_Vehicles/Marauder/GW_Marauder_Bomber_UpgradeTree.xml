@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	<Vehicles.UpgradeTreeDef>
+		<defName>GW_Marauder_Bomber_UpgradeTree</defName>		 
+		<nodes>
+			<li>
+				<key>GW_Marauder_NoseBolterTurretUpgrade</key>
+				<label>Nose Heavy Bolters</label>
+				<description>WIP</description>
+				<icon>Things/Vehicles/Marauder/marauderHBT</icon>
+				<work>7500</work>
+				<gridCoordinate>(5, 5)</gridCoordinate>
+				<drawSize>(80, 80)</drawSize>
+				<disableIfUpgradeNodesEnabled>
+				 	<li>GW_Marauder_NoseAutoCannonUpgrade</li>
+					<li>GW_Marauder_NoseLasTurretUpgrade</li>
+				</disableIfUpgradeNodesEnabled>
+				<upgrades>
+					<li Class = "Vehicles.TurretUpgrade">
+						<turrets>
+							<li>
+								<turretDef>GW_Marauder_Bolter</turretDef>
+								<renderProperties>
+									<north>(0, 8)</north>
+									<south>(0, -8)</south>
+									<east>(8, 0)</east>
+								</renderProperties>
+								<drawLayer>0</drawLayer>
+								<gizmoLabel>Nose Bolters</gizmoLabel>
+								<defaultAngleRotated>0</defaultAngleRotated>
+								<angleRestricted>(290,70)</angleRestricted>
+								<aimPieOffset>(0, 2.55)</aimPieOffset>
+								<key>noseGun</key>
+							</li>
+						</turrets>
+					</li>
+					<li Class = "Vehicles.VehicleUpgrade">
+						<roles>
+							<li>
+								<key>noseGunner</key>
+								<label>Nose Gunner</label>
+								<slots>1</slots>
+								<slotsToOperate>1</slotsToOperate>
+								<handlingTypes>Turret</handlingTypes>
+								<turretIds>
+									<li>noseGun</li>
+								</turretIds>
+							</li>
+						</roles>
+					</li>
+				</upgrades>
+				<ingredients>
+				 <Steel>100</Steel>
+			     <GW_VehicleCannon>2</GW_VehicleCannon>
+			     <HP_Ceramite>100</HP_Ceramite>
+				 <ComponentIndustrial>4</ComponentIndustrial>
+				</ingredients>
+			</li>
+			<li>
+				<key>GW_Marauder_NoseLasTurretUpgrade</key>
+				<label>Nose Lascannons</label>
+				<description>WIP</description>
+				<icon>Things/Vehicles/Marauder/marauderlasyT</icon>
+				<work>7500</work>
+				<gridCoordinate>(10, 5)</gridCoordinate>
+				<drawSize>(80, 80)</drawSize>
+				<disableIfUpgradeNodesEnabled>
+					<li>GW_Marauder_NoseAutoCannonUpgrade</li>
+					<li>GW_Marauder_NoseBolterTurretUpgrade</li>
+				</disableIfUpgradeNodesEnabled>
+				<upgrades>
+					<li Class = "Vehicles.TurretUpgrade">
+						<turrets>
+							<li>
+								<turretDef>GW_Marauder_Bomber_Las</turretDef>
+								<renderProperties>
+									<north>(0, 8)</north>
+									<south>(0, -8)</south>
+									<east>(8, 0)</east>
+								</renderProperties>
+								<drawLayer>0</drawLayer>
+								<gizmoLabel>Nose Lascannons</gizmoLabel>
+								<defaultAngleRotated>0</defaultAngleRotated>
+								<angleRestricted>(290,70)</angleRestricted>
+								<aimPieOffset>(0, 2.55)</aimPieOffset>
+								<key>noseGun</key>
+							</li>
+						</turrets>
+					</li>
+					<li Class = "Vehicles.VehicleUpgrade">
+						<roles>
+							<li>
+								<key>noseGunner</key>
+								<label>Nose Gunner</label>
+								<slots>1</slots>
+								<slotsToOperate>1</slotsToOperate>
+								<handlingTypes>Turret</handlingTypes>
+								<turretIds>
+									<li>noseGun</li>
+								</turretIds>
+							</li>
+						</roles>
+					</li>
+				</upgrades>
+				<ingredients>
+				 <Steel>100</Steel>
+			     <GW_VehicleCannon>2</GW_VehicleCannon>
+			     <HP_Ceramite>100</HP_Ceramite>
+				 <ComponentIndustrial>4</ComponentIndustrial>
+				</ingredients>
+			</li>
+			<li>
+				<key>GW_Marauder_DorsalBolterTurretUpgrade</key>
+				<label>Dorsal Bolters</label>
+				<description>WIP</description>
+				<icon>Things/Vehicles/Marauder/marauderHBT</icon>
+				<work>7500</work>
+				<gridCoordinate>(5, 10)</gridCoordinate>
+				<drawSize>(80, 80)</drawSize>
+				<upgrades>
+					<li Class = "Vehicles.TurretUpgrade">
+						<turrets>
+							<li>
+								<turretDef>GW_Marauder_Bolter</turretDef>
+								<renderProperties>
+									<north>(0, 2)</north>
+									<south>(0, -2)</south>
+									<east>(2, 0)</east>
+								</renderProperties>
+								<drawLayer>3</drawLayer>
+								<gizmoLabel>Dorsal Bolters</gizmoLabel>
+								<defaultAngleRotated>180</defaultAngleRotated>
+								<angleRestricted>(80,280)</angleRestricted>
+								<aimPieOffset>(0, 2.55)</aimPieOffset>
+								<key>dorsalGun</key>
+							</li>
+						</turrets>
+					</li>
+				</upgrades>
+				<ingredients>
+				 <Steel>100</Steel>
+			     <GW_VehicleCannon>2</GW_VehicleCannon>
+			     <HP_Ceramite>100</HP_Ceramite>
+				 <ComponentIndustrial>4</ComponentIndustrial>
+				</ingredients>
+			</li>
+		    <li>
+				<key>GW_Marauder_TailBolterTurretUpgrade</key>
+				<label>Tail Bolters</label>
+				<description>WIP</description>
+				<icon>Things/Vehicles/Marauder/marauderHBT</icon>
+				<work>7500</work>
+				<gridCoordinate>(5, 15)</gridCoordinate>
+				<drawSize>(80, 80)</drawSize>
+				<disableIfUpgradeNodesEnabled>
+				 	<li>GW_Marauder_TailAsssaultTurretUpgrade</li>
+				</disableIfUpgradeNodesEnabled>
+				<upgrades>
+					<li Class = "Vehicles.TurretUpgrade">
+						<turrets>
+							<li>
+								<turretDef>GW_Marauder_Bolter</turretDef>
+								<renderProperties>
+									<north>(0, -8)</north>
+									<south>(0, 8)</south>
+									<east>(-8, 0)</east>
+								</renderProperties>
+								<drawLayer>0</drawLayer>
+								<gizmoLabel>Tail Bolters</gizmoLabel>
+								<defaultAngleRotated>180</defaultAngleRotated>
+								<angleRestricted>(120,240)</angleRestricted>
+								<aimPieOffset>(0, 2.55)</aimPieOffset>
+								<key>tailGun</key>
+							</li>
+						</turrets>
+					</li>
+				</upgrades>
+				<ingredients>
+				 <Steel>100</Steel>
+			     <GW_VehicleCannon>6</GW_VehicleCannon>
+			     <HP_Ceramite>100</HP_Ceramite>
+				 <ComponentIndustrial>4</ComponentIndustrial>
+				</ingredients>
+			</li>
+		    <li>
+				<key>GW_Marauder_TailAsssaultTurretUpgrade</key>
+				<label>Tail Assault Cannons</label>
+				<description>WIP</description>
+				<icon>Things/Vehicles/Marauder/MarauderAssaultCannons</icon>
+				<work>7500</work>
+				<gridCoordinate>(10, 15)</gridCoordinate>
+				<drawSize>(80, 80)</drawSize>
+				<disableIfUpgradeNodesEnabled>
+				 	<li>GW_Marauder_TailBolterTurretUpgrade</li>
+				</disableIfUpgradeNodesEnabled>
+				<upgrades>
+					<li Class = "Vehicles.TurretUpgrade">
+						<turrets>
+							<li>
+								<turretDef>GW_Marauder_Assault</turretDef>
+								<renderProperties>
+									<north>(0, -8)</north>
+									<south>(0, 8)</south>
+									<east>(-8, 0)</east>
+								</renderProperties>
+								<drawLayer>0</drawLayer>
+								<gizmoLabel>Tail Assault Cannons</gizmoLabel>
+								<defaultAngleRotated>180</defaultAngleRotated>
+								<angleRestricted>(120,240)</angleRestricted>
+								<aimPieOffset>(0, 2.55)</aimPieOffset>
+								<key>tailGun</key>
+							</li>
+						</turrets>
+					</li>
+				</upgrades>
+				<ingredients>
+				 <Steel>100</Steel>
+			     <GW_VehicleCannon>6</GW_VehicleCannon>
+			     <HP_Ceramite>100</HP_Ceramite>
+				 <ComponentIndustrial>4</ComponentIndustrial>
+				</ingredients>
+			</li>
+			<li>
+				<key>GW_Marauder_NoseAutoCannonUpgrade</key>
+				<label>Fixed Forward Autocannons</label>
+				<description>3x Twin-linked Autocannons fixed forward</description>
+				<icon>Things/Vehicles/Marauder/MarauderFrontCannons</icon>
+				<work>7500</work>
+				<gridCoordinate>(15, 5)</gridCoordinate>
+				<drawSize>(80, 80)</drawSize>
+				<disableIfUpgradeNodesEnabled>
+				 	<li>GW_Marauder_NoseBolterTurretUpgrade</li>
+					<li>GW_Marauder_NoseLasTurretUpgrade</li>
+				</disableIfUpgradeNodesEnabled>
+				<upgrades>
+					<li Class = "Vehicles.VehicleUpgrade">
+					<roles>
+							<li>
+   				 		        <key>pilot</key>
+            					<editKey>pilotAutocannons</editKey>
+								<handlingTypes>Turret</handlingTypes>
+								<turretIds>
+									<li>noseGun</li>
+								</turretIds>
+							</li>
+					</roles>
+					</li>
+					<li Class = "Vehicles.TurretUpgrade">
+						<turrets>
+							<li>
+								<turretDef>GW_Marauder_NoseAutoCannons</turretDef>
+								<renderProperties>
+									<north>(0, 8.2)</north>
+									<south>(0, -8.2)</south>
+									<east>(8.2, 0)</east>
+								</renderProperties>
+								<drawLayer>3</drawLayer>
+								<gizmoLabel>Nose Autocannons</gizmoLabel>
+								<defaultAngleRotated>0</defaultAngleRotated>
+								<angleRestricted>(340,20)</angleRestricted>
+								<aimPieOffset>(0, 2.55)</aimPieOffset>
+								<key>noseGun</key>
+							</li>
+						</turrets>
+					</li>
+				</upgrades>
+				<ingredients>
+				 <Steel>100</Steel>
+			     <GW_VehicleCannon>6</GW_VehicleCannon>
+			     <HP_Ceramite>100</HP_Ceramite>
+				 <ComponentIndustrial>4</ComponentIndustrial>
+				</ingredients>
+			</li>
+		</nodes>
+	</Vehicles.UpgradeTreeDef>
+	
+</Defs>

@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>	
+	<Vehicles.VehicleDef ParentName="BaseVehiclePawn">
+		<defName>GW_Taurox</defName>
+		<label>Taurox</label>
+		<description>A tracked armored personnel carrier used by the Astra Militarum. Relatively fast for an APC, it can rapidly deploy large numbers of Guardsmen to exploit weaknesses in the enemy’s defenses or plug up holes in Imperial lines. \n\nThis design is unarmed, but older versions used to possess heavy bolters and lascannons for defense. \n\n&lt;color=#bb8f04&gt;Crew :&lt;/color&gt; Driver x1, Passengers x11\n&lt;color=#bb8f04&gt;Fuel type:&lt;/color&gt; Chemfuel</description>	
+		<graphicData>
+			<texPath>Things/Vehicles/Taurox/Taurox</texPath>
+			<graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
+			<shaderType>CutoutComplexPattern</shaderType>
+			<drawSize>(7, 7)</drawSize>
+			<color>(155, 155, 155)</color>
+			<colorTwo>(65, 75, 80)</colorTwo>
+			<colorThree>(45, 50, 45)</colorThree>
+		</graphicData> 
+
+		<fillPercent>1</fillPercent>
+		
+		<buildDef>GW_Taurox_blueprint</buildDef>
+		
+		<size>(4, 7)</size>
+
+		<vehicleCategory>Combat</vehicleCategory>
+		<techLevel>Industrial</techLevel>
+		<vehicleType>Land</vehicleType>
+		
+		<soundSustainersOnEvent>
+			<li>
+				<start>IgnitionOn</start>
+				<stop>IgnitionOff</stop>
+				<value>GW_VoG_HeavySound</value>
+			</li>
+		</soundSustainersOnEvent>
+
+		<statBases>
+			<ArmorRating_Blunt>1.18</ArmorRating_Blunt>
+			<ArmorRating_Sharp>1.55</ArmorRating_Sharp>
+			<Flammability>0</Flammability>
+			<MarketValue>2240</MarketValue>
+			<Mass>615</Mass>
+		</statBases>
+		
+		<vehicleStats>
+			<Mass>615</Mass>
+			<MoveSpeed>12.2</MoveSpeed>
+			<CargoCapacity>1550</CargoCapacity>
+			<RepairRate>4</RepairRate>
+			<AccelerationRate MayRequire="OskarPotocki.VanillaVehiclesExpanded">0.04</AccelerationRate>
+		</vehicleStats>
+		
+		
+		<race>
+			<baseBodySize>20.5</baseBodySize>
+		</race>
+		
+		<properties>
+			<vehicleJobLimitations>
+				<li>(RepairVehicle, 20)</li>
+			</vehicleJobLimitations>
+			<roles>
+				<li>
+					<key>pilot</key>
+					<label>Pilot</label>
+					<slots>1</slots>
+					<slotsToOperate>1</slotsToOperate>
+					
+					<handlingTypes>
+						<li>Movement</li>
+					</handlingTypes>
+				</li>
+				<li>
+					<key>passenger</key>
+					<label>Passenger</label>
+					<slots>10</slots>
+				</li>
+			</roles>
+		</properties>
+		
+		<components>
+			<li>
+				<key>Engine</key>
+				<label>Engine</label>
+				<health>150</health>
+				<priorityStatEfficiency>true</priorityStatEfficiency>
+				<depth>Internal</depth>
+				<reactors>
+					<li Class="Vehicles.Reactor_Explosive">
+						<indicator>VF_Explosive</indicator>
+						<chance>0.25</chance>
+						<radius>3</radius>
+						<damageDef>Bomb</damageDef>
+					</li>
+				</reactors>
+				<hitbox>
+					<cells>
+						<li>(0, -1)</li>
+					</cells>
+				</hitbox>
+				<categories>
+					<li>MoveSpeed</li>
+				</categories>
+			</li>
+			<li>
+				<key>LeftTrack</key>
+				<label>Left Track</label>
+				<health>200</health>
+				<depth>External</depth>
+				<tags>
+					<li>Wheel</li>
+				</tags>
+				<hitbox>
+					<fallthrough>false</fallthrough>
+					<side>Left</side>
+				</hitbox>
+				<categories>
+					<li>MoveSpeed</li>
+				</categories>
+			</li>
+			<li>
+				<key>RightTrack</key>
+				<label>Right Track</label>
+				<health>200</health>
+				<depth>External</depth>
+				<tags>
+					<li>Wheel</li>
+				</tags>
+				<hitbox>
+					<fallthrough>false</fallthrough>
+					<side>Right</side>
+				</hitbox>
+				<categories>
+					<li>MoveSpeed</li>
+				</categories>
+			</li>
+			<li>
+				<key>FrontLeftDriveSprocket</key>
+				<label>Front Left Drive Sprocket</label>
+				<health>65</health>
+				<depth>External</depth>
+				<tags>
+					<li>Wheel</li>
+				</tags>
+				<hitbox>
+					<fallthrough>false</fallthrough>
+					<cells>
+						<li>(-1, 1)</li>
+					</cells>
+				</hitbox>
+				<categories>
+					<li>MoveSpeed</li>
+				</categories>
+			</li>
+			<li>
+				<key>FrontRightDriveSprocket</key>
+				<label>Front Right Drive Sprocket</label>
+				<health>65</health>
+				<depth>External</depth>
+				<tags>
+					<li>Wheel</li>
+				</tags>
+				<hitbox>
+					<fallthrough>false</fallthrough>
+					<cells>
+						<li>(1, 1)</li>
+					</cells>
+				</hitbox>
+				<categories>
+					<li>MoveSpeed</li>
+				</categories>
+			</li>
+			<li>
+				<key>BackLeftDriveSprocket</key>
+				<label>Back Left Drive Sprocket</label>
+				<health>65</health>
+				<depth>External</depth>
+				<tags>
+					<li>Wheel</li>
+				</tags>
+				<hitbox>
+					<fallthrough>false</fallthrough>
+					<cells>
+						<li>(-1, -1)</li>
+					</cells>
+				</hitbox>
+				<categories>
+					<li>MoveSpeed</li>
+				</categories>
+			</li>
+			<li>
+				<key>BackRightDriveSprocket</key>
+				<label>Back Right Drive Sprocket</label>
+				<health>65</health>
+				<depth>External</depth>
+				<tags>
+					<li>Wheel</li>
+				</tags>
+				<hitbox>
+					<fallthrough>false</fallthrough>
+					<cells>
+						<li>(1, -1)</li>
+					</cells>
+				</hitbox>
+				<categories>
+					<li>MoveSpeed</li>
+				</categories>
+			</li>
+			<li>
+				<key>Gearbox</key>
+				<label>Gearbox</label>
+				<health>50</health>
+				<depth>Internal</depth>
+				<hitbox>
+					<cells>
+						<li>(0, 1)</li>
+					</cells>
+				</hitbox>
+				<categories>
+					<li>MoveSpeed</li>
+				</categories>
+			</li>
+			<li>
+				<key>FrontArmorPlating</key>
+				<label>Front Armor Plating</label>
+				<health>300</health>
+				<depth>External</depth>
+				<armor>
+					<ArmorRating_Blunt>1.72</ArmorRating_Blunt>
+					<ArmorRating_Sharp>3.04</ArmorRating_Sharp>
+				</armor>
+				<hitbox>
+					<side>Front</side>
+				</hitbox>
+			</li>
+			<li>
+				<key>LeftArmorPlating</key>
+				<label>Left Armor Plating</label>
+				<health>250</health>
+				<depth>External</depth>
+				<armor>
+					<ArmorRating_Blunt>1.17</ArmorRating_Blunt>
+					<ArmorRating_Sharp>2.07</ArmorRating_Sharp>
+				</armor>
+				<hitbox>
+					<side>Left</side>
+				</hitbox>
+			</li>
+			<li>
+				<key>RightArmorPlating</key>
+				<label>Right Armor Plating</label>
+				<health>250</health>
+				<depth>External</depth>
+				<armor>
+					<ArmorRating_Blunt>1.17</ArmorRating_Blunt>
+					<ArmorRating_Sharp>2.07</ArmorRating_Sharp>
+				</armor>
+				<hitbox>
+					<side>Right</side>
+				</hitbox>
+			</li>
+			<li>
+				<key>BackArmorPlating</key>
+				<label>Rear Armor Plating</label>
+				<health>200</health>
+				<depth>External</depth>
+				<armor>
+					<ArmorRating_Blunt>0.94</ArmorRating_Blunt>
+					<ArmorRating_Sharp>1.66</ArmorRating_Sharp>
+				</armor>
+				<hitbox>
+					<side>Back</side>
+				</hitbox>
+			</li>
+			<li>
+				<key>FuelTank</key>
+				<label>Fuel Tank</label>
+				<health>150</health>
+				<depth>Internal</depth>
+				<reactors>
+					<li Class="Vehicles.Reactor_FuelLeak" />
+				</reactors>
+				<hitbox>
+					<cells>
+						<li>(0, -1)</li>
+					</cells>
+				</hitbox>
+			</li>
+			<li>
+				<key>Dashboard</key>
+				<label>Dashboard</label>
+				<health>50</health>
+				<depth>Internal</depth>
+				<hitWeight>5</hitWeight>
+			</li>
+			<li>
+				<key>SteeringApparatus</key>
+				<label>Steering Apparatus</label>
+				<health>50</health>
+				<depth>Internal</depth>
+				<hitWeight>5</hitWeight>
+			</li>
+			<li>
+				<key>Alternator</key>
+				<label>Alternator</label>
+				<health>50</health>
+				<depth>Internal</depth>
+			</li>
+			<li>
+				<key>Roof</key>
+				<label>Roof</label>
+				<health>170</health>
+				<depth>External</depth>
+				<armor>
+					<ArmorRating_Blunt>0.94</ArmorRating_Blunt>
+					<ArmorRating_Sharp>1.66</ArmorRating_Sharp>
+				</armor>
+				<hitWeight>10</hitWeight>
+			</li>
+		</components>
+
+		<comps>
+			<li Class="Vehicles.CompProperties_FueledTravel">
+				<fuelType>Chemfuel</fuelType>
+				<leakDef>Filth_Fuel</leakDef>
+				<fuelConsumptionRate>36</fuelConsumptionRate>
+				<fuelConsumptionWorldMultiplier>0.75</fuelConsumptionWorldMultiplier>
+				<fuelCapacity>135</fuelCapacity>
+			</li>
+
+			<li Class="Vehicles.CompProperties_VehicleTurrets">
+			</li>
+
+		</comps>
+	</Vehicles.VehicleDef>
+
+</Defs>

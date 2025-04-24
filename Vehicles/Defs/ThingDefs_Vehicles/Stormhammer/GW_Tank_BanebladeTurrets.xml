@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<Vehicles.VehicleTurretDef ParentName="VehicleTurretBase">
+		<defName>GW_Stormhammer_PrimaryTwins</defName>
+		<label>Stormhammer main cannon</label>
+		<description>Primary Stormhammer cannon.</description>
+		<turretType>Rotatable</turretType>
+		<shotSound>Shot_TurretSniper</shotSound>
+		<projectile>Bullet_Baneblade_MainTurret</projectile>
+		<reloadTimer>30.0</reloadTimer>
+		<warmUpTimer>4.0</warmUpTimer>
+		<magazineCapacity>2</magazineCapacity>
+		<chargePerAmmoCount>1</chargePerAmmoCount>
+		<genericAmmo>true</genericAmmo>
+		<hitFlags>IntendedTarget</hitFlags>
+		<autoSnapTargeting>false</autoSnapTargeting>
+		<rotationSpeed>3.5</rotationSpeed>
+
+		<projectileOffset>6.0</projectileOffset>
+		<projectileShifting>
+			<li>-0.2</li>
+			<li>0.2</li>
+		</projectileShifting>
+
+		<minRange>5</minRange>
+
+		<maxRange>70.9</maxRange>
+		<recoil>
+			<distanceTotal>0.0</distanceTotal>
+			<distancePerTick>0.0</distancePerTick>
+			<speedMultiplierPostRecoil>0.0</speedMultiplierPostRecoil>
+		</recoil>
+		<attachProjectileFlag>GW_Tank</attachProjectileFlag>
+		<fireModes>
+			<li>
+				<shotsPerBurst>2</shotsPerBurst>
+				<ticksBetweenShots>0</ticksBetweenShots>
+				<ticksBetweenBursts>5</ticksBetweenBursts>
+				<label>Single</label>
+				<spreadRadius>7</spreadRadius>
+				<texPath>UI/Gizmos/FireRate_Single</texPath>
+			</li>
+		</fireModes>
+		<graphicData>
+			<texPath>Things/Vehicles/Stormhammer/StormHammer_CannonTop</texPath>
+			<graphicClass>Vehicles.Graphic_Turret</graphicClass>
+			<shaderType>CutoutComplexPattern</shaderType>
+			<drawSize>(9.5, 9.5)</drawSize>
+			<layer>4</layer>
+		</graphicData>
+		<ammunition>
+			<thingDefs>
+				<li>GW_BanePrimaryCannonShellNonCE</li>
+			</thingDefs>
+		</ammunition>
+		<motes>
+			<li>
+				<cycles>1</cycles>
+				<moteDef>Mote_GW_Plume</moteDef>
+				<animationType>Reset</animationType>
+			</li>
+		</motes>
+	</Vehicles.VehicleTurretDef>
+
+	<Vehicles.VehicleTurretDef ParentName="VehicleTurretBase">
+		<defName>GW_Stormhammer_Lasgun</defName>
+		<label>lasgun</label>
+		<description>The Lascannon, a devastating energy weapon, is mounted on a formidable vehicle in the war-ridden GrimWorld 40,000. With a sleek design and ominous presence, this armament is affixed to the vehicle's battle-hardened chassis, embodying precision and destructive power against heavily armored foes. Bearing the Imperial Aquila, it symbolizes the unwavering might of the Imperium in the relentless struggle against darkness.</description>
+		
+		<turretType>Rotatable</turretType>
+		<shotSound>OverlordLascannon</shotSound>
+		
+		<projectile>GW_LascanonShot</projectile>
+		<reloadTimer>3.5</reloadTimer>
+		<warmUpTimer>0.4</warmUpTimer>
+		
+		<magazineCapacity>60</magazineCapacity>
+		<genericAmmo>true</genericAmmo>
+		
+		<hitFlags>IntendedTarget</hitFlags>
+		
+		<autoSnapTargeting>false</autoSnapTargeting>
+		<rotationSpeed>0.4</rotationSpeed>
+		
+		<projectileOffset>3.0</projectileOffset>
+		<projectileShifting>
+			<li>-0.2</li>
+			<li>0.2</li>
+		</projectileShifting>
+		<minRange>1</minRange>
+		<maxRange>42.9</maxRange>
+		
+		
+		
+		<fireModes>
+			<li>
+				<shotsPerBurst>2</shotsPerBurst>
+				<ticksBetweenShots>2</ticksBetweenShots>
+				<ticksBetweenBursts>150</ticksBetweenBursts>
+				<spreadRadius>1</spreadRadius>
+				<label>Burst</label>
+				<texPath>UI/Gizmos/FireRate_Burst</texPath>
+			</li>
+		</fireModes>
+
+		<graphicData>
+			<texPath>Things/Vehicles/Stormhammer/StormHammer_SponsonTurret_Lasgun</texPath>
+			<graphicClass>Vehicles.Graphic_Turret</graphicClass>
+			<shaderType>CutoutComplexPattern</shaderType>
+			<drawSize>(8, 8)</drawSize>
+			<layer>-1</layer>
+		</graphicData>
+		
+		<ammunition>
+			<thingDefs>
+				<li>GW_LascannonammoNonCE</li>
+			</thingDefs>
+		</ammunition>
+	</Vehicles.VehicleTurretDef>
+
+	<Vehicles.VehicleTurretDef ParentName="VehicleTurretBase">
+		<defName>GW_Stormhammer_HeavyBolter</defName>
+		<label>Stormhammer main cannon</label>
+		<description>Armored Boltor Baneblade cannon.</description>
+		<turretType>Rotatable</turretType>
+		<shotSound>Shot_TurretSniper</shotSound>
+		<projectile>GW_Bullet_HeavyBolter</projectile>
+		<reloadTimer>7.8</reloadTimer>
+		<warmUpTimer>1.0</warmUpTimer>
+		<magazineCapacity>100</magazineCapacity>
+		<chargePerAmmoCount>1</chargePerAmmoCount>
+		<genericAmmo>true</genericAmmo>
+		<hitFlags>IntendedTarget</hitFlags>
+		<autoSnapTargeting>false</autoSnapTargeting>
+		<rotationSpeed>0.4</rotationSpeed>
+		<projectileOffset>4.0</projectileOffset>
+		<projectileShifting>
+			<li>-0.2</li>
+			<li>0.2</li>
+		</projectileShifting>
+		<minRange>5</minRange>
+		<maxRange>45.9</maxRange>
+		<recoil>
+			<distanceTotal>0.0</distanceTotal>
+			<distancePerTick>0.0</distancePerTick>
+			<speedMultiplierPostRecoil>0.0</speedMultiplierPostRecoil>
+		</recoil>
+		<attachProjectileFlag>GW_Tank</attachProjectileFlag>
+		<fireModes>
+			<li>
+				<shotsPerBurst>30</shotsPerBurst>
+				<ticksBetweenShots>3</ticksBetweenShots>
+				<ticksBetweenBursts>90</ticksBetweenBursts>
+				<label>Auto</label>
+				<texPath>UI/Gizmos/FireRate_Auto</texPath>
+			</li>
+		</fireModes>
+		<graphicData>
+			<texPath>Things/Vehicles/Stormhammer/StormHammer_SideTurret</texPath>
+			<graphicClass>Vehicles.Graphic_Turret</graphicClass>
+			<shaderType>CutoutComplexPattern</shaderType>
+			<drawSize>(8, 8)</drawSize>
+			<layer>2</layer>
+		</graphicData>
+		<ammunition>
+			<thingDefs>
+				<li>GW_HeavyBolterNonCE</li>
+			</thingDefs>
+		</ammunition>
+		<motes>
+			<li>
+				<cycles>1</cycles>
+				<moteDef>Mote_GW_SmallPlume</moteDef>
+				<animationType>Reset</animationType>
+			</li>
+		</motes>
+	</Vehicles.VehicleTurretDef>
+	<Vehicles.VehicleTurretDef ParentName="VehicleTurretBase">
+		<defName>GW_Stormhammer_HeavyBolterCen</defName>
+		<label>Stormhammer main cannon</label>
+		<description>Armored Boltor Baneblade cannon.</description>
+		<turretType>Rotatable</turretType>
+		<shotSound>Shot_TurretSniper</shotSound>
+		<projectile>GW_Bullet_HeavyBolter</projectile>
+		<reloadTimer>7.8</reloadTimer>
+		<warmUpTimer>1.0</warmUpTimer>
+		<magazineCapacity>100</magazineCapacity>
+		<chargePerAmmoCount>1</chargePerAmmoCount>
+		<genericAmmo>true</genericAmmo>
+		<hitFlags>IntendedTarget</hitFlags>
+		<autoSnapTargeting>false</autoSnapTargeting>
+		<rotationSpeed>0.4</rotationSpeed>
+		<projectileOffset>2.0</projectileOffset>
+		<projectileShifting>
+			<li>-0.8</li>
+			<li>0.8</li>
+		</projectileShifting>
+		<minRange>5</minRange>
+		<maxRange>45.9</maxRange>
+		<recoil>
+			<distanceTotal>0.0</distanceTotal>
+			<distancePerTick>0.0</distancePerTick>
+			<speedMultiplierPostRecoil>0.0</speedMultiplierPostRecoil>
+		</recoil>
+		<attachProjectileFlag>GW_Tank</attachProjectileFlag>
+		<fireModes>
+			<li>
+				<shotsPerBurst>50</shotsPerBurst>
+				<ticksBetweenShots>5</ticksBetweenShots>
+				<ticksBetweenBursts>90</ticksBetweenBursts>
+				<label>Auto</label>
+				<texPath>UI/Gizmos/FireRate_Auto</texPath>
+			</li>
+		</fireModes>
+		<graphicData>
+			<texPath>Things/Vehicles/Stormhammer/StormHammer_SideTurret</texPath>
+			<graphicClass>Vehicles.Graphic_Turret</graphicClass>
+			<shaderType>CutoutComplexPattern</shaderType>
+			<drawSize>(0, 0)</drawSize>
+			<layer>2</layer>
+		</graphicData>
+		<ammunition>
+			<thingDefs>
+				<li>GW_HeavyBolterNonCE</li>
+			</thingDefs>
+		</ammunition>
+		<motes>
+			<li>
+				<cycles>1</cycles>
+				<moteDef>Mote_GW_SmallPlume</moteDef>
+				<animationType>Reset</animationType>
+			</li>
+		</motes>
+	</Vehicles.VehicleTurretDef>
+
+</Defs>

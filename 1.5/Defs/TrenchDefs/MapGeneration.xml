@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <MapGeneratorDef>
+    <defName>Base_TrenchLine</defName>
+    <genSteps>
+      <li>ElevationFertility</li>
+      <li>Caves</li>
+      <li>Terrain</li>
+      <li>CavesTerrain</li>
+      <li>Roads</li>
+      <li>RockChunks</li>
+      <li>Plants</li>
+      <li>ScenParts</li>
+      <li>RocksFromGrid</li>
+      <li>TrenchSettlement</li>
+      <li>Snow</li>
+      <li>Fog</li>
+    </genSteps>
+  </MapGeneratorDef>
+  
+  <!-- Generate faction base -->
+  <GenStepDef>
+    <defName>TrenchSettlement</defName>
+    <order>400</order>
+    <genStep Class="eridanus_trenches.GenStep_Trench"/>
+  </GenStepDef>
+</Defs>

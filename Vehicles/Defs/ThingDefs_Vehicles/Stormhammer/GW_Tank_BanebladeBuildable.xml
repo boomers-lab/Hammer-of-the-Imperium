@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!--===== Leman Russ =====-->
+
+	<Vehicles.VehicleBuildDef ParentName="VehicleBaseBuildable">
+		<defName>GW_Stormhammer_Blueprint</defName>
+		<label>Stormhammer</label>
+		<description>The Stormhammer is a colossal war machine of the Astra Militarum in the grim darkness of the Warhammer 40,000 universe. Towering over the battlefield, it embodies devastating firepower and formidable armor, capable of decimating enemy ranks and crushing resistance with its relentless advance. With its massive size and imposing presence, the Stormhammer strikes fear into the hearts of its foes, serving as a symbol of the Imperium's indomitable might. \n\n&lt;color=#bb8f04&gt;Crew:&lt;/color&gt; Driver x1, Gunner x1, Passenger x2\n&lt;color=#bb8f04&gt;Fuel type:&lt;/color&gt; Chemfuel</description>
+		<designationCategory>GrimworldCategory</designationCategory>
+		<graphicData>
+			<texPath>Things/Vehicles/Stormhammer/StormHammer</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(16, 16)</drawSize>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>500</MaxHitPoints>
+			<WorkToBuild>80000</WorkToBuild>
+			<Flammability>0.05</Flammability>
+		</statBases>
+		<size>(9, 15)</size>
+		<researchPrerequisites>
+			<li>GW_ImperialLandMilitaryTitanicVehicleResearch</li>
+		</researchPrerequisites>
+		<costList>
+			<Steel>1200</Steel>
+			<HP_Ceramite>850</HP_Ceramite>
+			<GW_VehicleCannon>4</GW_VehicleCannon>
+			<GW_VehicleEngine>1</GW_VehicleEngine>
+			<GW_VehicleExhaust>2</GW_VehicleExhaust>
+			<GW_VehicleSideTurret>6</GW_VehicleSideTurret>
+			<GW_VehicleSuspension>20</GW_VehicleSuspension>
+			<GW_VehicleTracks>2</GW_VehicleTracks>
+			<GW_VehicleWheel>16</GW_VehicleWheel>
+			<ComponentIndustrial>26</ComponentIndustrial>
+			<ComponentSpacer>11</ComponentSpacer>
+			<GW_ComponentRelic>3</GW_ComponentRelic>
+		</costList>
+		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+		<thingToSpawn>GW_Stormhammer</thingToSpawn>
+		<constructionSkillPrerequisite>15</constructionSkillPrerequisite>
+	</Vehicles.VehicleBuildDef>
+</Defs>

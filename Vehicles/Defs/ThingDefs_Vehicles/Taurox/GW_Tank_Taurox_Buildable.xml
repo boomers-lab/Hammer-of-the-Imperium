@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	<Vehicles.VehicleBuildDef ParentName="VehicleBaseBuildable">
+		<defName>GW_Taurox_blueprint</defName>
+		<label>Taurox</label>
+		<description>A tracked armored personnel carrier used by the Astra Militarum. Relatively fast for an APC, it can rapidly deploy large numbers of Guardsmen to exploit weaknesses in the enemy’s defenses or plug up holes in Imperial lines. \n\nThis design is unarmed, but older versions used to possess heavy bolters and lascannons for defense. \n\n&lt;color=#bb8f04&gt;Crew :&lt;/color&gt; Driver x1, Passengers x11\n&lt;color=#bb8f04&gt;Fuel type:&lt;/color&gt; Chemfuel</description>
+		<designationCategory>GrimworldCategory</designationCategory>
+		
+		<graphicData>
+			<texPath>Things/Vehicles/Taurox/Taurox</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(7, 7)</drawSize>
+		</graphicData>
+		
+		<statBases>
+			<MaxHitPoints>500</MaxHitPoints>
+			<WorkToBuild>1000</WorkToBuild>
+			<Flammability>0.05</Flammability>
+		</statBases>
+		
+		<size>(3, 5)</size>
+		
+		<researchPrerequisites>
+			<li>GW_ImperialLandMilitaryLightVehicleResearch</li>
+		</researchPrerequisites>
+		
+		<costList>
+			<Steel>475</Steel>
+			<HP_Ceramite>400</HP_Ceramite>
+			<GW_VehicleEngine>1</GW_VehicleEngine>
+			<GW_VehicleExhaust>2</GW_VehicleExhaust>
+			<GW_VehicleSuspension>12</GW_VehicleSuspension>
+			<GW_VehicleTracks>4</GW_VehicleTracks>
+			<GW_VehicleWheel>12</GW_VehicleWheel>
+			<ComponentIndustrial>24</ComponentIndustrial>
+		</costList>
+		
+		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+		
+		<thingToSpawn>GW_Taurox</thingToSpawn>
+		
+		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+	</Vehicles.VehicleBuildDef>
+</Defs>

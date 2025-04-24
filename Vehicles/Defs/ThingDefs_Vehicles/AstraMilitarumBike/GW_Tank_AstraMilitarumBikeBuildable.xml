@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	
+	<Vehicles.VehicleBuildDef ParentName="VehicleBaseBuildable">
+		<defName>GW_AstraMilitarumBike_Blueprint</defName>
+		<label>Astra Militarum Bike</label>
+		<description>A fast, two-wheeled motorcycle armed with a front-mounted heavy bolter. The Astra MIlitarum sometimes uses bikes such as these in their Rough Rider units, though they often ride upon different varieties of horse - some are genetically-modified, while others are cybernetically-enhanced. \n\n&lt;color=#bb8f04&gt;Crew:&lt;/color&gt; Driver x1 \n&lt;color=#bb8f04&gt;Fuel type:&lt;/color&gt; Chemfuel</description>
+		<designationCategory>GrimworldCategory</designationCategory>
+		<graphicData>
+			<texPath>Things/Vehicles/AstraMilitarumBike/AMBike</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2.8, 2.8)</drawSize>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>500</MaxHitPoints>
+			<WorkToBuild>15000</WorkToBuild>
+			<Flammability>0.05</Flammability>
+		</statBases>
+		<size>(2, 2)</size>
+		<researchPrerequisites>
+			<li>GW_ImperialLandVehicleResearch</li>
+		</researchPrerequisites>
+		<costList>
+			<Steel>225</Steel>
+			<HP_Ceramite>15</HP_Ceramite>
+			<GW_VehicleEngine>1</GW_VehicleEngine>
+			<GW_VehicleExhaust>2</GW_VehicleExhaust>
+			<GW_VehicleSideTurret>1</GW_VehicleSideTurret>
+			<GW_VehicleSuspension>2</GW_VehicleSuspension>
+			<GW_VehicleWheel>2</GW_VehicleWheel>
+			<ComponentIndustrial>10</ComponentIndustrial>
+		</costList>
+		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+		<thingToSpawn>GW_AstraMilitarumBike</thingToSpawn>
+		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+	</Vehicles.VehicleBuildDef>
+</Defs>

@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!--===== the turret def is too small for me to care having it on it's own file =====-->
+
+	<Vehicles.VehicleTurretDef ParentName="VehicleTurretBase">
+		<defName>GW_AMbike_MainB</defName>
+		<label>bike Heavy Bolter Main</label>
+		<description>A fixed, front-mounted heavy bolter attached to the front of an Astra Militarum Bike. Fires 0.998 cal bolts.</description>
+		<turretType>Rotatable</turretType>
+		<shotSound>OverlordHBolter</shotSound>
+		<projectile>GW_Bullet_HeavyBolter</projectile>
+		<reloadTimer>7.8</reloadTimer>
+		<warmUpTimer>1.0</warmUpTimer>
+		<magazineCapacity>200</magazineCapacity>
+		<chargePerAmmoCount>2</chargePerAmmoCount>
+		<genericAmmo>true</genericAmmo>
+		<hitFlags>IntendedTarget</hitFlags>
+		<autoSnapTargeting>false</autoSnapTargeting>
+		<projectileOffset>1.0</projectileOffset>
+		<maxRange>28.9</maxRange>
+		<attachProjectileFlag>GW_Tank</attachProjectileFlag>
+		<fireModes>
+			<li>
+				<shotsPerBurst>5</shotsPerBurst>
+				<ticksBetweenShots>5</ticksBetweenShots>
+				<ticksBetweenBursts>30</ticksBetweenBursts>
+				<label>Single</label>
+				<texPath>UI/Gizmos/FireRate_Single</texPath>
+			</li>
+			<li>
+				<shotsPerBurst>10</shotsPerBurst>
+				<ticksBetweenShots>5</ticksBetweenShots>
+				<ticksBetweenBursts>30</ticksBetweenBursts>
+				<spreadRadius>1</spreadRadius>
+				<label>Burst</label>
+				<texPath>UI/Gizmos/FireRate_Burst</texPath>
+			</li>
+			<li>
+				<shotsPerBurst>25</shotsPerBurst>
+				<ticksBetweenShots>5</ticksBetweenShots>
+				<ticksBetweenBursts>45</ticksBetweenBursts>
+				<label>Auto</label>
+				<texPath>UI/Gizmos/FireRate_Auto</texPath>
+			</li>
+		</fireModes>
+
+		<graphicData>
+			<texPath>Things/Vehicles/Chimera/Chimera_CannonSide</texPath>
+			<graphicClass>Vehicles.Graphic_Turret</graphicClass>
+			<shaderType>CutoutComplexPattern</shaderType>
+			<drawSize>(0, 0)</drawSize>
+		</graphicData>
+
+		<ammunition>
+			<thingDefs>
+				<li>GW_HeavyBolterNonCE</li>
+			</thingDefs>
+		</ammunition>
+	</Vehicles.VehicleTurretDef>
+
+				<!--===== The actual def of the Bike =====-->
+
+
+	<Vehicles.VehicleDef ParentName="BaseVehiclePawn">
+		<defName>GW_AstraMilitarumBike</defName>
+		<label>Astra Militarum Bike</label>
+		<description>A fast, two-wheeled motorcycle armed with a front-mounted heavy bolter. The Astra MIlitarum sometimes uses bikes such as these in their Rough Rider units, though they often ride upon different varieties of horse - some are genetically-modified, while others are cybernetically-enhanced. \n\n&lt;color=#bb8f04&gt;Crew:&lt;/color&gt; Driver x1 \n&lt;color=#bb8f04&gt;Fuel type:&lt;/color&gt; Chemfuel</description>
+
+		<graphicData>
+			<texPath>Things/Vehicles/AstraMilitarumBike/AMBike</texPath>
+			<graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
+			<shaderType>CutoutComplexPattern</shaderType>
+			<drawSize>(2.8, 2.8)</drawSize>
+			<color>(155, 155, 155)</color>
+			<colorTwo>(65, 75, 80)</colorTwo>
+			<colorThree>(45, 50, 45)</colorThree>
+		</graphicData>
+		<fillPercent>1</fillPercent>
+		<buildDef>GW_AstraMilitarumBike_Blueprint</buildDef>
+		<size>(2, 2)</size>
+		<vehicleCategory>Combat</vehicleCategory>
+		<techLevel>Industrial</techLevel>
+		<vehicleType>Land</vehicleType>
+		<statBases>
+			<ArmorRating_Blunt>0.76</ArmorRating_Blunt>
+			<ArmorRating_Sharp>1.14</ArmorRating_Sharp>
+			<ArmorRating_Heat>1.0</ArmorRating_Heat>
+			<Flammability>0</Flammability>
+			<MarketValue>4200</MarketValue>
+			<Mass>200</Mass>
+		</statBases>
+		<vehicleStats>
+			<Mass>200</Mass>
+			<MoveSpeed>12</MoveSpeed>
+			<CargoCapacity>200</CargoCapacity>
+			<RepairRate>0.3</RepairRate>
+			<AccelerationRate MayRequire="OskarPotocki.VanillaVehiclesExpanded">0.07</AccelerationRate>
+		</vehicleStats>
+		
+		<soundSustainersOnEvent>
+			<li>
+				<start>IgnitionOn</start>
+				<stop>IgnitionOff</stop>
+				<value>bikelooper</value>
+			</li>
+		</soundSustainersOnEvent>
+		
+		<race>
+			<baseBodySize>4.0</baseBodySize>
+		</race>
+		<properties>
+			<customSnowCategoryTicks AssignDefaults="1" />
+			<customRoadCosts AssignDefaults="0.33" />
+			<winterSpeedMultiplier>0.90</winterSpeedMultiplier>
+			<worldSpeedMultiplier>1.30</worldSpeedMultiplier>
+			<offRoadMultiplier>0.90</offRoadMultiplier>
+			<vehicleJobLimitations>
+				<li>(RepairVehicle, 5)</li>
+			</vehicleJobLimitations>
+			<diagonalRotation>false</diagonalRotation>
+			<roles>
+				<li>
+		<key>rider</key>
+		<label>Rider</label>
+
+		<slots>1</slots>
+		<slotsToOperate>1</slotsToOperate>	
+
+		<handlingTypes>
+		<li>Movement</li>
+		<li>Turret</li>
+		</handlingTypes>
+			
+		<turretIds>
+		<li>mainTurret</li>
+		</turretIds>
+
+		<pawnRenderer>
+		<layer>1</layer>
+		<layerNorth>1</layerNorth>
+		<layerSouth>-1</layerSouth>
+		<angleNorth>0</angleNorth>
+		<angleEast>0</angleEast>
+		<angleNorthEast>0</angleNorthEast>
+		<angleSouthEast>0</angleSouthEast>
+		<drawOffsetNorth>(0,0,-0.01)</drawOffsetNorth>
+		<drawOffsetSouth>(0,0,-0.01)</drawOffsetSouth>
+		<drawOffsetEast>(-0.2,0,-0.15)</drawOffsetEast>
+		</pawnRenderer>
+				</li>
+			</roles>
+		</properties>
+		<components>
+			<li>
+				<key>Engine</key>
+				<label>Engine</label>
+				<health>150</health>
+				<priorityStatEfficiency>true</priorityStatEfficiency>
+				<depth>Internal</depth>
+				<reactors>
+					<li Class="Vehicles.Reactor_Explosive">
+						<indicator>VF_Explosive</indicator>
+						<chance>0.25</chance>
+						<radius>3</radius>
+						<damageDef>Bomb</damageDef>
+					</li>
+				</reactors>
+				<hitbox>
+					<cells>
+						<li>(0, 0)</li>
+					</cells>
+				</hitbox>
+				<categories>
+					<li>MoveSpeed</li>
+				</categories>
+			</li>
+			<li>
+				<key>Gearbox</key>
+				<label>Gearbox</label>
+				<health>50</health>
+				<depth>Internal</depth>
+				<hitbox>
+					<cells>
+						<li>(0, 1)</li>
+					</cells>
+				</hitbox>
+				<categories>
+					<li>MoveSpeed</li>
+				</categories>
+			</li>
+			<li>
+				<key>FrontArmorPlating</key>
+				<label>Front Armor Plating</label>
+				<health>225</health>
+				<depth>External</depth>
+				<armor>
+					<ArmorRating_Blunt>2.84</ArmorRating_Blunt>
+					<ArmorRating_Sharp>1.64</ArmorRating_Sharp>
+				</armor>
+				<hitbox>
+					<side>Front</side>
+				</hitbox>
+			</li>
+			<li>
+				<key>LeftArmorPlating</key>
+				<label>Left Armor Plating</label>
+				<health>225</health>
+				<depth>External</depth>
+				<armor>
+					<ArmorRating_Blunt>1.84</ArmorRating_Blunt>
+					<ArmorRating_Sharp>1.05</ArmorRating_Sharp>
+				</armor>
+				<hitbox>
+					<side>Left</side>
+				</hitbox>
+			</li>
+			<li>
+				<key>RightArmorPlating</key>
+				<label>Right Armor Plating</label>
+				<health>225</health>
+				<depth>External</depth>
+				<armor>
+					<ArmorRating_Blunt>1.84</ArmorRating_Blunt>
+					<ArmorRating_Sharp>1.05</ArmorRating_Sharp>
+				</armor>
+				<hitbox>
+					<side>Right</side>
+				</hitbox>
+			</li>
+			<li>
+				<key>BackArmorPlating</key>
+				<label>Rear Armor Plating</label>
+				<health>200</health>
+				<depth>External</depth>
+				<armor>
+					<ArmorRating_Blunt>1.45</ArmorRating_Blunt>
+					<ArmorRating_Sharp>0.85</ArmorRating_Sharp>
+				</armor>
+				<hitbox>
+					<side>Back</side>
+				</hitbox>
+			</li>
+			<li>
+				<key>FuelTank</key>
+				<label>Fuel Tank</label>
+				<health>150</health>
+				<depth>Internal</depth>
+				<reactors>
+					<li Class="Vehicles.Reactor_FuelLeak" />
+				</reactors>
+				<hitbox>
+					<cells>
+						<li>(0, 0)</li>
+					</cells>
+				</hitbox>
+			</li>
+			<li>
+				<key>Dashboard</key>
+				<label>Dashboard</label>
+				<health>50</health>
+				<depth>Internal</depth>
+				<hitWeight>5</hitWeight>
+			</li>
+			<li>
+				<key>SteeringApparatus</key>
+				<label>Steering Apparatus</label>
+				<health>50</health>
+				<depth>Internal</depth>
+				<hitWeight>5</hitWeight>
+			</li>
+			<li>
+				<key>Alternator</key>
+				<label>Alternator</label>
+				<health>50</health>
+				<depth>Internal</depth>
+			</li>
+		</components>
+		<comps>
+			<li Class="Vehicles.CompProperties_FueledTravel">
+				<fuelType>Chemfuel</fuelType>
+				<leakDef>Filth_Fuel</leakDef>
+				<fuelConsumptionRate>36</fuelConsumptionRate>
+				<fuelConsumptionWorldMultiplier>0.75</fuelConsumptionWorldMultiplier>
+				<fuelCapacity>135</fuelCapacity>
+			</li>
+
+		<li Class="Vehicles.CompProperties_VehicleTurrets">
+		<turrets>
+				<li>
+		<turretDef>GW_AMbike_MainB</turretDef>
+						
+		<renderProperties>
+		<north>(0, 0)</north>
+		<south>(0, 0)</south>
+		<east>(0.9, -0.3)</east>
+		</renderProperties>
+						
+
+		<gizmoLabel>Main Turret</gizmoLabel>
+						
+		<defaultAngleRotated>0</defaultAngleRotated>
+		<angleRestricted>(340,20)</angleRestricted>
+		<aimPieOffset>(0, 1.1)</aimPieOffset>
+						
+		<key>mainTurret</key>
+					</li>
+				</turrets>
+			</li>
+		</comps>
+	</Vehicles.VehicleDef>
+
+</Defs>

@@ -2,7 +2,7 @@
 <Defs>
         <!--Heavy Bolter-->
     <ThingDef ParentName="AutocannonTurret">
-        <defName>GW_Building_HeavyBolter</defName>
+        <defName>GW_HOI_Building_HeavyBolter</defName>
         <label>Heavy bolter turret</label>
         <description>A heavy bolter mounted on a tripod, capable of firing long bursts of high-caliber bolts. \n\nAs baseline humans do not have the strength to wield heavy bolters as light machine guns, these turrets instead give the Imperial Guard a strong anti-infantry emplacement.</description>
         <thingClass>Building_TurretGun</thingClass>
@@ -73,7 +73,7 @@
             <ShootingAccuracyTurret>0.96</ShootingAccuracyTurret> <!-- like level 8 human shooter -->
         </statBases>
         <building>
-            <turretGunDef>GW_BuildingGun_HeavyBolter</turretGunDef>
+            <turretGunDef>GW_HOI_BuildingGun_HeavyBolter</turretGunDef>
             <turretBurstCooldownTime>2</turretBurstCooldownTime>
         </building>
         <placeWorkers>
@@ -86,7 +86,7 @@
     </ThingDef>
 
     <ThingDef ParentName="BaseWeaponTurret">
-        <defName>GW_BuildingGun_HeavyBolter</defName>
+        <defName>GW_HOI_BuildingGun_HeavyBolter</defName>
         <label>Mounted heavy bolter</label>
         <description>A heavy bolter that has been designed to sit upon a turret mount so that baseline humans can use it.</description>
         <recoilPower>3</recoilPower>
@@ -107,10 +107,10 @@
         <verbs>
             <li>
                 <verbClass>Verb_Shoot</verbClass>
-                <defaultProjectile>GW_BuildingBullet_HeavyBolter</defaultProjectile>
+                <defaultProjectile>GW_Bullet_HeavyBolter</defaultProjectile>
                 <warmupTime>2</warmupTime>
                 <range>30</range>
-                <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+                <ticksBetweenBurstShots>9</ticksBetweenBurstShots>
                 <burstShotCount>10</burstShotCount>  <!--Normal heavy bolter has a burst count of 10-->
                 <soundCast>GW_AM_HeavyBolter</soundCast>
                 <soundCastTail>GunTail_Heavy</soundCastTail>
@@ -120,25 +120,9 @@
         </verbs>
     </ThingDef>
 
-    <ThingDef ParentName="BaseBullet">
-        <defName>GW_BuildingBullet_HeavyBolter</defName>
-        <label>heavy bolter round</label>
-        <graphicData>
-            <texPath>Things/Projectile/Bullet_Big</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-            <drawSize>1.2</drawSize>
-        </graphicData>
-        <projectile>
-            <damageDef>Bullet</damageDef>
-            <damageAmountBase>70</damageAmountBase>
-            <stoppingPower>0.5</stoppingPower>
-            <speed>70</speed>
-        </projectile>
-    </ThingDef>
-
         <!-- Autocannon -->
     <ThingDef ParentName="AutocannonTurret">
-        <defName>GW_Building_Autocannon</defName>
+        <defName>GW_HOI_Building_Autocannon</defName>
         <label>Mannable autocannon turret</label>
         <description>An emplaced autocannon that can be operated by a single soldier. The strongest of the slugthrowers, even Space Marines cannot withstand its fire for long. \n\nOrks greatly enjoy using their own autocannons, loving the massive amount of noise it makes. Similar principles are followed by all Ork firearms, with accuracy being a distant third to firepower and noise.</description>
         <thingClass>Building_TurretGun</thingClass>
@@ -209,7 +193,7 @@
             <ShootingAccuracyTurret>1.08</ShootingAccuracyTurret> <!-- A little more accurate than the heavy bolter -->
         </statBases>
         <building>
-            <turretGunDef>GW_BuildingGun_AutoCannon</turretGunDef>
+            <turretGunDef>GW_HOI_BuildingGun_AutoCannon</turretGunDef>
             <turretBurstCooldownTime>2</turretBurstCooldownTime>
         </building>
         <placeWorkers>
@@ -222,7 +206,7 @@
     </ThingDef>
 
     <ThingDef ParentName="BaseWeaponTurret">
-        <defName>GW_BuildingGun_AutoCannon</defName>
+        <defName>GW_HOI_BuildingGun_AutoCannon</defName>
         <label>Autocannon</label>
         <description>An autocannon emplaced on a mount for Imperial Guard use.</description>
         <recoilPower>3</recoilPower>
@@ -243,7 +227,7 @@
         <verbs>
             <li>
                 <verbClass>Verb_Shoot</verbClass>
-                <defaultProjectile>GW_BuildingBullet_Autocannon</defaultProjectile>
+                <defaultProjectile>GW_Bullet_Autocannon</defaultProjectile>
                 <warmupTime>2</warmupTime>
                 <range>35</range>
                 <ticksBetweenBurstShots>17</ticksBetweenBurstShots>
@@ -256,26 +240,9 @@
         </verbs>
     </ThingDef>
 
-    <ThingDef ParentName="BaseBullet">
-        <defName>GW_BuildingBullet_Autocannon</defName>
-        <label>autocannon round</label>
-        <graphicData>
-            <texPath>Things/Projectile/Bullet_Big</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-            <drawSize>1.2</drawSize>
-        </graphicData>
-        <projectile>
-            <damageDef>Bullet</damageDef>
-            <damageAmountBase>90</damageAmountBase>
-            <stoppingPower>1</stoppingPower>
-            <armorPenetrationBase>0.40</armorPenetrationBase><!--Supposed to have better armor piercing abilities than the heavy bolter-->
-            <speed>88</speed>
-        </projectile>
-    </ThingDef>
-
         <!-- Lascannon -->
     <ThingDef ParentName="AutocannonTurret">
-        <defName>GW_Building_Lascannon</defName>
+        <defName>GW_HOI_Building_Lascannon</defName>
         <label>Mannable lascannon turret</label>
         <description>A lascannon emplacement. When manned by a gunner, it can fire a potent, vehicle-busting lasbolt at enemy targets. Its low rate of fire makes it unsuitable in defending against massed attack, but excellent at destroying armored vehicles and heavy infantry. \n\nLascannons are a favorite of many Astra Militarum commanders, as they are a reliable source of long-range anti-armor firepower. Space Marines of the Adeptus Astartes have also been known to use lascannons as infantry weapons.</description>
         <thingClass>Building_TurretGun</thingClass>
@@ -341,7 +308,7 @@
             <ShootingAccuracyTurret>1.20</ShootingAccuracyTurret> <!-- A lot more accurate than the heavy bolter -->
         </statBases>
         <building>
-            <turretGunDef>GW_BuildingGun_Lascannon</turretGunDef>
+            <turretGunDef>GW_HOI_BuildingGun_Lascannon</turretGunDef>
             <turretBurstCooldownTime>3</turretBurstCooldownTime>
         </building>
         <placeWorkers>
@@ -354,7 +321,7 @@
     </ThingDef>
 
     <ThingDef ParentName="BaseWeaponTurret">
-        <defName>GW_BuildingGun_Lascannon</defName>
+        <defName>GW_HOI_BuildingGun_Lascannon</defName>
         <label>Lascannon</label>
         <description>A mannable lascannon.</description>
         <recoilPower>3</recoilPower>
@@ -375,10 +342,10 @@
         <verbs>
             <li>
                 <verbClass>Verb_Shoot</verbClass>
-                <defaultProjectile>GW_BuildingBullet_LascanonShot</defaultProjectile>
+                <defaultProjectile>GW_LascanonShot</defaultProjectile>
                 <warmupTime>2</warmupTime>
                 <range>40</range>
-                <ticksBetweenBurstShots>17</ticksBetweenBurstShots>
+                <ticksBetweenBurstShots>15</ticksBetweenBurstShots>
                 <burstShotCount>1</burstShotCount>
                 <soundCast>GW_AM_Lascannon</soundCast>
                 <soundCastTail>GunTail_Heavy</soundCastTail>
@@ -388,26 +355,9 @@
         </verbs>
     </ThingDef>
 
-    <ThingDef ParentName="GW_LaserBullet" Class="VanillaWeaponsExpandedLaser.LaserBeamDef">
-        <defName>GW_BuildingBullet_LascanonShot</defName>
-        <label>lascannon shot</label>
-        <description>An heavily charged beam of focused light fired from a lascannon.</description>
-        <textures>
-            <li>Things/Projectiles/Las_Bolt</li>
-        </textures>
-        <seam>0</seam>
-        <causefireChance>0.08</causefireChance>
-        <projectile>
-            <damageDef>Burn</damageDef>
-            <damageAmountBase>120</damageAmountBase>
-            <armorPenetrationBase>1</armorPenetrationBase>
-            <stoppingPower>1.8</stoppingPower>
-        </projectile>
-    </ThingDef>
-
             <!--Tarantula Heavy Bolter-->
     <ThingDef ParentName="AutocannonTurret">
-        <defName>GW_Building_TarantulaHeavyBolter</defName>
+        <defName>GW_HOI_Building_TarantulaHeavyBolter</defName>
         <label>Tarantula bolter turret</label>
         <description>A Tarantula auto-turret used by Astra Militarum forces. This version contains a pair of heavy bolters, laying down enough fire to terrify even massed and armored foes. \n\nTarantula turrets are operated by a “machine spirit” that selects and engages targets autonomously. Distinct from the forbidden Abominable Intelligences, machine spirits have no ability to think for themselves or improve themselves.</description>
         <thingClass>Building_TurretGun</thingClass>
@@ -445,7 +395,8 @@
         <costList>
             <Steel>200</Steel>
             <Plasteel>40</Plasteel>
-            <ComponentIndustrial>6</ComponentIndustrial>
+            <ComponentIndustrial>3</ComponentIndustrial>
+            <ComponentSpacer>1</ComponentSpacer>
         </costList>
             <stuffCategories>
                 <li>Metallic</li>
@@ -458,7 +409,7 @@
                 <fuelGizmoLabel>Current Ammo</fuelGizmoLabel>
                 <outOfFuelMessage>Needs more ammo</outOfFuelMessage>
                 <fuelFilter><thingDefs><li>Steel</li></thingDefs></fuelFilter>
-                <fuelCapacity>140</fuelCapacity>       <!-- 20 bursts, 140 total shots -->
+                <fuelCapacity>200</fuelCapacity>       <!-- 20 bursts, 200 total shots -->
                 <fuelMultiplier>1</fuelMultiplier> <!-- 10 steel per burst, 1 per shot -->
                 <initialFuelPercent>1</initialFuelPercent>
                 <autoRefuelPercent>0.5</autoRefuelPercent>
@@ -473,7 +424,7 @@
             <ShootingAccuracyTurret>0.96</ShootingAccuracyTurret> <!-- like level 8 human shooter -->
         </statBases>
         <building>
-            <turretGunDef>GW_BuildingGun_TarantulaHeavyBolter</turretGunDef>
+            <turretGunDef>GW_HOI_BuildingGun_TarantulaHeavyBolter</turretGunDef>
             <turretBurstCooldownTime>2</turretBurstCooldownTime>
         </building>
         <placeWorkers>
@@ -485,7 +436,7 @@
     </ThingDef>
 
     <ThingDef ParentName="BaseWeaponTurret">
-        <defName>GW_BuildingGun_TarantulaHeavyBolter</defName>
+        <defName>GW_HOI_BuildingGun_TarantulaHeavyBolter</defName>
         <label>Tarantula heavy bolter</label>
         <description>A pair of heavy bolters aimed and fired by the Tarantula turret's Machine Spirit.</description>
         <recoilPower>3</recoilPower>
@@ -506,7 +457,7 @@
         <verbs>
             <li>
                 <verbClass>Verb_Shoot</verbClass>
-                <defaultProjectile>GW_BuildingBullet_HeavyBolter</defaultProjectile>
+                <defaultProjectile>GW_Bullet_HeavyBolter</defaultProjectile>
                 <warmupTime>2</warmupTime>
                 <range>30</range>
                 <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
@@ -521,7 +472,7 @@
 
         <!-- Tarantula Lascannon -->
     <ThingDef ParentName="AutocannonTurret">
-        <defName>GW_Building_TarantulaLascannon</defName>
+        <defName>GW_HOI_Building_TarantulaLascannon</defName>
         <label>Tarantula lascannon turret</label>
         <description>A Tarantula auto-turret used by Astra Militarum forces. This version contains a pair of lascannons, able to punch through the armor of heavy infantry and APCs. \n\nTarantula turrets, though somewhat exotic, appeal greatly to Imperial Guard commanders. Unlike a human sentry, they will never fall asleep on duty or attempt mating with a “friendly” xenos approaching their post.</description>
         <thingClass>Building_TurretGun</thingClass>
@@ -559,7 +510,8 @@
         <costList>
             <Steel>100</Steel>
             <Plasteel>60</Plasteel>
-            <ComponentIndustrial>18</ComponentIndustrial>
+            <ComponentIndustrial>10</ComponentIndustrial>
+            <ComponentSpacer>1</ComponentSpacer>
         </costList>
             <stuffCategories>
                 <li>Metallic</li>
@@ -582,7 +534,7 @@
             <ShootingAccuracyTurret>1.20</ShootingAccuracyTurret> <!-- A lot more accurate than the heavy bolter -->
         </statBases>
         <building>
-            <turretGunDef>GW_BuildingGun_TarantulaLascannon</turretGunDef>
+            <turretGunDef>GW_HOI_BuildingGun_TarantulaLascannon</turretGunDef>
             <turretBurstCooldownTime>3</turretBurstCooldownTime>
         </building>
         <placeWorkers>
@@ -595,7 +547,7 @@
     </ThingDef>
 
     <ThingDef ParentName="BaseWeaponTurret">
-        <defName>GW_BuildingGun_TarantulaLascannon</defName>
+        <defName>GW_HOI_BuildingGun_TarantulaLascannon</defName>
         <label>Tarantula lascannon</label>
         <description>A pair of lascannons, aimed and fired by the Tarantula turret's Machine Spirit.</description>
         <recoilPower>3</recoilPower>
@@ -616,7 +568,7 @@
         <verbs>
             <li>
                 <verbClass>Verb_Shoot</verbClass>
-                <defaultProjectile>GW_BuildingBullet_LascanonShot</defaultProjectile>
+                <defaultProjectile>GW_LascanonShot</defaultProjectile>
                 <warmupTime>2</warmupTime>
                 <range>40</range>
                 <ticksBetweenBurstShots>17</ticksBetweenBurstShots>
@@ -628,4 +580,132 @@
             </li>
         </verbs>
     </ThingDef>
+
+    <!-- Earthshaker Artillery -->
+      <ThingDef ParentName="BaseArtilleryBuilding">
+    <defName>GW_HOI_Turret_Earthshaker</defName>
+    <label>earthshaker</label>
+    <description>Earthshaker, WIP.</description>
+    <thingClass>Building_TurretGun</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Emplacement/GW_Earthshaker_Base</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(6,6)</drawSize>
+      <damageData>
+        <rect>(0.38,0.2,0.56375,0.8)</rect>
+        <cornerTL>Damage/Corner</cornerTL>
+      </damageData>
+      <shadowData>
+        <offset>(-0.13,-0.87,-0.1)</offset>
+        <volume>(0.5,0.4,1.05)</volume>
+      </shadowData>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>500</MaxHitPoints>
+      <WorkToBuild>4000</WorkToBuild>
+        <Mass>100</Mass>
+    </statBases>
+    <techLevel>Industrial</techLevel>
+    <interactionCellOffset>(0,0,-2)</interactionCellOffset>
+    <hasInteractionCell>true</hasInteractionCell>
+    <size>(5,5)</size>
+    <rotatable>true</rotatable>
+    <stealable>false</stealable>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <costStuffCount>250</costStuffCount>
+    <costList>
+      <Steel>150</Steel>
+      <ReinforcedBarrel>1</ReinforcedBarrel>
+      <ComponentIndustrial>9</ComponentIndustrial>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>4.9</explosiveRadius>
+        <explosiveDamageType>Bomb</explosiveDamageType>
+      </li>
+    </comps>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <building>
+      <turretGunDef>GW_HOI_Artillery_Earthshaker</turretGunDef>
+      <turretTopDrawSize>8</turretTopDrawSize>
+      <buildingTags>
+        <li>Artillery_BaseDestroyer</li>
+      </buildingTags>
+      <turretBurstWarmupTime>4</turretBurstWarmupTime>
+      <turretBurstCooldownTime>5</turretBurstCooldownTime>
+      <defaultStorageSettings Inherit="False">
+        <filter>
+          <categories>
+            <li>GW_HOI_EarthshakerShells</li>
+          </categories>
+        </filter>
+      </defaultStorageSettings>
+    </building>
+    <uiIconPath>Things/Building/Emplacement/GW_Earthshaker_MenuIcon</uiIconPath>
+    <uiIconScale>1.1</uiIconScale>
+    <constructionSkillPrerequisite>9</constructionSkillPrerequisite>
+    <designationCategory>GrimworldCategory</designationCategory>
+    <researchPrerequisites>
+      <li>GW_AM_ImperiumDefense</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseArtilleryWeapon">
+    <defName>GW_HOI_Artillery_Earthshaker</defName>
+    <label>earthshaker</label>
+    <description>Earthshaker, WIP.</description>
+    <recoilPower>5</recoilPower>
+	<recoilRelaxation>5</recoilRelaxation>
+    <graphicData>
+      <texPath>Things/Building/Emplacement/GW_Earthshaker_Gun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+        <!--<drawSize>(7, 7)</drawSize>-->
+    </graphicData>
+    <statBases>
+      <RangedWeapon_Cooldown>5.5</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>Artillery_BaseDestroyer</li>
+    </weaponTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <forceNormalTimeSpeed>false</forceNormalTimeSpeed>
+        <hasStandardCommand>true</hasStandardCommand>
+        <warmupTime>2</warmupTime>
+        <forcedMissRadius>12</forcedMissRadius>
+        <isMortar>true</isMortar>
+        <requireLineOfSight>false</requireLineOfSight>
+        <minRange>29.9</minRange>
+        <range>500</range>
+        <burstShotCount>1</burstShotCount>
+        <soundCast>GW_EarthshakerArty</soundCast>
+        <muzzleFlashScale>32</muzzleFlashScale>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="CompProperties_ChangeableProjectile" />
+    </comps>
+    <building>
+      <fixedStorageSettings>
+        <filter>
+          <categories>
+            <li>GW_HOI_EarthshakerShells</li>
+          </categories>
+        </filter>
+      </fixedStorageSettings>
+      <defaultStorageSettings>
+        <filter>
+          <categories>
+            <li>GW_HOI_EarthshakerShells</li>
+          </categories>
+        </filter>
+      </defaultStorageSettings>
+    </building>
+  </ThingDef>
 </Defs>

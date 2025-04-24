@@ -50,4 +50,21 @@
           </li>
         </subSounds>
 	</SoundDef>	
+
+  	<SoundDef>
+		<defName>GW_EarthshakerArty</defName>
+		<context>MapOnly</context>
+		<eventNames />  
+		<maxSimultaneous>5</maxSimultaneous>  
+        <subSounds>
+          <li>
+            <grains>
+              <li Class="AudioGrain_Clip">
+                <clipPath>Earthshaker/GW_EarthshakerArtillery</clipPath>
+              </li>
+            </grains>      
+            <volumeRange>65~65</volumeRange>      
+          </li>
+        </subSounds>
+	</SoundDef>	
 </Defs>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingDef ParentName="BaseBullet">
+		<defName>GW_Bullet_Demolisher_Round</defName>
+		<label>High Caliber Round</label>
+		<thingClass>Projectile_Explosive</thingClass>
+		<graphicData>
+			<texPath>Things/Projectile/ShellHighExplosive</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<projectile>
+			<damageDef>Bomb</damageDef>
+			<damageAmountBase>350</damageAmountBase>
+			<speed>65</speed>
+            <arcHeightFactor>0.4</arcHeightFactor>
+			<explosionRadius>8.9</explosionRadius>
+			<soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+			<soundExplode>MortarBomb_Explode</soundExplode>
+			<soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
+			<soundAmbient>MortarRound_Ambient</soundAmbient>
+		</projectile>
+	</ThingDef>
+
+    <Vehicles.VehicleTurretDef ParentName="VehicleTurretBase">
+		<defName>GW_Vehicle_HeavyBolter</defName>
+		<label>Heavy Bolter</label>
+		<description>A sponson-mounted heavy bolter used on the Imperial vehicles. Fires 0.998 cal bolts.</description>
+		<turretType>Rotatable</turretType>
+		<shotSound>Shot_Autocannon</shotSound>
+		<projectile>GW_Bullet_HeavyBolter</projectile>
+		<reloadTimer>6.0</reloadTimer>
+		<warmUpTimer>1.0</warmUpTimer>
+		<magazineCapacity>100</magazineCapacity>
+		<chargePerAmmoCount>2</chargePerAmmoCount>
+		<genericAmmo>true</genericAmmo>
+		<hitFlags>IntendedTarget</hitFlags>
+		<autoSnapTargeting>false</autoSnapTargeting>
+		<rotationSpeed>2.0</rotationSpeed>
+		<projectileOffset>2.0</projectileOffset>
+		<maxRange>28.9</maxRange>
+		<attachProjectileFlag>GW_Tank</attachProjectileFlag>
+		<fireModes>
+			<li>
+				<shotsPerBurst>3</shotsPerBurst>
+				<ticksBetweenShots>9</ticksBetweenShots>
+				<ticksBetweenBursts>60</ticksBetweenBursts>
+				<label>Single</label>
+				<texPath>UI/Gizmos/FireRate_Single</texPath>
+			</li>
+			<li>
+				<shotsPerBurst>8</shotsPerBurst>
+				<ticksBetweenShots>9</ticksBetweenShots>
+				<ticksBetweenBursts>60</ticksBetweenBursts>
+				<label>Burst</label>
+				<texPath>UI/Gizmos/FireRate_Burst</texPath>
+			</li>
+			<li>
+				<shotsPerBurst>15</shotsPerBurst>
+				<ticksBetweenShots>9</ticksBetweenShots>
+				<ticksBetweenBursts>90</ticksBetweenBursts>
+				<label>Auto</label>
+				<texPath>UI/Gizmos/FireRate_Auto</texPath>
+			</li>
+		</fireModes>
+		<graphicData>
+			<texPath>Things/Vehicles/LemanRuss/SponsonGuns/GW_HOI_LemanRuss_SponsonTurret_Bolters</texPath>
+			<graphicClass>Vehicles.Graphic_Turret</graphicClass>
+			<shaderType>CutoutComplexPattern</shaderType>
+			<drawSize>(2.5, 2.5)</drawSize>
+		</graphicData>
+		<ammunition>
+			<thingDefs>
+				<li>GW_HeavyBolterNonCE</li>
+			</thingDefs>
+		</ammunition>
+	</Vehicles.VehicleTurretDef>
+
+    <Vehicles.VehicleTurretDef ParentName="VehicleTurretBase">
+		<defName>GW_Vehicle_HeavyFlamer</defName>
+		<label>Heavy Flamer</label>
+		<description>A sponson-mounted heavy flamer used on the Imperial vehicles.</description>
+		<turretType>Rotatable</turretType>
+		<shotSound>GW_AM_Flamer_Sound</shotSound>
+		<projectile>GW_AM_Bullet_Flamer</projectile>
+		<reloadTimer>7.8</reloadTimer>
+		<warmUpTimer>1.25</warmUpTimer>
+		<magazineCapacity>25</magazineCapacity>
+		<chargePerAmmoCount>1</chargePerAmmoCount>
+		<genericAmmo>true</genericAmmo>
+		<hitFlags>IntendedTarget</hitFlags>
+		<autoSnapTargeting>false</autoSnapTargeting>
+		<rotationSpeed>2.0</rotationSpeed>
+		<projectileOffset>2.0</projectileOffset>
+		<maxRange>15.9</maxRange>
+		<attachProjectileFlag>GW_Tank</attachProjectileFlag>
+		<fireModes>
+			<li>
+				<shotsPerBurst>1</shotsPerBurst>
+				<ticksBetweenShots>10</ticksBetweenShots>
+				<ticksBetweenBursts>10</ticksBetweenBursts>
+				<label>Single</label>
+				<texPath>UI/Gizmos/FireRate_Single</texPath>
+			</li>
+		</fireModes>
+		<graphicData>
+			<texPath>Things/Vehicles/LemanRuss/SponsonGuns/GW_HOI_LemanRuss_SponsonTurret_HeavyFlamers</texPath>
+			<graphicClass>Vehicles.Graphic_Turret</graphicClass>
+			<shaderType>CutoutComplexPattern</shaderType>
+			<drawSize>(2.5, 2.5)</drawSize>
+		</graphicData>
+		<ammunition>
+			<thingDefs>
+				<li>Chemfuel</li>
+			</thingDefs>
+		</ammunition>
+	</Vehicles.VehicleTurretDef>
+</Defs>

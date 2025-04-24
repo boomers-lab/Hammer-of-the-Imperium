@@ -1,0 +1,562 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_LemanRuss_BattleCannon</defName>
+		<label>high-explosive shell</label>
+		<thingClass>Projectile_Explosive</thingClass>
+		<graphicData>
+			<texPath>Things/Projectile/ShellHighExplosive</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<projectile>
+			<damageDef>Bomb</damageDef>
+			<damageAmountBase>80</damageAmountBase>
+			<speed>90</speed>
+			<explosionRadius>5.9</explosionRadius>
+			<armorPenetrationBase>1</armorPenetrationBase>
+			<soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+			<soundExplode>MortarBomb_Explode</soundExplode>
+			<soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
+			<soundAmbient>MortarRound_Ambient</soundAmbient>
+		</projectile>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_LemanRuss_VanquisherCannon</defName>
+		<label>high-explosive shell</label>
+		<thingClass>Projectile_Explosive</thingClass>
+		<graphicData>
+			<texPath>Things/Projectile/ShellHighExplosive</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<projectile>
+			<damageDef>Bomb</damageDef>
+			<damageAmountBase>80</damageAmountBase>
+			<speed>90</speed>
+			<armorPenetrationBase>2</armorPenetrationBase>
+			<explosionRadius>4.9</explosionRadius>
+			<soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+			<soundExplode>MortarBomb_Explode</soundExplode>
+			<soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
+			<soundAmbient>MortarRound_Ambient</soundAmbient>
+		</projectile>
+	</ThingDef>
+
+	<Vehicles.VehicleTurretDef ParentName="VehicleTurretBase">
+		<defName>GW_LemanRuss_BattleCannonTurret</defName>
+		<label>Leman Russ battle cannon cannon</label>
+		<description>A turret-mounted Battle Cannon used on the Leman Russ battle tank. Fires 120mm battle cannon shells.</description>
+		<turretType>Rotatable</turretType>
+		<shotSound>Shot_TurretSniper</shotSound>
+		<projectile>Bullet_LemanRuss_BattleCannon</projectile>
+		<reloadTimer>4.0</reloadTimer>
+		<warmUpTimer>4.0</warmUpTimer>
+		<magazineCapacity>1</magazineCapacity>
+		<chargePerAmmoCount>1</chargePerAmmoCount>
+		<genericAmmo>true</genericAmmo>
+		<hitFlags>IntendedTarget</hitFlags>
+		<autoSnapTargeting>false</autoSnapTargeting>
+		<rotationSpeed>1.5</rotationSpeed>
+		<projectileOffset>3.0</projectileOffset>
+		<projectileShifting>
+			<li>-0.1</li>
+		</projectileShifting>
+		<minRange>5</minRange>
+		<maxRange>59.9</maxRange>
+		<recoil>
+			<distanceTotal>0.25</distanceTotal>
+			<distancePerTick>0.1</distancePerTick>
+			<speedMultiplierPostRecoil>0.25</speedMultiplierPostRecoil>
+		</recoil>
+		<attachProjectileFlag>GW_Tank</attachProjectileFlag>
+		<fireModes>
+			<li>
+				<shotsPerBurst>1</shotsPerBurst>
+				<ticksBetweenShots>12</ticksBetweenShots>
+				<ticksBetweenBursts>60</ticksBetweenBursts>
+				<label>Single</label>
+				<texPath>UI/Gizmos/FireRate_Single</texPath>
+			</li>
+		</fireModes>
+		<graphicData>
+			<texPath>Things/Vehicles/LemanRuss/MainTurret/GW_HOI_LemanRuss_MainTurret_BattleCannon</texPath>
+			<graphicClass>Vehicles.Graphic_Turret</graphicClass>
+			<shaderType>CutoutComplexPattern</shaderType>
+			<drawSize>(8, 8)</drawSize>
+		</graphicData>
+		<ammunition>
+			<thingDefs>
+				<li>GW_BattleCannonShellNonCE</li>
+			</thingDefs>
+		</ammunition>
+		<motes>
+			<li>
+				<cycles>1</cycles>
+				<moteDef>Mote_GW_Plume</moteDef>
+				<animationType>Reset</animationType>
+			</li>
+		</motes>
+	</Vehicles.VehicleTurretDef>
+
+	<Vehicles.VehicleTurretDef ParentName="VehicleTurretBase">
+		<defName>GW_LemanRuss_AnnihilatorTurret</defName>
+		<label>Leman Russ annihilator cannons</label>
+		<description>Twin-linked lascannons, WIP</description>
+		<turretType>Rotatable</turretType>
+		<shotSound>GW_AM_Lascannon</shotSound>
+		<projectile>GW_LascanonShot</projectile>
+		<reloadTimer>4.0</reloadTimer>
+		<warmUpTimer>2.0</warmUpTimer>
+		<magazineCapacity>40</magazineCapacity>
+		<chargePerAmmoCount>2</chargePerAmmoCount>
+		<genericAmmo>true</genericAmmo>
+		<hitFlags>IntendedTarget</hitFlags>
+		<autoSnapTargeting>false</autoSnapTargeting>
+		<rotationSpeed>1.5</rotationSpeed>
+		<projectileOffset>3.3</projectileOffset>
+		<projectileShifting>
+			<li>-0.2</li>
+			<li>0.2</li>
+		</projectileShifting>
+		<minRange>4</minRange>
+		<maxRange>59.9</maxRange>
+		<attachProjectileFlag>GW_Tank</attachProjectileFlag>
+		<fireModes>
+			<li>
+				<shotsPerBurst>2</shotsPerBurst>
+				<ticksBetweenShots>0</ticksBetweenShots>
+				<ticksBetweenBursts>10</ticksBetweenBursts>
+				<label>Single</label>
+				<texPath>UI/Gizmos/FireRate_Single</texPath>
+			</li>
+		</fireModes>
+		<graphicData>
+			<texPath>Things/Vehicles/LemanRuss/MainTurret/GW_HOI_LemanRuss_MainTurret_TwinLascannons</texPath>
+			<graphicClass>Vehicles.Graphic_Turret</graphicClass>
+			<shaderType>CutoutComplexPattern</shaderType>
+			<drawSize>(8, 8)</drawSize>
+		</graphicData>
+		<ammunition>
+			<thingDefs>
+				<li>GW_LascannonammoNonCE</li>
+			</thingDefs>
+		</ammunition>
+	</Vehicles.VehicleTurretDef>
+
+	<Vehicles.VehicleTurretDef ParentName="VehicleTurretBase">
+		<defName>GW_LemanRuss_ExterminatorTurret</defName>
+		<label>Leman Russ exterminator cannons</label>
+		<description>Twin-linked auto-cannons, WIP</description>
+		<turretType>Rotatable</turretType>
+		<shotSound>Shot_Autocannon</shotSound>
+		<projectile>GW_Bullet_Autocannon</projectile>
+		<reloadTimer>4.0</reloadTimer>
+		<warmUpTimer>2.0</warmUpTimer>
+		<magazineCapacity>200</magazineCapacity>
+		<chargePerAmmoCount>1</chargePerAmmoCount>
+		<genericAmmo>true</genericAmmo>
+		<hitFlags>IntendedTarget</hitFlags>
+		<autoSnapTargeting>false</autoSnapTargeting>
+		<rotationSpeed>1.5</rotationSpeed>
+		<projectileOffset>3.0</projectileOffset>
+		<projectileShifting>
+			<li>-0.2</li>
+			<li>0.2</li>
+		</projectileShifting>
+		<minRange>4</minRange>
+		<maxRange>59.9</maxRange>
+		<attachProjectileFlag>GW_Tank</attachProjectileFlag>
+		<fireModes>
+			<li>
+				<shotsPerBurst>2</shotsPerBurst>
+				<ticksBetweenShots>0</ticksBetweenShots>
+				<ticksBetweenBursts>35</ticksBetweenBursts>
+				<label>Single</label>
+				<texPath>UI/Gizmos/FireRate_Single</texPath>
+			</li>
+			<li>
+				<shotsPerBurst>8</shotsPerBurst>
+				<ticksBetweenShots>8</ticksBetweenShots>
+				<ticksBetweenBursts>45</ticksBetweenBursts>
+				<spreadRadius>1</spreadRadius>
+				<label>Burst</label>
+				<texPath>UI/Gizmos/FireRate_Burst</texPath>
+			</li>
+			<li>
+				<shotsPerBurst>24</shotsPerBurst>
+				<ticksBetweenShots>8</ticksBetweenShots>
+				<ticksBetweenBursts>45</ticksBetweenBursts>
+				<label>Auto</label>
+				<texPath>UI/Gizmos/FireRate_Auto</texPath>
+			</li>
+			</fireModes>
+		<graphicData>
+			<texPath>Things/Vehicles/LemanRuss/MainTurret/GW_HOI_LemanRuss_MainTurret_TwinAutocannons</texPath>
+			<graphicClass>Vehicles.Graphic_Turret</graphicClass>
+			<shaderType>CutoutComplexPattern</shaderType>
+			<drawSize>(8, 8)</drawSize>
+		</graphicData>
+		<ammunition>
+			<thingDefs>
+				<li>GW_AutocannonammoNonCE</li>
+			</thingDefs>
+		</ammunition>
+	</Vehicles.VehicleTurretDef>
+
+		<Vehicles.VehicleTurretDef ParentName="VehicleTurretBase">
+		<defName>GW_LemanRuss_PunisherTurret</defName>
+		<label>Leman Russ punisher cannon</label>
+		<description>A turret-mounted Punisher Gatling Cannon, much dakka. WIP</description>
+		<turretType>Rotatable</turretType>
+		<shotSound>Shot_Autocannon</shotSound>
+		<projectile>GW_Bullet_Assaultcannon</projectile>
+		<reloadTimer>4.0</reloadTimer>
+		<warmUpTimer>2.0</warmUpTimer>
+		<magazineCapacity>400</magazineCapacity>
+		<chargePerAmmoCount>1</chargePerAmmoCount>
+		<genericAmmo>true</genericAmmo>
+		<hitFlags>IntendedTarget</hitFlags>
+		<autoSnapTargeting>false</autoSnapTargeting>
+		<rotationSpeed>1.5</rotationSpeed>
+		<projectileOffset>3.0</projectileOffset>
+		<projectileShifting>
+			<li>-0.1</li>
+		</projectileShifting>
+		<minRange>4</minRange>
+		<maxRange>50.9</maxRange>
+		<recoil>
+			<distanceTotal>0.01</distanceTotal>
+			<distancePerTick>0.1</distancePerTick>
+			<speedMultiplierPostRecoil>0.25</speedMultiplierPostRecoil>
+		</recoil>
+		<attachProjectileFlag>GW_Tank</attachProjectileFlag>
+		<fireModes>
+			<li>
+				<shotsPerBurst>10</shotsPerBurst>
+				<ticksBetweenShots>0.5</ticksBetweenShots>
+				<ticksBetweenBursts>20</ticksBetweenBursts>
+				<label>Single</label>
+				<texPath>UI/Gizmos/FireRate_Single</texPath>
+			</li>
+			<li>
+				<shotsPerBurst>25</shotsPerBurst>
+				<ticksBetweenShots>0.5</ticksBetweenShots>
+				<ticksBetweenBursts>20</ticksBetweenBursts>
+				<spreadRadius>1</spreadRadius>
+				<label>Burst</label>
+				<texPath>UI/Gizmos/FireRate_Burst</texPath>
+			</li>
+			<li>
+				<shotsPerBurst>50</shotsPerBurst>
+				<ticksBetweenShots>0.5</ticksBetweenShots>
+				<ticksBetweenBursts>35</ticksBetweenBursts>
+				<label>Auto</label>
+				<texPath>UI/Gizmos/FireRate_Auto</texPath>
+			</li>
+		</fireModes>
+
+		<graphicData>
+			<texPath>Things/Vehicles/LemanRuss/MainTurret/GW_HOI_LemanRuss_MainTurret_PunisherGatlingCannon</texPath>
+			<graphicClass>Vehicles.Graphic_Turret</graphicClass>
+			<shaderType>CutoutComplexPattern</shaderType>
+			<drawSize>(8, 8)</drawSize>
+		</graphicData>
+		<ammunition>
+			<thingDefs>
+				<li>GW_HeavyBolterNonCE</li>
+			</thingDefs>
+		</ammunition>
+	</Vehicles.VehicleTurretDef>
+
+		<Vehicles.VehicleTurretDef ParentName="VehicleTurretBase">
+		<defName>GW_LemanRuss_ExecutionerTurret</defName>
+		<label>Leman Russ executioner plasma cannon</label>
+		<description>A turret-mounted Plasma Cannon used on the Leman Russ battle tank. WIP</description>
+		<turretType>Rotatable</turretType>
+		<shotSound>Shot_TurretSniper</shotSound>
+		<projectile>GW_Tank_PlasmaShot</projectile>
+		<reloadTimer>12.0</reloadTimer>
+		<warmUpTimer>4.0</warmUpTimer>
+		<magazineCapacity>6</magazineCapacity>
+		<chargePerAmmoCount>1</chargePerAmmoCount>
+		<genericAmmo>true</genericAmmo>
+		<hitFlags>IntendedTarget</hitFlags>
+		<autoSnapTargeting>false</autoSnapTargeting>
+		<rotationSpeed>1.5</rotationSpeed>
+		<projectileOffset>4.0</projectileOffset>
+		<projectileShifting>
+			<li>-0.1</li>
+		</projectileShifting>
+		<minRange>5</minRange>
+		<maxRange>60.9</maxRange>
+		<recoil>
+			<distanceTotal>0.25</distanceTotal>
+			<distancePerTick>0.1</distancePerTick>
+			<speedMultiplierPostRecoil>0.25</speedMultiplierPostRecoil>
+		</recoil>
+		<attachProjectileFlag>GW_Tank</attachProjectileFlag>
+		<fireModes>
+			<li>
+				<shotsPerBurst>1</shotsPerBurst>
+				<ticksBetweenShots>22</ticksBetweenShots>
+				<ticksBetweenBursts>70</ticksBetweenBursts>
+				<label>Single</label>
+				<texPath>UI/Gizmos/FireRate_Single</texPath>
+			</li>
+		</fireModes>
+		<graphicData>
+			<texPath>Things/Vehicles/LemanRuss/MainTurret/GW_HOI_LemanRuss_MainTurret_PlasmaDestroyer</texPath>
+			<graphicClass>Vehicles.Graphic_Turret</graphicClass>
+			<shaderType>CutoutComplexPattern</shaderType>
+			<drawSize>(8, 8)</drawSize>
+		</graphicData>
+		<ammunition>
+			<thingDefs>
+				<li>GW_HeavyPlasmaNonCE</li>
+			</thingDefs>
+		</ammunition>
+		<motes>
+			<li>
+				<cycles>1</cycles>
+				<moteDef>Mote_GW_Plume</moteDef>
+				<animationType>Reset</animationType>
+			</li>
+		</motes>
+	</Vehicles.VehicleTurretDef>
+
+		<Vehicles.VehicleTurretDef ParentName="VehicleTurretBase">
+		<defName>GW_LemanRuss_VanquisherTurret</defName>
+		<label>Leman Russ vanquisher cannon</label>
+		<description>A turret-mounted Vanquisher Cannon used on the Leman Russ battle tank. Good for Anti-Tank duties.</description>
+		<turretType>Rotatable</turretType>
+		<shotSound>Shot_TurretSniper</shotSound>
+		<projectile>Bullet_LemanRuss_VanquisherCannon</projectile>
+		<reloadTimer>7.0</reloadTimer>
+		<warmUpTimer>4.0</warmUpTimer>
+		<magazineCapacity>1</magazineCapacity>
+		<chargePerAmmoCount>1</chargePerAmmoCount>
+		<genericAmmo>true</genericAmmo>
+		<hitFlags>IntendedTarget</hitFlags>
+		<autoSnapTargeting>false</autoSnapTargeting>
+		<rotationSpeed>1.5</rotationSpeed>
+		<projectileOffset>2.5</projectileOffset>
+		<projectileShifting>
+			<li>-0.1</li>
+		</projectileShifting>
+		<minRange>7</minRange>
+		<maxRange>69.9</maxRange>
+		<recoil>
+			<distanceTotal>0.25</distanceTotal>
+			<distancePerTick>0.1</distancePerTick>
+			<speedMultiplierPostRecoil>0.25</speedMultiplierPostRecoil>
+		</recoil>
+		<attachProjectileFlag>GW_Tank</attachProjectileFlag>
+		<fireModes>
+			<li>
+				<shotsPerBurst>1</shotsPerBurst>
+				<ticksBetweenShots>12</ticksBetweenShots>
+				<ticksBetweenBursts>60</ticksBetweenBursts>
+				<label>Single</label>
+				<texPath>UI/Gizmos/FireRate_Single</texPath>
+			</li>
+		</fireModes>
+		<graphicData>
+			<texPath>Things/Vehicles/LemanRuss/MainTurret/GW_HOI_LemanRuss_MainTurret_VanquisherCannon</texPath>
+			<graphicClass>Vehicles.Graphic_Turret</graphicClass>
+			<shaderType>CutoutComplexPattern</shaderType>
+			<drawSize>(8, 8)</drawSize>
+		</graphicData>
+		<ammunition>
+			<thingDefs>
+				<li>GW_VanquisherCannonShellNonCE</li>
+			</thingDefs>
+		</ammunition>
+		<motes>
+			<li>
+				<cycles>1</cycles>
+				<moteDef>Mote_GW_Plume</moteDef>
+				<animationType>Reset</animationType>
+			</li>
+		</motes>
+	</Vehicles.VehicleTurretDef>
+
+	<Vehicles.VehicleTurretDef ParentName="VehicleTurretBase">
+		<defName>GW_LemanRuss_DemolisherTurret</defName>
+		<label>Leman Russ demolisher cannon</label>
+		<description>A turret-mounted Demolisher Cannon used on the Leman Russ battle tank. Good for bunker busting.</description>
+		<turretType>Rotatable</turretType>
+		<shotSound>Shot_TurretSniper</shotSound>
+		<projectile>GW_Bullet_Demolisher_Round</projectile>
+		<reloadTimer>10.0</reloadTimer>
+		<warmUpTimer>4.0</warmUpTimer>
+		<magazineCapacity>1</magazineCapacity>
+		<chargePerAmmoCount>1</chargePerAmmoCount>
+		<genericAmmo>true</genericAmmo>
+		<hitFlags>IntendedTarget</hitFlags>
+		<autoSnapTargeting>false</autoSnapTargeting>
+		<rotationSpeed>1.5</rotationSpeed>
+		<projectileOffset>5.0</projectileOffset>
+		<projectileShifting>
+			<li>-0.1</li>
+		</projectileShifting>
+		<minRange>5</minRange>
+		<maxRange>45.9</maxRange>
+		<recoil>
+			<distanceTotal>0.25</distanceTotal>
+			<distancePerTick>0.1</distancePerTick>
+			<speedMultiplierPostRecoil>0.25</speedMultiplierPostRecoil>
+		</recoil>
+		<attachProjectileFlag>GW_Tank</attachProjectileFlag>
+		<fireModes>
+			<li>
+				<shotsPerBurst>1</shotsPerBurst>
+				<ticksBetweenShots>12</ticksBetweenShots>
+				<ticksBetweenBursts>60</ticksBetweenBursts>
+				<label>Single</label>
+				<texPath>UI/Gizmos/FireRate_Single</texPath>
+			</li>
+		</fireModes>
+		<graphicData>
+			<texPath>Things/Vehicles/LemanRuss/MainTurret/GW_HOI_LemanRuss_MainTurret_DemolisherCannon</texPath>
+			<graphicClass>Vehicles.Graphic_Turret</graphicClass>
+			<shaderType>CutoutComplexPattern</shaderType>
+			<drawSize>(8, 8)</drawSize>
+		</graphicData>
+		<ammunition>
+			<thingDefs>
+				<li>GW_DemolisherCannonShellNonCE</li>
+			</thingDefs>
+		</ammunition>
+		<motes>
+			<li>
+				<cycles>1</cycles>
+				<moteDef>Mote_GW_Plume</moteDef>
+				<animationType>Reset</animationType>
+			</li>
+		</motes>
+	</Vehicles.VehicleTurretDef>
+
+	 <Vehicles.VehicleTurretDef ParentName="VehicleTurretBase">
+		<defName>GW_LemanRuss_HullLascannon</defName>
+		<label>Lascannon</label>
+		<description>A hull-mounted lascannon used on the Imperial vehicles.</description>
+		<turretType>Rotatable</turretType>
+		<shotSound>GW_AM_Lascannon</shotSound>
+		<projectile>GW_LascanonShot</projectile>
+		<reloadTimer>6.0</reloadTimer>
+		<warmUpTimer>1.0</warmUpTimer>
+		<magazineCapacity>20</magazineCapacity>
+		<chargePerAmmoCount>1</chargePerAmmoCount>
+		<genericAmmo>true</genericAmmo>
+		<hitFlags>IntendedTarget</hitFlags>
+		<autoSnapTargeting>false</autoSnapTargeting>
+		<rotationSpeed>2.0</rotationSpeed>
+		<projectileOffset>1.0</projectileOffset>
+		<maxRange>40.9</maxRange>
+		<attachProjectileFlag>GW_Tank</attachProjectileFlag>
+		<fireModes>
+			<li>
+				<shotsPerBurst>1</shotsPerBurst>
+				<ticksBetweenShots>0</ticksBetweenShots>
+				<ticksBetweenBursts>10</ticksBetweenBursts>
+				<label>Single</label>
+				<texPath>UI/Gizmos/FireRate_Single</texPath>
+			</li>
+		</fireModes>
+		<graphicData>
+			<texPath>Things/Vehicles/LemanRuss/SponsonGuns/GW_HOI_LemanRuss_SponsonTurret_Lascannon</texPath>
+			<graphicClass>Vehicles.Graphic_Turret</graphicClass>
+			<shaderType>CutoutComplexPattern</shaderType>
+			<drawSize>(2.5, 2.5)</drawSize>
+		</graphicData>
+		<ammunition>
+			<thingDefs>
+				<li>GW_LascannonammoNonCE</li>
+			</thingDefs>
+		</ammunition>
+	</Vehicles.VehicleTurretDef>
+
+	<Vehicles.VehicleTurretDef ParentName="VehicleTurretBase">
+		<defName>GW_LemanRuss_MultiMelta</defName>
+		<label>Multi-Melta</label>
+		<description>WIP</description>
+		<turretType>Rotatable</turretType>
+		<shotSound>GW_Multi_Melta_Gun_Sound</shotSound>
+		<projectile>GW_Bullet_MultiMelta</projectile>
+		<reloadTimer>6.0</reloadTimer>
+		<warmUpTimer>1.0</warmUpTimer>
+		<magazineCapacity>20</magazineCapacity>
+		<chargePerAmmoCount>1</chargePerAmmoCount>
+		<genericAmmo>true</genericAmmo>
+		<hitFlags>IntendedTarget</hitFlags>
+		<autoSnapTargeting>false</autoSnapTargeting>
+		<rotationSpeed>2.0</rotationSpeed>
+		<projectileOffset>1.0</projectileOffset>
+		<minRange>2</minRange>
+		<maxRange>15.9</maxRange>
+		<attachProjectileFlag>GW_Tank</attachProjectileFlag>
+		<fireModes>
+			<li>
+				<shotsPerBurst>1</shotsPerBurst>
+				<ticksBetweenShots>0</ticksBetweenShots>
+				<ticksBetweenBursts>20</ticksBetweenBursts>
+				<label>Single</label>
+				<texPath>UI/Gizmos/FireRate_Single</texPath>
+			</li>
+		</fireModes>
+		<graphicData>
+			<texPath>Things/Vehicles/LemanRuss/SponsonGuns/GW_HOI_LemanRuss_SponsonTurret_MultiMeltas</texPath>
+			<graphicClass>Vehicles.Graphic_Turret</graphicClass>
+			<shaderType>CutoutComplexPattern</shaderType>
+			<drawSize>(2.5, 2.5)</drawSize>
+		</graphicData>
+		<ammunition>
+			<thingDefs>
+				<li>GW_LascannonammoNonCE</li>
+			</thingDefs>
+		</ammunition>
+	</Vehicles.VehicleTurretDef>
+
+		<Vehicles.VehicleTurretDef ParentName="VehicleTurretBase">
+		<defName>GW_LemanRuss_PlasmaSponson</defName>
+		<label>Plasma Cannon</label>
+		<description>WIP</description>
+		<turretType>Rotatable</turretType>
+		<shotSound>GW_Plasma_Gun_Sound</shotSound>
+		<projectile>GW_Bullet_Plasma_CannonShot</projectile>
+		<reloadTimer>6.0</reloadTimer>
+		<warmUpTimer>1.0</warmUpTimer>
+		<magazineCapacity>20</magazineCapacity>
+		<chargePerAmmoCount>1</chargePerAmmoCount>
+		<genericAmmo>true</genericAmmo>
+		<hitFlags>IntendedTarget</hitFlags>
+		<autoSnapTargeting>false</autoSnapTargeting>
+		<rotationSpeed>2.0</rotationSpeed>
+		<projectileOffset>1.0</projectileOffset>
+		<maxRange>28.9</maxRange>
+		<attachProjectileFlag>GW_Tank</attachProjectileFlag>
+		<fireModes>
+			<li>
+				<shotsPerBurst>1</shotsPerBurst>
+				<ticksBetweenShots>0</ticksBetweenShots>
+				<ticksBetweenBursts>15</ticksBetweenBursts>
+				<label>Single</label>
+				<texPath>UI/Gizmos/FireRate_Single</texPath>
+			</li>
+		</fireModes>
+		<graphicData>
+			<texPath>Things/Vehicles/LemanRuss/SponsonGuns/GW_HOI_LemanRuss_SponsonTurret_PlasmaCannon</texPath>
+			<graphicClass>Vehicles.Graphic_Turret</graphicClass>
+			<shaderType>CutoutComplexPattern</shaderType>
+			<drawSize>(2.5, 2.5)</drawSize>
+		</graphicData>
+		<ammunition>
+			<thingDefs>
+				<li>GW_LascannonammoNonCE</li>
+			</thingDefs>
+		</ammunition>
+	</Vehicles.VehicleTurretDef>
+</Defs>

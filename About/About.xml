@@ -28,6 +28,7 @@
   <loadAfter>
     <li>Ludeon.RimWorld</li>
 	  <li>vanillaexpanded.achievements</li>
+    <li>SmashPhil.VehicleFramework</li>
     <li>ceteam.combatextended</li>
     <li>Grimworld.Core</li>
   </loadAfter>

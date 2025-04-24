@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+	<!--===== Below This are the sounds for the Overlord weapons, and by extension, the astartes Bike =====-->
+
+	
+	<Vehicles.VehicleTurretDef ParentName="VehicleTurretBase">
+		<defName>GW_Marauder_Bomber_Las</defName>
+		<label>lasgun</label>
+		<description>The Lascannon, a devastating energy weapon, is mounted on a formidable vehicle in the war-ridden GrimWorld 40,000. With a sleek design and ominous presence, this armament is affixed to the vehicle's battle-hardened chassis, embodying precision and destructive power against heavily armored foes. Bearing the Imperial Aquila, it symbolizes the unwavering might of the Imperium in the relentless struggle against darkness.</description>
+		
+		<turretType>Rotatable</turretType>
+		<shotSound>GW_AM_Lascannon</shotSound>
+		
+		<projectile>GW_LascanonShot</projectile>
+		<reloadTimer>3.5</reloadTimer>
+		<warmUpTimer>0.4</warmUpTimer>
+		
+		<magazineCapacity>60</magazineCapacity>
+		<genericAmmo>true</genericAmmo>
+		
+		<hitFlags>IntendedTarget</hitFlags>
+		
+		<autoSnapTargeting>false</autoSnapTargeting>
+		<rotationSpeed>2.95</rotationSpeed>
+		
+		<projectileOffset>2</projectileOffset>
+		<projectileShifting>
+			<li>-1.0</li>
+			<li>1.0</li>
+		</projectileShifting>
+		
+		<minRange>1</minRange>
+		<maxRange>42.9</maxRange>
+		
+		
+		
+		<fireModes>
+			<li>
+				<shotsPerBurst>2</shotsPerBurst>
+				<ticksBetweenShots>0</ticksBetweenShots>
+				<ticksBetweenBursts>10</ticksBetweenBursts>
+				<label>Single</label>
+				<texPath>UI/Gizmos/FireRate_Single</texPath>
+			</li>
+		</fireModes>
+
+		<graphicData>
+			<texPath>Things/Vehicles/Marauder/marauderlasyT</texPath>
+			<graphicClass>Vehicles.Graphic_Turret</graphicClass>
+			<shaderType>CutoutComplexPattern</shaderType>
+			<drawSize>(4, 4)</drawSize>
+			<layer>0</layer>
+		</graphicData>
+		
+		<ammunition>
+			<thingDefs>
+				<li>GW_LascannonammoNonCE</li>
+			</thingDefs>
+		</ammunition>
+	</Vehicles.VehicleTurretDef>
+
+	<Vehicles.VehicleTurretDef ParentName="VehicleTurretBase">
+			<defName>GW_Marauder_Bolter</defName>
+			<label>Heavy Bolter Turret</label>
+			<description>The Heavy Bolter, a formidable weapon in the Warhammer 40,000 universe, is often mounted on vehicles to enhance their firepower. This versatile weapon, characterized by its rapid and powerful firepower, serves as a potent anti-infantry and suppressive tool on the battlefield. When mounted on a vehicle, it becomes a symbol of mobile and devastating firepower, capable of mowing down enemy infantry and providing valuable support in diverse combat scenarios.</description>
+			<turretType>Rotatable</turretType>
+
+			<shotSound>Shot_Autocannon</shotSound>
+
+			<projectile>GW_Bullet_HeavyBolter</projectile>
+
+			<reloadTimer>7.8</reloadTimer>
+			<warmUpTimer>1.0</warmUpTimer>
+
+			<magazineCapacity>200</magazineCapacity>
+			<chargePerAmmoCount>1</chargePerAmmoCount>
+			<genericAmmo>true</genericAmmo>
+
+			<hitFlags>IntendedTarget</hitFlags>
+
+			<autoSnapTargeting>false</autoSnapTargeting>
+
+			<projectileOffset>2</projectileOffset>
+			<projectileShifting>
+				<li>-1.0</li>
+				<li>1.0</li>
+			</projectileShifting>
+		
+
+			<maxRange>28.9</maxRange>
+
+			<attachProjectileFlag>GW_Tank</attachProjectileFlag>
+
+			<fireModes>
+			<li>
+				<shotsPerBurst>5</shotsPerBurst>
+				<ticksBetweenShots>5</ticksBetweenShots>
+				<ticksBetweenBursts>30</ticksBetweenBursts>
+				<label>Single</label>
+				<texPath>UI/Gizmos/FireRate_Single</texPath>
+			</li>
+			<li>
+				<shotsPerBurst>10</shotsPerBurst>
+				<ticksBetweenShots>5</ticksBetweenShots>
+				<ticksBetweenBursts>30</ticksBetweenBursts>
+				<spreadRadius>1</spreadRadius>
+				<label>Burst</label>
+				<texPath>UI/Gizmos/FireRate_Burst</texPath>
+			</li>
+			<li>
+				<shotsPerBurst>25</shotsPerBurst>
+				<ticksBetweenShots>5</ticksBetweenShots>
+				<ticksBetweenBursts>45</ticksBetweenBursts>
+				<label>Auto</label>
+				<texPath>UI/Gizmos/FireRate_Auto</texPath>
+			</li>
+			</fireModes>
+
+		<graphicData>
+			<texPath>Things/Vehicles/Marauder/marauderHBT</texPath>
+			<graphicClass>Vehicles.Graphic_Turret</graphicClass>
+			<shaderType>CutoutComplexPattern</shaderType>
+			<drawSize>(3, 3)</drawSize>
+		</graphicData>
+
+		<ammunition>
+			<thingDefs>
+				<li>GW_HeavyBolterNonCE</li>
+			</thingDefs>
+		</ammunition>
+	</Vehicles.VehicleTurretDef>
+
+	<Vehicles.VehicleTurretDef ParentName="VehicleTurretBase">
+			<defName>GW_Marauder_Assault</defName>
+			<label>Assault Cannon Turret</label>
+			<description>Mo Dakka, WIP</description>
+			<turretType>Rotatable</turretType>
+
+			<shotSound>Shot_Autocannon</shotSound>
+
+			<projectile>GW_Bullet_Assaultcannon</projectile>
+
+			<reloadTimer>7.8</reloadTimer>
+			<warmUpTimer>1.0</warmUpTimer>
+
+			<magazineCapacity>400</magazineCapacity>
+			<chargePerAmmoCount>1</chargePerAmmoCount>
+			<genericAmmo>true</genericAmmo>
+
+			<hitFlags>IntendedTarget</hitFlags>
+
+			<autoSnapTargeting>false</autoSnapTargeting>
+
+			<projectileOffset>2</projectileOffset>
+			<projectileShifting>
+				<li>-1.0</li>
+				<li>1.0</li>
+			</projectileShifting>
+		
+
+			<maxRange>28.9</maxRange>
+
+			<attachProjectileFlag>GW_Tank</attachProjectileFlag>
+
+		<fireModes>
+			<li>
+				<shotsPerBurst>15</shotsPerBurst>
+				<ticksBetweenShots>0.5</ticksBetweenShots>
+				<ticksBetweenBursts>30</ticksBetweenBursts>
+				<label>Single</label>
+				<texPath>UI/Gizmos/FireRate_Single</texPath>
+			</li>
+			<li>
+				<shotsPerBurst>50</shotsPerBurst>
+				<ticksBetweenShots>0.5</ticksBetweenShots>
+				<ticksBetweenBursts>30</ticksBetweenBursts>
+				<spreadRadius>1</spreadRadius>
+				<label>Burst</label>
+				<texPath>UI/Gizmos/FireRate_Burst</texPath>
+			</li>
+			<li>
+				<shotsPerBurst>100</shotsPerBurst>
+				<ticksBetweenShots>0.5</ticksBetweenShots>
+				<ticksBetweenBursts>45</ticksBetweenBursts>
+				<label>Auto</label>
+				<texPath>UI/Gizmos/FireRate_Auto</texPath>
+			</li>
+		</fireModes>
+
+		<graphicData>
+			<texPath>Things/Vehicles/Marauder/MarauderAssaultCannons</texPath>
+			<graphicClass>Vehicles.Graphic_Turret</graphicClass>
+			<shaderType>CutoutComplexPattern</shaderType>
+			<drawSize>(4, 4)</drawSize>
+		</graphicData>
+
+		<ammunition>
+			<thingDefs>
+				<li>GW_HeavyBolterNonCE</li>
+			</thingDefs>
+		</ammunition>
+	</Vehicles.VehicleTurretDef>
+
+		<Vehicles.VehicleTurretDef ParentName="VehicleTurretBase">
+			<defName>GW_Marauder_NoseAutoCannons</defName>
+			<label>3x Fixed Twin-linked Autocannons</label>
+			<description>Mo Dakka, WIP</description>
+			<turretType>Static</turretType>
+
+			<shotSound>Shot_Autocannon</shotSound>
+
+			<projectile>GW_Bullet_Autocannon</projectile>
+
+			<reloadTimer>7.8</reloadTimer>
+			<warmUpTimer>1.0</warmUpTimer>
+
+			<magazineCapacity>300</magazineCapacity>
+			<chargePerAmmoCount>1</chargePerAmmoCount>
+			<genericAmmo>true</genericAmmo>
+
+			<hitFlags>IntendedTarget</hitFlags>
+
+			<autoSnapTargeting>false</autoSnapTargeting>
+
+			<projectileOffset>2</projectileOffset>
+			<projectileShifting>
+				<li>-1.0</li>
+				<li>1.0</li>
+			</projectileShifting>
+		
+
+			<maxRange>45</maxRange>
+
+			<attachProjectileFlag>GW_Tank</attachProjectileFlag>
+
+			<fireModes>
+			<li>
+				<shotsPerBurst>6</shotsPerBurst>
+				<ticksBetweenShots>8</ticksBetweenShots>
+				<ticksBetweenBursts>35</ticksBetweenBursts>
+				<label>Single</label>
+				<texPath>UI/Gizmos/FireRate_Single</texPath>
+			</li>
+			<li>
+				<shotsPerBurst>18</shotsPerBurst>
+				<ticksBetweenShots>8</ticksBetweenShots>
+				<ticksBetweenBursts>45</ticksBetweenBursts>
+				<spreadRadius>1</spreadRadius>
+				<label>Burst</label>
+				<texPath>UI/Gizmos/FireRate_Burst</texPath>
+			</li>
+			<li>
+				<shotsPerBurst>42</shotsPerBurst>
+				<ticksBetweenShots>8</ticksBetweenShots>
+				<ticksBetweenBursts>45</ticksBetweenBursts>
+				<label>Auto</label>
+				<texPath>UI/Gizmos/FireRate_Auto</texPath>
+			</li>
+			</fireModes>
+
+		<graphicData>
+			<texPath>Things/Vehicles/Marauder/MarauderFrontCannons</texPath>
+			<graphicClass>Vehicles.Graphic_Turret</graphicClass>
+			<shaderType>CutoutComplexPattern</shaderType>
+			<drawSize>(5, 5)</drawSize>
+			<layer>3</layer>
+		</graphicData>
+
+		<ammunition>
+			<thingDefs>
+				<li>GW_AutocannonammoNonCE</li>
+			</thingDefs>
+		</ammunition>
+	</Vehicles.VehicleTurretDef>
+</Defs>
