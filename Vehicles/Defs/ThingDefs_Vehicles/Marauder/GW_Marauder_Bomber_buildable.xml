@@ -6,7 +6,7 @@
 		<label>Marauder</label>
 		<description>The Marauder, WIP \n\n&lt;color=#bb8f04&gt;Crew:&lt;/color&gt; Driver x1\n&lt;color=#bb8f04&gt;Fuel type:&lt;/color&gt; Chemfuel</description>
 		
-		<designationCategory>GrimworldCategory</designationCategory>
+		<designationCategory>VF_Vehicles</designationCategory>
 		
 		<graphicData>
 			<texPath>Things/Vehicles/Marauder/marauder</texPath>
