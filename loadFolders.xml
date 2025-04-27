@@ -1,5 +1,6 @@
 <loadFolders>
 <<<<<<< HEAD
+<<<<<<< HEAD
   <v1.4>
     <li>/</li>
     <li>1.4</li>
@@ -13,6 +14,8 @@
   </v1.5>
 </loadFolders>
 =======
+=======
+>>>>>>> parent of f7c7732 (added new stuff)
 	<v1.4>
 		<li>/</li>
 		<li>1.4</li>
@@ -26,4 +29,7 @@
 		<li IfModActive="SmashPhil.VehicleFramework">Vehicles</li>
 	</v1.5>
 </loadFolders>
+<<<<<<< HEAD
+>>>>>>> parent of f7c7732 (added new stuff)
+=======
 >>>>>>> parent of f7c7732 (added new stuff)
