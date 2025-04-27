@@ -1,6 +1,4 @@
 <loadFolders>
-<<<<<<< HEAD
-<<<<<<< HEAD
   <v1.4>
     <li>/</li>
     <li>1.4</li>
@@ -13,23 +11,3 @@
     <li IfModActive = "SmashPhil.VehicleFramework">Vehicles</li>
   </v1.5>
 </loadFolders>
-=======
-=======
->>>>>>> parent of f7c7732 (added new stuff)
-	<v1.4>
-		<li>/</li>
-		<li>1.4</li>
-        <li IfModActive="Phonicmas.40kAbhumans">1.4/Mods/Abhumans</li>
-        <li IfModActive="ceteam.combatextended">1.4/Mods/CombatExtendedPatch</li>
-	</v1.4>
-	<v1.5>
-		<li>/</li>
-		<li>1.5</li>
-        <li IfModActive="Phonicmas.40kAbhumans">1.5/Mods/Abhumans</li>
-		<li IfModActive="SmashPhil.VehicleFramework">Vehicles</li>
-	</v1.5>
-</loadFolders>
-<<<<<<< HEAD
->>>>>>> parent of f7c7732 (added new stuff)
-=======
->>>>>>> parent of f7c7732 (added new stuff)
