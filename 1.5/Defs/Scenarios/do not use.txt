@@ -1,0 +1,320 @@
+  <xenotypeSet>
+    <xenotypeChances>
+      <Neanderthal MayRequire="Ludeon.RimWorld.Biotech">0.05</Neanderthal>
+      <Hussar MayRequire="Ludeon.RimWorld.Biotech">0.05</Hussar>
+      <Pigskin MayRequire="Ludeon.RimWorld.Biotech">0.05</Pigskin>
+      <Yttakin MayRequire="Ludeon.RimWorld.Biotech">0.05</Yttakin>
+      <Genie MayRequire="Ludeon.RimWorld.Biotech">0.05</Genie>
+      <Dirtmole MayRequire="Ludeon.RimWorld.Biotech">0.05</Dirtmole>
+      <Highmate MayRequire="Ludeon.RimWorld.Biotech">0.025</Highmate>
+    </xenotypeChances>
+  </xenotypeSet>
+
+  <PawnKindDef ParentName="BasePlayerPawnKind">
+    <defName>Roguetrader</defName>
+    <label>Rogue Trader</label>
+    <defaultFactionType>PlayerRogueTrader</defaultFactionType>
+    <chemicalAddictionChance>0.06</chemicalAddictionChance>
+    <apparelTags>
+      <li>40kCadianUniform</li>
+    </apparelTags>
+    <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+    <apparelMoney>350~600</apparelMoney>
+    <minGenerationAge>20</minGenerationAge>
+    <backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
+    <techHediffsChance>0.03</techHediffsChance>
+    <techHediffsMoney>50~800</techHediffsMoney>
+    <techHediffsTags>
+      <li>Poor</li>
+      <li>Simple</li>
+      <li>ImplantEmpireCommon</li>
+    </techHediffsTags>
+    <techHediffsDisallowTags>
+      <li>PainCauser</li>
+    </techHediffsDisallowTags>
+    <initialResistanceRange>13~21</initialResistanceRange>
+  </PawnKindDef>
+
+
+
+  <FactionDef ParentName="PlayerFactionBase">
+    <defName>PlayerRogueTrader</defName>
+    <label>Rogue Trader</label>
+    <description>A Rogue Trader and their Retuine arrive on the Rim.</description>
+    <isPlayer>true</isPlayer>
+    <basicMemberKind>Astramilitarum</basicMemberKind>
+    <pawnSingular>Soldier</pawnSingular>
+    <pawnsPlural>Soldiers</pawnsPlural>
+    <techLevel>Industrial</techLevel>
+    <factionNameMaker>NamerFactionOutlander</factionNameMaker>
+    <settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+    <allowedCultures><li>Astropolitan</li></allowedCultures>
+    <backstoryFilters>
+      <li>
+        <categories>
+          <li>Grimworld Backstories</li>
+        </categories>
+      </li>
+    </backstoryFilters>
+    <factionIconPath>World/WorldObjects/Expanding/Town</factionIconPath>
+    <startingResearchTags>
+      <li>ClassicStart</li>
+    </startingResearchTags>
+    <startingTechprintsResearchTags>
+      <li>ClassicStart</li>
+      <li>ClassicStartTechprints</li>
+    </startingTechprintsResearchTags>
+    <apparelStuffFilter>
+      <thingDefs>
+        <li>Synthread</li>
+      </thingDefs>
+    </apparelStuffFilter>
+  </FactionDef>
+
+  <ScenarioDef>
+    <defName>TheRogueTrader</defName>
+    <label>The Rogue Trader</label>
+    <description>Carrying an Imperial Warrent that has existed for generations in your family, it is finally your turn to reach out into the stars.\n\nNote: Since your starting character will lack some skills, this is an especially difficult scenario in the early game.</description>
+    <scenario>
+      <summary>Rogue Trader sets out on an adventure. Extra difficult.</summary>
+      <playerFaction>
+        <def>PlayerFaction</def>
+        <factionDef>PlayerColony</factionDef>
+      </playerFaction>
+      <parts>
+
+        <!-- Config pages -->
+        <li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
+          <def>ConfigPage_ConfigureStartingPawns</def>
+          <pawnCount>1</pawnCount>
+          <pawnChoiceCount>8</pawnChoiceCount>
+        </li>
+
+        <!-- Player starting stuff spawn method-->
+        <li Class="ScenPart_PlayerPawnsArriveMethod">
+          <def>PlayerPawnsArriveMethod</def>
+          <visible>false</visible>
+          <method>DropPods</method>
+        </li>
+
+        <!-- Starting research -->
+        <li Class="ScenPart_StartingResearch">
+          <def>StartingResearch</def>
+          <project>GunTurrets</project>
+        </li>
+
+        <!-- Player starting things -->
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Silver</thingDef>
+          <count>2000</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Gold</thingDef>
+          <count>30</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>MealSurvivalPack</thingDef>
+          <count>40</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>MedicineUltratech</thingDef>
+          <count>30</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>ComponentIndustrial</thingDef>
+          <count>30</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Gun_ChargeRifle</thingDef>
+        </li>
+        <li Class="ScenPart_StartingAnimal">
+          <def>StartingAnimal</def>
+          <count>1</count>
+          <bondToRandomPlayerPawnChance>1.0</bondToRandomPlayerPawnChance>
+        </li>
+
+        <!-- Scatter some things near player start -->
+        <li Class="ScenPart_ScatterThingsNearPlayerStart">
+          <def>ScatterThingsNearPlayerStart</def>
+          <thingDef>Steel</thingDef>
+          <count>450</count>
+        </li>
+        <li Class="ScenPart_ScatterThingsNearPlayerStart">
+          <def>ScatterThingsNearPlayerStart</def>
+          <thingDef>WoodLog</thingDef>
+          <count>300</count>
+        </li>
+
+        <!-- Game start dialog -->
+        <li Class="ScenPart_GameStartDialog">
+          <def>GameStartDialog</def>
+          <text>The neurosimulations, holo-games, and free-orgies were never enough for you. You wanted more - the grit and consequence of real life, like they talk about in the history books. You wanted to know what real challenge and consequence feel like.\n\nNow, after a journey of decades in cryptosleep, you're landing on this unknown rimworld. Real consequences await you.</text>
+          <closeSound>GameStartSting</closeSound>
+        </li>
+
+      </parts>
+    </scenario>
+  </ScenarioDef>
+  
+<!-- Child Backgrounds for space marines -->
+      
+   <BackstoryDef>
+    <defName>Aspirantbackstory01</defName>   
+    <title>Indoctrinated Child</title>  
+    <titleShort>Indoctrinated</titleShort>  
+    <baseDesc>Born on a planet highly devoted to the God Emperor, [PawnName] was offered up to their Space Marine chapter to join their ranks, along with all other able bodied children of the planet, as was tradition. In exchange for the Chapters' protection and their continued devotion for the Imperial cause.</baseDesc>  
+    <slot>Childhood</slot>  
+	<spawnCategories><li>Space Marine</li></spawnCategories>
+	<bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+   </BackstoryDef>
+
+   <BackstoryDef>
+    <defName>Aspirantbackstory02</defName>   
+    <title>Academics and Schooling</title>  
+    <titleShort>Educated</titleShort>  
+    <baseDesc>To be selected, [PawnName] was required to study and learn a variety of skills, disciplines, on top of the standard combat training expected of an Astartes. [PawnName] proved they were the most qualified out of their cohorts to become an aspirant and rise up to eventually become a Space Marine.</baseDesc>  
+    <slot>Childhood</slot>  
+	<spawnCategories><li>Space Marine</li></spawnCategories>
+	<bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+   </BackstoryDef>
+                  
+   <BackstoryDef>
+    <defName>Aspirantbackstory03</defName>   
+    <title>Trial by Combat</title>  
+    <titleShort>Gladiator</titleShort>  
+    <baseDesc>To achieve selection as an aspirant, [PawnName] was forced to fight to the death against beasts, trained warriors, and other possible aspirants in a variety of arenas or environments. After finally proving their marshal prowess, they were taken from the arena and implanted with their Primarchs geneseed.</baseDesc>  
+    <slot>Childhood</slot>  
+	<spawnCategories><li>Space Marine</li></spawnCategories>
+	<bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+   </BackstoryDef>
+   
+   <BackstoryDef>
+    <defName>Aspirantbackstory04</defName>   
+    <title>Hive Gang Member</title>  
+    <titleShort>Former Hive Ganger</titleShort>  
+    <baseDesc>Born and raised in the foul underbelly of an Imperial Hive city, [PawnName] lived in utter squalor and poverty. Having to fight for every scrap of food at such a young age makes for an ideal Astartes Aspirant.</baseDesc>  
+    <slot>Childhood</slot>  
+	<spawnCategories><li>Space Marine</li></spawnCategories>
+	<bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+   </BackstoryDef>
+                  
+   <BackstoryDef>
+    <defName>Aspirantbackstory05</defName>   
+    <title>Trial by Quest</title>  
+    <titleShort>Survivor</titleShort>  
+    <baseDesc>To be noticed by the Space Marine Chapter, [PawnName] was forced to undergo a long arduous task in order to prove they were worthy of the Primarch’s geneseed. Be it through long travel, enduring harsh terrain, they achieved the goal of selection as an aspirant. Upon completion, they were assigned to the Chapter’s Scout company until they had developed fully and could become a full fledged Astartes.</baseDesc>  
+    <slot>Childhood</slot>  
+	<spawnCategories><li>Space Marine</li></spawnCategories>
+	<bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+   </BackstoryDef>
+   
+   <BackstoryDef>
+    <defName>Aspirantbackstory06</defName>   
+    <title>Prisoner or Slave</title>  
+    <titleShort>Servitude</titleShort>  
+    <baseDesc>Having spent almost their entire childhood in captivity, [PawnName] was brought before their Space Marine chapter as a possible new recruit. After many inspections and tests, [PawnName] became one of the lucky few deemed worthy of being released in order to become an Astartes.</baseDesc>  
+    <slot>Childhood</slot>  
+	<spawnCategories><li>Space Marine</li></spawnCategories>
+	<bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+   </BackstoryDef>
+  
+   <BackstoryDef>
+    <defName>Aspirantbackstory07</defName>   
+    <title>Space Marine Initiate</title>  
+    <titleShort>Initiate</titleShort>  
+    <baseDesc>As a Space Marine Initiate, [PawnName] was implanted with the gene seed of their Primarch and trained to become a Space Marine. When deployed in combat, they fought in their Chapter’s Scout Company alongside the other initiates.</baseDesc>  
+    <slot>Childhood</slot>  
+	<spawnCategories><li>Space Marine</li></spawnCategories>
+	<bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+   </BackstoryDef> 
+   
+   <BackstoryDef>
+    <defName>Aspirantbackstory08</defName>   
+    <title>Harsh Upbringing</title>  
+    <titleShort>Ferocity</titleShort>  
+    <baseDesc>[PawnName] was born on a harsh, backwater planet where survival was a daily struggle. Whether fighting rival tribes, surviving harsh environments, their entire life is forged from these experiences and hardship. This has transformed [PawnName] into a strong and ferocious warrior, cunning and deadly, which led to them being recruited by a Space Marine chapter to become an Astartes.</baseDesc>  
+    <slot>Childhood</slot>  
+	<spawnCategories><li>Space Marine</li></spawnCategories>
+	<bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+   </BackstoryDef> 
+ 
+   <BackstoryDef>
+    <defName>Aspirantbackstory09</defName>   
+    <title>Ritualistic Selection</title>  
+    <titleShort>Mysterious Ritual</titleShort>  
+    <baseDesc>Every Space Marine Chapter has their recruitment methods. For [PawnName], this method involved a secretive ritual none shared outside of the order. What exactly happened behind those closed doors is a mystery, but what is known is when [PawnName] walked out of that chamber, they were on the path to becoming an aspirant.</baseDesc>  
+    <slot>Childhood</slot>  
+	<spawnCategories><li>Space Marine</li></spawnCategories>
+	<bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+   </BackstoryDef>  
+ 
+   <BackstoryDef>
+    <defName>Aspirantbackstory10</defName>   
+    <title>Arts and Crafts</title>  
+    <titleShort>Creative Origin</titleShort>  
+    <baseDesc>To be selected, [PawnName] had to prove their exemplary skills as an exceptional artist or dedicated craftsman to be chosen by their Space Marine Chapter. Their craftsmanship and artistry will certainly be a benefit to their fellow Astartes.</baseDesc>  
+    <slot>Childhood</slot>  
+	<spawnCategories><li>Space Marine</li></spawnCategories>
+	<bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+   </BackstoryDef>  
+
+   <BackstoryDef>
+    <defName>Aspirantbackstory11</defName>   
+    <title>High Stakes Game</title>  
+    <titleShort>Winner</titleShort>  
+    <baseDesc>All Chapters use a variety of methods when recruiting individuals. For [PawnName], this involved playing a game that to some may seem harmless, but contains a far deadlier outcome for failure. Be it proving their skills at hide and seek, or other strange challenges like collecting specific objects and items. Whatever the case, [PawnName] proved their worth to become a Space Marine and with it, brings an unusual but useful array of skill with them.</baseDesc>  
+    <slot>Childhood</slot>  
+	<spawnCategories><li>Space Marine</li></spawnCategories>
+	<bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+   </BackstoryDef>  
+
+   <BackstoryDef>
+    <defName>Aspirantbackstory12</defName>   
+    <title>Kidnapping</title>  
+    <titleShort>Kidnapped</titleShort>  
+    <baseDesc>Some Chapters resort to unsavoury methods to find their recruits. For [PawnName], they were abducted from their home and put through the process of becoming a Space Marine. Whether willingly or not, they have become a member of the Chapter and yet another cog in the Imperial machine.</baseDesc>  
+    <slot>Childhood</slot>  
+	<spawnCategories><li>Space Marine</li></spawnCategories>
+	<bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+   </BackstoryDef>  
+ 
+   <BackstoryDef>
+    <defName>Aspirantbackstory13</defName>   
+    <title>Forgotten Past</title>  
+    <titleShort>Mind Wiped</titleShort>  
+    <baseDesc>[PawnName] does not remember their past, all they know is that they are a Space Marine. As part of their trial, that which once was, has been removed or buried under mental conditioning and pacification. Whatever they once were, [PawnName] needs not know. All that matters is [PawnName] is a servant of the Emperor, a Space Marine.</baseDesc>  
+    <slot>Childhood</slot>  
+	<spawnCategories><li>Space Marine</li></spawnCategories>
+	<bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+   </BackstoryDef>     
+
+   <BackstoryDef>
+    <defName>Aspirantbackstory14</defName>   
+    <title>Augmentation</title>  
+    <titleShort>Augmented</titleShort>  
+    <baseDesc>[PawnName] has fallen under a Space Marine Chapter that values artificial enhancement and eventual replacement of limbs or other parts of the body with cybernetics. Generally the core remains, but arms and legs may be removed and replaced with master crafted works of artistry, worthy of the same admiration any other Marine deserves. This augmentation also comes with great experience in mechanics and building which [PawnName] puts to use.</baseDesc>  
+    <slot>Childhood</slot>  
+	<spawnCategories><li>Space Marine</li></spawnCategories>
+	<bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+   </BackstoryDef>
+   
