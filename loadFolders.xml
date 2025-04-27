@@ -9,5 +9,6 @@
     <li>/</li>
     <li>1.5</li>
     <li IfModActive="Ludeon.RimWorld.Royalty">1.5/Royalty</li>
+    <li IfModActive = "SmashPhil.VehicleFramework">Vehicles</li>
   </v1.5>
 </loadFolders>
