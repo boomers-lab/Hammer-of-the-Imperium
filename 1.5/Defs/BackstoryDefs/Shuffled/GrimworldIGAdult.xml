@@ -50,7 +50,7 @@
 	<skillGains>
       <Shooting>3</Shooting>    
       <Melee>3</Melee>
-      <Social>-2</Social>
+      <Social>-3</Social>
       <Construction>2</Construction>	  
     </skillGains>
 	<spawnCategories><li>Grimworld Backstories</li><li>Death Korps</li></spawnCategories>	
@@ -127,7 +127,7 @@
     <defName>Imperialguard07</defName>   
     <title>Vehicle Operator</title>  
     <titleShort>Operator</titleShort>  
-    <baseDesc>[PAWN_nameDef] trained as a pilot of one of many vehicles throughout the Imperium. Valkyries, Leman Russ’, Chimera, whatever [PAWN_nameDef] was required to drive, they would serve to the best of their ability and ensure it got to where it needed to go.</baseDesc>  
+    <baseDesc>[PAWN_nameDef] trained as a pilot of one of many vehicles throughout the Imperium. Valkyries, Leman Russ’, Chimera, whatever [PAWN_nameDef] was required to drive, they would serve to the best of their ability.</baseDesc>  
     <slot>Adulthood</slot>  
 	<skillGains>
       <Shooting>2</Shooting>    
@@ -143,15 +143,15 @@
    
    <BackstoryDef>
     <defName>Imperialguard08</defName>   
-    <title>Rough Rider</title>  
+    <title>Roughrider</title>  
     <titleShort>Operator</titleShort>  
-    <baseDesc>[PAWN_nameDef] is a Rough Rider, part of a more 'primitive' batch of recruits usually hailing from less advanced worlds in the Imperium. Trained in cavalry based tactics, [PAWN_nameDef] is able to handle their care while also still being a competent soldier on the battlefield akin to any Guardsman.</baseDesc>  
+    <baseDesc>[PAWN_nameDef] trained as a pilot of one of many vehicles throughout the Imperium. Valkyries, Leman Russ’, Chimera, whatever [PAWN_nameDef] was required to drive, they would serve to the best of their ability.</baseDesc>  
     <slot>Adulthood</slot>  
 	<skillGains>
       <Melee>2</Melee>
 	  <Shooting>2</Shooting>
-      <Animals>6</Animals>
-	  <Intellectual>-4</Intellectual>
+      <Animals>4</Animals>
+	  <Intellectual>-2</Intellectual>
     </skillGains>
 	<spawnCategories><li>Grimworld Backstories</li><li>Death Korps</li></spawnCategories>
     <bodyTypeMale>Male</bodyTypeMale>
@@ -165,15 +165,15 @@
     <defName>Imperialguard09</defName>   
     <title>Scout</title>  
     <titleShort>Operator</titleShort>  
-    <baseDesc>[PAWN_nameDef] serves in the Astra Militarum as a scout, trained to use Long Las or other Sniper style equipment as part of forward operations, infiltration, and scouting. [PAWN_nameDef] is always on the look out for targets of opportunity to eliminate with a carefully placed shot, or a called in strike from allies.</baseDesc>  
+    <baseDesc>[PAWN_nameDef] trained as a pilot of one of many vehicles throughout the Imperium. Valkyries, Leman Russ’, Chimera, whatever [PAWN_nameDef] was required to drive, they would serve to the best of their ability.</baseDesc>  
     <slot>Adulthood</slot>  
 	<skillGains>
       <Shooting>4</Shooting>    
-      <Social>-2</Social>
+      <Social>-3</Social>
 	  <Plants>2</Plants>
 	  <Animals>2</Animals>
 	  <Melee>2</Melee>
-	  <Intellectual>-2</Intellectual>
+	  <Intellectual>-3</Intellectual>
     </skillGains>
 	<spawnCategories><li>Grimworld Backstories</li><li>Death Korps</li></spawnCategories>
     <bodyTypeMale>Male</bodyTypeMale>
@@ -610,7 +610,7 @@
     <defName>Imperialsupport01</defName>   
     <title>Techpriest Enginseer</title>  
     <titleShort>Techpriest</titleShort>  
-    <baseDesc>[PAWN_nameDef] Serves as a member of the Adeptus Mechanicus. The Enginseers are often attached to Imperial Armies as part of an ancient "Treaty of Mars" to serve as mechanics and construction specialists to help maintain the Imperium's equipment and gear.</baseDesc>  
+    <baseDesc>[PAWN_nameDef] was conscripted into the Astra Militarum, either by volunteering or force. Given little basic training and the barest minimum of equipment, [PAWN_pronoun] and many others were gathered up and shipped off to wage war on the rim.</baseDesc>  
     <slot>Adulthood</slot>  
 	<skillGains>
       <Social>-3</Social>
