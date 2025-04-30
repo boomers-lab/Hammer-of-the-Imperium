@@ -64,6 +64,7 @@
 		<blockLight>false</blockLight>
 		<stuffCategories>
 			<li>Metallic</li>
+			<li>Stony</li>
 		</stuffCategories>
 		<building>
 			<ai_chillDestination>false</ai_chillDestination>
@@ -143,6 +144,7 @@
 		<blockLight>false</blockLight>
 		<stuffCategories>
 			<li>Metallic</li>
+			<li>Stony</li>
 		</stuffCategories>
 		<building>
 			<ai_chillDestination>false</ai_chillDestination>
